@@ -1,136 +1,283 @@
 {
   "header": {
-    "label": "OpenAEC Ecosystem",
     "title": "Open <span class=\"accent\">Geotechniek</span> Studio",
-    "desc": "Open-source desktop tool for cone penetration tests (CPT/GEF), borings (BHR/BRO-xml) and site drawings.",
-    "badge": "Beta",
-    "gww": "Civil / Geotechnical"
+    "demoBtn": "Open in browser",
+    "downloadBtn": "Download",
+    "sourceBtn": "Source code",
+    "proof2": "Dutch and English",
+    "proof4": "MCP for AI assistants",
+    "proof5": "Free · MIT",
+    "heroAlt": "Open Geotechniek Studio: cone test with cone resistance, sleeve friction and friction ratio, with the soil layering on the left",
+    "label": "Geotechnics",
+    "tagline": "From BRO cone test to site drawing and report, in one free app",
+    "desc": "Open a GEF or BRO file, or find every cone test around your site on the map. View qc, fs and Rf with an indicative soil layering, place the points on a site drawing and turn it into a report."
   },
-  "what": {
-    "title": "What is Open Geotechniek Studio?",
-    "desc": "Open Geotechniek Studio is a desktop application for visualising and analysing geotechnical data from the Dutch national subsurface registry (BRO). Open any GEF or BRO-xml file and inspect sounding or boring data with automatic Robertson SBT classification, soil layer detection and stratification.",
-    "list1": "CPT soundings (GEF format) — cone resistance, friction, pore pressure",
-    "list2": "Borings (BRO-xml) — soil types per NEN5104, BIMRO/IMBRO/A quality regimes",
-    "list3": "Robertson SBT classification — automatic soil type detection per depth",
-    "list4": "Multi-tab — compare several soundings/borings side by side",
-    "list5": "Map view — all measurements on location (RD coordinates)",
-    "list6": "Reporting — export to PDF for project files"
+  "meta": {
+    "description": "Free, open-source app for cone penetration tests (GEF, BRO-xml) and boreholes: charts and soil layering, BRO data on the map, site drawings and PDF reports. For Windows, macOS, Linux and the browser.",
+    "title": "Open Geotechniek Studio — OpenAEC Foundation"
   },
-  "why": {
-    "title": "Why Open <span class=\"accent\">Geotechniek</span> Studio?",
-    "desc1": "Geotechnical software in the Dutch market is often expensive and fragmented: different tools for soundings, borings, pile calculations and reporting. Open Geotechniek Studio brings it together — free, open source and fully compliant with Dutch standards (BRO, NEN5104, IMBRO/A).",
-    "desc2": "For the entire civil engineering and infrastructure sector: from foundation engineers to utility contractors, from structural engineers to water-board projects. Read BRO data directly, export to IFCX for BIM integration, and share professional reports without license costs."
-  },
-  "standards": {
-    "title": "Supported standards",
-    "desc": "Open Geotechniek Studio reads and interprets the official Dutch geotechnical formats:",
-    "list1": "<strong>GEF</strong> Geotechnical Exchange Format for CPT soundings",
-    "list2": "<strong>BRO-xml (BHR-GT)</strong> Dutch Key Registry of the Subsurface, geotechnical borehole research",
-    "list3": "<strong>NEN 5104</strong> Geotechnical description of soil samples",
-    "list4": "<strong>IMBRO / IMBRO-A</strong> BRO information model (quality regimes)",
-    "list5": "<strong>Robertson SBT</strong> Soil Behaviour Type classification",
-    "list6": "<strong>RD coordinates</strong> Dutch national triangulation grid for locations",
-    "list7": "<strong>NAP</strong> Amsterdam Ordnance Datum for ground level and depths"
-  },
-  "features": {
-    "title": "Features",
+  "hl": {
     "cpt": {
-      "title": "CPT visualisation",
-      "desc": "Cone resistance (qc), local friction (fs), friction ratio (Rf) and optionally pore pressure (u2) per depth, with crosshair and value overlay."
-    },
-    "bhr": {
-      "title": "BHR borings",
-      "desc": "Visualisation of borings with soil layers, admixtures, structure, humus content and colour — directly from BRO-xml."
-    },
-    "sbt": {
-      "title": "Robertson SBT",
-      "desc": "Automatic Soil Behavior Type classification per Robertson (1990) — from Sensitive fine-grained to Very stiff sand/clay."
-    },
-    "layers": {
-      "title": "Soil stratification",
-      "desc": "Automatic detection of soil layers per depth (top, bottom, zone). Adjust the stratification yourself based on measurements."
+      "alt": "Cone test with the soil build-up per layer on the left and the normalized Qt/Fr/Bq/Ic analysis on the right",
+      "kicker": "Cone tests",
+      "title": "Read a cone test at a glance",
+      "desc": "Cone resistance, sleeve friction and friction ratio side by side on one depth axis in NAP. The app divides the test into indicative layers; you adjust the layer boundaries yourself and see a normalized Qt/Fr/Bq/Ic analysis per point."
     },
     "map": {
-      "title": "Map view with BRO integration",
-      "desc": "Interactive map with direct BRO integration: search by address and all available soundings and borings around the location load automatically. Click to view details, open in viewer or add to project."
+      "alt": "Map with aerial photo, cadastral boundaries and the BRO cone tests in the area as red triangles",
+      "kicker": "Map and BRO",
+      "title": "All BRO data around your site",
+      "desc": "Search by address or RD coordinate and load the cone tests, boreholes and groundwater wells from the Dutch subsurface register (BRO) in the visible area. Add aerial photos from 2016 onward, the AHN elevation map, cadastral boundaries or BAG buildings underneath."
     },
-    "mapLayers": {
-      "title": "Cadastre map layers",
-      "desc": "Topography (BRT), current and historical aerial photos (2016-2025), addresses and streets, AHN elevation map, cadastral boundaries, BAG buildings and BGT topography — all directly from Kadaster PDOK."
-    },
-    "multitab": {
-      "title": "Multi-tab",
-      "desc": "Open multiple CPTs and borings in tabs. Compare depth, layers and properties side by side."
+    "drawing": {
+      "alt": "A3 site drawing at 1:500 with cone tests on the map and the OpenAEC title block",
+      "kicker": "Site drawing",
+      "title": "A site drawing without a CAD program",
+      "desc": "Place cone tests, boreholes or a whole grid of tests on the map, with dimension lines, RD coordinates and notes. Put a PDF or image underneath and export to PDF on A2 or A3, with a completed title block."
     },
     "report": {
-      "title": "PDF reporting",
-      "desc": "Generate professional sounding reports with selectable sections: cover, coordinates table, overview map, per-sounding pages, Robertson SBT legend and metadata summary. Suitable for project files, permit applications or clients."
-    },
-    "situatie": {
-      "title": "Site drawing",
-      "desc": "Full drawing functionality for site plans: place soundings and borings, generate sounding grids, RD coordinates, dimension lines, trim/extend/mirror/offset operations. Import images/PDF or SVG frames as reference. Export to professional A3 PDF with OpenAEC title block."
-    },
-    "ifc": {
-      "title": "IFC / IFCX export",
-      "desc": "Export geotechnical data as IFC elements or in IFCX namespace for seamless integration with BIM models and Open Frame Studio."
-    },
-    "metadata": {
-      "title": "Metadata",
-      "desc": "Complete boring and sounding data: registrar, quality regime, drilling method, delivery, description date, NEN5104plus coding."
-    },
-    "rawxml": {
-      "title": "Raw data (XML)",
-      "desc": "Inspect the underlying BRO-xml or GEF source directly from the app for verification and debugging."
-    },
-    "local": {
-      "title": "100% local",
-      "desc": "All data stays on your own machine. No cloud, no uploads to third parties — privacy and GDPR by default."
-    },
-    "showAll": "Show all features",
-    "showLess": "Show less"
-  },
-  "quotes": {
-    "title": "Unique: automated quote requests from sounding companies",
-    "desc": "Draw a sounding grid on your site plan and click <strong>Request quotes</strong>. Open Geotechniek Studio searches all Dutch sounding companies in our public catalogue and sends a quote request to the three closest companies, including project details and sounding specifications.",
-    "list2": "Sorted by <strong>distance to the project</strong>",
-    "list3": "Pre-selection of the 3 nearest — adjustable before sending",
-    "list4": "Outlook integration with pre-filled project info, location and specifications",
-    "list6": "Open source catalogue: companies can add themselves via a GitHub pull request",
-    "list1": "<strong>43 Dutch CPT contractors</strong> in the catalogue (and growing)",
-    "list5": "<strong>No middlemen</strong>, no commissions — direct contact between client and CPT contractor"
-  },
-  "useCases": {
-    "title": "User profiles",
-    "geotech": {
-      "title": "Geotechnical consultants",
-      "desc": "Quickly review BRO data for pile, foundation and settlement advice. Compare multiple soundings for project interpretation."
-    },
-    "civil": {
-      "title": "Civil engineers",
-      "desc": "Underpin foundation choices for bridges, viaducts, tunnels and structures based on CPT plots."
-    },
-    "gww": {
-      "title": "Civil infrastructure contractors",
-      "desc": "Assess excavation depth, soil improvement and dewatering before a civil project starts."
-    },
-    "bim": {
-      "title": "BIM coordinators",
-      "desc": "Integrate geotechnical data into BIM models via IFCX. One source of truth for above and below ground."
+      "alt": "Report preview with a cone test chart to scale, and on the left the sections to switch on or off",
+      "kicker": "Report",
+      "title": "A report for the project file",
+      "desc": "Choose what goes in: cover, coordinate table, overview map, a page per cone test, the legend and the metadata. Set the chart scale, for example 1:50 across several sheets."
     }
   },
-  "tech": {
-    "title": "Technology",
-    "desc": "A Rust computation core for fast parsing of GEF and BRO-xml, a TypeScript frontend for the UI, and Tauri 2 for cross-platform distribution (Windows, macOS, Linux). The same stack as the entire OpenAEC ecosystem for seamless integration."
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "download": "Download",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
   },
-  "cta": {
-    "liveDemo": "Open the live demo",
-    "download": "Download installer",
-    "github": "GitHub"
+  "tabs": {
+    "highlights": "Highlights",
+    "cpt": "Cone tests and boreholes",
+    "map": "Map and BRO",
+    "drawing": "Site drawing",
+    "report": "Report and export",
+    "connect": "Calculations and integrations",
+    "all": "All features"
+  },
+  "features": {
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "Everything for cone tests and boreholes, in one app",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
+    "gef": {
+      "title": "Open GEF and BRO-xml",
+      "desc": "Cone tests in GEF or BRO-xml, boreholes (BHR-GT, GEF-BORE) and groundwater wells (GMW). Several tests in one file too."
+    },
+    "chart": {
+      "title": "qc, fs and Rf by depth",
+      "desc": "Charts on one depth axis in NAP, with values under the mouse and pore pressure (u2) where measured."
+    },
+    "layers": {
+      "title": "Indicative soil layering",
+      "desc": "Automatic layering on qc and Rf, with minimum thickness and hysteresis. Adjust boundaries yourself and export the layers as JSON with provenance."
+    },
+    "normalized": {
+      "title": "Normalized analysis",
+      "desc": "Qt, Fr, Bq and Ic per measuring point, with the stresses you enter yourself."
+    },
+    "bore": {
+      "title": "Boreholes and groundwater",
+      "desc": "Borehole logs with layers, colour and admixtures, and groundwater wells with their time series."
+    },
+    "validation": {
+      "title": "Data checks",
+      "desc": "Messages about columns, units, voids and depth, with the line in the source file. Export the check as JSON or CSV."
+    },
+    "tabs": {
+      "title": "Several cone tests side by side",
+      "desc": "Each file in its own tab, or a project with several tests on one depth axis."
+    },
+    "search": {
+      "title": "Search by address",
+      "desc": "Through the PDOK Locatieserver by address, place or RD coordinate."
+    },
+    "bro": {
+      "title": "Load BRO data",
+      "desc": "Cone tests, boreholes and groundwater wells in the visible area, also in large areas above the 2,000-object limit."
+    },
+    "pdok": {
+      "title": "PDOK map layers",
+      "desc": "Topography, aerial photos of today and of 2016 to 2025, AHN, cadastre, BAG, BGT, zoning plans and historical maps."
+    },
+    "measure": {
+      "title": "Measure and export",
+      "desc": "Measure distances on the map and save the map as an image."
+    },
+    "grid": {
+      "title": "Grid of cone tests",
+      "desc": "Lay out a whole grid of cone tests on the drawing in one go."
+    },
+    "edit": {
+      "title": "Drawing tools",
+      "desc": "Lines, areas, dimension lines and RD coordinates, with move, copy, rotate, trim, extend, mirror and offset."
+    },
+    "overlay": {
+      "title": "PDF or image underneath",
+      "desc": "A PDF page, photo or SVG frame as background, cropped and to scale."
+    },
+    "drawexport": {
+      "title": "PDF on A2 or A3",
+      "desc": "With title block, scale bar and north arrow. The desktop app also exports to DWG."
+    },
+    "report": {
+      "title": "PDF report",
+      "desc": "Cover, coordinate table, overview map, a page per cone test, legend and metadata, each on or off."
+    },
+    "gefexport": {
+      "title": "Source-faithful GEF export",
+      "desc": "Writes back the original columns, voids and RD/NAP codes, and stops on doubtful source data."
+    },
+    "project": {
+      "title": "Own project file",
+      "desc": "Keep cone tests, layers and drawing together in an .ifcgeo file. The desktop app also exports CSV and GeoJSON."
+    },
+    "settlement": {
+      "title": "Settlement of one layer",
+      "desc": "Concept worksheet in the desktop app, with units and intermediate steps visible."
+    },
+    "pad": {
+      "title": "Pad foundation (EC7)",
+      "desc": "Concept worksheet for a centrally loaded rectangular pad following EC7 Annex D, in the desktop app."
+    },
+    "mcp": {
+      "title": "MCP and HTTP API",
+      "desc": "An AI assistant or your own script reads cone tests, divides layers and calculates through MCP or a local HTTP API."
+    },
+    "core": {
+      "title": "Node library and SDK",
+      "desc": "The same GEF reader, checks and calculations as a separate Node library, plus a native SDK for your own software."
+    },
+    "themes": {
+      "title": "Five themes",
+      "desc": "Light, dark, Blueprint and two high-contrast themes, in the style of all OpenAEC apps."
+    }
   },
   "download": {
-    "title": "Download",
-    "windows": "Installer (.exe)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxAppimage": "Any distribution (AppImage)"
+    "title": "Download v2026.44.4",
+    "lead": "Free, no account needed. For Windows, macOS and Linux.",
+    "forWindows": "Download for Windows",
+    "forMac": "Download for macOS",
+    "forLinux": "Download for Linux",
+    "metaWindows": ".exe installer",
+    "metaMac": "universal .dmg, Intel and Apple Silicon",
+    "metaLinux": "AppImage, runs on most distributions",
+    "browserBtn": "Open in browser",
+    "fileExe": "Installer (.exe)",
+    "fileDmg": "Universal .dmg",
+    "fileDeb": ".deb",
+    "fileAppImage": "AppImage",
+    "browserNote": "Rather not install anything? The app also <a href=\"https://open-geotechniek-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">runs in the browser</a>.",
+    "label": "Download",
+    "mobileNote": "Open Geotechniek Studio is made for a large screen. Open it on your computer, or try it here in the browser.",
+    "other": "Other platforms"
+  },
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "ctaDemo": "Try it in the browser",
+    "items": {
+      "style": {
+        "title": "Five themes",
+        "desc": "New shell and colours in the OpenAEC style 0.4, with light, dark, Blueprint and high contrast."
+      },
+      "calc": {
+        "title": "Settlement and pad",
+        "desc": "Two concept worksheets in the desktop app: settlement of one layer and a pad foundation following EC7."
+      },
+      "bro": {
+        "title": "BRO search without gaps",
+        "desc": "Large areas are split above the 2,000-object limit, and errors are visible."
+      },
+      "layers": {
+        "title": "Adjust layers yourself",
+        "desc": "Minimum thickness, hysteresis and manual layer boundaries, with a JSON export that records provenance."
+      },
+      "gef": {
+        "title": "Source-faithful GEF",
+        "desc": "The GEF export keeps the original columns and is tested against Bedrock and pygef."
+      },
+      "signed": {
+        "title": "Signed installers",
+        "desc": "The downloads for Windows, macOS and Linux are signed and verified before publication."
+      }
+    },
+    "label": "New in v2026.44",
+    "title": "New look, <span>more reliable BRO</span>",
+    "desc": "Four releases came out this week: the style of all OpenAEC apps, signed installers, first calculations in the desktop app and stricter checks of the source data."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "Cone tests in GEF and BRO-xml, boreholes as BHR-GT or GEF-BORE, groundwater wells (GMW) and your own projects in .ifcgeo. You can also open BRO files straight from the map."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "No. The web version works straight in the browser. For the calculations, DWG export and CSV or GeoJSON there is the desktop app for Windows, macOS and Linux."
+    },
+    "price": {
+      "q": "What does Open Geotechniek Studio cost?",
+      "a": "Nothing. The app is free and open source under the MIT licence, with no account or subscription."
+    },
+    "save": {
+      "q": "In which format is my work saved?",
+      "a": "In an .ifcgeo file, an open JSON format with IFCX content. You can also export a cone test back to GEF."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "Windows, macOS (Intel and Apple Silicon) and Linux (.deb and AppImage), and any modern browser. The installers are signed."
+    },
+    "practice": {
+      "q": "Does it fit Dutch practice?",
+      "a": "Yes. It reads GEF and the BRO formats with their quality regimes, describes boreholes following NEN 5104 and works in RD coordinates and NAP. The layering is indicative and does not replace an assessment by a geotechnical engineer."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "The desktop app and the Node library have an MCP server (Model Context Protocol). With it, an assistant such as Claude can read cone tests, fetch BRO data, divide layers, calculate and create a report. There is also a local HTTP API for your own scripts."
+    },
+    "internet": {
+      "q": "Do I need an internet connection?",
+      "a": "Only for the map and the BRO. Your own files are processed on your computer and not uploaded anywhere."
+    },
+    "ifc": {
+      "q": "Can I export to IFC?",
+      "a": "Not yet. An IFC4x3 export is switched off until it meets the schema. The app does already build an experimental IFCX view of your data."
+    },
+    "heading": "Frequently asked questions"
+  },
+  "tech": {
+    "tauri": {
+      "desc": "A thin native shell in Rust for Windows, macOS and Linux, with small, signed installers."
+    },
+    "react": {
+      "desc": "The same interface in the browser and on the desktop, with charts drawn on canvas."
+    },
+    "core": {
+      "title": "Shared core",
+      "desc": "One GEF reader, check and export for browser, desktop and Node, tested against Bedrock and pygef."
+    },
+    "map": {
+      "desc": "Maps in RD and WGS84 with the open map services of the Dutch Kadaster and PDOK."
+    },
+    "bro": {
+      "desc": "Cone tests, boreholes and groundwater wells straight from the public Dutch subsurface register."
+    },
+    "mcp": {
+      "title": "MCP, HTTP and SDK",
+      "desc": "An MCP server, a local HTTP API, a Node library and a native DLL/.so for integrations."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }

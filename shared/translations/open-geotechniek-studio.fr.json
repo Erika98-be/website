@@ -1,136 +1,283 @@
 {
   "header": {
-    "label": "Écosystème OpenAEC",
     "title": "Open <span class=\"accent\">Geotechniek</span> Studio",
-    "desc": "Outil de bureau open source pour sondages CPT (CPT/GEF), forages (BHR/BRO-xml) et plans de situation.",
-    "badge": "Beta",
-    "gww": "Civil / Géotechnique"
+    "demoBtn": "Ouvrir dans le navigateur",
+    "downloadBtn": "Télécharger",
+    "sourceBtn": "Code source",
+    "proof2": "Néerlandais et anglais",
+    "proof4": "MCP pour assistants IA",
+    "proof5": "Gratuit · MIT",
+    "heroAlt": "Open Geotechniek Studio : essai au pénétromètre avec résistance de pointe, frottement latéral et rapport de frottement, et le découpage en couches à gauche",
+    "label": "Géotechnique",
+    "tagline": "Du sondage BRO au plan de situation et au rapport, dans une seule application gratuite",
+    "desc": "Ouvrez un fichier GEF ou BRO, ou trouvez sur la carte tous les essais autour de votre site. Visualisez qc, fs et Rf avec un découpage indicatif en couches, placez les points sur un plan de situation et produisez un rapport."
   },
-  "what": {
-    "title": "Qu'est-ce qu'Open Geotechniek Studio ?",
-    "desc": "Open Geotechniek Studio est une application de bureau pour visualiser et analyser les données géotechniques du registre national néerlandais du sous-sol (BRO). Ouvrez n'importe quel fichier GEF ou BRO-xml et examinez les données de sondage ou de forage avec classification Robertson SBT automatique, détection de la stratification et découpage en couches.",
-    "list1": "Sondages CPT (format GEF) — résistance au cône, frottement, pression interstitielle",
-    "list2": "Forages (BRO-xml) — types de sol selon NEN5104, régimes qualité BIMRO/IMBRO/A",
-    "list3": "Classification Robertson SBT — détection automatique du type de sol par profondeur",
-    "list4": "Multi-onglets — comparez plusieurs sondages/forages côte à côte",
-    "list5": "Vue cartographique — toutes les mesures localisées (coordonnées RD)",
-    "list6": "Rapports — export PDF pour dossiers de projet"
+  "meta": {
+    "description": "Application gratuite et open source pour les essais au pénétromètre (GEF, BRO-xml) et les sondages : graphiques et découpage en couches, données BRO sur la carte, plans de situation et rapports PDF. Pour Windows, macOS, Linux et le navigateur.",
+    "title": "Open Geotechniek Studio — OpenAEC Foundation"
   },
-  "why": {
-    "title": "Pourquoi Open <span class=\"accent\">Geotechniek</span> Studio ?",
-    "desc1": "Les logiciels géotechniques sur le marché néerlandais sont souvent coûteux et fragmentés : différents outils pour sondages, forages, calculs de pieux et rapports. Open Geotechniek Studio rassemble tout — gratuit, open source et entièrement conforme aux standards néerlandais (BRO, NEN5104, IMBRO/A).",
-    "desc2": "Pour tout le secteur du génie civil et de l'infrastructure : des ingénieurs en fondations aux entreprises de pose de réseaux, des ingénieurs structure aux projets de wateringues. Lisez les données BRO directement, exportez vers IFCX pour l'intégration BIM et partagez des rapports professionnels sans frais de licence."
-  },
-  "standards": {
-    "title": "Normes prises en charge",
-    "desc": "Open Geotechniek Studio lit et interprète les formats géotechniques officiels néerlandais :",
-    "list1": "<strong>GEF</strong> Geotechnical Exchange Format pour les essais CPT",
-    "list2": "<strong>BRO-xml (BHR-GT)</strong> Registre néerlandais du sous-sol, sondages géotechniques",
-    "list3": "<strong>NEN 5104</strong> Description géotechnique des échantillons de sol",
-    "list4": "<strong>IMBRO / IMBRO-A</strong> Modèle d'information BRO (régimes de qualité)",
-    "list5": "<strong>Robertson SBT</strong> Classification Soil Behaviour Type",
-    "list6": "<strong>Coordonnées RD</strong> Système de triangulation néerlandais pour les localisations",
-    "list7": "<strong>NAP</strong> Niveau de référence d'Amsterdam pour le terrain naturel et les profondeurs"
-  },
-  "features": {
-    "title": "Fonctionnalités",
+  "hl": {
     "cpt": {
-      "title": "Visualisation CPT",
-      "desc": "Résistance au cône (qc), frottement latéral (fs), rapport de frottement (Rf) et éventuellement pression interstitielle (u2) par profondeur, avec curseur en croix et superposition de valeurs."
-    },
-    "bhr": {
-      "title": "Forages BHR",
-      "desc": "Visualisation des forages avec couches de sol, mélanges, structure, teneur en humus et couleur — directement depuis BRO-xml."
-    },
-    "sbt": {
-      "title": "Robertson SBT",
-      "desc": "Classification automatique du type de comportement du sol selon Robertson (1990) — du fin sensible au sable/argile très raide."
-    },
-    "layers": {
-      "title": "Stratification des sols",
-      "desc": "Détection automatique des couches de sol par profondeur (haut, bas, zone). Ajustez vous-même la stratification selon les mesures."
+      "alt": "Essai avec la composition du sol par couche à gauche et l'analyse normalisée Qt/Fr/Bq/Ic à droite",
+      "kicker": "Essais",
+      "title": "Lisez un essai d'un seul coup d'œil",
+      "desc": "Résistance de pointe, frottement latéral et rapport de frottement côte à côte sur un même axe de profondeur en NAP. L'application découpe l'essai en couches indicatives ; vous ajustez vous-même les limites et voyez une analyse normalisée Qt/Fr/Bq/Ic par point."
     },
     "map": {
-      "title": "Vue cartographique avec intégration BRO",
-      "desc": "Carte interactive avec intégration BRO directe : recherchez par adresse et tous les sondages et forages disponibles autour du lieu se chargent automatiquement. Cliquez pour voir les détails, ouvrez dans le visualiseur ou ajoutez au projet."
+      "alt": "Carte avec photo aérienne, limites cadastrales et les essais BRO de la zone en triangles rouges",
+      "kicker": "Carte et BRO",
+      "title": "Toutes les données BRO autour de votre site",
+      "desc": "Recherchez par adresse ou coordonnée RD et chargez les essais, sondages et puits de la base néerlandaise du sous-sol (BRO) dans la zone visible. Ajoutez en fond des photos aériennes depuis 2016, la carte d'altitude AHN, les limites cadastrales ou les bâtiments BAG."
     },
-    "mapLayers": {
-      "title": "Couches cartographiques Kadaster",
-      "desc": "Topographie (BRT), photos aériennes actuelles et historiques (2016-2025), adresses et rues, carte d'élévation AHN, limites cadastrales, bâtiments BAG et topographie BGT — tout directement depuis Kadaster PDOK."
-    },
-    "multitab": {
-      "title": "Multi-onglets",
-      "desc": "Ouvrez plusieurs CPT et forages dans des onglets. Comparez profondeurs, couches et propriétés côte à côte."
+    "drawing": {
+      "alt": "Plan de situation A3 au 1:500 avec les essais sur la carte et le cartouche OpenAEC",
+      "kicker": "Plan de situation",
+      "title": "Un plan de situation sans logiciel de CAO",
+      "desc": "Placez des essais, des sondages ou toute une grille d'essais sur la carte, avec cotes, coordonnées RD et remarques. Ajoutez un PDF ou une image en fond et exportez en PDF au format A2 ou A3, avec un cartouche rempli."
     },
     "report": {
-      "title": "Rapports PDF",
-      "desc": "Générez des rapports de sondage professionnels avec sections sélectionnables : page de garde, tableau de coordonnées, carte d'aperçu, pages par sondage, légende Robertson SBT et récapitulatif de métadonnées. Adapté aux dossiers de projet, demandes de permis ou livrables client."
-    },
-    "situatie": {
-      "title": "Plan de situation",
-      "desc": "Fonctionnalité de dessin complète pour plans de situation : placement de sondages et forages, génération de grilles de sondage, coordonnées RD, cotations, opérations trim/extend/mirror/offset. Importez image/PDF ou cadres SVG en référence. Export en PDF A3 professionnel avec cartouche OpenAEC."
-    },
-    "ifc": {
-      "title": "Export IFC / IFCX",
-      "desc": "Exportez les données géotechniques en tant qu'éléments IFC ou dans l'espace de noms IFCX pour une intégration transparente avec les modèles BIM et Open Frame Studio."
-    },
-    "metadata": {
-      "title": "Métadonnées",
-      "desc": "Données complètes de forage et de sondage : registrar, régime qualité, méthode de forage, livraison, date de description, codage NEN5104plus."
-    },
-    "rawxml": {
-      "title": "Données brutes (XML)",
-      "desc": "Inspectez la source BRO-xml ou GEF sous-jacente directement depuis l'application pour vérification et débogage."
-    },
-    "local": {
-      "title": "100 % local",
-      "desc": "Toutes les données restent sur votre propre machine. Pas de cloud, pas d'upload vers des tiers — vie privée et RGPD garantis."
-    },
-    "showAll": "Afficher toutes les fonctions",
-    "showLess": "Afficher moins"
-  },
-  "quotes": {
-    "title": "Unique : demande automatique de devis aux entreprises de sondage",
-    "desc": "Dessinez une grille de sondage sur votre plan de situation et cliquez sur <strong>Demander des devis</strong>. Open Geotechniek Studio recherche toutes les entreprises néerlandaises de sondage dans notre catalogue public et envoie une demande de devis aux trois entreprises les plus proches, avec détails du projet et spécifications de sondage.",
-    "list2": "Triées par <strong>distance au projet</strong>",
-    "list3": "Pré-sélection des 3 plus proches — ajustable avant envoi",
-    "list4": "Intégration Outlook avec infos projet, lieu et spécifications pré-remplis",
-    "list6": "Catalogue open source : les entreprises peuvent s'ajouter via une pull request GitHub",
-    "list1": "<strong>43 entreprises de sondage néerlandaises</strong> au catalogue (et le nombre augmente)",
-    "list5": "<strong>Pas d'intermédiaires</strong>, pas de commissions — contact direct entre le maître d'ouvrage et l'entreprise de sondage"
-  },
-  "useCases": {
-    "title": "Profils d'utilisateurs",
-    "geotech": {
-      "title": "Bureaux d'études géotechniques",
-      "desc": "Consultez rapidement les données BRO pour des conseils sur pieux, fondations et tassements. Comparez plusieurs sondages pour interprétation de projet."
-    },
-    "civil": {
-      "title": "Ingénieurs civils",
-      "desc": "Justifiez vos choix de fondation pour ponts, viaducs, tunnels et ouvrages d'art sur la base de graphiques CPT."
-    },
-    "gww": {
-      "title": "Entreprises d'infrastructure civile",
-      "desc": "Évaluez profondeur d'excavation, amélioration de sol et drainage avant le démarrage d'un projet d'infrastructure."
-    },
-    "bim": {
-      "title": "Coordinateurs BIM",
-      "desc": "Intégrez les données géotechniques aux modèles BIM via IFCX. Une seule source de vérité pour le dessus et le dessous du sol."
+      "alt": "Aperçu du rapport avec un graphique d'essai à l'échelle, et à gauche les sections à cocher ou décocher",
+      "kicker": "Rapport",
+      "title": "Un rapport pour le dossier du projet",
+      "desc": "Choisissez le contenu : page de garde, tableau des coordonnées, carte d'ensemble, une page par essai, la légende et les métadonnées. Réglez l'échelle des graphiques, par exemple 1:50 sur plusieurs feuilles."
     }
   },
-  "tech": {
-    "title": "Technologie",
-    "desc": "Un noyau de calcul Rust pour le parsing rapide de GEF et BRO-xml, un frontend TypeScript pour l'interface, et Tauri 2 pour la distribution multiplateforme (Windows, macOS, Linux). La même stack que tout l'écosystème OpenAEC pour une intégration transparente."
+  "subnav": {
+    "label": "Sur cette page",
+    "features": "Fonctions",
+    "download": "Télécharger",
+    "whatsnew": "Nouveautés",
+    "faq": "FAQ",
+    "releases": "Versions"
   },
-  "cta": {
-    "liveDemo": "Ouvrir la démo en ligne",
-    "download": "Télécharger l'installateur",
-    "github": "GitHub"
+  "tabs": {
+    "highlights": "Points forts",
+    "cpt": "Essais et sondages",
+    "map": "Carte et BRO",
+    "drawing": "Plan de situation",
+    "report": "Rapport et export",
+    "connect": "Calculs et intégrations",
+    "all": "Toutes les fonctions"
+  },
+  "features": {
+    "learnMore": "En savoir plus",
+    "label": "Fonctions",
+    "heading": "Tout pour les essais et les sondages, dans une seule application",
+    "sub": "Commencez par les points forts ou choisissez un thème.",
+    "tabsLabel": "Fonctions par thème"
+  },
+  "f": {
+    "gef": {
+      "title": "Ouvrir GEF et BRO-xml",
+      "desc": "Essais en GEF ou BRO-xml, sondages (BHR-GT, GEF-BORE) et puits (GMW). Aussi plusieurs essais dans un même fichier."
+    },
+    "chart": {
+      "title": "qc, fs et Rf par profondeur",
+      "desc": "Graphiques sur un même axe de profondeur en NAP, avec les valeurs sous la souris et la pression interstitielle (u2) si mesurée."
+    },
+    "layers": {
+      "title": "Découpage indicatif en couches",
+      "desc": "Découpage automatique sur qc et Rf, avec épaisseur minimale et hystérésis. Ajustez les limites et exportez les couches en JSON avec leur provenance."
+    },
+    "normalized": {
+      "title": "Analyse normalisée",
+      "desc": "Qt, Fr, Bq et Ic par point de mesure, avec les contraintes que vous saisissez."
+    },
+    "bore": {
+      "title": "Sondages et eaux souterraines",
+      "desc": "Descriptions de sondages avec couches, couleur et mélanges, et puits avec leurs séries temporelles."
+    },
+    "validation": {
+      "title": "Contrôle des données",
+      "desc": "Messages sur les colonnes, unités, valeurs manquantes et profondeur, avec la ligne du fichier source. Exportez le contrôle en JSON ou CSV."
+    },
+    "tabs": {
+      "title": "Plusieurs essais côte à côte",
+      "desc": "Chaque fichier dans son onglet, ou un projet avec plusieurs essais sur un même axe de profondeur."
+    },
+    "search": {
+      "title": "Recherche par adresse",
+      "desc": "Via le PDOK Locatieserver par adresse, lieu ou coordonnée RD."
+    },
+    "bro": {
+      "title": "Charger les données BRO",
+      "desc": "Essais, sondages et puits dans la zone visible, même au-delà de la limite de 2 000 objets."
+    },
+    "pdok": {
+      "title": "Couches cartographiques PDOK",
+      "desc": "Topographie, photos aériennes actuelles et de 2016 à 2025, AHN, cadastre, BAG, BGT, plans d'urbanisme et cartes historiques."
+    },
+    "measure": {
+      "title": "Mesurer et exporter",
+      "desc": "Mesurez des distances sur la carte et enregistrez-la en image."
+    },
+    "grid": {
+      "title": "Grille d'essais",
+      "desc": "Disposez d'un coup toute une grille d'essais sur le plan."
+    },
+    "edit": {
+      "title": "Outils de dessin",
+      "desc": "Lignes, surfaces, cotes et coordonnées RD, avec déplacer, copier, pivoter, ajuster, prolonger, miroir et décaler."
+    },
+    "overlay": {
+      "title": "PDF ou image en fond",
+      "desc": "Une page PDF, une photo ou un cadre SVG en fond, recadré et à l'échelle."
+    },
+    "drawexport": {
+      "title": "PDF en A2 ou A3",
+      "desc": "Avec cartouche, échelle graphique et flèche du nord. L'application de bureau exporte aussi en DWG."
+    },
+    "report": {
+      "title": "Rapport PDF",
+      "desc": "Page de garde, tableau des coordonnées, carte d'ensemble, une page par essai, légende et métadonnées, chacun activable."
+    },
+    "gefexport": {
+      "title": "Export GEF fidèle à la source",
+      "desc": "Réécrit les colonnes d'origine, les valeurs manquantes et les codes RD/NAP, et s'arrête en cas de données douteuses."
+    },
+    "project": {
+      "title": "Fichier de projet propre",
+      "desc": "Conservez essais, couches et plan ensemble dans un fichier .ifcgeo. L'application de bureau exporte aussi en CSV et GeoJSON."
+    },
+    "settlement": {
+      "title": "Tassement d'une couche",
+      "desc": "Feuille de calcul conceptuelle dans l'application de bureau, avec unités et étapes visibles."
+    },
+    "pad": {
+      "title": "Semelle superficielle (EC7)",
+      "desc": "Feuille conceptuelle pour une semelle rectangulaire chargée au centre selon l'EC7 annexe D, dans l'application de bureau."
+    },
+    "mcp": {
+      "title": "MCP et API HTTP",
+      "desc": "Un assistant IA ou votre script lit les essais, découpe les couches et calcule via MCP ou une API HTTP locale."
+    },
+    "core": {
+      "title": "Bibliothèque Node et SDK",
+      "desc": "Le même lecteur GEF, contrôles et calculs en bibliothèque Node séparée, plus un SDK natif pour vos logiciels."
+    },
+    "themes": {
+      "title": "Cinq thèmes",
+      "desc": "Clair, sombre, Blueprint et deux à contraste élevé, dans le style de toutes les applications OpenAEC."
+    }
   },
   "download": {
-    "title": "Télécharger",
-    "windows": "Installateur (.exe)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxAppimage": "Toute distribution (AppImage)"
+    "title": "Télécharger v2026.44.4",
+    "lead": "Gratuit, sans compte. Pour Windows, macOS et Linux.",
+    "forWindows": "Télécharger pour Windows",
+    "forMac": "Télécharger pour macOS",
+    "forLinux": "Télécharger pour Linux",
+    "metaWindows": "programme d'installation .exe",
+    "metaMac": ".dmg universel, Intel et Apple Silicon",
+    "metaLinux": "AppImage, fonctionne sur la plupart des distributions",
+    "browserBtn": "Ouvrir dans le navigateur",
+    "fileExe": "Programme d'installation (.exe)",
+    "fileDmg": ".dmg universel",
+    "fileDeb": ".deb",
+    "fileAppImage": "AppImage",
+    "browserNote": "Vous préférez ne rien installer ? L'application <a href=\"https://open-geotechniek-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">fonctionne aussi dans le navigateur</a>.",
+    "label": "Télécharger",
+    "mobileNote": "Open Geotechniek Studio est conçu pour un grand écran. Ouvrez-le sur votre ordinateur, ou essayez-le ici dans le navigateur.",
+    "other": "Autres plateformes"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Toutes les notes de version",
+    "ctaDemo": "Essayer dans le navigateur",
+    "items": {
+      "style": {
+        "title": "Cinq thèmes",
+        "desc": "Nouvelle interface et couleurs selon le style OpenAEC 0.4, avec clair, sombre, Blueprint et contraste élevé."
+      },
+      "calc": {
+        "title": "Tassement et semelle",
+        "desc": "Deux feuilles conceptuelles dans l'application de bureau : tassement d'une couche et semelle selon l'EC7."
+      },
+      "bro": {
+        "title": "Recherche BRO sans trous",
+        "desc": "Les grandes zones sont découpées au-delà de 2 000 objets, et les erreurs sont visibles."
+      },
+      "layers": {
+        "title": "Ajuster soi-même les couches",
+        "desc": "Épaisseur minimale, hystérésis et limites manuelles, avec un export JSON qui garde la provenance."
+      },
+      "gef": {
+        "title": "GEF fidèle à la source",
+        "desc": "L'export GEF conserve les colonnes d'origine et est vérifié avec Bedrock et pygef."
+      },
+      "signed": {
+        "title": "Installateurs signés",
+        "desc": "Les téléchargements pour Windows, macOS et Linux sont signés et vérifiés avant publication."
+      }
+    },
+    "label": "Nouveau dans la v2026.44",
+    "title": "Nouveau style, <span>BRO plus fiable</span>",
+    "desc": "Quatre versions sont sorties cette semaine : le style de toutes les applications OpenAEC, des installateurs signés, les premiers calculs dans l'application de bureau et un contrôle plus strict des données sources."
+  },
+  "faq": {
+    "files": {
+      "q": "Quels fichiers puis-je ouvrir ?",
+      "a": "Les essais en GEF et BRO-xml, les sondages en BHR-GT ou GEF-BORE, les puits (GMW) et vos projets en .ifcgeo. Vous pouvez aussi ouvrir les fichiers BRO directement depuis la carte."
+    },
+    "install": {
+      "q": "Dois-je installer quelque chose ?",
+      "a": "Non. La version web fonctionne directement dans le navigateur. Pour les calculs, l'export DWG et le CSV ou GeoJSON, il y a l'application de bureau pour Windows, macOS et Linux."
+    },
+    "price": {
+      "q": "Combien coûte Open Geotechniek Studio ?",
+      "a": "Rien. L'application est gratuite et open source sous licence MIT, sans compte ni abonnement."
+    },
+    "save": {
+      "q": "Dans quel format mon travail est-il enregistré ?",
+      "a": "Dans un fichier .ifcgeo, un format JSON ouvert avec un contenu IFCX. Vous pouvez aussi réexporter un essai en GEF."
+    },
+    "systems": {
+      "q": "Sur quels systèmes fonctionne-t-il ?",
+      "a": "Windows, macOS (Intel et Apple Silicon) et Linux (.deb et AppImage), ainsi que tout navigateur moderne. Les installateurs sont signés."
+    },
+    "practice": {
+      "q": "Est-ce adapté à la pratique néerlandaise ?",
+      "a": "Oui. Il lit le GEF et les formats BRO avec leurs régimes de qualité, décrit les sondages selon la NEN 5104 et travaille en coordonnées RD et en NAP. Le découpage est indicatif et ne remplace pas l'avis d'un géotechnicien."
+    },
+    "ai": {
+      "q": "Que peut en faire un assistant IA ?",
+      "a": "L'application de bureau et la bibliothèque Node ont un serveur MCP (Model Context Protocol). Un assistant comme Claude peut ainsi lire des essais, récupérer des données BRO, découper des couches, calculer et produire un rapport. Il existe aussi une API HTTP locale pour vos scripts."
+    },
+    "internet": {
+      "q": "Ai-je besoin d'internet ?",
+      "a": "Seulement pour la carte et la BRO. Vos fichiers sont traités sur votre ordinateur et ne sont envoyés nulle part."
+    },
+    "ifc": {
+      "q": "Puis-je exporter en IFC ?",
+      "a": "Pas encore. L'export IFC4x3 est désactivé tant qu'il ne respecte pas le schéma. L'application produit déjà une vue IFCX expérimentale de vos données."
+    },
+    "heading": "Questions fréquentes"
+  },
+  "tech": {
+    "tauri": {
+      "desc": "Une fine couche native en Rust pour Windows, macOS et Linux, avec de petits installateurs signés."
+    },
+    "react": {
+      "desc": "La même interface dans le navigateur et sur le bureau, avec des graphiques sur canvas."
+    },
+    "core": {
+      "title": "Noyau partagé",
+      "desc": "Un seul lecteur GEF, contrôle et export pour navigateur, bureau et Node, vérifiés avec Bedrock et pygef."
+    },
+    "map": {
+      "desc": "Cartes en RD et WGS84 avec les services cartographiques ouverts du Kadaster et de PDOK."
+    },
+    "bro": {
+      "desc": "Essais, sondages et puits directement depuis la base publique néerlandaise du sous-sol."
+    },
+    "mcp": {
+      "title": "MCP, HTTP et SDK",
+      "desc": "Un serveur MCP, une API HTTP locale, une bibliothèque Node et une DLL/.so native pour les intégrations."
+    },
+    "heading": "Technologie",
+    "sub": "Pour ceux qui veulent savoir comment c'est construit."
+  },
+  "releases": {
+    "showAll": "Afficher toutes les versions",
+    "showLess": "Afficher seulement les trois dernières",
+    "github": "Toutes les versions sur GitHub"
   }
 }
