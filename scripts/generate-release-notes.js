@@ -29,13 +29,16 @@ const TOOL_REPOS = [
   'open-paint-studio',
   'open-geotechniek-studio',
   'pile-plan-studio',
-  'Open-Infra',
+  'Open-Infra-Studio',
   'open-bim-studio',
   'monty-ifc-viewer',
   'OpenAEC-BIM-validator',
   'openaec-bcf-platform',
   'openaec-docs',
   'openaec-cloud',
+  'openaec-cloud-desktop',
+  'open-3d-viewer',
+  'ext-drawing-statistics',
   'Y-app',
 ];
 
