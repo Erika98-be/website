@@ -1,93 +1,269 @@
 {
   "header": {
-    "label": "Ecosistema OpenAEC",
     "title": "Open <span class=\"accent\">BIM</span> Studio",
-    "desc": "Un modelador BIM con un alcance deliberadamente amplio. Por un lado, tan directo como bocetar: empujar, tirar, probar algo y descartarlo. Por otro, realmente técnico: sistemas constructivos, armado, uniones y planos del mismo modelo. Todo sobre IFCX.",
-    "badge": "En desarrollo",
-    "built": "Hecho en DynLex",
-    "note": "Un vistazo a lo que estamos construyendo. Hay una versión preliminar para probadores, pero todavía no se puede modelar un proyecto con ella."
+    "downloadBtn": "Descargar",
+    "featuresBtn": "Ver las funciones",
+    "sourceBtn": "Código fuente",
+    "proof2": "Versión preliminar para Linux",
+    "proof3": "Nativo sobre Vulkan",
+    "proof4": "Gratis · MPL-2.0",
+    "heroAlt": "Open BIM Studio: vista 3D de un pabellón de hormigón con una caja de sección que recorta la cubierta y muestra pilares, muros y forjado",
+    "label": "Modelado BIM",
+    "tagline": "Del primer esbozo a las armaduras y los planos, en un solo modelo BIM abierto",
+    "desc": "Coloca niveles, ejes, muros y forjados, y desarrolla el mismo modelo con armaduras, uniones, secciones y planos. Todo queda en IFCX, el formato abierto de OpenAEC."
   },
-  "cta": {
-    "status": "Próximamente",
-    "follow": "Sigue el desarrollo",
-    "ifcx": "Sobre IFCX"
+  "meta": {
+    "description": "Modelador BIM gratuito y de código abierto en desarrollo: muros, forjados y ejes, armaduras, uniones, plantas, secciones y planos desde un solo modelo, guardado en IFCX. Versión preliminar para Linux.",
+    "title": "Open BIM Studio — OpenAEC Foundation"
   },
-  "slides": {
-    "one": "Open BIM Studio con el plano de cimentación de un pabellón: zapatas de 1800 por 1800 mm y vigas de atado de 300 por 400 mm con su armado, junto al armado en 3D, una sección y las propiedades del armado"
-  },
-  "what": {
-    "title": "¿Qué será Open BIM Studio?",
-    "desc": "Open BIM Studio es un modelador BIM de código abierto de la OpenAEC Foundation. Creas y editas un modelo de edificio, lo revisas en 2D y 3D, y desarrollas planos, detalles de armado y tablas a partir del mismo modelo. La interfaz es nativa, sobre Vulkan, y el núcleo CAD está escrito en DynLex, nuestro propio lenguaje de programación.",
-    "list1": "Modelado directo con pinzamientos, referencias, Push/Pull y división de caras",
-    "list2": "Sistemas constructivos paramétricos, sistemas de carpintería, escaleras y barandillas",
-    "list3": "Armado: barras, jaulas, estribos y mallas, con marcas de posición y tablas",
-    "list4": "Uniones con placas, pernos y tornillos",
-    "list5": "Plantas, secciones y planos del modelo, en PDF o SVG",
-    "list6": "IFCX como formato de proyecto, con importación y exportación IFC"
-  },
-  "why": {
-    "title": "¿Por qué <span class=\"accent\">Open BIM</span> Studio?",
-    "desc1": "El software BIM suele obligarte a elegir: una herramienta de boceto rápida para probar formas libremente, o un paquete pesado que lo sabe todo de construcción pero se siente lento. Open BIM Studio quiere ser ambas cosas en una sola aplicación: empiezas empujando y tirando de un volumen y desarrollas el mismo modelo hasta el armado y las uniones.",
-    "desc2": "Todo vive en IFCX, el formato de datos abierto del ecosistema OpenAEC. Lo que modelas es legible de inmediato por las demás herramientas — y por cualquiera que abra el archivo."
-  },
-  "features": {
-    "title": "Lo que ya incluye",
-    "showAll": "Mostrar todas las funciones",
-    "showLess": "Mostrar menos",
+  "hl": {
     "model": {
-      "title": "Modelo del edificio",
-      "desc": "Niveles, ejes, muros multicapa, forjados, cubiertas, falsos techos, huecos, vigas, pilares, pilotes y espacios."
-    },
-    "direct": {
-      "title": "Modelado directo",
-      "desc": "Selección, pinzamientos, propiedades numéricas, referencias y transformaciones. Edición de contornos con Tab, Push/Pull y división de caras."
-    },
-    "systems": {
-      "title": "Sistemas paramétricos",
-      "desc": "Tipos de sistemas constructivos con bastidores y paneles, sistemas de carpintería alojados, escaleras, barandillas y bibliotecas de componentes."
+      "alt": "Planta estructural de un edificio de ejemplo con ejes, muros compuestos y la cinta con herramientas para muros, forjados, cubiertas y pilares",
+      "kicker": "Modelado",
+      "title": "Levanta un edificio como si lo bocetaras",
+      "desc": "Niveles, ejes, muros compuestos, forjados, cubiertas, pilares, vigas y pilotes están en una sola cinta. Toma un pinzamiento, ajústate a la retícula y empuja o tira de una cara hasta la medida justa."
     },
     "rebar": {
-      "title": "Armado",
-      "desc": "Barras, jaulas, estribos, armado superficial y mallas paramétricos, con etiquetas de posición, tablas y notación neerlandesa o internacional."
+      "alt": "Planta de un pabellón de hormigón con mallas, jaulas de armadura y etiquetas de posición, y la cinta Armaduras con barra, barra en L, barra en U, jaula, malla y área",
+      "kicker": "Armaduras",
+      "title": "Armaduras que siguen al hormigón",
+      "desc": "Coloca barras, jaulas de estribos, mallas y armadura de superficie de forma paramétrica en vigas, pilares y forjados. Las etiquetas de posición con diámetro y separación aparecen en el plano en notación neerlandesa o internacional."
     },
-    "connections": {
-      "title": "Uniones",
-      "desc": "Nudos de unión modulares, huecos en los elementos y piezas añadidas como placas, pernos y tornillos."
+    "view3d": {
+      "alt": "Vista 3D alámbrica del pabellón dentro de una caja de sección, con la armadura visible en forjado, pilares, muros y zapatas",
+      "kicker": "3D y caja de sección",
+      "title": "Mira a través del modelo",
+      "desc": "Abre el modelo con una caja de sección y gira a su alrededor con el cubo de vista. La vista alámbrica muestra la armadura de forjados, pilares y zapatas; sombras, color y líneas ocultas se activan con un clic."
     },
-    "drawings": {
-      "title": "Planos del modelo",
-      "desc": "Plantas, secciones, vistas 3D, cajas de sección, cotas, etiquetas, normas de dibujo y planos, con salida en PDF o SVG."
-    },
-    "exchange": {
-      "title": "Intercambio",
-      "desc": "Importación y exportación IFC, IFCX e IFCX binario como archivo de proyecto, y DXF como geometría de referencia."
-    },
-    "automation": {
-      "title": "Automatización",
-      "desc": "Una API local y un adaptador MCP, para que scripts y asistentes de IA puedan realizar operaciones en el editor."
+    "sheets": {
+      "alt": "Plano A-201 en A2 con dos secciones del pabellón a 1:50, cotas de nivel, leyenda y cajetín, junto al navegador del proyecto",
+      "kicker": "Planos",
+      "title": "Planos que se mueven con el modelo",
+      "desc": "Plantas, secciones y alzados salen directamente del modelo, con cotas, etiquetas y estándares de dibujo. Colócalos en un plano con cajetín y exporta a PDF o SVG."
     }
   },
-  "dynlex": {
-    "title": "Hecho en DynLex",
-    "desc1": "DynLex es el lenguaje de programación que desarrollamos nosotros mismos. Su sintaxis se lee casi como inglés y se compila a código nativo mediante LLVM, de modo que el modelador accede directamente a la GPU y la CPU, sin ningún entorno de ejecución de por medio.",
-    "desc2": "El lenguaje es deliberadamente pequeño, y precisamente por eso el desarrollo va tan rápido — para las personas y, al parecer, aún más para la IA.",
-    "link": "DynLex en GitHub"
+  "notice": {
+    "link": "Informa de lo que encuentres",
+    "text": "Versión preliminar de desarrollo para Linux: aún no está lista para proyectos reales. Trabaja con copias de tus archivos. Buscamos testers."
   },
-  "status": {
-    "badge": "Próximamente",
-    "title": "Todavía no está listo para proyectos",
-    "report": "Informar de algo",
-    "desc": "Open BIM Studio es una versión preliminar de desarrollo. Hay una versión para Linux lista para quien quiera ayudar a probar; todavía no existe una versión probada para Windows. Sigue el desarrollo en GitHub e informa de lo que encuentres."
+  "subnav": {
+    "label": "En esta página",
+    "features": "Funciones",
+    "download": "Descargar",
+    "whatsnew": "Novedades",
+    "faq": "Preguntas",
+    "releases": "Versiones"
   },
-  "limits": {
-    "title": "En qué seguimos trabajando",
-    "areas": "Las funciones anteriores son áreas ya desarrolladas, no la promesa de que cada combinación esté completa y validada.",
-    "windows": "La versión para Windows está en el repositorio, pero aún no hay un instalador probado; la versión preliminar funciona en Linux con Vulkan.",
-    "performance": "El rendimiento con modelos grandes y una prueba completa de la interfaz siguen en curso.",
-    "ifc": "La compatibilidad con IFC e IFCX sigue creciendo y no es una certificación. No todos los objetos importados pasan a ser totalmente paramétricos y editables; conserva tus archivos de origen."
+  "tabs": {
+    "highlights": "Destacados",
+    "model": "Modelado",
+    "rebar": "Armaduras y uniones",
+    "drawings": "Planos y mediciones",
+    "exchange": "Intercambio y automatización",
+    "all": "Todas las funciones"
+  },
+  "features": {
+    "learnMore": "Leer más",
+    "label": "Funciones",
+    "heading": "Modelar, armar y dibujar en un solo modelo",
+    "sub": "Empieza por lo más destacado o elige un tema.",
+    "tabsLabel": "Funciones por tema"
+  },
+  "f": {
+    "levels": {
+      "title": "Niveles y ejes",
+      "desc": "Trabaja por nivel con RePág y AvPág, y repite ejes con un patrón como 5000 3x5400."
+    },
+    "walls": {
+      "title": "Muros, forjados y cubiertas",
+      "desc": "Muros compuestos por capas, forjados, cubiertas, techos, rodapiés y espacios."
+    },
+    "structure": {
+      "title": "Pilares, vigas y pilotes",
+      "desc": "Elementos estructurales de hormigón o acero, con una biblioteca de perfiles europeos."
+    },
+    "openings": {
+      "title": "Ventanas, puertas y sistemas de carpintería",
+      "desc": "Huecos, puertas neerlandesas y tipos propios, y carpinterías alojadas en el muro."
+    },
+    "direct": {
+      "title": "Empujar, tirar y ajustar",
+      "desc": "Pinzamientos, entrada numérica, referencias a extremos, puntos medios e intersecciones, Push/Pull y división de caras."
+    },
+    "systems": {
+      "title": "Sistemas constructivos paramétricos",
+      "desc": "Tipos de sistema con bastidores y paneles, escaleras, barandillas y bibliotecas de componentes."
+    },
+    "bars": {
+      "title": "Barras, jaulas y mallas",
+      "desc": "Barras rectas, en L y en U, jaulas de estribos, mallas y armadura de superficie, paramétricas en el elemento."
+    },
+    "notation": {
+      "title": "Posiciones y notación",
+      "desc": "Etiquetas de posición con cantidad, diámetro y separación, en notación neerlandesa o internacional."
+    },
+    "rebarview": {
+      "title": "Vista ligera en 3D",
+      "desc": "Armadura como ejes para una vista fluida; activa el diámetro real cuando lo necesites."
+    },
+    "connections": {
+      "title": "Uniones de acero",
+      "desc": "Nudos paramétricos con chapas, tornillos, soldaduras y cortes de perfiles, como tipos reutilizables."
+    },
+    "plans": {
+      "title": "Plantas y secciones",
+      "desc": "Vistas con su propia escala, altura de corte, sombreado y tipo de dibujo, directamente del modelo."
+    },
+    "sheets": {
+      "title": "Planos a PDF y SVG",
+      "desc": "Coloca vistas en un plano con formato, cajetín y leyenda, y expórtalo como PDF o SVG."
+    },
+    "schedules": {
+      "title": "Tablas y cantidades",
+      "desc": "Tablas de muros, carpinterías, forjados, espacios y armaduras, con longitud, área y volumen, exportables a CSV."
+    },
+    "sectionbox": {
+      "title": "3D con caja de sección",
+      "desc": "Sombreado, líneas ocultas o alámbrico, con sombras, cubo de vista y una caja de sección que mueves con pinzamientos."
+    },
+    "ifcx": {
+      "title": "IFCX como archivo de proyecto",
+      "desc": "Tu trabajo se guarda en IFCX binario compacto (.ifcxb) o IFCX JSON, legible por las demás aplicaciones de OpenAEC."
+    },
+    "ifc": {
+      "title": "IFC de entrada y salida",
+      "desc": "Importa y exporta IFC; los elementos compatibles pasan a ser editables y el resto queda como referencia."
+    },
+    "dxf": {
+      "title": "DXF como base",
+      "desc": "Carga un dibujo DXF como geometría de referencia para modelar encima."
+    },
+    "mcp": {
+      "title": "Asistente de IA vía MCP",
+      "desc": "Una API local y un adaptador MCP permiten a scripts y asistentes de IA crear muros, forjados y ejes y cambiar propiedades."
+    },
+    "explorer": {
+      "title": "Explorador del modelo",
+      "desc": "Niveles, ejes, tipos y vistas en un árbol, con las propiedades al lado."
+    },
+    "undo": {
+      "title": "Deshacer y rehacer",
+      "desc": "Cada edición es un paso que puedes deshacer o rehacer."
+    }
+  },
+  "download": {
+    "title": "Descargar v0.1.1",
+    "lead": "Gratis y sin cuenta. Versión preliminar para Linux x86-64 con Vulkan; todavía no hay una versión para Windows probada.",
+    "forLinux": "Descargar para Linux",
+    "metaLinux": "instalador .run para Linux x86-64, por usuario",
+    "fileAppImage": "Instalador (.run)",
+    "label": "Descargar",
+    "mobileNote": "Open BIM Studio es una aplicación de escritorio. Descárgala en tu ordenador.",
+    "other": "Otras plataformas"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Todas las notas de versión",
+    "ctaDownload": "Descargar",
+    "items": {
+      "sectionbox": {
+        "title": "Caja de sección",
+        "desc": "Abre el modelo 3D con pinzamientos y mira dentro."
+      },
+      "rebar": {
+        "title": "Armaduras en el modelo",
+        "desc": "Jaulas, barras y mallas ya forman parte de la aplicación, con una vista ligera de ejes."
+      },
+      "sketch": {
+        "title": "Edición de bocetos",
+        "desc": "Edita líneas y caras de boceto antes de que se conviertan en elementos."
+      },
+      "props": {
+        "title": "Vistas y propiedades",
+        "desc": "Escala, altura de corte, sombreado y tipo de dibujo por vista en el panel de propiedades."
+      },
+      "exchange": {
+        "title": "IFC y DXF",
+        "desc": "Importación y exportación mejoradas de IFC y bases DXF."
+      },
+      "installer": {
+        "title": "Instalador con entrada de menú",
+        "desc": "Un solo archivo instala por usuario, sin permisos de administrador, y sustituye la versión anterior."
+      }
+    },
+    "label": "Novedades de la v0.1.1",
+    "title": "Primera versión preliminar para Linux, <span>más en una sola aplicación</span>",
+    "desc": "La versión 0.1.1 reúne el trabajo desde la primera versión preliminar en un solo instalador para Linux: modelado, armaduras, caja de sección, propiedades, bocetos e IFC/DXF."
+  },
+  "faq": {
+    "files": {
+      "q": "¿Qué archivos puedo abrir?",
+      "a": "Proyectos en IFCX binario (.ifcxb) o IFCX JSON (.ifcx), archivos IFC de otros programas BIM y dibujos DXF como base. No todos los objetos IFC importados son totalmente editables; conserva tus archivos de origen."
+    },
+    "install": {
+      "q": "¿Tengo que instalar algo?",
+      "a": "Sí. No hay versión web. Descarga el instalador para Linux (.run) e inícialo con bash; se instala por usuario en tu carpeta personal y añade la aplicación al menú."
+    },
+    "cost": {
+      "q": "¿Cuánto cuesta?",
+      "a": "Nada. Open BIM Studio es de código abierto con licencia MPL-2.0, sin cuenta ni suscripción."
+    },
+    "format": {
+      "q": "¿En qué formato se guarda mi trabajo?",
+      "a": "En IFCX, el formato abierto de OpenAEC: binario compacto como .ifcxb o JSON (.ifcx). También puedes exportar a IFC, los planos a PDF o SVG y las tablas a CSV. El formato aún evoluciona; trabaja con copias."
+    },
+    "systems": {
+      "q": "¿En qué sistemas funciona?",
+      "a": "En Linux x86-64 con glibc 2.38 o posterior, una sesión X11 (o XWayland) y una tarjeta gráfica con Vulkan. Todavía no hay instalador de Windows probado ni versión para macOS."
+    },
+    "practice": {
+      "q": "¿Se ajusta a la práctica de la construcción?",
+      "a": "Trabaja con niveles, ejes, IFC y notación neerlandesa de armaduras, e incluye perfiles de acero europeos. Es una versión preliminar: no hay certificación IFC ni comprobación según normativa."
+    },
+    "ai": {
+      "q": "¿Qué puede hacer un asistente de IA con él?",
+      "a": "Mediante el adaptador MCP o la API local, un asistente crea muros, forjados, ejes y sistemas constructivos, selecciona elementos, cambia propiedades y tipos y deshace pasos."
+    },
+    "ready": {
+      "q": "¿Puedo usarlo ya para un proyecto real?",
+      "a": "Todavía no. Es una versión preliminar de desarrollo: no todas las combinaciones de funciones están terminadas o probadas, y el rendimiento con modelos grandes aún se está mejorando. Pruébalo con el edificio de ejemplo e informa de lo que encuentres."
+    },
+    "dynlex": {
+      "q": "¿Qué es DynLex?",
+      "a": "El lenguaje de programación en el que está escrito el modelador, desarrollado dentro de OpenAEC. El código se lee casi como inglés y se compila a código nativo rápido mediante LLVM."
+    },
+    "language": {
+      "q": "¿En qué idioma está la interfaz?",
+      "a": "Por ahora en inglés. El contenido propio de cada país, como la notación neerlandesa de armaduras, se elige por proyecto."
+    },
+    "heading": "Preguntas frecuentes"
   },
   "tech": {
-    "title": "Tecnología",
-    "desc": "La lógica BIM, las herramientas y la geometría están escritas en DynLex. El modelo guarda los objetos semánticos, una capa aparte deriva de ellos la geometría y los módulos de dibujo y de escena producen las vistas 2D y 3D."
+    "dynlex": {
+      "desc": "La lógica BIM, las herramientas y la geometría están escritas en DynLex y compiladas a código nativo mediante LLVM."
+    },
+    "kernel": {
+      "title": "Núcleo CAD propio",
+      "desc": "Geometría plana, NURBS y B-rep en un núcleo propio; el modelo guarda los objetos y una capa aparte deriva la geometría."
+    },
+    "vulkan": {
+      "title": "Vulkan y GLFW",
+      "desc": "Una interfaz nativa que habla directamente con la tarjeta gráfica, sin navegador ni runtime de por medio."
+    },
+    "ifcx": {
+      "desc": "El formato de datos abierto del ecosistema OpenAEC, binario (.ifcxb) o JSON, junto a IFC para el intercambio."
+    },
+    "mcp": {
+      "desc": "Un servidor MCP stdio y una API HTTP local controlan el editor; cada edición del modelo es un paso de deshacer."
+    },
+    "license": {
+      "desc": "El código fuente de la aplicación está bajo MPL-2.0; el runtime de DynLex bajo LGPL-3.0. Las versiones incluyen sumas SHA256 y firma."
+    },
+    "heading": "Tecnología",
+    "sub": "Para quien quiera saber cómo está hecho."
+  },
+  "releases": {
+    "showAll": "Mostrar todas las versiones",
+    "showLess": "Mostrar solo las tres últimas",
+    "github": "Todas las versiones en GitHub"
   }
 }

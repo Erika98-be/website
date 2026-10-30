@@ -1,93 +1,269 @@
 {
   "header": {
-    "label": "OpenAEC Ecosystem",
     "title": "Open <span class=\"accent\">BIM</span> Studio",
-    "desc": "A BIM modeller with a deliberately wide reach. At one end as direct as sketching: push, pull, try something and throw it away. At the other end properly technical: building systems, reinforcement, connections and drawings from the same model. All on IFCX.",
-    "badge": "In development",
-    "built": "Built in DynLex",
-    "note": "A look at what we are building. There is a preview for testers, but you cannot model a project in it yet."
+    "downloadBtn": "Download",
+    "featuresBtn": "See the features",
+    "sourceBtn": "Source code",
+    "proof2": "Linux preview",
+    "proof3": "Native on Vulkan",
+    "proof4": "Free · MPL-2.0",
+    "heroAlt": "Open BIM Studio: 3D view of a concrete pavilion with a section box cutting away the roof, revealing columns, walls and floor",
+    "label": "BIM modelling",
+    "tagline": "From first layout to reinforcement and drawings, in one open BIM model",
+    "desc": "Set out levels, grids, walls and floors, then develop the same model with reinforcement, connections, sections and sheets. Everything stays in IFCX, the open OpenAEC format."
   },
-  "cta": {
-    "status": "Coming soon",
-    "follow": "Follow development",
-    "ifcx": "About IFCX"
+  "meta": {
+    "description": "Free, open-source BIM modeller in development: walls, floors and grids, reinforcement, connections, plans, sections and sheets from one model, saved as IFCX. Preview for Linux.",
+    "title": "Open BIM Studio — OpenAEC Foundation"
   },
-  "slides": {
-    "one": "Open BIM Studio with the foundation plan of a pavilion: pad footings of 1800 by 1800 mm and ground beams of 300 by 400 mm with reinforcement, next to the reinforcement in 3D, a section and the reinforcement properties"
-  },
-  "what": {
-    "title": "What will Open BIM Studio be?",
-    "desc": "Open BIM Studio is an open-source BIM modeller from the OpenAEC Foundation. You create and edit a building model, inspect it in 2D and 3D, and develop drawings, reinforcement details and schedules from that same model. The interface is native, on Vulkan, and the CAD kernel is written in DynLex, our own programming language.",
-    "list1": "Direct modelling with grips, snapping, Push/Pull and face splitting",
-    "list2": "Parametric building systems, window systems, stairs and railings",
-    "list3": "Reinforcement: bars, cages, stirrups and meshes, with position marks and schedules",
-    "list4": "Connections with plates, bolts and screws",
-    "list5": "Plans, sections and sheets from the model, as PDF or SVG",
-    "list6": "IFCX as the project format, with IFC import and export"
-  },
-  "why": {
-    "title": "Why <span class=\"accent\">Open BIM</span> Studio?",
-    "desc1": "BIM software usually makes you choose: a quick sketching tool where you try out forms freely, or a heavy package that knows everything about construction but feels slow. Open BIM Studio wants to be both, in one application: you start by pushing and pulling a mass and develop the same model all the way to reinforcement and connections.",
-    "desc2": "Everything lives in IFCX, the open data format of the OpenAEC ecosystem. What you model is readable straight away by the other tools — and by anyone who opens the file."
-  },
-  "features": {
-    "title": "What is already in it",
-    "showAll": "Show all features",
-    "showLess": "Show less",
+  "hl": {
     "model": {
-      "title": "Building model",
-      "desc": "Levels, grids, layered walls, floors, roofs, ceilings, openings, beams, columns, piles and spaces."
-    },
-    "direct": {
-      "title": "Direct modelling",
-      "desc": "Selection, grips, numerical properties, snapping and transforms. Boundary editing with Tab, Push/Pull and face splitting."
-    },
-    "systems": {
-      "title": "Parametric systems",
-      "desc": "Building-system types with frames and panels, hosted window systems, stairs, railings and component libraries."
+      "alt": "Structural plan of an example building with grids, layered walls and the ribbon with tools for walls, floors, roofs and columns",
+      "kicker": "Modelling",
+      "title": "Set out a building the way you sketch",
+      "desc": "Levels, grids, layered walls, floors, roofs, columns, beams and piles sit in one ribbon. Grab a grip, snap to the grid and push or pull a face to the right size."
     },
     "rebar": {
-      "title": "Reinforcement",
-      "desc": "Parametric bars, cages, stirrups, area reinforcement and meshes, with position labels, schedules and Dutch or international notation."
+      "alt": "Plan of a concrete pavilion with reinforcement meshes, cages and position labels, and the Reinforcement ribbon with bar, L bar, U bar, cage, mesh and area",
+      "kicker": "Reinforcement",
+      "title": "Reinforcement that follows the concrete",
+      "desc": "Place bars, stirrup cages, meshes and area reinforcement parametrically in beams, columns and slabs. Position labels with diameter and spacing appear on the drawing in Dutch or international notation."
     },
-    "connections": {
-      "title": "Connections",
-      "desc": "Modular connection nodes, member voids and added parts such as plates, bolts and screws."
+    "view3d": {
+      "alt": "3D wireframe of the pavilion inside a section box, with the reinforcement in slab, columns, walls and pad foundations visible",
+      "kicker": "3D and section box",
+      "title": "Look straight through the model",
+      "desc": "Cut the model open with a section box and orbit it with the view cube. The wireframe shows the reinforcement in slabs, columns and pad foundations; shadows, colour and hidden lines switch on or off with one click."
     },
-    "drawings": {
-      "title": "Drawings from the model",
-      "desc": "Plans, sections, 3D views, section boxes, dimensions, tags, drawing standards and sheets, output as PDF or SVG."
-    },
-    "exchange": {
-      "title": "Interchange",
-      "desc": "IFC import and export, IFCX and binary IFCX as the project file, and DXF as reference geometry."
-    },
-    "automation": {
-      "title": "Automation",
-      "desc": "A local API and an MCP adapter, so scripts and AI assistants can carry out operations in the editor."
+    "sheets": {
+      "alt": "Sheet A-201 on A2 with two sections of the pavilion at 1:50, level markers, a legend and a title block, next to the project browser with sheets",
+      "kicker": "Drawings",
+      "title": "Sheets that move with the model",
+      "desc": "Plans, sections and elevations come straight from the model, with dimensions, tags and drawing standards. Place them on a sheet with a title block and export to PDF or SVG."
     }
   },
-  "dynlex": {
-    "title": "Built in DynLex",
-    "desc1": "DynLex is the programming language we are developing ourselves. Its syntax reads almost like English and compiles to native code through LLVM, so the modeller addresses the GPU and the CPU directly, with no runtime in between.",
-    "desc2": "The language is deliberately small, and that is exactly why development goes so fast — for people, and as it turns out even more so for AI.",
-    "link": "DynLex on GitHub"
+  "notice": {
+    "link": "Report what you find",
+    "text": "Development preview for Linux: not yet ready for real projects. Work on copies of your files. Testers wanted."
   },
-  "status": {
-    "badge": "Coming soon",
-    "title": "Not ready for projects yet",
-    "report": "Report something",
-    "desc": "Open BIM Studio is a development preview. A Linux version is ready for anyone who wants to help test; a tested Windows version is not there yet. Follow the development on GitHub, and report what you run into."
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "download": "Download",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
   },
-  "limits": {
-    "title": "What we are still working on",
-    "areas": "The features above are areas that have been built, not a promise that every combination is complete and validated.",
-    "windows": "The Windows version is in the repository, but there is no tested installer yet; the preview runs on Linux with Vulkan.",
-    "performance": "Performance on large models and a full test of the interface are still in progress.",
-    "ifc": "IFC and IFCX support is still growing and is not a certification. Not every imported object becomes fully parametric and editable; keep your source files."
+  "tabs": {
+    "highlights": "Highlights",
+    "model": "Modelling",
+    "rebar": "Reinforcement and connections",
+    "drawings": "Drawings and schedules",
+    "exchange": "Exchange and automation",
+    "all": "All features"
+  },
+  "features": {
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "Model, reinforce and draw in one model",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
+    "levels": {
+      "title": "Levels and grids",
+      "desc": "Work per level with PgUp and PgDn, and repeat grid lines with a pattern such as 5000 3x5400."
+    },
+    "walls": {
+      "title": "Walls, floors and roofs",
+      "desc": "Layered walls, floors, roofs, ceilings, skirtings and spaces."
+    },
+    "structure": {
+      "title": "Columns, beams and piles",
+      "desc": "Structural members in concrete or steel, with a library of European steel sections."
+    },
+    "openings": {
+      "title": "Windows, doors and window systems",
+      "desc": "Openings, Dutch doors and your own types, and window systems hosted in the wall."
+    },
+    "direct": {
+      "title": "Push, pull and snap",
+      "desc": "Grips, numeric input, snapping to end, mid and intersection points, Push/Pull and face splitting."
+    },
+    "systems": {
+      "title": "Parametric building systems",
+      "desc": "System types with frames and panels, stairs, railings and component libraries."
+    },
+    "bars": {
+      "title": "Bars, cages and meshes",
+      "desc": "Straight, L and U bars, stirrup cages, meshes and area reinforcement, parametric in the host."
+    },
+    "notation": {
+      "title": "Positions and notation",
+      "desc": "Position labels with count, diameter and spacing, in Dutch or international notation."
+    },
+    "rebarview": {
+      "title": "Light display in 3D",
+      "desc": "Reinforcement as centre lines for a smooth view; switch on the real diameter when you need it."
+    },
+    "connections": {
+      "title": "Steel connections",
+      "desc": "Parametric joints with plates, bolts, welds and member cuts, as reusable types."
+    },
+    "plans": {
+      "title": "Plans and sections",
+      "desc": "Views with their own scale, cut height, hatching and drawing type, straight from the model."
+    },
+    "sheets": {
+      "title": "Sheets to PDF and SVG",
+      "desc": "Place views on a sheet with paper size, title block and legend, and output it as PDF or SVG."
+    },
+    "schedules": {
+      "title": "Schedules and quantities",
+      "desc": "Schedules of walls, windows and doors, floors, spaces and reinforcement, with length, area and volume, exportable as CSV."
+    },
+    "sectionbox": {
+      "title": "3D with section box",
+      "desc": "Shaded, hidden line or wireframe, with shadows, a view cube and a section box you move with grips."
+    },
+    "ifcx": {
+      "title": "IFCX as the project file",
+      "desc": "Your work is stored as compact binary IFCX (.ifcxb) or JSON IFCX, readable by the other OpenAEC apps."
+    },
+    "ifc": {
+      "title": "IFC in and out",
+      "desc": "Import and export IFC; supported elements become editable objects, the rest stays as reference."
+    },
+    "dxf": {
+      "title": "DXF as underlay",
+      "desc": "Read a DXF drawing as reference geometry to model over."
+    },
+    "mcp": {
+      "title": "AI assistant via MCP",
+      "desc": "A local API and an MCP adapter let scripts and AI assistants create walls, floors and grids and change properties."
+    },
+    "explorer": {
+      "title": "Model explorer",
+      "desc": "Levels, grids, types and views in a tree, with the properties alongside."
+    },
+    "undo": {
+      "title": "Undo and redo",
+      "desc": "Every edit is one step you can undo or redo."
+    }
+  },
+  "download": {
+    "title": "Download v0.1.1",
+    "lead": "Free, no account needed. Preview for Linux x86-64 with Vulkan; a tested Windows version is not available yet.",
+    "forLinux": "Download for Linux",
+    "metaLinux": ".run installer for Linux x86-64, per user",
+    "fileAppImage": "Installer (.run)",
+    "label": "Download",
+    "mobileNote": "Open BIM Studio is a desktop app. Download it on your computer.",
+    "other": "Other platforms"
+  },
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "ctaDownload": "Download",
+    "items": {
+      "sectionbox": {
+        "title": "Section box",
+        "desc": "Cut the 3D model open with grips and look inside."
+      },
+      "rebar": {
+        "title": "Reinforcement in the model",
+        "desc": "Cages, bars and meshes are now part of the main app, with a light centre-line display."
+      },
+      "sketch": {
+        "title": "Sketch editing",
+        "desc": "Edit sketch lines and faces before they become building elements."
+      },
+      "props": {
+        "title": "Views and properties",
+        "desc": "Scale, cut height, hatching and drawing type per view in the properties panel."
+      },
+      "exchange": {
+        "title": "IFC and DXF",
+        "desc": "Improved import and export of IFC and DXF underlays."
+      },
+      "installer": {
+        "title": "Installer with menu entry",
+        "desc": "One file installs per user, without admin rights, and replaces an older version."
+      }
+    },
+    "label": "New in v0.1.1",
+    "title": "First Linux preview, <span>more in one app</span>",
+    "desc": "Version 0.1.1 bundles the work since the first preview into one Linux installer: modelling, reinforcement, section box, properties, sketching and IFC/DXF."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "Projects in binary IFCX (.ifcxb) or JSON IFCX (.ifcx), IFC files from other BIM software and DXF drawings as underlay. Not every imported IFC object becomes fully editable; keep your source files."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "Yes. There is no web version. Download the Linux installer (.run) and start it with bash; it installs per user in your home folder and adds the app to the menu."
+    },
+    "cost": {
+      "q": "What does it cost?",
+      "a": "Nothing. Open BIM Studio is open source under the MPL-2.0 licence, with no account or subscription."
+    },
+    "format": {
+      "q": "In which file format is my work saved?",
+      "a": "In IFCX, the open OpenAEC format: compact binary as .ifcxb or as JSON (.ifcx). You can also export to IFC, drawings to PDF or SVG and schedules to CSV. The format is still evolving; work on copies."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "On Linux x86-64 with glibc 2.38 or newer, an X11 session (or XWayland) and a graphics card with Vulkan. A tested Windows installer is not available yet; macOS not yet either."
+    },
+    "practice": {
+      "q": "Does it fit building practice?",
+      "a": "It works with levels, grids, IFC and Dutch reinforcement notation, and has European steel sections. It is a preview: there is no IFC certification and no check against building codes."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "Through the MCP adapter or the local API, an assistant creates walls, floors, grids and building systems, selects elements, changes properties and types, and undoes steps."
+    },
+    "ready": {
+      "q": "Can I use it for a real project yet?",
+      "a": "Not yet. It is a development preview: not every combination of features is finished or tested, and performance on large models is still being improved. Try it with the example building and report what you find."
+    },
+    "dynlex": {
+      "q": "What is DynLex?",
+      "a": "The programming language the modeller is written in, developed within OpenAEC. The code reads almost like English and is compiled to fast native code via LLVM."
+    },
+    "language": {
+      "q": "What language is the interface in?",
+      "a": "In English for now. Country-specific content, such as Dutch reinforcement notation, is chosen per project."
+    },
+    "heading": "Frequently asked questions"
   },
   "tech": {
-    "title": "Technology",
-    "desc": "The BIM logic, the tools and the geometry are written in DynLex. The model keeps the semantic objects, a separate layer derives the geometry from them, and the drawing and scene modules turn that into 2D and 3D views."
+    "dynlex": {
+      "desc": "The BIM logic, tools and geometry are written in DynLex and compiled to native code via LLVM."
+    },
+    "kernel": {
+      "title": "Own CAD kernel",
+      "desc": "Planar geometry, NURBS and B-rep in its own kernel; the model keeps the objects, a separate layer derives the geometry."
+    },
+    "vulkan": {
+      "title": "Vulkan and GLFW",
+      "desc": "A native interface that talks to the graphics card directly, with no browser or runtime in between."
+    },
+    "ifcx": {
+      "desc": "The open data format of the OpenAEC ecosystem, binary (.ifcxb) or JSON, alongside IFC for exchange."
+    },
+    "mcp": {
+      "desc": "A stdio MCP server and a local HTTP API drive the editor; every model edit is one undo step."
+    },
+    "license": {
+      "desc": "The app source code is under MPL-2.0; the DynLex runtime under LGPL-3.0. Releases come with SHA256 sums and a signature."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }

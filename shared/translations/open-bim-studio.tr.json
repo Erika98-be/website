@@ -1,93 +1,269 @@
 {
   "header": {
-    "label": "OpenAEC Ekosistemi",
     "title": "Open <span class=\"accent\">BIM</span> Studio",
-    "desc": "Bilinçli olarak geniş kapsamlı bir BIM modelleyici. Bir yanda eskiz kadar doğrudan: it, çek, bir şey dene ve at. Öte yanda gerçekten teknik: yapı sistemleri, donatı, birleşimler ve aynı modelden çizimler. Hepsi IFCX üzerinde.",
-    "badge": "Geliştirme aşamasında",
-    "built": "DynLex ile geliştirildi",
-    "note": "Ne inşa ettiğimize bir bakış. Test edenler için bir önizleme sürümü var, ancak henüz içinde proje modelleyemezsiniz."
+    "downloadBtn": "İndir",
+    "featuresBtn": "Özellikleri gör",
+    "sourceBtn": "Kaynak kodu",
+    "proof2": "Linux ön sürümü",
+    "proof3": "Vulkan üzerinde yerel",
+    "proof4": "Ücretsiz · MPL-2.0",
+    "heroAlt": "Open BIM Studio: çatıyı kesen bir kesit kutusuyla beton bir pavyonun 3B görünümü; kolonlar, duvarlar ve döşeme görünür",
+    "label": "BIM modelleme",
+    "tagline": "İlk taslaktan donatıya ve çizime, tek bir açık BIM modelinde",
+    "desc": "Katları, aksları, duvarları ve döşemeleri yerleştirin, ardından aynı modeli donatı, birleşimler, kesitler ve paftalarla geliştirin. Her şey OpenAEC'in açık formatı IFCX'te kalır."
   },
-  "cta": {
-    "status": "Yakında",
-    "follow": "Geliştirmeyi takip et",
-    "ifcx": "IFCX hakkında"
+  "meta": {
+    "description": "Geliştirme aşamasında ücretsiz, açık kaynaklı BIM modelleyici: duvarlar, döşemeler ve akslar, donatı, birleşimler, tek modelden planlar, kesitler ve paftalar, IFCX olarak kaydedilir. Linux için ön sürüm.",
+    "title": "Open BIM Studio — OpenAEC Foundation"
   },
-  "slides": {
-    "one": "Bir pavyonun temel planıyla Open BIM Studio: donatılı 1800’e 1800 mm tekil temeller ve 300’e 400 mm bağ kirişleri; yanında 3B donatı, bir kesit ve donatı özellikleri"
-  },
-  "what": {
-    "title": "Open BIM Studio ne olacak?",
-    "desc": "Open BIM Studio, OpenAEC Foundation’ın açık kaynaklı BIM modelleyicisidir. Bir bina modeli oluşturup düzenler, onu 2B ve 3B incelersiniz; aynı modelden çizimler, donatı detayları ve metrajlar çıkarırsınız. Arayüz Vulkan üzerinde yereldir ve CAD çekirdeği kendi programlama dilimiz DynLex ile yazılmıştır.",
-    "list1": "Tutamaçlar, yakalama, Push/Pull ve yüzey bölme ile doğrudan modelleme",
-    "list2": "Parametrik yapı sistemleri, doğrama sistemleri, merdivenler ve korkuluklar",
-    "list3": "Donatı: çubuklar, kafesler, etriyeler ve hasırlar; poz numaraları ve metrajlarla",
-    "list4": "Plakalar, cıvatalar ve vidalarla birleşimler",
-    "list5": "Modelden PDF veya SVG olarak planlar, kesitler ve paftalar",
-    "list6": "IFC içe ve dışa aktarma ile proje formatı olarak IFCX"
-  },
-  "why": {
-    "title": "Neden <span class=\"accent\">Open BIM</span> Studio?",
-    "desc1": "BIM yazılımları genellikle seçim yapmaya zorlar: biçimleri serbestçe denediğiniz hızlı bir eskiz aracı ya da yapı hakkında her şeyi bilen ama ağır hissettiren bir paket. Open BIM Studio tek bir uygulamada ikisi birden olmak istiyor: bir kütleyi itip çekerek başlar, aynı modeli donatıya ve birleşimlere kadar geliştirirsiniz.",
-    "desc2": "Her şey OpenAEC ekosisteminin açık veri formatı IFCX’te durur. Modellediğiniz şey diğer araçlar tarafından — ve dosyayı açan herkes tarafından — hemen okunabilir."
-  },
-  "features": {
-    "title": "İçinde şimdiden olanlar",
-    "showAll": "Tüm özellikleri göster",
-    "showLess": "Daha az göster",
+  "hl": {
     "model": {
-      "title": "Bina modeli",
-      "desc": "Katlar, akslar, katmanlı duvarlar, döşemeler, çatılar, asma tavanlar, boşluklar, kirişler, kolonlar, kazıklar ve mahaller."
-    },
-    "direct": {
-      "title": "Doğrudan modelleme",
-      "desc": "Seçim, tutamaçlar, sayısal özellikler, yakalama ve dönüşümler. Tab ile sınır düzenleme, Push/Pull ve yüzey bölme."
-    },
-    "systems": {
-      "title": "Parametrik sistemler",
-      "desc": "Çerçeve ve panelli yapı sistemi tipleri, duvara yerleşen doğrama sistemleri, merdivenler, korkuluklar ve bileşen kütüphaneleri."
+      "alt": "Akslar, katmanlı duvarlar ve duvar, döşeme, çatı ve kolon araçlarının bulunduğu şeritle örnek bir binanın taşıyıcı planı",
+      "kicker": "Modelleme",
+      "title": "Bir binayı eskiz yapar gibi kurun",
+      "desc": "Katlar, akslar, katmanlı duvarlar, döşemeler, çatılar, kolonlar, kirişler ve kazıklar tek bir şeritte. Bir tutamacı tutun, aksa yakalayın ve bir yüzeyi doğru ölçüye itip çekin."
     },
     "rebar": {
-      "title": "Donatı",
-      "desc": "Parametrik çubuklar, kafesler, etriyeler, yüzey donatısı ve hasırlar; poz etiketleri, metrajlar ve Hollanda ya da uluslararası gösterimle."
+      "alt": "Donatı hasırları, kafesler ve poz etiketleriyle beton bir pavyonun planı ve çubuk, L çubuk, U çubuk, kafes, hasır ve alan içeren Donatı şeridi",
+      "kicker": "Donatı",
+      "title": "Betonla birlikte hareket eden donatı",
+      "desc": "Kirişlere, kolonlara ve döşemelere çubukları, etriye kafeslerini, hasırları ve alan donatısını parametrik olarak yerleştirin. Çap ve aralık içeren poz etiketleri çizimde Hollanda veya uluslararası gösterimle yer alır."
     },
-    "connections": {
-      "title": "Birleşimler",
-      "desc": "Modüler birleşim düğümleri, elemanlarda boşluklar ve plaka, cıvata, vida gibi eklenen parçalar."
+    "view3d": {
+      "alt": "Kesit kutusu içinde pavyonun 3B tel kafes görünümü; döşeme, kolon, duvar ve tekil temellerdeki donatı görünür",
+      "kicker": "3B ve kesit kutusu",
+      "title": "Modelin içini görün",
+      "desc": "Modeli bir kesit kutusuyla açın ve görünüm küpüyle etrafında dönün. Tel kafes görünüm döşeme, kolon ve temellerdeki donatıyı gösterir; gölge, renk ve gizli çizgiler tek tıkla açılıp kapanır."
     },
-    "drawings": {
-      "title": "Modelden çizimler",
-      "desc": "Planlar, kesitler, 3B görünümler, kesit kutuları, ölçülendirme, etiketler, çizim standartları ve paftalar; PDF veya SVG çıktısı."
-    },
-    "exchange": {
-      "title": "Veri alışverişi",
-      "desc": "IFC içe ve dışa aktarma, proje dosyası olarak IFCX ve ikili IFCX, referans geometri olarak DXF."
-    },
-    "automation": {
-      "title": "Otomasyon",
-      "desc": "Betiklerin ve yapay zekâ asistanlarının düzenleyicide işlem yapabilmesi için yerel bir API ve bir MCP bağdaştırıcısı."
+    "sheets": {
+      "alt": "Proje tarayıcısının yanında, pavyonun 1:50 ölçekli iki kesiti, kot işaretleri, lejant ve antet içeren A2 boyutunda A-201 paftası",
+      "kicker": "Çizimler",
+      "title": "Modelle birlikte güncellenen paftalar",
+      "desc": "Planlar, kesitler ve görünüşler ölçülendirme, etiketler ve çizim standartlarıyla doğrudan modelden gelir. Bunları antetli bir paftaya yerleştirip PDF veya SVG olarak dışa aktarın."
     }
   },
-  "dynlex": {
-    "title": "DynLex ile geliştirildi",
-    "desc1": "DynLex, kendimiz geliştirdiğimiz programlama dilidir. Sözdizimi neredeyse İngilizce gibi okunur ve LLVM üzerinden yerel koda derlenir; böylece modelleyici GPU’ya ve CPU’ya, arada bir çalışma zamanı olmadan doğrudan erişir.",
-    "desc2": "Dil bilinçli olarak küçüktür ve geliştirmenin bu kadar hızlı olmasının nedeni tam da budur — insanlar için, ve görünüşe göre yapay zekâ için daha da çok.",
-    "link": "GitHub’da DynLex"
+  "notice": {
+    "link": "Bulduklarınızı bildirin",
+    "text": "Linux için geliştirme ön sürümü: henüz gerçek projelere hazır değil. Dosyalarınızın kopyalarıyla çalışın. Test edenler aranıyor."
   },
-  "status": {
-    "badge": "Yakında",
-    "title": "Henüz projeler için hazır değil",
-    "report": "Bir şey bildir",
-    "desc": "Open BIM Studio bir geliştirme önizlemesidir. Test etmek isteyenler için bir Linux sürümü hazır; test edilmiş bir Windows sürümü henüz yok. Geliştirmeyi GitHub’da takip edin ve karşılaştığınız sorunları bildirin."
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "download": "İndir",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
   },
-  "limits": {
-    "title": "Hâlâ üzerinde çalıştıklarımız",
-    "areas": "Yukarıdaki özellikler geliştirilmiş alanlardır; her birleşimin eksiksiz ve doğrulanmış olduğu anlamına gelmez.",
-    "windows": "Windows sürümü depoda var, ancak henüz test edilmiş bir kurulum dosyası yok; önizleme Vulkan ile Linux’ta çalışır.",
-    "performance": "Büyük modellerde performans ve arayüzün tam testi hâlâ sürüyor.",
-    "ifc": "IFC ve IFCX desteği hâlâ gelişiyor ve bir sertifika değildir. İçe aktarılan her nesne tamamen parametrik ve düzenlenebilir hâle gelmez; kaynak dosyalarınızı saklayın."
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "model": "Modelleme",
+    "rebar": "Donatı ve birleşimler",
+    "drawings": "Çizimler ve metrajlar",
+    "exchange": "Veri alışverişi ve otomasyon",
+    "all": "Tüm özellikler"
+  },
+  "features": {
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Tek modelde modelleyin, donatın ve çizin",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "levels": {
+      "title": "Katlar ve akslar",
+      "desc": "PgUp ve PgDn ile kat kat çalışın, aks çizgilerini 5000 3x5400 gibi bir desenle tekrarlayın."
+    },
+    "walls": {
+      "title": "Duvarlar, döşemeler ve çatılar",
+      "desc": "Katmanlı duvarlar, döşemeler, çatılar, tavanlar, süpürgelikler ve mekânlar."
+    },
+    "structure": {
+      "title": "Kolonlar, kirişler ve kazıklar",
+      "desc": "Avrupa çelik profil kütüphanesiyle beton veya çelik taşıyıcı elemanlar."
+    },
+    "openings": {
+      "title": "Pencereler, kapılar ve doğrama sistemleri",
+      "desc": "Boşluklar, Hollanda tipi kapılar ve kendi tipleriniz, duvara bağlı doğrama sistemleri."
+    },
+    "direct": {
+      "title": "İt, çek ve yakala",
+      "desc": "Tutamaçlar, sayısal giriş, uç, orta ve kesişim noktalarına yakalama, Push/Pull ve yüzey bölme."
+    },
+    "systems": {
+      "title": "Parametrik yapı sistemleri",
+      "desc": "Çerçeve ve panelli sistem tipleri, merdivenler, korkuluklar ve bileşen kütüphaneleri."
+    },
+    "bars": {
+      "title": "Çubuklar, kafesler ve hasırlar",
+      "desc": "Düz, L ve U çubuklar, etriye kafesleri, hasırlar ve alan donatısı, taşıyıcı eleman içinde parametrik."
+    },
+    "notation": {
+      "title": "Pozlar ve gösterim",
+      "desc": "Adet, çap ve aralık içeren poz etiketleri, Hollanda veya uluslararası gösterimle."
+    },
+    "rebarview": {
+      "title": "3B'de hafif gösterim",
+      "desc": "Akıcı bir görüntü için donatı eksen çizgileri olarak; gerektiğinde gerçek çapı açın."
+    },
+    "connections": {
+      "title": "Çelik birleşimler",
+      "desc": "Plakalar, cıvatalar, kaynaklar ve profil kesimleriyle parametrik düğümler, yeniden kullanılabilir tipler olarak."
+    },
+    "plans": {
+      "title": "Planlar ve kesitler",
+      "desc": "Kendi ölçeği, kesit yüksekliği, taraması ve çizim tipiyle doğrudan modelden gelen görünüşler."
+    },
+    "sheets": {
+      "title": "Paftalar PDF ve SVG olarak",
+      "desc": "Görünüşleri kâğıt boyutu, antet ve lejantla bir paftaya yerleştirin, PDF veya SVG olarak çıktı alın."
+    },
+    "schedules": {
+      "title": "Metrajlar ve miktarlar",
+      "desc": "Duvar, doğrama, döşeme, mekân ve donatı metrajları; uzunluk, alan ve hacimle, CSV olarak dışa aktarılabilir."
+    },
+    "sectionbox": {
+      "title": "Kesit kutulu 3B",
+      "desc": "Gölgeli, gizli çizgili veya tel kafes; gölgeler, görünüm küpü ve tutamaçlarla taşınan kesit kutusu."
+    },
+    "ifcx": {
+      "title": "Proje dosyası olarak IFCX",
+      "desc": "Çalışmanız kompakt ikili IFCX (.ifcxb) veya JSON IFCX olarak saklanır ve diğer OpenAEC uygulamalarınca okunabilir."
+    },
+    "ifc": {
+      "title": "IFC içe ve dışa aktarım",
+      "desc": "IFC içe ve dışa aktarın; desteklenen elemanlar düzenlenebilir nesnelere dönüşür, gerisi referans olarak kalır."
+    },
+    "dxf": {
+      "title": "Altlık olarak DXF",
+      "desc": "Üzerinde modelleme yapmak için bir DXF çizimini referans geometri olarak okuyun."
+    },
+    "mcp": {
+      "title": "MCP üzerinden yapay zekâ asistanı",
+      "desc": "Yerel bir API ve MCP bağdaştırıcısı, betiklerin ve yapay zekâ asistanlarının duvar, döşeme ve aks oluşturmasını ve özellikleri değiştirmesini sağlar."
+    },
+    "explorer": {
+      "title": "Model gezgini",
+      "desc": "Katlar, akslar, tipler ve görünüşler bir ağaçta, özellikler yanında."
+    },
+    "undo": {
+      "title": "Geri al ve yinele",
+      "desc": "Her düzenleme geri alabileceğiniz veya yineleyebileceğiniz tek bir adımdır."
+    }
+  },
+  "download": {
+    "title": "v0.1.1 indir",
+    "lead": "Ücretsiz, hesap gerekmez. Vulkan destekli Linux x86-64 için ön sürüm; test edilmiş bir Windows sürümü henüz yok.",
+    "forLinux": "Linux için indir",
+    "metaLinux": "Linux x86-64 için .run yükleyici, kullanıcı başına",
+    "fileAppImage": "Yükleyici (.run)",
+    "label": "İndir",
+    "mobileNote": "Open BIM Studio bir masaüstü uygulamasıdır. Bilgisayarınıza indirin.",
+    "other": "Diğer platformlar"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDownload": "İndir",
+    "items": {
+      "sectionbox": {
+        "title": "Kesit kutusu",
+        "desc": "3B modeli tutamaçlarla açın ve içine bakın."
+      },
+      "rebar": {
+        "title": "Modelde donatı",
+        "desc": "Kafesler, çubuklar ve hasırlar artık ana uygulamada, hafif eksen çizgisi gösterimiyle."
+      },
+      "sketch": {
+        "title": "Eskiz düzenleme",
+        "desc": "Eskiz çizgilerini ve yüzeylerini yapı elemanına dönüşmeden önce düzenleyin."
+      },
+      "props": {
+        "title": "Görünüşler ve özellikler",
+        "desc": "Özellikler panelinde görünüş başına ölçek, kesit yüksekliği, tarama ve çizim tipi."
+      },
+      "exchange": {
+        "title": "IFC ve DXF",
+        "desc": "IFC ve DXF altlıklarının geliştirilmiş içe ve dışa aktarımı."
+      },
+      "installer": {
+        "title": "Menü girişli yükleyici",
+        "desc": "Tek bir dosya, yönetici hakları olmadan kullanıcı başına kurulum yapar ve eski sürümü değiştirir."
+      }
+    },
+    "label": "v0.1.1 sürümünde yeni",
+    "title": "İlk Linux ön sürümü, <span>tek uygulamada daha fazlası</span>",
+    "desc": "0.1.1 sürümü ilk ön sürümden bu yana yapılan çalışmaları tek bir Linux yükleyicisinde topluyor: modelleme, donatı, kesit kutusu, özellikler, eskiz ve IFC/DXF."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "İkili IFCX (.ifcxb) veya JSON IFCX (.ifcx) projeleri, diğer BIM yazılımlarından IFC dosyaları ve altlık olarak DXF çizimleri. İçe aktarılan her IFC nesnesi tam düzenlenebilir olmaz; kaynak dosyalarınızı saklayın."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Evet. Web sürümü yok. Linux yükleyicisini (.run) indirin ve bash ile başlatın; ev klasörünüze kullanıcı başına kurulur ve uygulamayı menüye ekler."
+    },
+    "cost": {
+      "q": "Ücreti nedir?",
+      "a": "Hiçbir şey. Open BIM Studio, MPL-2.0 lisansıyla açık kaynaklıdır; hesap veya abonelik gerekmez."
+    },
+    "format": {
+      "q": "Çalışmam hangi dosya biçiminde kaydedilir?",
+      "a": "OpenAEC'in açık formatı IFCX'te: kompakt ikili .ifcxb veya JSON (.ifcx). Ayrıca IFC'ye, çizimleri PDF veya SVG'ye ve metrajları CSV'ye aktarabilirsiniz. Format hâlâ gelişiyor; kopyalarla çalışın."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "glibc 2.38 veya daha yenisi, X11 oturumu (veya XWayland) ve Vulkan destekli ekran kartı olan Linux x86-64'te. Test edilmiş bir Windows yükleyicisi henüz yok; macOS da henüz yok."
+    },
+    "practice": {
+      "q": "İnşaat pratiğine uygun mu?",
+      "a": "Katlar, akslar, IFC ve Hollanda donatı gösterimiyle çalışır, Avrupa çelik profilleri içerir. Bu bir ön sürümdür: IFC sertifikası ve yönetmeliklere göre kontrol yoktur."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "MCP bağdaştırıcısı veya yerel API üzerinden bir asistan duvar, döşeme, aks ve yapı sistemleri oluşturur, eleman seçer, özellikleri ve tipleri değiştirir ve adımları geri alır."
+    },
+    "ready": {
+      "q": "Gerçek bir projede kullanabilir miyim?",
+      "a": "Henüz değil. Bu bir geliştirme ön sürümü: her özellik kombinasyonu tamamlanmış veya test edilmiş değil ve büyük modellerdeki performans hâlâ iyileştiriliyor. Örnek binayla deneyin ve bulduklarınızı bildirin."
+    },
+    "dynlex": {
+      "q": "DynLex nedir?",
+      "a": "Modelleyicinin yazıldığı, OpenAEC bünyesinde geliştirilen programlama dili. Kod neredeyse İngilizce gibi okunur ve LLVM ile hızlı yerel koda derlenir."
+    },
+    "language": {
+      "q": "Arayüz hangi dilde?",
+      "a": "Şimdilik İngilizce. Hollanda donatı gösterimi gibi ülkeye özgü içerik proje bazında seçilir."
+    },
+    "heading": "Sık sorulan sorular"
   },
   "tech": {
-    "title": "Teknoloji",
-    "desc": "BIM mantığı, araçlar ve geometri DynLex ile yazılmıştır. Model anlamsal nesneleri tutar, ayrı bir katman bunlardan geometriyi türetir; çizim ve sahne modülleri de bundan 2B ve 3B görünümler üretir."
+    "dynlex": {
+      "desc": "BIM mantığı, araçlar ve geometri DynLex ile yazılmış ve LLVM ile yerel koda derlenmiştir."
+    },
+    "kernel": {
+      "title": "Kendi CAD çekirdeği",
+      "desc": "Kendi çekirdeğinde düzlemsel geometri, NURBS ve B-rep; model nesneleri tutar, ayrı bir katman geometriyi türetir."
+    },
+    "vulkan": {
+      "title": "Vulkan ve GLFW",
+      "desc": "Arada tarayıcı veya çalışma zamanı olmadan doğrudan ekran kartıyla konuşan yerel bir arayüz."
+    },
+    "ifcx": {
+      "desc": "OpenAEC ekosisteminin açık veri formatı, ikili (.ifcxb) veya JSON; alışveriş için IFC ile birlikte."
+    },
+    "mcp": {
+      "desc": "Bir stdio MCP sunucusu ve yerel HTTP API düzenleyiciyi yönetir; her model düzenlemesi tek bir geri alma adımıdır."
+    },
+    "license": {
+      "desc": "Uygulamanın kaynak kodu MPL-2.0, DynLex çalışma zamanı LGPL-3.0 lisanslıdır. Sürümler SHA256 özetleri ve imzayla gelir."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }
