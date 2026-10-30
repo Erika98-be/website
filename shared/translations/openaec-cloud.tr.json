@@ -1,57 +1,310 @@
 {
   "header": {
-    "label": "OpenAEC Ekosistemi",
     "title": "OpenAEC <span class=\"accent\">SuperCloud</span>",
-    "desc": "OpenAEC’in kendi bulut, hesap ve SSO platformu. Tüm ekosistem için tek giriş; depolama, paylaşım ve senkronizasyon kendi Nextcloud sunucunuzda.",
-    "badge": "Geliştirme aşamasında"
+    "downloadBtn": "İndir",
+    "featuresBtn": "Özellikleri gör",
+    "sourceBtn": "Kaynak kodu",
+    "proof1": "Eşitle · paylaş · gönder",
+    "proof2": "AB'de depolama",
+    "proof4": "Felemenkçe uygulama",
+    "proof5": "Ücretsiz uygulama · AGPL-3.0",
+    "heroAlt": "OpenAEC Desktop App: ana klasör, depolama kullanımı, aktarılmakta olan dosyalar ve bağlı proje klasörleriyle genel bakış",
+    "label": "Dosyalar ve iş birliği",
+    "tagline": "Tüm proje dosyalarınız her bilgisayarda güncel ve seçtiğiniz kişilerle güvenle paylaşılır",
+    "desc": "Bilgisayarınızdaki bir klasörü OpenAEC ortamınızdaki bir proje alanına bağlayın ve kendi programlarınızda çalışmaya devam edin. OpenAEC Desktop App dosyaları eşitler, bağlantıyla paylaşır ve büyük dosyaları ayrı bir hizmete gerek kalmadan gönderir."
   },
-  "chips": {
-    "selfhosted": "Kendi sunucunuzda"
+  "meta": {
+    "description": "Proje dosyalarını OpenAEC SuperCloud'daki kendi ortamınız üzerinden eşitleyin, paylaşın ve gönderin. Windows, macOS ve Linux için ücretsiz, açık kaynaklı masaüstü uygulaması; depolama AB'de.",
+    "title": "OpenAEC SuperCloud — OpenAEC Foundation"
   },
-  "why": {
-    "title": "Neden OpenAEC <span class=\"accent\">SuperCloud</span>?",
-    "desc": "İnşaat projelerinin dosyaları çoğu zaman Dropbox, OneDrive ve yazılım sağlayıcılarının sunucularına dağılmış durumdadır. O zaman verilerinizin nerede durduğuna ve ne kadara mal olduğuna başkası karar verir.",
-    "desc2": "SuperCloud kendi Nextcloud’unuzda çalışır. Dosyalar, hesaplar ve sorunlar kendi sunucunuzda kalır; OpenAEC araçları doğrudan oraya okur ve yazar."
-  },
-  "parts": {
-    "title": "Üç bileşen",
-    "desc": "SuperCloud tek bir uygulama değil, ekosistemin altındaki katmandır. Bu bileşenler şu anda geliştiriliyor.",
-    "p1": "<strong>Masaüstü için OpenAEC Cloud</strong> Dropbox gibi bir senkronizasyon istemcisi: yerel bir klasörü Nextcloud’unuza bağlayın, iki yönlü senkronize edin ve paylaşım bağlantıları oluşturun.",
-    "p2": "<strong>Araçlar için bulut depolama</strong> BCF Manager Studio gibi araçların proje verilerini Nextcloud’da saklamasını sağlayan ortak bir kütüphane; tek sunucuda birden fazla kuruluş.",
-    "p3": "<strong>Tek bir OpenAEC hesabı</strong> Tüm uygulamalar için tek giriş. Erişim belirteçleri, kredi ile çalışan yapay zekâ hizmetleri dahil merkezi olarak doğrulanır."
-  },
-  "features": {
-    "title": "Özellikler",
+  "hl": {
     "sync": {
-      "title": "İki yönlü senkronizasyon",
-      "desc": "Yerel klasörünüz ve Nextcloud klasörünüz aynı kalır: yeni ve değişen dosyalar iki yönde aktarılır, değişmeyenler atlanır."
+      "alt": "Bir proje alanı için Klasör seç penceresi: fotoğraflar dışında tüm klasörler işaretli, her klasörün boyutu ve dosya sayısıyla",
+      "kicker": "Eşitleme",
+      "title": "Sıradan bir klasörde çalışın, gerisi kendiliğinden olur",
+      "desc": "Bir dosyayı kaydettiğiniz anda proje alanına gider, iş arkadaşlarınızın değişiklikleri de kendiliğinden gelir. Büyük bir değişiklikte yalnızca değişen parçalar aktarılır. Her alan için hangi klasörlerin bu bilgisayara geleceğini seçin: şantiye fotoğrafları sunucuda kalabilir."
+    },
+    "spaces": {
+      "alt": "Solda proje alanları ve paylaşılan klasörler, sağda Hesaplar klasöründeki dosyalar; ikisi bir iş arkadaşı tarafından kilitlenmiş",
+      "kicker": "Alanlar",
+      "title": "Her proje için, ilgili kişilerle tek bir alan",
+      "desc": "Her alanın rolü olan üyeleri vardır: yönetici, yazar, okuyucu veya misafir. Sunucudaki dosyalara göz atın, bir dosyayı kimin kilitlediğini görün ve yeni klasörler oluşturun. Başka bir tarafın sizinle paylaştığı klasörler Benimle paylaşılanlar altında görünür ve aynı kolaylıkla bağlanır."
     },
     "share": {
-      "title": "Bağlantıyla paylaşım",
-      "desc": "Bir klasör veya dosya için tek tıkla paylaşım bağlantısı oluşturun; harici bir hizmet yerine kendi sunucunuz üzerinden."
+      "alt": "Bir PDF için Paylaş penceresi: parola ve son kullanma tarihli dış bağlantı, bir iş arkadaşıyla paylaşma ve erişimi olanların listesi",
+      "kicker": "Paylaşım",
+      "title": "Bağlantıyla veya rolle paylaşın",
+      "desc": "Uygulamada veya Dosya Gezgini'nde bir dosya ya da klasör için Paylaş'ı seçin ve hesabı olmayan biri için parolalı ve son kullanma tarihli bir bağlantı oluşturun. Bir iş arkadaşına Görüntüleyebilir, Düzenleyebilir veya Yönetebilir rolünü verin. Erişimi olanlar bölümünde rolü değiştirir veya erişimi geri alırsınız."
     },
-    "ondemand": {
-      "title": "Gezgin onay işaretleri",
-      "desc": "Windows’ta bir klasör, OneDrive’daki gibi bir bulut klasörüne dönüşür: dosyalar yer tutucu olarak hazırdır ve yalnızca açtığınızda iner."
+    "send": {
+      "alt": "OpenAEC ile gönder penceresi: bir klasör ve iki dosya; alıcılar, mesaj, son kullanma tarihi ve parolayla",
+      "kicker": "Gönderme",
+      "title": "Büyük dosyaları aktarım hizmeti olmadan gönderin",
+      "desc": "Proje klasörlerinizin dışında da sağ tık menüsünden OpenAEC ile gönder'i seçin. Alıcı, isterseniz e-postayla, mesaj, son kullanma tarihi ve parolayla bir indirme bağlantısı alır. Bağlantı koparsa kaldığınız yerden devam edersiniz; Aktarımlarım altında indirmeleri görür ve bir bağlantıyı geri alırsınız."
     },
-    "tenants": {
-      "title": "Birden fazla kuruluş",
-      "desc": "Tek kurulum, her biri kendi projeleri ve depolamasıyla birden fazla kuruluşa hizmet verir."
+    "assistant": {
+      "alt": "Asistan ekranı: ek olarak bir tasarım esasları raporu hakkında soru; yanıt olarak yüklerin tablosu ve ardından kısa bir e-posta",
+      "kicker": "Asistan",
+      "title": "Dosyalarınızı ekleyerek asistana sorun",
+      "desc": "Sohbete bir PDF, Word veya Excel dosyası, metin ya da görüntü sürükleyin ve sorunuzu sorun. Sorular OpenAEC'in AB'deki yapay zekâ hizmetine gider ve ortamınızın yapay zekâ kredisini kullanır. Sohbetleriniz kendi bilgisayarınızda kalır."
     },
-    "manifest": {
-      "title": "Proje manifestosu",
-      "desc": "Her proje için bir manifesto hangi IFC modellerinin ve sorun setlerinin projeye ait olduğunu tutar; böylece araçlar birbirinin verisini bulur."
-    },
-    "sso": {
-      "title": "Tek giriş",
-      "desc": "Tüm OpenAEC uygulamaları için tek hesap. Masaüstü istemcisi şimdilik bir Nextcloud uygulama parolasıyla çalışıyor; tek oturum açma gelecek."
+    "tools": {
+      "alt": "OpenAEC uygulamalarının kartlarıyla Araçlar ekranı: kurulu, güncellemesi olan veya henüz kurulmamış; başlatma, güncelleme ve kaldırma düğmeleriyle",
+      "kicker": "Araçlar",
+      "title": "Tüm OpenAEC uygulamalarını tek yerden güncelleyin",
+      "desc": "Araçlar sekmesi hangi OpenAEC uygulamalarına sahip olduğunuzu ve hangilerinin yeni sürümü olduğunu gösterir. Ortamınıza bağlı olmadan da tek tıkla kurun, güncelleyin ve başlatın. Uygulama yalnızca OpenAEC-Foundation sürümlerini alır ve her indirmeyi denetler."
     }
   },
-  "tech": {
-    "title": "Teknoloji",
-    "desc": "Masaüstü istemcisi Tauri 2, Rust ve SolidJS ile geliştirildi ve sunucunuzla WebDAV ve Nextcloud paylaşım API’si üzerinden konuşur. Depolama kütüphanesi Rust ile, hizmetler için hesap doğrulaması Python ile yazıldı."
+  "notice": {
+    "link": "Kaydolun",
+    "text": "Uygulama, OpenAEC SuperCloud'daki bir hesapla çalışır."
   },
-  "cta": {
-    "github": "GitHub’da görüntüle"
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "download": "İndir",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "sync": "Eşitleme",
+    "spaces": "Alanlar ve yetkiler",
+    "share": "Paylaş ve gönder",
+    "more": "Asistan ve araçlar",
+    "all": "Tüm özellikler"
+  },
+  "features": {
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Proje klasörleriniz her yerde eşit ve doğru paylaşılmış",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "twoway": {
+      "title": "İki yönlü eşitleme",
+      "desc": "Yerel bir klasör ve bir alan eşit kalır: bir şey kaydettiğiniz ve sunucu yeni bir şey bildirdiği anda."
+    },
+    "delta": {
+      "title": "Yalnızca değişen",
+      "desc": "Büyük bir modelde yalnızca değişen bloklar aktarılır; uygulama ne kadar tasarruf edildiğini gösterir."
+    },
+    "conflict": {
+      "title": "Çakışmada iş kaybı yok",
+      "desc": "İki kişi aynı dosyada aynı anda çalıştıysa iki sürüm de korunur."
+    },
+    "select": {
+      "title": "Klasör seçin",
+      "desc": "Her alan için hangi klasörlerin bu bilgisayara geleceğine ve yeni klasörlerin otomatik gelip gelmeyeceğine karar verirsiniz."
+    },
+    "explorer": {
+      "title": "Dosya Gezgini'nde tek klasör",
+      "desc": "Windows'ta OpenAEC Cloud gezinti bölmesinde yer alır; her alan için bir alt klasörle."
+    },
+    "ondemand": {
+      "title": "İsteğe bağlı dosyalar",
+      "desc": "Windows'ta yeni dosyalar önce yalnızca çevrimiçidir ve açtığınız anda iner. Alan da boşaltabilirsiniz."
+    },
+    "icons": {
+      "title": "Her dosyada durum",
+      "desc": "Windows'ta Dosya Gezgini her dosya ve klasör için güncel, işlemde veya yalnızca çevrimiçi olduğunu gösterir."
+    },
+    "progress": {
+      "title": "İlerleme ve depolama",
+      "desc": "Neyin aktarıldığı, hız, kalan süre ve ortamınızda ne kadar depolama kaldığı. Sistem tepsisinden duraklatın."
+    },
+    "ignore": {
+      "title": "Yok sayma listesi ve sorunlu adlar",
+      "desc": "Geçici dosyalar dışarıda kalır, kendi kalıplarınızı .openaecignore'a yazarsınız ve Windows'un kaldıramadığı adlar düzgünce atlanır."
+    },
+    "space": {
+      "title": "Rollü alanlar",
+      "desc": "Her proje veya bölüm için bir alan; üyeler yönetici, yazar, okuyucu veya misafir olarak."
+    },
+    "newspace": {
+      "title": "Klasör düzeniyle yeni alan",
+      "desc": "Ortam yöneticisi uygulamadan, şablon olarak sabit bir klasör düzeniyle alan oluşturur."
+    },
+    "sharedwithme": {
+      "title": "Benimle paylaşılanlar",
+      "desc": "Diğer tarafların klasörlerini bir alan gibi bağlayın. Yalnızca okuma yetkisiyle sunucuya hiçbir şey gitmez."
+    },
+    "browse": {
+      "title": "Sunucudaki dosyalara göz atın",
+      "desc": "Bir alanı bağlamadan gezin, klasör oluşturun ve bir dosyayı kimin kilitlediğini görün."
+    },
+    "lock": {
+      "title": "Kilitleme ve sürümler",
+      "desc": "İş arkadaşlarınız üzerinde çalıştığınızı görsün diye bir dosyayı kilitleyin ve önceki bir sürümü açın."
+    },
+    "link": {
+      "title": "Dışarıdakiler için bağlantı",
+      "desc": "Hesap olmadan, parola ve son kullanma tarihiyle görüntüleme ve indirme. Zaten OpenAEC'teyse hiçbir şey yüklenmez."
+    },
+    "roles": {
+      "title": "Rolle paylaşın",
+      "desc": "Görüntüleyebilir, Düzenleyebilir veya Yönetebilir. Kendi yetkinizden fazlasını asla vermezsiniz."
+    },
+    "send": {
+      "title": "OpenAEC ile gönder",
+      "desc": "Dosyalar ve tüm klasörler indirme bağlantısıyla; Dosya Gezgini, Finder, Nautilus, Dolphin veya Nemo'daki sağ tık menüsünden."
+    },
+    "resume": {
+      "title": "Devam ettir ve geri al",
+      "desc": "Yarıda kalan bir aktarım kaldığı yerden devam eder. Aktarımlarım altında indirmeleri görür ve bir bağlantıyı geri alırsınız."
+    },
+    "assistant": {
+      "title": "Ekli asistan",
+      "desc": "PDF'ler, Word ve Excel dosyaları, metin ve görüntüler hakkında sorular; OpenAEC'in AB'deki yapay zekâ hizmeti üzerinden."
+    },
+    "chats": {
+      "title": "Sohbetler kendi bilgisayarınızda",
+      "desc": "Her sohbet yerel olarak saklanır ve silinebilir. Her yanıttan sonra kullanımı görürsünüz."
+    },
+    "tools": {
+      "title": "OpenAEC uygulamalarını kurun",
+      "desc": "Windows ve Linux'ta her indirmenin denetimiyle kurun, güncelleyin, başlatın ve kaldırın."
+    },
+    "updates": {
+      "title": "Kendini günceller",
+      "desc": "Uygulama yeni sürümleri arka planda indirir ve yalnızca siz tıkladığınızda kurar; asla bir eşitlemenin ortasında değil."
+    },
+    "cli": {
+      "title": "Sunucular için komut satırı",
+      "desc": "openaec-storage programı ekransız Linux'ta alanları eşitler, hizmet olarak da."
+    },
+    "signin": {
+      "title": "Bir kez oturum açın",
+      "desc": "OpenAEC hesabınızla tarayıcı üzerinden oturum açarsınız; anahtarlar işletim sisteminizin anahtar zincirinde saklanır ve kendiliğinden yenilenir."
+    }
+  },
+  "download": {
+    "title": "v2026.44.10 indir",
+    "lead": "Ücretsiz ve açık kaynak; Windows, macOS ve Linux için. OpenAEC SuperCloud hesabınızla oturum açarsınız.",
+    "forWindows": "Windows için indir",
+    "forMac": "macOS için indir",
+    "forLinux": "Linux için indir",
+    "metaWindows": ".exe yükleyici",
+    "metaMac": "evrensel .dmg, Intel ve Apple Silicon",
+    "metaLinux": "AppImage, çoğu dağıtımda çalışır",
+    "fileExe": "Yükleyici (.exe)",
+    "fileMsi": "Yükleyici (.msi)",
+    "fileDmg": "Evrensel .dmg",
+    "fileDeb": ".deb",
+    "fileAppImage": "AppImage",
+    "label": "İndir",
+    "mobileNote": "OpenAEC SuperCloud bir masaüstü uygulamasıdır. Bilgisayarınıza indirin.",
+    "other": "Diğer platformlar"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDownload": "İndir",
+    "items": {
+      "assistant": {
+        "title": "Asistan",
+        "desc": "Eklerle soru sorun; akışlı yanıtlar ve model seçimiyle."
+      },
+      "explorer": {
+        "title": "Dosya Gezgini'nde OpenAEC Cloud",
+        "desc": "Gezinti bölmesinde kendi yeri ve Windows 11 sağ tık menüsünde bir OpenAEC öğesi."
+      },
+      "spaces": {
+        "title": "Uygulamadan alanlar",
+        "desc": "Klasör düzeniyle yeni alan oluşturun, klasörler açın ve hemen kişileri davet edin."
+      },
+      "guests": {
+        "title": "Misafir davet edin",
+        "desc": "Paylaşım penceresinden henüz alanın üyesi olmayan birini davet edersiniz."
+      },
+      "noupload": {
+        "title": "Yüklemeden paylaşım",
+        "desc": "Dosya zaten OpenAEC'teyse hemen bağlantı oluşturursunuz; Gönder de onu yeniden yüklemez."
+      },
+      "session": {
+        "title": "Oturumu açık tutun",
+        "desc": "Uygulama oturumunuzu kendiliğinden yeniler; yine de sona ererse eşitleme tek bir mesajla düzgünce durur."
+      }
+    },
+    "label": "v2026.44 sürümünde yeni",
+    "title": "Bir asistan ve <span>Dosya Gezgini'nde OpenAEC</span>",
+    "desc": "Bu hafta uygulama yeni bir ad, tüm OpenAEC uygulamalarının sürüm numaralandırmasını ve bir dizi ekleme aldı: Dosya Gezgini'nde kendi yerinden asistana ve uygulamadan yeni alanlara kadar."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları eşitleyip paylaşabilirim?",
+      "a": "Çizimlerden ve IFC modellerinden hesap tablolarına ve fotoğraflara kadar her tür dosya. Yalnızca geçici dosyalar, .openaecignore'a yazdıklarınız ve Windows'un kaldıramadığı adlar atlanır. Asistan PDF, Word, Excel, metin ve görüntüleri okur."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Evet, Windows, macOS veya Linux için OpenAEC Desktop App. Ardından tarayıcı üzerinden ortamınızda oturum açar ve istediğiniz alanları bağlarsınız. Ekransız sunucular için openaec-storage komut satırı programı vardır."
+    },
+    "price": {
+      "q": "Ücreti nedir?",
+      "a": "Uygulama ücretsiz ve açık kaynaklıdır. Ancak OpenAEC SuperCloud'da bir hesaba ihtiyacınız vardır; <a href=\"/supercloud/aanmelden/\">SuperCloud sayfasında</a> kaydolursunuz, bir hesapla ne kadar depolama geldiği de orada yazar. Asistan ortamınızın yapay zekâ kredisini kullanır."
+    },
+    "save": {
+      "q": "Dosyalarım nerede saklanır?",
+      "a": "OpenAEC SuperCloud'daki kendi ortamınızın deposunda, AB'de, sürümleriyle birlikte. Bilgisayarınızda sıradan klasörlerde ve kendi biçimlerinde dururlar: ayrı bir dosya biçimi yoktur."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows (yükleyici veya MSI), macOS (Intel ve Apple Silicon için evrensel .dmg) ve Linux (.deb veya AppImage). Eşitleme, paylaşım ve gönderme her yerde çalışır. Durum simgeleri, isteğe bağlı dosyalar ve gezinti bölmesindeki yer henüz yalnızca Windows'ta vardır."
+    },
+    "practice": {
+      "q": "İnşaat pratiğine uygun mu?",
+      "a": "Evet. Her proje için sabit klasör düzenli bir alanla çalışır, yüklenici veya denetçi gibi dış taraflara misafir rolü ya da son kullanma tarihli bağlantı verirsiniz. Kilitleme, bir çizim veya hesap raporu üzerinde kimin çalıştığını gösterir."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "Uygulamanın dosyalarınızı ek olarak okuyan kendi asistanı vardır. Harici bir yapay zekâ asistanının alanlarınızda kendisinin çalışmasını sağlayan bir MCP bağlantısı henüz yok; betikler için openaec-storage komut satırı programı vardır."
+    },
+    "nextcloud": {
+      "q": "Nextcloud ile çalışır mı?",
+      "a": "Hayır. İlk sürümler Nextcloud için düşünülmüştü, ancak masaüstü uygulaması artık OpenAEC SuperCloud'un kendi deposuyla çalışır: alanlar, roller, sürümler ve aktarımlar."
+    },
+    "offline": {
+      "q": "İnternetsiz çalışabilir miyim?",
+      "a": "Evet, bilgisayarınızdaki dosyalarla. Bağlantı geri geldiği anda değişiklikleriniz sunucuya gider. Yalnızca çevrimiçi dosyalar ancak bağlantı varken ve uygulama çalışırken açılır."
+    },
+    "recipients": {
+      "q": "Hesabı olmayan bir alıcı ne görür?",
+      "a": "Kendi ortamınızda, yalnızca paylaştığınız veya gönderdiğiniz şeyleri içeren bir indirme sayfası. Parola koyduysanız önce onu girmesi gerekir; parola asla e-postada yer almaz. Son kullanma tarihinden sonra veya bağlantıyı geri aldığınızda artık çalışmaz."
+    },
+    "heading": "Sık sorulan sorular"
+  },
+  "tech": {
+    "tauri": {
+      "title": "Tauri 2 ve Rust",
+      "desc": "İmzalı yükleyiciler ve otomatik güncellemelerle Windows, macOS ve Linux için küçük, yerel bir uygulama."
+    },
+    "solid": {
+      "title": "SolidJS",
+      "desc": "Uygulamanın pencereleri: genel bakış, alanlar, paylaşım, gönderme, asistan ve araçlar."
+    },
+    "sync": {
+      "title": "openaec-sync çekirdeği",
+      "desc": "Arayüzsüz bir Rust kütüphanesi: blok başına BLAKE3 özetleri, delta yüklemeler, paralel aktarımlar ve çakışma kuralları."
+    },
+    "storage": {
+      "title": "OpenAEC Storage",
+      "desc": "Sunucu tarafı: alanlar, yetkiler, sürümler ve aktarımlar için bir Frappe uygulaması; dosyaların kendisi AB'deki S3 deposunda durur."
+    },
+    "cloudfilter": {
+      "title": "Windows Cloud Filter API",
+      "desc": "Durum simgeleri, isteğe bağlı dosyalar ve gezinti bölmesi; ayrıca Windows 11 sağ tık menüsünde kendi öğesi."
+    },
+    "auth": {
+      "title": "PKCE ile OAuth 2",
+      "desc": "Tarayıcı üzerinden oturum açma; belirteçler işletim sisteminin anahtar zincirinde, uygulamada gizli bilgi yok."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }

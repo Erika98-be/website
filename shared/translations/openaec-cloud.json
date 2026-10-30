@@ -1,57 +1,310 @@
 {
   "header": {
-    "label": "OpenAEC Ecosystem",
     "title": "OpenAEC <span class=\"accent\">SuperCloud</span>",
-    "desc": "OpenAEC’s own cloud, account and SSO platform. One login for the whole ecosystem, with storage, sharing and synchronisation on your own Nextcloud server.",
-    "badge": "In development"
+    "downloadBtn": "Download",
+    "featuresBtn": "See the features",
+    "sourceBtn": "Source code",
+    "proof1": "Sync · share · send",
+    "proof2": "Storage in the EU",
+    "proof4": "App in Dutch",
+    "proof5": "Free app · AGPL-3.0",
+    "heroAlt": "OpenAEC Desktop App: overview with the main folder, storage use, the files being transferred and the linked project folders",
+    "label": "Files and collaboration",
+    "tagline": "All your project files in sync on every computer, and safely shared with whoever you choose",
+    "desc": "Link a folder on your computer to a project space in your OpenAEC environment and keep working in your own programs. The OpenAEC Desktop App keeps the files in sync, shares them with a link and sends large files without a separate service."
   },
-  "chips": {
-    "selfhosted": "Self-hosted"
+  "meta": {
+    "description": "Sync, share and send project files through your own environment in the OpenAEC SuperCloud. Free, open-source desktop app for Windows, macOS and Linux, with storage in the EU.",
+    "title": "OpenAEC SuperCloud — OpenAEC Foundation"
   },
-  "why": {
-    "title": "Why OpenAEC <span class=\"accent\">SuperCloud</span>?",
-    "desc": "Files from construction projects are often scattered across Dropbox, OneDrive and the servers of software vendors. Then someone else decides where your data lives and what it costs.",
-    "desc2": "SuperCloud runs on your own Nextcloud. Files, accounts and issues stay on your own server, and the OpenAEC tools read and write there directly."
-  },
-  "parts": {
-    "title": "Three parts",
-    "desc": "SuperCloud is not a single app but the layer beneath the ecosystem. These parts are being built now.",
-    "p1": "<strong>OpenAEC Cloud for the desktop</strong> A sync client like Dropbox: link a local folder to your Nextcloud, sync in both directions and create share links.",
-    "p2": "<strong>Cloud storage for the tools</strong> A shared library that lets tools such as BCF Manager Studio keep their project data in Nextcloud, with several organisations on one server.",
-    "p3": "<strong>One OpenAEC account</strong> One login for every app. Access tokens are checked centrally, also for AI services that work with credits."
-  },
-  "features": {
-    "title": "Features",
+  "hl": {
     "sync": {
-      "title": "Two-way sync",
-      "desc": "Your local folder and your Nextcloud folder stay the same: new and changed files go back and forth, unchanged ones are skipped."
+      "alt": "Choose folders window for a project space: every folder ticked except the photos, with the size and number of files per folder",
+      "kicker": "Sync",
+      "title": "Work in an ordinary folder, the rest happens on its own",
+      "desc": "As soon as you save a file, it goes to the project space, and your colleagues' changes come in on their own. For a large change, only the changed parts are transferred. Choose per space which folders come to this computer: the site photos can simply stay on the server."
+    },
+    "spaces": {
+      "alt": "Spaces screen with the project spaces and shared folders on the left, and on the right the files in the Calculations folder, two of them locked by a colleague",
+      "kicker": "Spaces",
+      "title": "One space per project, with the people who belong to it",
+      "desc": "Each space has members with a role: manager, writer, reader or guest. Browse the files on the server, see who has locked a file and create new folders. Folders that another party shares with you are listed under Shared with me, and you link them just as easily."
     },
     "share": {
-      "title": "Share with a link",
-      "desc": "Create a share link for a folder or file in one click, through your own server instead of an outside service."
+      "alt": "Share window for a PDF: a link for outsiders with password and expiry date, sharing with a colleague and the list of who has access",
+      "kicker": "Sharing",
+      "title": "Share with a link or with a role",
+      "desc": "Choose Share on a file or folder, in the app or in File Explorer, and create a link for someone without an account, with a password and an expiry date. Give a colleague the role Can view, Can edit or Can manage. Under Who has access you change a role or withdraw access again."
     },
-    "ondemand": {
-      "title": "Explorer check marks",
-      "desc": "On Windows a folder becomes a cloud folder as with OneDrive: files are ready as placeholders and only download when you open them."
+    "send": {
+      "alt": "Send with OpenAEC window: a folder and two files, with recipients, a message, an expiry date and a password",
+      "kicker": "Sending",
+      "title": "Send large files without a transfer service",
+      "desc": "Choose Send with OpenAEC in the right-click menu, also outside your project folders. The recipient gets a download link, by e-mail if you like, with a message, an expiry date and a password. If the connection drops, you resume where you were; under My transfers you see the downloads and withdraw a link."
     },
-    "tenants": {
-      "title": "Several organisations",
-      "desc": "One installation serves several organisations, each with its own projects and storage."
+    "assistant": {
+      "alt": "Assistant screen: a question about a basis-of-design report as an attachment, answered with a table of the loads and then a short e-mail",
+      "kicker": "Assistant",
+      "title": "Ask the assistant, with your files attached",
+      "desc": "Drag a PDF, Word or Excel file, text or image into the conversation and ask your question. The questions go to OpenAEC's AI service in the EU and use your environment's AI credit. Your conversations stay on your own computer."
     },
-    "manifest": {
-      "title": "Project manifest",
-      "desc": "Per project a manifest records which IFC models and issue sets belong to it, so the tools find each other’s data."
-    },
-    "sso": {
-      "title": "One login",
-      "desc": "One account for every OpenAEC app. The desktop client now works with a Nextcloud app password; single sign-on follows."
+    "tools": {
+      "alt": "Tools screen with cards for the OpenAEC apps: installed, with an update or not yet installed, with buttons to start, update or remove",
+      "kicker": "Tools",
+      "title": "Keep all OpenAEC apps up to date in one place",
+      "desc": "The Tools tab shows which OpenAEC apps you have and which ones have a new version. Install, update and start with one click, even without a connection to your environment. The app only fetches releases from OpenAEC-Foundation and checks every download."
     }
   },
-  "tech": {
-    "title": "Technology",
-    "desc": "The desktop client is built with Tauri 2, Rust and SolidJS and talks to your server through WebDAV and the Nextcloud sharing API. The storage library is written in Rust, the account checks for services in Python."
+  "notice": {
+    "link": "Sign up",
+    "text": "The app works with an account in the OpenAEC SuperCloud."
   },
-  "cta": {
-    "github": "View on GitHub"
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "download": "Download",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "sync": "Sync",
+    "spaces": "Spaces and permissions",
+    "share": "Share and send",
+    "more": "Assistant and tools",
+    "all": "All features"
+  },
+  "features": {
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "Your project folders, in sync everywhere and properly shared",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
+    "twoway": {
+      "title": "Two-way sync",
+      "desc": "A local folder and a space stay the same: as soon as you save something and as soon as the server reports something new."
+    },
+    "delta": {
+      "title": "Only what has changed",
+      "desc": "For a large model, only the changed blocks are transferred; the app shows how much that saves."
+    },
+    "conflict": {
+      "title": "No work lost in a conflict",
+      "desc": "If two people worked on the same file at the same time, both versions are kept."
+    },
+    "select": {
+      "title": "Choose folders",
+      "desc": "Per space you decide which folders come to this computer, and whether new folders come along automatically."
+    },
+    "explorer": {
+      "title": "One folder in File Explorer",
+      "desc": "On Windows, OpenAEC Cloud sits in the navigation pane, with a subfolder per space."
+    },
+    "ondemand": {
+      "title": "Files on demand",
+      "desc": "On Windows, new files are online-only at first and come in as soon as you open them. You can free up space too."
+    },
+    "icons": {
+      "title": "Status on every file",
+      "desc": "On Windows, File Explorer shows per file and folder whether it is up to date, busy or online-only."
+    },
+    "progress": {
+      "title": "Progress and storage",
+      "desc": "What is being transferred, the speed, the time remaining and how much storage your environment has left. Pause from the system tray."
+    },
+    "ignore": {
+      "title": "Ignore list and awkward names",
+      "desc": "Temporary files stay out, your own patterns go in .openaecignore, and names Windows cannot handle are skipped cleanly."
+    },
+    "space": {
+      "title": "Spaces with roles",
+      "desc": "A space per project or department, with members as manager, writer, reader or guest."
+    },
+    "newspace": {
+      "title": "New space with folder layout",
+      "desc": "An environment manager creates a space from the app, with a fixed folder layout as a template."
+    },
+    "sharedwithme": {
+      "title": "Shared with me",
+      "desc": "Link folders from other parties like a space. With read-only access nothing goes to the server."
+    },
+    "browse": {
+      "title": "Browse files on the server",
+      "desc": "Browse a space without linking it, create folders and see who has locked a file."
+    },
+    "lock": {
+      "title": "Locking and versions",
+      "desc": "Lock a file so colleagues see you are working on it, and open an earlier version."
+    },
+    "link": {
+      "title": "Link for outsiders",
+      "desc": "View and download without an account, with password and expiry date. If it is already in OpenAEC, nothing is uploaded."
+    },
+    "roles": {
+      "title": "Share with a role",
+      "desc": "Can view, Can edit or Can manage. You never grant more than you have yourself."
+    },
+    "send": {
+      "title": "Send with OpenAEC",
+      "desc": "Files and whole folders with a download link, from the right-click menu in File Explorer, Finder, Nautilus, Dolphin or Nemo."
+    },
+    "resume": {
+      "title": "Resume and withdraw",
+      "desc": "An interrupted transfer continues where it left off. Under My transfers you see the downloads and withdraw a link."
+    },
+    "assistant": {
+      "title": "Assistant with attachments",
+      "desc": "Questions about PDFs, Word and Excel files, text and images, through OpenAEC's AI service in the EU."
+    },
+    "chats": {
+      "title": "Conversations on your own computer",
+      "desc": "Every conversation is stored locally and can be deleted. After each answer you see the usage."
+    },
+    "tools": {
+      "title": "Install OpenAEC apps",
+      "desc": "Install, update, start and remove, with a check of every download on Windows and Linux."
+    },
+    "updates": {
+      "title": "Updates itself",
+      "desc": "The app downloads new versions in the background and only installs them when you click, never in the middle of a sync."
+    },
+    "cli": {
+      "title": "Command line for servers",
+      "desc": "The openaec-storage program syncs spaces on Linux without a screen, also as a service."
+    },
+    "signin": {
+      "title": "Sign in once",
+      "desc": "Sign in through the browser with your OpenAEC account; the keys are kept in your operating system's keychain and renewed automatically."
+    }
+  },
+  "download": {
+    "title": "Download v2026.44.10",
+    "lead": "Free and open source, for Windows, macOS and Linux. You sign in with your account in the OpenAEC SuperCloud.",
+    "forWindows": "Download for Windows",
+    "forMac": "Download for macOS",
+    "forLinux": "Download for Linux",
+    "metaWindows": ".exe installer",
+    "metaMac": "universal .dmg, Intel and Apple Silicon",
+    "metaLinux": "AppImage, runs on most distributions",
+    "fileExe": "Installer (.exe)",
+    "fileMsi": "Installer (.msi)",
+    "fileDmg": "Universal .dmg",
+    "fileDeb": ".deb",
+    "fileAppImage": "AppImage",
+    "label": "Download",
+    "mobileNote": "OpenAEC SuperCloud is a desktop app. Download it on your computer.",
+    "other": "Other platforms"
+  },
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "ctaDownload": "Download",
+    "items": {
+      "assistant": {
+        "title": "Assistant",
+        "desc": "Ask questions with attachments, with streamed answers and a choice of model."
+      },
+      "explorer": {
+        "title": "OpenAEC Cloud in File Explorer",
+        "desc": "Its own place in the navigation pane and an OpenAEC item in the Windows 11 right-click menu."
+      },
+      "spaces": {
+        "title": "Spaces from the app",
+        "desc": "Create a new space with folder layout, create folders and invite people straight away."
+      },
+      "guests": {
+        "title": "Invite guests",
+        "desc": "From the share window you invite someone who is not yet a member of the space."
+      },
+      "noupload": {
+        "title": "Sharing without upload",
+        "desc": "If a file is already in OpenAEC, you create a link straight away, and Send does not upload it again either."
+      },
+      "session": {
+        "title": "Stay signed in",
+        "desc": "The app renews your session on its own; if it does expire, sync stops cleanly with a single message."
+      }
+    },
+    "label": "New in v2026.44",
+    "title": "An assistant, and <span>OpenAEC in File Explorer</span>",
+    "desc": "This week the app got a new name, the version numbers of all OpenAEC apps and a series of additions: from its own place in File Explorer to an assistant and new spaces from the app."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I sync and share?",
+      "a": "Any kind of file, from drawings and IFC models to spreadsheets and photos. Only temporary files, whatever you put in .openaecignore and names Windows cannot handle are skipped. The assistant reads PDF, Word, Excel, text and images."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "Yes, the OpenAEC Desktop App for Windows, macOS or Linux. Then you sign in to your environment through the browser and link the spaces you want. For servers without a screen there is the openaec-storage command-line program."
+    },
+    "price": {
+      "q": "What does it cost?",
+      "a": "The app is free and open source. You do need an account in the OpenAEC SuperCloud; you sign up on <a href=\"/supercloud/aanmelden/\">the SuperCloud page</a>, which also says how much storage comes with an account. The assistant uses your environment's AI credit."
+    },
+    "save": {
+      "q": "Where are my files stored?",
+      "a": "In the storage of your own environment in the OpenAEC SuperCloud, in the EU, together with their versions. On your computer they sit in ordinary folders in their own format: there is no separate file format."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "Windows (installer or MSI), macOS (universal .dmg for Intel and Apple Silicon) and Linux (.deb or AppImage). Sync, sharing and sending work everywhere. Status icons, files on demand and the place in the navigation pane are still Windows-only."
+    },
+    "practice": {
+      "q": "Does it fit how construction projects work?",
+      "a": "Yes. You work with a space per project, with a fixed folder layout, and give outside parties such as a contractor or reviewer a guest role or a link with an expiry date. Locking shows who is working on a drawing or calculation report."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "The app has its own assistant that reads your files as attachments. An MCP connection that lets an external AI assistant work in your spaces itself does not exist yet; for scripts there is the openaec-storage command-line program."
+    },
+    "nextcloud": {
+      "q": "Does it work with Nextcloud?",
+      "a": "No. The first versions were meant for Nextcloud, but the desktop app now works with the OpenAEC SuperCloud's own storage: spaces, roles, versions and transfers."
+    },
+    "offline": {
+      "q": "Can I work without internet?",
+      "a": "Yes, with the files that are on your computer. As soon as you are connected again, your changes go to the server. Online-only files open again once you are connected and the app is running."
+    },
+    "recipients": {
+      "q": "What does a recipient without an account see?",
+      "a": "A download page in your own environment, with only what you shared or sent. If you set a password, they have to enter it first; the password is never in the e-mail. After the expiry date, or once you withdraw the link, it stops working."
+    },
+    "heading": "Frequently asked questions"
+  },
+  "tech": {
+    "tauri": {
+      "title": "Tauri 2 and Rust",
+      "desc": "A small native app for Windows, macOS and Linux, with signed installers and automatic updates."
+    },
+    "solid": {
+      "title": "SolidJS",
+      "desc": "The app's windows: overview, spaces, sharing, sending, assistant and tools."
+    },
+    "sync": {
+      "title": "openaec-sync core",
+      "desc": "A Rust library without UI: BLAKE3 hashes per block, delta uploads, parallel transfers and conflict rules."
+    },
+    "storage": {
+      "title": "OpenAEC Storage",
+      "desc": "The server side: a Frappe app for spaces, permissions, versions and transfers; the files themselves sit in S3 storage in the EU."
+    },
+    "cloudfilter": {
+      "title": "Windows Cloud Filter API",
+      "desc": "Status icons, files on demand and the navigation pane, plus its own item in the Windows 11 right-click menu."
+    },
+    "auth": {
+      "title": "OAuth 2 with PKCE",
+      "desc": "Sign-in through the browser; tokens in the operating system's keychain, with no secrets in the app."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }
