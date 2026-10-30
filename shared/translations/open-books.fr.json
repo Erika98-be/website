@@ -1,64 +1,249 @@
 {
   "header": {
-    "label": "Littérature historique de la construction",
-    "desc": "Livres historiques numérisés de construction et d'architecture, librement accessibles aux ingénieurs, architectes et constructeurs.",
-    "browseBtn": "Parcourir la collection",
-    "sourceBtn": "Voir le code source"
+    "title": "Open<span class=\"accent\">Books</span>",
+    "demoBtn": "Ouvrir dans le navigateur",
+    "featuresBtn": "Voir les fonctions",
+    "sourceBtn": "Code source",
+    "proof1": "12 livres · plus de 2 300 pages",
+    "proof2": "De 1670 à 1960",
+    "proof3": "Dans le navigateur, sans compte",
+    "proof4": "Gratuit · LGPL-3.0",
+    "heroAlt": "OpenBooks : la bibliothèque avec les catégories et les premiers livres, dont Gugel, Wattjes et Vandepitte",
+    "label": "Littérature de construction ancienne",
+    "tagline": "Des ouvrages techniques que plus personne n'imprime, gratuits dans votre navigateur",
+    "desc": "Quiconque rénove ou évalue un bâtiment existant veut savoir comment on construisait autrefois. OpenBooks met en ligne des livres de construction numérisés de 1670 aux années soixante : choisissez un livre, feuilletez les pages originales et zoomez sur les dessins."
   },
-  "chips": {
-    "books": "25+ livres",
-    "pages": "3 000+ pages"
+  "meta": {
+    "description": "Bibliothèque en ligne gratuite de livres de construction anciens numérisés : Wattjes, Gugel, Vandepitte, Zwiers, Bosboom et anciennes prescriptions néerlandaises pour le béton. Feuilletez et zoomez sur les pages originales, sans compte.",
+    "title": "OpenBooks — OpenAEC Foundation"
   },
-  "why": {
-    "title": "Pourquoi Open<span class=\"accent\">Books</span> ?",
-    "desc": "Pour rénover, restaurer ou évaluer un bâtiment existant, il faut savoir comment on construisait autrefois : quels appareillages de maçonnerie, fondations, menuiseries et méthodes de calcul étaient courants. Ce savoir se trouve dans des ouvrages techniques épuisés depuis des décennies.",
-    "desc2": "OpenBooks numérise ces livres et les met en ligne gratuitement. Sans compte ni abonnement : feuilletez les pages originales, zoomez sur les dessins et recherchez dans le texte des livres déjà traités par OCR."
-  },
-  "reader": {
-    "label": "Lecteur",
-    "title": "Utiliser la collection",
-    "desc": "La bibliothèque fonctionne dans le navigateur. Choisissez une catégorie, ouvrez un livre et parcourez les scans originaux page par page.",
-    "c1": "<strong>Catégories</strong> Architecture, construction, calculs, acier, bois, réglementation et classique.",
-    "c2": "<strong>Lecteur</strong> Zoomez, tournez les pages et accédez directement à un numéro de page.",
-    "c3": "<strong>Recherche</strong> Recherchez par titre et auteur, et dans le texte intégral des livres avec OCR.",
-    "c4": "<strong>Open source</strong> Les scans et le code sont sur GitHub ; de nouveaux livres peuvent être proposés en contribution."
-  },
-  "collection": {
-    "title": "Collection",
-    "wattjes": {
-      "title": "Prof. J.G. Wattjes (10 volumes)",
-      "desc": "Série complète sur les constructions : murs, cheminées, fondations, fenêtres/portes, planchers, voûtes, escaliers, charpentes et plus encore."
+  "hl": {
+    "collection": {
+      "alt": "Étagère avec entre autres Staalconstructies, Handboek Houtconstructies, Gewapend Beton Voorschriften et le Cort onderwys de Bosboom",
+      "kicker": "Collection",
+      "title": "Les ouvrages de référence introuvables d'occasion",
+      "desc": "Wattjes sur les murs, fondations, menuiseries, escaliers et toitures, la théorie des formes de Gugel, Vandepitte sur le calcul des structures, l'acier de Potma et De Vries, le bois de Zwiers et les prescriptions béton de 1950. Chaque livre avec auteur, année et nombre de pages."
     },
-    "gugel": {
-      "title": "Prof. E.H. Gugel",
-      "desc": "Architectonische Vormenleer (1880): théorie de la conception architecturale et langage des formes."
+    "find": {
+      "alt": "Catégorie Constructie choisie : cinq tomes des Constructies van Gebouwen de Wattjes",
+      "kicker": "Trouver",
+      "title": "Le bon livre en deux clics",
+      "desc": "Choisissez un domaine, comme la construction, l'acier, le bois ou les prescriptions, et seuls ces livres s'affichent. Ou tapez un titre ou un auteur dans le champ de recherche."
     },
-    "potma": {
-      "title": "Ir. A.P. Potma &amp; Ir. J.E. de Vries",
-      "desc": "Staalconstructies: théorie, calcul et exécution des structures en acier."
+    "read": {
+      "alt": "Lecteur avec le tome 4 de Wattjes, page 60 sur 205 : texte sur les huisseries avec le dessin d'une porte coupe-vent",
+      "kicker": "Lire",
+      "title": "Feuilletez l'original, page après page",
+      "desc": "Chaque livre s'ouvre dans un lecteur épuré avec les vraies numérisations. Tournez les pages avec les flèches ou le clavier, tapez un numéro de page ou cliquez sur la barre de progression pour aller directement à un chapitre."
     },
-    "vandepitte": {
-      "title": "Prof. D. Vandepitte (3 volumes)",
-      "desc": "Berekening van Constructies: théorie du calcul des structures en trois volumes complets."
+    "zoom": {
+      "alt": "L'Architectonische Vormenleer de Gugel à 250 % : arcs et appareils de briques en détail",
+      "kicker": "Zoom",
+      "title": "Chaque détail du dessin net à l'écran",
+      "desc": "Zoomez jusqu'à cinq fois avec la molette ou les boutons et déplacez la page où vous voulez. Vous lisez ainsi les cotes, les joints et les profils sur les anciennes planches."
     },
-    "zwiers": {
-      "title": "L. Zwiers",
-      "desc": "Houtconstructies Handboek: manuel de conception des structures en bois."
-    },
-    "bosboom": {
-      "title": "Symon Bosboom",
-      "desc": "Cort onderwys van de vyf colommen: traité historique sur les cinq ordres classiques par le tailleur de pierre de la ville de Dordrecht."
-    },
-    "bernoulli": {
-      "title": "Bernoullis Vademecum",
-      "desc": "Manuel de référence pour l'ingénieur."
-    },
-    "codes": {
-      "title": "Codes de construction",
-      "desc": "Réglementations néerlandaises historiques de la construction : G.B.V. Gewapend Beton Voorschriften (1950) et VB Voorschriften Beton (1974)."
+    "classic": {
+      "alt": "Cort onderwys vande vyf colommen de Symon Bosboom (1670), avec la colonne ionique et ses proportions",
+      "kicker": "Histoire de la construction",
+      "title": "Trois siècles de savoir constructif côte à côte",
+      "desc": "Du traité sur les cinq ordres de colonnes du tailleur de pierre de la ville de Dordrecht, Symon Bosboom, en 1670, aux méthodes de calcul de Vandepitte des années soixante. Utile pour la restauration, et agréable à feuilleter."
     }
   },
-  "footer": {
-    "slogan": "Construisez librement. Construisons ensemble."
+  "subnav": {
+    "label": "Sur cette page",
+    "features": "Fonctions",
+    "whatsnew": "Nouveautés",
+    "faq": "FAQ"
+  },
+  "tabs": {
+    "highlights": "Points forts",
+    "collection": "Collection",
+    "find": "Trouver",
+    "read": "Lire",
+    "open": "Ouvert et libre",
+    "all": "Toutes les fonctions"
+  },
+  "features": {
+    "learnMore": "En savoir plus",
+    "label": "Fonctions",
+    "heading": "Une bibliothèque technique toujours ouverte",
+    "sub": "Commencez par les points forts ou choisissez un thème.",
+    "tabsLabel": "Fonctions par thème"
+  },
+  "f": {
+    "wattjes": {
+      "title": "Constructies van Gebouwen",
+      "desc": "Cinq tomes de Wattjes dans le lecteur : murs, fondations et caves, fenêtres et portes, escaliers, toitures."
+    },
+    "vandepitte": {
+      "title": "Berekening van Constructies",
+      "desc": "La théorie du calcul des structures de Vandepitte : le tome I compte plus de 600 pages."
+    },
+    "steel": {
+      "title": "Acier et bois",
+      "desc": "Staalconstructies de Potma et De Vries, le Handboek Houtconstructies de Zwiers et un livre sur les portes à panneaux."
+    },
+    "codes": {
+      "title": "Anciennes prescriptions béton",
+      "desc": "Les prescriptions néerlandaises pour le béton armé de 1950 : utiles pour évaluer une structure en béton de cette époque."
+    },
+    "gugel": {
+      "title": "Architectonische Vormenleer",
+      "desc": "243 planches de Gugel datant de 1880 : arcs, appareils, moulures et ornements."
+    },
+    "bosboom": {
+      "title": "Les cinq ordres",
+      "desc": "Le plus ancien livre : le Cort onderwys de Symon Bosboom (1670) sur les colonnes classiques."
+    },
+    "archive": {
+      "title": "Plus dans les archives",
+      "desc": "GitHub contient encore plus de numérisations, comme les dix tomes de Wattjes, Vandepitte II et III et le Vademecum de Bernoulli."
+    },
+    "categories": {
+      "title": "Par domaine",
+      "desc": "Architecture, construction, calculs, acier, bois, prescriptions et classique."
+    },
+    "search": {
+      "title": "Recherche par titre ou auteur",
+      "desc": "Tapez « Wattjes » ou « beton » et la liste se filtre au fil de la saisie."
+    },
+    "cards": {
+      "title": "Chaque livre en un coup d'œil",
+      "desc": "Une carte par livre avec une page en couverture, l'auteur, l'année et le nombre de pages."
+    },
+    "pages": {
+      "title": "Feuilleter",
+      "desc": "Page précédente et suivante avec les boutons fléchés ou les touches fléchées."
+    },
+    "goto": {
+      "title": "Aller directement à une page",
+      "desc": "Tapez le numéro de page ou cliquez sur la barre de progression ; vous savez toujours où vous êtes."
+    },
+    "zoom": {
+      "title": "Zoom jusqu'à 500 %",
+      "desc": "Avec la molette ou les boutons, et retour à l'ajustement en un clic."
+    },
+    "pan": {
+      "title": "Déplacer la page",
+      "desc": "Une fois zoomé, faites glisser la page à la souris jusqu'au détail recherché."
+    },
+    "keys": {
+      "title": "Raccourcis clavier",
+      "desc": "Flèches pour feuilleter, + et − pour zoomer, 0 pour réinitialiser et Échap pour fermer."
+    },
+    "nologin": {
+      "title": "Sans compte",
+      "desc": "Pas d'inscription ni d'abonnement : ouvrez le site et lisez."
+    },
+    "github": {
+      "title": "Chaque numérisation sur GitHub",
+      "desc": "Depuis le lecteur, un clic vous mène au dossier des fichiers originaux."
+    },
+    "zip": {
+      "title": "Tout d'un coup",
+      "desc": "Téléchargez toute la collection en fichier zip depuis GitHub pour la garder hors ligne."
+    },
+    "contribute": {
+      "title": "Proposer un livre",
+      "desc": "Vous avez numérisé un ouvrage libre de droits ? Proposez-le via une contribution sur GitHub."
+    },
+    "browser": {
+      "title": "Un navigateur suffit",
+      "desc": "Rien à installer ; fonctionne dans tout navigateur récent."
+    },
+    "privacy": {
+      "title": "Vous décidez des statistiques",
+      "desc": "Statistiques de visite uniquement si vous y consentez."
+    }
+  },
+  "whatsnew": {
+    "ctaDemo": "Essayer dans le navigateur",
+    "items": {
+      "site": {
+        "title": "Un site à part entière",
+        "desc": "La collection sous forme de bibliothèque avec catégories et recherche, désormais sur open-books.open-aec.com."
+      },
+      "reader": {
+        "title": "Toutes les pages dans le lecteur",
+        "desc": "Le lecteur affiche les vraies numérisations de chaque livre, de la première à la dernière page."
+      },
+      "zoom": {
+        "title": "Zoom et déplacement",
+        "desc": "Zoomez avec la molette et faites glisser la page vers le détail voulu."
+      },
+      "license": {
+        "title": "Une licence claire",
+        "desc": "Le site et les scripts sont sous licence LGPL-3.0."
+      }
+    },
+    "label": "Nouveau en 2026",
+    "title": "Un vrai lecteur <span>pour chaque livre</span>",
+    "desc": "Cette année, OpenBooks a reçu son propre site avec un lecteur qui affiche toutes les pages numérisées, avec zoom, déplacement et accès direct à une page.",
+    "ctaCommits": "Toutes les modifications"
+  },
+  "faq": {
+    "books": {
+      "q": "Quels livres sont disponibles ?",
+      "a": "Le lecteur contient douze livres totalisant plus de 2 300 pages : cinq tomes des Constructies van Gebouwen de Wattjes, l'Architectonische Vormenleer de Gugel, le Berekening van Constructies I de Vandepitte, Staalconstructies de Potma et De Vries, le Handboek Houtconstructies de Zwiers, les prescriptions béton armé de 1950, le Cort onderwys de Bosboom (1670) et un livre sur les portes à panneaux. GitHub contient encore plus de numérisations, comme les autres tomes de Wattjes et Vandepitte, le Vademecum de Bernoulli et les prescriptions béton de 1974."
+    },
+    "install": {
+      "q": "Dois-je installer quelque chose ?",
+      "a": "Non. Ouvrez open-books.open-aec.com dans votre navigateur et choisissez un livre. Aucun compte n'est nécessaire."
+    },
+    "price": {
+      "q": "Combien ça coûte ?",
+      "a": "Rien. OpenBooks est gratuit et open source ; le site et les scripts sont sous licence LGPL-3.0."
+    },
+    "format": {
+      "q": "Dans quel format sont les numérisations ?",
+      "a": "Chaque page est une image distincte (PNG ou JPG) dans un dossier par livre sur GitHub. Vous pouvez les consulter et les télécharger, page par page ou toute la collection."
+    },
+    "systems": {
+      "q": "Sur quels systèmes fonctionne-t-il ?",
+      "a": "Dans tout navigateur récent sous Windows, macOS et Linux. Il est plus agréable sur un ordinateur avec souris ; le site lui-même est en néerlandais."
+    },
+    "practice": {
+      "q": "Est-ce adapté à la pratique du bâtiment ?",
+      "a": "Oui, pour les travaux sur bâtiments existants : vous voyez comment murs, fondations, menuiseries, escaliers et toitures étaient construits et calculés. Attention : les prescriptions de la collection sont historiques et ne s'appliquent plus aujourd'hui."
+    },
+    "ocr": {
+      "q": "Puis-je chercher dans le texte des livres ?",
+      "a": "Pas encore. Le champ de recherche porte pour l'instant sur le titre et l'auteur. La reconnaissance de texte (OCR), pour chercher des mots dans les pages et copier du texte, est prévue."
+    },
+    "rights": {
+      "q": "Ces livres peuvent-ils être en ligne ?",
+      "a": "Pour autant qu'on puisse le vérifier, les livres sont libres de droits. C'est parfois difficile à établir. Si vous pensez qu'un livre est encore protégé, signalez-le sur GitHub et nous le retirerons."
+    },
+    "contribute": {
+      "q": "Puis-je ajouter un livre ?",
+      "a": "Volontiers. Numérisez un livre de construction libre de droits et proposez les pages via une contribution sur GitHub, ou ouvrez un ticket pour suggérer un livre."
+    },
+    "heading": "Questions fréquentes"
+  },
+  "tech": {
+    "react": {
+      "desc": "La bibliothèque et le lecteur forment une seule page web en React, sans étape de compilation."
+    },
+    "git": {
+      "desc": "Toutes les numérisations sont dans un dépôt Git, un dossier par livre : chaque modification est traçable."
+    },
+    "static": {
+      "title": "Site statique",
+      "desc": "Ni code serveur ni base de données : les pages se chargent directement depuis le dépôt."
+    },
+    "actions": {
+      "desc": "Un workflow publie automatiquement chaque modification sur open-books.open-aec.com."
+    },
+    "python": {
+      "desc": "De petits scripts numérotent et renomment les pages numérisées de chaque livre."
+    },
+    "license": {
+      "desc": "Licence ouverte pour le code ; les livres eux-mêmes sont, autant qu'on sache, libres de droits."
+    },
+    "heading": "Technologie",
+    "sub": "Pour ceux qui veulent savoir comment c'est construit."
+  },
+  "releases": {
+    "commits": "Toutes les modifications sur GitHub"
   }
 }

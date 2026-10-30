@@ -1,64 +1,249 @@
 {
   "header": {
-    "label": "Tarihi inşaat literatürü",
-    "desc": "Dijitalleştirilmiş tarihi inşaat ve mimari kitapları, mühendisler, mimarlar ve inşaatçılar için ücretsiz erişilebilir.",
-    "browseBtn": "Koleksiyonu inceleyin",
-    "sourceBtn": "Kaynak kodu görüntüle"
+    "title": "Open<span class=\"accent\">Books</span>",
+    "demoBtn": "Tarayıcıda aç",
+    "featuresBtn": "Özellikleri gör",
+    "sourceBtn": "Kaynak kodu",
+    "proof1": "12 kitap · 2.300+ sayfa",
+    "proof2": "1670'ten 1960'a",
+    "proof3": "Tarayıcıda, hesapsız",
+    "proof4": "Ücretsiz · LGPL-3.0",
+    "heroAlt": "OpenBooks: kategorileri ve Gugel, Wattjes ve Vandepitte dahil ilk kitaplarıyla kütüphane",
+    "label": "Tarihi yapı literatürü",
+    "tagline": "Artık kimsenin basmadığı meslek kitapları, tarayıcınızda ücretsiz",
+    "desc": "Mevcut bir binayı yenileyen ya da değerlendiren herkes eskiden nasıl inşa edildiğini bilmek ister. OpenBooks, 1670'ten 1960'lara kadar taranmış yapı kitaplarını çevrimiçi sunar: bir kitap seçin, orijinal sayfalarda gezinin ve çizimlere yakınlaştırın."
   },
-  "chips": {
-    "books": "25+ kitap",
-    "pages": "3.000+ sayfa"
+  "meta": {
+    "description": "Taranmış tarihi yapı kitaplarından oluşan ücretsiz çevrimiçi kütüphane: Wattjes, Gugel, Vandepitte, Zwiers, Bosboom ve eski Hollanda beton yönetmelikleri. Orijinal sayfalarda gezinin ve yakınlaştırın, hesap gerekmez.",
+    "title": "OpenBooks — OpenAEC Foundation"
   },
-  "why": {
-    "title": "Neden Open<span class=\"accent\">Books</span>?",
-    "desc": "Mevcut bir binayı yenileyen, restore eden veya değerlendiren herkesin o dönemde nasıl inşa edildiğini bilmesi gerekir: hangi duvar örgüleri, temeller, doğramalar ve hesap yöntemleri yaygındı. Bu bilgi, onlarca yıldır basılmayan mesleki kitaplarda yer alır.",
-    "desc2": "OpenBooks bu kitapları tarar ve ücretsiz olarak çevrimiçi yayınlar. Hesap yok, abonelik yok: orijinal sayfaları gezin, çizimlere yakınlaştırın ve OCR ile işlenmiş kitapların metninde arama yapın."
-  },
-  "reader": {
-    "label": "Okuyucu",
-    "title": "Koleksiyon nasıl kullanılır",
-    "desc": "Kütüphane tarayıcıda çalışır. Bir kategori seçin, bir kitap açın ve orijinal taramaları sayfa sayfa gezin.",
-    "c1": "<strong>Kategoriler</strong> Mimari, yapı, hesaplar, çelik, ahşap, yönetmelikler ve klasik.",
-    "c2": "<strong>Okuyucu</strong> Yakınlaştırın, sayfa çevirin ve doğrudan bir sayfa numarasına gidin.",
-    "c3": "<strong>Arama</strong> Başlık ve yazara göre, OCR’li kitaplarda ise tam metinde arayın.",
-    "c4": "<strong>Açık kaynak</strong> Taramalar ve kod GitHub’da; yeni kitaplar katkı olarak gönderilebilir."
-  },
-  "collection": {
-    "title": "Koleksiyon",
-    "wattjes": {
-      "title": "Prof. J.G. Wattjes (10 cilt)",
-      "desc": "İnşaat üzerine tam seri: duvarlar, bacalar, temeller, pencereler/kapılar, döşeme sistemleri, kemerler, merdivenler, çatı yapıları ve daha fazlası."
+  "hl": {
+    "collection": {
+      "alt": "Staalconstructies, Handboek Houtconstructies, Gewapend Beton Voorschriften ve Bosboom'un Cort onderwys'i gibi kitapların bulunduğu raf",
+      "kicker": "Koleksiyon",
+      "title": "Artık ikinci elde bulamadığınız temel eserler",
+      "desc": "Wattjes'ten duvarlar, temeller, doğramalar, merdivenler ve çatılar, Gugel'in biçim bilgisi, Vandepitte'den yapı hesabı, Potma ve De Vries'ten çelik, Zwiers'ten ahşap ve 1950 beton yönetmeliği. Her kitap yazar, yıl ve sayfa sayısıyla."
     },
-    "gugel": {
-      "title": "Prof. E.H. Gugel",
-      "desc": "Architectonische Vormenleer (1880): mimari tasarım teorisi ve form dili."
+    "find": {
+      "alt": "Constructie kategorisi seçili: Wattjes'in Constructies van Gebouwen serisinden beş cilt",
+      "kicker": "Bulma",
+      "title": "İki tıkla doğru kitaba",
+      "desc": "Yapı, çelik, ahşap ya da yönetmelikler gibi bir alan seçin, yalnızca o kitapları görün. Ya da arama kutusuna bir başlık veya yazar yazın."
     },
-    "potma": {
-      "title": "Ir. A.P. Potma ve Ir. J.E. de Vries",
-      "desc": "Staalconstructies: çelik yapıların teorisi, hesabı ve uygulaması."
+    "read": {
+      "alt": "Wattjes 4. cilt açık okuyucu, 205 sayfanın 60.'sı: kapı kasaları üzerine metin ve bir rüzgârlık kapısı çizimi",
+      "kicker": "Okuma",
+      "title": "Orijinali sayfa sayfa gezin",
+      "desc": "Her kitap gerçek taramalarla sade bir okuyucuda açılır. Okla ya da klavyeyle sayfa çevirin, bir sayfa numarası yazın ya da ilerleme çubuğuna tıklayarak doğrudan bir bölüme atlayın."
     },
-    "vandepitte": {
-      "title": "Prof. D. Vandepitte (3 cilt)",
-      "desc": "Berekening van Constructies: üç kapsamlı ciltte yapısal hesaplama teorisi."
+    "zoom": {
+      "alt": "Gugel'in Architectonische Vormenleer'i yüzde 250'de: kemerler ve tuğla örgüleri ayrıntılı",
+      "kicker": "Yakınlaştırma",
+      "title": "Çizimin her ayrıntısı net",
+      "desc": "Kaydırma tekerleği ya da düğmelerle beş kata kadar yakınlaştırın ve sayfayı istediğiniz yere sürükleyin. Böylece eski levhalardaki ölçüleri, derzleri ve profilleri okuyabilirsiniz."
     },
-    "zwiers": {
-      "title": "L. Zwiers",
-      "desc": "Houtconstructies Handboek: ahşap yapı tasarımı el kitabı."
-    },
-    "bosboom": {
-      "title": "Symon Bosboom",
-      "desc": "Cort onderwys van de vyf colommen: Dordrecht şehir taş ustası tarafından beş klasik sütun düzeni üzerine tarihi inceleme."
-    },
-    "bernoulli": {
-      "title": "Bernoullis Vademecum",
-      "desc": "Mühendislik referans el kitabı."
-    },
-    "codes": {
-      "title": "Yapı yönetmelikleri",
-      "desc": "Tarihi Hollanda yapı yönetmelikleri: G.B.V. Gewapend Beton Voorschriften (1950) ve VB Voorschriften Beton (1974)."
+    "classic": {
+      "alt": "Symon Bosboom'un 1670 tarihli Cort onderwys vande vyf colommen'i, İon sütunu ve ölçüleriyle",
+      "kicker": "Yapı tarihi",
+      "title": "Yan yana üç yüzyıllık yapı bilgisi",
+      "desc": "Dordrecht'in şehir taş ustası Symon Bosboom'un 1670 tarihli beş sütun düzeni üzerine incelemesinden Vandepitte'nin 1960'lardaki hesap yöntemlerine. Restorasyonda işe yarar, gezinmesi de keyiflidir."
     }
   },
-  "footer": {
-    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "collection": "Koleksiyon",
+    "find": "Bulma",
+    "read": "Okuma",
+    "open": "Açık ve özgür",
+    "all": "Tüm özellikler"
+  },
+  "features": {
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Hiç kapanmayan bir meslek kütüphanesi",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "wattjes": {
+      "title": "Constructies van Gebouwen",
+      "desc": "Okuyucuda Wattjes'ten beş cilt: duvarlar, temeller ve bodrumlar, pencere ve kapılar, merdivenler, çatılar."
+    },
+    "vandepitte": {
+      "title": "Berekening van Constructies",
+      "desc": "Vandepitte'nin yapı hesabı kuramı: 600'ü aşkın sayfalık I. cilt."
+    },
+    "steel": {
+      "title": "Çelik ve ahşap",
+      "desc": "Potma ve De Vries'ten Staalconstructies, Zwiers'ten Handboek Houtconstructies ve panel kapılar üzerine bir kitap."
+    },
+    "codes": {
+      "title": "Eski beton yönetmelikleri",
+      "desc": "1950 Hollanda betonarme yönetmeliği: o döneme ait bir beton yapıyı değerlendirirken işe yarar."
+    },
+    "gugel": {
+      "title": "Architectonische Vormenleer",
+      "desc": "Gugel'in 1880 tarihli 243 levhası: kemerler, tuğla örgüleri, silmeler ve süslemeler."
+    },
+    "bosboom": {
+      "title": "Beş sütun düzeni",
+      "desc": "En eski kitap: Symon Bosboom'un klasik sütunlar üzerine 1670 tarihli Cort onderwys'i."
+    },
+    "archive": {
+      "title": "Arşivde daha fazlası",
+      "desc": "GitHub'da daha fazla tarama var: Wattjes'in on cildinin tamamı, Vandepitte II ve III ve Bernoulli'nin Vademecum'u gibi."
+    },
+    "categories": {
+      "title": "Alana göre",
+      "desc": "Mimarlık, yapı, hesaplar, çelik, ahşap, yönetmelikler ve klasik."
+    },
+    "search": {
+      "title": "Başlık ya da yazara göre arama",
+      "desc": "\"Wattjes\" ya da \"beton\" yazın, liste siz yazarken süzülür."
+    },
+    "cards": {
+      "title": "Her kitap bir bakışta",
+      "desc": "Her kitap için kapak olarak bir sayfa, yazar, yıl ve sayfa sayısı içeren bir kart."
+    },
+    "pages": {
+      "title": "Sayfa çevirme",
+      "desc": "Ok düğmeleri ya da ok tuşlarıyla önceki ve sonraki sayfa."
+    },
+    "goto": {
+      "title": "Doğrudan bir sayfaya",
+      "desc": "Sayfa numarasını yazın ya da ilerleme çubuğuna tıklayın; nerede olduğunuzu hep görürsünüz."
+    },
+    "zoom": {
+      "title": "%500'e kadar yakınlaştırma",
+      "desc": "Kaydırma tekerleği ya da düğmelerle; tek tıkla sığdırmaya dönüş."
+    },
+    "pan": {
+      "title": "Sayfayı kaydırma",
+      "desc": "Yakınlaştırınca sayfayı fareyle aradığınız ayrıntıya sürükleyin."
+    },
+    "keys": {
+      "title": "Klavye kısayolları",
+      "desc": "Sayfa çevirmek için ok tuşları, yakınlaştırmak için + ve −, sıfırlamak için 0, kapatmak için Esc."
+    },
+    "nologin": {
+      "title": "Hesap yok",
+      "desc": "Kayıt yok, abonelik yok: siteyi açın ve okuyun."
+    },
+    "github": {
+      "title": "Her tarama GitHub'da",
+      "desc": "Okuyucudan tek tıkla orijinal dosyaların bulunduğu klasöre gidersiniz."
+    },
+    "zip": {
+      "title": "Hepsi bir kerede",
+      "desc": "Tüm koleksiyonu çevrimdışı saklamak için GitHub'dan zip dosyası olarak indirin."
+    },
+    "contribute": {
+      "title": "Kitap katkısında bulunun",
+      "desc": "Telif hakkı olmayan bir meslek kitabı mı taradınız? GitHub'da katkı olarak gönderin."
+    },
+    "browser": {
+      "title": "Yalnızca tarayıcı gerekir",
+      "desc": "Kurulacak bir şey yok; her modern tarayıcıda çalışır."
+    },
+    "privacy": {
+      "title": "İstatistiklere siz karar verirsiniz",
+      "desc": "Ziyaretçi istatistikleri yalnızca siz izin verirseniz."
+    }
+  },
+  "whatsnew": {
+    "ctaDemo": "Tarayıcıda deneyin",
+    "items": {
+      "site": {
+        "title": "Kendine ait bir web sitesi",
+        "desc": "Kategoriler ve aramayla bir kütüphane olarak koleksiyon, artık open-books.open-aec.com adresinde."
+      },
+      "reader": {
+        "title": "Tüm sayfalar okuyucuda",
+        "desc": "Okuyucu her kitabın gerçek taramalarını ilk sayfadan son sayfaya kadar gösterir."
+      },
+      "zoom": {
+        "title": "Yakınlaştırma ve kaydırma",
+        "desc": "Kaydırma tekerleğiyle yakınlaştırın ve sayfayı görmek istediğiniz ayrıntıya sürükleyin."
+      },
+      "license": {
+        "title": "Açık bir lisans",
+        "desc": "Web sitesi ve betikler LGPL-3.0 lisansı altındadır."
+      }
+    },
+    "label": "2026'da yeni",
+    "title": "Her kitap için <span>gerçek bir okuyucu</span>",
+    "desc": "OpenBooks bu yıl tüm taranmış sayfaları gösteren, yakınlaştırma, kaydırma ve sayfaya atlama özellikli bir okuyucuya sahip kendi web sitesine kavuştu.",
+    "ctaCommits": "Tüm değişiklikler"
+  },
+  "faq": {
+    "books": {
+      "q": "Hangi kitaplar var?",
+      "a": "Okuyucuda toplam 2.300'ü aşkın sayfalık on iki kitap var: Wattjes'in Constructies van Gebouwen serisinden beş cilt, Gugel'in Architectonische Vormenleer'i, Vandepitte'nin Berekening van Constructies I'i, Potma ve De Vries'ten Staalconstructies, Zwiers'ten Handboek Houtconstructies, 1950 betonarme yönetmeliği, Bosboom'un 1670 tarihli Cort onderwys'i ve panel kapılar üzerine bir kitap. GitHub'da Wattjes ve Vandepitte'nin diğer ciltleri, Bernoulli'nin Vademecum'u ve 1974 beton yönetmeliği gibi daha fazla tarama bulunur."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Hayır. Tarayıcınızda open-books.open-aec.com adresini açın ve bir kitap seçin. Hesap gerekmez."
+    },
+    "price": {
+      "q": "Ücreti ne kadar?",
+      "a": "Hiçbir şey. OpenBooks ücretsiz ve açık kaynaklıdır; web sitesi ve betikler LGPL-3.0 lisansı altındadır."
+    },
+    "format": {
+      "q": "Taramalar hangi dosya biçiminde?",
+      "a": "Her sayfa, GitHub'da kitap başına bir klasörde ayrı bir görüntüdür (PNG ya da JPG). Bunları orada sayfa sayfa ya da tüm koleksiyon olarak görüntüleyip indirebilirsiniz."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows, macOS ve Linux'ta her modern tarayıcıda. En rahat fareli bir bilgisayarda kullanılır; sitenin kendisi Felemenkçedir."
+    },
+    "practice": {
+      "q": "Yapı uygulamasına uygun mu?",
+      "a": "Evet, mevcut binalardaki işler için: duvarların, temellerin, doğramaların, merdivenlerin ve çatıların eskiden nasıl yapılıp hesaplandığını görürsünüz. Dikkat: koleksiyondaki yönetmelikler tarihidir ve bugün geçerli değildir."
+    },
+    "ocr": {
+      "q": "Kitapların metninde arama yapabilir miyim?",
+      "a": "Henüz değil. Arama kutusu şu anda başlık ve yazara göre arar. Sayfalardaki sözcükleri aramanızı ve metin kopyalamanızı sağlayacak metin tanıma (OCR) planlanıyor."
+    },
+    "rights": {
+      "q": "Bu kitaplar çevrimiçi olabilir mi?",
+      "a": "Kitaplar, izlenebildiği kadarıyla telif hakkından muaftır. Bunu belirlemek bazen zordur. Bir kitabın hâlâ telif hakkı altında olduğunu düşünüyorsanız GitHub üzerinden bildirin, kitabı kaldıralım."
+    },
+    "contribute": {
+      "q": "Kitap ekleyebilir miyim?",
+      "a": "Memnuniyetle. Telif hakkı olmayan bir yapı kitabını tarayıp sayfaları GitHub'da katkı olarak gönderin ya da buraya ait bir kitap için öneri içeren bir issue açın."
+    },
+    "heading": "Sık sorulan sorular"
+  },
+  "tech": {
+    "react": {
+      "desc": "Kütüphane ve okuyucu, derleme adımı olmadan React ile yapılmış tek bir web sayfasıdır."
+    },
+    "git": {
+      "desc": "Tüm taramalar bir Git deposunda, kitap başına bir klasörde durur; böylece her değişiklik izlenebilir."
+    },
+    "static": {
+      "title": "Statik site",
+      "desc": "Sunucu kodu ya da veritabanı yok: sayfalar doğrudan depodan yüklenir."
+    },
+    "actions": {
+      "desc": "Bir iş akışı her değişikliği otomatik olarak open-books.open-aec.com'da yayınlar."
+    },
+    "python": {
+      "desc": "Küçük betikler taranmış sayfaları kitap başına numaralandırır ve yeniden adlandırır."
+    },
+    "license": {
+      "desc": "Kod için açık lisans; kitapların kendisi ise izlenebildiği kadarıyla telif hakkından muaftır."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "commits": "GitHub'daki tüm değişiklikler"
   }
 }

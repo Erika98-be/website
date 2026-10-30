@@ -1,64 +1,249 @@
 {
   "header": {
-    "label": "Historical construction literature",
-    "desc": "Digitized historical construction and architecture books, freely accessible for engineers, architects and builders.",
-    "browseBtn": "Browse the collection",
-    "sourceBtn": "View source"
+    "title": "Open<span class=\"accent\">Books</span>",
+    "demoBtn": "Open in browser",
+    "featuresBtn": "See the features",
+    "sourceBtn": "Source code",
+    "proof1": "12 books · 2,300+ pages",
+    "proof2": "From 1670 to 1960",
+    "proof3": "In the browser, no account",
+    "proof4": "Free · LGPL-3.0",
+    "heroAlt": "OpenBooks: the library with categories and the first books, including Gugel, Wattjes and Vandepitte",
+    "label": "Historical building literature",
+    "tagline": "Trade books nobody prints any more, free to open in your browser",
+    "desc": "Anyone renovating or assessing an existing building wants to know how it was built back then. OpenBooks puts scanned building books from 1670 to the 1960s online: pick a book, leaf through the original pages and zoom into the drawings."
   },
-  "chips": {
-    "books": "25+ books",
-    "pages": "3,000+ pages"
+  "meta": {
+    "description": "Free online library of scanned historical building books: Wattjes, Gugel, Vandepitte, Zwiers, Bosboom and old Dutch concrete codes. Browse and zoom into the original pages, no account needed.",
+    "title": "OpenBooks — OpenAEC Foundation"
   },
-  "why": {
-    "title": "Why Open<span class=\"accent\">Books</span>?",
-    "desc": "Anyone who renovates, restores or assesses an existing building needs to know how it was built: which brick bonds, foundations, window frames and calculation methods were common at the time. That knowledge lives in trade books that have been out of print for decades.",
-    "desc2": "OpenBooks scans these books and puts them online for free. No account, no subscription: page through the original scans, zoom in on the drawings and search the text of the books that have already been processed with OCR."
-  },
-  "reader": {
-    "label": "Reader",
-    "title": "How to use the collection",
-    "desc": "The library runs in the browser. Pick a category, open a book and page through the original scans.",
-    "c1": "<strong>Categories</strong> Architecture, construction, calculations, steel, timber, regulations and classical.",
-    "c2": "<strong>Reader</strong> Zoom in, turn pages and jump straight to a page number.",
-    "c3": "<strong>Search</strong> Search by title and author, and in the full text of books with OCR.",
-    "c4": "<strong>Open source</strong> Scans and code are on GitHub; new books can be submitted as a contribution."
-  },
-  "collection": {
-    "title": "Collection",
-    "wattjes": {
-      "title": "Prof. J.G. Wattjes (10 volumes)",
-      "desc": "Complete series on construction: walls, chimneys, foundations, windows/doors, floor systems, vaults, stairs, roof constructions, and more."
+  "hl": {
+    "collection": {
+      "alt": "Bookshelf with Staalconstructies, Handboek Houtconstructies, Gewapend Beton Voorschriften and Bosboom's Cort onderwys, among others",
+      "kicker": "Collection",
+      "title": "The standard works you can no longer find second-hand",
+      "desc": "Wattjes on walls, foundations, window frames, stairs and roofs, Gugel's theory of form, Vandepitte on structural analysis, steel by Potma and De Vries, timber by Zwiers and the 1950 concrete code. Every book with author, year and page count."
     },
-    "gugel": {
-      "title": "Prof. E.H. Gugel",
-      "desc": "Architectonische Vormenleer (1880): architectural design theory and form language."
+    "find": {
+      "alt": "Category Constructie selected: five volumes of Wattjes' Constructies van Gebouwen",
+      "kicker": "Finding",
+      "title": "The right book in two clicks",
+      "desc": "Pick a subject, such as construction, steel, timber or codes, and you only see those books. Or type a title or an author in the search box."
     },
-    "potma": {
-      "title": "Ir. A.P. Potma &amp; Ir. J.E. de Vries",
-      "desc": "Staalconstructies: theory, calculation, and execution of steel structures."
+    "read": {
+      "alt": "Reader with Wattjes volume 4, page 60 of 205: text on door frames with a drawing of a draught door",
+      "kicker": "Reading",
+      "title": "Leaf through the original, page by page",
+      "desc": "Every book opens in a calm reader with the real scans. Turn pages with the arrows or your keyboard, type a page number or click the progress bar to jump straight to a chapter."
     },
-    "vandepitte": {
-      "title": "Prof. D. Vandepitte (3 volumes)",
-      "desc": "Berekening van Constructies: structural calculation theory across three comprehensive volumes."
+    "zoom": {
+      "alt": "Gugel's Architectonische Vormenleer at 250 percent: arches and brick bonds in detail",
+      "kicker": "Zoom",
+      "title": "Every detail of the drawing in sharp view",
+      "desc": "Zoom up to five times with the scroll wheel or the buttons and drag the page wherever you want. That way you can read dimensions, pointing and profiles on the old plates."
     },
-    "zwiers": {
-      "title": "L. Zwiers",
-      "desc": "Houtconstructies Handboek: handbook for timber construction design."
-    },
-    "bosboom": {
-      "title": "Symon Bosboom",
-      "desc": "Cort onderwys van de vyf colommen: historical treatise on the five classical orders by city stonemason of Dordrecht."
-    },
-    "bernoulli": {
-      "title": "Bernoullis Vademecum",
-      "desc": "Engineering reference handbook."
-    },
-    "codes": {
-      "title": "Building codes",
-      "desc": "Historical Dutch building regulations: G.B.V. Gewapend Beton Voorschriften (1950) and VB Voorschriften Beton (1974)."
+    "classic": {
+      "alt": "Cort onderwys vande vyf colommen by Symon Bosboom from 1670, with the Ionic column and its dimensions",
+      "kicker": "Building history",
+      "title": "Three centuries of building knowledge side by side",
+      "desc": "From the treatise on the five orders of columns by Dordrecht's city stonemason Symon Bosboom from 1670 to Vandepitte's methods of analysis from the 1960s. Useful for restoration, and a pleasure to browse."
     }
   },
-  "footer": {
-    "slogan": "Build free. Build together."
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "whatsnew": "What's new",
+    "faq": "FAQ"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "collection": "Collection",
+    "find": "Finding",
+    "read": "Reading",
+    "open": "Open and free",
+    "all": "All features"
+  },
+  "features": {
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "A technical library that never closes",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
+    "wattjes": {
+      "title": "Constructies van Gebouwen",
+      "desc": "Five volumes by Wattjes in the reader: walls, foundations and cellars, windows and doors, stairs, roofs."
+    },
+    "vandepitte": {
+      "title": "Berekening van Constructies",
+      "desc": "Vandepitte's theory of structural analysis: volume I with over 600 pages."
+    },
+    "steel": {
+      "title": "Steel and timber",
+      "desc": "Staalconstructies by Potma and De Vries, Zwiers' Handboek Houtconstructies and a book on panel doors."
+    },
+    "codes": {
+      "title": "Old concrete codes",
+      "desc": "The 1950 Dutch reinforced concrete code: handy when you assess a concrete structure from that period."
+    },
+    "gugel": {
+      "title": "Architectonische Vormenleer",
+      "desc": "243 plates from 1880 by Gugel with arches, brick bonds, mouldings and ornaments."
+    },
+    "bosboom": {
+      "title": "The five orders",
+      "desc": "The oldest book: Symon Bosboom's Cort onderwys from 1670 on the classical columns."
+    },
+    "archive": {
+      "title": "More in the archive",
+      "desc": "GitHub holds even more scans, such as all ten volumes of Wattjes, Vandepitte II and III and Bernoulli's Vademecum."
+    },
+    "categories": {
+      "title": "By subject",
+      "desc": "Architecture, construction, analysis, steel, timber, codes and classical."
+    },
+    "search": {
+      "title": "Search by title or author",
+      "desc": "Type \"Wattjes\" or \"beton\" and the list filters as you type."
+    },
+    "cards": {
+      "title": "Every book at a glance",
+      "desc": "One card per book with a page as cover, the author, the year and the page count."
+    },
+    "pages": {
+      "title": "Page turning",
+      "desc": "Previous and next page with the arrow buttons or the arrow keys."
+    },
+    "goto": {
+      "title": "Straight to a page",
+      "desc": "Type the page number or click the progress bar; you always see where you are."
+    },
+    "zoom": {
+      "title": "Zoom up to 500%",
+      "desc": "With the scroll wheel or the buttons, and back to fit in one click."
+    },
+    "pan": {
+      "title": "Pan the page",
+      "desc": "When zoomed in, drag the page with the mouse to the detail you need."
+    },
+    "keys": {
+      "title": "Keyboard shortcuts",
+      "desc": "Arrow keys to turn pages, + and − to zoom, 0 to reset and Esc to close."
+    },
+    "nologin": {
+      "title": "No account",
+      "desc": "No sign-up and no subscription: open the site and read."
+    },
+    "github": {
+      "title": "Every scan on GitHub",
+      "desc": "From the reader, one click takes you to the folder with the original files."
+    },
+    "zip": {
+      "title": "Everything at once",
+      "desc": "Download the whole collection as a zip file from GitHub to keep offline."
+    },
+    "contribute": {
+      "title": "Contribute a book",
+      "desc": "Scanned a rights-free trade book? Submit it as a contribution on GitHub."
+    },
+    "browser": {
+      "title": "Only a browser needed",
+      "desc": "Nothing to install; works in any modern browser."
+    },
+    "privacy": {
+      "title": "You decide on statistics",
+      "desc": "Visitor statistics only if you give permission yourself."
+    }
+  },
+  "whatsnew": {
+    "ctaDemo": "Try it in the browser",
+    "items": {
+      "site": {
+        "title": "A website of its own",
+        "desc": "The collection as a library with categories and search, now at open-books.open-aec.com."
+      },
+      "reader": {
+        "title": "Every page in the reader",
+        "desc": "The reader shows the real scans of every book, from the first to the last page."
+      },
+      "zoom": {
+        "title": "Zoom and pan",
+        "desc": "Zoom with the scroll wheel and drag the page to the detail you want to see."
+      },
+      "license": {
+        "title": "A clear licence",
+        "desc": "The website and scripts are licensed under the LGPL-3.0."
+      }
+    },
+    "label": "New in 2026",
+    "title": "A proper reader <span>for every book</span>",
+    "desc": "This year OpenBooks got its own website with a reader that shows every scanned page, with zoom, panning and jumping to a page.",
+    "ctaCommits": "All changes"
+  },
+  "faq": {
+    "books": {
+      "q": "Which books are included?",
+      "a": "The reader holds twelve books with over 2,300 pages in total: five volumes of Wattjes' Constructies van Gebouwen, Gugel's Architectonische Vormenleer, Vandepitte's Berekening van Constructies I, Staalconstructies by Potma and De Vries, Zwiers' Handboek Houtconstructies, the 1950 reinforced concrete code, Bosboom's Cort onderwys from 1670 and a book on panel doors. GitHub holds even more scans, such as the other volumes of Wattjes and Vandepitte, Bernoulli's Vademecum and the 1974 concrete code."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "No. Open open-books.open-aec.com in your browser and pick a book. No account needed."
+    },
+    "price": {
+      "q": "What does it cost?",
+      "a": "Nothing. OpenBooks is free and open source; the website and scripts are licensed under the LGPL-3.0."
+    },
+    "format": {
+      "q": "What file format are the scans in?",
+      "a": "Every page is a separate image (PNG or JPG) in one folder per book on GitHub. You can view and download them there, page by page or as the whole collection."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "In any modern browser on Windows, macOS and Linux. It works best on a computer with a mouse; the site itself is in Dutch."
+    },
+    "practice": {
+      "q": "Does it fit building practice?",
+      "a": "Yes, for work on existing buildings: you see how walls, foundations, frames, stairs and roofs used to be built and calculated. Note: the codes in the collection are historical and no longer apply today."
+    },
+    "ocr": {
+      "q": "Can I search the text of the books?",
+      "a": "Not yet. The search box currently searches by title and author. Text recognition (OCR), so you can search for words in the pages and copy text, is planned."
+    },
+    "rights": {
+      "q": "Are these books allowed online?",
+      "a": "As far as can be traced, the books are free of rights. That is sometimes hard to establish. If you think a book is still under copyright, report it on GitHub and we will remove it."
+    },
+    "contribute": {
+      "q": "Can I add a book?",
+      "a": "Please do. Scan a rights-free building book and submit the pages as a contribution on GitHub, or open an issue with a tip for a book that belongs here."
+    },
+    "heading": "Frequently asked questions"
+  },
+  "tech": {
+    "react": {
+      "desc": "The library and the reader are a single web page built with React, without a build step."
+    },
+    "git": {
+      "desc": "All scans live in a Git repository, one folder per book, so every change can be traced."
+    },
+    "static": {
+      "title": "Static site",
+      "desc": "No server code or database: the pages load straight from the repository."
+    },
+    "actions": {
+      "desc": "A workflow automatically publishes every change to open-books.open-aec.com."
+    },
+    "python": {
+      "desc": "Small scripts number and rename the scanned pages per book."
+    },
+    "license": {
+      "desc": "Open licence for the code; the books themselves are, as far as can be traced, free of rights."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "commits": "All changes on GitHub"
   }
 }
