@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Heatloss Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Cálculo de pérdidas de calor de edificios de código abierto conforme a NEN 12831.">
+  <meta name="description" content="Cálculo gratuito y de código abierto de pérdidas de calor según ISSO 51:2023: introducción de estancias, valores Rc y presión de vapor, balance de…">
   <link rel="canonical" href="https://open-aec.com/es/open-heatloss-studio/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/open-heatloss-studio/">
@@ -15,23 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/open-heatloss-studio/">
   <!-- hreflang:end -->
 
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="Open Heatloss Studio">
-  <meta property="og:description" content="Cálculo de pérdidas de calor de edificios de código abierto conforme a NEN 12831.">
+  <meta property="og:title" content="Open Heatloss Studio — OpenAEC Foundation">
+  <meta property="og:description" content="Cálculo gratuito y de código abierto de pérdidas de calor según ISSO 51:2023: introducción de estancias, valores Rc y presión de vapor, balance de…">
   <meta property="og:url" content="https://open-aec.com/es/open-heatloss-studio/">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-heatloss-studio.png">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-heatloss-studio-hero.png">
   <meta property="og:locale" content="es_ES">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Open Heatloss Studio">
-  <meta name="twitter:description" content="Cálculo de pérdidas de calor de edificios de código abierto conforme a NEN 12831.">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-heatloss-studio.png">
+  <meta name="twitter:description" content="Cálculo gratuito y de código abierto de pérdidas de calor según ISSO 51:2023: introducción de estancias, valores Rc y presión de vapor, balance de…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-heatloss-studio-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -41,45 +39,43 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Open Heatloss Studio",
     "applicationCategory": "EngineeringApplication",
-    "applicationSubCategory": "Building Physics",
-    "operatingSystem": "Windows, macOS, Linux, Web",
+    "applicationSubCategory": "Warmteverliesberekening / ISSO 51",
+    "operatingSystem": "Web",
     "url": "https://open-aec.com/open-heatloss-studio/",
-    "downloadUrl": "https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases",
-    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
-    "description": "Heat loss calculations for buildings per NEN 12831 and ISSO 51:2023. Rust calculation engine, IFCX integration, PDF reports.",
+    "license": "https://opensource.org/licenses/MIT",
+    "description": "Free, open-source heat loss calculation for dwellings following ISSO 51:2023 (with erratum), with a Rust calculation core. Room table with boundary surfaces, results per room and building, Rc calculator (ISO 6946) with Glaser vapour diffusion and annual moisture balance (NEN-EN-ISO 13788), window Uw (NEN-EN-ISO 10077-1), ventilation balance to the Dutch Building Decree (Bbl), TO-juli and BENG following NTA 8800, IFC reconstruction (beta), Revit import via pyRevit, .ifcenergy project files (IFCX) and IFC4X3 export, PDF reports, MCP server and REST API. Runs in the browser; Windows test build. Public alpha.",
     "featureList": [
-      "NEN 12831 berekeningen",
-      "ISSO 51:2023",
-      "Transmissieverliezen",
-      "Grondgebonden constructies",
-      "Ventilatieverliezen",
-      "Opwarmtoeslag",
-      "Klimaatdata KNMI",
-      "U-waarde calculator",
-      "Thermische bruggen",
-      "IFCX-import",
-      "Zonering",
-      "Radiatorenberekening",
-      "Vloerverwarming",
-      "Warmtepomp dimensionering",
-      "Ketelvermogen",
-      "Rapportgeneratie",
-      "Exports",
-      "Materiaalbibliotheek",
-      "Constructie-opbouwen",
-      "Variantenstudie",
-      "Dashboard",
-      "CLI & batch",
-      "100% lokaal",
-      "Cross-platform"
+      "Rekenen volgens ISSO 51:2023",
+      "Elk soort grensvlak",
+      "Resultaten per vertrek",
+      "Gebouwinstellingen",
+      "Zones",
+      "PDF-rapport",
+      "Rc-calculator",
+      "Dampspanning en vochtbalans",
+      "Bibliotheek met opbouwen",
+      "U-waarde van een kozijn",
+      "Ventilatiebalans volgens het Bbl",
+      "WTW- en afzuigunits",
+      "Deurspleet-calculator",
+      "TO-juli volgens NTA 8800",
+      "BENG 1, 2 en 3",
+      "Open projectbestand",
+      "IFC4X3 en JSON",
+      "IFC-reconstructie (bèta)",
+      "Overnemen uit Revit",
+      "MCP-server en REST API",
+      "Projecten in tabbladen",
+      "Extra rekenhulpen"
     ],
-    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-heatloss-studio.png",
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-heatloss-studio-hero.png",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -87,7 +83,7 @@
       "availability": "https://schema.org/InStock"
     },
     "isAccessibleForFree": true,
-    "keywords": "heat loss, warmteverlies, NEN 12831, ISSO 51, building physics, transmissieverlies, ventilatieverlies, U-waarde",
+    "keywords": "warmteverlies, warmteverliesberekening, ISSO 51, ISSO 53, heat loss, NTA 8800, TO-juli, BENG, Rc-waarde, Glaser, ventilatiebalans, Bbl, IFCX, IFC4X3, ifcenergy, MCP",
     "sameAs": [
       "https://github.com/OpenAEC-Foundation/open-heatloss-studio",
       "https://open-heatloss-studio.open-aec.com/"
@@ -99,10 +95,86 @@
     }
   }
   </script>
-  <style>
-    .page-panels .slider-slide video { width: 100%; display: block; background: var(--night-build); }
-    .tech-chips { margin-bottom: var(--sp-6); justify-content: flex-start; }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Projecten in .ifcenergy (IFCX) en oudere .isso51.json-bestanden. Daarnaast lees je een thermische export uit Revit (via pyRevit), een IFC-model voor de IFC-reconstructie en een Uniec 3-bestand voor BENG."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee, de app draait in de browser. Voor Windows staat er een testversie (alfa) bij de releases op GitHub. Die is nog niet ondertekend, dus Windows toont eerst een waarschuwing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost Open Heatloss Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. De app is gratis en open source onder de MIT-licentie. Voor het rekenen heb je geen account of abonnement nodig."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk formaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In .ifcenergy, een open IFCX-bestand (IFC5 alpha) met je vertrekken, constructies en resultaten. Je kunt ook IFC4X3 en JSON exporteren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In elke moderne browser, en als testversie op Windows. Voor macOS en Linux is er nog geen downloadbare versie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de Nederlandse praktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. De berekening volgt ISSO 51:2023 met het erratum, de ventilatie-eisen komen uit het Bbl en de koelbehoefte uit NTA 8800. De rekenkern is getoetst tegen drie referentieprojecten, waaronder het rekenvoorbeeld uit ISSO 51. De app is nog in de testfase: controleer de uitkomsten voordat je ze gebruikt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Er is een MCP-server (Model Context Protocol) voor Claude Desktop en Claude Code. Daarmee kan een assistent een project doorrekenen, een .ifcenergy-bestand lezen, constructies opvragen en een PDF-rapport maken. Voor eigen scripts is er een REST API."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik ook utiliteitsgebouwen berekenen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet volledig. In de instellingen schakel je over naar ISSO 53 voor utiliteit, maar die berekening is nog in ontwikkeling."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik de plattegrond tekenen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet. De Modeller toont de vertrekken nu alleen in 2D en 3D; tekenen komt in een latere versie. Je voert vertrekken in de tabel in of neemt ze over uit Revit of IFC."
+        }
+      }
+    ]
+  }
+  </script>
 
   <meta name="i18n-static" content="es">
   <!-- schema:start -->
@@ -138,7 +210,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "es",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/es/open-heatloss-studio/#breadcrumb"
         }
@@ -202,246 +274,248 @@
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">Ecosistema OpenAEC</p>
+      <p class="pill-label" data-i18n="header.label">Pérdidas de calor</p>
       <h1 data-i18n="header.title">Open <span class="accent">Heatloss</span> Studio</h1>
-      <p class="lead" data-i18n="header.desc">Cálculo de pérdidas de calor de edificios de código abierto conforme a NEN 12831.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">Pérdidas de calor por estancia según ISSO 51, sin coste de licencia</p>
+      <p class="lead" data-i18n="header.desc">Introduce por estancia la temperatura, la ventilación y los cerramientos, y calcula la potencia necesaria. Compón cerramientos con la calculadora Rc, comprueba la ventilación y la demanda de refrigeración en julio, y guárdalo todo en un archivo IFCX abierto.</p>
       <div class="btn-group">
-        <a href="https://open-heatloss-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Ver demo en vivo</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="cta.github">Ver en GitHub</span></a>
+        <a href="https://open-heatloss-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Abrir en el navegador</span></a>
+        <a href="#features" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Ver las funciones</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Código fuente</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg><span data-i18n="header.badge">Beta</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg>NEN 12831 · ISSO 51:2023</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg>Windows · macOS · Linux · Browser</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span>ISSO 51:2023 · Bbl · NTA 8800</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg><span>.ifcenergy (IFCX) · IFC4X3</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="header.proof3">Neerlandés e inglés</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg><span data-i18n="header.proof4">Navegador · Windows (prueba)</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof5">Gratis · MIT</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide">
-            <video controls muted playsinline poster="/shared/assets/screenshots/open-heatloss-studio.png">
-              <source src="/shared/assets/screenshots/open-heatloss-demo.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-studio.png" alt="Open Heatloss Studio - Overzicht"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-1.png" alt="Open Heatloss Studio - Projectinvoer"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-2.png" alt="Open Heatloss Studio - Ruimte-eigenschappen"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-3.png" alt="Open Heatloss Studio - Constructie-opbouw"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-4.png" alt="Open Heatloss Studio - U-waarde berekening"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-5.png" alt="Open Heatloss Studio - Transmissieverliezen"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-6.png" alt="Open Heatloss Studio - Ventilatieverliezen"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-7.png" alt="Open Heatloss Studio - Resultaten per ruimte"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-8.png" alt="Open Heatloss Studio - Zonering"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-9.png" alt="Open Heatloss Studio - Rapportgeneratie"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-10.png" alt="Open Heatloss Studio - Dashboard"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-studio-hero.png" width="1920" height="1200" alt="Open Heatloss Studio: resultados de una vivienda con la potencia necesaria, las pérdidas por estancia y el total del edificio" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-heatloss-studio-feat-vertrekken.png" width="1200" height="750" decoding="async" alt="Tabla de estancias de una vivienda con el salón desplegado: doce cerramientos con superficie, valor U y tipo de límite" data-i18n="hl.rooms.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-heatloss-studio-feat-resultaten.png" width="1200" height="750" decoding="async" alt="Gráfico ampliado de las pérdidas por estancia, divididas en transmisión, ventilación, infiltración y suplemento de recalentamiento" data-i18n="hl.results.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-heatloss-studio-feat-constructie.png" width="1200" height="750" decoding="async" alt="Calculadora Rc con un muro de cámara de cinco capas y el diagrama de presión de vapor de Glaser" data-i18n="hl.rc.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-heatloss-studio-feat-ventilatie.png" width="1200" height="750" decoding="async" alt="Balance de ventilación con el sistema C elegido, el balance del edificio y, por estancia, la exigencia y el estado" data-i18n="hl.vent.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-heatloss-studio-feat-tojuli.png" width="1200" height="750" decoding="async" alt="Comprobación TO-juli con los datos de una vivienda y un resultado de 1,71 kW de capacidad mínima de refrigeración" data-i18n="hl.summer.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-heatloss-studio-feat-ifc.png" width="1200" height="750" decoding="async" alt="Pestaña IFC con el archivo IFC4X3 de la vivienda a la izquierda y la estructura IFCX a la derecha" data-i18n="hl.ifc.alt" data-i18n-attr="alt"></div>
         </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende">&rsaquo;</button>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="why.title">¿Por qué Open <span class="accent">Heatloss</span> Studio?</h2>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="notice.text">Versión de prueba pública (alfa): comprueba los resultados e informa de lo que encuentres.</span> <a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio/issues" target="_blank" rel="noopener"><span data-i18n="notice.link">Informar de un problema</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a></p>
+  </div>
+
+  <nav class="pp-subnav" aria-label="En esta página" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Funciones</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Novedades</a>
+      <a href="#faq" data-i18n="subnav.faq">Preguntas</a>
+      <a href="#releases" data-i18n="subnav.releases">Versiones</a>
+    </div>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Funciones</p><h2 data-i18n="features.heading">De la estancia a la potencia necesaria, en una sola aplicación</h2><p data-i18n="features.sub">Empieza por lo más destacado o elige un tema.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Funciones por tema" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Destacados</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-heatloss" data-tab="heatloss" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.heatloss">Pérdidas de calor</span> <span class="pp-tab-count" data-count="heatloss"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-build" data-tab="build" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg><span data-i18n="tabs.build">Cerramientos</span> <span class="pp-tab-count" data-count="build"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-climate" data-tab="climate" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg><span data-i18n="tabs.climate">Ventilación y verano</span> <span class="pp-tab-count" data-count="climate"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-connect" data-tab="connect" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg><span data-i18n="tabs.connect">Archivos e integraciones</span> <span class="pp-tab-count" data-count="connect"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Todas las funciones</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-heatloss-studio-feat-vertrekken.png" width="1200" height="750" loading="lazy" decoding="async" alt="Tabla de estancias de una vivienda con el salón desplegado: doce cerramientos con superficie, valor U y tipo de límite" data-i18n="hl.rooms.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.rooms.kicker">Estancias</span></p>
+            <h3 data-i18n="hl.rooms.title">Todas las estancias en una sola vista</h3>
+            <p data-i18n="hl.rooms.desc">Para cada estancia la función, la temperatura de diseño, la superficie y la altura, y debajo cada cerramiento: muro exterior, ventana, suelo o vivienda vecina, con superficie y valor U. La ventilación y la calefacción se ajustan en la misma fila.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-heatloss-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Leer más</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-heatloss-studio-feat-resultaten.png" width="1200" height="750" loading="lazy" decoding="async" alt="Gráfico ampliado de las pérdidas por estancia, divididas en transmisión, ventilación, infiltración y suplemento de recalentamiento" data-i18n="hl.results.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.results.kicker">Resultados</span></p>
+            <h3 data-i18n="hl.results.title">Ve al instante por dónde se escapa el calor</h3>
+            <p data-i18n="hl.results.desc">Un clic en Calcular da la potencia necesaria, el reparto entre transmisión, ventilación y recalentamiento, y un gráfico por estancia. Haz clic en un gráfico para verlo en grande.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-heatloss-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Leer más</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-heatloss-studio-feat-constructie.png" width="1200" height="750" loading="lazy" decoding="async" alt="Calculadora Rc con un muro de cámara de cinco capas y el diagrama de presión de vapor de Glaser" data-i18n="hl.rc.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.rc.kicker">Cerramientos</span></p>
+            <h3 data-i18n="hl.rc.title">Calcula un cerramiento capa a capa</h3>
+            <p data-i18n="hl.rc.desc">Compón un muro, suelo o cubierta con más de 150 materiales y ve al momento el valor Rc y U según ISO 6946, con corrección por fijaciones. El diagrama de Glaser muestra si hay riesgo de condensación intersticial.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-heatloss-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Leer más</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-heatloss-studio-feat-ventilatie.png" width="1200" height="750" loading="lazy" decoding="async" alt="Balance de ventilación con el sistema C elegido, el balance del edificio y, por estancia, la exigencia y el estado" data-i18n="hl.vent.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.vent.kicker">Ventilación</span></p>
+            <h3 data-i18n="hl.vent.title">Exigencias de ventilación comprobadas por estancia</h3>
+            <p data-i18n="hl.vent.desc">Elige el sistema de ventilación A a D y ve, por estancia, la exigencia del decreto neerlandés de edificación (Bbl) junto a lo previsto. Asigna unidades con recuperación de calor o de extracción y comprueba si su capacidad es suficiente.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-heatloss-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Leer más</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-heatloss-studio-feat-tojuli.png" width="1200" height="750" loading="lazy" decoding="async" alt="Comprobación TO-juli con los datos de una vivienda y un resultado de 1,71 kW de capacidad mínima de refrigeración" data-i18n="hl.summer.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">05</span> <span data-i18n="hl.summer.kicker">Verano</span></p>
+            <h3 data-i18n="hl.summer.title">Demanda de refrigeración en julio, comprobada en poco tiempo</h3>
+            <p data-i18n="hl.summer.desc">La comprobación TO-juli para viviendas según el anejo AA de la NTA 8800 toma los datos de tu proyecto y da la capacidad mínima de refrigeración y la demanda determinante. Para otros edificios está el cálculo completo del capítulo 10.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-heatloss-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Leer más</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-heatloss-studio-feat-ifc.png" width="1200" height="750" loading="lazy" decoding="async" alt="Pestaña IFC con el archivo IFC4X3 de la vivienda a la izquierda y la estructura IFCX a la derecha" data-i18n="hl.ifc.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">06</span> <span data-i18n="hl.ifc.kicker">Archivos abiertos</span></p>
+            <h3 data-i18n="hl.ifc.title">Tu proyecto como IFC abierto</h3>
+            <p data-i18n="hl.ifc.desc">Tu proyecto se guarda como .ifcenergy, un archivo IFCX. En la pestaña IFC también lo ves en directo como IFC4X3, con estancias, muros, suelos y cubiertas, listo para copiar o descargar.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-heatloss-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Leer más</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
       </div>
-      <div class="panel-split-body">
-        <p data-i18n="why.desc">Los cálculos de pérdidas de calor son esenciales para el diseño de sistemas de calefacción y el rendimiento energético de los edificios. Open Heatloss Studio ofrece una alternativa accesible y de código abierto al costoso software comercial, totalmente conforme a NEN 12831.</p>
-        <p data-i18n="why.desc2">Construido sobre un núcleo de cálculo en Rust para máxima velocidad y precisión: miles de habitaciones se calculan en segundos. Todo se ejecuta localmente, sin dependencia de la nube, los datos de tu proyecto siguen siendo tuyos.</p>
-      </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="heatloss"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h3 data-i18n="f.isso51.title">Cálculo según ISSO 51:2023</h3><p data-i18n="f.isso51.desc">Transmisión, ventilación, infiltración, recalentamiento y pérdidas del sistema por estancia, incluida la fe de erratas de 2023.</p></div></div></li>
+        <li class="pp-tile" data-cats="heatloss"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-hatch"/></svg></div><div><h3 data-i18n="f.boundaries.title">Todo tipo de cerramiento</h3><p data-i18n="f.boundaries.desc">Aire exterior, terreno, espacio no calefactado, otra estancia, vivienda vecina e incluso agua, para casas flotantes.</p></div></div></li>
+        <li class="pp-tile" data-cats="heatloss"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.results.title">Resultados por estancia</h3><p data-i18n="f.results.desc">Potencia necesaria, reparto y gráficos por estancia y para todo el edificio.</p></div></div></li>
+        <li class="pp-tile" data-cats="heatloss"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.settings.title">Ajustes del edificio</h3><p data-i18n="f.settings.desc">Tipo de edificio, reducción nocturna y tiempo de recalentamiento, sistema de calefacción y estanqueidad (qv10).</p></div></div></li>
+        <li class="pp-tile" data-cats="heatloss"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.zones.title">Zonas</h3><p data-i18n="f.zones.desc">Agrupa las estancias en zonas y gestiónalas desde el proyecto.</p></div></div></li>
+        <li class="pp-tile" data-cats="heatloss connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div><div><h3 data-i18n="f.report.title">Informe PDF</h3><p data-i18n="f.report.desc">Portada, datos de partida, composiciones, resultados por estancia y gráficos; cada sección activable, en A4 o A3.</p></div></div></li>
+        <li class="pp-tile" data-cats="build"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><h3 data-i18n="f.rc.title">Calculadora Rc</h3><p data-i18n="f.rc.desc">Rc y U según ISO 6946, con corrección por fijaciones (anexo F).</p></div></div></li>
+        <li class="pp-tile" data-cats="build"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><h3 data-i18n="f.glaser.title">Presión de vapor y balance de humedad</h3><p data-i18n="f.glaser.desc">Diagrama de Glaser y balance anual de humedad según NEN-EN-ISO 13788, con años climáticos de estaciones neerlandesas.</p></div></div></li>
+        <li class="pp-tile" data-cats="build"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.library.title">Biblioteca de composiciones</h3><p data-i18n="f.library.desc">Muros de cámara, entramados de madera, suelos y cubiertas listos, con más de 150 materiales. Añade tus propias composiciones.</p></div></div></li>
+        <li class="pp-tile" data-cats="build"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h3 data-i18n="f.uw.title">Valor U de una ventana</h3><p data-i18n="f.uw.desc">Uw combinado de vidrio, marco y separador según NEN-EN-ISO 10077-1.</p></div></div></li>
+        <li class="pp-tile" data-cats="climate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-route"/></svg></div><div><h3 data-i18n="f.ventbal.title">Balance de ventilación según el Bbl</h3><p data-i18n="f.ventbal.desc">Exigencia por estancia y balance del edificio para los sistemas A a D, en dm³/s y m³/h.</p></div></div></li>
+        <li class="pp-tile" data-cats="climate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.units.title">Unidades de recuperación y extracción</h3><p data-i18n="f.units.desc">Elige una unidad del catálogo o añade la tuya; la aplicación comprueba la capacidad.</p></div></div></li>
+        <li class="pp-tile" data-cats="climate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-move"/></svg></div><div><h3 data-i18n="f.doorgap.title">Calculadora de holgura de puerta</h3><p data-i18n="f.doorgap.desc">La holgura bajo una puerta interior para el paso del aire de ventilación, según NEN 1087.</p></div></div></li>
+        <li class="pp-tile" data-cats="climate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-calendar"/></svg></div><div><h3 data-i18n="f.tojuli.title">TO-juli según NTA 8800</h3><p data-i18n="f.tojuli.desc">Comprobación rápida para viviendas (anejo AA) y cálculo completo del capítulo 10.</p></div></div></li>
+        <li class="pp-tile" data-cats="climate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.beng.title">BENG 1, 2 y 3</h3><p data-i18n="f.beng.desc">Eficiencia energética según NTA 8800 con calefacción, agua caliente, ventilación, refrigeración y paneles solares; compárala con un archivo Uniec 3.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.ifcenergy.title">Archivo de proyecto abierto</h3><p data-i18n="f.ifcenergy.desc">.ifcenergy basado en IFCX. También se abren los archivos .isso51.json antiguos.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h3 data-i18n="f.ifcexport.title">IFC4X3 y JSON</h3><p data-i18n="f.ifcexport.desc">Descarga tu modelo como IFC4X3 con estancias y cerramientos, o los resultados como JSON.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h3 data-i18n="f.ifcrecon.title">Reconstrucción IFC (beta)</h3><p data-i18n="f.ifcrecon.desc">Carga un modelo IFC y obtén las superficies por estancia y cerramiento, con vista 3D y exportación CSV.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.revit.title">Importar desde Revit</h3><p data-i18n="f.revit.desc">Toma estancias y cerramientos de un modelo de Revit mediante la exportación de pyRevit y un asistente de importación.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h3 data-i18n="f.mcp.title">Servidor MCP y API REST</h3><p data-i18n="f.mcp.desc">Deja que un asistente de IA o tu propio script calcule un proyecto, lea archivos y cree un informe PDF.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.tabs.title">Proyectos en pestañas</h3><p data-i18n="f.tabs.desc">Trabaja en varios proyectos a la vez, cada uno con su propio deshacer y rehacer.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div><div><h3 data-i18n="f.tools.title">Calculadoras adicionales</h3><p data-i18n="f.tools.desc">Desagüe pluvial por faldón, rampas de aparcamiento (NEN 2443), ángulos y pendientes, y dilatación de materiales.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel">
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
     <div class="panel-split">
       <div class="panel-split-text">
-        <p class="pill-label">NEN · ISSO · NTA</p>
-        <h2 data-i18n="norm.title">¿Qué normas son compatibles?</h2>
-        <p data-i18n="norm.desc">Open Heatloss Studio implementa las normas oficiales neerlandesas y europeas para el cálculo de pérdidas de calor. Totalmente en línea con las metodologías vigentes para el diseño de calefacción y el rendimiento energético.</p>
+        <p class="pill-label" data-i18n="whatsnew.label">Novedades de la v0.2</p>
+        <h2 data-i18n="whatsnew.title">ISSO 51 completo, <span>más control de la ventilación</span></h2>
+        <p data-i18n="whatsnew.desc">Con la versión 0.2 el cálculo de pérdidas según ISSO 51 queda completo por ahora. La ventilación ganó opciones y la introducción de números funciona mejor. El trabajo en ISSO 53 para edificios no residenciales continúa.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio/blob/master/CHANGELOG.md" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaChangelog">Todas las notas de versión</span></a>
+          <a href="https://open-heatloss-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="whatsnew.ctaDemo">Pruébalo en el navegador</span></a>
+        </div>
       </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><p data-i18n="norm.list1"><strong>NEN-EN 12831-1:2017</strong> Rendimiento energético de los edificios, método de cálculo de la carga térmica de diseño</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><p data-i18n="norm.list2"><strong>NEN 12831-1+NEN 1:2019/A1:2021</strong> Anexo nacional neerlandés</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><p data-i18n="norm.list3"><strong>ISSO 51:2023</strong> Cálculo de pérdidas de calor para viviendas y edificios residenciales</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><p data-i18n="norm.list4"><strong>ISSO 53/57</strong> Metodologías para edificios no residenciales y complejos</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><p data-i18n="norm.list5"><strong>NTA 8800</strong> Rendimiento energético integrado (BENG)</p></div></li>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h4 data-i18n="whatsnew.items.complete.title">ISSO 51 completo</h4><p data-i18n="whatsnew.items.complete.desc">Están todas las partes del cálculo de pérdidas para viviendas, probadas con proyectos de referencia.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h4 data-i18n="whatsnew.items.totals.title">Totales del edificio</h4><p data-i18n="whatsnew.items.totals.desc">El caudal total de ventilación y la superficie de la envolvente aparecen con los resultados y en el informe.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h4 data-i18n="whatsnew.items.units.title">Unidades comprobadas</h4><p data-i18n="whatsnew.items.units.desc">Las unidades de recuperación con capacidad insuficiente para el edificio aparecen en gris.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-route"/></svg></div><div><h4 data-i18n="whatsnew.items.transfer.title">Aire de otra estancia</h4><p data-i18n="whatsnew.items.transfer.desc">Elige por estancia si el aire viene del exterior o pasa desde una estancia vecina.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><h4 data-i18n="whatsnew.items.dualunit.title">dm³/s y m³/h</h4><p data-i18n="whatsnew.items.dualunit.desc">Introduce los caudales en cualquiera de las dos unidades, y el qv10 como total o por m².</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h4 data-i18n="whatsnew.items.decimal.title">Coma o punto</h4><p data-i18n="whatsnew.items.decimal.desc">Escribe los números con coma o punto; los decimales ya no saltan.</p></div></li>
       </ul>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <h2 data-i18n="features.title">Funciones</h2>
-    <div class="features" id="ohs-features" data-fold="6">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div>
-        <h4 data-i18n="features.nen12831.title">Cálculos según NEN 12831</h4>
-        <p data-i18n="features.nen12831.desc">Cálculos completos de pérdidas de calor conforme a NEN 12831. Resultados precisos para el diseño de sistemas de calefacción.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div>
-        <h4 data-i18n="features.isso51.title">ISSO 51:2023</h4>
-        <p data-i18n="features.isso51.desc">Metodología específica para el cálculo de pérdidas de calor de viviendas y edificios residenciales según la publicación ISSO 51 (2023).</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div>
-        <h4 data-i18n="features.transmission.title">Pérdidas por transmisión por habitación</h4>
-        <p data-i18n="features.transmission.desc">Cálculo detallado de las pérdidas por transmisión por habitación, incluidos los factores de corrección para construcciones en contacto con el terreno.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div>
-        <h4 data-i18n="features.ground.title">Construcciones en contacto con el terreno</h4>
-        <p data-i18n="features.ground.desc">Factores de corrección para soleras sobre el terreno, muros de sótano, cámaras sanitarias y locales adyacentes no calefactados (factores b).</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div>
-        <h4 data-i18n="features.ventilation.title">Pérdidas por ventilación</h4>
-        <p data-i18n="features.ventilation.desc">Cálculo de las pérdidas por ventilación en función del sistema de ventilación, el caudal de aire y la infiltración.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clock"/></svg></div>
-        <h4 data-i18n="features.heatup.title">Suplemento por puesta en régimen</h4>
-        <p data-i18n="features.heatup.desc">Cálculo de la capacidad adicional necesaria para calentar tras una reducción nocturna, conforme a las tablas del anexo F de NEN 12831.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div>
-        <h4 data-i18n="features.climate.title">Datos climáticos del KNMI</h4>
-        <p data-i18n="features.climate.desc">Temperaturas interiores y exteriores de diseño por ubicación. Las zonas climáticas del KNMI se seleccionan automáticamente a partir del código postal.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div>
-        <h4 data-i18n="features.uvalue.title">Calculadora de valores U</h4>
-        <p data-i18n="features.uvalue.desc">Calcula los valores U de las construcciones capa por capa. Biblioteca de materiales con valores λ conforme a NEN-EN 12524 y NTA 8800.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div>
-        <h4 data-i18n="features.thermal.title">Puentes térmicos</h4>
-        <p data-i18n="features.thermal.desc">Puentes térmicos lineales (Ψ) según NEN-EN ISO 14683. Valores por defecto o cálculo basado en detalles por encuentro.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div>
-        <h4 data-i18n="features.ifcx.title">Integración IFCX</h4>
-        <p data-i18n="features.ifcx.desc">Importa la geometría del edificio y las propiedades constructivas directamente desde modelos IFCX para una introducción de datos más rápida.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div>
-        <h4 data-i18n="features.zones.title">Zonificación</h4>
-        <p data-i18n="features.zones.desc">Agrupa las habitaciones por zona de calefacción, regulador o ubicación de la instalación. Es posible definir distintas consignas por zona.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div>
-        <h4 data-i18n="features.radiator.title">Dimensionamiento de radiadores</h4>
-        <p data-i18n="features.radiator.desc">Determina la potencia del radiador por habitación a partir de la pérdida de calor, la temperatura del agua y el exponente. Selección desde una biblioteca de fabricantes.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div>
-        <h4 data-i18n="features.floor.title">Suelo radiante</h4>
-        <p data-i18n="features.floor.desc">Potencia de suelo radiante por habitación, con temperatura del sistema, separación entre tubos y temperatura de impulsión.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div>
-        <h4 data-i18n="features.heatpump.title">Dimensionamiento de bombas de calor</h4>
-        <p data-i18n="features.heatpump.desc">Dimensionamiento preliminar de la bomba de calor a partir de la pérdida de calor total a la temperatura de diseño. Indicación de SCOP por tipo.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-crane"/></svg></div>
-        <h4 data-i18n="features.boiler.title">Potencia de caldera</h4>
-        <p data-i18n="features.boiler.desc">Potencia de caldera incluyendo agua caliente sanitaria, factores de simultaneidad y volúmenes de acumulación.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div>
-        <h4 data-i18n="features.reports.title">Generación de informes</h4>
-        <p data-i18n="features.reports.desc">Genera informes claros con las pérdidas de calor por habitación, resúmenes totales y representaciones gráficas.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div>
-        <h4 data-i18n="features.export.title">Exportaciones</h4>
-        <p data-i18n="features.export.desc">Exporta a Excel (XLSX) para análisis posteriores, a IFCX para la integración BIM y a JSON para automatización y conexiones API.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div>
-        <h4 data-i18n="features.library.title">Biblioteca de física de la edificación</h4>
-        <p data-i18n="features.library.desc">Amplia biblioteca con propiedades de materiales, composiciones constructivas y valores U estándar.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div>
-        <h4 data-i18n="features.constructions.title">Composiciones constructivas</h4>
-        <p data-i18n="features.constructions.desc">Composiciones constructivas predefinidas (fachadas, cubiertas, suelos) con valor U automático. Crea y reutiliza tus propias composiciones.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-        <h4 data-i18n="features.compare.title">Estudio de variantes</h4>
-        <p data-i18n="features.compare.desc">Compara varias variantes de diseño lado a lado. Análisis de hipótesis para aislamiento, ventilación y orientación solar.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div>
-        <h4 data-i18n="features.dashboard.title">Panel de control</h4>
-        <p data-i18n="features.dashboard.desc">Resumen en tiempo real: pérdida de calor total, pérdida por zona, las 10 habitaciones con mayores pérdidas, indicadores energéticos.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div>
-        <h4 data-i18n="features.cli.title">CLI y procesos por lotes</h4>
-        <p data-i18n="features.cli.desc">Interfaz de línea de comandos para cálculos por lotes. Intégrala en pipelines de CI o automatiza carteras completas de proyectos.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div>
-        <h4 data-i18n="features.local.title">100 % local</h4>
-        <p data-i18n="features.local.desc">Todos los cálculos se ejecutan localmente en tu propio equipo. Sin nube, sin rastreo. Los datos de tu proyecto siguen siendo tuyos.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div>
-        <h4 data-i18n="features.crossplatform.title">Multiplataforma</h4>
-        <p data-i18n="features.crossplatform.desc">Disponible para Windows, macOS, Linux y como aplicación web. Tauri 2 + Rust para el máximo rendimiento.</p>
-      </div>
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Preguntas frecuentes</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">¿Qué archivos puedo abrir?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">Proyectos en .ifcenergy (IFCX) y archivos .isso51.json antiguos. También puedes leer una exportación térmica de Revit (con pyRevit), un modelo IFC para la reconstrucción IFC y un archivo Uniec 3 para BENG.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">¿Tengo que instalar algo?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">No, la aplicación funciona en el navegador. Para Windows hay una versión de prueba (alfa) entre las versiones de GitHub. Aún no está firmada, así que Windows muestra primero un aviso.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">¿Cuánto cuesta Open Heatloss Studio?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Nada. La aplicación es gratuita y de código abierto con licencia MIT. No necesitas cuenta ni suscripción para calcular.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.save.q">¿En qué formato se guarda mi trabajo?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.save.a">En .ifcenergy, un archivo IFCX abierto (IFC5 alpha) con tus estancias, cerramientos y resultados. También puedes exportar IFC4X3 y JSON.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">¿En qué sistemas funciona?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">En cualquier navegador moderno y, como versión de prueba, en Windows. Todavía no hay versión descargable para macOS y Linux.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">¿Se ajusta a la práctica neerlandesa?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">Sí. El cálculo sigue ISSO 51:2023 con su fe de erratas, las exigencias de ventilación vienen del Bbl y la demanda de refrigeración de la NTA 8800. El núcleo de cálculo está probado con tres proyectos de referencia, entre ellos el ejemplo de ISSO 51. La aplicación sigue en pruebas: comprueba los resultados antes de usarlos.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">¿Qué puede hacer un asistente de IA con ello?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">Hay un servidor MCP (Model Context Protocol) para Claude Desktop y Claude Code. Con él, un asistente puede calcular un proyecto, leer un archivo .ifcenergy, consultar cerramientos y crear un informe PDF. Para tus scripts hay una API REST.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.utility.q">¿Puedo calcular también edificios no residenciales?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.utility.a">Todavía no del todo. En los ajustes puedes cambiar a ISSO 53 para edificios no residenciales, pero ese cálculo sigue en desarrollo.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.draw.q">¿Puedo dibujar la planta?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.draw.a">Todavía no. El Modeller solo muestra ahora las estancias en 2D y 3D; el dibujo llegará en una versión posterior. Introduces las estancias en la tabla o las tomas de Revit o IFC.</p></div>
+      </details>
     </div>
-    <p class="more-row" data-fold-for="ohs-features" hidden>
-      <button type="button" class="btn btn-secondary btn-lg more-btn" aria-expanded="false" aria-controls="ohs-features">
-        <span data-fold-show class="more-label"><span data-i18n="features.showAll">Mostrar todas las funciones</span> <span class="more-count" data-fold-count></span></span>
-        <span data-fold-hide hidden data-i18n="features.showLess">Mostrar menos</span>
-        <svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg>
-      </button>
-    </p>
   </div></section>
 
-  <section class="section"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="tech.title">Tecnología</h2>
-      </div>
-      <div class="panel-split-body">
-        <div class="chip-row chip-row-light tech-chips">
-          <span class="chip">Rust</span>
-          <span class="chip">TypeScript</span>
-          <span class="chip">Tauri 2</span>
-          <span class="chip">NEN 12831</span>
-          <span class="chip">ISSO 51:2023</span>
-          <span class="chip">IFC/IFCX</span>
-          <span class="chip">PDF.js</span>
-          <span class="chip">REST API</span>
-        </div>
-        <p data-i18n="tech.desc">Un núcleo de cálculo en Rust para los cálculos conformes a la normativa, un front-end en TypeScript/SolidJS para la interfaz y Tauri 2 para la distribución multiplataforma. El mismo stack que el resto del ecosistema OpenAEC, para una integración fluida.</p>
-      </div>
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Tecnología</h2><p data-i18n="tech.sub">Para quien quiera saber cómo está hecho.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.rust.title">Núcleo de cálculo en Rust</h4><p data-i18n="tech.rust.desc">ISSO 51, ISSO 53 y NTA 8800 en Rust puro, con pruebas de regresión sobre proyectos de referencia.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.tauri.title">Tauri 2</h4><p data-i18n="tech.tauri.desc">Una capa nativa ligera para la aplicación de escritorio, que calcula y crea los PDF en local.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="tech.react.title">React y TypeScript</h4><p data-i18n="tech.react.desc">La misma interfaz en el navegador y en el escritorio, con cinta, pestañas y gráficos.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h4 data-i18n="tech.ifcx.title">IFCX e IFC4X3</h4><p data-i18n="tech.ifcx.desc">El archivo de proyecto es IFCX (IFC5 alpha); la exportación IFC4X3 no necesita Python.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div><div><h4 data-i18n="tech.reports.title">openaec-layout</h4><p data-i18n="tech.reports.desc">Informes PDF mediante el motor de informes compartido de OpenAEC, con fuentes incrustadas.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h4 data-i18n="tech.mcp.title">MCP y API REST</h4><p data-i18n="tech.mcp.desc">Un servidor MCP en TypeScript y una API REST en Rust (Axum) para integraciones.</p></div></div>
     </div>
   </div></section>
+
 
   <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
   <div data-release-notes="open-heatloss-studio"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Mostrar todas las versiones</span><span data-rel-hide hidden data-i18n="releases.showLess">Mostrar solo las tres últimas</span></button>
+    <a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.github">Todas las versiones en GitHub</span></a>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">Open <span class="accent">Heatloss</span> Studio</h2>
       <div class="btn-group">
-        <a href="https://open-heatloss-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Ver demo en vivo</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="cta.github">Ver en GitHub</span></a>
+        <a href="https://open-heatloss-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Abrir en el navegador</span></a>
+        <a href="#features" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Ver las funciones</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Código fuente</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -495,51 +569,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-<script>
-  (function(){
-    const track = document.getElementById('sliderTrack');
-    const dots = document.getElementById('sliderDots');
-    if (!track || !dots) return;
-    const slides = track.children.length;
-    let current = 0;
-    for(let i=0;i<slides;i++){
-      const d = document.createElement('button');
-      d.className = 'slider-dot' + (i===0?' active':'');
-      d.onclick = ()=>slideTo(i);
-      dots.appendChild(d);
-    }
-    window.slideMove = function(dir){slideTo(current+dir);};
-    window.slideTo = function(i){
-      current = (i+slides)%slides;
-      track.style.transform = 'translateX(-'+current*100+'%)';
-      dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-      track.querySelectorAll('video').forEach(v=>v.pause());
-    };
-  })();
-  // Lange lijsten: de eerste paar zichtbaar, de rest achter de vaste "Toon alles"-knop. Zonder JavaScript staat alles open.
-  document.querySelectorAll('[data-fold]').forEach(function (grid) {
-    var n = +grid.getAttribute('data-fold');
-    var items = Array.prototype.slice.call(grid.children);
-    var row = document.querySelector('[data-fold-for="' + grid.id + '"]');
-    if (!row || items.length <= n) return;
-    var btn = row.querySelector('.more-btn');
-    var show = btn.querySelector('[data-fold-show]');
-    var hide = btn.querySelector('[data-fold-hide]');
-    btn.querySelector('[data-fold-count]').textContent = '(' + items.length + ')';
-    function zet(open) {
-      items.forEach(function (c, i) { c.style.display = (!open && i >= n) ? 'none' : ''; });
-      show.hidden = open; hide.hidden = !open;
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    }
-    zet(false);
-    row.hidden = false;
-    btn.addEventListener('click', function () {
-      var open = btn.getAttribute('aria-expanded') !== 'true';
-      zet(open);
-      if (!open) grid.scrollIntoView({ block: 'start' });
-    });
-  });
-</script>
-<script src="/shared/i18n.js?v=20261015"></script>
+  <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

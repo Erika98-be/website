@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Field Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Outil gratuit et open source pour l'inspection, la livraison et l'assurance qualité dans les projets de construction.">
+  <meta name="description" content="Application gratuite et open source pour les inspections, les réceptions et l'assurance qualité : défauts sur le plan, 15 listes de contrôle, procès-verbal…">
   <link rel="canonical" href="https://open-aec.com/fr/open-field-studio/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/open-field-studio/">
@@ -15,23 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/open-field-studio/">
   <!-- hreflang:end -->
 
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="Open Field Studio">
-  <meta property="og:description" content="Outil gratuit et open source pour l'inspection, la livraison et l'assurance qualité dans les projets de construction.">
+  <meta property="og:title" content="Open Field Studio — OpenAEC Foundation">
+  <meta property="og:description" content="Application gratuite et open source pour les inspections, les réceptions et l'assurance qualité : défauts sur le plan, 15 listes de contrôle, procès-verbal…">
   <meta property="og:url" content="https://open-aec.com/fr/open-field-studio/">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-field-studio.jpeg">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-field-studio-hero.png">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Open Field Studio">
-  <meta name="twitter:description" content="Outil gratuit et open source pour l'inspection, la livraison et l'assurance qualité dans les projets de construction.">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-field-studio.jpeg">
+  <meta name="twitter:description" content="Application gratuite et open source pour les inspections, les réceptions et l'assurance qualité : défauts sur le plan, 15 listes de contrôle, procès-verbal…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-field-studio-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -41,6 +39,7 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,23 +47,39 @@
     "name": "Open Field Studio",
     "applicationCategory": "EngineeringApplication",
     "applicationSubCategory": "Site Inspection",
-    "operatingSystem": "Windows, macOS, Linux, Android, iOS",
+    "operatingSystem": "Windows, Linux, Android, Web",
+    "softwareVersion": "0.3.6",
     "url": "https://open-aec.com/open-field-studio/",
     "downloadUrl": "https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases",
-    "description": "Site inspection and quality control app. Defect pinning on floorplans, 15 checklist templates including NEN 2767, signed handover reports, offline-first.",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "description": "Free, open-source app for construction inspections, handovers and quality assurance. Defects pinned on floor plans (PDF, PNG, JPG) with category, priority, severity, photos with time and GPS, and comments; 15 checklists including Wkb, energy label surveys and NEN 2767 condition scores; handovers with verdicts per item, attachments and on-screen signatures; dashboard; reports as PDF or HTML, BCF 2.1 export and a JSON project file; IFC viewer; BAG address and EP-Online energy label lookup; connections to ERPNext and n8n in both directions. For Windows, Linux, Android and the browser, in Dutch, English, German and French.",
     "featureList": [
-      "Tickets & gebreken op plattegrond",
-      "15 checklist-templates (NEN 2767)",
-      "Energielabel opname (NTA 8800)",
-      "Monument inspectie",
-      "Oplevering met handtekeningen",
-      "Dashboard met live statistieken",
-      "Camera-integratie",
-      "4 talen (NL/EN/DE/FR)",
-      "Volledig offline",
-      "Professionele rapporten export"
+      "Plattegronden uit PDF of foto",
+      "Tickets op de plattegrond",
+      "Categorie, prioriteit en ernst",
+      "Foto's met tijd en plaats",
+      "Opmerkingen per ticket",
+      "15 checklists",
+      "Conditiescore volgens NEN 2767",
+      "Meetwaarden, keuzes en foto's",
+      "Energielabel-opname",
+      "Monumenten",
+      "Tekenen op het scherm",
+      "Oordeel per punt",
+      "Vooroplevering, oplevering en naschouw",
+      "Dashboard en logboek",
+      "Vier soorten rapport",
+      "BCF voor BIM-software",
+      "Projectbestand",
+      "3D-model bekijken",
+      "Adres uit de BAG",
+      "Energielabel uit EP-Online",
+      "ERPNext en n8n, twee kanten op",
+      "Opleverdossier doorsturen",
+      "Je gegevens op je eigen apparaat",
+      "Vier talen, licht en donker"
     ],
-    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-field-studio.jpeg",
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-field-studio-hero.png",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -72,7 +87,7 @@
       "availability": "https://schema.org/InStock"
     },
     "isAccessibleForFree": true,
-    "keywords": "inspection, defects, snagging, NEN 2767, handover, oplevering, kwaliteitsborging, PlanRadar alternative, Snag alternative",
+    "keywords": "inspectie, oplevering, gebreken, opleverpunten, kwaliteitsborging, Wkb, NEN 2767, proces-verbaal, checklist, BCF, inspection, snagging, handover, defects, quality assurance, site inspection",
     "sameAs": [
       "https://github.com/OpenAEC-Foundation/Open-Field-Studio",
       "https://open-field-studio.open-aec.com/"
@@ -84,11 +99,95 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Plattegronden als PDF, PNG of JPG, IFC-modellen (IFC2x3 en IFC4) in de 3D-viewer, en projectbestanden (.json) van Open Field Studio. Foto's maak je met de camera of upload je als afbeelding."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. De webversie werkt direct in de browser. Wil je een losse app, download dan de installer voor Windows of Linux, of de app voor Android-telefoons en -tablets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost Open Field Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. De app is gratis en open source onder de licentie CC BY-SA 4.0, zonder account of abonnement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk formaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De app bewaart alles vanzelf op je eigen apparaat. Met Project opslaan maak je er één JSON-bestand van, dat je op een andere computer weer opent. Rapporten exporteer je als PDF of HTML, tickets als BCF."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Windows, Linux (.deb, .rpm en AppImage), Android-telefoons en -tablets (.apk) en elke moderne browser. Een versie voor macOS en iOS is er nog niet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de bouwpraktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Er zijn checklists voor de Wkb-basiscontrole en voor conditiemetingen volgens NEN 2767, adressen komen uit de BAG en energielabels uit EP-Online. Tickets gaan als BCF 2.1 naar BIM-software, en voor Woningborg en SWK is er een eerste koppeling."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet veel: er is nog geen MCP-server of API. Wel kun je het projectbestand (JSON) of een n8n-webhook gebruiken om gegevens aan andere software of een eigen workflow door te geven."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Werkt het zonder internet op de bouwplaats?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, de desktop- en Android-app. Alles staat op je apparaat, ook de PDF-viewer, de 3D-viewer en de lettertypen. Internet heb je alleen nodig voor de BAG, EP-Online en koppelingen. De webversie heeft internet nodig om te openen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kunnen meerdere mensen aan één project werken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet tegelijk. Elk apparaat heeft zijn eigen kopie. Deel het projectbestand, of bewaar het centraal via de koppeling met ERPNext of n8n."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik eigen checklists maken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet. Je kiest uit de 15 ingebouwde checklists, of doet een vrije inspectie met je eigen observaties."
+        }
+      }
+    ]
+  }
+  </script>
 
-  <style>
-    /* slide-frame-rule: de screenshots hebben sterk verschillende verhoudingen; elk staat heel en gecentreerd in een vast kader */
-    .page-panels .slider-slide img { aspect-ratio: 16 / 10; object-fit: contain; background: var(--night-build); }
-  </style>
   <meta name="i18n-static" content="fr">
   <!-- schema:start -->
   <script type="application/ld+json">
@@ -123,7 +222,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "fr",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/fr/open-field-studio/#breadcrumb"
         }
@@ -187,152 +286,285 @@
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">Écosystème OpenAEC</p>
+      <p class="pill-label" data-i18n="header.label">Inspection et réception</p>
       <h1 data-i18n="header.title">Open <span class="accent">Field</span> Studio</h1>
-      <p class="lead" data-i18n="header.desc">Outil gratuit et open source pour l'inspection, la livraison et l'assurance qualité dans les projets de construction.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">Du défaut sur le plan au procès-verbal signé, même sans internet</p>
+      <p class="lead" data-i18n="header.desc">Placez chaque défaut sur le plan avec une punaise, parcourez une liste de contrôle et terminez la réception avec des signatures à l'écran. Sur un ordinateur portable, une tablette Android ou dans le navigateur.</p>
       <div class="btn-group">
-        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="download.title">Télécharger</span></a>
-        <a href="https://open-field-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Voir la démo en ligne</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="cta.github">Voir sur GitHub</span></a>
+        <a href="https://open-field-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Ouvrir dans le navigateur</span></a>
+        <a href="#download" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Télécharger</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Code source</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg><span data-i18n="header.badge">Beta</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg>Windows · Linux · Android · Browser</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg>NEN 2767 · NTA 8800</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg>CC BY-SA 4.0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg><span data-i18n="header.proof1">15 listes de contrôle · NEN 2767</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="header.proof2">Néerlandais, anglais, allemand et français</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg><span>Windows · Linux · Android · Web</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span>PDF · HTML · BCF · JSON</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof5">Gratuit · CC BY-SA 4.0</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-field-studio.jpeg" alt="Open Field Studio - Overzicht"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-field-studio-2.jpeg" alt="Open Field Studio - Inspectie"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-field-studio-3.jpeg" alt="Open Field Studio - Checklist"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-field-studio-4.jpeg" alt="Open Field Studio - Plattegrond"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-field-studio-5.jpeg" alt="Open Field Studio - Rapportage"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-field-studio-6.jpeg" alt="Open Field Studio - Dashboard"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-field-studio-7.jpeg" alt="Open Field Studio - Camera"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-field-studio-8.jpeg" alt="Open Field Studio - Export"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-field-studio-hero.png" width="1920" height="1200" alt="Open Field Studio : plan d'un appartement avec une punaise numérotée pour chaque défaut, colorée selon le statut, et la liste des tickets à droite" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-field-studio-feat-ticket.png" width="1200" height="750" decoding="async" alt="Ticket pour un joint de mastic manquant dans la salle de bains, priorité haute, attribué à l'installateur, avec une échéance" data-i18n="hl.tickets.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-field-studio-feat-inspectie.png" width="1200" height="750" decoding="async" alt="Liste de contrôle pour un relevé de label énergétique avec des boutons pour le type de logement et des champs pour l'année de construction et la surface, 18 points sur 46 remplis" data-i18n="hl.inspect.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-field-studio-feat-oplevering.png" width="1200" height="750" decoding="async" alt="Pré-réception avec dix tickets, chacun avec un avis accepté, sous réserve ou refusé, et une progression de 7 sur 10 évalués" data-i18n="hl.handover.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-field-studio-feat-dashboard.png" width="1200" height="750" decoding="async" alt="Tableau de bord avec onze tickets, dont cinq ouverts et deux en retard, des graphiques par statut, catégorie et responsable, et l'activité récente" data-i18n="hl.dashboard.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-field-studio-feat-export.png" width="1200" height="750" decoding="async" alt="Écran d'export avec l'aperçu du projet, le choix entre quatre rapports et des boutons pour PDF, HTML, BCF et le fichier de projet" data-i18n="hl.report.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-field-studio-feat-koppelingen.png" width="1200" height="750" decoding="async" alt="Liste des connexions, dont ERPNext et n8n sont configurés et peuvent importer des données" data-i18n="hl.connect.alt" data-i18n-attr="alt"></div>
         </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende">&rsaquo;</button>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap" id="download"><div class="container">
-    <div class="download-section">
-      <h3 data-i18n="download.title">Télécharger</h3>
-      <div class="download-grid">
-        <div class="download-item"><div class="os">Windows</div><div class="size" data-i18n="download.windows">Installateur (.exe)</div>
-          <a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/download/v0.3.6/Open.Field.Studio_0.3.6_x64-setup.exe" data-gh-download="OpenAEC-Foundation/Open-Field-Studio" data-platform="windows" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download .exe</a></div>
-        <div class="download-item"><div class="os">Windows</div><div class="size" data-i18n="download.windowsMsi">Paquet MSI (.msi)</div>
-          <a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/download/v0.3.6/Open.Field.Studio_0.3.6_x64_en-US.msi" data-gh-download="OpenAEC-Foundation/Open-Field-Studio" data-platform="windows-msi" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download .msi</a></div>
-        <div class="download-item"><div class="os">Linux</div><div class="size" data-i18n="download.linuxDeb">Debian, Ubuntu (.deb)</div>
-          <a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/download/v0.3.6/Open.Field.Studio_0.3.6_amd64.deb" data-gh-download="OpenAEC-Foundation/Open-Field-Studio" data-platform="linux-deb" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download .deb</a></div>
-        <div class="download-item"><div class="os">Linux</div><div class="size" data-i18n="download.linuxRpm">Fedora, openSUSE (.rpm)</div>
-          <a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/download/v0.3.6/Open.Field.Studio-0.3.6-1.x86_64.rpm" data-gh-download="OpenAEC-Foundation/Open-Field-Studio" data-platform="linux-rpm" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download .rpm</a></div>
-        <div class="download-item"><div class="os">Linux</div><div class="size" data-i18n="download.linuxAppimage">Toute distribution (AppImage)</div>
-          <a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/download/v0.3.6/Open.Field.Studio_0.3.6_amd64.AppImage" data-gh-download="OpenAEC-Foundation/Open-Field-Studio" data-platform="linux-appimage" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download AppImage</a></div>
-        <div class="download-item"><div class="os">Android</div><div class="size" data-i18n="download.android">Téléphone ou tablette (.apk)</div>
-          <a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/download/v0.3.6/open-field-studio-release.apk" data-gh-download="OpenAEC-Foundation/Open-Field-Studio" data-platform="android" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download .apk</a></div>
+  <nav class="pp-subnav" aria-label="Sur cette page" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Fonctions</a>
+      <a href="#download" data-i18n="subnav.download">Télécharger</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Nouveautés</a>
+      <a href="#faq" data-i18n="subnav.faq">FAQ</a>
+      <a href="#releases" data-i18n="subnav.releases">Versions</a>
+    </div>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Fonctions</p><h2 data-i18n="features.heading">Tout pour l'inspection et la réception, dans une seule application</h2><p data-i18n="features.sub">Commencez par les points forts ou choisissez un thème.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Fonctions par thème" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Points forts</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-tickets" data-tab="tickets" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg><span data-i18n="tabs.tickets">Défauts et tickets</span> <span class="pp-tab-count" data-count="tickets"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-inspect" data-tab="inspect" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg><span data-i18n="tabs.inspect">Inspections</span> <span class="pp-tab-count" data-count="inspect"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-handover" data-tab="handover" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-signature"/></svg><span data-i18n="tabs.handover">Réception</span> <span class="pp-tab-count" data-count="handover"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-report" data-tab="report" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="tabs.report">Rapports et export</span> <span class="pp-tab-count" data-count="report"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-connect" data-tab="connect" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg><span data-i18n="tabs.connect">Connexions et registres</span> <span class="pp-tab-count" data-count="connect"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Toutes les fonctions</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-field-studio-feat-ticket.png" width="1200" height="750" loading="lazy" decoding="async" alt="Ticket pour un joint de mastic manquant dans la salle de bains, priorité haute, attribué à l'installateur, avec une échéance" data-i18n="hl.tickets.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.tickets.kicker">Défauts</span></p>
+            <h3 data-i18n="hl.tickets.title">Chaque défaut au bon endroit</h3>
+            <p data-i18n="hl.tickets.desc">Cliquez sur le plan et enregistrez le défaut avec sa catégorie, sa priorité, sa gravité, son échéance et des photos. Attribuez-le à l'entreprise ou à l'installateur et suivez son statut, d'ouvert à vérifié.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/Open-Field-Studio#core-inspection-workflow" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-field-studio-feat-inspectie.png" width="1200" height="750" loading="lazy" decoding="async" alt="Liste de contrôle pour un relevé de label énergétique avec des boutons pour le type de logement et des champs pour l'année de construction et la surface, 18 points sur 46 remplis" data-i18n="hl.inspect.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.inspect.kicker">Inspections</span></p>
+            <h3 data-i18n="hl.inspect.title">Une liste de contrôle pour chaque inspection</h3>
+            <p data-i18n="hl.inspect.desc">Choisissez parmi 15 listes prêtes à l'emploi : bâtiment, installations, Wkb, chauffage par le sol, ventilation, label énergétique et monuments. Pour chaque point, indiquez conforme ou non, un score NEN 2767, une mesure avec son unité ou une photo.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/Open-Field-Studio#checklist-templates" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-field-studio-feat-oplevering.png" width="1200" height="750" loading="lazy" decoding="async" alt="Pré-réception avec dix tickets, chacun avec un avis accepté, sous réserve ou refusé, et une progression de 7 sur 10 évalués" data-i18n="hl.handover.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.handover.kicker">Réception</span></p>
+            <h3 data-i18n="hl.handover.title">Réceptionner avec procès-verbal et signatures</h3>
+            <p data-i18n="hl.handover.desc">Passez en revue tous les points ouverts et acceptez-les, acceptez-les sous réserve ou refusez-les. Joignez des documents, faites signer chaque partie à l'écran et établissez le procès-verbal. Pour la pré-réception, la réception et la levée des réserves.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/Open-Field-Studio#core-inspection-workflow" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-field-studio-feat-dashboard.png" width="1200" height="750" loading="lazy" decoding="async" alt="Tableau de bord avec onze tickets, dont cinq ouverts et deux en retard, des graphiques par statut, catégorie et responsable, et l'activité récente" data-i18n="hl.dashboard.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.dashboard.kicker">Tableau de bord</span></p>
+            <h3 data-i18n="hl.dashboard.title">Voyez d'un coup d'œil ce qui reste ouvert</h3>
+            <p data-i18n="hl.dashboard.desc">Des compteurs pour les tickets ouverts, attribués, terminés et en retard, des graphiques par catégorie et par responsable, et un journal de tout ce qui s'est passé dans le projet.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/Open-Field-Studio#core-inspection-workflow" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-field-studio-feat-export.png" width="1200" height="750" loading="lazy" decoding="async" alt="Écran d'export avec l'aperçu du projet, le choix entre quatre rapports et des boutons pour PDF, HTML, BCF et le fichier de projet" data-i18n="hl.report.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">05</span> <span data-i18n="hl.report.kicker">Rapports</span></p>
+            <h3 data-i18n="hl.report.title">Des rapports pour le maître d'ouvrage et le dossier</h3>
+            <p data-i18n="hl.report.desc">Créez un rapport de projet, une liste des tickets ouverts, un rapport d'inspection ou le procès-verbal, en PDF ou HTML, avec les photos et le plan annoté. Ou exportez les tickets en BCF pour votre logiciel BIM.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/Open-Field-Studio#reports" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-field-studio-feat-koppelingen.png" width="1200" height="750" loading="lazy" decoding="async" alt="Liste des connexions, dont ERPNext et n8n sont configurés et peuvent importer des données" data-i18n="hl.connect.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">06</span> <span data-i18n="hl.connect.kicker">Connexions</span></p>
+            <h3 data-i18n="hl.connect.title">Votre dossier dans vos propres systèmes</h3>
+            <p data-i18n="hl.connect.desc">Récupérez le client, les contacts et les plans depuis ERPNext ou via un webhook n8n, et renvoyez automatiquement le projet après l'enregistrement ou la réception. Pour Woningborg, SWK, AFAS, Exact Online et Bouw7, une première connexion avec mode test est disponible.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/Open-Field-Studio#dossier-publish--erp-connectors" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
       </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="tickets"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.floorplans.title">Plans depuis un PDF ou une image</h3><p data-i18n="f.floorplans.desc">Chargez un PDF, PNG ou JPG. Un PDF de plusieurs pages donne un plan par page.</p></div></div></li>
+        <li class="pp-tile" data-cats="tickets"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><h3 data-i18n="f.pins.title">Tickets sur le plan</h3><p data-i18n="f.pins.desc">Une punaise numérotée par défaut, colorée selon le statut. Filtrez par statut, catégorie et priorité.</p></div></div></li>
+        <li class="pp-tile" data-cats="tickets"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.fields.title">Catégorie, priorité et gravité</h3><p data-i18n="f.fields.desc">Onze catégories, du gros œuvre à la sécurité, trois priorités et quatre niveaux de gravité, avec échéance et responsable.</p></div></div></li>
+        <li class="pp-tile" data-cats="tickets inspect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h3 data-i18n="f.photos.title">Photos avec date et lieu</h3><p data-i18n="f.photos.desc">Prenez des photos avec l'appareil ou importez-les. Une nouvelle photo reçoit l'heure et, si vous l'autorisez, la position GPS, aussi dans le rapport.</p></div></div></li>
+        <li class="pp-tile" data-cats="tickets"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h3 data-i18n="f.comments.title">Commentaires par ticket</h3><p data-i18n="f.comments.desc">Notez pour chaque ticket ce qui a été convenu, avec nom et heure.</p></div></div></li>
+        <li class="pp-tile" data-cats="inspect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.templates.title">15 listes de contrôle</h3><p data-i18n="f.templates.desc">Bâtiment, installations, sécurité, pré-inspection, Wkb, chauffage par le sol, ventilation, label énergétique et quatre pour les monuments.</p></div></div></li>
+        <li class="pp-tile" data-cats="inspect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h3 data-i18n="f.nen2767.title">Score d'état selon NEN 2767</h3><p data-i18n="f.nen2767.desc">Les listes pour les monuments et les installations notent chaque point sur l'échelle d'état de 1 à 6.</p></div></div></li>
+        <li class="pp-tile" data-cats="inspect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><h3 data-i18n="f.inputs.title">Mesures, choix et photos</h3><p data-i18n="f.inputs.desc">Un point peut être conforme ou non, un choix, un nombre avec unité comme dm³/s ou kPa, un texte ou une photo.</p></div></div></li>
+        <li class="pp-tile" data-cats="inspect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.energy.title">Relevé pour le label énergétique</h3><p data-i18n="f.energy.desc">Une liste de 46 points pour le logement, l'enveloppe, les installations, la ventilation, les énergies renouvelables et les photos.</p></div></div></li>
+        <li class="pp-tile" data-cats="inspect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-history"/></svg></div><div><h3 data-i18n="f.monument.title">Monuments</h3><p data-i18n="f.monument.desc">Quatre listes : structure et enveloppe, intérieur historique, humidité et dégâts, et plan d'entretien.</p></div></div></li>
+        <li class="pp-tile" data-cats="inspect handover"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-signature"/></svg></div><div><h3 data-i18n="f.signing.title">Signer à l'écran</h3><p data-i18n="f.signing.desc">Les inspections et réceptions sont signées au doigt ou à la souris, par chaque partie séparément.</p></div></div></li>
+        <li class="pp-tile" data-cats="handover"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h3 data-i18n="f.verdict.title">Avis par point</h3><p data-i18n="f.verdict.desc">Accepté, sous réserve ou refusé. Les tickets acceptés passent à vérifié dès la signature.</p></div></div></li>
+        <li class="pp-tile" data-cats="handover"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-calendar"/></svg></div><div><h3 data-i18n="f.rounds.title">Pré-réception, réception et levée des réserves</h3><p data-i18n="f.rounds.desc">Chaque tour avec participants, notes et pièces jointes comme rapports de mesure et certificats de garantie.</p></div></div></li>
+        <li class="pp-tile" data-cats="tickets"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.dashboard.title">Tableau de bord et journal</h3><p data-i18n="f.dashboard.desc">Tickets par statut, catégorie et responsable, échéances dépassées et dernière activité.</p></div></div></li>
+        <li class="pp-tile" data-cats="report handover"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div><div><h3 data-i18n="f.reports.title">Quatre types de rapport</h3><p data-i18n="f.reports.desc">Rapport de projet, liste des tickets ouverts, rapport d'inspection et procès-verbal, en PDF ou HTML.</p></div></div></li>
+        <li class="pp-tile" data-cats="report"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h3 data-i18n="f.bcf.title">BCF pour les logiciels BIM</h3><p data-i18n="f.bcf.desc">Exportez les tickets en BCF 2.1 avec une photo par point, pour BIMcollab, Revit ou Solibri.</p></div></div></li>
+        <li class="pp-tile" data-cats="report"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.project.title">Fichier de projet</h3><p data-i18n="f.project.desc">L'application enregistre tout automatiquement. Enregistrez le projet en un seul fichier et ouvrez-le sur un autre appareil.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h3 data-i18n="f.ifc.title">Voir le modèle 3D</h3><p data-i18n="f.ifc.desc">Ouvrez un modèle IFC (IFC2x3 ou IFC4) et faites-le pivoter, glisser et zoomer.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><h3 data-i18n="f.bag.title">Adresse depuis la BAG</h3><p data-i18n="f.bag.desc">Recherchez l'adresse par code postal et numéro dans le registre néerlandais des adresses et bâtiments (BAG). Il vous faut votre propre clé API du Kadaster.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.epol.title">Label énergétique depuis EP-Online</h3><p data-i18n="f.epol.desc">Récupérez le label énergétique enregistré pour l'adresse, visible dans le projet et le rapport. Avec votre propre clé API de RVO.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.erp.title">ERPNext et n8n, dans les deux sens</h3><p data-i18n="f.erp.desc">Importez le projet, le client, les contacts et les plans, et renvoyez le fichier de projet au projet lié.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect handover"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg></div><div><h3 data-i18n="f.publish.title">Transmettre le dossier de réception</h3><p data-i18n="f.publish.desc">Vers Woningborg, SWK, AFAS Profit, Exact Online, Bouw7 ou votre propre webhook, ou envoyez les tickets ouverts comme tâches dans KYP Project. Avec un mode test qui n'envoie rien.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h3 data-i18n="f.offline.title">Vos données sur votre appareil</h3><p data-i18n="f.offline.desc">Ni compte ni cloud. Les applications de bureau et Android fonctionnent sans internet ; il n'est utile que pour les registres et les connexions.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h3 data-i18n="f.languages.title">Quatre langues, clair et sombre</h3><p data-i18n="f.languages.desc">Néerlandais, anglais, allemand et français, avec un thème clair et un thème sombre qui suivent votre système.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel">
-    <div class="panel-split">
-      <div class="panel-split-text">
-        <p class="pill-label">Offline · NEN 2767</p>
-        <h2 data-i18n="why.title">Pourquoi Open <span class="accent">Field</span> Studio ?</h2>
+  <section class="section surface-dark panel pp-anchor" id="download" data-pp-repo="OpenAEC-Foundation/Open-Field-Studio">
+    <div class="pp-dl">
+      <p class="pill-label" data-i18n="download.label">Télécharger</p>
+      <h2 data-i18n="download.title" data-pp-ver>Télécharger v0.3.6</h2>
+      <p class="pp-dl-lead" data-i18n="download.lead">Gratuit, sans compte. Pour Windows et Linux, et en application pour Android.</p>
+      <div class="pp-dl-main" data-pp-main>
+        <a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/download/v0.3.6/Open.Field.Studio_0.3.6_x64-setup.exe" class="btn btn-glow btn-lg" data-pp-dl="windows" data-pp-primary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-os="windows" data-i18n="download.forWindows">Télécharger pour Windows</span><span data-os="linux-appimage" data-i18n="download.forLinux" hidden>Télécharger pour Linux</span><span data-os="android" data-i18n="download.forAndroid" hidden>Télécharger pour Android</span></a>
+        <a href="https://open-field-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="download.browserBtn">Ouvrir dans le navigateur</span></a>
       </div>
-      <div class="panel-split-body">
-        <p data-i18n="why.desc">Les inspections et livraisons sur chantier nécessitent des outils fiables qui fonctionnent aussi hors ligne. Open Field Studio combine listes de contrôle, enregistrement de défauts et rapports dans une application qui fonctionne entièrement hors ligne et disponible en quatre langues.</p>
-      </div>
+      <p class="pp-dl-meta"><span data-os="windows" data-i18n="download.metaWindows">programme d'installation .exe</span><span data-os="linux-appimage" data-i18n="download.metaLinux" hidden>AppImage, fonctionne sur la plupart des distributions</span><span data-os="android" data-i18n="download.metaAndroid" hidden>.apk pour tablettes et téléphones</span> · <span data-pp-primary-size>4.8 MB</span></p>
+      <p class="pp-dl-mobile" data-pp-mobile hidden data-i18n="download.mobileNote">Open Field Studio est conçu pour un grand écran. Ouvrez-le sur votre ordinateur, ou essayez-le ici dans le navigateur.</p>
+      <details class="pp-dl-other" data-pp-other>
+        <summary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg><span data-i18n="download.other">Autres plateformes</span></summary>
+        <div class="pp-files">
+          <div class="pp-files-col"><h3>Windows</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/download/v0.3.6/Open.Field.Studio_0.3.6_x64-setup.exe" data-pp-dl="windows" data-pp-item="windows"><span class="pp-file"><span data-i18n="download.fileExe">Programme d'installation (.exe)</span><span class="pp-file-size"> · <span data-pp-size="windows">4.8 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/download/v0.3.6/Open.Field.Studio_0.3.6_x64_user-setup.exe" data-pp-dl="windows-user" data-pp-item="windows-user"><span class="pp-file"><span data-i18n="download.fileExeUser">Sans droits d'administrateur (.exe)</span><span class="pp-file-size"> · <span data-pp-size="windows-user">4.8 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/download/v0.3.6/Open.Field.Studio_0.3.6_x64_en-US.msi" data-pp-dl="windows-msi" data-pp-item="windows-msi"><span class="pp-file"><span data-i18n="download.fileMsi">Programme d'installation (.msi)</span><span class="pp-file-size"> · <span data-pp-size="windows-msi">6.5 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+          <div class="pp-files-col"><h3>Linux</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/download/v0.3.6/Open.Field.Studio_0.3.6_amd64.deb" data-pp-dl="linux-deb" data-pp-item="linux-deb"><span class="pp-file"><span data-i18n="download.fileDeb">.deb</span><span class="pp-file-size"> · <span data-pp-size="linux-deb">6.9 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/download/v0.3.6/Open.Field.Studio-0.3.6-1.x86_64.rpm" data-pp-dl="linux-rpm" data-pp-item="linux-rpm"><span class="pp-file"><span data-i18n="download.fileRpm">.rpm</span><span class="pp-file-size"> · <span data-pp-size="linux-rpm">6.9 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/download/v0.3.6/Open.Field.Studio_0.3.6_amd64.AppImage" data-pp-dl="linux-appimage" data-pp-item="linux-appimage"><span class="pp-file"><span data-i18n="download.fileAppImage">AppImage</span><span class="pp-file-size"> · <span data-pp-size="linux-appimage">80.5 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+          <div class="pp-files-col"><h3>Android</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases/download/v0.3.6/open-field-studio-release.apk" data-pp-dl="android" data-pp-item="android"><span class="pp-file"><span data-i18n="download.fileApk">Application (.apk)</span><span class="pp-file-size"> · <span data-pp-size="android">21.8 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+        </div>
+      </details>
+      <p class="pp-dl-note" data-i18n="download.browserNote">Vous préférez ne rien installer ? L'application <a href="https://open-field-studio.open-aec.com/" target="_blank" rel="noopener">fonctionne aussi dans le navigateur</a>.</p>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <h2 data-i18n="features.title">Fonctionnalités</h2>
-    <div class="features" id="ofs-features" data-fold="6">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div>
-        <h4 data-i18n="features.tickets.title">Tickets &amp; défauts sur plan</h4>
-        <p data-i18n="features.tickets.desc">Enregistrez les défauts et remarques directement sur le plan. Aperçu visuel de tous les points ouverts par emplacement.</p>
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
+    <div class="panel-split">
+      <div class="panel-split-text">
+        <p class="pill-label" data-i18n="whatsnew.label">Nouveau dans la v0.3.6</p>
+        <h2 data-i18n="whatsnew.title">Des connexions <span>dans les deux sens</span></h2>
+        <p data-i18n="whatsnew.desc">La série 0.3 donne aux connexions leur propre onglet. Récupérez les données du projet depuis ERPNext ou n8n, et votre travail retourne automatiquement au projet lié.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaChangelog">Toutes les notes de version</span></a>
+          <a href="https://open-field-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="whatsnew.ctaDemo">Essayer dans le navigateur</span></a>
+        </div>
       </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-        <h4 data-i18n="features.checklists.title">15 modèles de listes de contrôle (NEN 2767)</h4>
-        <p data-i18n="features.checklists.desc">Listes de contrôle prêtes à l'emploi conformes à la NEN 2767 et à d'autres normes. Personnalisables selon les exigences spécifiques du projet.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div>
-        <h4 data-i18n="features.energy.title">Relevé d'étiquette énergétique (NTA 8800)</h4>
-        <p data-i18n="features.energy.desc">Effectuez des relevés d'étiquette énergétique conformes à la NTA 8800 directement sur site avec des formulaires structurés.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-crane"/></svg></div>
-        <h4 data-i18n="features.monument.title">Inspection de monuments</h4>
-        <p data-i18n="features.monument.desc">Modules d'inspection spécifiques aux bâtiments patrimoniaux, attentifs aux valeurs culturelles et historiques.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-signature"/></svg></div>
-        <h4 data-i18n="features.handover.title">Livraison avec signatures</h4>
-        <p data-i18n="features.handover.desc">Rapports de livraison numériques avec fonctionnalité de signature. Toutes les parties signent directement à l'écran.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div>
-        <h4 data-i18n="features.dashboard.title">Tableau de bord avec statistiques en direct</h4>
-        <p data-i18n="features.dashboard.desc">Aperçu en temps réel de toutes les inspections, défauts ouverts et progression par projet.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div>
-        <h4 data-i18n="features.camera.title">Intégration caméra</h4>
-        <p data-i18n="features.camera.desc">Prenez des photos directement depuis l'application et liez-les aux défauts, listes de contrôle ou emplacements sur le plan.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div>
-        <h4 data-i18n="features.languages.title">4 langues (NL/EN/DE/FR)</h4>
-        <p data-i18n="features.languages.desc">Entièrement disponible en néerlandais, anglais, allemand et français. Idéal pour les projets internationaux.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div>
-        <h4 data-i18n="features.offline.title">Entièrement hors ligne</h4>
-        <p data-i18n="features.offline.desc">Fonctionne sans connexion internet sur le chantier. Synchronisez quand vous êtes à nouveau en ligne.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div>
-        <h4 data-i18n="features.reports.title">Export de rapports professionnels</h4>
-        <p data-i18n="features.reports.desc">Exportez inspections et livraisons sous forme de rapports PDF professionnels avec photos et plans.</p>
-      </div>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-history"/></svg></div><div><h4 data-i18n="whatsnew.items.backsync.title">Retour automatique au projet</h4><p data-i18n="whatsnew.items.backsync.desc">À l'enregistrement et après une réception, le fichier de projet part vers le projet ERPNext lié ou comme message vers votre webhook n8n.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h4 data-i18n="whatsnew.items.import.title">Importer un projet entier</h4><p data-i18n="whatsnew.items.import.desc">Nom, numéro, client, adresse, contacts et pièces jointes depuis ERPNext en une fois.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h4 data-i18n="whatsnew.items.search.title">Recherche dans la liste</h4><p data-i18n="whatsnew.items.search.desc">Au-delà de huit projets, filtrez par nom, numéro ou client.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h4 data-i18n="whatsnew.items.tab.title">Un onglet Connexions dédié</h4><p data-i18n="whatsnew.items.tab.desc">Les huit connexions au même endroit, avec pour chacune son état de configuration.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><h4 data-i18n="whatsnew.items.desktop.title">Aussi avec votre propre serveur</h4><p data-i18n="whatsnew.items.desktop.desc">L'application de bureau se connecte elle-même, si bien qu'un ERPNext auto-hébergé fonctionne aussi.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg></div><div><h4 data-i18n="whatsnew.items.update.title">Avis de nouvelle version</h4><p data-i18n="whatsnew.items.update.desc">Un badge dans la barre de titre dès qu'une nouvelle version est prête.</p></div></li>
+      </ul>
     </div>
-    <p class="more-row" data-fold-for="ofs-features" hidden>
-      <button type="button" class="btn btn-secondary btn-lg more-btn" aria-expanded="false" aria-controls="ofs-features">
-        <span data-fold-show class="more-label"><span data-i18n="features.showAll">Afficher toutes les fonctions</span> <span class="more-count" data-fold-count></span></span>
-        <span data-fold-hide hidden data-i18n="features.showLess">Afficher moins</span>
-        <svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg>
-      </button>
-    </p>
+  </section>
+
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Questions fréquentes</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Quels fichiers puis-je ouvrir ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">Des plans en PDF, PNG ou JPG, des modèles IFC (IFC2x3 et IFC4) dans la visionneuse 3D et les fichiers de projet (.json) d'Open Field Studio. Les photos se prennent avec l'appareil ou s'importent comme images.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Dois-je installer quelque chose ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Non. La version web fonctionne directement dans le navigateur. Pour une application à part, téléchargez l'installateur pour Windows ou Linux, ou l'application pour téléphones et tablettes Android.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">Combien coûte Open Field Studio ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Rien. L'application est gratuite et open source sous licence CC BY-SA 4.0, sans compte ni abonnement.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.save.q">Dans quel format mon travail est-il enregistré ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.save.a">L'application enregistre tout automatiquement sur votre appareil. Avec Enregistrer le projet, vous en faites un seul fichier JSON que vous rouvrez sur un autre ordinateur. Les rapports s'exportent en PDF ou HTML, les tickets en BCF.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">Sur quels systèmes fonctionne-t-il ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">Windows, Linux (.deb, .rpm et AppImage), téléphones et tablettes Android (.apk) et tout navigateur récent. Il n'existe pas encore de version pour macOS ou iOS.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">Est-ce adapté à la pratique du bâtiment ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">Oui. Il y a des listes pour le contrôle de base Wkb néerlandais et pour les relevés d'état selon NEN 2767 ; les adresses viennent de la BAG et les labels énergétiques d'EP-Online. Les tickets partent en BCF 2.1 vers les logiciels BIM, et une première connexion existe pour Woningborg et SWK.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">Que peut en faire un assistant IA ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">Pas grand-chose pour l'instant : il n'y a pas encore de serveur MCP ni d'API. Vous pouvez utiliser le fichier de projet (JSON) ou un webhook n8n pour transmettre les données à d'autres logiciels ou à votre propre workflow.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.offline.q">Fonctionne-t-il sans internet sur le chantier ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.offline.a">Oui, les applications de bureau et Android. Tout est sur votre appareil, y compris la visionneuse PDF, la visionneuse 3D et les polices. Internet n'est utile que pour la BAG, EP-Online et les connexions. La version web a besoin d'internet pour s'ouvrir.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.team.q">Plusieurs personnes peuvent-elles travailler sur un même projet ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.team.a">Pas encore en même temps. Chaque appareil a sa propre copie. Partagez le fichier de projet, ou centralisez-le via la connexion ERPNext ou n8n.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.templates.q">Puis-je créer mes propres listes ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.templates.a">Pas encore. Vous choisissez parmi les 15 listes intégrées, ou faites une inspection libre avec vos propres observations.</p></div>
+      </details>
+    </div>
   </div></section>
 
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Technologie</h2><p data-i18n="tech.sub">Pour ceux qui veulent savoir comment c'est construit.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.tauri.title">Tauri 2</h4><p data-i18n="tech.tauri.desc">Une petite application native pour Windows, Linux et Android, avec des boîtes de dialogue natives pour ouvrir et enregistrer.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="tech.vite.title">Vite et JavaScript</h4><p data-i18n="tech.vite.desc">Une interface légère, sans gros framework, identique dans le navigateur et dans l'application.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h4 data-i18n="tech.ifc.title">Three.js et web-ifc</h4><p data-i18n="tech.ifc.desc">La visionneuse 3D lit les modèles IFC avec WebAssembly et ne se charge qu'à l'ouverture de son onglet.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h4 data-i18n="tech.pdfjs.title">PDF.js</h4><p data-i18n="tech.pdfjs.desc">Les plans issus de PDF sont convertis sur votre appareil, sans service externe.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h4 data-i18n="tech.idb.title">IndexedDB</h4><p data-i18n="tech.idb.desc">Photos, plans et signatures sont conservés dans le stockage de l'appareil, qui ne se remplit pas vite.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h4 data-i18n="tech.i18n.title">i18next</h4><p data-i18n="tech.i18n.desc">Tous les textes en quatre langues, en partant de la langue de votre système.</p></div></div>
+    </div>
+  </div></section>
+
+
   <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
   <div data-release-notes="open-field-studio"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Afficher toutes les versions</span><span data-rel-hide hidden data-i18n="releases.showLess">Afficher seulement les trois dernières</span></button>
+    <a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio/releases" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.github">Toutes les versions sur GitHub</span></a>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">Open <span class="accent">Field</span> Studio</h2>
       <div class="btn-group">
-        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="download.title">Télécharger</span></a>
-        <a href="https://open-field-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Voir la démo en ligne</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="cta.github">Voir sur GitHub</span></a>
+        <a href="https://open-field-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Ouvrir dans le navigateur</span></a>
+        <a href="#download" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Télécharger</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/Open-Field-Studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Code source</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -386,53 +618,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-
-  <script>
-    (function(){
-      const track = document.getElementById('sliderTrack');
-      const dots = document.getElementById('sliderDots');
-      const slides = track.children.length;
-      let current = 0;
-      for(let i=0;i<slides;i++){
-        const d = document.createElement('button');
-        d.className = 'slider-dot' + (i===0?' active':'');
-        d.onclick = ()=>slideTo(i);
-        dots.appendChild(d);
-      }
-      window.slideMove = function(dir){slideTo(current+dir);};
-      window.slideTo = function(i){
-        current = (i+slides)%slides;
-        track.style.transform = 'translateX(-'+current*100+'%)';
-        dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-      };
-    })();
-  </script>
-<script>
-  // Lange lijsten: de eerste paar zichtbaar, de rest achter de vaste "Toon alles"-knop. Zonder JavaScript staat alles open.
-  document.querySelectorAll('[data-fold]').forEach(function (grid) {
-    var n = +grid.getAttribute('data-fold');
-    var items = Array.prototype.slice.call(grid.children);
-    var row = document.querySelector('[data-fold-for="' + grid.id + '"]');
-    if (!row || items.length <= n) return;
-    var btn = row.querySelector('.more-btn');
-    var show = btn.querySelector('[data-fold-show]');
-    var hide = btn.querySelector('[data-fold-hide]');
-    btn.querySelector('[data-fold-count]').textContent = '(' + items.length + ')';
-    function zet(open) {
-      items.forEach(function (c, i) { c.style.display = (!open && i >= n) ? 'none' : ''; });
-      show.hidden = open; hide.hidden = !open;
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    }
-    zet(false);
-    row.hidden = false;
-    btn.addEventListener('click', function () {
-      var open = btn.getAttribute('aria-expanded') !== 'true';
-      zet(open);
-      if (!open) grid.scrollIntoView({ block: 'start' });
-    });
-  });
-</script>
-<script src="/shared/downloads.js?v=20261015"></script>
-<script src="/shared/i18n.js?v=20261015"></script>
+  <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

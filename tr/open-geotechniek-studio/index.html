@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Geotechniek Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Koni penetrasyon testleri (CPT/GEF), sondajlar (BHR/BRO-xml) ve saha çizimleri için açık kaynak masaüstü aracı.">
+  <meta name="description" content="Konik penetrasyon deneyleri (GEF, BRO-xml) ve sondajlar için ücretsiz, açık kaynaklı uygulama: grafikler ve tabaka ayrımı, haritada BRO verileri, vaziyet…">
   <link rel="canonical" href="https://open-aec.com/tr/open-geotechniek-studio/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/open-geotechniek-studio/">
@@ -15,24 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/open-geotechniek-studio/">
   <!-- hreflang:end -->
 
-
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="Open Geotechniek Studio">
-  <meta property="og:description" content="Koni penetrasyon testleri (CPT/GEF), sondajlar (BHR/BRO-xml) ve saha çizimleri için açık kaynak masaüstü aracı.">
+  <meta property="og:title" content="Open Geotechniek Studio — OpenAEC Foundation">
+  <meta property="og:description" content="Konik penetrasyon deneyleri (GEF, BRO-xml) ve sondajlar için ücretsiz, açık kaynaklı uygulama: grafikler ve tabaka ayrımı, haritada BRO verileri, vaziyet…">
   <meta property="og:url" content="https://open-aec.com/tr/open-geotechniek-studio/">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-geotechniek-studio-1.jpg">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-geotechniek-studio-hero.png">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Open Geotechniek Studio">
-  <meta name="twitter:description" content="Koni penetrasyon testleri (CPT/GEF), sondajlar (BHR/BRO-xml) ve saha çizimleri için açık kaynak masaüstü aracı.">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-geotechniek-studio-1.jpg">
+  <meta name="twitter:description" content="Konik penetrasyon deneyleri (GEF, BRO-xml) ve sondajlar için ücretsiz, açık kaynaklı uygulama: grafikler ve tabaka ayrımı, haritada BRO verileri, vaziyet…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-geotechniek-studio-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -42,24 +39,145 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
-
-  <!-- Schema.org -->
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Open Geotechniek Studio",
     "applicationCategory": "EngineeringApplication",
-    "operatingSystem": "Windows, macOS, Linux",
-    "softwareVersion": "0.4.0",
-    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "applicationSubCategory": "Geotechniek / CPT",
+    "operatingSystem": "Windows, macOS, Linux, Web",
+    "softwareVersion": "2026.44.4",
     "url": "https://open-aec.com/open-geotechniek-studio/",
-    "description": "Open-source viewer for cone penetration tests (CPT, GEF) and borings (BHR, BRO-xml). Soil layer interpretation, Robertson SBT classification, IFCX integration. For civil engineering and GWW projects.",
-    "publisher": { "@type": "Organization", "name": "OpenAEC Foundation", "url": "https://open-aec.com" }
+    "downloadUrl": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases",
+    "license": "https://opensource.org/licenses/MIT",
+    "description": "Free, open-source app for cone penetration tests (GEF, BRO-xml), boreholes (BHR-GT, NEN 5104) and groundwater wells. Charts of qc, fs and Rf with an indicative soil layering and a normalized Qt/Fr/Bq/Ic analysis; BRO data on a map with PDOK layers; site drawings exported to PDF and DWG; PDF reports; GEF export; concept settlement and EC7 pad foundation worksheets; MCP server, local HTTP API, Node library and native SDK. For Windows, macOS, Linux and the browser.",
+    "featureList": [
+      "GEF en BRO-xml openen",
+      "qc, fs en Rf per diepte",
+      "Indicatieve laagindeling",
+      "Genormaliseerde analyse",
+      "Boringen en grondwater",
+      "Controle van de gegevens",
+      "Meerdere sonderingen naast elkaar",
+      "Zoeken op adres",
+      "BRO-gegevens laden",
+      "Kaartlagen van PDOK",
+      "Meten en exporteren",
+      "Sonderingsraster",
+      "Tekengereedschap",
+      "PDF of afbeelding eronder",
+      "PDF op A2 of A3",
+      "PDF-rapport",
+      "Bronvaste GEF-export",
+      "Eigen projectbestand",
+      "Zetting van één laag",
+      "Poer op staal (EC7)",
+      "MCP en HTTP API",
+      "Node-library en SDK",
+      "Vijf thema's"
+    ],
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-geotechniek-studio-hero.png",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    },
+    "isAccessibleForFree": true,
+    "keywords": "sondering, CPT, GEF, BRO, BRO-xml, BHR-GT, boring, NEN 5104, geotechniek, geotechnics, cone penetration test, situatietekening, PDOK, IFCX, MCP",
+    "sameAs": [
+      "https://github.com/OpenAEC-Foundation/open-geotechniek-studio",
+      "https://open-geotechniek-studio.open-aec.com/"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "OpenAEC Foundation",
+      "url": "https://open-aec.com"
+    }
   }
   </script>
-
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sonderingen in GEF en BRO-xml, boringen als BHR-GT of GEF-BORE, grondwaterputten (GMW) en eigen projecten in .ifcgeo. Bestanden uit de BRO kun je ook rechtstreeks van de kaart openen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. De webversie werkt direct in de browser. Voor de berekeningen, DWG-export en CSV of GeoJSON is er de desktop-app voor Windows, macOS en Linux."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost Open Geotechniek Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. De app is gratis en open source onder de MIT-licentie, zonder account of abonnement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk formaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In een eigen .ifcgeo-bestand, een open JSON-formaat met IFCX-inhoud. Een sondering exporteer je ook weer als GEF."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Windows, macOS (Intel en Apple Silicon) en Linux (.deb en AppImage), en elke moderne browser. De installers zijn ondertekend."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de Nederlandse praktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Het leest GEF en de BRO-formaten met hun kwaliteitsregimes, beschrijft boringen volgens NEN 5104 en werkt in RD-coördinaten en NAP. De laagindeling is indicatief en vervangt geen beoordeling door een geotechnicus."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De desktop-app en de Node-library hebben een MCP-server (Model Context Protocol). Daarmee kan een assistent zoals Claude sonderingen lezen, BRO-gegevens ophalen, lagen indelen, rekenen en een rapport maken. Er is ook een lokale HTTP API voor eigen scripts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Heb ik internet nodig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Alleen voor de kaart en de BRO. Je eigen bestanden worden op je computer verwerkt en nergens geüpload."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik naar IFC exporteren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet. Een IFC4x3-export staat uit tot hij aan het schema voldoet. De app maakt wel al een experimentele IFCX-weergave van je gegevens."
+        }
+      }
+    ]
+  }
+  </script>
 
   <meta name="i18n-static" content="tr">
   <!-- schema:start -->
@@ -95,7 +213,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "tr",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/tr/open-geotechniek-studio/#breadcrumb"
         }
@@ -124,7 +242,7 @@
   <!-- schema:end -->
 </head>
 <body class="page-panels">
-  <div id="shared-nav"><!-- nav:start -->
+    <div id="shared-nav"><!-- nav:start -->
 <nav class="navbar">
   <div class="nav-container">
     <a href="/tr/" class="nav-brand" aria-label="OpenAEC — home"><img class="nav-logo" src="/shared/assets/logo/openaec-symbol-v2-transparent.svg" alt="" width="28" height="32"><span class="nav-word">Open<span class="accent">AEC</span></span></a>
@@ -154,264 +272,262 @@
   </div>
 </nav>
 <!-- nav:end --></div>
-  <script src="/shared/nav.js?v=20261015"></script>
-  <script src="/shared/feedback.js?v=20261022" defer></script>
+<script src="/shared/nav.js?v=20261015"></script>
+<script src="/shared/feedback.js?v=20261022" defer></script>
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">OpenAEC ekosistemi</p>
+      <p class="pill-label" data-i18n="header.label">Geoteknik</p>
       <h1 data-i18n="header.title">Open <span class="accent">Geotechniek</span> Studio</h1>
-      <p class="lead" data-i18n="header.desc">Koni penetrasyon testleri (CPT/GEF), sondajlar (BHR/BRO-xml) ve saha çizimleri için açık kaynak masaüstü aracı.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">BRO sondajından vaziyet planına ve rapora, tek bir ücretsiz uygulamada</p>
+      <p class="lead" data-i18n="header.desc">Bir GEF veya BRO dosyası açın ya da haritada sahanızın çevresindeki tüm deneyleri bulun. qc, fs ve Rf değerlerini gösterge niteliğinde bir tabaka ayrımıyla görün, noktaları vaziyet planına yerleştirin ve rapora dönüştürün.</p>
       <div class="btn-group">
-        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="download.title">İndir</span></a>
-        <a href="https://open-geotechniek-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.liveDemo">Canlı demoyu aç</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="cta.github">GitHub</span></a>
+        <a href="https://open-geotechniek-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Tarayıcıda aç</span></a>
+        <a href="#download" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">İndir</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Kaynak kodu</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg><span data-i18n="header.badge">Beta</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg><span data-i18n="header.gww">Sivil / Geoteknik</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg>GEF · BRO-xml · NEN 5104</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span>GEF · BRO-xml · NEN 5104</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="header.proof2">Felemenkçe ve İngilizce</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg><span>Windows · macOS · Linux · Web</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg><span data-i18n="header.proof4">Yapay zekâ asistanları için MCP</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof5">Ücretsiz · MIT</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-1.jpg" alt="Open Geotechniek Studio - CPT sondering met Robertson SBT-classificatie"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-2.jpg" alt="Open Geotechniek Studio - BHR boring met grondsoort-lagen volgens BRO"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-3.jpg" alt="Open Geotechniek Studio - Kaart-view met 66 sonderingen uit BRO op Kadaster luchtfoto"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-4.png" alt="Open Geotechniek Studio - Rapport-tab met professioneel PDF sonderingsrapport"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-5.jpg" alt="Open Geotechniek Studio - Situatietekening en automatisch offertes opvragen bij sondeerbedrijven"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-hero.png" width="1920" height="1200" alt="Open Geotechniek Studio: koni direnci, çeper sürtünmesi ve sürtünme oranıyla bir sondaj, solda tabaka ayrımı" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-geotechniek-studio-feat-sondering.png" width="1200" height="750" decoding="async" alt="Solda tabaka başına zemin yapısı, sağda normalleştirilmiş Qt/Fr/Bq/Ic analiziyle bir sondaj" data-i18n="hl.cpt.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-geotechniek-studio-feat-kaart.png" width="1200" height="750" decoding="async" alt="Hava fotoğrafı, kadastro sınırları ve bölgedeki BRO sondajlarının kırmızı üçgenler olarak gösterildiği harita" data-i18n="hl.map.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-geotechniek-studio-feat-tekening.png" width="1200" height="750" decoding="async" alt="Haritada sondajlar ve OpenAEC antetiyle 1:500 ölçekli A3 vaziyet planı" data-i18n="hl.drawing.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-geotechniek-studio-feat-rapport.png" width="1200" height="750" decoding="async" alt="Ölçekli bir sondaj grafiğiyle rapor önizlemesi; solda açılıp kapatılabilen bölümler" data-i18n="hl.report.alt" data-i18n-attr="alt"></div>
         </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende">&rsaquo;</button>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap" id="download"><div class="container">
-    <div class="download-section">
-      <h3 data-i18n="download.title">İndir</h3>
-      <div class="download-grid">
-        <div class="download-item"><div class="os">Windows</div><div class="size" data-i18n="download.windows">Kurulum (.exe)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v0.4.1/Open.Geotechniek.Studio_0.4.1_x64-setup.exe" data-gh-download="OpenAEC-Foundation/open-geotechniek-studio" data-platform="windows" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download .exe</a></div>
-        <div class="download-item"><div class="os">Linux</div><div class="size" data-i18n="download.linuxDeb">Debian, Ubuntu (.deb)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v0.4.1/Open.Geotechniek.Studio_0.4.1_amd64.deb" data-gh-download="OpenAEC-Foundation/open-geotechniek-studio" data-platform="linux-deb" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download .deb</a></div>
-        <div class="download-item"><div class="os">Linux</div><div class="size" data-i18n="download.linuxAppimage">Her dağıtım (AppImage)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v0.4.1/Open.Geotechniek.Studio_0.4.1_amd64.AppImage" data-gh-download="OpenAEC-Foundation/open-geotechniek-studio" data-platform="linux-appimage" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download AppImage</a></div>
+  <nav class="pp-subnav" aria-label="Bu sayfada" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Özellikler</a>
+      <a href="#download" data-i18n="subnav.download">İndir</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Yenilikler</a>
+      <a href="#faq" data-i18n="subnav.faq">SSS</a>
+      <a href="#releases" data-i18n="subnav.releases">Sürümler</a>
+    </div>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Özellikler</p><h2 data-i18n="features.heading">Sondajlar ve kuyular için her şey, tek uygulamada</h2><p data-i18n="features.sub">Öne çıkanlarla başlayın veya bir konu seçin.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Konuya göre özellikler" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Öne çıkanlar</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-cpt" data-tab="cpt" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg><span data-i18n="tabs.cpt">Sondajlar ve kuyular</span> <span class="pp-tab-count" data-count="cpt"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-map" data-tab="map" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg><span data-i18n="tabs.map">Harita ve BRO</span> <span class="pp-tab-count" data-count="map"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-drawing" data-tab="drawing" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg><span data-i18n="tabs.drawing">Vaziyet planı</span> <span class="pp-tab-count" data-count="drawing"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-report" data-tab="report" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="tabs.report">Rapor ve dışa aktarma</span> <span class="pp-tab-count" data-count="report"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-connect" data-tab="connect" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg><span data-i18n="tabs.connect">Hesaplar ve entegrasyonlar</span> <span class="pp-tab-count" data-count="connect"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Tüm özellikler</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-geotechniek-studio-feat-sondering.png" width="1200" height="750" loading="lazy" decoding="async" alt="Solda tabaka başına zemin yapısı, sağda normalleştirilmiş Qt/Fr/Bq/Ic analiziyle bir sondaj" data-i18n="hl.cpt.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.cpt.kicker">Sondajlar</span></p>
+            <h3 data-i18n="hl.cpt.title">Bir sondajı bir bakışta okuyun</h3>
+            <p data-i18n="hl.cpt.desc">Koni direnci, çeper sürtünmesi ve sürtünme oranı NAP cinsinden tek bir derinlik ekseninde yan yana. Uygulama sondajı gösterge niteliğinde tabakalara ayırır; tabaka sınırlarını kendiniz ayarlarsınız ve her nokta için normalleştirilmiş Qt/Fr/Bq/Ic analizi görürsünüz.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Devamını oku</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-geotechniek-studio-feat-kaart.png" width="1200" height="750" loading="lazy" decoding="async" alt="Hava fotoğrafı, kadastro sınırları ve bölgedeki BRO sondajlarının kırmızı üçgenler olarak gösterildiği harita" data-i18n="hl.map.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.map.kicker">Harita ve BRO</span></p>
+            <h3 data-i18n="hl.map.title">Sahanızın çevresindeki tüm BRO verileri</h3>
+            <p data-i18n="hl.map.desc">Adrese veya RD koordinatına göre arayın ve görünen alandaki Hollanda yeraltı sicilinden (BRO) sondajları, kuyuları ve yeraltı suyu kuyularını yükleyin. Altlık olarak 2016'dan itibaren hava fotoğrafları, AHN yükseklik haritası, kadastro sınırları veya BAG binaları ekleyin.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Devamını oku</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-geotechniek-studio-feat-tekening.png" width="1200" height="750" loading="lazy" decoding="async" alt="Haritada sondajlar ve OpenAEC antetiyle 1:500 ölçekli A3 vaziyet planı" data-i18n="hl.drawing.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.drawing.kicker">Vaziyet planı</span></p>
+            <h3 data-i18n="hl.drawing.title">CAD programı olmadan vaziyet planı</h3>
+            <p data-i18n="hl.drawing.desc">Sondajları, kuyuları veya bütün bir sondaj ızgarasını ölçü çizgileri, RD koordinatları ve notlarla haritaya yerleştirin. Altına bir PDF veya görüntü koyun ve doldurulmuş bir antetle A2 ya da A3 PDF olarak dışa aktarın.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Devamını oku</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-geotechniek-studio-feat-rapport.png" width="1200" height="750" loading="lazy" decoding="async" alt="Ölçekli bir sondaj grafiğiyle rapor önizlemesi; solda açılıp kapatılabilen bölümler" data-i18n="hl.report.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.report.kicker">Rapor</span></p>
+            <h3 data-i18n="hl.report.title">Proje dosyası için bir rapor</h3>
+            <p data-i18n="hl.report.desc">Neyin gireceğini seçin: kapak, koordinat tablosu, genel harita, her sondaj için bir sayfa, açıklama ve meta veriler. Grafik ölçeğini ayarlayın, örneğin birden fazla sayfaya yayılan 1:50.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Devamını oku</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
       </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.gef.title">GEF ve BRO-xml açın</h3><p data-i18n="f.gef.desc">GEF veya BRO-xml sondajları, kuyular (BHR-GT, GEF-BORE) ve yeraltı suyu kuyuları (GMW). Tek dosyada birden fazla sondaj da.</p></div></div></li>
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><h3 data-i18n="f.chart.title">Derinliğe göre qc, fs ve Rf</h3><p data-i18n="f.chart.desc">NAP cinsinden tek derinlik ekseninde grafikler; fare altında değerler ve ölçüldüyse boşluk suyu basıncı (u2).</p></div></div></li>
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.layers.title">Gösterge niteliğinde tabaka ayrımı</h3><p data-i18n="f.layers.desc">qc ve Rf'ye göre minimum kalınlık ve histerezisli otomatik ayrım. Sınırları kendiniz ayarlayın, tabakaları kaynak bilgisiyle JSON olarak dışa aktarın.</p></div></div></li>
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h3 data-i18n="f.normalized.title">Normalleştirilmiş analiz</h3><p data-i18n="f.normalized.desc">Kendi girdiğiniz gerilmelerle her ölçüm noktası için Qt, Fr, Bq ve Ic.</p></div></div></li>
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-hatch"/></svg></div><div><h3 data-i18n="f.bore.title">Kuyular ve yeraltı suyu</h3><p data-i18n="f.bore.desc">Tabakalar, renk ve katkılarla kuyu tanımları; zaman serileriyle yeraltı suyu kuyuları.</p></div></div></li>
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h3 data-i18n="f.validation.title">Veri denetimi</h3><p data-i18n="f.validation.desc">Sütunlar, birimler, boş değerler ve derinlik hakkında, kaynak dosyadaki satırla birlikte uyarılar. Denetimi JSON veya CSV olarak dışa aktarın.</p></div></div></li>
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.tabs.title">Birden fazla sondaj yan yana</h3><p data-i18n="f.tabs.desc">Her dosya kendi sekmesinde ya da tek derinlik ekseninde birden fazla sondajlı bir proje.</p></div></div></li>
+        <li class="pp-tile" data-cats="map"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><h3 data-i18n="f.search.title">Adrese göre arama</h3><p data-i18n="f.search.desc">PDOK Locatieserver üzerinden adres, yer veya RD koordinatına göre.</p></div></div></li>
+        <li class="pp-tile" data-cats="map"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h3 data-i18n="f.bro.title">BRO verilerini yükleyin</h3><p data-i18n="f.bro.desc">Görünen alandaki sondajlar, kuyular ve yeraltı suyu kuyuları; 2.000 nesne sınırını aşan büyük alanlarda da.</p></div></div></li>
+        <li class="pp-tile" data-cats="map drawing"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.pdok.title">PDOK harita katmanları</h3><p data-i18n="f.pdok.desc">Topografya, güncel ve 2016–2025 hava fotoğrafları, AHN, kadastro, BAG, BGT, imar planları ve tarihi haritalar.</p></div></div></li>
+        <li class="pp-tile" data-cats="map"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><h3 data-i18n="f.measure.title">Ölçün ve dışa aktarın</h3><p data-i18n="f.measure.desc">Haritada mesafeleri ölçün ve haritayı görüntü olarak kaydedin.</p></div></div></li>
+        <li class="pp-tile" data-cats="drawing"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.grid.title">Sondaj ızgarası</h3><p data-i18n="f.grid.desc">Çizime tek seferde bütün bir sondaj ızgarası yerleştirin.</p></div></div></li>
+        <li class="pp-tile" data-cats="drawing"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-move"/></svg></div><div><h3 data-i18n="f.edit.title">Çizim araçları</h3><p data-i18n="f.edit.desc">Çizgiler, alanlar, ölçü çizgileri ve RD koordinatları; taşıma, kopyalama, döndürme, kırpma, uzatma, aynalama ve öteleme ile.</p></div></div></li>
+        <li class="pp-tile" data-cats="drawing"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h3 data-i18n="f.overlay.title">Altlık olarak PDF veya görüntü</h3><p data-i18n="f.overlay.desc">Kırpılmış ve ölçekli bir PDF sayfası, fotoğraf veya SVG çerçevesi altlık olarak.</p></div></div></li>
+        <li class="pp-tile" data-cats="drawing"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div><div><h3 data-i18n="f.drawexport.title">A2 veya A3 PDF</h3><p data-i18n="f.drawexport.desc">Antet, ölçek çubuğu ve kuzey okuyla. Masaüstü uygulaması DWG'ye de aktarır.</p></div></div></li>
+        <li class="pp-tile" data-cats="report"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.report.title">PDF raporu</h3><p data-i18n="f.report.desc">Kapak, koordinat tablosu, genel harita, her sondaj için bir sayfa, açıklama ve meta veriler; her biri açılıp kapatılabilir.</p></div></div></li>
+        <li class="pp-tile" data-cats="report"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h3 data-i18n="f.gefexport.title">Kaynağa sadık GEF dışa aktarımı</h3><p data-i18n="f.gefexport.desc">Özgün sütunları, boş değerleri ve RD/NAP kodlarını geri yazar; şüpheli kaynak verilerde durur.</p></div></div></li>
+        <li class="pp-tile" data-cats="report"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.project.title">Kendi proje dosyası</h3><p data-i18n="f.project.desc">Sondajları, tabakaları ve çizimi bir .ifcgeo dosyasında birlikte saklayın. Masaüstü uygulaması CSV ve GeoJSON'a da aktarır.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><h3 data-i18n="f.settlement.title">Tek tabakanın oturması</h3><p data-i18n="f.settlement.desc">Masaüstü uygulamasında birimlerin ve ara adımların görüldüğü taslak hesap sayfası.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h3 data-i18n="f.pad.title">Tekil temel (EC7)</h3><p data-i18n="f.pad.desc">Masaüstü uygulamasında, EC7 Ek D'ye göre merkezi yüklü dikdörtgen tekil temel için taslak hesap sayfası.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.mcp.title">MCP ve HTTP API</h3><p data-i18n="f.mcp.desc">Bir yapay zekâ asistanı veya kendi betiğiniz MCP ya da yerel bir HTTP API üzerinden sondajları okur, tabakalara ayırır ve hesap yapar.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h3 data-i18n="f.core.title">Node kütüphanesi ve SDK</h3><p data-i18n="f.core.desc">Aynı GEF okuyucu, denetim ve hesaplar ayrı bir Node kütüphanesi olarak; ayrıca kendi yazılımınız için yerel bir SDK.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.themes.title">Beş tema</h3><p data-i18n="f.themes.desc">Açık, koyu, Blueprint ve iki yüksek kontrastlı tema; tüm OpenAEC uygulamalarının tarzında.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel">
-    <div class="panel-split">
-      <div class="panel-split-text">
-        <p class="pill-label">BRO · CPT</p>
-        <h2 data-i18n="what.title">Open Geotechniek Studio nedir?</h2>
-        <p data-i18n="what.desc">Open Geotechniek Studio, Hollanda ulusal yer altı kayıtlarından (BRO) geoteknik verileri görselleştirmek ve analiz etmek için bir masaüstü uygulamasıdır. Herhangi bir GEF veya BRO-xml dosyasını açın ve otomatik Robertson SBT sınıflandırması, zemin katman algılama ve stratigrafi ile sondaj veya sondalama verilerini inceleyin.</p>
+  <section class="section surface-dark panel pp-anchor" id="download" data-pp-repo="OpenAEC-Foundation/open-geotechniek-studio">
+    <div class="pp-dl">
+      <p class="pill-label" data-i18n="download.label">İndir</p>
+      <h2 data-i18n="download.title" data-pp-ver>v2026.44.4 indir</h2>
+      <p class="pp-dl-lead" data-i18n="download.lead">Ücretsiz, hesap gerekmez. Windows, macOS ve Linux için.</p>
+      <div class="pp-dl-main" data-pp-main>
+        <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v2026.44.4/Open.Geotechniek.Studio_2026.44.4_x64-setup.exe" class="btn btn-glow btn-lg" data-pp-dl="windows" data-pp-primary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-os="windows" data-i18n="download.forWindows">Windows için indir</span><span data-os="macos" data-i18n="download.forMac" hidden>macOS için indir</span><span data-os="linux-appimage" data-i18n="download.forLinux" hidden>Linux için indir</span></a>
+        <a href="https://open-geotechniek-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="download.browserBtn">Tarayıcıda aç</span></a>
       </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><p data-i18n="what.list1">CPT sondajları (GEF formatı) — koni direnci, sürtünme, gözeneksuyu basıncı</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><p data-i18n="what.list2">Sondalamalar (BRO-xml) — NEN5104 uyarınca zemin tipleri, BIMRO/IMBRO/A kalite rejimleri</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><p data-i18n="what.list3">Robertson SBT sınıflandırması — derinliğe göre otomatik zemin tipi tespiti</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><p data-i18n="what.list4">Multi-tab — birden fazla sondaj/sondalamayı yan yana karşılaştırın</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><p data-i18n="what.list5">Harita görünümü — konumdaki tüm ölçümler (RD koordinatları)</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><p data-i18n="what.list6">Raporlama — proje dosyaları için PDF'e dışa aktarma</p></div></li>
-      </ul>
+      <p class="pp-dl-meta"><span data-os="windows" data-i18n="download.metaWindows">.exe yükleyici</span><span data-os="macos" data-i18n="download.metaMac" hidden>evrensel .dmg, Intel ve Apple Silicon</span><span data-os="linux-appimage" data-i18n="download.metaLinux" hidden>AppImage, çoğu dağıtımda çalışır</span> · <span data-pp-primary-size>14.6 MB</span></p>
+      <p class="pp-dl-mobile" data-pp-mobile hidden data-i18n="download.mobileNote">Open Geotechniek Studio büyük ekran için yapılmıştır. Bilgisayarınızda açın veya burada tarayıcıda deneyin.</p>
+      <details class="pp-dl-other" data-pp-other>
+        <summary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg><span data-i18n="download.other">Diğer platformlar</span></summary>
+        <div class="pp-files">
+          <div class="pp-files-col"><h3>Windows</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v2026.44.4/Open.Geotechniek.Studio_2026.44.4_x64-setup.exe" data-pp-dl="windows" data-pp-item="windows"><span class="pp-file"><span data-i18n="download.fileExe">Yükleyici (.exe)</span><span class="pp-file-size"> · <span data-pp-size="windows">14.6 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+          <div class="pp-files-col"><h3>macOS</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v2026.44.4/Open.Geotechniek.Studio_2026.44.4_universal.dmg" data-pp-dl="macos" data-pp-item="macos"><span class="pp-file"><span data-i18n="download.fileDmg">Evrensel .dmg</span><span class="pp-file-size"> · <span data-pp-size="macos">31.6 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+          <div class="pp-files-col"><h3>Linux</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v2026.44.4/Open.Geotechniek.Studio_2026.44.4_amd64.deb" data-pp-dl="linux-deb" data-pp-item="linux-deb"><span class="pp-file"><span data-i18n="download.fileDeb">.deb</span><span class="pp-file-size"> · <span data-pp-size="linux-deb">19.8 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v2026.44.4/Open.Geotechniek.Studio_2026.44.4_amd64.AppImage" data-pp-dl="linux-appimage" data-pp-item="linux-appimage"><span class="pp-file"><span data-i18n="download.fileAppImage">AppImage</span><span class="pp-file-size"> · <span data-pp-size="linux-appimage">94.4 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+        </div>
+      </details>
+      <p class="pp-dl-note" data-i18n="download.browserNote">Hiçbir şey kurmak istemiyor musunuz? Uygulama <a href="https://open-geotechniek-studio.open-aec.com/" target="_blank" rel="noopener">tarayıcıda da çalışır</a>.</p>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="why.title">Neden Open <span class="accent">Geotechniek</span> Studio?</h2>
-      </div>
-      <div class="panel-split-body">
-        <p data-i18n="why.desc1">Hollanda pazarındaki geoteknik yazılımları genellikle pahalı ve parçalıdır: sondajlar, sondalamalar, kazık hesaplamaları ve raporlama için farklı araçlar. Open Geotechniek Studio bunları bir araya getirir — ücretsiz, açık kaynak ve Hollanda standartlarıyla (BRO, NEN5104, IMBRO/A) tam uyumlu.</p>
-        <p data-i18n="why.desc2">Tüm inşaat mühendisliği ve altyapı sektörü için: temel mühendislerinden altyapı yüklenicilerine, yapı mühendislerinden su yönetimi projelerine. BRO verilerini doğrudan okuyun, BIM entegrasyonu için IFCX'e dışa aktarın ve lisans maliyeti olmadan profesyonel raporlar paylaşın.</p>
-      </div>
-    </div>
-  </div></section>
-
-  <section class="section surface-dark panel">
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
     <div class="panel-split">
       <div class="panel-split-text">
-        <p class="pill-label">NEN · BRO</p>
-        <h2 data-i18n="standards.title">Desteklenen standartlar</h2>
-        <p data-i18n="standards.desc">Open Geotechniek Studio resmi Hollanda geoteknik formatlarını okur ve yorumlar:</p>
+        <p class="pill-label" data-i18n="whatsnew.label">v2026.44 sürümünde yeni</p>
+        <h2 data-i18n="whatsnew.title">Yeni görünüm, <span>daha güvenilir BRO</span></h2>
+        <p data-i18n="whatsnew.desc">Bu hafta dört sürüm çıktı: tüm OpenAEC uygulamalarının tarzı, imzalı yükleyiciler, masaüstü uygulamasında ilk hesaplar ve kaynak verilerin daha sıkı denetimi.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaChangelog">Tüm sürüm notları</span></a>
+          <a href="https://open-geotechniek-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="whatsnew.ctaDemo">Tarayıcıda deneyin</span></a>
+        </div>
       </div>
       <ul class="split-cards split-cards-2">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><p data-i18n="standards.list1"><strong>GEF</strong> CPT sondajları için Geotechnical Exchange Format</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><p data-i18n="standards.list2"><strong>BRO-xml (BHR-GT)</strong> Hollanda Yeraltı Temel Kaydı, jeoteknik sondaj araştırması</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><p data-i18n="standards.list3"><strong>NEN 5104</strong> Zemin numunelerinin jeoteknik tanımı</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><p data-i18n="standards.list4"><strong>IMBRO / IMBRO-A</strong> BRO bilgi modeli (kalite rejimleri)</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><p data-i18n="standards.list5"><strong>Robertson SBT</strong> Soil Behaviour Type sınıflandırması</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><p data-i18n="standards.list6"><strong>RD koordinatları</strong> Konumlar için Hollanda ulusal nirengi sistemi</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div><div><p data-i18n="standards.list7"><strong>NAP</strong> Kot ve derinlikler için Amsterdam Referans Düzeyi</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h4 data-i18n="whatsnew.items.style.title">Beş tema</h4><p data-i18n="whatsnew.items.style.desc">OpenAEC 0.4 tarzında yeni arayüz ve renkler: açık, koyu, Blueprint ve yüksek kontrast.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h4 data-i18n="whatsnew.items.calc.title">Oturma ve tekil temel</h4><p data-i18n="whatsnew.items.calc.desc">Masaüstü uygulamasında iki taslak hesap sayfası: tek tabakanın oturması ve EC7'ye göre tekil temel.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h4 data-i18n="whatsnew.items.bro.title">Boşluksuz BRO araması</h4><p data-i18n="whatsnew.items.bro.desc">2.000 nesne sınırını aşan büyük alanlar bölünür ve hatalar görünür.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="whatsnew.items.layers.title">Tabakaları kendiniz ayarlayın</h4><p data-i18n="whatsnew.items.layers.desc">Minimum kalınlık, histerezis ve elle tabaka sınırları; kaynağı kaydeden JSON dışa aktarımıyla.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h4 data-i18n="whatsnew.items.gef.title">Kaynağa sadık GEF</h4><p data-i18n="whatsnew.items.gef.desc">GEF dışa aktarımı özgün sütunları korur ve Bedrock ile pygef'e karşı test edilir.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><h4 data-i18n="whatsnew.items.signed.title">İmzalı yükleyiciler</h4><p data-i18n="whatsnew.items.signed.desc">Windows, macOS ve Linux indirmeleri imzalıdır ve yayından önce doğrulanır.</p></div></li>
       </ul>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <h2 data-i18n="features.title">Özellikler</h2>
-    <div class="features" id="ogs-features" data-fold="6">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div>
-        <h4 data-i18n="features.cpt.title">CPT görselleştirme</h4>
-        <p data-i18n="features.cpt.desc">Koni direnci (qc), yerel sürtünme (fs), sürtünme oranı (Rf) ve isteğe bağlı gözeneksuyu basıncı (u2), derinliğe göre crosshair ve değer overlay ile.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div>
-        <h4 data-i18n="features.bhr.title">BHR sondalamaları</h4>
-        <p data-i18n="features.bhr.desc">Zemin katmanları, katkılar, yapı, humus içeriği ve renk ile sondalamaların görselleştirilmesi — doğrudan BRO-xml'den.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div>
-        <h4 data-i18n="features.sbt.title">Robertson SBT</h4>
-        <p data-i18n="features.sbt.desc">Robertson (1990) uyarınca otomatik Soil Behavior Type sınıflandırması — Sensitive fine-grained'den Very stiff sand/clay'e.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div>
-        <h4 data-i18n="features.layers.title">Zemin stratigrafisi</h4>
-        <p data-i18n="features.layers.desc">Derinliğe göre zemin katmanlarının otomatik tespiti (üst, alt, bölge). Ölçümlere dayanarak stratigrafiyi kendiniz ayarlayın.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div>
-        <h4 data-i18n="features.map.title">BRO entegrasyonlu harita görünümü</h4>
-        <p data-i18n="features.map.desc">Doğrudan BRO entegrasyonu ile etkileşimli harita: adrese göre arayın ve konumun etrafındaki tüm mevcut sondajlar ve sondalamalar otomatik olarak yüklenir. Detayları görüntülemek, görüntüleyicide açmak veya projeye eklemek için tıklayın.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div>
-        <h4 data-i18n="features.mapLayers.title">Kadaster harita katmanları</h4>
-        <p data-i18n="features.mapLayers.desc">Topografya (BRT), güncel ve tarihi hava fotoğrafları (2016-2025), adresler ve sokaklar, AHN yükseklik haritası, kadastro sınırları, BAG binalar ve BGT topografya — tümü doğrudan Kadaster PDOK'tan.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div>
-        <h4 data-i18n="features.multitab.title">Multi-tab</h4>
-        <p data-i18n="features.multitab.desc">Birden fazla CPT ve sondalamayı sekmelerde açın. Derinlik, katmanlar ve özellikleri yan yana karşılaştırın.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div>
-        <h4 data-i18n="features.report.title">PDF raporlama</h4>
-        <p data-i18n="features.report.desc">Seçilebilir bölümlerle profesyonel sondaj raporları oluşturun: kapak, koordinat tablosu, genel harita, sondaj başına sayfalar, Robertson SBT lejantı ve meta veri özeti. Proje dosyaları, izin başvuruları veya müşteriler için uygundur.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div>
-        <h4 data-i18n="features.situatie.title">Saha çizimi</h4>
-        <p data-i18n="features.situatie.desc">Saha planları için tam çizim işlevselliği: sondaj ve sondalamaları yerleştirin, sondaj ızgaraları oluşturun, RD koordinatları, ölçü çizgileri, trim/extend/mirror/offset işlemleri. Referans olarak görüntü/PDF veya SVG çerçeveleri içe aktarın. OpenAEC başlık bloğu ile profesyonel A3 PDF'e dışa aktarın.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div>
-        <h4 data-i18n="features.ifc.title">IFC / IFCX dışa aktarma</h4>
-        <p data-i18n="features.ifc.desc">Geoteknik verileri IFC elemanları olarak veya BIM modelleri ve Open Frame Studio ile sorunsuz entegrasyon için IFCX ad alanında dışa aktarın.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-        <h4 data-i18n="features.metadata.title">Meta veri</h4>
-        <p data-i18n="features.metadata.desc">Tam sondalama ve sondaj verileri: kayıt, kalite rejimi, sondaj yöntemi, teslim, açıklama tarihi, NEN5104plus kodlaması.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div>
-        <h4 data-i18n="features.rawxml.title">Ham veriler (XML)</h4>
-        <p data-i18n="features.rawxml.desc">Doğrulama ve hata ayıklama için doğrudan uygulamadan temel BRO-xml veya GEF kaynağını inceleyin.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div>
-        <h4 data-i18n="features.local.title">%100 yerel</h4>
-        <p data-i18n="features.local.desc">Tüm veriler kendi makinenizde kalır. Bulut yok, üçüncü taraflara yükleme yok — varsayılan olarak gizlilik ve KVKK uyumu.</p>
-      </div>
-    </div>
-    <p class="more-row" data-fold-for="ogs-features" hidden>
-      <button type="button" class="btn btn-secondary btn-lg more-btn" aria-expanded="false" aria-controls="ogs-features">
-        <span data-fold-show class="more-label"><span data-i18n="features.showAll">Tüm özellikleri göster</span> <span class="more-count" data-fold-count></span></span>
-        <span data-fold-hide hidden data-i18n="features.showLess">Daha az göster</span>
-        <svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg>
-      </button>
-    </p>
-  </div></section>
-
-  <section class="section surface-dark panel">
-    <div class="panel-split">
-      <div class="panel-split-text">
-        <p class="pill-label">RD · Outlook</p>
-        <h2 data-i18n="quotes.title">Eşsiz: sondaj firmalarından otomatik teklif istekleri</h2>
-        <p data-i18n="quotes.desc">Saha planınızda bir sondaj ızgarası çizin ve <strong>Teklif iste</strong> düğmesine tıklayın. Open Geotechniek Studio kamuya açık kataloğumuzdaki tüm Hollanda sondaj firmalarını arar ve en yakın üç firmaya proje detayları ve sondaj spesifikasyonları dahil bir teklif isteği gönderir.</p>
-      </div>
-      <ul class="split-cards inline-strong">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><p data-i18n="quotes.list1"><strong>Katalogda 43 Hollandalı CPT firması</strong> (ve artıyor)</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><p data-i18n="quotes.list2"><strong>Projeye olan mesafeye</strong> göre sıralanır</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><p data-i18n="quotes.list3">En yakın 3'ünün ön seçimi — göndermeden önce ayarlanabilir</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg></div><div><p data-i18n="quotes.list4">Önceden doldurulmuş proje bilgileri, konum ve spesifikasyonlarla Outlook entegrasyonu</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><p data-i18n="quotes.list5"><strong>Aracı yok</strong>, komisyon yok — işveren ile CPT firması arasında doğrudan iletişim</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg></div><div><p data-i18n="quotes.list6">Açık kaynak katalog: şirketler kendilerini bir GitHub pull request aracılığıyla ekleyebilir</p></div></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section"><div class="container">
-    <h2 data-i18n="useCases.title">Kullanıcı profilleri</h2>
-    <div class="features features-4">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div>
-        <h4 data-i18n="useCases.geotech.title">Geoteknik danışmanlar</h4>
-        <p data-i18n="useCases.geotech.desc">Kazık, temel ve oturma danışmanlığı için BRO verilerini hızlı bir şekilde inceleyin. Proje yorumlaması için birden fazla sondajı karşılaştırın.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-crane"/></svg></div>
-        <h4 data-i18n="useCases.civil.title">İnşaat mühendisleri</h4>
-        <p data-i18n="useCases.civil.desc">Köprüler, viyadükler, tüneller ve yapılar için CPT grafiklerine dayalı temel seçimlerini destekleyin.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div>
-        <h4 data-i18n="useCases.gww.title">Sivil altyapı yüklenicileri</h4>
-        <p data-i18n="useCases.gww.desc">Sivil bir proje başlamadan önce kazı derinliği, zemin iyileştirme ve su tahliyesini değerlendirin.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div>
-        <h4 data-i18n="useCases.bim.title">BIM koordinatörleri</h4>
-        <p data-i18n="useCases.bim.desc">Geoteknik verileri IFCX aracılığıyla BIM modellerine entegre edin. Yer üstü ve yer altı için tek bir gerçek kaynağı.</p>
-      </div>
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Sık sorulan sorular</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Hangi dosyaları açabilirim?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">GEF ve BRO-xml sondajları, BHR-GT veya GEF-BORE kuyuları, yeraltı suyu kuyuları (GMW) ve .ifcgeo projeleriniz. BRO dosyalarını doğrudan haritadan da açabilirsiniz.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Bir şey kurmam gerekiyor mu?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Hayır. Web sürümü doğrudan tarayıcıda çalışır. Hesaplar, DWG dışa aktarımı ve CSV ya da GeoJSON için Windows, macOS ve Linux masaüstü uygulaması vardır.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">Open Geotechniek Studio ne kadar?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Hiçbir şey. Uygulama MIT lisansıyla ücretsiz ve açık kaynaklıdır; hesap veya abonelik yoktur.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.save.q">Çalışmam hangi biçimde kaydedilir?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.save.a">IFCX içerikli açık bir JSON biçimi olan .ifcgeo dosyasında. Bir sondajı yeniden GEF olarak da dışa aktarabilirsiniz.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">Hangi sistemlerde çalışır?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">Windows, macOS (Intel ve Apple Silicon) ve Linux (.deb ve AppImage) ile her modern tarayıcı. Yükleyiciler imzalıdır.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">Hollanda uygulamasına uyuyor mu?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">Evet. GEF'i ve kalite rejimleriyle BRO biçimlerini okur, kuyuları NEN 5104'e göre tanımlar, RD koordinatları ve NAP ile çalışır. Tabaka ayrımı gösterge niteliğindedir ve bir geoteknik mühendisinin değerlendirmesinin yerini tutmaz.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">Bir yapay zekâ asistanı bununla ne yapabilir?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">Masaüstü uygulaması ve Node kütüphanesinde bir MCP sunucusu (Model Context Protocol) vardır. Claude gibi bir asistan bununla sondajları okuyabilir, BRO verilerini getirebilir, tabakalara ayırabilir, hesap yapabilir ve rapor oluşturabilir. Kendi betikleriniz için yerel bir HTTP API de vardır.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.internet.q">İnternete ihtiyacım var mı?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.internet.a">Yalnızca harita ve BRO için. Kendi dosyalarınız bilgisayarınızda işlenir ve hiçbir yere yüklenmez.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ifc.q">IFC'ye aktarabilir miyim?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ifc.a">Henüz değil. IFC4x3 dışa aktarımı şemaya uyana kadar kapalıdır. Uygulama verileriniz için şimdiden deneysel bir IFCX görünümü oluşturur.</p></div>
+      </details>
     </div>
   </div></section>
 
-  <section class="section"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="tech.title">Teknoloji</h2>
-      </div>
-      <div class="panel-split-body">
-        <div class="chip-row chip-row-light tech-chips">
-          <span class="chip">Rust</span>
-          <span class="chip">TypeScript</span>
-          <span class="chip">Tauri 2</span>
-          <span class="chip">GEF parser</span>
-          <span class="chip">BRO-xml</span>
-          <span class="chip">NEN 5104</span>
-          <span class="chip">Robertson SBT</span>
-        </div>
-        <p data-i18n="tech.desc">GEF ve BRO-xml'in hızlı ayrıştırılması için Rust hesaplama çekirdeği, UI için TypeScript frontend ve çapraz platform dağıtımı (Windows, macOS, Linux) için Tauri 2. Sorunsuz entegrasyon için tüm OpenAEC ekosistemi ile aynı stack.</p>
-      </div>
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Teknoloji</h2><p data-i18n="tech.sub">Nasıl yapıldığını merak edenler için.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.tauri.title">Tauri 2</h4><p data-i18n="tech.tauri.desc">Windows, macOS ve Linux için küçük, imzalı yükleyicilere sahip, Rust ile yazılmış ince bir yerel kabuk.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="tech.react.title">React en TypeScript</h4><p data-i18n="tech.react.desc">Tarayıcıda ve masaüstünde aynı arayüz; grafikler canvas üzerinde çizilir.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.core.title">Ortak çekirdek</h4><p data-i18n="tech.core.desc">Tarayıcı, masaüstü ve Node için tek GEF okuyucu, denetim ve dışa aktarma; Bedrock ve pygef'e karşı test edilir.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><h4 data-i18n="tech.map.title">Leaflet en PDOK</h4><p data-i18n="tech.map.desc">Kadaster ve PDOK'un açık harita hizmetleriyle RD ve WGS84 haritalar.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h4 data-i18n="tech.bro.title">BRO REST API</h4><p data-i18n="tech.bro.desc">Sondajlar, kuyular ve yeraltı suyu kuyuları doğrudan kamuya açık Hollanda yeraltı sicilinden.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h4 data-i18n="tech.mcp.title">MCP, HTTP ve SDK</h4><p data-i18n="tech.mcp.desc">Entegrasyonlar için bir MCP sunucusu, yerel HTTP API, Node kütüphanesi ve yerel DLL/.so.</p></div></div>
     </div>
   </div></section>
+
 
   <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
   <div data-release-notes="open-geotechniek-studio"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Tüm sürümleri göster</span><span data-rel-hide hidden data-i18n="releases.showLess">Yalnızca son üçünü göster</span></button>
+    <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.github">GitHub'daki tüm sürümler</span></a>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">Open <span class="accent">Geotechniek</span> Studio</h2>
       <div class="btn-group">
-        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="download.title">İndir</span></a>
-        <a href="https://open-geotechniek-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.liveDemo">Canlı demoyu aç</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="cta.github">GitHub</span></a>
+        <a href="https://open-geotechniek-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Tarayıcıda aç</span></a>
+        <a href="#download" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">İndir</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Kaynak kodu</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -465,52 +581,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-
-  <script>
-    (function(){
-      const track = document.getElementById('sliderTrack');
-      const dots = document.getElementById('sliderDots');
-      if (!track || !dots) return;
-      const slides = track.children.length;
-      let current = 0;
-      for(let i=0;i<slides;i++){
-        const d = document.createElement('button');
-        d.className = 'slider-dot' + (i===0?' active':'');
-        d.onclick = ()=>slideTo(i);
-        dots.appendChild(d);
-      }
-      window.slideMove = function(dir){slideTo(current+dir);};
-      window.slideTo = function(i){
-        current = (i+slides)%slides;
-        track.style.transform = 'translateX(-'+current*100+'%)';
-        dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-      };
-    })();
-    // Lange lijsten: de eerste paar zichtbaar, de rest achter de vaste "Toon alles"-knop. Zonder JavaScript staat alles open.
-    document.querySelectorAll('[data-fold]').forEach(function (grid) {
-      var n = +grid.getAttribute('data-fold');
-      var items = Array.prototype.slice.call(grid.children);
-      var row = document.querySelector('[data-fold-for="' + grid.id + '"]');
-      if (!row || items.length <= n) return;
-      var btn = row.querySelector('.more-btn');
-      var show = btn.querySelector('[data-fold-show]');
-      var hide = btn.querySelector('[data-fold-hide]');
-      btn.querySelector('[data-fold-count]').textContent = '(' + items.length + ')';
-      function zet(open) {
-        items.forEach(function (c, i) { c.style.display = (!open && i >= n) ? 'none' : ''; });
-        show.hidden = open; hide.hidden = !open;
-        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      }
-      zet(false);
-      row.hidden = false;
-      btn.addEventListener('click', function () {
-        var open = btn.getAttribute('aria-expanded') !== 'true';
-        zet(open);
-        if (!open) grid.scrollIntoView({ block: 'start' });
-      });
-    });
-  </script>
-  <script src="/shared/downloads.js?v=20261015"></script>
   <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

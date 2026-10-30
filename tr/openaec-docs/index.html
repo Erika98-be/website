@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenAEC Docs — OpenAEC Foundation</title>
-  <meta name="description" content="Açık kaynak BIM belge yönetim platformu. Tüm proje belgelerini tek bir merkezi yerde yönetin, paylaşın ve arşivleyin.">
+  <meta name="description" content="İnşaat projeleri için açık kaynaklı belge yönetimi konsepti: kendi Nextcloud'unuzun üzerinde, kendi sunucunuzda projeler, sabit proje klasörleri ve…">
   <link rel="canonical" href="https://open-aec.com/tr/openaec-docs/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/openaec-docs/">
@@ -15,23 +15,22 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/openaec-docs/">
   <!-- hreflang:end -->
 
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="OpenAEC Docs">
-  <meta property="og:description" content="Açık kaynak BIM belge yönetim platformu. Tüm proje belgelerini tek bir merkezi yerde yönetin, paylaşın ve arşivleyin.">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/openaec-docs-projecten.jpg">
+  <meta property="og:title" content="OpenAEC Docs — OpenAEC Foundation">
+  <meta property="og:description" content="İnşaat projeleri için açık kaynaklı belge yönetimi konsepti: kendi Nextcloud'unuzun üzerinde, kendi sunucunuzda projeler, sabit proje klasörleri ve…">
   <meta property="og:url" content="https://open-aec.com/tr/openaec-docs/">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/openaec-docs-hero.png">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="OpenAEC Docs">
-  <meta name="twitter:description" content="Açık kaynak BIM belge yönetim platformu. Tüm proje belgelerini tek bir merkezi yerde yönetin, paylaşın ve arşivleyin.">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/openaec-docs-projecten.jpg">
+  <meta name="twitter:description" content="İnşaat projeleri için açık kaynaklı belge yönetimi konsepti: kendi Nextcloud'unuzun üzerinde, kendi sunucunuzda projeler, sabit proje klasörleri ve…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/openaec-docs-hero.png">
+
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
   <link rel="alternate" type="application/json" href="/api/tools.json" title="Machine-readable tools catalog">
@@ -40,27 +39,37 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "OpenAEC Docs",
-    "applicationCategory": "EngineeringApplication",
+    "applicationCategory": "BusinessApplication",
     "applicationSubCategory": "Document Management",
     "operatingSystem": "Web, Self-hosted",
     "url": "https://open-aec.com/openaec-docs/",
-    "downloadUrl": "https://github.com/OpenAEC-Foundation/openaec-docs/releases",
-    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
-    "description": "Open-source document management system for BIM projects. Built on Nextcloud. Manage, share and archive project documents.",
+    "license": "https://opensource.org/licenses/MIT",
+    "description": "Concept for open-source document management in construction (AEC) projects: a project overview, fixed project folders and .wefc manifests on top of your own Nextcloud, with a REST API, OIDC single sign-on and multiple organisations per installation. Self-hosted with Docker. Still in development, no release yet.",
     "featureList": [
-      "Documentbeheer",
-      "Versiebeheer",
-      "IFCX-koppeling",
-      "Toegangscontrole",
-      "Zoeken & filteren",
-      "API & integratie"
+      "Projectoverzicht",
+      "Actief, archief of sjabloon",
+      "Projecten aanmaken en archiveren",
+      "Vaste projectmappen",
+      "Bladeren met kruimelpad",
+      "Rechtstreeks uit Nextcloud",
+      "Instellingen per map",
+      "Indeling voorstellen",
+      "Uploaden, verwijderen, mappen maken",
+      "Manifesten bekijken",
+      "Meerdere manifesten per project",
+      "Onderdelen toevoegen",
+      "Koppelen met eigen tools",
+      "Op je eigen server",
+      "Inloggen met single sign-on",
+      "Meerdere organisaties"
     ],
-    "screenshot": "https://open-aec.com/shared/assets/screenshots/openaec-docs-projecten.jpg",
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/openaec-docs-hero.png",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -68,13 +77,103 @@
       "availability": "https://schema.org/InStock"
     },
     "isAccessibleForFree": true,
-    "keywords": "document management, DMS, BIM docs, Nextcloud, project documents, BIM360 Docs alternative",
-    "sameAs": "https://github.com/OpenAEC-Foundation/openaec-docs",
+    "keywords": "document management, DMS, BIM, Nextcloud, project folders, IFC, manifest, WEFC, self-hosted, OpenAEC",
+    "sameAs": [
+      "https://github.com/OpenAEC-Foundation/openaec-docs"
+    ],
     "publisher": {
       "@type": "Organization",
       "name": "OpenAEC Foundation",
       "url": "https://open-aec.com"
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "OpenAEC Docs toont alle bestanden in de projectmap in Nextcloud, van IFC-modellen tot PDF- en DWG-tekeningen, met naam en grootte. Manifesten (.wefc) kun je in het scherm lezen. Een bestand openen of een voorbeeld tonen kan in het scherm nog niet; via de API haal je elk bestand op."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. OpenAEC Docs is een serverprogramma dat je in Docker op je eigen server zet, samen met PostgreSQL, een Nextcloud voor de bestanden en een inlogserver. Gebruikers werken daarna in de browser. Er is nog geen kant-en-klare release en geen openbare proefversie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. OpenAEC Docs is open source onder de MIT-licentie. Je betaalt alleen voor je eigen server."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk bestandsformaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Je bestanden blijven ongewijzigd in Nextcloud staan. De projectgegevens en de mapindeling staan in een PostgreSQL-database, en manifesten zijn .wefc-bestanden (JSON) in de projectmap."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De server draait in Docker, op Linux. Gebruikers werken in een moderne browser op Windows, macOS of Linux."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de bouwpraktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Het volgt de gewone werkwijze: een vaste mappenstructuur per project, IFC-modellen per discipline en manifesten die modellen, issuesets (BCF) en rapporten bij elkaar houden. Koppelingen met de BIM Validator en het BCF-platform zijn voorbereid, maar werken nog niet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Er is nog geen MCP-server. Wel kan een assistent of script via de REST API projecten, mappen, bestanden en manifesten lezen en onderdelen aan een manifest toevoegen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik het al gebruiken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet voor echt werk. OpenAEC Docs is een concept: de basis staat, maar er is geen release, geen openbare installatie en sinds april 2026 geen nieuwe ontwikkeling. Wil je helpen, kijk dan in de broncode op GitHub."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik in het scherm uploaden en mappen maken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet. De knoppen voor uploaden, een nieuwe map, zoeken en documentstatus staan al in het lint, maar doen nog niets. Uploaden, verwijderen en mappen maken werken wel via de API."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Heb ik Nextcloud nodig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. OpenAEC Docs heeft geen eigen bestandsopslag; het werkt met de bestanden in de Nextcloud van je organisatie. Per organisatie stel je in welke Nextcloud erbij hoort."
+        }
+      }
+    ]
   }
   </script>
 
@@ -112,7 +211,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "tr",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/tr/openaec-docs/#breadcrumb"
         }
@@ -176,109 +275,216 @@
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">OpenAEC ekosistemi</p>
+      <p class="pill-label" data-i18n="header.label">Belge yönetimi</p>
       <h1 data-i18n="header.title">OpenAEC <span class="accent">Docs</span></h1>
-      <p class="lead" data-i18n="header.desc">Açık kaynak BIM belge yönetim platformu. Tüm proje belgelerini tek bir merkezi yerde yönetin, paylaşın ve arşivleyin.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">Proje klasörleri, modeller ve manifestler düzenli bir arada, kendi sunucunuzda</p>
+      <p class="lead" data-i18n="header.desc">OpenAEC Docs, inşaat projelerinde belge yönetimi için bir konsepttir. Nextcloud'unuzda zaten bulunan dosyaların üzerine projelerin, sabit klasörlerin ve manifestlerin bir özetini koyar.</p>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/openaec-docs" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg>GitHub</a>
+        <a href="#features" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Özellikleri gör</span></a>
+        <a href="#faq" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="header.faqBtn">Sık sorulan sorular</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/openaec-docs" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Kaynak kodu</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg><span data-i18n="header.badge">Beta</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg>Nextcloud · PostgreSQL</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg>Self-hosted · Docker</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg><span data-i18n="header.proof1">Dosyalar kendi Nextcloud'unuzda</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof2">Kendi sunucunuz · Docker</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg><span data-i18n="header.proof3">Tek oturum açma</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="header.proof4">Konsept · ücretsiz · MIT</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/openaec-docs-projecten.jpg" alt="OpenAEC Docs - projectoverzicht" width="1920" height="1080"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/openaec-docs-hero.png" width="1920" height="1200" alt="Örnek bir projede mimarın çizimlerinin bulunduğu klasör; kenar çubuğunda sabit proje klasörleri ve iki manifest" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/openaec-docs-feat-projecten.png" width="1200" height="750" decoding="async" alt="Her biri durum ve proje klasörüyle birlikte bir ilkokul, bir bisiklet köprüsü ve bir konut şablonu dahil altı hayali projenin özeti" data-i18n="hl.projects.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/openaec-docs-feat-mappen.png" width="1200" height="750" decoding="async" alt="Modeller, çizimler, hesaplar, raporlar, izinler ve yazışmalar sabit klasörleriyle hayali bir ilkokulun proje klasörü" data-i18n="hl.folders.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/openaec-docs-feat-modellen.png" width="1200" height="750" decoding="async" alt="Mimar, statik mühendisi ve tesisat mühendislerinin IFC modellerinin bulunduğu klasör; dosya boyutları ve üstte içerik yolu" data-i18n="hl.models.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/openaec-docs-feat-manifest.png" width="1200" height="750" decoding="async" alt="Her biri yol ve GUID ile dört IFC modeli, bir sorun seti ve bir doğrulama raporu içeren örnek proje manifesti" data-i18n="hl.manifest.alt" data-i18n-attr="alt"></div>
         </div>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="what.title">OpenAEC <span class="accent">Docs</span> nedir?</h2>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="notice.text">Konsept: henüz kurulacak ya da çevrimiçi denenecek bir sürüm yok ve geliştirme Nisan 2026'dan beri duruyor. Ekran görüntüleri, hayali projelerle kurulmuş yerel bir test ortamından alınmıştır.</span></p>
+  </div>
+
+  <nav class="pp-subnav" aria-label="Bu sayfada" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Özellikler</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Yenilikler</a>
+      <a href="#faq" data-i18n="subnav.faq">SSS</a>
+    </div>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Özellikler</p><h2 data-i18n="features.heading">OpenAEC Docs şu an neler yapabilir</h2><p data-i18n="features.sub">Öne çıkanlarla başlayın veya bir konu seçin.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Konuya göre özellikler" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Öne çıkanlar</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-projects" data-tab="projects" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg><span data-i18n="tabs.projects">Projeler</span> <span class="pp-tab-count" data-count="projects"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-files" data-tab="files" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg><span data-i18n="tabs.files">Klasörler ve dosyalar</span> <span class="pp-tab-count" data-count="files"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-links" data-tab="links" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg><span data-i18n="tabs.links">Manifestler ve API</span> <span class="pp-tab-count" data-count="links"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-server" data-tab="server" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="tabs.server">Kendi sunucunuz</span> <span class="pp-tab-count" data-count="server"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Tüm özellikler</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/openaec-docs-feat-projecten.png" width="1200" height="750" loading="lazy" decoding="async" alt="Her biri durum ve proje klasörüyle birlikte bir ilkokul, bir bisiklet köprüsü ve bir konut şablonu dahil altı hayali projenin özeti" data-i18n="hl.projects.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.projects.kicker">Projeler</span></p>
+            <h3 data-i18n="hl.projects.title">Tüm projeleriniz tek bir özette</h3>
+            <p data-i18n="hl.projects.desc">Her proje kısa bir açıklama, durumu ve dosyaların bulunduğu Nextcloud klasörüyle bir kart olarak görünür. Etkin projeleri, arşivlenmiş dosyaları ve şablonları hemen ayırt edersiniz. Tek tıkla projenin içindesiniz.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/openaec-docs-feat-mappen.png" width="1200" height="750" loading="lazy" decoding="async" alt="Modeller, çizimler, hesaplar, raporlar, izinler ve yazışmalar sabit klasörleriyle hayali bir ilkokulun proje klasörü" data-i18n="hl.folders.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.folders.kicker">Sabit klasörler</span></p>
+            <h3 data-i18n="hl.folders.title">Her projede aynı, tanıdık düzen</h3>
+            <p data-i18n="hl.folders.desc">Kenar çubuğunda projenin modeller, çizimler, hesaplar ve raporlar gibi sabit klasörleri okunaklı adlarla yer alır. Böylece yeni katılanlar dahil herkes her projede doğru yeri hemen bulur.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/openaec-docs-feat-modellen.png" width="1200" height="750" loading="lazy" decoding="async" alt="Mimar, statik mühendisi ve tesisat mühendislerinin IFC modellerinin bulunduğu klasör; dosya boyutları ve üstte içerik yolu" data-i18n="hl.models.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.models.kicker">Dosyalar</span></p>
+            <h3 data-i18n="hl.models.title">Dosyalarınız zaten bulundukları yerde kalır</h3>
+            <p data-i18n="hl.models.desc">OpenAEC Docs dosyaları doğrudan Nextcloud'unuzdan okur. Modeller, çizimler ve alt klasörler arasında gezinir, her dosyanın boyutunu görür ve içerik yoluyla geri dönersiniz. İkinci bir depolama ya da kopya eklenmez.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/openaec-docs-feat-manifest.png" width="1200" height="750" loading="lazy" decoding="async" alt="Her biri yol ve GUID ile dört IFC modeli, bir sorun seti ve bir doğrulama raporu içeren örnek proje manifesti" data-i18n="hl.manifest.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.manifest.kicker">Manifestler</span></p>
+            <h3 data-i18n="hl.manifest.title">Neyin birbirine ait olduğunu kaydedin</h3>
+            <p data-i18n="hl.manifest.desc">Proje klasöründeki bir manifest, hangi modellerin, sorun setlerinin ve raporların projeye ait olduğunu her biri sabit bir anahtarla kaydeder. OpenAEC Docs içeriği düzenli gösterir; diğer araçlar API üzerinden öğe ekleyebilir.</p>
+          </div>
+        </article>
       </div>
-      <div class="panel-split-body">
-        <p data-i18n="what.desc">OpenAEC Docs, inşaat sektöründeki BIM projeleri için özel olarak tasarlanmış bir belge yönetim sistemidir (DMS). <a href="https://nextcloud.com" target="_blank" rel="noopener">Nextcloud</a> üzerine inşa edilmiştir — dosya yönetimi ve işbirliği için en popüler açık kaynak platformdur. Çizimler ve raporlardan sözleşmeler ve izinlere kadar tüm proje belgelerini yönetmek, paylaşmak ve arşivlemek için merkezi bir yer sağlar.</p>
-        <p data-i18n="what.tech">Nextcloud üzerinde bir Rust sunucusu (Axum) ve bir React ön ucu; meta veriler için PostgreSQL, giriş için OIDC.</p>
-      </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="projects"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.overview.title">Proje özeti</h3><p data-i18n="f.overview.desc">Kuruluşunuzun tüm projeleri açıklama ve proje klasörüyle kartlar halinde.</p></div></div></li>
+        <li class="pp-tile" data-cats="projects"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h3 data-i18n="f.status.title">Etkin, arşiv ya da şablon</h3><p data-i18n="f.status.desc">Her projenin bir durumu vardır; süren işler, kapanmış dosyalar ve şablonlar karışmaz.</p></div></div></li>
+        <li class="pp-tile" data-cats="projects links"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.projectapi.title">Proje oluşturma ve arşivleme</h3><p data-i18n="f.projectapi.desc">Bir projeyi Nextcloud'daki bir klasöre bağlarsınız. Oluşturma, düzenleme ve arşivleme şimdilik API üzerinden yapılır, henüz ekrandan değil.</p></div></div></li>
+        <li class="pp-tile" data-cats="files projects"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.fixed.title">Sabit proje klasörleri</h3><p data-i18n="f.fixed.desc">Kenar çubuğunda proje başına modeller, çizimler ve raporlar gibi sabit sırada bir düzen.</p></div></div></li>
+        <li class="pp-tile" data-cats="files"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></div><div><h3 data-i18n="f.browse.title">İçerik yoluyla gezinme</h3><p data-i18n="f.browse.desc">Önce klasörler olmak üzere klasör ve alt klasörlerde gezinin; her dosyanın boyutu görünür, tek tıkla geri dönersiniz.</p></div></div></li>
+        <li class="pp-tile" data-cats="files server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.nextcloud.title">Doğrudan Nextcloud'dan</h3><p data-i18n="f.nextcloud.desc">Dosyalar Nextcloud'da kalır. OpenAEC Docs yalnızca proje bilgilerini ve klasör düzenini saklar.</p></div></div></li>
+        <li class="pp-tile" data-cats="files"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.folderset.title">Klasör başına ayarlar</h3><p data-i18n="f.folderset.desc">Her klasör için ad, sıra, simge, salt okunur ayarı ve içine ait dosya türlerini kaydedersiniz.</p></div></div></li>
+        <li class="pp-tile" data-cats="files"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.suggest.title">Düzen önerisi</h3><p data-i18n="f.suggest.desc">OpenAEC Docs sabit klasörleri mevcut klasörlerden önerir: 01_Modellen, Modellen olur.</p></div></div></li>
+        <li class="pp-tile" data-cats="files links"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.fileapi.title">Yükleme, silme, klasör oluşturma</h3><p data-i18n="f.fileapi.desc">Proje klasöründe dosya indirme, yükleme, silme ve klasör oluşturma; şimdilik API üzerinden.</p></div></div></li>
+        <li class="pp-tile" data-cats="links"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.manifests.title">Manifestleri görüntüleme</h3><p data-i18n="f.manifests.desc">Bir manifestin başlığı ve öğeleri düzenli biçimde: tür, ad, yol ve anahtar.</p></div></div></li>
+        <li class="pp-tile" data-cats="links"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.multi.title">Proje başına birden çok manifest</h3><p data-i18n="f.multi.desc">Örneğin biri modeller, biri raporlar için; her biri doğrudan kenar çubuğundan açılır.</p></div></div></li>
+        <li class="pp-tile" data-cats="links"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.upsert.title">Öğe ekleme</h3><p data-i18n="f.upsert.desc">Diğer araçlar API üzerinden, sabit anahtara göre bir manifeste öğe ekler ya da onu günceller.</p></div></div></li>
+        <li class="pp-tile" data-cats="links"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h3 data-i18n="f.api.title">Kendi araçlarınızı bağlayın</h3><p data-i18n="f.api.desc">Projeler, klasörler, dosyalar ve manifestler tek bir API üzerinden erişilebilir.</p></div></div></li>
+        <li class="pp-tile" data-cats="server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><h3 data-i18n="f.selfhost.title">Kendi sunucunuzda</h3><p data-i18n="f.selfhost.desc">Kendi yönettiğiniz bir sunucuda Docker içinde çalışır. Proje verileriniz dış bir buluta gitmez.</p></div></div></li>
+        <li class="pp-tile" data-cats="server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h3 data-i18n="f.sso.title">Tek oturum açma</h3><p data-i18n="f.sso.desc">OpenAEC Docs için ayrı bir parola olmadan, kuruluşunuzun oturum açma sunucusu üzerinden giriş yapın.</p></div></div></li>
+        <li class="pp-tile" data-cats="server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><h3 data-i18n="f.tenants.title">Birden çok kuruluş</h3><p data-i18n="f.tenants.desc">Birden çok kuruluş için tek kurulum; her birinin kendi Nextcloud'u vardır ve yalnızca kendi projelerini görür.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel">
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
     <div class="panel-split">
       <div class="panel-split-text">
-        <p class="pill-label">Self-hosted</p>
-        <h2 data-i18n="highlight.title">Kendi sunucunuzda barındırılır ve gizlilik öncelikli</h2>
-        <p data-i18n="highlight.desc">OpenAEC Docs, Docker aracılığıyla kendi sunucunuzda çalışır. Verileriniz üzerinde tam kontrol, bulut bağımlılığı yok. Sıkı gizlilik ve uyumluluk gereksinimleri olan kuruluşlar için idealdir.</p>
+        <p class="pill-label" data-i18n="whatsnew.label">Nisan 2026'da yeni</p>
+        <h2 data-i18n="whatsnew.title">Manifestler: <span>ne neye ait</span></h2>
+        <p data-i18n="whatsnew.desc">Son yeni özellik Nisan 2026 tarihli: bir projenin ekranda görüntüleyebileceğiniz birden çok manifesti olabilir. Geliştirme o zamandan beri duruyor; henüz bir sürüm yok.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/openaec-docs/commits/master" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaCommits">Tüm değişiklikler</span></a>
+        </div>
       </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><strong>Nextcloud</strong></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><strong>Rust · Axum</strong></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><strong>React · TypeScript</strong></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><strong>PostgreSQL</strong></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><strong>Docker</strong></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><strong>OIDC</strong></div></li>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="whatsnew.items.multi.title">Birden çok manifest</h4><p data-i18n="whatsnew.items.multi.desc">Proje klasöründeki her manifest dosyası kenar çubuğunda ayrı görünür.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h4 data-i18n="whatsnew.items.viewer.title">Ekranda manifest</h4><p data-i18n="whatsnew.items.viewer.desc">Tür, ad, yol ve anahtarla bir manifestin başlığı ve öğeleri.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h4 data-i18n="whatsnew.items.upsert.title">API ile ekleme</h4><p data-i18n="whatsnew.items.upsert.desc">Diğer araçlar öğe ekler ya da günceller; manifest henüz yoksa oluşturulur.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div><div><h4 data-i18n="whatsnew.items.shared.title">Diğer araçlarla aynı biçim</h4><p data-i18n="whatsnew.items.shared.desc">Manifest, OpenAEC bulut araçlarının ortak kütüphanesini kullanır; böylece onlar da okuyabilir.</p></div></li>
       </ul>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <h2 data-i18n="features.title">Özellikler</h2>
-    <div class="features">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div>
-        <h4 data-i18n="features.documents.title">Proje dosyaları</h4>
-        <p data-i18n="features.documents.desc">Dosyaları yükleyin, açın ve silin, klasör oluşturun; proje başına ve doğrudan Nextcloud’da.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div>
-        <h4 data-i18n="features.folders.title">Sabit proje klasörleri</h4>
-        <p data-i18n="features.folders.desc">Her proje için modeller, çizimler, hesaplar ve raporlar gibi sabit bir düzen; klasör başına izin verilen dosya türleriyle.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-        <h4 data-i18n="features.manifests.title">Proje manifestosu</h4>
-        <p data-i18n="features.manifests.desc">Her proje için bir manifesto hangi modellerin, sorun setlerinin ve raporların projeye ait olduğunu tutar; böylece diğer araçlar onları bulur.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div>
-        <h4 data-i18n="features.integrations.title">BIM Validator ve BCF</h4>
-        <p data-i18n="features.integrations.desc">Belgelerin yanında doğrulamalar ve sorunlar için OpenAEC BIM Validator ve BCF platformu ile bağlantılar.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div>
-        <h4 data-i18n="features.access.title">Giriş ve kuruluşlar</h4>
-        <p data-i18n="features.access.desc">Tek oturum açma (OIDC) ile giriş; tek kurulumda her biri kendi Nextcloud’una sahip birden fazla kuruluş.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div>
-        <h4 data-i18n="features.api.title">REST API</h4>
-        <p data-i18n="features.api.desc">Diğer araçlarla bağlantı için tüm işlevler bir REST API üzerinden.</p>
-      </div>
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Sık sorulan sorular</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Hangi dosyaları açabilirim?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">OpenAEC Docs, Nextcloud'daki proje klasörünün tüm dosyalarını IFC modellerinden PDF ve DWG çizimlerine kadar ad ve boyutuyla gösterir. Manifestleri (.wefc) ekranda okuyabilirsiniz. Bir dosyayı açmak ya da önizlemek ekranda henüz mümkün değil; API üzerinden her dosyayı alabilirsiniz.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Bir şey kurmam gerekiyor mu?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Evet. OpenAEC Docs, kendi sunucunuzda PostgreSQL, dosyalar için bir Nextcloud ve bir oturum açma sunucusuyla birlikte Docker içinde çalıştırdığınız bir sunucu uygulamasıdır. Kullanıcılar ardından tarayıcıda çalışır. Henüz hazır bir sürüm ya da herkese açık deneme sürümü yok.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">Ücreti ne kadar?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Hiçbir şey. OpenAEC Docs, MIT lisansıyla açık kaynaklıdır. Yalnızca kendi sunucunuz için ödeme yaparsınız.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.format.q">Çalışmam hangi dosya biçiminde kaydedilir?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.format.a">Dosyalarınız Nextcloud'da değişmeden kalır. Proje bilgileri ve klasör düzeni bir PostgreSQL veritabanında, manifestler ise proje klasöründe .wefc (JSON) dosyaları olarak tutulur.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">Hangi sistemlerde çalışır?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">Sunucu Linux üzerinde Docker içinde çalışır. Kullanıcılar Windows, macOS ya da Linux'ta modern bir tarayıcıda çalışır.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">İnşaat pratiğine uygun mu?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">Yaygın çalışma biçimini izler: proje başına sabit klasör yapısı, disipline göre IFC modelleri ve modelleri, sorun setlerini (BCF) ve raporları bir arada tutan manifestler. BIM Validator ve BCF platformu bağlantıları hazırlandı ancak henüz çalışmıyor.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">Bir yapay zekâ asistanı bununla ne yapabilir?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">Henüz bir MCP sunucusu yok. Ancak bir asistan ya da betik, REST API ile projeleri, klasörleri, dosyaları ve manifestleri okuyabilir ve bir manifeste öğe ekleyebilir.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.status.q">Şimdiden kullanabilir miyim?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.status.a">Gerçek iş için henüz değil. OpenAEC Docs bir konsepttir: temel hazır, ancak sürüm yok, herkese açık bir kurulum yok ve Nisan 2026'dan beri yeni geliştirme yapılmadı. Yardım etmek isterseniz GitHub'daki kaynak koduna göz atın.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.buttons.q">Ekrandan dosya yükleyip klasör oluşturabilir miyim?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.buttons.a">Henüz değil. Yükleme, yeni klasör, arama ve belge durumu düğmeleri şeritte duruyor ama henüz bir şey yapmıyor. Yükleme, silme ve klasör oluşturma API üzerinden çalışır.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.nextcloud.q">Nextcloud'a ihtiyacım var mı?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.nextcloud.a">Evet. OpenAEC Docs'un kendi dosya deposu yoktur; kuruluşunuzun Nextcloud'undaki dosyalarla çalışır. Her kuruluş için hangi Nextcloud'un ona ait olduğunu ayarlarsınız.</p></div>
+      </details>
     </div>
   </div></section>
 
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Teknoloji</h2><p data-i18n="tech.sub">Nasıl yapıldığını merak edenler için.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.rust.title">Rust · Axum</h4><p data-i18n="tech.rust.desc">Tüm istekleri Nextcloud'a ileten, Axum ile Rust'ta yazılmış hızlı ve küçük bir sunucu.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.react.title">React · TypeScript</h4><p data-i18n="tech.react.desc">Vite ile derlenen ve Tailwind ile OpenAEC tarzında biçimlendirilen React 19 ve TypeScript web arayüzü.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h4 data-i18n="tech.nextcloud.title">Nextcloud · WebDAV</h4><p data-i18n="tech.nextcloud.desc">Dosyalar Nextcloud'da durur ve WebDAV ile okunup yazılır; OpenAEC Docs kendisi dosya saklamaz.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><h4 data-i18n="tech.postgres.title">PostgreSQL 16</h4><p data-i18n="tech.postgres.desc">Projeler, klasör düzeni, kullanıcılar ve roller SQLx ve numaralı geçişlerle PostgreSQL'de.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h4 data-i18n="tech.oidc.title">OIDC · JWT</h4><p data-i18n="tech.oidc.desc">PKCE ile OpenID Connect üzerinden oturum açma (örneğin Authentik) ve 24 saat geçerli bir oturum belirteci.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h4 data-i18n="tech.docker.title">Docker</h4><p data-i18n="tech.docker.desc">Sunucu ve web arayüzünü içeren tek bir imaj ile geliştirme ve üretim için Docker Compose dosyaları.</p></div></div>
+    </div>
+  </div></section>
+
+
   <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
   <div data-release-notes="openaec-docs"></div>
+  <p class="pp-rel-more">
+    <a href="https://github.com/OpenAEC-Foundation/openaec-docs/commits/master" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.commits">GitHub'daki tüm değişiklikler</span></a>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">OpenAEC <span class="accent">Docs</span></h2>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/openaec-docs" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg>GitHub</a>
+        <a href="#features" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Özellikleri gör</span></a>
+        <a href="#faq" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="header.faqBtn">Sık sorulan sorular</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/openaec-docs" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Kaynak kodu</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -332,6 +538,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-<script src="/shared/i18n.js?v=20261015"></script>
+  <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

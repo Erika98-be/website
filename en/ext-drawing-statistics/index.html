@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drawing Statistics — OpenAEC Foundation</title>
-  <meta name="description" content="Extension that displays shape counts and drawing statistics. Adds an Add-Ins ribbon tab with a Shape Count button and a terminal command.">
+  <meta name="description" content="Free extension for Open 2D Studio: the Add-Ins tab with the Shape Count button counts every shape in your drawing, in total and by type. Also available as…">
   <link rel="canonical" href="https://open-aec.com/en/ext-drawing-statistics/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/ext-drawing-statistics/">
@@ -15,21 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/ext-drawing-statistics/">
   <!-- hreflang:end -->
 
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="Drawing Statistics">
-  <meta property="og:description" content="Extension that displays shape counts and drawing statistics. Adds an Add-Ins ribbon tab with a Shape Count button and a terminal command.">
+  <meta property="og:title" content="Drawing Statistics — OpenAEC Foundation">
+  <meta property="og:description" content="Free extension for Open 2D Studio: the Add-Ins tab with the Shape Count button counts every shape in your drawing, in total and by type. Also available as…">
   <meta property="og:url" content="https://open-aec.com/en/ext-drawing-statistics/">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/ext-drawing-statistics-hero.png">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Drawing Statistics">
-  <meta name="twitter:description" content="Extension that displays shape counts and drawing statistics. Adds an Add-Ins ribbon tab with a Shape Count button and a terminal command.">
+  <meta name="twitter:description" content="Free extension for Open 2D Studio: the Add-Ins tab with the Shape Count button counts every shape in your drawing, in total and by type. Also available as…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/ext-drawing-statistics-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -39,6 +39,137 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Drawing Statistics",
+    "applicationCategory": "DesignApplication",
+    "applicationSubCategory": "Extensie voor Open 2D Studio",
+    "operatingSystem": "",
+    "url": "https://open-aec.com/ext-drawing-statistics/",
+    "description": "Free sample extension for the Open 2D Studio desktop app. Adds an Add-Ins ribbon tab with a Shape Count button that shows the total number of shapes and the count per type, and registers the stats show command (MCP tool name cad_stats_show). Distributed as a 1.4 kB zip with manifest.json and main.js.",
+    "featureList": [
+      "Eigen tabblad Add-Ins",
+      "Knop Shape Count",
+      "Totaal aantal vormen",
+      "Aantal per soort",
+      "Op alfabet",
+      "Duidelijk bij een lege tekening",
+      "Verandert niets aan je tekening",
+      "Commando stats show",
+      "In de commandolijst",
+      "Bekend bij de AI-terminal",
+      "Eén zip van 1,4 kB",
+      "Install from file",
+      "Aan, uit of weg",
+      "Vaste rechten",
+      "Werkt zonder internet",
+      "Voorbeeldextensie",
+      "Ongeveer honderd regels",
+      "Broncode op GitHub",
+      "Gratis"
+    ],
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/ext-drawing-statistics-hero.png",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    },
+    "isAccessibleForFree": true,
+    "keywords": "Open 2D Studio, extension, add-in, shape count, drawing statistics, CAD, 2D, plugin, stats show",
+    "sameAs": [
+      "https://github.com/OpenAEC-Foundation/ext-drawing-statistics"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "OpenAEC Foundation",
+      "url": "https://open-aec.com"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De extensie opent zelf geen bestanden. Ze telt wat er in Open 2D Studio openstaat, dus ook een tekening die je daar uit DXF hebt geïmporteerd."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja: de desktop-app van Open 2D Studio (v0.15 of nieuwer) en daarin deze extensie. Haal drawing-statistics-1.0.1.zip op bij release v1.0.1 op GitHub en kies in Open 2D Studio File, Extensions, Install from file. De webversie van Open 2D Studio kan nog geen extensies installeren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. De broncode staat openbaar op GitHub. Er staat nog geen licentiebestand bij; wil je de code hergebruiken, vraag dat dan in de repository."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk bestandsformaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De extensie slaat niets op en verandert niets aan je tekening. De telling verschijnt in een melding; je tekening bewaar je zoals altijd in Open 2D Studio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Overal waar de desktop-app van Open 2D Studio draait: Windows, macOS en Linux. Niet in de webversie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Het commando stats show staat in de commandolijst van Open 2D Studio. De AI-terminal van de desktop-app krijgt die lijst mee en kan de telling dus opvragen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Telt het alleen de tekening die ik zie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Het telt alle vormen in het geopende bestand, ook die op andere tekeningen en verborgen vormen. Per tekening, per laag of alleen de selectie tellen kan nog niet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik de telling bewaren of exporteren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet. De telling verschijnt alleen in een melding, met de Engelse namen van de soorten vormen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik hiermee mijn eigen extensie maken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Daar is ze voor bedoeld. Een extensie is een map met manifest.json en een JavaScript-bestand met een functie onLoad. Daarin voeg je tabbladen, knoppen en commando's toe. Kijk in main.js hoe dat gaat."
+        }
+      }
+    ]
+  }
+  </script>
 
   <meta name="i18n-static" content="en">
   <!-- schema:start -->
@@ -74,7 +205,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "en",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/en/ext-drawing-statistics/#breadcrumb"
         }
@@ -103,7 +234,7 @@
   <!-- schema:end -->
 </head>
 <body class="page-panels">
-  <div id="shared-nav"><!-- nav:start -->
+    <div id="shared-nav"><!-- nav:start -->
 <nav class="navbar">
   <div class="nav-container">
     <a href="/en/" class="nav-brand" aria-label="OpenAEC — home"><img class="nav-logo" src="/shared/assets/logo/openaec-symbol-v2-transparent.svg" alt="" width="28" height="32"><span class="nav-word">Open<span class="accent">AEC</span></span></a>
@@ -133,62 +264,226 @@
   </div>
 </nav>
 <!-- nav:end --></div>
-  <script src="/shared/nav.js?v=20261015"></script>
-  <script src="/shared/feedback.js?v=20261022" defer></script>
+<script src="/shared/nav.js?v=20261015"></script>
+<script src="/shared/feedback.js?v=20261022" defer></script>
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
       <p class="pill-label" data-i18n="header.label">Extension for Open 2D Studio</p>
       <h1 data-i18n="header.title">Drawing <span class="accent">Statistics</span></h1>
-      <p class="lead" data-i18n="header.desc">Extension that displays shape counts and drawing statistics. Adds an Add-Ins ribbon tab with a Shape Count button and a terminal command.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">Know in one click how many shapes are in your drawing</p>
+      <p class="lead" data-i18n="header.desc">A small, free extension for the Open 2D Studio desktop app. It adds the Add-Ins tab with the Shape Count button, which counts every shape and shows the total and the number per type.</p>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases/download/v1.0.1/drawing-statistics-1.0.1.zip" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Download v1.0.1 (1.4 KB)</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">View source</span></a>
+        <a href="#features" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">See the features</span></a>
+        <a href="#faq" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="header.faqBtn">Frequently asked questions</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Source code</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg>Open 2D Studio v0.15+</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg>stats show</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg><span data-i18n="header.proof1">For Open 2D Studio v0.15+</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.proof2">1.4 kB zip</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg><span>stats show</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg><span data-i18n="header.proof4">Free</span></li>
+      </ul>
+    </div>
+    <div class="media-slider shot-overlap" data-pp-slider>
+      <div class="slider-container">
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/ext-drawing-statistics-hero.png" width="1920" height="1200" alt="Open 2D Studio with the Add-Ins tab and the Shape Count button above a sample floor plan of a garden office" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/ext-drawing-statistics-feat-parkeren.png" width="1200" height="750" decoding="async" alt="Sample drawing of a car park with parking bays and trees, with the Add-Ins tab and the Shape Count button open" data-i18n="hl.tellen.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/ext-drawing-statistics-feat-commando.png" width="1200" height="750" decoding="async" alt="The Open 2D Studio terminal with the list of commands, with the STATS group and the show command at the bottom" data-i18n="hl.commando.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/ext-drawing-statistics-feat-beheer.png" width="1200" height="750" decoding="async" alt="The Open 2D Studio Extension Manager with Drawing Statistics v1.0.1 under Installed, with Disable and Remove buttons" data-i18n="hl.installeren.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/ext-drawing-statistics-feat-code.png" width="1200" height="750" decoding="async" alt="The main.js source of Drawing Statistics on GitHub, with the tab, button and command the extension registers" data-i18n="hl.voorbeeld.alt" data-i18n-attr="alt"></div>
+        </div>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section"><div class="container">
-    <div class="section-head">
-      <h2 data-i18n="features.title">Features</h2>
-      <p data-i18n="features.requires">Requires <a href="/open-2d-studio">Open 2D Studio</a> v0.15.0 or later.</p>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="notice.text">Works in the Open 2D Studio desktop app (v0.15 or later), not in the web version.</span> <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases/tag/v1.0.1" target="_blank" rel="noopener"><span data-i18n="notice.link">Release v1.0.1 on GitHub (zip, 1.4 kB)</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a></p>
+  </div>
+
+  <nav class="pp-subnav" aria-label="On this page" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Features</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">What's new</a>
+      <a href="#faq" data-i18n="subnav.faq">FAQ</a>
+      <a href="#releases" data-i18n="subnav.releases">Releases</a>
     </div>
-    <div class="features">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div>
-        <h4 data-i18n="features.ribbon.title">Add-Ins ribbon tab</h4>
-        <p data-i18n="features.ribbon.desc">Adds a Shape Count button to the Add-Ins ribbon tab in Open 2D Studio.</p>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Features</p><h2 data-i18n="features.heading">Small, but handy</h2><p data-i18n="features.sub">Start with the highlights, or pick a topic.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Features by topic" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Highlights</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-tellen" data-tab="tellen" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.tellen">Counting</span> <span class="pp-tab-count" data-count="tellen"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-commando" data-tab="commando" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg><span data-i18n="tabs.commando">Command</span> <span class="pp-tab-count" data-count="commando"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-installeren" data-tab="installeren" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="tabs.installeren">Installing</span> <span class="pp-tab-count" data-count="installeren"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-ontwikkelaars" data-tab="ontwikkelaars" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg><span data-i18n="tabs.ontwikkelaars">Your own extension</span> <span class="pp-tab-count" data-count="ontwikkelaars"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">All features</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/ext-drawing-statistics-feat-parkeren.png" width="1200" height="750" loading="lazy" decoding="async" alt="Sample drawing of a car park with parking bays and trees, with the Add-Ins tab and the Shape Count button open" data-i18n="hl.tellen.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.tellen.kicker">Counting</span></p>
+            <h3 data-i18n="hl.tellen.title">One click gives the total and the count per type</h3>
+            <p data-i18n="hl.tellen.desc">Open the Add-Ins tab and click Shape Count. A message shows how many shapes there are and how many of them are circles, rectangles, lines, dimensions or texts. Handy to see quickly what a drawing contains.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Learn more</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/ext-drawing-statistics-feat-commando.png" width="1200" height="750" loading="lazy" decoding="async" alt="The Open 2D Studio terminal with the list of commands, with the STATS group and the show command at the bottom" data-i18n="hl.commando.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.commando.kicker">Command</span></p>
+            <h3 data-i18n="hl.commando.title">Also a command for scripts and the AI terminal</h3>
+            <p data-i18n="hl.commando.desc">The extension adds the stats show command to the Open 2D Studio command list. Type commands in the terminal and you will see it. It returns the same count as text.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Learn more</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/ext-drawing-statistics-feat-beheer.png" width="1200" height="750" loading="lazy" decoding="async" alt="The Open 2D Studio Extension Manager with Drawing Statistics v1.0.1 under Installed, with Disable and Remove buttons" data-i18n="hl.installeren.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.installeren.kicker">Installing</span></p>
+            <h3 data-i18n="hl.installeren.title">Install with one zip, switch off with one click</h3>
+            <p data-i18n="hl.installeren.desc">Download the zip and in Open 2D Studio choose File, Extensions, Install from file. The extension then appears under Installed, where you can disable or remove it.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases/tag/v1.0.1" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Learn more</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/ext-drawing-statistics-feat-code.png" width="1200" height="750" loading="lazy" decoding="async" alt="The main.js source of Drawing Statistics on GitHub, with the tab, button and command the extension registers" data-i18n="hl.voorbeeld.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.voorbeeld.kicker">Your own extension</span></p>
+            <h3 data-i18n="hl.voorbeeld.title">An example to build your own extension on</h3>
+            <p data-i18n="hl.voorbeeld.desc">Two files and about a hundred lines of JavaScript show how an extension adds a tab, a button and a command. Copy it, change it and you have your own tool in Open 2D Studio.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/blob/v1.0.1/main.js" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Learn more</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
       </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div>
-        <h4 data-i18n="features.terminal.title">Terminal command</h4>
-        <p data-i18n="features.terminal.desc">Registers a <code>stats show</code> terminal command to display statistics from the command line.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-        <h4 data-i18n="features.count.title">Entity counting</h4>
-        <p data-i18n="features.count.desc">Counts all entities by type in the current drawing.</p>
-      </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="tellen"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.tab.title">Its own Add-Ins tab</h3><p data-i18n="f.tab.desc">The button sits in a separate tab, so Home stays unchanged.</p></div></div></li>
+        <li class="pp-tile" data-cats="tellen"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.button.title">Shape Count button</h3><p data-i18n="f.button.desc">One click in the Statistics group starts the count.</p></div></div></li>
+        <li class="pp-tile" data-cats="tellen commando"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h3 data-i18n="f.total.title">Total number of shapes</h3><p data-i18n="f.total.desc">The total number of shapes comes first.</p></div></div></li>
+        <li class="pp-tile" data-cats="tellen commando"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.pertype.title">Count per type</h3><p data-i18n="f.pertype.desc">Lines, circles, arcs, rectangles, hatches, dimensions, texts: each with its own count.</p></div></div></li>
+        <li class="pp-tile" data-cats="tellen"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-text"/></svg></div><div><h3 data-i18n="f.sorted.title">In alphabetical order</h3><p data-i18n="f.sorted.desc">The types are listed alphabetically, so you find them quickly.</p></div></div></li>
+        <li class="pp-tile" data-cats="tellen"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg></div><div><h3 data-i18n="f.empty.title">Clear on an empty drawing</h3><p data-i18n="f.empty.desc">If there is nothing, the message says so.</p></div></div></li>
+        <li class="pp-tile" data-cats="tellen"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><h3 data-i18n="f.safe.title">Changes nothing in your drawing</h3><p data-i18n="f.safe.desc">The extension only reads; shapes, layers and file stay as they are.</p></div></div></li>
+        <li class="pp-tile" data-cats="commando"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h3 data-i18n="f.statsshow.title">stats show command</h3><p data-i18n="f.statsshow.desc">Returns the same count as text.</p></div></div></li>
+        <li class="pp-tile" data-cats="commando"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.list.title">In the command list</h3><p data-i18n="f.list.desc">Type commands in the terminal and it is listed under STATS.</p></div></div></li>
+        <li class="pp-tile" data-cats="commando"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h3 data-i18n="f.ai.title">Known to the AI terminal</h3><p data-i18n="f.ai.desc">The Open 2D Studio AI terminal receives the command list, including this command.</p></div></div></li>
+        <li class="pp-tile" data-cats="installeren"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h3 data-i18n="f.zip.title">One 1.4 kB zip</h3><p data-i18n="f.zip.desc">Download and you are done; no installer needed.</p></div></div></li>
+        <li class="pp-tile" data-cats="installeren"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.fromfile.title">Install from file</h3><p data-i18n="f.fromfile.desc">In Open 2D Studio via File, Extensions; the extension is switched on right away.</p></div></div></li>
+        <li class="pp-tile" data-cats="installeren"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.toggle.title">On, off or gone</h3><p data-i18n="f.toggle.desc">Disable or remove it in the Extension Manager.</p></div></div></li>
+        <li class="pp-tile" data-cats="installeren ontwikkelaars"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h3 data-i18n="f.permissions.title">Fixed permissions</h3><p data-i18n="f.permissions.desc">The manifest only asks for commands, the ribbon and events.</p></div></div></li>
+        <li class="pp-tile" data-cats="installeren"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h3 data-i18n="f.offline.title">Works offline</h3><p data-i18n="f.offline.desc">After installing, everything happens on your own computer.</p></div></div></li>
+        <li class="pp-tile" data-cats="ontwikkelaars"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg></div><div><h3 data-i18n="f.sample.title">Sample extension</h3><p data-i18n="f.sample.desc">Made as a starting point for anyone who wants to add something to Open 2D Studio.</p></div></div></li>
+        <li class="pp-tile" data-cats="ontwikkelaars"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.readable.title">About a hundred lines</h3><p data-i18n="f.readable.desc">One manifest and one JavaScript file, without a build step.</p></div></div></li>
+        <li class="pp-tile" data-cats="ontwikkelaars"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.source.title">Source code on GitHub</h3><p data-i18n="f.source.desc">Read along, copy it or suggest an improvement.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg></div><div><h3 data-i18n="f.free.title">Free</h3><p data-i18n="f.free.desc">No account, no subscription.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
+
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
+    <div class="panel-split">
+      <div class="panel-split-text">
+        <p class="pill-label" data-i18n="whatsnew.label">New in v1.0.1</p>
+        <h2 data-i18n="whatsnew.title">Its own place in the ribbon</h2>
+        <p data-i18n="whatsnew.desc">Version 1.0.1 (February 2026) moves the button from the Home tab to its own Add-Ins tab. The count and the command work as in 1.0.0.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaChangelog">All release notes</span></a>
+        </div>
+      </div>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="whatsnew.items.addins.title">Add-Ins tab</h4><p data-i18n="whatsnew.items.addins.desc">Shape Count now has its own tab, in the Statistics group.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h4 data-i18n="whatsnew.items.home.title">Home stays clean</h4><p data-i18n="whatsnew.items.home.desc">The extension no longer adds anything to the Open 2D Studio Home tab.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h4 data-i18n="whatsnew.items.same.title">Same count and command</h4><p data-i18n="whatsnew.items.same.desc">The total, the count per type and stats show work as in 1.0.0.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h4 data-i18n="whatsnew.items.package.title">As a zip with the release</h4><p data-i18n="whatsnew.items.package.desc">drawing-statistics-1.0.1.zip, ready for Install from file.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Frequently asked questions</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Which files can I open?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">The extension does not open files itself. It counts what is open in Open 2D Studio, including a drawing you imported there from DXF.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Do I need to install anything?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Yes: the <a href="/en/open-2d-studio/">Open 2D Studio</a> desktop app (v0.15 or later) and this extension in it. Get drawing-statistics-1.0.1.zip from <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases/tag/v1.0.1">release v1.0.1 on GitHub</a> and in Open 2D Studio choose File, Extensions, Install from file. The Open 2D Studio web version cannot install extensions yet.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.cost.q">What does it cost?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.cost.a">Nothing. The source code is public on GitHub. There is no licence file yet; if you want to reuse the code, ask in the repository.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.format.q">In which file format is my work saved?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.format.a">The extension saves nothing and changes nothing in your drawing. The count appears in a message; you save your drawing in Open 2D Studio as usual.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.platforms.q">Which systems does it run on?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.platforms.a">Wherever the Open 2D Studio desktop app runs: Windows, macOS and Linux. Not in the web version.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">What can an AI assistant do with it?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">The stats show command is in the Open 2D Studio command list. The desktop app's AI terminal receives that list and can therefore request the count.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.scope.q">Does it only count the drawing I am looking at?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.scope.a">No. It counts every shape in the open file, including those on other drawings and hidden shapes. Counting per drawing, per layer or only the selection is not possible yet.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.export.q">Can I save or export the count?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.export.a">Not yet. The count only appears in a message, with the English names of the shape types.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.own.q">Can I use this to make my own extension?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.own.a">That is what it is for. An extension is a folder with manifest.json and a JavaScript file with an onLoad function, in which you add tabs, buttons and commands. See <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/blob/v1.0.1/main.js">main.js</a> for how it works.</p></div>
+      </details>
+    </div>
+  </div></section>
+
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Technology</h2><p data-i18n="tech.sub">For those who want to know how it is built.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h4 data-i18n="tech.js.title">JavaScript</h4><p data-i18n="tech.js.desc">A single main.js as a CommonJS module (module.exports), without dependencies or a build step.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h4 data-i18n="tech.manifest.title">manifest.json</h4><p data-i18n="tech.manifest.desc">id, version, minAppVersion 0.15.0, category Utility and the permissions commands, ribbon and events.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.api.title">Extension API</h4><p data-i18n="tech.api.desc">onLoad(api) with api.ui.addRibbonTab, api.ui.addRibbonButton, api.commands.register and api.entities.list.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h4 data-i18n="tech.command.title">Command registry</h4><p data-i18n="tech.command.desc">Registers stats/show in the Open 2D Studio command registry; as a tool it is called cad_stats_show.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h4 data-i18n="tech.package.title">Zip</h4><p data-i18n="tech.package.desc">The release is a zip with manifest.json and main.js, which Open 2D Studio unpacks into its extensions folder.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg></div><div><h4 data-i18n="tech.host.title">Open 2D Studio</h4><p data-i18n="tech.host.desc">The desktop app (Tauri) loads the extension at startup and removes the tab, button and command when it is disabled.</p></div></div>
+    </div>
+  </div></section>
+
+
+  <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
+  <div data-release-notes="ext-drawing-statistics"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Show all releases</span><span data-rel-hide hidden data-i18n="releases.showLess">Show only the latest three</span></button>
+    <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.github">All releases on GitHub</span></a>
+  </p>
+  </section>
+  <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">Drawing <span class="accent">Statistics</span></h2>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases/download/v1.0.1/drawing-statistics-1.0.1.zip" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Download v1.0.1 (1.4 KB)</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="header.sourceBtn">View source</span></a>
+        <a href="#features" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">See the features</span></a>
+        <a href="#faq" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="header.faqBtn">Frequently asked questions</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Source code</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->

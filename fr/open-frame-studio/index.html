@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Frame Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Logiciel gratuit et open source pour concevoir, documenter et exporter des menuiseries de fenêtres et de portes. Du dessin 2D et de la vue 3D jusqu’à la…">
+  <meta name="description" content="Application gratuite et open source pour concevoir des menuiseries en bois, aluminium et PVC : éditeur 2D à découpage libre, vue 3D, listes de production…">
   <link rel="canonical" href="https://open-aec.com/fr/open-frame-studio/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/open-frame-studio/">
@@ -15,23 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/open-frame-studio/">
   <!-- hreflang:end -->
 
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
   <meta property="og:title" content="Open Frame Studio — OpenAEC Foundation">
-  <meta property="og:description" content="Logiciel gratuit et open source pour concevoir, documenter et exporter des menuiseries de fenêtres et de portes. Du dessin 2D et de la vue 3D jusqu’à la…">
+  <meta property="og:description" content="Application gratuite et open source pour concevoir des menuiseries en bois, aluminium et PVC : éditeur 2D à découpage libre, vue 3D, listes de production…">
   <meta property="og:url" content="https://open-aec.com/fr/open-frame-studio/">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-frame-studio-3d.png">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-frame-studio-hero.png">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Open Frame Studio">
-  <meta name="twitter:description" content="Logiciel gratuit et open source pour concevoir, documenter et exporter des menuiseries de fenêtres et de portes. Du dessin 2D et de la vue 3D jusqu’à la…">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-frame-studio-3d.png">
+  <meta name="twitter:description" content="Application gratuite et open source pour concevoir des menuiseries en bois, aluminium et PVC : éditeur 2D à découpage libre, vue 3D, listes de production…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-frame-studio-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -41,6 +39,7 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,26 +47,38 @@
     "name": "Open Frame Studio",
     "applicationCategory": "DesignApplication",
     "applicationSubCategory": "Window and door frame design",
-    "operatingSystem": "Windows, macOS, Linux",
+    "operatingSystem": "Windows, macOS, Linux, Web",
+    "softwareVersion": "0.6.0",
     "url": "https://open-aec.com/open-frame-studio/",
     "downloadUrl": "https://github.com/OpenAEC-Foundation/open-frame-studio/releases",
-    "softwareVersion": "0.6.0",
-    "description": "Open Frame Studio: gratis, open-source software voor het ontwerpen, documenteren en exporteren van kozijnen — 2D-editor, 3D-weergave, kozijnstaat, werkplaatstekening en IFC-export.",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "description": "Free, open-source app for designing window and door frames (kozijnen) in wood, aluminium, PVC and wood-aluminium. 2D editor with free layout and bay infills, templates, special shapes, 3D view in the brickwork, profile library and profile editor with DXF import, corner joints following joinery rules, production lists (cutting, glass, hardware, gaskets, panels, glazing beads), frame schedule as PDF and Excel, workshop drawings and DXF, Uw check per frame, IFC 4 export with ILS Houten Kozijnen v2.0 property sets, IFC import, glTF and CSV export, Blender/Bonsai link and a built-in AI assistant. For Windows, macOS, Linux and the browser.",
     "featureList": [
       "2D-kozijneditor",
-      "Profieleditor",
-      "80+ profielen",
       "Sjablonen",
+      "Vrije indeling",
+      "Bijzondere vormen",
       "3D-weergave",
-      "AI-configurator",
-      "Kozijnstaat (PDF en Excel)",
-      "Werkplaatstekening en DXF",
-      "IFC-export (ILS Houten Kozijnen v2.0)",
-      "Zaaglijst en verbindingen",
-      "NEN 3576-maatvoering",
-      "Blender en Bonsai"
+      "RAL-kleuren",
+      "Nederlandse tekenwijze",
+      "Profielbibliotheek",
+      "Bekende systemen",
+      "Profieleditor",
+      "Profiel uit DXF",
+      "Hoekverbindingen",
+      "Productiestaten",
+      "Kozijnstaat",
+      "Werkplaatstekening",
+      "Uw per kozijn",
+      "Beglazing per vak",
+      "IFC-export",
+      "glTF en CSV",
+      "Blender en Bonsai",
+      "AI-assistent",
+      "Drie talen",
+      "Licht en donker"
     ],
-    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-frame-studio-3d.png",
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-frame-studio-hero.png",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -75,8 +86,7 @@
       "availability": "https://schema.org/InStock"
     },
     "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "keywords": "kozijnen, kozijnsoftware, window frames, door frames, kozijnstaat, werkplaatstekening, IFC, ILS Houten Kozijnen",
+    "keywords": "kozijnen, kozijnsoftware, window frames, door frames, kozijnstaat, zaaglijst, werkplaatstekening, IFC, ILS Houten Kozijnen, NEN 3576, KVT, Uw-waarde, profieleditor",
     "sameAs": [
       "https://github.com/OpenAEC-Foundation/open-frame-studio",
       "https://open-frame-studio.open-aec.com/"
@@ -88,10 +98,87 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Je eigen projecten in .ofs. De desktop-app leest ook kozijnen uit een IFC-bestand en profielen uit DXF."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Om te proberen niet: de webversie werkt direct in de browser. Voor opslaan en voor de export naar IFC, DXF, PDF en Excel heb je de desktop-app nodig; in de browser kan dat nog niet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost Open Frame Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. De app is gratis en open source onder de licentie CC BY-SA 4.0, zonder account of abonnement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk formaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In een eigen .ofs-projectbestand. Daarnaast exporteert de desktop-app naar IFC, DXF, PDF, Excel, CSV en glTF."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Windows (ook zonder beheerrechten), macOS (Intel en Apple Silicon) en Linux (.deb, .rpm en AppImage), en in een moderne browser."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de Nederlandse praktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Maatvoering volgens NEN 3576, draaisymbolen volgens VKG en EN 12519, houtprofielen in KVT-maten en IFC met de eigenschappen van ILS Houten Kozijnen v2.0."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Er zit een AI-assistent in de app die kozijnen maakt en aanpast op basis van wat je typt. Je koppelt hem aan OpenAI, Ollama of een ander compatibel endpoint. Een MCP-server voor externe assistenten is er nog niet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik ook een vliesgevel tekenen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In de desktop-app wel. In de browserversie kan dat nog niet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik er al kozijnen mee bestellen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Het is een vroege versie (0.6). Controleer maten en lijsten voordat je bestelt of gaat zagen, en meld fouten op GitHub."
+        }
+      }
+    ]
+  }
+  </script>
 
-    <style>
-    .tech-chips { margin-bottom: var(--sp-6); justify-content: flex-start; }
-  </style>
   <meta name="i18n-static" content="fr">
   <!-- schema:start -->
   <script type="application/ld+json">
@@ -126,7 +213,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "fr",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/fr/open-frame-studio/#breadcrumb"
         }
@@ -190,181 +277,274 @@
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">Conception de menuiseries</p>
+      <p class="pill-label" data-i18n="header.label">Menuiseries</p>
       <h1 data-i18n="header.title">Open <span class="accent">Frame</span> Studio</h1>
-      <p class="lead" data-i18n="header.desc">Logiciel gratuit et open source pour concevoir, documenter et exporter des menuiseries de fenêtres et de portes. Du dessin 2D et de la vue 3D jusqu’à la nomenclature des menuiseries, au plan d’atelier et à l’export IFC.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">Du dessin de la menuiserie à la liste de débit et à l'IFC, dans une seule application gratuite</p>
+      <p class="lead" data-i18n="header.desc">Choisissez un modèle, divisez la menuiserie en compartiments et donnez à chacun une porte, un ouvrant, un vitrage ou un panneau. Vous la voyez aussitôt en 3D, avec les listes de production et la valeur Uw.</p>
       <div class="btn-group">
-        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="download.title">Télécharger</span></a>
-        <a href="https://open-frame-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Ouvrir dans votre navigateur</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/open-frame-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="cta.github">Voir sur GitHub</span></a>
+        <a href="https://open-frame-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Ouvrir dans le navigateur</span></a>
+        <a href="#download" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Télécharger</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/open-frame-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Code source</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg>Alpha · v0.6.0</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg>Windows · macOS · Linux · Browser</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg>IFC 4 · ILS</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg>CC BY-SA 4.0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span>IFC · DXF · PDF · Excel</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg><span data-i18n="header.proof2">Bois · aluminium · PVC</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="header.proof3">Néerlandais, anglais et allemand</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg><span>Windows · macOS · Linux · Web</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof5">Gratuit · CC BY-SA 4.0</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-frame-studio-3d.png" alt="Open Frame Studio — Vue 3D d’une fenêtre oscillo-battante en méranti, avec les propriétés du châssis à droite" data-i18n="shots.s1" data-i18n-attr="alt"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-frame-studio-2d.png" alt="Open Frame Studio — Éditeur 2D de châssis avec les cotes d’une fenêtre oscillo-battante de 900 × 1400 mm" data-i18n="shots.s2" data-i18n-attr="alt" loading="lazy"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-frame-studio-kozijnstaat.png" alt="Open Frame Studio — Nomenclature des menuiseries avec repère, dimensions, matériau, vitrage et valeur Ug par châssis" data-i18n="shots.s3" data-i18n-attr="alt" loading="lazy"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-frame-studio-profiel.png" alt="Open Frame Studio — Éditeur de profils avec la section d’un profil de châssis bois de 67 × 114 mm et la bibliothèque de profils" data-i18n="shots.s4" data-i18n-attr="alt" loading="lazy"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-frame-studio-hero.png" width="1920" height="1200" alt="Open Frame Studio : une fenêtre oscillo-battante double dans l'éditeur 2D avec ses cotes, les menuiseries du projet à gauche et les propriétés à droite" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-frame-studio-feat-indeling.png" width="1200" height="750" decoding="async" alt="Découpage libre d'une porte avec imposte latérale : une porte, un compartiment vitré fixe et une allège en maçonnerie, avec à gauche les boutons pour diviser un compartiment et choisir son remplissage" data-i18n="hl.layout.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-frame-studio-feat-3d.png" width="1200" height="750" decoding="async" alt="Vue 3D d'une porte d'entrée avec imposte, posée dans la maçonnerie" data-i18n="hl.view3d.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-frame-studio-feat-productie.png" width="1200" height="750" decoding="async" alt="Listes de production avec la liste de débit par pièce : profilé, matériau, longueurs nette et brute et angles de coupe, avec des onglets pour le vitrage, la quincaillerie, les joints, les panneaux, les parcloses et la nomenclature" data-i18n="hl.production.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-frame-studio-feat-energie.png" width="1200" height="750" decoding="async" alt="Vue énergétique avec la valeur Uw moyenne, la surface et les déperditions par transmission par menuiserie, et un OK vert par menuiserie par rapport à la limite fixée" data-i18n="hl.energy.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-frame-studio-feat-profiel.png" width="1200" height="750" decoding="async" alt="Éditeur de profilés avec la coupe d'un profilé de dormant en bois à double feuillure, la bibliothèque de profilés à gauche et les dimensions, la feuillure et la valeur Uf à droite" data-i18n="hl.profiles.alt" data-i18n-attr="alt"></div>
         </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende">&rsaquo;</button>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap" id="download"><div class="container">
-    <div class="download-section">
-      <h3 data-i18n="download.title">Télécharger</h3>
-      <div class="download-grid">
-        <div class="download-item"><div class="os">Windows</div><div class="size" data-i18n="download.windows">Programme d’installation (.exe)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio_0.6.0_x64-setup.exe" data-gh-download="OpenAEC-Foundation/open-frame-studio" data-platform="windows" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download .exe</a></div>
-        <div class="download-item"><div class="os">Windows</div><div class="size" data-i18n="download.windowsMsi">Paquet MSI (.msi)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio_0.6.0_x64_en-US.msi" data-gh-download="OpenAEC-Foundation/open-frame-studio" data-platform="windows-msi" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download .msi</a></div>
-        <div class="download-item"><div class="os">macOS</div><div class="size" data-i18n="download.macos">Processeurs Apple et Intel (.dmg)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio_0.6.0_universal.dmg" data-gh-download="OpenAEC-Foundation/open-frame-studio" data-platform="macos" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download .dmg</a></div>
-        <div class="download-item"><div class="os">Linux</div><div class="size" data-i18n="download.linuxDeb">Debian, Ubuntu (.deb)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio_0.6.0_amd64.deb" data-gh-download="OpenAEC-Foundation/open-frame-studio" data-platform="linux-deb" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download .deb</a></div>
-        <div class="download-item"><div class="os">Linux</div><div class="size" data-i18n="download.linuxRpm">Fedora, openSUSE (.rpm)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio-0.6.0-1.x86_64.rpm" data-gh-download="OpenAEC-Foundation/open-frame-studio" data-platform="linux-rpm" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download .rpm</a></div>
-        <div class="download-item"><div class="os">Linux</div><div class="size" data-i18n="download.linuxAppimage">Toutes distributions (AppImage)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio_0.6.0_amd64.AppImage" data-gh-download="OpenAEC-Foundation/open-frame-studio" data-platform="linux-appimage" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download AppImage</a></div>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg><span data-i18n="notice.text">Version précoce (0.6). Essayez-la et dites-nous ce qui vous manque.</span> <a href="https://github.com/OpenAEC-Foundation/open-frame-studio/issues" target="_blank" rel="noopener"><span data-i18n="notice.link">Signalez-le sur GitHub</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a></p>
+  </div>
+
+  <nav class="pp-subnav" aria-label="Sur cette page" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Fonctions</a>
+      <a href="#download" data-i18n="subnav.download">Télécharger</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Nouveautés</a>
+      <a href="#faq" data-i18n="subnav.faq">FAQ</a>
+      <a href="#releases" data-i18n="subnav.releases">Versions</a>
+    </div>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Fonctions</p><h2 data-i18n="features.heading">Tout pour la menuiserie, du dessin à l'atelier</h2><p data-i18n="features.sub">Commencez par les points forts ou choisissez un thème.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Fonctions par thème" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Points forts</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-design" data-tab="design" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg><span data-i18n="tabs.design">Conception</span> <span class="pp-tab-count" data-count="design"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-profiles" data-tab="profiles" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg><span data-i18n="tabs.profiles">Profilés</span> <span class="pp-tab-count" data-count="profiles"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-production" data-tab="production" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg><span data-i18n="tabs.production">Production</span> <span class="pp-tab-count" data-count="production"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-energy" data-tab="energy" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg><span data-i18n="tabs.energy">Énergie</span> <span class="pp-tab-count" data-count="energy"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-connect" data-tab="connect" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg><span data-i18n="tabs.connect">BIM et intégrations</span> <span class="pp-tab-count" data-count="connect"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Toutes les fonctions</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-frame-studio-feat-indeling.png" width="1200" height="750" loading="lazy" decoding="async" alt="Découpage libre d'une porte avec imposte latérale : une porte, un compartiment vitré fixe et une allège en maçonnerie, avec à gauche les boutons pour diviser un compartiment et choisir son remplissage" data-i18n="hl.layout.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.layout.kicker">Découpage libre</span></p>
+            <h3 data-i18n="hl.layout.title">Divisez la menuiserie comme vous le voulez</h3>
+            <p data-i18n="hl.layout.desc">Divisez un compartiment par un montant ou une traverse et choisissez pour chacun une porte, un ouvrant, un vitrage fixe, un panneau ou une allège, avec parclose et sens d'ouverture. Partez d'une porte avec imposte latérale, d'une porte avec imposte ou d'une grille.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-frame-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-frame-studio-feat-3d.png" width="1200" height="750" loading="lazy" decoding="async" alt="Vue 3D d'une porte d'entrée avec imposte, posée dans la maçonnerie" data-i18n="hl.view3d.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.view3d.kicker">Vue 3D</span></p>
+            <h3 data-i18n="hl.view3d.title">Voyez la menuiserie dans le mur</h3>
+            <p data-i18n="hl.view3d.desc">La vue 3D suit votre dessin : de vrais profilés, le vitrage dans la feuillure, les ouvrants et portes en pièces distinctes et la maçonnerie autour. Vous vérifiez d'un coup d'œil que tout est juste.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-frame-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-frame-studio-feat-productie.png" width="1200" height="750" loading="lazy" decoding="async" alt="Listes de production avec la liste de débit par pièce : profilé, matériau, longueurs nette et brute et angles de coupe, avec des onglets pour le vitrage, la quincaillerie, les joints, les panneaux, les parcloses et la nomenclature" data-i18n="hl.production.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.production.kicker">Production</span></p>
+            <h3 data-i18n="hl.production.title">La liste de débit suit le dessin</h3>
+            <p data-i18n="hl.production.desc">Chaque montant, traverse et élément d'ouvrant figure dans la liste de débit, avec longueurs nette et brute et angle de coupe. S'y ajoutent des listes pour le vitrage, la quincaillerie, les joints, les panneaux et les parcloses. Les assemblages suivent les règles de menuiserie : tenon-mortaise pour le bois, onglet pour l'aluminium et le PVC.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-frame-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-frame-studio-feat-energie.png" width="1200" height="750" loading="lazy" decoding="async" alt="Vue énergétique avec la valeur Uw moyenne, la surface et les déperditions par transmission par menuiserie, et un OK vert par menuiserie par rapport à la limite fixée" data-i18n="hl.energy.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.energy.kicker">Énergie</span></p>
+            <h3 data-i18n="hl.energy.title">Sachez tout de suite si la valeur Uw convient</h3>
+            <p data-i18n="hl.energy.desc">Pour chaque menuiserie, l'application calcule la valeur Uw, la surface et les déperditions par transmission à partir des profilés et du vitrage. Fixez une limite et voyez aussitôt quelle menuiserie la respecte.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-frame-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-frame-studio-feat-profiel.png" width="1200" height="750" loading="lazy" decoding="async" alt="Éditeur de profilés avec la coupe d'un profilé de dormant en bois à double feuillure, la bibliothèque de profilés à gauche et les dimensions, la feuillure et la valeur Uf à droite" data-i18n="hl.profiles.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">05</span> <span data-i18n="hl.profiles.kicker">Profilés</span></p>
+            <h3 data-i18n="hl.profiles.title">Travaillez avec vos propres profilés</h3>
+            <p data-i18n="hl.profiles.desc">Choisissez dans la bibliothèque bois, aluminium, PVC et bois-aluminium, ou dessinez une coupe point par point. Fixez largeur, profondeur, feuillure et valeur Uf, ou importez un profilé depuis un DXF.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-frame-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
       </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="design"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.editor.title">Éditeur 2D de menuiseries</h3><p data-i18n="f.editor.desc">Colonnes et rangées, poignées de déplacement et chaîne de cotes fermée, avec annuler et rétablir.</p></div></div></li>
+        <li class="pp-tile" data-cats="design"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.templates.title">Modèles</h3><p data-i18n="f.templates.desc">Oscillo-battant, double, fenêtre à la française, à soufflet, pivotant, porte d'entrée, coulissant et levant-coulissant. Enregistrez votre menuiserie comme modèle.</p></div></div></li>
+        <li class="pp-tile" data-cats="design"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-move"/></svg></div><div><h3 data-i18n="f.infill.title">Découpage libre</h3><p data-i18n="f.infill.desc">Divisez, fusionnez ou permutez des compartiments et choisissez par compartiment le remplissage, la parclose, le sens d'ouverture et la quincaillerie.</p></div></div></li>
+        <li class="pp-tile" data-cats="design"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div><div><h3 data-i18n="f.shapes.title">Formes particulières</h3><p data-i18n="f.shapes.desc">Cintré, rond, trapèze ou arc sur montants inclinés, en plus de la menuiserie rectangulaire classique.</p></div></div></li>
+        <li class="pp-tile" data-cats="design"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h3 data-i18n="f.view3d.title">Vue 3D</h3><p data-i18n="f.view3d.desc">Profilés extrudés, vitrage dans la feuillure et maçonnerie autour, y compris pour les formes en escalier comme une porte avec imposte latérale.</p></div></div></li>
+        <li class="pp-tile" data-cats="design"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.colors.title">Couleurs RAL</h3><p data-i18n="f.colors.desc">Une couleur pour la face intérieure et une pour la face extérieure, visibles en 2D et en 3D.</p></div></div></li>
+        <li class="pp-tile" data-cats="design production"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><h3 data-i18n="f.conventions.title">Conventions de dessin néerlandaises</h3><p data-i18n="f.conventions.desc">Cotation selon NEN 3576 et symboles d'ouverture en vue extérieure selon VKG et EN 12519.</p></div></div></li>
+        <li class="pp-tile" data-cats="profiles"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.library.title">Bibliothèque de profilés</h3><p data-i18n="f.library.desc">Bois aux dimensions KVT (meranti, accoya, sapin, chêne, bois dur FSC), aluminium, PVC et bois-aluminium, avec profilés d'ouvrant, de porte et parcloses.</p></div></div></li>
+        <li class="pp-tile" data-cats="profiles"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.systems.title">Systèmes connus</h3><p data-i18n="f.systems.desc">Modèles pour VEKA, Kömmerling, Reynaers CS 77 et Schüco AWS 75.SI+, entre autres, avec angles d'onglet.</p></div></div></li>
+        <li class="pp-tile" data-cats="profiles"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg></div><div><h3 data-i18n="f.profileeditor.title">Éditeur de profilés</h3><p data-i18n="f.profileeditor.desc">Dessinez une coupe point par point, avec symétrie, grille magnétique et annulation.</p></div></div></li>
+        <li class="pp-tile" data-cats="profiles"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h3 data-i18n="f.dxfprofile.title">Profilé depuis un DXF</h3><p data-i18n="f.dxfprofile.desc">Importez la coupe d'un fournisseur depuis un fichier DXF.</p></div></div></li>
+        <li class="pp-tile" data-cats="profiles production"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-hatch"/></svg></div><div><h3 data-i18n="f.joints.title">Assemblages d'angle</h3><p data-i18n="f.joints.desc">Tenon-mortaise, onglet, contre-profil ou bout à bout, réglable par angle. Votre choix l'emporte toujours.</p></div></div></li>
+        <li class="pp-tile" data-cats="production"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.lists.title">Listes de production</h3><p data-i18n="f.lists.desc">Liste de débit avec longueurs nettes et brutes et angles de coupe, plus des listes pour le vitrage, la quincaillerie, les joints, les panneaux, les parcloses et les pièces.</p></div></div></li>
+        <li class="pp-tile" data-cats="production"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.schedule.title">Tableau des menuiseries</h3><p data-i18n="f.schedule.desc">Toutes les menuiseries avec repère, dimensions, matériau, compartiments, vitrage et valeur Ug. L'application de bureau en fait un PDF ou un fichier Excel.</p></div></div></li>
+        <li class="pp-tile" data-cats="production"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div><div><h3 data-i18n="f.workshop.title">Plan d'atelier</h3><p data-i18n="f.workshop.desc">Plans A3 avec cartouche, et DXF avec cotes pour l'atelier, depuis l'application de bureau.</p></div></div></li>
+        <li class="pp-tile" data-cats="energy"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.uw.title">Uw par menuiserie</h3><p data-i18n="f.uw.desc">Valeur Uw, surface et déperditions par transmission par menuiserie, comparées à une limite que vous fixez.</p></div></div></li>
+        <li class="pp-tile" data-cats="energy"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h3 data-i18n="f.glazing.title">Vitrage par compartiment</h3><p data-i18n="f.glazing.desc">Choisissez le vitrage par compartiment, double ou triple, avec la valeur Ug prise en compte dans le Uw.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h3 data-i18n="f.ifc.title">Export IFC</h3><p data-i18n="f.ifc.desc">IFC 4 avec les jeux de propriétés ILS Houten Kozijnen v2.0, pour votre maquette BIM. L'application de bureau lit aussi des menuiseries depuis un IFC.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.gltf.title">glTF et CSV</h3><p data-i18n="f.gltf.desc">Le modèle 3D en glTF pour la visualisation, et les données de production en CSV pour vos propres logiciels.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-crane"/></svg></div><div><h3 data-i18n="f.blender.title">Blender et Bonsai</h3><p data-i18n="f.blender.desc">Envoyez une menuiserie depuis l'application de bureau directement vers Blender avec Bonsai pour poursuivre la modélisation en IFC.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h3 data-i18n="f.ai.title">Assistant IA</h3><p data-i18n="f.ai.desc">Tapez « Fais un oscillo-battant 900×1400 » et la menuiserie apparaît. Fonctionne avec OpenAI, Ollama ou un autre point d'accès compatible.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h3 data-i18n="f.languages.title">Trois langues</h3><p data-i18n="f.languages.desc">L'application fonctionne en néerlandais, anglais et allemand, avec des cotes en millimètres.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.themes.title">Clair et sombre</h3><p data-i18n="f.themes.desc">Un thème clair et un thème sombre, dans le style des autres applications OpenAEC.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel">
+  <section class="section surface-dark panel pp-anchor" id="download" data-pp-repo="OpenAEC-Foundation/open-frame-studio">
+    <div class="pp-dl">
+      <p class="pill-label" data-i18n="download.label">Télécharger</p>
+      <h2 data-i18n="download.title" data-pp-ver>Télécharger v0.6.0</h2>
+      <p class="pp-dl-lead" data-i18n="download.lead">Gratuit, sans compte. Pour Windows, macOS et Linux.</p>
+      <div class="pp-dl-main" data-pp-main>
+        <a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio_0.6.0_x64-setup.exe" class="btn btn-glow btn-lg" data-pp-dl="windows" data-pp-primary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-os="windows" data-i18n="download.forWindows">Télécharger pour Windows</span><span data-os="macos" data-i18n="download.forMac" hidden>Télécharger pour macOS</span><span data-os="linux-appimage" data-i18n="download.forLinux" hidden>Télécharger pour Linux</span></a>
+        <a href="https://open-frame-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="download.browserBtn">Ouvrir dans le navigateur</span></a>
+      </div>
+      <p class="pp-dl-meta"><span data-os="windows" data-i18n="download.metaWindows">programme d'installation .exe</span><span data-os="macos" data-i18n="download.metaMac" hidden>.dmg universel, Intel et Apple Silicon</span><span data-os="linux-appimage" data-i18n="download.metaLinux" hidden>AppImage, fonctionne sur la plupart des distributions</span> · <span data-pp-primary-size>4.6 MB</span></p>
+      <p class="pp-dl-mobile" data-pp-mobile hidden data-i18n="download.mobileNote">Open Frame Studio est conçu pour un grand écran. Ouvrez-le sur votre ordinateur, ou essayez-le ici dans le navigateur.</p>
+      <details class="pp-dl-other" data-pp-other>
+        <summary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg><span data-i18n="download.other">Autres plateformes</span></summary>
+        <div class="pp-files">
+          <div class="pp-files-col"><h3>Windows</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio_0.6.0_x64-setup.exe" data-pp-dl="windows" data-pp-item="windows"><span class="pp-file"><span data-i18n="download.fileExe">Programme d'installation (.exe)</span><span class="pp-file-size"> · <span data-pp-size="windows">4.6 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio_0.6.0_x64_user-setup.exe" data-pp-dl="windows-user" data-pp-item="windows-user"><span class="pp-file"><span data-i18n="download.fileExeUser">Sans droits d'administrateur (.exe)</span><span class="pp-file-size"> · <span data-pp-size="windows-user">4.6 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio_0.6.0_x64_en-US.msi" data-pp-dl="windows-msi" data-pp-item="windows-msi"><span class="pp-file"><span data-i18n="download.fileMsi">Programme d'installation (.msi)</span><span class="pp-file-size"> · <span data-pp-size="windows-msi">6.6 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+          <div class="pp-files-col"><h3>macOS</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio_0.6.0_universal.dmg" data-pp-dl="macos" data-pp-item="macos"><span class="pp-file"><span data-i18n="download.fileDmg">.dmg universel</span><span class="pp-file-size"> · <span data-pp-size="macos">12.7 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+          <div class="pp-files-col"><h3>Linux</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio_0.6.0_amd64.deb" data-pp-dl="linux-deb" data-pp-item="linux-deb"><span class="pp-file"><span data-i18n="download.fileDeb">.deb</span><span class="pp-file-size"> · <span data-pp-size="linux-deb">7.1 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio-0.6.0-1.x86_64.rpm" data-pp-dl="linux-rpm" data-pp-item="linux-rpm"><span class="pp-file"><span data-i18n="download.fileRpm">.rpm</span><span class="pp-file-size"> · <span data-pp-size="linux-rpm">7.1 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases/download/v0.6.0/Open.Frame.Studio_0.6.0_amd64.AppImage" data-pp-dl="linux-appimage" data-pp-item="linux-appimage"><span class="pp-file"><span data-i18n="download.fileAppImage">AppImage</span><span class="pp-file-size"> · <span data-pp-size="linux-appimage">80.6 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+        </div>
+      </details>
+      <p class="pp-dl-note" data-i18n="download.browserNote">Vous préférez ne rien installer ? L'application <a href="https://open-frame-studio.open-aec.com/" target="_blank" rel="noopener">fonctionne aussi dans le navigateur</a>.</p>
+    </div>
+  </section>
+
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
     <div class="panel-split">
       <div class="panel-split-text">
-        <p class="pill-label">Hout · Alu · PVC</p>
-        <h2 data-i18n="what.title">Qu’est-ce qu’Open Frame Studio ?</h2>
-        <p data-i18n="what.desc">Une application de bureau pour concevoir, documenter et exporter des menuiseries de fenêtres et de portes — une alternative gratuite et professionnelle aux logiciels de menuiserie commerciaux. Dessinez le châssis en 2D, vérifiez-le en 3D et produisez la nomenclature des menuiseries, le plan d’atelier et le fichier IFC à partir du même modèle.</p>
+        <p class="pill-label" data-i18n="whatsnew.label">Nouveau dans la v0.6.0</p>
+        <h2 data-i18n="whatsnew.title">Dessin, 3D et liste de débit <span>à l'identique</span></h2>
+        <p data-i18n="whatsnew.desc">Dans la version 0.6, le découpage libre est la base : ce que vous dessinez se retrouve à l'identique en 3D et dans la liste de débit.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaChangelog">Toutes les notes de version</span></a>
+          <a href="https://open-frame-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="whatsnew.ctaDemo">Essayer dans le navigateur</span></a>
+        </div>
       </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="materials.m1.title">Bois</h4><p data-i18n="materials.m1.desc">Profils standard KVT (54, 67, 78 et 90 mm), méranti, accoya, épicéa, chêne, bois dur et résineux certifiés FSC.</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div><div><h4 data-i18n="materials.m2.title">Aluminium</h4><p data-i18n="materials.m2.desc">Profils aluminium standard, avec angles assemblés en onglet à 45°.</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h4 data-i18n="materials.m3.title">PVC</h4><p data-i18n="materials.m3.desc">Profils PVC standard et modèles de VEKA, Kömmerling et d’autres fabricants.</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><h4 data-i18n="materials.m4.title">Bois-aluminium</h4><p data-i18n="materials.m4.desc">Profils mixtes avec du bois à l’intérieur et de l’aluminium à l’extérieur.</p></div></li>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h4 data-i18n="whatsnew.items.layout.title">Découpage libre</h4><p data-i18n="whatsnew.items.layout.desc">Cliquez sur un compartiment pour son remplissage, Ctrl+clic pour un montant et faites glisser les lignes de division.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h4 data-i18n="whatsnew.items.view3d.title">La 3D suit le modèle</h4><p data-i18n="whatsnew.items.view3d.desc">Formes en escalier, onglets à 45°, vitrage dans la feuillure et ouvrants en vrais profilés.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-scissors"/></svg></div><div><h4 data-i18n="whatsnew.items.cutting.title">Débit conforme au dessin</h4><p data-i18n="whatsnew.items.cutting.desc">Montants continus, allèges et, par compartiment, vitrage, ouvrant, panneau et parcloses.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-hatch"/></svg></div><div><h4 data-i18n="whatsnew.items.joints.title">Règles d'assemblage</h4><p data-i18n="whatsnew.items.joints.desc">Bois à tenons avec traverses continues, aluminium et PVC en onglet.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg></div><div><h4 data-i18n="whatsnew.items.symbols.title">Symboles d'ouverture</h4><p data-i18n="whatsnew.items.symbols.desc">La vue extérieure montre le sens d'ouverture et de coulissement selon la convention néerlandaise.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h4 data-i18n="whatsnew.items.saved.title">Réglages conservés</h4><p data-i18n="whatsnew.items.saved.desc">Parclose, sens d'ouverture et quincaillerie sont conservés après enregistrement, changement et annulation.</p></div></li>
       </ul>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <h2 data-i18n="features.title">Fonctionnalités</h2>
-    <div class="features" id="ofr-features" data-fold="6">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div>
-        <h4 data-i18n="features.editor.title">Éditeur 2D de châssis</h4>
-        <p data-i18n="features.editor.desc">Éditeur interactif avec division en grille, poignées de déplacement, lignes de cote et remplissages : vitrage, ouvrant, porte, panneau ou allège.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg></div>
-        <h4 data-i18n="features.profiles.title">Éditeur de profils</h4>
-        <p data-i18n="features.profiles.desc">Modifiez la section d’un profil point par point, avec symétrie, grille d’accrochage et annulation.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div>
-        <h4 data-i18n="features.library.title">80+ profils</h4>
-        <p data-i18n="features.library.desc">Bibliothèque de profils bois, aluminium, PVC et bois-aluminium avec des sections de feuillure réalistes.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div>
-        <h4 data-i18n="features.templates.title">Modèles</h4>
-        <p data-i18n="features.templates.desc">Fenêtre oscillo-battante, fenêtre oscillo-battante double, porte coulissante, porte d’entrée, porte d’écurie et vos propres modèles comme base de travail.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div>
-        <h4 data-i18n="features.view3d.title">Vue 3D</h4>
-        <p data-i18n="features.view3d.desc">Aperçu Three.js avec profils extrudés, vitrage dans la feuillure et maçonnerie environnante.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div>
-        <h4 data-i18n="features.ai.title">Configurateur IA</h4>
-        <p data-i18n="features.ai.desc">Tapez « Fais une oscillo-battante 900×1400 » et le châssis apparaît. Fonctionne avec OpenAI, Ollama ou tout endpoint compatible.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-        <h4 data-i18n="features.schedule.title">Nomenclature des menuiseries</h4>
-        <p data-i18n="features.schedule.desc">Nomenclature professionnelle en PDF et Excel, avec dimensions, matériau, vitrage et valeur Ug par châssis.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div>
-        <h4 data-i18n="features.workshop.title">Plan d’atelier</h4>
-        <p data-i18n="features.workshop.desc">Plans d’atelier A3 avec cartouche, et plans DXF avec lignes de cote pour l’atelier.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg></div>
-        <h4 data-i18n="features.ifc.title">Export IFC</h4>
-        <p data-i18n="features.ifc.desc">Fichiers IFC avec les jeux de propriétés ILS Houten Kozijnen v2.0, pour les flux de travail BIM.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-scissors"/></svg></div>
-        <h4 data-i18n="features.cutting.title">Liste de débit et assemblages</h4>
-        <p data-i18n="features.cutting.desc">Une liste de débit qui suit le dessin, avec des assemblages dans les règles de l’art : tenon et mortaise pour le bois, onglets pour l’aluminium et le PVC.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div>
-        <h4 data-i18n="features.conventions.title">Conventions de dessin néerlandaises</h4>
-        <p data-i18n="features.conventions.desc">Cotation selon NEN 3576 et symboles d’ouverture selon VKG et EN 12519 en vue extérieure.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div>
-        <h4 data-i18n="features.blender.title">Blender et Bonsai</h4>
-        <p data-i18n="features.blender.desc">Envoyez les châssis directement vers Blender avec Bonsai pour poursuivre la modélisation IFC.</p>
-      </div>
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Questions fréquentes</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Quels fichiers puis-je ouvrir ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">Vos propres projets en .ofs. L'application de bureau lit aussi des menuiseries depuis un fichier IFC et des profilés depuis un DXF.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Dois-je installer quelque chose ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Pas pour l'essayer : la version web fonctionne directement dans le navigateur. Pour enregistrer et exporter en IFC, DXF, PDF et Excel, il faut l'application de bureau ; le navigateur ne le permet pas encore.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">Combien coûte Open Frame Studio ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Rien. L'application est gratuite et open source sous licence CC BY-SA 4.0, sans compte ni abonnement.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.save.q">Dans quel format mon travail est-il enregistré ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.save.a">Dans un fichier de projet .ofs. L'application de bureau exporte aussi en IFC, DXF, PDF, Excel, CSV et glTF.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">Sur quels systèmes fonctionne-t-il ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">Windows (aussi sans droits d'administrateur), macOS (Intel et Apple Silicon) et Linux (.deb, .rpm et AppImage), ainsi que dans un navigateur moderne.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">Est-il adapté à la pratique néerlandaise ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">Oui. Cotation selon NEN 3576, symboles d'ouverture selon VKG et EN 12519, profilés bois aux dimensions KVT et IFC avec les propriétés ILS Houten Kozijnen v2.0.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">Que peut en faire un assistant IA ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">L'application intègre un assistant IA qui crée et modifie des menuiseries à partir de ce que vous tapez. Vous le reliez à OpenAI, Ollama ou un autre point d'accès compatible. Il n'y a pas encore de serveur MCP pour des assistants externes.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.curtainwall.q">Puis-je aussi dessiner un mur-rideau ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.curtainwall.a">Oui, dans l'application de bureau. La version navigateur ne le permet pas encore.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ready.q">Puis-je déjà commander des menuiseries avec ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ready.a">C'est une version précoce (0.6). Vérifiez cotes et listes avant de commander ou de débiter, et signalez les erreurs sur GitHub.</p></div>
+      </details>
     </div>
-    <p class="more-row" data-fold-for="ofr-features" hidden>
-      <button type="button" class="btn btn-secondary btn-lg more-btn" aria-expanded="false" aria-controls="ofr-features">
-        <span data-fold-show class="more-label"><span data-i18n="features.showAll">Afficher toutes les fonctionnalités</span> <span class="more-count" data-fold-count></span></span>
-        <span data-fold-hide hidden data-i18n="features.showLess">Afficher moins</span>
-        <svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg>
-      </button>
-    </p>
   </div></section>
 
-  <section class="section"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="tech.title">Technologie</h2>
-      </div>
-      <div class="panel-split-body">
-        <div class="chip-row chip-row-light tech-chips">
-          <span class="chip">Rust</span>
-          <span class="chip">Tauri 2</span>
-          <span class="chip">Svelte 5</span>
-          <span class="chip">Three.js</span>
-          <span class="chip">WebAssembly</span>
-          <span class="chip">IFC 4</span>
-        </div>
-        <p data-i18n="tech.desc">Un noyau Rust (ofs-core) pour le modèle de données, la géométrie et tous les exports (IFC, DXF, PDF, glTF, XLSX, CSV), une interface Svelte 5 avec Three.js pour la 3D, et Tauri 2 pour Windows, macOS et Linux. Le même noyau tourne en WebAssembly dans la version navigateur.</p>
-      </div>
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Technologie</h2><p data-i18n="tech.sub">Pour ceux qui veulent savoir comment c'est construit.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.rust.title">Noyau Rust</h4><p data-i18n="tech.rust.desc">Le modèle de données, la géométrie et tous les exports (IFC, DXF, PDF, glTF, XLSX, CSV) sont dans une seule bibliothèque Rust, avec plus de cent tests.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.tauri.title">Tauri 2</h4><p data-i18n="tech.tauri.desc">Une fine couche native pour Windows, macOS et Linux, avec de petits installateurs.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="tech.svelte.title">Svelte 5 · Vite</h4><p data-i18n="tech.svelte.desc">La même interface sur le bureau et dans le navigateur, avec un éditeur 2D en SVG.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h4 data-i18n="tech.three.title">Three.js</h4><p data-i18n="tech.three.desc">La vue 3D avec profilés extrudés et vitrage, directement dans l'application.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h4 data-i18n="tech.wasm.title">WebAssembly</h4><p data-i18n="tech.wasm.desc">Le noyau Rust tourne en WebAssembly dans la version navigateur.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h4 data-i18n="tech.ifc.title">IFC 4 · ILS</h4><p data-i18n="tech.ifc.desc">Échange ouvert avec les logiciels BIM, selon l'ILS Houten Kozijnen v2.0 néerlandais.</p></div></div>
     </div>
   </div></section>
+
 
   <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
   <div data-release-notes="open-frame-studio"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Afficher toutes les versions</span><span data-rel-hide hidden data-i18n="releases.showLess">Afficher seulement les trois dernières</span></button>
+    <a href="https://github.com/OpenAEC-Foundation/open-frame-studio/releases" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.github">Toutes les versions sur GitHub</span></a>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">Open <span class="accent">Frame</span> Studio</h2>
       <div class="btn-group">
-        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="download.title">Télécharger</span></a>
-        <a href="https://open-frame-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Ouvrir dans votre navigateur</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/open-frame-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="cta.github">Voir sur GitHub</span></a>
+        <a href="https://open-frame-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Ouvrir dans le navigateur</span></a>
+        <a href="#download" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Télécharger</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/open-frame-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Code source</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -418,53 +598,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-
-  <script>
-    (function(){
-      const track = document.getElementById('sliderTrack');
-      const dots = document.getElementById('sliderDots');
-      const slides = track.children.length;
-      let current = 0;
-      for(let i=0;i<slides;i++){
-        const d = document.createElement('button');
-        d.className = 'slider-dot' + (i===0?' active':'');
-        d.onclick = ()=>slideTo(i);
-        dots.appendChild(d);
-      }
-      window.slideMove = function(dir){slideTo(current+dir);};
-      window.slideTo = function(i){
-        current = (i+slides)%slides;
-        track.style.transform = 'translateX(-'+current*100+'%)';
-        dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-      };
-    })();
-  </script>
-<script>
-  // Lange lijsten: de eerste paar zichtbaar, de rest achter de vaste "Toon alles"-knop. Zonder JavaScript staat alles open.
-  document.querySelectorAll('[data-fold]').forEach(function (grid) {
-    var n = +grid.getAttribute('data-fold');
-    var items = Array.prototype.slice.call(grid.children);
-    var row = document.querySelector('[data-fold-for="' + grid.id + '"]');
-    if (!row || items.length <= n) return;
-    var btn = row.querySelector('.more-btn');
-    var show = btn.querySelector('[data-fold-show]');
-    var hide = btn.querySelector('[data-fold-hide]');
-    btn.querySelector('[data-fold-count]').textContent = '(' + items.length + ')';
-    function zet(open) {
-      items.forEach(function (c, i) { c.style.display = (!open && i >= n) ? 'none' : ''; });
-      show.hidden = open; hide.hidden = !open;
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    }
-    zet(false);
-    row.hidden = false;
-    btn.addEventListener('click', function () {
-      var open = btn.getAttribute('aria-expanded') !== 'true';
-      zet(open);
-      if (!open) grid.scrollIntoView({ block: 'start' });
-    });
-  });
-</script>
-<script src="/shared/downloads.js?v=20261015"></script>
-<script src="/shared/i18n.js?v=20261015"></script>
+  <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

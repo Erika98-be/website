@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Y-app — L'application tout-en-un pour votre entreprise — OpenAEC Foundation</title>
-  <meta name="description" content="L'Everything-app pour votre entreprise — e-mail, ERP, factures, feuilles de temps, projets, communication et plus encore dans un seul outil. Multi-tenant …">
+  <title>Y-app — OpenAEC Foundation</title>
+  <meta name="description" content="Espace de travail gratuit et open source pour ERPNext : projets, planning, heures, e-mail, agenda et factures dans une seule vue, sur votre propre site…">
   <link rel="canonical" href="https://open-aec.com/fr/y-app/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/y-app/">
@@ -15,23 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/y-app/">
   <!-- hreflang:end -->
 
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="Y-app — L'application tout-en-un pour votre entreprise — OpenAEC Foundation">
-  <meta property="og:description" content="L'Everything-app pour votre entreprise — e-mail, ERP, factures, feuilles de temps, projets, communication et plus encore dans un seul outil. Multi-tenant …">
+  <meta property="og:title" content="Y-app — OpenAEC Foundation">
+  <meta property="og:description" content="Espace de travail gratuit et open source pour ERPNext : projets, planning, heures, e-mail, agenda et factures dans une seule vue, sur votre propre site…">
   <meta property="og:url" content="https://open-aec.com/fr/y-app/">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/y-app.jpeg">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/y-app-hero.png">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Y-app — De Everything-app voor je bedrijf">
-  <meta name="twitter:description" content="L'Everything-app pour votre entreprise — e-mail, ERP, factures, feuilles de temps, projets, communication et plus encore dans un seul outil. Multi-tenant …">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/y-app.jpeg">
+  <meta name="twitter:title" content="Y-app">
+  <meta name="twitter:description" content="Espace de travail gratuit et open source pour ERPNext : projets, planning, heures, e-mail, agenda et factures dans une seule vue, sur votre propre site…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/y-app-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -41,42 +39,134 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
-
-  <!-- Schema.org -->
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Y-app",
-    "alternateName": "Y-app — Everything-app voor je bedrijf",
     "applicationCategory": "BusinessApplication",
-    "operatingSystem": "Web (browser)",
-    "url": "https://y-app.impertio.app",
-    "description": "Multi-tenant ERPNext-werkomgeving. E-mail, ERP, facturen, uren, projecten, agenda, NextCloud-bestanden, Claude AI en tientallen bedrijfsmodules in één web-app. Eén Y-app account, meerdere ERPNext-instances met versleutelde credential-opslag.",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
-    "publisher": { "@type": "Organization", "name": "OpenAEC Foundation", "url": "https://open-aec.com" }
+    "applicationSubCategory": "ERP-werkplek / bedrijfsvoering",
+    "operatingSystem": "Web",
+    "url": "https://open-aec.com/y-app/",
+    "license": "https://opensource.org/licenses/MIT",
+    "description": "Free, open-source workspace for ERPNext 16, installed as a Frappe app on your own site: dashboard, projects, tasks and a planning board, time tracking with approval, mileage log, leave and expense claims (with HRMS), mail sorted by project and customer, shared calendar, messages, quotations, invoices and a financial dashboard. Uses the existing ERPNext login and permissions; data stays in the ERPNext database.",
+    "featureList": [
+      "Dashboard naar keuze",
+      "Projectoverzicht",
+      "Taken en subtaken",
+      "Planningsbord",
+      "Eigen to-do's",
+      "Notities en vergadernotities",
+      "Uren boeken",
+      "Urenstaten goedkeuren",
+      "Kilometerregistratie",
+      "Verlof en overuren",
+      "Onkostenvergoedingen",
+      "Mail per project en klant",
+      "Ondertekening in huisstijl",
+      "Gedeelde agenda",
+      "Koppeling met je mailserver",
+      "Berichten met collega's",
+      "Contacten",
+      "Leads, offertes en opdrachten",
+      "Facturen en openstaande posten",
+      "Financieel dashboard",
+      "Werkgever en medewerker",
+      "Kennisbank",
+      "Overal zoeken"
+    ],
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/y-app-hero.png",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    },
+    "isAccessibleForFree": true,
+    "keywords": "ERPNext, Frappe, werkplek, projecten, planning, urenregistratie, timesheets, kilometerregistratie, mail, agenda, facturen, bedrijfsvoering, open source",
+    "sameAs": [
+      "https://github.com/OpenAEC-Foundation/y_next"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "OpenAEC Foundation",
+      "url": "https://open-aec.com"
+    }
   }
   </script>
-
-  <style>
-    /* Hoe het werkt: vier genummerde stappen */
-    .steps .feature .step-num { width: 40px; height: 40px; border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: var(--sp-4); font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; color: var(--amber); background: linear-gradient(145deg, rgba(217,119,6,0.18), rgba(217,119,6,0.05)); border: 1px solid rgba(217,119,6,0.22); }
-
-    /* Employer vs Employee */
-    .mode-wrap { max-width: 900px; margin: 0 auto; background: linear-gradient(180deg, #FFFFFF, var(--blueprint-white)); border: 1px solid rgba(42,42,50,0.07); border-radius: var(--radius-lg); box-shadow: 0 1px 0 #FFFFFF inset, var(--shadow-float); overflow-x: auto; }
-    .mode-table { width: 100%; border-collapse: collapse; }
-    .mode-table th, .mode-table td { padding: 14px 18px; text-align: left; border-bottom: 1px solid rgba(42,42,50,0.07); color: var(--text-on-light); font-size: 0.95rem; }
-    .mode-table th { font-family: var(--font-code); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--deep-forge); background: rgba(217,119,6,0.06); }
-    .mode-table th:not(:first-child), .mode-table td:not(:first-child) { text-align: center; width: 22%; }
-    .mode-table tr:last-child td { border-bottom: 0; }
-    .mode-table td.yes, .mode-table td.no { font-weight: 600; }
-    .mode-table td.yes { color: #B45309; }
-    .mode-table td.no { color: var(--text-on-light); opacity: 0.55; }
-
-    .tech-chips { margin-bottom: var(--sp-6); }
-    .tech-desc { color: var(--text-on-light); font-size: 1.02rem; line-height: 1.7; max-width: 760px; margin: 0 auto; text-align: center; }
-    @media (max-width: 640px) { .mode-table th, .mode-table td { padding: 10px 12px; font-size: 0.85rem; } }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, op de server: Y-app is een app voor een bestaande ERPNext 16-site. Je beheerder installeert hem met bench get-app en install-app (zie de README). Daarna open je hem in de browser onder /y-next en log je in met je ERPNext-account. Er is nog geen openbare demo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. Y-app is open source onder de MIT-licentie. Je betaalt alleen voor je eigen hosting van ERPNext, als je die niet zelf doet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Waar wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gewoon in je ERPNext-database. Y-app leest en schrijft via de standaard-API van ERPNext; er is geen aparte database, geen apart account en geen externe server."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In elke moderne browser, ook op tablet en telefoon. De server heeft Frappe 16 en ERPNext 16 nodig; meer niet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Heb ik ERPNext nodig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Y-app is een andere, eenvoudigere voorkant voor ERPNext. Al je projecten, uren en facturen staan in ERPNext; Y-app maakt ze makkelijker te gebruiken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ziet elke medewerker alles?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Y-app volgt de rollen en rechten van ERPNext. Een medewerker ziet zijn eigen taken, uren en verlof; een werkgever ziet ook financiën, goedkeuringen en personeel."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik er Word- en Excel-bestanden mee bewerken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet in versie 0.40.0. In de ontwikkelversie zitten al Calc en Writer voor .xlsx en .docx, plus Open CAD Studio, Open Planner Studio en een IFC-viewer; die komen in een volgende release."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is er ook een gehoste versie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Y-app begon als gehoste dienst waarin je meerdere ERPNext-omgevingen koppelt. Die versie wordt niet openbaar verspreid. De open versie op deze pagina installeer je op je eigen ERPNext-site; neem contact op als je hulp wilt bij de installatie."
+        }
+      }
+    ]
+  }
+  </script>
 
   <meta name="i18n-static" content="fr">
   <!-- schema:start -->
@@ -112,7 +202,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "fr",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/fr/y-app/#breadcrumb"
         }
@@ -141,7 +231,7 @@
   <!-- schema:end -->
 </head>
 <body class="page-panels">
-  <div id="shared-nav"><!-- nav:start -->
+    <div id="shared-nav"><!-- nav:start -->
 <nav class="navbar">
   <div class="nav-container">
     <a href="/fr/" class="nav-brand" aria-label="OpenAEC — home"><img class="nav-logo" src="/shared/assets/logo/openaec-symbol-v2-transparent.svg" alt="" width="28" height="32"><span class="nav-word">Open<span class="accent">AEC</span></span></a>
@@ -171,361 +261,237 @@
   </div>
 </nav>
 <!-- nav:end --></div>
-  <script src="/shared/nav.js?v=20261015"></script>
-  <script src="/shared/feedback.js?v=20261022" defer></script>
+<script src="/shared/nav.js?v=20261015"></script>
+<script src="/shared/feedback.js?v=20261022" defer></script>
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">Écosystème OpenAEC</p>
-      <h1>Y-<span class="accent">app</span></h1>
-      <p class="lead" data-i18n="header.desc">L'Everything-app pour votre entreprise — e-mail, ERP, factures, feuilles de temps, projets, communication et plus encore dans un seul outil. <strong>Multi-tenant : un compte, plusieurs instances ERPNext.</strong></p>
+      <p class="pill-label" data-i18n="header.label">Gestion d'entreprise</p>
+      <h1 data-i18n="header.title">Y-<span class="accent">app</span></h1>
+      <p class="pp-tagline" data-i18n="header.tagline">Toute votre journée de travail sur un seul écran : projets, heures, e-mail et agenda</p>
+      <p class="lead" data-i18n="header.desc">Y-app est un espace de travail clair au-dessus d'ERPNext. Vous l'installez sur votre propre site ERPNext et vous vous connectez avec votre compte existant ; vos données restent où elles sont.</p>
       <div class="btn-group">
-        <a href="https://y-app.impertio.app" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Démo en direct</span></a>
-        <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="cta.github">Dépôt GitHub</span></a>
+        <a href="#features" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Voir les fonctions</span></a>
+        <a href="#faq" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="header.faqBtn">Questions fréquentes</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/y_next" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Code source</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg><span data-i18n="header.badge">Beta</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg><span data-i18n="header.category">Everything-app</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg>Multi-tenant</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg>AES-256-GCM</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg><span>ERPNext 16 · Frappe 16</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="header.proof2">Néerlandais, anglais, allemand</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg><span data-i18n="header.proof3">Sur votre propre serveur</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg><span data-i18n="header.proof4">Open source (MIT)</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/y-app.jpeg" alt="Y-app — multi-tenant ERPNext werkomgeving"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/y-app-2.png" alt="Y-app — e-mail, ERP en projecten in één app"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/y-app-3.png" alt="Y-app — dashboard met financiële overzichten"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/y-app-hero.png" width="1920" height="1200" alt="Tableau de bord de Y-app avec saisie des heures, dernières saisies, projets en cours avec avancement, mes tâches et à-faire" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/y-app-feat-mail.png" width="1200" height="750" decoding="async" alt="Boîte de réception de Y-app avec des messages liés aux projets et un e-mail ouvert montrant le lien vers son projet" data-i18n="hl.mail.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/y-app-feat-planning.png" width="1200" height="750" decoding="async" alt="Tableau de planning de Y-app avec les tâches de la semaine en barres par collaborateur" data-i18n="hl.planning.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/y-app-feat-projecten.png" width="1200" height="750" decoding="async" alt="Liste des projets de Y-app avec un projet ouvert : client, chef de projet, avancement, liens et tâches" data-i18n="hl.projecten.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/y-app-feat-uren.png" width="1200" height="750" decoding="async" alt="Saisie des heures de Y-app avec le formulaire et les heures de la semaine par jour et par projet" data-i18n="hl.uren.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/y-app-feat-agenda.png" width="1200" height="750" decoding="async" alt="Agenda hebdomadaire de Y-app avec rendez-vous, tâches et les sources et collègues à afficher ou masquer" data-i18n="hl.agenda.alt" data-i18n-attr="alt"></div>
         </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige screenshot">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende screenshot">&rsaquo;</button>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap"><div class="container">
-    <div class="section-head">
-      <h2 data-i18n="howitworks.title">Comment ça <span class="accent">fonctionne</span></h2>
-      <p data-i18n="howitworks.intro">Y-app tourne sur votre propre serveur (ou via impertio.app). L'inscription autonome, la gestion des instances et le changement de mode se font entièrement dans l'application — pas besoin de ticket IT.</p>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="notice.text">Version alpha : de nombreux modules sont encore en développement. Essayez-la d'abord sur un site de test.</span></p>
+  </div>
+
+  <nav class="pp-subnav" aria-label="Sur cette page" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Fonctions</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Nouveautés</a>
+      <a href="#faq" data-i18n="subnav.faq">FAQ</a>
+      <a href="#releases" data-i18n="subnav.releases">Versions</a>
     </div>
-    <div class="features features-4 steps">
-      <div class="feature">
-        <div class="step-num">1</div>
-        <h4 data-i18n="howitworks.step1.title">Créez un compte Y-app</h4>
-        <p data-i18n="howitworks.step1.desc">Inscription autonome avec e-mail et mot de passe. Bcrypt à 12 rounds, cookies de session HttpOnly, cache d'identifiants limité à la session.</p>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Fonctions</p><h2 data-i18n="features.heading">Ce dont vous avez besoin chaque jour, au même endroit</h2><p data-i18n="features.sub">Commencez par les points forts ou choisissez un thème.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Fonctions par thème" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Points forts</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-werk" data-tab="werk" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-gantt"/></svg><span data-i18n="tabs.werk">Projets et planning</span> <span class="pp-tab-count" data-count="werk"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-uren" data-tab="uren" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clock"/></svg><span data-i18n="tabs.uren">Heures et personnel</span> <span class="pp-tab-count" data-count="uren"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-contact" data-tab="contact" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg><span data-i18n="tabs.contact">E-mail et agenda</span> <span class="pp-tab-count" data-count="contact"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-geld" data-tab="geld" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg><span data-i18n="tabs.geld">Finances</span> <span class="pp-tab-count" data-count="geld"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Toutes les fonctions</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/y-app-feat-mail.png" width="1200" height="750" loading="lazy" decoding="async" alt="Boîte de réception de Y-app avec des messages liés aux projets et un e-mail ouvert montrant le lien vers son projet" data-i18n="hl.mail.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.mail.kicker">E-mail</span></p>
+            <h3 data-i18n="hl.mail.title">Les e-mails d'un projet restent avec le projet</h3>
+            <p data-i18n="hl.mail.desc">Vos e-mails arrivent dans ERPNext et Y-app les classe par projet, client, devis ou facture. Un collègue retrouve toute la conversation, même en votre absence.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/y_next#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/y-app-feat-planning.png" width="1200" height="750" loading="lazy" decoding="async" alt="Tableau de planning de Y-app avec les tâches de la semaine en barres par collaborateur" data-i18n="hl.planning.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.planning.kicker">Planning</span></p>
+            <h3 data-i18n="hl.planning.title">Voyez d'un coup d'œil qui travaille sur quoi</h3>
+            <p data-i18n="hl.planning.desc">Le tableau de planning place les tâches de chaque collaborateur sur une ligne de temps, par semaine ou sur plusieurs semaines. Filtrez par société ou service, ou passez à un tableau kanban.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/y_next#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/y-app-feat-projecten.png" width="1200" height="750" loading="lazy" decoding="async" alt="Liste des projets de Y-app avec un projet ouvert : client, chef de projet, avancement, liens et tâches" data-i18n="hl.projecten.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.projecten.kicker">Projets</span></p>
+            <h3 data-i18n="hl.projecten.title">Tout un projet sur une seule page</h3>
+            <p data-i18n="hl.projecten.desc">Client, chef de projet, avancement et durée en haut ; en dessous les tâches, heures, factures et le planning. Plus besoin de chercher dans des listes séparées d'ERPNext.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/y_next#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/y-app-feat-uren.png" width="1200" height="750" loading="lazy" decoding="async" alt="Saisie des heures de Y-app avec le formulaire et les heures de la semaine par jour et par projet" data-i18n="hl.uren.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.uren.kicker">Heures</span></p>
+            <h3 data-i18n="hl.uren.title">Saisissez vos heures en quelques secondes</h3>
+            <p data-i18n="hl.uren.desc">Choisissez le projet et la tâche, appuyez sur Maintenant et c'est saisi. Votre semaine s'affiche à droite, un jour oublié saute aux yeux. En tant qu'employeur, vous validez les feuilles de temps au même endroit.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/y_next#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/y-app-feat-agenda.png" width="1200" height="750" loading="lazy" decoding="async" alt="Agenda hebdomadaire de Y-app avec rendez-vous, tâches et les sources et collègues à afficher ou masquer" data-i18n="hl.agenda.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">05</span> <span data-i18n="hl.agenda.kicker">Agenda</span></p>
+            <h3 data-i18n="hl.agenda.title">Rendez-vous, tâches et congés dans un seul agenda</h3>
+            <p data-i18n="hl.agenda.desc">L'agenda affiche vos rendez-vous à côté de vos tâches, demandes de congé et, si vous le souhaitez, vos heures. Ajoutez l'agenda d'un collègue pour trouver un créneau commun.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/y_next#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
       </div>
-      <div class="feature">
-        <div class="step-num">2</div>
-        <h4 data-i18n="howitworks.step2.title">Ajoutez des instances ERPNext</h4>
-        <p data-i18n="howitworks.step2.desc">Pour chaque entreprise ou client : URL, nom, couleur et identifiants. Chiffrés immédiatement dans le coffre-fort côté serveur.</p>
-      </div>
-      <div class="feature">
-        <div class="step-num">3</div>
-        <h4 data-i18n="howitworks.step3.title">Basculez via les onglets internes</h4>
-        <p data-i18n="howitworks.step3.desc">Pas d'onglets de navigateur : basculez entre les instances directement dans Y-app. Chaque onglet conserve son propre état de routage, sa session ERPNext et son cache.</p>
-      </div>
-      <div class="feature">
-        <div class="step-num">4</div>
-        <h4 data-i18n="howitworks.step4.title">Mode employeur ou employé</h4>
-        <p data-i18n="howitworks.step4.desc">Basculez par instance entre l'ensemble complet des modules (Employeur) ou un ensemble restreint pour le personnel (Employé).</p>
-      </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.dashboard.title">Tableau de bord à votre façon</h3><p data-i18n="f.dashboard.desc">Heures, kilomètres, projets, tâches, à-faire et anniversaires ; vous choisissez les blocs affichés.</p></div></div></li>
+        <li class="pp-tile" data-cats="werk"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.projects.title">Vue des projets</h3><p data-i18n="f.projects.desc">Pour chaque projet : client, avancement, tâches, heures, factures et planning.</p></div></div></li>
+        <li class="pp-tile" data-cats="werk"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.tasks.title">Tâches et sous-tâches</h3><p data-i18n="f.tasks.desc">Avec statut, priorité, échéance et responsable ; recherche et filtres.</p></div></div></li>
+        <li class="pp-tile" data-cats="werk"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-gantt"/></svg></div><div><h3 data-i18n="f.board.title">Tableau de planning</h3><p data-i18n="f.board.desc">Tâches par collaborateur sur une ligne de temps ou en kanban, par semaine ou sur plusieurs.</p></div></div></li>
+        <li class="pp-tile" data-cats="werk"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h3 data-i18n="f.todo.title">À-faire personnels</h3><p data-i18n="f.todo.desc">Une liste personnelle à côté des tâches de projet, avec priorité et date.</p></div></div></li>
+        <li class="pp-tile" data-cats="werk"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg></div><div><h3 data-i18n="f.notes.title">Notes et comptes rendus</h3><p data-i18n="f.notes.desc">Consignez décisions et actions à côté de votre travail.</p></div></div></li>
+        <li class="pp-tile" data-cats="uren"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clock"/></svg></div><div><h3 data-i18n="f.hours.title">Saisir les heures</h3><p data-i18n="f.hours.desc">Par projet et tâche, avec un bouton Maintenant pour le début et la fin.</p></div></div></li>
+        <li class="pp-tile" data-cats="uren"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-signature"/></svg></div><div><h3 data-i18n="f.approve.title">Valider les feuilles de temps</h3><p data-i18n="f.approve.desc">En tant qu'employeur, vous validez les heures de l'équipe et consultez des rapports.</p></div></div></li>
+        <li class="pp-tile" data-cats="uren"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-route"/></svg></div><div><h3 data-i18n="f.km.title">Relevé kilométrique</h3><p data-i18n="f.km.desc">Trajets avec départ, destination et projet, aller simple ou aller-retour.</p></div></div></li>
+        <li class="pp-tile" data-cats="uren"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-calendar"/></svg></div><div><h3 data-i18n="f.leave.title">Congés et heures supplémentaires</h3><p data-i18n="f.leave.desc">Demander et valider des congés ; fonctionne dès que HRMS est installé.</p></div></div></li>
+        <li class="pp-tile" data-cats="uren geld"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg></div><div><h3 data-i18n="f.expenses.title">Notes de frais</h3><p data-i18n="f.expenses.desc">Soumettre et suivre des notes de frais, avec HRMS.</p></div></div></li>
+        <li class="pp-tile" data-cats="contact"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg></div><div><h3 data-i18n="f.mail.title">E-mail par projet et client</h3><p data-i18n="f.mail.desc">Lire, écrire, brouillons et pièces jointes, classés par projet, client, devis et facture.</p></div></div></li>
+        <li class="pp-tile" data-cats="contact"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.signature.title">Signature à vos couleurs</h3><p data-i18n="f.signature.desc">Logo, adresse et charte de votre société sous chaque e-mail, depuis ERPNext.</p></div></div></li>
+        <li class="pp-tile" data-cats="contact"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-calendar"/></svg></div><div><h3 data-i18n="f.calendar.title">Agenda partagé</h3><p data-i18n="f.calendar.desc">Rendez-vous, tâches, congés et agendas des collègues ; mois, semaine ou jour.</p></div></div></li>
+        <li class="pp-tile" data-cats="contact"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.mailserver.title">Lien avec votre serveur de messagerie</h3><p data-i18n="f.mailserver.desc">Agendas, invitations, réponses d'absence et liens iCal via JMAP et CalDAV.</p></div></div></li>
+        <li class="pp-tile" data-cats="contact"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h3 data-i18n="f.messages.title">Messages entre collègues</h3><p data-i18n="f.messages.desc">Discutez dans votre propre site ERPNext, avec les utilisateurs existants.</p></div></div></li>
+        <li class="pp-tile" data-cats="contact"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><h3 data-i18n="f.contacts.title">Contacts</h3><p data-i18n="f.contacts.desc">Clients, fournisseurs et collègues dans une seule liste.</p></div></div></li>
+        <li class="pp-tile" data-cats="geld werk"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.sales.title">Prospects, devis et commandes</h3><p data-i18n="f.sales.desc">Du premier contact au devis jusqu'à la confirmation de commande.</p></div></div></li>
+        <li class="pp-tile" data-cats="geld"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg></div><div><h3 data-i18n="f.invoices.title">Factures et encours</h3><p data-i18n="f.invoices.desc">Factures de vente et d'achat, avec les formats d'impression de votre site.</p></div></div></li>
+        <li class="pp-tile" data-cats="geld"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.stats.title">Tableau de bord financier</h3><p data-i18n="f.stats.desc">Chiffre d'affaires mensuel, factures en attente et heures en graphiques.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><h3 data-i18n="f.roles.title">Employeur et employé</h3><p data-i18n="f.roles.desc">Chaque employé voit ce qui correspond à son rôle dans ERPNext ; les droits restent déterminants.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.wiki.title">Base de connaissances</h3><p data-i18n="f.wiki.desc">Méthodes et règles de votre bureau, dès que Wiki est installé.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h3 data-i18n="f.search.title">Recherche globale</h3><p data-i18n="f.search.desc">Trouvez une facture, un devis ou un projet depuis la barre latérale.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel">
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
     <div class="panel-split">
       <div class="panel-split-text">
-        <p class="pill-label">Everything-app</p>
-        <h2 data-i18n="explainer1.title">Qu'est-ce que Y-app ?</h2>
-        <p data-i18n="explainer1.intro">Y-app n'est ni un outil de chat ni un frontend ERP autonome. C'est une <strong>« Everything-app »</strong> — un espace de travail ERPNext multi-tenant qui regroupe toute votre pile métier dans une seule application web. E-mail (IMAP/SMTP + Office 365), ERP (ERPNext), fichiers (NextCloud), chat (Teams, NextCloud Talk, Telegram), agenda, un assistant IA (Claude) et des dizaines de modules métier — tous accessibles depuis un seul onglet de navigateur.</p>
+        <p class="pill-label" data-i18n="whatsnew.label">Nouveau dans la v0.40.0</p>
+        <h2 data-i18n="whatsnew.title">Y-app comme application sur <span>votre propre site</span></h2>
+        <p data-i18n="whatsnew.desc">La première version que vous installez vous-même sur ERPNext. Y-app tourne désormais sur le même site que vos données, avec votre connexion et vos droits existants.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/y_next/releases/tag/v0.40.0" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaChangelog">Toutes les notes de version</span></a>
+        </div>
       </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><p data-i18n="explainer1.li1"><strong>Multi-tenant</strong> Connectez plusieurs instances ERPNext à un seul compte Y-app</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><p data-i18n="explainer1.li2"><strong>Coffre-fort chiffré</strong> Identifiants stockés côté serveur dans une base SQLite avec AES-256-GCM, PBKDF2-SHA256 (210k itérations)</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><p data-i18n="explainer1.li3"><strong>Pas besoin d'onglets de navigateur</strong> Basculez entre les instances via des onglets internes à l'application, chacun avec son propre routage et sa propre session</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><p data-i18n="explainer1.li4"><strong>Mode employeur ou employé</strong> Restreignez les modules par instance via un menu déroulant</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><p data-i18n="explainer1.li5"><strong>i18n complète NL/EN</strong> Plus de 1190 traductions, modifiables à la volée</p></div></li>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h4 data-i18n="whatsnew.items.install.title">À installer vous-même</h4><p data-i18n="whatsnew.items.install.desc">Deux commandes sur votre bench et Y-app est sur votre site, sous /y-next.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="whatsnew.items.only.title">Seul ERPNext est nécessaire</h4><p data-i18n="whatsnew.items.only.desc">Congés, notes de frais et base de connaissances s'activent d'eux-mêmes si HRMS ou Wiki est installé.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg></div><div><h4 data-i18n="whatsnew.items.mailserver.title">Lien avec votre serveur de messagerie</h4><p data-i18n="whatsnew.items.mailserver.desc">Agendas du serveur de messagerie, invitations, réponses d'absence et liens iCal.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-signature"/></svg></div><div><h4 data-i18n="whatsnew.items.signature.title">Signature depuis ERPNext</h4><p data-i18n="whatsnew.items.signature.desc">Vos coordonnées plus le logo, le site, l'adresse et la charte de votre société sous chaque e-mail.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h4 data-i18n="whatsnew.items.yours.title">Configuré pour votre entreprise</h4><p data-i18n="whatsnew.items.yours.desc">Formats d'impression, boîtes partagées et charte viennent de votre propre site.</p></div></li>
       </ul>
     </div>
   </section>
 
-  <section class="section" id="modules"><div class="container">
-    <div class="section-head">
-      <h2 data-i18n="modules.title">Qu'y a-t-il à l'intérieur ? — <span class="accent">les modules</span></h2>
-      <p data-i18n="modules.intro">Y-app regroupe des dizaines de modules répartis sur sept domaines. Chaque module est connecté directement à l'instance ERPNext active — pas de connexions séparées, pas d'URL séparées.</p>
-    </div>
-    <div class="mod-tabs" role="tablist" hidden>
-      <button type="button" class="mod-tab" role="tab" id="tab-communicatie" aria-controls="mod-communicatie" aria-selected="true"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="modules.communicatie.title">Communication &amp; Collaboration</span> <span class="mod-count">5</span></button>
-      <button type="button" class="mod-tab" role="tab" id="tab-projecten" aria-controls="mod-projecten" aria-selected="false"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg><span data-i18n="modules.projecten.title">Projets &amp; Tâches</span> <span class="mod-count">9</span></button>
-      <button type="button" class="mod-tab" role="tab" id="tab-hr" aria-controls="mod-hr" aria-selected="false"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg><span data-i18n="modules.hr.title">RH &amp; Personnel</span> <span class="mod-count">5</span></button>
-      <button type="button" class="mod-tab" role="tab" id="tab-financieel" aria-controls="mod-financieel" aria-selected="false"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg><span data-i18n="modules.financieel.title">Finance &amp; Comptabilité</span> <span class="mod-count">13</span></button>
-      <button type="button" class="mod-tab" role="tab" id="tab-bestanden" aria-controls="mod-bestanden" aria-selected="false"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg><span data-i18n="modules.bestanden.title">Fichiers &amp; Connaissances</span> <span class="mod-count">2</span></button>
-      <button type="button" class="mod-tab" role="tab" id="tab-agenda" aria-controls="mod-agenda" aria-selected="false"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-calendar"/></svg><span data-i18n="modules.agenda.title">Agenda</span> <span class="mod-count">3</span></button>
-      <button type="button" class="mod-tab" role="tab" id="tab-systeem" aria-controls="mod-systeem" aria-selected="false"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg><span data-i18n="modules.systeem.title">Système &amp; DevOps</span> <span class="mod-count">6</span></button>
-    </div>
-    <div class="mod-group" id="mod-communicatie" role="tabpanel" aria-labelledby="tab-communicatie">
-      <h3><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="modules.communicatie.title">Communication &amp; Collaboration</span></h3>
-      <div class="features">
-        <div class="feature"><h4 data-i18n="modules.communicatie.webmail.title">Webmail</h4><p data-i18n="modules.communicatie.webmail.desc">Client IMAP/SMTP complet avec cache, gestion des dossiers, pièces jointes, éditeur de texte enrichi, modèles et signatures. Authentification par mot de passe ou OAuth2 Office 365.</p></div>
-        <div class="feature"><h4 data-i18n="modules.communicatie.messenger.title">Messenger</h4><p data-i18n="modules.communicatie.messenger.desc">Chat multiplateforme : NextCloud Talk, MS Teams (Graph API), Telegram (Bot API). Une seule vue pour toutes les conversations.</p></div>
-        <div class="feature"><h4 data-i18n="modules.communicatie.contacten.title">Contacts</h4><p data-i18n="modules.communicatie.contacten.desc">Base de contacts fusionnée à partir d'ERPNext et de l'historique des e-mails. Une seule source pour les clients, fournisseurs et collègues.</p></div>
-        <div class="feature"><h4 data-i18n="modules.communicatie.brieven.title">Courriers</h4><p data-i18n="modules.communicatie.brieven.desc">Génération de documents avec modèles : courrier standard, devis, confirmation de commande, rappel de paiement.</p></div>
-        <div class="feature"><h4 data-i18n="modules.communicatie.vergadernotulen.title">Comptes rendus de réunion</h4><p data-i18n="modules.communicatie.vergadernotulen.desc">Stockage local avec ordre du jour, actions à mener, échéances et liens vers les projets et tâches.</p></div>
-      </div>
-    </div>
-    <div class="mod-group" id="mod-projecten" role="tabpanel" aria-labelledby="tab-projecten">
-      <h3><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg><span data-i18n="modules.projecten.title">Projets &amp; Tâches</span></h3>
-      <div class="features">
-        <div class="feature"><h4 data-i18n="modules.projecten.kaartweergave.title">Projets avec vue carte</h4><p data-i18n="modules.projecten.kaartweergave.desc">Carte Leaflet avec localisation des projets, suivi du statut et compteurs de tâches par projet.</p></div>
-        <div class="feature"><h4 data-i18n="modules.projecten.taken.title">Tâches</h4><p data-i18n="modules.projecten.taken.desc">CRUD complet avec statut, priorité, tri, filtrage et attribution au personnel.</p></div>
-        <div class="feature"><h4 data-i18n="modules.projecten.subtaken.title">Sous-tâches</h4><p data-i18n="modules.projecten.subtaken.desc">Structure de tâches imbriquées pour décomposer des lots de travail plus complexes.</p></div>
-        <div class="feature"><h4 data-i18n="modules.projecten.planning.title">Planning (Gantt)</h4><p data-i18n="modules.projecten.planning.desc">Vue par semaine ou multi-semaines avec glisser-déposer, filtre par membre du personnel, couleurs de priorité et intégration des jours fériés.</p></div>
-        <div class="feature"><h4 data-i18n="modules.projecten.offertes.title">Devis</h4><p data-i18n="modules.projecten.offertes.desc">Vue d'ensemble des devis avec filtres et vue détaillée, connectée directement à Quotation ERPNext.</p></div>
-        <div class="feature"><h4 data-i18n="modules.projecten.verkooporders.title">Commandes clients</h4><p data-i18n="modules.projecten.verkooporders.desc">Confirmations de commande et suivi du statut — du devis au bon de livraison.</p></div>
-        <div class="feature"><h4 data-i18n="modules.projecten.leveringsnotas.title">Bons de livraison</h4><p data-i18n="modules.projecten.leveringsnotas.desc">Statut de livraison et lien client pour la planification des expéditions et de la logistique.</p></div>
-        <div class="feature"><h4 data-i18n="modules.projecten.leads.title">Leads</h4><p data-i18n="modules.projecten.leads.desc">Gestion et qualification des leads, avec actions de suivi et conversion en opportunité.</p></div>
-        <div class="feature"><h4 data-i18n="modules.projecten.todo.title">Todo</h4><p data-i18n="modules.projecten.todo.desc">Liste de tâches personnelle par utilisateur — distincte des tâches de projet.</p></div>
-      </div>
-    </div>
-    <div class="mod-group" id="mod-hr" role="tabpanel" aria-labelledby="tab-hr">
-      <h3><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg><span data-i18n="modules.hr.title">RH &amp; Personnel</span></h3>
-      <div class="features">
-        <div class="feature"><h4 data-i18n="modules.hr.medewerkers.title">Employés</h4><p data-i18n="modules.hr.medewerkers.desc">Vue d'ensemble complète du personnel avec photo, coordonnées, contrats et droits aux congés.</p></div>
-        <div class="feature"><h4 data-i18n="modules.hr.vakantieplanning.title">Planification des congés</h4><p data-i18n="modules.hr.vakantieplanning.desc">Demandes et droits aux congés en vue calendrier, avec enregistrement des heures supplémentaires.</p></div>
-        <div class="feature"><h4 data-i18n="modules.hr.declaraties.title">Notes de frais</h4><p data-i18n="modules.hr.declaraties.desc">Soumettez, approuvez et remboursez les notes de frais — pièces jointes incluses.</p></div>
-        <div class="feature"><h4 data-i18n="modules.hr.tijdregistratie.title">Feuilles de temps</h4><p data-i18n="modules.hr.tijdregistratie.desc">Enregistrez vos heures avec lien vers les projets, facturable/non facturable, un bouton « Maintenant » et un workflow d'approbation.</p></div>
-        <div class="feature"><h4 data-i18n="modules.hr.loonadministratie.title">Paie</h4><p data-i18n="modules.hr.loonadministratie.desc">Charges sociales et rapports de salaires par période.</p></div>
-      </div>
-    </div>
-    <div class="mod-group" id="mod-financieel" role="tabpanel" aria-labelledby="tab-financieel">
-      <h3><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg><span data-i18n="modules.financieel.title">Finance &amp; Comptabilité</span></h3>
-      <div class="features">
-        <div class="feature"><h4 data-i18n="modules.financieel.dashboard.title">Tableau de bord financier</h4><p data-i18n="modules.financieel.dashboard.desc">Graphiques de chiffre d'affaires par projet ou employé, % facturable, meilleurs clients et tendances mensuelles.</p></div>
-        <div class="feature"><h4 data-i18n="modules.financieel.omzet.title">Chiffre d'affaires</h4><p data-i18n="modules.financieel.omzet.desc">Tendances mensuelles du chiffre d'affaires avec comparaison d'une année sur l'autre.</p></div>
-        <div class="feature"><h4 data-i18n="modules.financieel.verkoopfacturen.title">Factures de vente</h4><p data-i18n="modules.financieel.verkoopfacturen.desc">Factures en attente avec analyse de l'ancienneté (0-30, 31-60, 61-90, 90+ jours) et rappels par e-mail.</p></div>
-        <div class="feature"><h4 data-i18n="modules.financieel.inkoopfacturen.title">Factures d'achat</h4><p data-i18n="modules.financieel.inkoopfacturen.desc">Enregistrez, approuvez et payez les factures fournisseurs.</p></div>
-        <div class="feature"><h4 data-i18n="modules.financieel.openstaand.title">Encours</h4><p data-i18n="modules.financieel.openstaand.desc">Analyse des comptes clients avec conditions de paiement et statut des relances.</p></div>
-        <div class="feature"><h4 data-i18n="modules.financieel.kostinzicht.title">Analyse des coûts</h4><p data-i18n="modules.financieel.kostinzicht.desc">Analyse et tendances des coûts par centre de coût ou projet.</p></div>
-        <div class="feature"><h4 data-i18n="modules.financieel.grootboek.title">Grand livre</h4><p data-i18n="modules.financieel.grootboek.desc">Plan comptable et écritures — plan comptable consultable.</p></div>
-        <div class="feature"><h4 data-i18n="modules.financieel.banktransacties.title">Transactions bancaires</h4><p data-i18n="modules.financieel.banktransacties.desc">Relevés bancaires et rapprochement avec les postes en attente.</p></div>
-        <div class="feature"><h4 data-i18n="modules.financieel.boekprogramma.title">Programme de saisie comptable</h4><p data-i18n="modules.financieel.boekprogramma.desc">Saisissez directement les écritures de journal et les écritures diverses.</p></div>
-        <div class="feature"><h4 data-i18n="modules.financieel.btw.title">Déclaration de TVA</h4><p data-i18n="modules.financieel.btw.desc">Calcul trimestriel de la TVA basé sur les comptes fiscaux.</p></div>
-        <div class="feature"><h4 data-i18n="modules.financieel.jaarrekening.title">Comptes annuels</h4><p data-i18n="modules.financieel.jaarrekening.desc">Clôture annuelle, bilan et compte de résultat.</p></div>
-        <div class="feature"><h4 data-i18n="modules.financieel.rentabiliteit.title">Rentabilité</h4><p data-i18n="modules.financieel.rentabiliteit.desc">Analyse de la rentabilité par projet et par client.</p></div>
-        <div class="feature"><h4 data-i18n="modules.financieel.liquiditeit.title">Liquidité</h4><p data-i18n="modules.financieel.liquiditeit.desc">Prévision de trésorerie basée sur les postes en attente et les paiements attendus.</p></div>
-      </div>
-    </div>
-    <div class="mod-group" id="mod-bestanden" role="tabpanel" aria-labelledby="tab-bestanden">
-      <h3><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg><span data-i18n="modules.bestanden.title">Fichiers &amp; Connaissances</span></h3>
-      <div class="features">
-        <div class="feature"><h4 data-i18n="modules.bestanden.nextcloudfiles.title">NextCloud Files</h4><p data-i18n="modules.bestanden.nextcloudfiles.desc">Explorateur de fichiers WebDAV avec navigation par dossiers, aperçu, téléversement/téléchargement et liens de partage.</p></div>
-        <div class="feature"><h4 data-i18n="modules.bestanden.wiki.title">Wiki</h4><p data-i18n="modules.bestanden.wiki.desc">Base de connaissances Markdown avec recherche, publication/dépublication et rendu enrichi.</p></div>
-      </div>
-    </div>
-    <div class="mod-group" id="mod-agenda" role="tabpanel" aria-labelledby="tab-agenda">
-      <h3><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-calendar"/></svg><span data-i18n="modules.agenda.title">Agenda</span></h3>
-      <div class="features">
-        <div class="feature"><h4 data-i18n="modules.agenda.multisource.title">Agenda multi-sources</h4><p data-i18n="modules.agenda.multisource.desc">Événements, tâches, congés et feuilles de temps ERPNext, ainsi que flux iCalendar (ICS) et OAuth2 Office 365 — tout dans un seul agenda.</p></div>
-        <div class="feature"><h4 data-i18n="modules.agenda.view.title">Vue mois, semaine ou jour</h4><p data-i18n="modules.agenda.view.desc">Basculez entre les vues, filtrez par source et planifiez des réunions en un clic.</p></div>
-        <div class="feature"><h4 data-i18n="modules.agenda.jitsimeeting.title">Réunions vidéo Jitsi</h4><p data-i18n="modules.agenda.jitsimeeting.desc">Générez un lien Jitsi Meet directement dans l'invitation — aucun compte supplémentaire requis.</p></div>
-      </div>
-    </div>
-    <div class="mod-group" id="mod-systeem" role="tabpanel" aria-labelledby="tab-systeem">
-      <h3><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg><span data-i18n="modules.systeem.title">Système &amp; DevOps</span></h3>
-      <div class="features">
-        <div class="feature"><h4 data-i18n="modules.systeem.aiagent.title">Agent IA (Claude)</h4><p data-i18n="modules.systeem.aiagent.desc">Assistant IA Claude avec contexte sur vos données ERPNext. Streaming SSE, contexte fichier et conversations multi-tours.</p></div>
-        <div class="feature"><h4 data-i18n="modules.systeem.terminal.title">Terminal</h4><p data-i18n="modules.systeem.terminal.desc">Shell WebSocket (PowerShell ou bash) par instance active — pratique pour les administrateurs et développeurs.</p></div>
-        <div class="feature"><h4 data-i18n="modules.systeem.health.title">Vérification de l'état</h4><p data-i18n="modules.systeem.health.desc">Surveillance du statut par instance, validation des jetons IMAP et OAuth2.</p></div>
-        <div class="feature"><h4 data-i18n="modules.systeem.search.title">Recherche globale (Ctrl+K)</h4><p data-i18n="modules.systeem.search.desc">Recherchez dans tous les enregistrements ERPNext de l'instance active — depuis n'importe quel écran.</p></div>
-        <div class="feature"><h4 data-i18n="modules.systeem.instance.title">Gestion des instances</h4><p data-i18n="modules.systeem.instance.desc">Ajoutez, modifiez ou supprimez vous-même des instances. Aucun ticket IT nécessaire.</p></div>
-        <div class="feature"><h4 data-i18n="modules.systeem.i18n.title">i18n NL / EN</h4><p data-i18n="modules.systeem.i18n.desc">Entièrement traduit avec plus de 1190 traductions, changement de langue à la volée via react-i18next.</p></div>
-      </div>
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Questions fréquentes</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Dois-je installer quelque chose ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Oui, sur le serveur : Y-app est une application pour un site ERPNext 16 existant. Votre administrateur l'installe avec <code>bench get-app</code> et <code>install-app</code> (voir le README). Vous l'ouvrez ensuite dans le navigateur sous /y-next avec votre compte ERPNext. Il n'y a pas encore de démo publique.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">Combien ça coûte ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Rien. Y-app est open source sous licence MIT. Vous ne payez que l'hébergement d'ERPNext, si vous ne le faites pas vous-même.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.save.q">Où mon travail est-il enregistré ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.save.a">Tout simplement dans votre base ERPNext. Y-app lit et écrit via l'API standard d'ERPNext ; pas de base séparée, pas de compte séparé, pas de serveur externe.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">Sur quels systèmes fonctionne-t-il ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">Dans tout navigateur moderne, y compris sur tablette et téléphone. Le serveur a besoin de Frappe 16 et ERPNext 16 ; rien de plus.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.erpnext.q">Ai-je besoin d'ERPNext ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.erpnext.a">Oui. Y-app est une autre interface, plus simple, pour ERPNext. Vos projets, heures et factures sont dans ERPNext ; Y-app les rend plus faciles à utiliser.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.roles.q">Chaque employé voit-il tout ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.roles.a">Non. Y-app suit les rôles et droits d'ERPNext. Un employé voit ses tâches, heures et congés ; un employeur voit aussi les finances, validations et le personnel.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.office.q">Puis-je modifier des fichiers Word et Excel ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.office.a">Pas encore dans la version 0.40.0. La version de développement contient déjà Calc et Writer pour .xlsx et .docx, ainsi qu'Open CAD Studio, Open Planner Studio et une visionneuse IFC ; ils arriveront dans une prochaine version.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.hosted.q">Existe-t-il une version hébergée ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.hosted.a">Y-app a débuté comme service hébergé reliant plusieurs environnements ERPNext. Cette version n'est pas diffusée publiquement. La version ouverte de cette page s'installe sur votre propre site ERPNext ; <a href="/fr/#contact">contactez-nous</a> si vous voulez de l'aide pour l'installation.</p></div>
+      </details>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel">
-    <div class="panel-split">
-      <div class="panel-split-text">
-        <p class="pill-label">Zero-knowledge</p>
-        <h2 data-i18n="explainer2.title">Multi-tenant et chiffré — même l'hébergeur ne peut pas lire vos identifiants</h2>
-        <p data-i18n="explainer2.intro">Y-app applique un principe zero-knowledge pour vos identifiants ERPNext. Chaque combinaison d'e-mail, de clé ERPNext et de jeton OAuth2 est chiffrée dans un coffre-fort SQLite côté serveur avec une clé maître qui <strong>ne peut être déchiffrée qu'avec votre mot de passe Y-app</strong>.</p>
-      </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><p data-i18n="explainer2.li1"><strong>AES-256-GCM</strong> Chiffrement authentifié pour chaque identifiant</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><p data-i18n="explainer2.li2"><strong>PBKDF2-SHA256, 210 000 itérations</strong> La recommandation OWASP actuelle pour la dérivation de clé</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><p data-i18n="explainer2.li3"><strong>Fichier de clé maître en mode 600</strong> Lisible uniquement par le processus Y-app</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><p data-i18n="explainer2.li4"><strong>AsyncLocalStorage par requête</strong> Les identifiants ne sont jamais partagés entre utilisateurs au sein d'un même processus Node</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-eraser"/></svg></div><div><p data-i18n="explainer2.li5"><strong>Même l'hébergeur ne voit pas vos données</strong> Sans votre identifiant de connexion, le coffre-fort n'est qu'un bloc d'octets aléatoires</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><p data-i18n="explainer2.li6"><strong>Un seul compte, plusieurs entreprises</strong> Idéal pour les comptables, consultants, holdings et organisations en franchise</p></div></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section"><div class="container">
-    <div class="section-head">
-      <h2 data-i18n="modetable.title"><span class="accent">Mode</span> employeur ou employé</h2>
-      <p data-i18n="modetable.intro">Pour chaque instance, vous choisissez dans un menu déroulant si l'utilisateur obtient un accès employeur (tous les modules) ou un accès employé (un ensemble restreint, centré sur ses propres tâches).</p>
-    </div>
-    <div class="mode-wrap table-wrapper">
-      <table class="mode-table">
-          <thead>
-            <tr>
-              <th data-i18n="modetable.th.module">Module</th>
-              <th data-i18n="modetable.th.employer">Employeur</th>
-              <th data-i18n="modetable.th.employee">Employé</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td data-i18n="modetable.row1.module">Webmail, Messenger, Contacts</td><td class="yes" data-i18n="modetable.row1.employer">Oui</td><td class="yes" data-i18n="modetable.row1.employee">Oui</td></tr>
-            <tr><td data-i18n="modetable.row2.module">Projets &amp; Tâches &amp; Planning</td><td class="yes" data-i18n="modetable.row2.employer">Oui</td><td class="yes" data-i18n="modetable.row2.employee">Oui</td></tr>
-            <tr><td data-i18n="modetable.row3.module">Feuilles de temps &amp; Notes de frais</td><td class="yes" data-i18n="modetable.row3.employer">Oui</td><td class="yes" data-i18n="modetable.row3.employee">Oui</td></tr>
-            <tr><td data-i18n="modetable.row4.module">Agenda &amp; Comptes rendus de réunion</td><td class="yes" data-i18n="modetable.row4.employer">Oui</td><td class="yes" data-i18n="modetable.row4.employee">Oui</td></tr>
-            <tr><td data-i18n="modetable.row5.module">NextCloud Files &amp; Wiki</td><td class="yes" data-i18n="modetable.row5.employer">Oui</td><td class="yes" data-i18n="modetable.row5.employee">Oui</td></tr>
-            <tr><td data-i18n="modetable.row6.module">Devis, Commandes clients, Livraisons, Leads</td><td class="yes" data-i18n="modetable.row6.employer">Oui</td><td class="no" data-i18n="modetable.row6.employee">Limité</td></tr>
-            <tr><td data-i18n="modetable.row7.module">Employés, Planification des congés, Paie</td><td class="yes" data-i18n="modetable.row7.employer">Oui</td><td class="no" data-i18n="modetable.row7.employee">Non</td></tr>
-            <tr><td data-i18n="modetable.row8.module">Tableau de bord financier, Factures de vente/d'achat, Encours</td><td class="yes" data-i18n="modetable.row8.employer">Oui</td><td class="no" data-i18n="modetable.row8.employee">Non</td></tr>
-            <tr><td data-i18n="modetable.row9.module">Grand livre, Transactions bancaires, TVA, Comptes annuels</td><td class="yes" data-i18n="modetable.row9.employer">Oui</td><td class="no" data-i18n="modetable.row9.employee">Non</td></tr>
-            <tr><td data-i18n="modetable.row10.module">Rentabilité &amp; Liquidité</td><td class="yes" data-i18n="modetable.row10.employer">Oui</td><td class="no" data-i18n="modetable.row10.employee">Non</td></tr>
-            <tr><td data-i18n="modetable.row11.module">Terminal &amp; Agent IA</td><td class="yes" data-i18n="modetable.row11.employer">Oui</td><td class="no" data-i18n="modetable.row11.employee">Non</td></tr>
-          </tbody>
-        </table>
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Technologie</h2><p data-i18n="tech.sub">Pour ceux qui veulent savoir comment c'est construit.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="tech.frappe.title">Frappe-app</h4><p data-i18n="tech.frappe.desc">Une application installable pour Frappe 16 et ERPNext 16, avec ses propres doctypes, champs et droits.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.react.title">React 19 + TypeScript</h4><p data-i18n="tech.react.desc">L'interface est construite avec React, TypeScript et Vite et livrée prête à l'emploi ; pas besoin de Node sur le serveur.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h4 data-i18n="tech.tailwind.title">Tailwind CSS 4</h4><p data-i18n="tech.tailwind.desc">Mise en forme avec Tailwind ; l'interface s'adapte au bureau, à la tablette et au téléphone.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h4 data-i18n="tech.api.title">Frappe REST API</h4><p data-i18n="tech.api.desc">Lit et écrit avec la session de l'utilisateur connecté ; les droits ERPNext restent déterminants.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg></div><div><h4 data-i18n="tech.jmap.title">JMAP en CalDAV</h4><p data-i18n="tech.jmap.desc">Lien optionnel avec un serveur de messagerie comme Stalwart pour agendas, invitations et absences.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h4 data-i18n="tech.mit.title">MIT</h4><p data-i18n="tech.mit.desc">Open source sous licence MIT. Le développement se fait dans Y-app-ERPNext, les versions sont dans y_next.</p></div></div>
     </div>
   </div></section>
 
-  <section class="section"><div class="container">
-    <div class="section-head">
-      <h2 data-i18n="integrations.title">Intégrations</h2>
-      <p data-i18n="integrations.intro">Y-app communique avec les outils que vous utilisez probablement déjà — pas de verrouillage propriétaire, pas de migration.</p>
-    </div>
-    <div class="features features-4">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div>
-        <h4>ERPNext</h4>
-        <p data-i18n="integrations.erpnext.desc">API REST et pont de session — chaque DocType disponible.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg></div>
-        <h4>Office 365</h4>
-        <p data-i18n="integrations.office365.desc">OAuth2 + Microsoft Graph API pour le courrier et l'agenda.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div>
-        <h4>NextCloud</h4>
-        <p data-i18n="integrations.nextcloud.desc">WebDAV + OCS API pour les fichiers, le chat et les liens de partage.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div>
-        <h4>Telegram</h4>
-        <p data-i18n="integrations.telegram.desc">Bot API pour le chat professionnel et les notifications.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div>
-        <h4>Jitsi Meet</h4>
-        <p data-i18n="integrations.jitsi.desc">Génération d'URL pour les réunions vidéo, aucun compte requis.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div>
-        <h4>Claude AI</h4>
-        <p data-i18n="integrations.claudeai.desc">Lancement CLI + streaming SSE avec contexte ERPNext.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-calendar"/></svg></div>
-        <h4>iCalendar (ICS)</h4>
-        <p data-i18n="integrations.ical.desc">Lisez des flux externes dans l'agenda Y-app.</p>
-      </div>
-    </div>
-  </div></section>
-
-  <section class="section"><div class="container">
-    <div class="section-head">
-      <h2 data-i18n="techstack.title">Technologie</h2>
-    </div>
-    <div class="chip-row chip-row-light tech-chips">
-      <span class="chip">React 19</span>
-      <span class="chip">TypeScript</span>
-      <span class="chip">Vite 7</span>
-      <span class="chip">TailwindCSS 4</span>
-      <span class="chip">react-router-dom 7</span>
-      <span class="chip">react-i18next</span>
-      <span class="chip">Node.js 20+</span>
-      <span class="chip">Express 4</span>
-      <span class="chip">WebSocket (ws)</span>
-      <span class="chip">better-sqlite3</span>
-      <span class="chip">bcryptjs (12 rounds)</span>
-      <span class="chip">AES-256-GCM</span>
-      <span class="chip">PBKDF2-SHA256 (210k)</span>
-      <span class="chip">AsyncLocalStorage</span>
-      <span class="chip">SQLite (WAL)</span>
-      <span class="chip">Leaflet + react-leaflet</span>
-      <span class="chip">xterm.js</span>
-      <span class="chip">PM2</span>
-      <span class="chip">tsx --watch</span>
-      <span class="chip">nginx</span>
-    </div>
-    <p class="tech-desc" data-i18n="techstack.summary">React 19 + TypeScript + Vite 7 + TailwindCSS 4 côté frontend, Node.js 20 + Express 4 + WebSocket côté backend. Authentification via bcryptjs (12 rounds), cookies HttpOnly et AsyncLocalStorage pour l'isolation des identifiants par requête. Chiffrement avec AES-256-GCM et PBKDF2-SHA256 (210k itérations), données dans une base SQLite (mode WAL). La production tourne sous PM2, derrière un reverse proxy nginx avec terminaison TLS, upgrade WebSocket et service des fichiers statiques dist. Développement via tsx --watch.</p>
-  </div></section>
 
   <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
   <div data-release-notes="Y-app"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Afficher toutes les versions</span><span data-rel-hide hidden data-i18n="releases.showLess">Afficher seulement les trois dernières</span></button>
+    <a href="https://github.com/OpenAEC-Foundation/y_next/releases" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.github">Toutes les versions sur GitHub</span></a>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
-
-  <script>
-    (function(){
-      const track = document.getElementById('sliderTrack');
-      const dots = document.getElementById('sliderDots');
-      if (!track || !dots) return;
-      const slides = track.children.length;
-      let current = 0;
-      for(let i=0;i<slides;i++){
-        const d = document.createElement('button');
-        d.className = 'slider-dot' + (i===0?' active':'');
-        d.onclick = ()=>slideTo(i);
-        dots.appendChild(d);
-      }
-      window.slideMove = function(dir){slideTo(current+dir);};
-      window.slideTo = function(i){
-        current = (i+slides)%slides;
-        track.style.transform = 'translateX(-'+current*100+'%)';
-        dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-      };
-    })();
-  </script>
-  <script>
-    // Modules: één groep tegelijk via tabbladen. Zonder JavaScript staan alle groepen onder elkaar.
-    (function () {
-      var wrap = document.getElementById('modules');
-      if (!wrap) return;
-      var tabs = Array.prototype.slice.call(wrap.querySelectorAll('.mod-tab'));
-      var groups = Array.prototype.slice.call(wrap.querySelectorAll('.mod-group'));
-      wrap.querySelector('.mod-tabs').hidden = false;
-      wrap.classList.add('js-tabs');
-      function kies(i) {
-        tabs.forEach(function (t, n) { t.setAttribute('aria-selected', n === i ? 'true' : 'false'); t.tabIndex = n === i ? 0 : -1; });
-        groups.forEach(function (gr, n) { gr.hidden = n !== i; });
-      }
-      tabs.forEach(function (t, i) {
-        t.addEventListener('click', function () { kies(i); });
-        t.addEventListener('keydown', function (e) {
-          if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { var n = (i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length; kies(n); tabs[n].focus(); }
-        });
-      });
-      kies(0);
-    })();
-  </script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
-      <h2>Y-<span class="accent">app</span></h2>
+      <h2 data-i18n="header.title">Y-<span class="accent">app</span></h2>
       <div class="btn-group">
-        <a href="https://y-app.impertio.app" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Démo en direct</span></a>
-        <a href="https://github.com/OpenAEC-Foundation" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="cta.github">Dépôt GitHub</span></a>
+        <a href="#features" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Voir les fonctions</span></a>
+        <a href="#faq" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="header.faqBtn">Questions fréquentes</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/y_next" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Code source</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -579,8 +545,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-
-
   <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

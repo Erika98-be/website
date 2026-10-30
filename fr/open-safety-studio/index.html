@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Safety Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Logiciel open source pour les plans de sécurité dans la construction : plan de sécurité et de santé, plan BLVC, matrice des risques et maintenance sûre…">
+  <meta name="description" content="Application gratuite dans le navigateur pour les plans de sécurité de chantier : plan de sécurité et de santé à partir d'un modèle, matrice des risques…">
   <link rel="canonical" href="https://open-aec.com/fr/open-safety-studio/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/open-safety-studio/">
@@ -15,23 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/open-safety-studio/">
   <!-- hreflang:end -->
 
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="Open Safety Studio">
-  <meta property="og:description" content="Logiciel open source pour les plans de sécurité dans la construction : plan de sécurité et de santé, plan BLVC, matrice des risques et maintenance sûre…">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-safety-studio-matrix.jpg">
+  <meta property="og:title" content="Open Safety Studio — OpenAEC Foundation">
+  <meta property="og:description" content="Application gratuite dans le navigateur pour les plans de sécurité de chantier : plan de sécurité et de santé à partir d'un modèle, matrice des risques…">
   <meta property="og:url" content="https://open-aec.com/fr/open-safety-studio/">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-safety-studio-hero.png">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Open Safety Studio">
-  <meta name="twitter:description" content="Logiciel open source pour les plans de sécurité dans la construction : plan de sécurité et de santé, plan BLVC, matrice des risques et maintenance sûre…">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-safety-studio-matrix.jpg">
+  <meta name="twitter:description" content="Application gratuite dans le navigateur pour les plans de sécurité de chantier : plan de sécurité et de santé à partir d'un modèle, matrice des risques…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-safety-studio-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -41,6 +39,141 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Open Safety Studio",
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "Veiligheid in de bouw / V&G-plan",
+    "operatingSystem": "Web",
+    "url": "https://open-aec.com/open-safety-studio/",
+    "description": "Free browser app for construction safety plans in the Netherlands: a health and safety plan (V&G-plan, Arbobesluit art. 2.28) started from ten sector templates with twenty risk modules, the special risks of Annex II of Directive 92/57/EEC, a 5x5 risk matrix with measures in the order of the prevention hierarchy, a BLVC plan (accessibility, liveability, safety, communication), a safe-maintenance checklist and register of fixed provisions, and a printable report. Saving projects and IFC import are not yet available.",
+    "featureList": [
+      "Tien sjablonen",
+      "20 risicomodules",
+      "Maatregelen in de volgorde van de wet",
+      "Bijzondere risico's",
+      "Project en partijen",
+      "Ontwerp- of uitvoeringsfase",
+      "Asbest",
+      "Noodprocedures",
+      "Werkplekinrichting",
+      "Wettelijke basis ernaast",
+      "Rapport afdrukken of als PDF",
+      "Risicomatrix 5 × 5",
+      "18 risicocategorieën",
+      "Maatregelen per risico",
+      "Bereikbaarheid",
+      "Leefbaarheid",
+      "Veiligheid in de omgeving",
+      "Communicatie",
+      "Gebouwinformatie",
+      "Checklist van tien punten",
+      "Register van voorzieningen",
+      "In de browser",
+      "Nederlands en Engels"
+    ],
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-safety-studio-hero.png",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    },
+    "isAccessibleForFree": true,
+    "keywords": "V&G-plan, veiligheids- en gezondheidsplan, health and safety plan, BLVC-plan, risicomatrix, risk matrix, RI&E, Arbobesluit, Bijlage II, bouwplaatsrichtlijn, veilig onderhoud, Bouwbesluit, V&G-coördinator, construction safety",
+    "sameAs": [
+      "https://open-safety-studio.open-aec.com/"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "OpenAEC Foundation",
+      "url": "https://open-aec.com"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog geen. Je begint een plan vanuit een sjabloon of vult het zelf in. Bestanden openen en een IFC-model inlezen komen in een volgende versie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Open Safety Studio werkt in de browser, zonder account. Een desktop-app voor Windows, macOS en Linux is in voorbereiding, maar nog niet te downloaden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost Open Safety Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. De app is gratis, zonder account of abonnement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk formaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet: in deze testversie blijft je invoer alleen staan zolang het venster open is. Maak het plan af en bewaar het rapport als PDF via Afdrukken. Opslaan als projectbestand komt in een volgende versie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In elke moderne browser op Windows, macOS en Linux. De app is gemaakt voor een groot scherm."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de Nederlandse praktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Het V&G-plan volgt artikel 2.28 van het Arbobesluit, de bijzondere risico's komen uit bijlage II van de Europese bouwplaatsrichtlijn en de checklist voor veilig onderhoud verwijst naar het Bouwbesluit en artikel 2.30 van het Arbobesluit. Maatregelen staan in de volgorde van de arbeidshygiënische strategie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wanneer is een V&G-plan verplicht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bij werk met een bijzonder risico uit bijlage II, of als het werk langer dan 30 werkdagen duurt met meer dan 20 mensen tegelijk, of meer dan 500 mandagen kost. De app toont dit naast het plan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vervangt het de V&G-coördinator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. De sjablonen geven een stevig begin, maar de coördinator beoordeelt welke risico's en maatregelen voor dit project gelden en blijft verantwoordelijk voor het plan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Werkt het met IFC-modellen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet. Er is een tabblad IFC, maar importeren, exporteren en controleren van een model komen in een volgende versie."
+        }
+      }
+    ]
+  }
+  </script>
 
   <meta name="i18n-static" content="fr">
   <!-- schema:start -->
@@ -76,7 +209,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "fr",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/fr/open-safety-studio/#breadcrumb"
         }
@@ -140,100 +273,230 @@
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">Sécurité sur chantier</p>
+      <p class="pill-label" data-i18n="header.label">Sécurité sur les chantiers</p>
       <h1 data-i18n="header.title">Open <span class="accent">Safety</span> Studio</h1>
-      <p class="lead" data-i18n="header.desc">Logiciel open source pour les plans de sécurité dans la construction : plan de sécurité et de santé, plan BLVC, matrice des risques et maintenance sûre, avec toujours la base légale à côté.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">Un plan de sécurité et de santé en quelques minutes au lieu de plusieurs jours</p>
+      <p class="lead" data-i18n="header.desc">Choisissez un modèle pour votre type d'ouvrage et vous partez des risques et des mesures qui l'accompagnent. Évaluez les risques dans une matrice, remplissez le plan BLVC et la liste de contrôle pour l'entretien en sécurité, et voyez toujours quel article de loi s'applique.</p>
       <div class="btn-group">
-        <a href="https://open-safety-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Voir la démo en ligne</span></a>
+        <a href="https://open-safety-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Ouvrir dans le navigateur</span></a>
+        <a href="#features" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Voir les fonctions</span></a>
+        <a href="/fr/#contact" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg><span data-i18n="header.contactBtn">Nous contacter</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg><span data-i18n="header.badge">Bêta</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg>Arbobesluit · Bouwbesluit</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg>Browser</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof1">Arbobesluit · Bouwbesluit (Pays-Bas)</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg><span data-i18n="header.proof2">10 modèles · 20 modules de risques</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="header.proof3">Fonctionne dans le navigateur</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="header.proof4">Néerlandais et anglais</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg><span data-i18n="header.proof5">Gratuit · sans compte</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-safety-studio-matrix.jpg" alt="Open Safety Studio - Risicomatrix met kans en ernst" width="1920" height="1080"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-safety-studio-bijlage2.jpg" alt="Open Safety Studio - V&amp;G-plan met de bijzondere risico’s uit Bijlage II" width="1920" height="1080"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-safety-studio-blvc.jpg" alt="Open Safety Studio - BLVC-plan" width="1920" height="1080"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-safety-studio-onderhoud.jpg" alt="Open Safety Studio - Veilig onderhoud" width="1920" height="1080"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-safety-studio-hero.png" width="1920" height="1200" alt="Open Safety Studio : plan de sécurité et de santé pour des logements neufs, avec les risques de chute de hauteur et leurs mesures à la source, techniques, organisationnelles et EPI, et la base légale à droite" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-safety-studio-feat-sjabloon.png" width="1200" height="750" decoding="async" alt="Modèle Logements neufs avec durée type, nombre de personnes, points d'attention et modules de risques cochés" data-i18n="hl.template.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-safety-studio-feat-matrix.png" width="1200" height="750" decoding="async" alt="Matrice des risques 5 × 5 avec quatre risques, et à droite un risque de probabilité 4, de gravité 5 avec trois mesures" data-i18n="hl.matrix.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-safety-studio-feat-rapport.png" width="1200" height="750" decoding="async" alt="Aperçu du rapport du plan de sécurité et de santé avec, pour chaque module de risques, un tableau score, risque, probabilité et gravité" data-i18n="hl.report.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-safety-studio-feat-blvc.png" width="1200" height="750" decoding="async" alt="Plan BLVC avec les onglets accessibilité, qualité de vie, sécurité et communication, rempli pour un projet de logements fictif" data-i18n="hl.blvc.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-safety-studio-feat-onderhoud.png" width="1200" height="750" decoding="async" alt="Liste de contrôle pour l'entretien en sécurité avec dix points, dont cinq cochés avec une remarque, et la base légale à droite" data-i18n="hl.maintenance.alt" data-i18n-attr="alt"></div>
         </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende">&rsaquo;</button>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="why.title">Pourquoi Open <span class="accent">Safety</span> Studio ?</h2>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="notice.text">Version de test : votre saisie n'est pas encore enregistrée. Terminez votre plan d'une traite et imprimez-le ou enregistrez-le en PDF.</span></p>
+  </div>
+
+  <nav class="pp-subnav" aria-label="Sur cette page" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Fonctions</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Nouveautés</a>
+      <a href="#faq" data-i18n="subnav.faq">FAQ</a>
+    </div>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Fonctions</p><h2 data-i18n="features.heading">Tous les plans de sécurité de votre chantier au même endroit</h2><p data-i18n="features.sub">Commencez par les points forts ou choisissez un thème.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Fonctions par thème" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Points forts</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-vg" data-tab="vg" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="tabs.vg">Plan de sécurité et de santé</span> <span class="pp-tab-count" data-count="vg"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-risk" data-tab="risk" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="tabs.risk">Risques</span> <span class="pp-tab-count" data-count="risk"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-blvc" data-tab="blvc" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-route"/></svg><span data-i18n="tabs.blvc">Plan BLVC</span> <span class="pp-tab-count" data-count="blvc"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-maintenance" data-tab="maintenance" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-crane"/></svg><span data-i18n="tabs.maintenance">Entretien en sécurité</span> <span class="pp-tab-count" data-count="maintenance"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Toutes les fonctions</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-safety-studio-feat-sjabloon.png" width="1200" height="750" loading="lazy" decoding="async" alt="Modèle Logements neufs avec durée type, nombre de personnes, points d'attention et modules de risques cochés" data-i18n="hl.template.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.template.kicker">Modèles</span></p>
+            <h3 data-i18n="hl.template.title">Ne partez pas d'une page blanche</h3>
+            <p data-i18n="hl.template.desc">Choisissez parmi dix modèles, du logement et des immeubles de grande hauteur à la démolition, au génie civil et aux ouvrages hydrauliques. Chaque modèle prépare les modules de risques adaptés, avec les points d'attention propres à ce type de travaux. Cochez ou décochez des modules avant de commencer.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-safety-studio-feat-matrix.png" width="1200" height="750" loading="lazy" decoding="async" alt="Matrice des risques 5 × 5 avec quatre risques, et à droite un risque de probabilité 4, de gravité 5 avec trois mesures" data-i18n="hl.matrix.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.matrix.kicker">Matrice des risques</span></p>
+            <h3 data-i18n="hl.matrix.title">Voyez tout de suite quel risque traiter en premier</h3>
+            <p data-i18n="hl.matrix.desc">Évaluez chaque risque selon sa probabilité et sa gravité. La matrice va du vert au rouge foncé et place le risque au bon endroit. Notez des mesures pour chaque risque, avec un responsable et une date.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-safety-studio-feat-rapport.png" width="1200" height="750" loading="lazy" decoding="async" alt="Aperçu du rapport du plan de sécurité et de santé avec, pour chaque module de risques, un tableau score, risque, probabilité et gravité" data-i18n="hl.report.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.report.kicker">Rapport</span></p>
+            <h3 data-i18n="hl.report.title">Un plan à imprimer et à partager</h3>
+            <p data-i18n="hl.report.desc">En un clic, votre plan de sécurité et de santé devient un rapport soigné : page de garde, risques particuliers et, par module, les risques avec leurs mesures. Imprimez-le ou enregistrez-le en PDF pour le dossier du projet.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-safety-studio-feat-blvc.png" width="1200" height="750" loading="lazy" decoding="async" alt="Plan BLVC avec les onglets accessibilité, qualité de vie, sécurité et communication, rempli pour un projet de logements fictif" data-i18n="hl.blvc.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.blvc.kicker">Plan BLVC</span></p>
+            <h3 data-i18n="hl.blvc.title">Gardez le quartier accessible et informé</h3>
+            <p data-i18n="hl.blvc.desc">Si vous travaillez sur l'espace public, décrivez pour chaque lettre ce que vous prévoyez : déviations et services de secours, bruit et poussière, clôtures et signalisation, et la façon dont les riverains reçoivent informations et interlocuteur.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-safety-studio-feat-onderhoud.png" width="1200" height="750" loading="lazy" decoding="async" alt="Liste de contrôle pour l'entretien en sécurité avec dix points, dont cinq cochés avec une remarque, et la base légale à droite" data-i18n="hl.maintenance.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">05</span> <span data-i18n="hl.maintenance.kicker">Entretien en sécurité</span></p>
+            <h3 data-i18n="hl.maintenance.title">Un bâtiment qui pourra être entretenu en sécurité</h3>
+            <p data-i18n="hl.maintenance.desc">Vérifiez avec une liste de dix points que la toiture, la façade, les gouttières, les installations et l'ascenseur sont accessibles en sécurité. Tenez un registre des équipements fixes comme les points d'ancrage et garde-corps, avec date d'inspection et état.</p>
+          </div>
+        </article>
       </div>
-      <div class="panel-split-body">
-        <p data-i18n="why.desc">La sécurité sur le chantier n’est pas un luxe mais une obligation. Un plan de sécurité et de santé ou un plan BLVC est encore souvent monté dans des fichiers Word et des tableurs séparés, à chaque fois.</p>
-        <p data-i18n="why.desc2">Open Safety Studio réunit les parties exigées par la loi, indique l’article applicable à chaque sujet et en fait un rapport. Gratuit et open source.</p>
-      </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="vg"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.templates.title">Dix modèles</h3><p data-i18n="f.templates.desc">Logement, rénovation, tertiaire, grande hauteur, démolition, génie civil, industriel, ouvrages hydrauliques, installations techniques et fondations.</p></div></div></li>
+        <li class="pp-tile" data-cats="vg risk"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.modules.title">20 modules de risques</h3><p data-i18n="f.modules.desc">Des chutes de hauteur et terrassements à l'amiante, l'incendie et les espaces confinés, avec risques et mesures déjà remplis.</p></div></div></li>
+        <li class="pp-tile" data-cats="vg risk"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><h3 data-i18n="f.hierarchy.title">Mesures dans l'ordre de la loi</h3><p data-i18n="f.hierarchy.desc">D'abord à la source, puis techniques et organisationnelles, les équipements de protection individuelle en dernier.</p></div></div></li>
+        <li class="pp-tile" data-cats="vg"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg></div><div><h3 data-i18n="f.annex.title">Risques particuliers</h3><p data-i18n="f.annex.desc">Les dix risques de l'annexe II de la directive européenne chantiers, déjà cochés pour vous par le modèle.</p></div></div></li>
+        <li class="pp-tile" data-cats="vg"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><h3 data-i18n="f.project.title">Projet et intervenants</h3><p data-i18n="f.project.desc">Données du projet, maître d'ouvrage, coordinateurs sécurité et santé pour la conception et la réalisation, et entreprises.</p></div></div></li>
+        <li class="pp-tile" data-cats="vg"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-calendar"/></svg></div><div><h3 data-i18n="f.phase.title">Phase de conception ou de réalisation</h3><p data-i18n="f.phase.desc">Établissez le plan pour la phase en cours ; le rapport reprend la phase.</p></div></div></li>
+        <li class="pp-tile" data-cats="vg"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-hatch"/></svg></div><div><h3 data-i18n="f.asbestos.title">Amiante</h3><p data-i18n="f.asbestos.desc">Indiquez la présence d'amiante et renvoyez au repérage amiante.</p></div></div></li>
+        <li class="pp-tile" data-cats="vg"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-phone"/></svg></div><div><h3 data-i18n="f.emergency.title">Procédures d'urgence</h3><p data-i18n="f.emergency.desc">Équipe d'intervention, poste de secours, itinéraire d'évacuation, numéro d'urgence et point de rassemblement.</p></div></div></li>
+        <li class="pp-tile" data-cats="vg"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.worksite.title">Installation de chantier</h3><p data-i18n="f.worksite.desc">Installation de chantier, stockage des matériaux et gestion des déchets.</p></div></div></li>
+        <li class="pp-tile" data-cats="vg maintenance"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.law.title">Base légale à côté</h3><p data-i18n="f.law.desc">Pour chaque partie, vous voyez quel article s'applique et quand un plan de sécurité et de santé est obligatoire.</p></div></div></li>
+        <li class="pp-tile" data-cats="vg"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div><div><h3 data-i18n="f.report.title">Imprimer le rapport ou l'enregistrer en PDF</h3><p data-i18n="f.report.desc">Aperçu avec zoom, ouverture dans une nouvelle fenêtre et impression.</p></div></div></li>
+        <li class="pp-tile" data-cats="risk"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.matrix.title">Matrice des risques 5 × 5</h3><p data-i18n="f.matrix.desc">Probabilité fois gravité donne un score de 1 à 25, en cinq niveaux de très faible à très élevé.</p></div></div></li>
+        <li class="pp-tile" data-cats="risk"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.categories.title">18 catégories de risques</h3><p data-i18n="f.categories.desc">Des chutes d'objets et de l'électricité aux vibrations, à la noyade et aux conditions météo.</p></div></div></li>
+        <li class="pp-tile" data-cats="risk"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h3 data-i18n="f.measures.title">Mesures par risque</h3><p data-i18n="f.measures.desc">Type de mesure, description, responsable et date.</p></div></div></li>
+        <li class="pp-tile" data-cats="blvc"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-route"/></svg></div><div><h3 data-i18n="f.access.title">Accessibilité</h3><p data-i18n="f.access.desc">Déviations, accès aux logements et entreprises, services de secours, transports publics et stationnement.</p></div></div></li>
+        <li class="pp-tile" data-cats="blvc"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mic"/></svg></div><div><h3 data-i18n="f.livability.title">Qualité de vie</h3><p data-i18n="f.livability.desc">Bruit, poussière, vibrations, horaires de travail et qualité de l'environnement.</p></div></div></li>
+        <li class="pp-tile" data-cats="blvc"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h3 data-i18n="f.public.title">Sécurité aux abords</h3><p data-i18n="f.public.desc">Risques pour le public, sécurité routière, barrières, signalisation et clôtures de chantier.</p></div></div></li>
+        <li class="pp-tile" data-cats="blvc"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h3 data-i18n="f.comms.title">Communication</h3><p data-i18n="f.comms.desc">Information des riverains, personne de contact, procédure de réclamation et lettres d'information.</p></div></div></li>
+        <li class="pp-tile" data-cats="maintenance"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-crane"/></svg></div><div><h3 data-i18n="f.building.title">Informations sur le bâtiment</h3><p data-i18n="f.building.desc">Type de bâtiment, année de construction, nombre d'étages et type de toiture.</p></div></div></li>
+        <li class="pp-tile" data-cats="maintenance"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.checklist.title">Liste de contrôle en dix points</h3><p data-i18n="f.checklist.desc">Protection antichute, façade, gouttières, lanterneaux, nettoyage des vitres, installations, ascenseur, amiante et portance, chacun avec une remarque.</p></div></div></li>
+        <li class="pp-tile" data-cats="maintenance"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><h3 data-i18n="f.facilities.title">Registre des équipements</h3><p data-i18n="f.facilities.desc">Points d'ancrage, garde-corps, protections de rive et installations de façade, avec emplacement, dates d'inspection et état.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h3 data-i18n="f.browser.title">Dans le navigateur</h3><p data-i18n="f.browser.desc">Ni installation ni compte : ouvrez l'application et commencez.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h3 data-i18n="f.lang.title">Néerlandais et anglais</h3><p data-i18n="f.lang.desc">L'interface en deux langues, avec un thème clair et un thème sombre.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel">
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
     <div class="panel-split">
       <div class="panel-split-text">
-        <p class="pill-label">V&amp;G · BLVC · RI&amp;E</p>
-        <h2 data-i18n="modules.title">Cinq modules</h2>
-        <p data-i18n="modules.desc">Chaque module est un onglet de l’application, avec le cadre légal dans la barre latérale.</p>
+        <p class="pill-label" data-i18n="whatsnew.label">Nouveau dans la v0.1</p>
+        <h2 data-i18n="whatsnew.title">Des modèles et un <span>rapport</span></h2>
+        <p data-i18n="whatsnew.desc">La première version est en ligne. Vous commencez un plan de sécurité et de santé à partir d'un modèle et en faites un rapport à imprimer.</p>
+        <div class="btn-group">
+          <a href="https://open-safety-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="whatsnew.ctaDemo">Essayer dans le navigateur</span></a>
+        </div>
       </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><p data-i18n="modules.vg"><strong>Plan de sécurité et de santé</strong> Selon l’Arbobesluit néerlandais, art. 2.28 : données du projet, parties concernées, phases, risques particuliers de l’annexe II, amiante, substances dangereuses, procédures d’urgence et aménagement des postes de travail.</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-route"/></svg></div><div><p data-i18n="modules.blvc"><strong>Plan BLVC</strong> Accessibilité, qualité de vie, sécurité et communication autour du chantier, avec phasage, mesures de circulation et communication.</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><p data-i18n="modules.matrix"><strong>Matrice des risques</strong> Évaluez les risques selon la probabilité et la gravité dans une matrice 5×5 et voyez aussitôt lesquels sont prioritaires.</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-crane"/></svg></div><div><p data-i18n="modules.maintenance"><strong>Maintenance sûre</strong> Informations sur le bâtiment, équipements permanents et liste de contrôle selon le Bouwbesluit, art. 6.53, et l’Arbobesluit, art. 2.30.</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><p data-i18n="modules.ifc"><strong>IFC</strong> Importez et exportez des modèles IFC, consultez leur structure et leurs statistiques et validez le modèle.</p></div></li>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h4 data-i18n="whatsnew.items.templates.title">Dix modèles</h4><p data-i18n="whatsnew.items.templates.desc">Un par type d'ouvrage, avec durée type, nombre de personnes et points d'attention.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="whatsnew.items.modules.title">20 modules de risques</h4><p data-i18n="whatsnew.items.modules.desc">37 risques avec probabilité, gravité et mesures, prêts à l'emploi.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div><div><h4 data-i18n="whatsnew.items.report.title">Rapport sécurité et santé</h4><p data-i18n="whatsnew.items.report.desc">Page de garde, risques particuliers et un tableau par module, à imprimer ou en PDF.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg></div><div><h4 data-i18n="whatsnew.items.annex.title">Risques particuliers pré-remplis</h4><p data-i18n="whatsnew.items.annex.desc">Le modèle coche les risques particuliers liés aux travaux.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h4 data-i18n="whatsnew.items.web.title">À essayer en ligne</h4><p data-i18n="whatsnew.items.web.desc">L'application fonctionne dans le navigateur, sans installation ni compte.</p></div></li>
       </ul>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <h2 data-i18n="features.title">Fonctionnalités</h2>
-    <div class="features features-4">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div>
-        <h4 data-i18n="features.templates.title">Modèles</h4>
-        <p data-i18n="features.templates.desc">Commencez un plan à partir d’un modèle plutôt que d’un document vide.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-        <h4 data-i18n="features.legal.title">Base légale visible</h4>
-        <p data-i18n="features.legal.desc">À côté de chaque partie, vous voyez l’article applicable et quand un plan est obligatoire.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div>
-        <h4 data-i18n="features.hierarchy.title">Hiérarchie des mesures</h4>
-        <p data-i18n="features.hierarchy.desc">Les mesures dans l’ordre fixé par la loi : d’abord la source, puis la protection et la limitation, les équipements de protection individuelle en dernier.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div>
-        <h4 data-i18n="features.report.title">Rapport</h4>
-        <p data-i18n="features.report.desc">Transformez le plan en rapport à imprimer ou à partager.</p>
-      </div>
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Questions fréquentes</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Quels fichiers puis-je ouvrir ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">Aucun pour l'instant. Vous commencez un plan à partir d'un modèle ou le remplissez vous-même. L'ouverture de fichiers et la lecture d'un modèle IFC arriveront dans une prochaine version.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Dois-je installer quelque chose ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Non. Open Safety Studio fonctionne dans le navigateur, sans compte. Une application de bureau pour Windows, macOS et Linux est en préparation, mais pas encore téléchargeable.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">Combien coûte Open Safety Studio ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Rien. L'application est gratuite, sans compte ni abonnement.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.save.q">Dans quel format mon travail est-il enregistré ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.save.a">Pas encore : dans cette version de test, votre saisie n'est conservée que tant que la fenêtre est ouverte. Terminez le plan et enregistrez le rapport en PDF via Imprimer. L'enregistrement en fichier de projet arrivera dans une prochaine version.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">Sur quels systèmes fonctionne-t-il ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">Dans tout navigateur récent sous Windows, macOS et Linux. L'application est conçue pour un grand écran.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">Est-il adapté à la pratique néerlandaise ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">Oui. Le plan de sécurité et de santé suit l'article 2.28 de l'Arbobesluit néerlandais, les risques particuliers proviennent de l'annexe II de la directive européenne chantiers et la liste pour l'entretien en sécurité renvoie au Bouwbesluit et à l'article 2.30 de l'Arbobesluit. Les mesures suivent la hiérarchie de prévention.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.required.q">Quand un plan de sécurité et de santé est-il obligatoire ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.required.a">Pour des travaux présentant un risque particulier de l'annexe II, ou si les travaux durent plus de 30 jours ouvrables avec plus de 20 personnes en même temps, ou dépassent 500 hommes-jours. L'application l'affiche à côté du plan.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.coordinator.q">Remplace-t-il le coordinateur sécurité et santé ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.coordinator.a">Non. Les modèles offrent une base solide, mais le coordinateur juge quels risques et mesures s'appliquent à ce projet et reste responsable du plan.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ifc.q">Fonctionne-t-il avec des modèles IFC ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ifc.a">Pas encore. Il existe un onglet IFC, mais l'import, l'export et la vérification d'un modèle arriveront dans une prochaine version.</p></div>
+      </details>
     </div>
   </div></section>
+
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Technologie</h2><p data-i18n="tech.sub">Pour ceux qui veulent savoir comment c'est construit.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="tech.react.title">React 19 et TypeScript</h4><p data-i18n="tech.react.desc">Toute l'interface, avec les formulaires, la matrice et le rapport.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h4 data-i18n="tech.vite.title">Vite</h4><p data-i18n="tech.vite.desc">Build rapide pour la version web sur open-safety-studio.open-aec.com.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.tauri.title">Tauri 2</h4><p data-i18n="tech.tauri.desc">Une fine enveloppe native en Rust pour l'application de bureau en préparation.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.data.title">Modèles sous forme de données</h4><p data-i18n="tech.data.desc">Les modèles et modules de risques sont des données typées dans le code, faciles à étendre.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div><div><h4 data-i18n="tech.print.title">Rapport en HTML</h4><p data-i18n="tech.print.desc">Le rapport est un document HTML autonome que le navigateur imprime ou enregistre en PDF.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h4 data-i18n="tech.shell.title">Interface OpenAEC</h4><p data-i18n="tech.shell.desc">Ruban, thèmes et traductions (i18next) comme dans toutes les applications OpenAEC.</p></div></div>
+    </div>
+  </div></section>
+
+
+  <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
+  <div data-release-notes="open-safety-studio"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Afficher toutes les versions</span><span data-rel-hide hidden data-i18n="releases.showLess">Afficher seulement les trois dernières</span></button>
+  </p>
+  </section>
+  <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">Open <span class="accent">Safety</span> Studio</h2>
       <div class="btn-group">
-        <a href="https://open-safety-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Voir la démo en ligne</span></a>
+        <a href="https://open-safety-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Ouvrir dans le navigateur</span></a>
+        <a href="#features" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Voir les fonctions</span></a>
+        <a href="/fr/#contact" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg><span data-i18n="header.contactBtn">Nous contacter</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -287,27 +550,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-  <script>
-  (function(){
-    const track = document.getElementById('sliderTrack');
-    const dots = document.getElementById('sliderDots');
-    if (!track || !dots) return;
-    const slides = track.children.length;
-    let current = 0;
-    for(let i=0;i<slides;i++){
-      const d = document.createElement('button');
-      d.className = 'slider-dot' + (i===0?' active':'');
-      d.onclick = ()=>slideTo(i);
-      dots.appendChild(d);
-    }
-    window.slideMove = function(dir){slideTo(current+dir);};
-    window.slideTo = function(i){
-      current = (i+slides)%slides;
-      track.style.transform = 'translateX(-'+current*100+'%)';
-      dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-    };
-  })();
-  </script>
   <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

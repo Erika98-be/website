@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenAEC SuperCloud — OpenAEC Foundation</title>
-  <meta name="description" content="La plateforme cloud, comptes et SSO d’OpenAEC. Une seule connexion pour tout l’écosystème, avec stockage, partage et synchronisation sur votre propre…">
+  <meta name="description" content="Synchronisez, partagez et envoyez vos fichiers de projet via votre propre environnement dans l'OpenAEC SuperCloud. Application de bureau gratuite et open…">
   <link rel="canonical" href="https://open-aec.com/fr/openaec-cloud/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/openaec-cloud/">
@@ -15,23 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/openaec-cloud/">
   <!-- hreflang:end -->
 
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="OpenAEC SuperCloud">
-  <meta property="og:description" content="La plateforme cloud, comptes et SSO d’OpenAEC. Une seule connexion pour tout l’écosystème, avec stockage, partage et synchronisation sur votre propre…">
+  <meta property="og:title" content="OpenAEC SuperCloud — OpenAEC Foundation">
+  <meta property="og:description" content="Synchronisez, partagez et envoyez vos fichiers de projet via votre propre environnement dans l'OpenAEC SuperCloud. Application de bureau gratuite et open…">
   <meta property="og:url" content="https://open-aec.com/fr/openaec-cloud/">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/openaec-supercloud-sync.jpg">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/openaec-cloud-hero.png">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="OpenAEC SuperCloud">
-  <meta name="twitter:description" content="La plateforme cloud, comptes et SSO d’OpenAEC. Une seule connexion pour tout l’écosystème, avec stockage, partage et synchronisation sur votre propre…">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/openaec-supercloud-sync.jpg">
+  <meta name="twitter:description" content="Synchronisez, partagez et envoyez vos fichiers de projet via votre propre environnement dans l'OpenAEC SuperCloud. Application de bureau gratuite et open…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/openaec-cloud-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -41,26 +39,47 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "OpenAEC SuperCloud",
-    "applicationCategory": "EngineeringApplication",
-    "applicationSubCategory": "Cloud / Accounts / SSO",
-    "operatingSystem": "Windows, Self-hosted (Nextcloud)",
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "File sync and sharing",
+    "operatingSystem": "Windows, macOS, Linux",
+    "softwareVersion": "2026.44.10",
     "url": "https://open-aec.com/openaec-cloud/",
-        "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
-    "description": "OpenAEC's own cloud, account and SSO platform on your own Nextcloud server: a desktop sync client with share links and on-demand files, shared cloud storage for the OpenAEC tools and one account for every app.",
+    "downloadUrl": "https://github.com/OpenAEC-Foundation/openaec-cloud-desktop/releases",
+    "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+    "description": "OpenAEC Desktop App, the free, open-source desktop client of the OpenAEC SuperCloud. Link local folders to project spaces in your OpenAEC environment: two-way sync with delta uploads and conflict handling, selective sync, File Explorer integration on Windows (navigation pane, status icons, files on demand), share links with password and expiry, sharing with roles, sending large files and folders with a download link, locking and versions, an AI assistant with attachments through OpenAEC's EU AI service, and installing and updating OpenAEC tools. For Windows, macOS and Linux; requires an OpenAEC SuperCloud account.",
     "featureList": [
-      "Tweerichtingssync",
-      "Delen met een link",
-      "Verkenner-vinkjes",
-      "Meerdere organisaties",
-      "Projectmanifest",
-      "Eén login"
+      "Synchroniseren in twee richtingen",
+      "Alleen wat veranderd is",
+      "Geen werk kwijt bij een conflict",
+      "Mappen kiezen",
+      "Eén map in de Verkenner",
+      "Bestanden op aanvraag",
+      "Status op elk bestand",
+      "Voortgang en opslag",
+      "Negeerlijst en lastige namen",
+      "Ruimtes met rollen",
+      "Nieuwe ruimte met mapindeling",
+      "Gedeeld met mij",
+      "Bestanden op de server bekijken",
+      "Vergrendelen en versies",
+      "Link voor externen",
+      "Delen met een rol",
+      "Versturen met OpenAEC",
+      "Hervatten en intrekken",
+      "Assistent met bijlagen",
+      "Gesprekken op je eigen computer",
+      "OpenAEC-apps installeren",
+      "Werkt zichzelf bij",
+      "Opdrachtregel voor servers",
+      "Eén keer inloggen"
     ],
-    "screenshot": "https://open-aec.com/shared/assets/screenshots/openaec-supercloud-sync.jpg",
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/openaec-cloud-hero.png",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -68,8 +87,10 @@
       "availability": "https://schema.org/InStock"
     },
     "isAccessibleForFree": true,
-    "keywords": "Nextcloud, sync client, SSO, self-hosted cloud, Dropbox alternative, OneDrive alternative",
-    "sameAs": "https://github.com/OpenAEC-Foundation/openaec-cloud-desktop",
+    "keywords": "OpenAEC SuperCloud, OpenAEC Storage, file sync, synchroniseren, bestanden delen, projectbestanden, overdracht, WeTransfer alternatief, Tauri, Rust, EU cloud, bouw, AEC",
+    "sameAs": [
+      "https://github.com/OpenAEC-Foundation/openaec-cloud-desktop"
+    ],
     "publisher": {
       "@type": "Organization",
       "name": "OpenAEC Foundation",
@@ -77,9 +98,94 @@
     }
   }
   </script>
-  <style>
-    .tech-chips { margin-bottom: var(--sp-6); justify-content: flex-start; }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik synchroniseren en delen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Elk soort bestand, van tekeningen en IFC-modellen tot rekenbladen en foto's. Alleen tijdelijke bestanden, wat je in .openaecignore zet en namen die Windows niet aankan, worden overgeslagen. De assistent leest PDF, Word, Excel, tekst en afbeeldingen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, de OpenAEC Desktop App voor Windows, macOS of Linux. Daarna log je via de browser in bij je omgeving en koppel je de ruimtes die je wilt. Voor servers zonder scherm is er het opdrachtregelprogramma openaec-storage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De app is gratis en open source. Je hebt wel een account in de OpenAEC SuperCloud nodig; je meldt je aan op de SuperCloud-pagina, waar ook staat hoeveel opslag bij een account hoort. De assistent gebruikt het AI-tegoed van je omgeving."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Waar staan mijn bestanden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In de opslag van je eigen omgeving in de OpenAEC SuperCloud, in de EU, met de versies erbij. Op je computer staan ze in gewone mappen en in hun eigen formaat: er is geen apart bestandsformaat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Windows (installer of MSI), macOS (universele .dmg voor Intel en Apple Silicon) en Linux (.deb of AppImage). Synchroniseren, delen en versturen werken overal. De statusvinkjes, bestanden op aanvraag en de plek in het navigatiepaneel zijn er nog alleen op Windows."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de bouwpraktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Je werkt met een ruimte per project, met een vaste mapindeling, en geeft externe partijen zoals een aannemer of toetser een gastrol of een link met vervaldatum. Met vergrendelen zie je wie aan een tekening of rekennota werkt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De app heeft een eigen assistent die je bestanden als bijlage leest. Een MCP-koppeling waarmee een externe AI-assistent zelf in je ruimtes werkt, is er nog niet; voor scripts is er het opdrachtregelprogramma openaec-storage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Werkt het met Nextcloud?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. De eerste versies waren voor Nextcloud bedoeld, maar de desktop-app werkt nu met de opslag van de OpenAEC SuperCloud zelf: ruimtes, rollen, versies en overdrachten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik zonder internet werken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, met de bestanden die op je computer staan. Zodra er weer verbinding is, gaan je wijzigingen naar de server. Bestanden die alleen online staan, open je pas weer met verbinding en terwijl de app draait."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat ziet een ontvanger zonder account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een downloadpagina in je eigen omgeving, met alleen wat je deelde of verstuurde. Heb je een wachtwoord gezet, dan moet hij dat eerst invullen; het wachtwoord staat nooit in de e-mail. Na de vervaldatum of als je de link intrekt, werkt hij niet meer."
+        }
+      }
+    ]
+  }
+  </script>
 
   <meta name="i18n-static" content="fr">
   <!-- schema:start -->
@@ -115,7 +221,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "fr",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/fr/openaec-cloud/#breadcrumb"
         }
@@ -179,130 +285,284 @@
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">Écosystème OpenAEC</p>
+      <p class="pill-label" data-i18n="header.label">Fichiers et collaboration</p>
       <h1 data-i18n="header.title">OpenAEC <span class="accent">SuperCloud</span></h1>
-      <p class="lead" data-i18n="header.desc">La plateforme cloud, comptes et SSO d’OpenAEC. Une seule connexion pour tout l’écosystème, avec stockage, partage et synchronisation sur votre propre serveur Nextcloud.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">Tous vos fichiers de projet à jour sur chaque ordinateur, et partagés en toute sécurité avec qui vous voulez</p>
+      <p class="lead" data-i18n="header.desc">Associez un dossier de votre ordinateur à un espace de projet de votre environnement OpenAEC et continuez à travailler dans vos propres logiciels. L'OpenAEC Desktop App garde les fichiers synchronisés, les partage par un lien et envoie de gros fichiers sans service séparé.</p>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="cta.github">Voir sur GitHub</span></a>
+        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Télécharger</span></a>
+        <a href="#features" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Voir les fonctions</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Code source</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg><span data-i18n="header.badge">En développement</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg>Nextcloud · WebDAV</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg><span data-i18n="chips.selfhosted">Auto-hébergé</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg><span data-i18n="header.proof1">Synchroniser · partager · envoyer</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="header.proof2">Stockage dans l'UE</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg><span>Windows · macOS · Linux</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-text"/></svg><span data-i18n="header.proof4">Application en néerlandais</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof5">Application gratuite · AGPL-3.0</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/openaec-supercloud-sync.jpg" alt="OpenAEC Cloud desktop - synchroniseren, delen en cloud-map" width="1920" height="1080"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/openaec-supercloud-verbinden.jpg" alt="OpenAEC Cloud desktop - verbinden met je eigen Nextcloud" width="1920" height="1080"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/openaec-cloud-hero.png" width="1920" height="1200" alt="OpenAEC Desktop App : vue d'ensemble avec le dossier principal, l'espace utilisé, les fichiers en cours de transfert et les dossiers de projet associés" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/openaec-cloud-feat-selectie.png" width="1200" height="750" decoding="async" alt="Fenêtre Choisir les dossiers d'un espace de projet : tous les dossiers cochés sauf les photos, avec la taille et le nombre de fichiers par dossier" data-i18n="hl.sync.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/openaec-cloud-feat-ruimtes.png" width="1200" height="750" decoding="async" alt="Écran Espaces avec les espaces de projet et les dossiers partagés à gauche, et à droite les fichiers du dossier Calculs, dont deux verrouillés par un collègue" data-i18n="hl.spaces.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/openaec-cloud-feat-delen.png" width="1200" height="750" decoding="async" alt="Fenêtre Partager pour un PDF : un lien pour les externes avec mot de passe et date d'expiration, le partage avec un collègue et la liste des accès" data-i18n="hl.share.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/openaec-cloud-feat-versturen.png" width="1200" height="750" decoding="async" alt="Fenêtre Envoyer avec OpenAEC : un dossier et deux fichiers, avec destinataires, message, date d'expiration et mot de passe" data-i18n="hl.send.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/openaec-cloud-feat-assistent.png" width="1200" height="750" decoding="async" alt="Écran Assistant : une question sur un rapport d'hypothèses en pièce jointe, avec pour réponse un tableau des charges puis un court e-mail" data-i18n="hl.assistant.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/openaec-cloud-feat-tools.png" width="1200" height="750" decoding="async" alt="Écran Outils avec les cartes des applications OpenAEC : installées, avec une mise à jour ou pas encore installées, avec des boutons pour lancer, mettre à jour ou supprimer" data-i18n="hl.tools.alt" data-i18n-attr="alt"></div>
         </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende">&rsaquo;</button>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="why.title">Pourquoi OpenAEC <span class="accent">SuperCloud</span> ?</h2>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg><span data-i18n="notice.text">L'application fonctionne avec un compte dans l'OpenAEC SuperCloud.</span> <a href="/supercloud/aanmelden/"><span data-i18n="notice.link">S'inscrire</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a></p>
+  </div>
+
+  <nav class="pp-subnav" aria-label="Sur cette page" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Fonctions</a>
+      <a href="#download" data-i18n="subnav.download">Télécharger</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Nouveautés</a>
+      <a href="#faq" data-i18n="subnav.faq">FAQ</a>
+      <a href="#releases" data-i18n="subnav.releases">Versions</a>
+    </div>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Fonctions</p><h2 data-i18n="features.heading">Vos dossiers de projet, synchronisés partout et bien partagés</h2><p data-i18n="features.sub">Commencez par les points forts ou choisissez un thème.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Fonctions par thème" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Points forts</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-sync" data-tab="sync" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg><span data-i18n="tabs.sync">Synchronisation</span> <span class="pp-tab-count" data-count="sync"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-spaces" data-tab="spaces" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg><span data-i18n="tabs.spaces">Espaces et droits</span> <span class="pp-tab-count" data-count="spaces"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-share" data-tab="share" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg><span data-i18n="tabs.share">Partager et envoyer</span> <span class="pp-tab-count" data-count="share"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-more" data-tab="more" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg><span data-i18n="tabs.more">Assistant et outils</span> <span class="pp-tab-count" data-count="more"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Toutes les fonctions</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/openaec-cloud-feat-selectie.png" width="1200" height="750" loading="lazy" decoding="async" alt="Fenêtre Choisir les dossiers d'un espace de projet : tous les dossiers cochés sauf les photos, avec la taille et le nombre de fichiers par dossier" data-i18n="hl.sync.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.sync.kicker">Synchronisation</span></p>
+            <h3 data-i18n="hl.sync.title">Travaillez dans un dossier ordinaire, le reste se fait tout seul</h3>
+            <p data-i18n="hl.sync.desc">Dès que vous enregistrez un fichier, il part vers l'espace de projet, et les modifications de vos collègues arrivent toutes seules. Pour une grosse modification, seules les parties modifiées sont transférées. Choisissez par espace les dossiers qui viennent sur cet ordinateur : les photos de chantier peuvent rester sur le serveur.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop#selectieve-synchronisatie" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/openaec-cloud-feat-ruimtes.png" width="1200" height="750" loading="lazy" decoding="async" alt="Écran Espaces avec les espaces de projet et les dossiers partagés à gauche, et à droite les fichiers du dossier Calculs, dont deux verrouillés par un collègue" data-i18n="hl.spaces.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.spaces.kicker">Espaces</span></p>
+            <h3 data-i18n="hl.spaces.title">Un espace par projet, avec les personnes concernées</h3>
+            <p data-i18n="hl.spaces.desc">Chaque espace a des membres avec un rôle : gestionnaire, rédacteur, lecteur ou invité. Parcourez les fichiers sur le serveur, voyez qui a verrouillé un fichier et créez de nouveaux dossiers. Les dossiers qu'une autre partie partage avec vous figurent sous Partagé avec moi et s'associent tout aussi facilement.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop#gedeeld-met-mij" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/openaec-cloud-feat-delen.png" width="1200" height="750" loading="lazy" decoding="async" alt="Fenêtre Partager pour un PDF : un lien pour les externes avec mot de passe et date d'expiration, le partage avec un collègue et la liste des accès" data-i18n="hl.share.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.share.kicker">Partage</span></p>
+            <h3 data-i18n="hl.share.title">Partagez par un lien ou avec un rôle</h3>
+            <p data-i18n="hl.share.desc">Choisissez Partager sur un fichier ou un dossier, dans l'application ou dans l'Explorateur, et créez un lien pour quelqu'un sans compte, avec mot de passe et date d'expiration. Donnez à un collègue le rôle Peut voir, Peut modifier ou Peut gérer. Sous Qui a accès, vous changez un rôle ou retirez l'accès.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop#delen-met-een-rol" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/openaec-cloud-feat-versturen.png" width="1200" height="750" loading="lazy" decoding="async" alt="Fenêtre Envoyer avec OpenAEC : un dossier et deux fichiers, avec destinataires, message, date d'expiration et mot de passe" data-i18n="hl.send.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.send.kicker">Envoi</span></p>
+            <h3 data-i18n="hl.send.title">Envoyez de gros fichiers sans service de transfert</h3>
+            <p data-i18n="hl.send.desc">Choisissez Envoyer avec OpenAEC dans le menu contextuel, même en dehors de vos dossiers de projet. Le destinataire reçoit un lien de téléchargement, par e-mail si vous le souhaitez, avec un message, une date d'expiration et un mot de passe. Si la connexion tombe, vous reprenez là où vous en étiez ; sous Mes transferts, vous voyez les téléchargements et retirez un lien.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop#versturen-met-openaec" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/openaec-cloud-feat-assistent.png" width="1200" height="750" loading="lazy" decoding="async" alt="Écran Assistant : une question sur un rapport d'hypothèses en pièce jointe, avec pour réponse un tableau des charges puis un court e-mail" data-i18n="hl.assistant.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">05</span> <span data-i18n="hl.assistant.kicker">Assistant</span></p>
+            <h3 data-i18n="hl.assistant.title">Demandez à l'assistant, avec vos fichiers joints</h3>
+            <p data-i18n="hl.assistant.desc">Glissez un PDF, un fichier Word ou Excel, un texte ou une image dans la conversation et posez votre question. Les questions vont au service d'IA d'OpenAEC dans l'UE et utilisent le crédit IA de votre environnement. Vos conversations restent sur votre ordinateur.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop#assistent" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/openaec-cloud-feat-tools.png" width="1200" height="750" loading="lazy" decoding="async" alt="Écran Outils avec les cartes des applications OpenAEC : installées, avec une mise à jour ou pas encore installées, avec des boutons pour lancer, mettre à jour ou supprimer" data-i18n="hl.tools.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">06</span> <span data-i18n="hl.tools.kicker">Outils</span></p>
+            <h3 data-i18n="hl.tools.title">Mettez à jour toutes les applications OpenAEC au même endroit</h3>
+            <p data-i18n="hl.tools.desc">L'onglet Outils montre quelles applications OpenAEC vous avez et lesquelles ont une nouvelle version. Installez, mettez à jour et lancez en un clic, même sans connexion à votre environnement. L'application ne récupère que les versions d'OpenAEC-Foundation et vérifie chaque téléchargement.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop#tools" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
       </div>
-      <div class="panel-split-body">
-        <p data-i18n="why.desc">Les fichiers des projets de construction sont souvent dispersés entre Dropbox, OneDrive et les serveurs des éditeurs de logiciels. C’est alors un autre qui décide où se trouvent vos données et ce qu’elles coûtent.</p>
-        <p data-i18n="why.desc2">SuperCloud fonctionne sur votre propre Nextcloud. Fichiers, comptes et tickets restent sur votre serveur, et les outils OpenAEC y lisent et écrivent directement.</p>
-      </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="sync"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.twoway.title">Synchronisation bidirectionnelle</h3><p data-i18n="f.twoway.desc">Un dossier local et un espace restent identiques : dès que vous enregistrez et dès que le serveur signale du nouveau.</p></div></div></li>
+        <li class="pp-tile" data-cats="sync"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.delta.title">Seulement ce qui a changé</h3><p data-i18n="f.delta.desc">Pour un gros modèle, seuls les blocs modifiés sont transférés ; l'application montre le gain.</p></div></div></li>
+        <li class="pp-tile" data-cats="sync"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.conflict.title">Aucun travail perdu en cas de conflit</h3><p data-i18n="f.conflict.desc">Si deux personnes ont travaillé en même temps sur le même fichier, les deux versions sont conservées.</p></div></div></li>
+        <li class="pp-tile" data-cats="sync"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h3 data-i18n="f.select.title">Choisir les dossiers</h3><p data-i18n="f.select.desc">Par espace, vous décidez quels dossiers viennent sur cet ordinateur et si les nouveaux dossiers suivent automatiquement.</p></div></div></li>
+        <li class="pp-tile" data-cats="sync"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h3 data-i18n="f.explorer.title">Un dossier dans l'Explorateur</h3><p data-i18n="f.explorer.desc">Sous Windows, OpenAEC Cloud figure dans le volet de navigation, avec un sous-dossier par espace.</p></div></div></li>
+        <li class="pp-tile" data-cats="sync"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h3 data-i18n="f.ondemand.title">Fichiers à la demande</h3><p data-i18n="f.ondemand.desc">Sous Windows, les nouveaux fichiers sont d'abord en ligne uniquement et arrivent dès que vous les ouvrez. Vous pouvez aussi libérer de l'espace.</p></div></div></li>
+        <li class="pp-tile" data-cats="sync"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h3 data-i18n="f.icons.title">État sur chaque fichier</h3><p data-i18n="f.icons.desc">Sous Windows, l'Explorateur indique par fichier et dossier s'il est à jour, en cours ou en ligne uniquement.</p></div></div></li>
+        <li class="pp-tile" data-cats="sync"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clock"/></svg></div><div><h3 data-i18n="f.progress.title">Progression et stockage</h3><p data-i18n="f.progress.desc">Ce qui est transféré, la vitesse, le temps restant et l'espace restant dans votre environnement. Mise en pause depuis la zone de notification.</p></div></div></li>
+        <li class="pp-tile" data-cats="sync"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-eraser"/></svg></div><div><h3 data-i18n="f.ignore.title">Liste d'exclusion et noms problématiques</h3><p data-i18n="f.ignore.desc">Les fichiers temporaires sont exclus, vos propres motifs vont dans .openaecignore, et les noms que Windows ne gère pas sont ignorés proprement.</p></div></div></li>
+        <li class="pp-tile" data-cats="spaces"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><h3 data-i18n="f.space.title">Espaces avec rôles</h3><p data-i18n="f.space.desc">Un espace par projet ou service, avec des membres gestionnaires, rédacteurs, lecteurs ou invités.</p></div></div></li>
+        <li class="pp-tile" data-cats="spaces"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.newspace.title">Nouvel espace avec structure de dossiers</h3><p data-i18n="f.newspace.desc">Un gestionnaire de l'environnement crée un espace depuis l'application, avec une structure de dossiers type.</p></div></div></li>
+        <li class="pp-tile" data-cats="spaces"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.sharedwithme.title">Partagé avec moi</h3><p data-i18n="f.sharedwithme.desc">Associez les dossiers d'autres parties comme un espace. En lecture seule, rien ne part vers le serveur.</p></div></div></li>
+        <li class="pp-tile" data-cats="spaces"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.browse.title">Parcourir les fichiers du serveur</h3><p data-i18n="f.browse.desc">Parcourez un espace sans l'associer, créez des dossiers et voyez qui a verrouillé un fichier.</p></div></div></li>
+        <li class="pp-tile" data-cats="spaces share"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h3 data-i18n="f.lock.title">Verrouillage et versions</h3><p data-i18n="f.lock.desc">Verrouillez un fichier pour que vos collègues voient que vous y travaillez, et ouvrez une version antérieure.</p></div></div></li>
+        <li class="pp-tile" data-cats="share"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.link.title">Lien pour les externes</h3><p data-i18n="f.link.desc">Consulter et télécharger sans compte, avec mot de passe et date d'expiration. S'il est déjà dans OpenAEC, rien n'est envoyé.</p></div></div></li>
+        <li class="pp-tile" data-cats="share"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><h3 data-i18n="f.roles.title">Partager avec un rôle</h3><p data-i18n="f.roles.desc">Peut voir, Peut modifier ou Peut gérer. Vous n'accordez jamais plus que vos propres droits.</p></div></div></li>
+        <li class="pp-tile" data-cats="share"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg></div><div><h3 data-i18n="f.send.title">Envoyer avec OpenAEC</h3><p data-i18n="f.send.desc">Des fichiers et des dossiers entiers avec un lien de téléchargement, depuis le menu contextuel de l'Explorateur, du Finder, de Nautilus, Dolphin ou Nemo.</p></div></div></li>
+        <li class="pp-tile" data-cats="share"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-history"/></svg></div><div><h3 data-i18n="f.resume.title">Reprendre et retirer</h3><p data-i18n="f.resume.desc">Un transfert interrompu reprend là où il s'était arrêté. Sous Mes transferts, vous voyez les téléchargements et retirez un lien.</p></div></div></li>
+        <li class="pp-tile" data-cats="more"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h3 data-i18n="f.assistant.title">Assistant avec pièces jointes</h3><p data-i18n="f.assistant.desc">Des questions sur des PDF, des fichiers Word et Excel, du texte et des images, via le service d'IA d'OpenAEC dans l'UE.</p></div></div></li>
+        <li class="pp-tile" data-cats="more"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.chats.title">Conversations sur votre ordinateur</h3><p data-i18n="f.chats.desc">Chaque conversation est stockée localement et peut être supprimée. Après chaque réponse, vous voyez la consommation.</p></div></div></li>
+        <li class="pp-tile" data-cats="more"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.tools.title">Installer les applications OpenAEC</h3><p data-i18n="f.tools.desc">Installer, mettre à jour, lancer et supprimer, avec une vérification de chaque téléchargement sous Windows et Linux.</p></div></div></li>
+        <li class="pp-tile" data-cats="more"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg></div><div><h3 data-i18n="f.updates.title">Se met à jour seule</h3><p data-i18n="f.updates.desc">L'application télécharge les nouvelles versions en arrière-plan et ne les installe que lorsque vous cliquez, jamais en pleine synchronisation.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h3 data-i18n="f.cli.title">Ligne de commande pour serveurs</h3><p data-i18n="f.cli.desc">Le programme openaec-storage synchronise les espaces sous Linux sans écran, aussi en tant que service.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><h3 data-i18n="f.signin.title">Une seule connexion</h3><p data-i18n="f.signin.desc">La connexion passe par le navigateur avec votre compte OpenAEC ; les clés sont gardées dans le trousseau du système et renouvelées automatiquement.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel">
+  <section class="section surface-dark panel pp-anchor" id="download" data-pp-repo="OpenAEC-Foundation/openaec-cloud-desktop">
+    <div class="pp-dl">
+      <p class="pill-label" data-i18n="download.label">Télécharger</p>
+      <h2 data-i18n="download.title" data-pp-ver>Télécharger v2026.44.10</h2>
+      <p class="pp-dl-lead" data-i18n="download.lead">Gratuit et open source, pour Windows, macOS et Linux. Vous vous connectez avec votre compte OpenAEC SuperCloud.</p>
+      <div class="pp-dl-main" data-pp-main>
+        <a href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop/releases/download/v2026.44.10/OpenAEC.Desktop.App_2026.44.10_x64-setup.exe" class="btn btn-glow btn-lg" data-pp-dl="windows" data-pp-primary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-os="windows" data-i18n="download.forWindows">Télécharger pour Windows</span><span data-os="macos" data-i18n="download.forMac" hidden>Télécharger pour macOS</span><span data-os="linux-appimage" data-i18n="download.forLinux" hidden>Télécharger pour Linux</span></a>
+      </div>
+      <p class="pp-dl-meta"><span data-os="windows" data-i18n="download.metaWindows">programme d'installation .exe</span><span data-os="macos" data-i18n="download.metaMac" hidden>.dmg universel, Intel et Apple Silicon</span><span data-os="linux-appimage" data-i18n="download.metaLinux" hidden>AppImage, fonctionne sur la plupart des distributions</span> · <span data-pp-primary-size>9.0 MB</span></p>
+      <p class="pp-dl-mobile" data-pp-mobile hidden data-i18n="download.mobileNote">OpenAEC SuperCloud est une application de bureau. Téléchargez-la sur votre ordinateur.</p>
+      <details class="pp-dl-other" data-pp-other>
+        <summary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg><span data-i18n="download.other">Autres plateformes</span></summary>
+        <div class="pp-files">
+          <div class="pp-files-col"><h3>Windows</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop/releases/download/v2026.44.10/OpenAEC.Desktop.App_2026.44.10_x64-setup.exe" data-pp-dl="windows" data-pp-item="windows"><span class="pp-file"><span data-i18n="download.fileExe">Programme d'installation (.exe)</span><span class="pp-file-size"> · <span data-pp-size="windows">9.0 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop/releases/download/v2026.44.10/OpenAEC.Desktop.App_2026.44.10_x64_en-US.msi" data-pp-dl="windows-msi" data-pp-item="windows-msi"><span class="pp-file"><span data-i18n="download.fileMsi">Programme d'installation (.msi)</span><span class="pp-file-size"> · <span data-pp-size="windows-msi">12.2 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+          <div class="pp-files-col"><h3>macOS</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop/releases/download/v2026.44.10/OpenAEC.Desktop.App_2026.44.10_universal.dmg" data-pp-dl="macos" data-pp-item="macos"><span class="pp-file"><span data-i18n="download.fileDmg">.dmg universel</span><span class="pp-file-size"> · <span data-pp-size="macos">20.1 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+          <div class="pp-files-col"><h3>Linux</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop/releases/download/v2026.44.10/OpenAEC.Desktop.App_2026.44.10_amd64.deb" data-pp-dl="linux-deb" data-pp-item="linux-deb"><span class="pp-file"><span data-i18n="download.fileDeb">.deb</span><span class="pp-file-size"> · <span data-pp-size="linux-deb">12.3 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop/releases/download/v2026.44.10/OpenAEC.Desktop.App_2026.44.10_amd64.AppImage" data-pp-dl="linux-appimage" data-pp-item="linux-appimage"><span class="pp-file"><span data-i18n="download.fileAppImage">AppImage</span><span class="pp-file-size"> · <span data-pp-size="linux-appimage">86.1 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
     <div class="panel-split">
       <div class="panel-split-text">
-        <p class="pill-label">Nextcloud</p>
-        <h2 data-i18n="parts.title">Trois composants</h2>
-        <p data-i18n="parts.desc">SuperCloud n’est pas une application isolée, mais la couche sous l’écosystème. Ces composants sont en cours de développement.</p>
+        <p class="pill-label" data-i18n="whatsnew.label">Nouveau dans la v2026.44</p>
+        <h2 data-i18n="whatsnew.title">Un assistant, et <span>OpenAEC dans l'Explorateur</span></h2>
+        <p data-i18n="whatsnew.desc">Cette semaine, l'application a reçu un nouveau nom, la numérotation de toutes les applications OpenAEC et une série d'ajouts : d'une place dans l'Explorateur à un assistant et de nouveaux espaces depuis l'application.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop/releases" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaChangelog">Toutes les notes de version</span></a>
+          <a href="#download" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="whatsnew.ctaDownload">Télécharger</span></a>
+        </div>
       </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><p data-i18n="parts.p1"><strong>OpenAEC Cloud pour le bureau</strong> Un client de synchronisation comme Dropbox : reliez un dossier local à votre Nextcloud, synchronisez dans les deux sens et créez des liens de partage.</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><p data-i18n="parts.p2"><strong>Stockage cloud pour les outils</strong> Une bibliothèque partagée qui permet à des outils comme BCF Manager Studio de conserver leurs données de projet dans Nextcloud, avec plusieurs organisations sur un seul serveur.</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><p data-i18n="parts.p3"><strong>Un seul compte OpenAEC</strong> Une seule connexion pour toutes les applications. Les jetons d’accès sont vérifiés de façon centrale, y compris pour les services d’IA qui fonctionnent avec des crédits.</p></div></li>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h4 data-i18n="whatsnew.items.assistant.title">Assistant</h4><p data-i18n="whatsnew.items.assistant.desc">Posez des questions avec pièces jointes, avec des réponses en continu et un choix de modèle.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="whatsnew.items.explorer.title">OpenAEC Cloud dans l'Explorateur</h4><p data-i18n="whatsnew.items.explorer.desc">Une place dans le volet de navigation et une entrée OpenAEC dans le menu contextuel de Windows 11.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><h4 data-i18n="whatsnew.items.spaces.title">Espaces depuis l'application</h4><p data-i18n="whatsnew.items.spaces.desc">Créez un nouvel espace avec sa structure de dossiers, des dossiers, et invitez aussitôt des personnes.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg></div><div><h4 data-i18n="whatsnew.items.guests.title">Inviter des invités</h4><p data-i18n="whatsnew.items.guests.desc">Depuis la fenêtre de partage, vous invitez quelqu'un qui n'est pas encore membre de l'espace.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h4 data-i18n="whatsnew.items.noupload.title">Partager sans envoi</h4><p data-i18n="whatsnew.items.noupload.desc">Si un fichier est déjà dans OpenAEC, vous créez un lien tout de suite, et Envoyer ne le renvoie pas non plus.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><h4 data-i18n="whatsnew.items.session.title">Rester connecté</h4><p data-i18n="whatsnew.items.session.desc">L'application renouvelle votre session toute seule ; si elle expire malgré tout, la synchronisation s'arrête proprement avec un seul message.</p></div></li>
       </ul>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <h2 data-i18n="features.title">Fonctionnalités</h2>
-    <div class="features">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-move"/></svg></div>
-        <h4 data-i18n="features.sync.title">Synchronisation bidirectionnelle</h4>
-        <p data-i18n="features.sync.desc">Votre dossier local et votre dossier Nextcloud restent identiques : les fichiers nouveaux et modifiés circulent dans les deux sens, les autres sont ignorés.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div>
-        <h4 data-i18n="features.share.title">Partager par lien</h4>
-        <p data-i18n="features.share.desc">Créez en un clic un lien de partage pour un dossier ou un fichier, via votre propre serveur plutôt qu’un service externe.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div>
-        <h4 data-i18n="features.ondemand.title">Coches dans l’Explorateur</h4>
-        <p data-i18n="features.ondemand.desc">Sous Windows, un dossier devient un dossier cloud comme avec OneDrive : les fichiers sont présents en espace réservé et ne se téléchargent qu’à l’ouverture.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div>
-        <h4 data-i18n="features.tenants.title">Plusieurs organisations</h4>
-        <p data-i18n="features.tenants.desc">Une installation sert plusieurs organisations, chacune avec ses propres projets et son stockage.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-        <h4 data-i18n="features.manifest.title">Manifeste de projet</h4>
-        <p data-i18n="features.manifest.desc">Pour chaque projet, un manifeste indique quels modèles IFC et ensembles de tickets en font partie, pour que les outils trouvent les données des autres.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div>
-        <h4 data-i18n="features.sso.title">Une seule connexion</h4>
-        <p data-i18n="features.sso.desc">Un compte pour toutes les applications OpenAEC. Le client de bureau utilise pour l’instant un mot de passe d’application Nextcloud ; l’authentification unique suivra.</p>
-      </div>
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Questions fréquentes</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Quels fichiers puis-je synchroniser et partager ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">Tout type de fichier, des plans et modèles IFC aux tableurs et photos. Seuls les fichiers temporaires, ce que vous mettez dans .openaecignore et les noms que Windows ne gère pas sont ignorés. L'assistant lit les PDF, Word, Excel, textes et images.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Dois-je installer quelque chose ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Oui, l'OpenAEC Desktop App pour Windows, macOS ou Linux. Ensuite, vous vous connectez à votre environnement via le navigateur et associez les espaces voulus. Pour les serveurs sans écran, il y a le programme en ligne de commande openaec-storage.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">Combien ça coûte ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">L'application est gratuite et open source. Il vous faut en revanche un compte OpenAEC SuperCloud ; inscrivez-vous sur <a href="/supercloud/aanmelden/">la page SuperCloud</a>, qui indique aussi l'espace de stockage inclus. L'assistant utilise le crédit IA de votre environnement.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.save.q">Où sont stockés mes fichiers ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.save.a">Dans le stockage de votre propre environnement OpenAEC SuperCloud, dans l'UE, avec leurs versions. Sur votre ordinateur, ils sont dans des dossiers ordinaires et dans leur propre format : il n'y a pas de format de fichier à part.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">Sur quels systèmes fonctionne-t-il ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">Windows (installateur ou MSI), macOS (.dmg universel pour Intel et Apple Silicon) et Linux (.deb ou AppImage). Synchronisation, partage et envoi fonctionnent partout. Les icônes d'état, les fichiers à la demande et la place dans le volet de navigation n'existent encore que sous Windows.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">Est-ce adapté à la pratique du bâtiment ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">Oui. Vous travaillez avec un espace par projet, une structure de dossiers fixe, et donnez aux parties externes comme une entreprise ou un contrôleur un rôle d'invité ou un lien avec date d'expiration. Le verrouillage montre qui travaille sur un plan ou une note de calcul.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">Que peut en faire un assistant IA ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">L'application a son propre assistant, qui lit vos fichiers en pièce jointe. Une connexion MCP permettant à un assistant IA externe de travailler lui-même dans vos espaces n'existe pas encore ; pour les scripts, il y a le programme en ligne de commande openaec-storage.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.nextcloud.q">Est-ce compatible avec Nextcloud ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.nextcloud.a">Non. Les premières versions visaient Nextcloud, mais l'application de bureau fonctionne désormais avec le stockage propre de l'OpenAEC SuperCloud : espaces, rôles, versions et transferts.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.offline.q">Puis-je travailler sans internet ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.offline.a">Oui, avec les fichiers présents sur votre ordinateur. Dès que la connexion revient, vos modifications partent vers le serveur. Les fichiers en ligne uniquement ne s'ouvrent qu'avec une connexion et l'application en marche.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.recipients.q">Que voit un destinataire sans compte ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.recipients.a">Une page de téléchargement dans votre propre environnement, avec uniquement ce que vous avez partagé ou envoyé. Si vous avez fixé un mot de passe, il doit d'abord le saisir ; le mot de passe n'est jamais dans l'e-mail. Après la date d'expiration, ou si vous retirez le lien, il ne fonctionne plus.</p></div>
+      </details>
     </div>
   </div></section>
 
-  <section class="section"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="tech.title">Technologie</h2>
-      </div>
-      <div class="panel-split-body">
-        <div class="chip-row chip-row-light tech-chips">
-          <span class="chip">Nextcloud</span>
-          <span class="chip">WebDAV</span>
-          <span class="chip">Rust</span>
-          <span class="chip">Tauri 2</span>
-          <span class="chip">SolidJS</span>
-          <span class="chip">Python · FastAPI</span>
-          <span class="chip">JWKS</span>
-        </div>
-        <p data-i18n="tech.desc">Le client de bureau est construit avec Tauri 2, Rust et SolidJS et communique avec votre serveur via WebDAV et l’API de partage de Nextcloud. La bibliothèque de stockage est écrite en Rust, la vérification des comptes pour les services en Python.</p>
-      </div>
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Technologie</h2><p data-i18n="tech.sub">Pour ceux qui veulent savoir comment c'est construit.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.tauri.title">Tauri 2 et Rust</h4><p data-i18n="tech.tauri.desc">Une petite application native pour Windows, macOS et Linux, avec installateurs signés et mises à jour automatiques.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="tech.solid.title">SolidJS</h4><p data-i18n="tech.solid.desc">Les fenêtres de l'application : vue d'ensemble, espaces, partage, envoi, assistant et outils.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.sync.title">Noyau openaec-sync</h4><p data-i18n="tech.sync.desc">Une bibliothèque Rust sans interface : hachages BLAKE3 par bloc, envois delta, transferts parallèles et règles de conflit.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h4 data-i18n="tech.storage.title">OpenAEC Storage</h4><p data-i18n="tech.storage.desc">Le côté serveur : une application Frappe pour les espaces, droits, versions et transferts ; les fichiers eux-mêmes sont dans un stockage S3 dans l'UE.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h4 data-i18n="tech.cloudfilter.title">API Cloud Filter de Windows</h4><p data-i18n="tech.cloudfilter.desc">Icônes d'état, fichiers à la demande et volet de navigation, plus une entrée dans le menu contextuel de Windows 11.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h4 data-i18n="tech.auth.title">OAuth 2 avec PKCE</h4><p data-i18n="tech.auth.desc">Connexion via le navigateur ; jetons dans le trousseau du système, sans secret dans l'application.</p></div></div>
     </div>
   </div></section>
+
 
   <!-- Release Notes (shared component) -->
-  <div data-release-notes="openaec-cloud"></div>
+  <section id="releases" class="pp-releases">
+  <div data-release-notes="openaec-cloud-desktop"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Afficher toutes les versions</span><span data-rel-hide hidden data-i18n="releases.showLess">Afficher seulement les trois dernières</span></button>
+    <a href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop/releases" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.github">Toutes les versions sur GitHub</span></a>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">OpenAEC <span class="accent">SuperCloud</span></h2>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="cta.github">Voir sur GitHub</span></a>
+        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Télécharger</span></a>
+        <a href="#features" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Voir les fonctions</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/openaec-cloud-desktop" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Code source</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -356,27 +616,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-<script>
-  (function(){
-    const track = document.getElementById('sliderTrack');
-    const dots = document.getElementById('sliderDots');
-    if (!track || !dots) return;
-    const slides = track.children.length;
-    let current = 0;
-    for(let i=0;i<slides;i++){
-      const d = document.createElement('button');
-      d.className = 'slider-dot' + (i===0?' active':'');
-      d.onclick = ()=>slideTo(i);
-      dots.appendChild(d);
-    }
-    window.slideMove = function(dir){slideTo(current+dir);};
-    window.slideTo = function(i){
-      current = (i+slides)%slides;
-      track.style.transform = 'translateX(-'+current*100+'%)';
-      dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-    };
-  })();
-</script>
-<script src="/shared/i18n.js?v=20261015"></script>
+  <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open 2D Studio — OpenAEC Foundation</title>
-  <meta name="description" content="A free, open-source 2D CAD application for technical drawings, floor plans, and mechanical designs. Lightweight, fast alternative to commercial CAD…">
+  <meta name="description" content="Free 2D drafting app in the browser: draw floor plans and details with layers, snapping, dimensions and hatches, place them on a sheet with a title block…">
   <link rel="canonical" href="https://open-aec.com/en/open-2d-studio/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/open-2d-studio/">
@@ -15,23 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/open-2d-studio/">
   <!-- hreflang:end -->
 
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="Open 2D Studio">
-  <meta property="og:description" content="A free, open-source 2D CAD application for technical drawings, floor plans, and mechanical designs. Lightweight, fast alternative to commercial CAD…">
+  <meta property="og:title" content="Open 2D Studio — OpenAEC Foundation">
+  <meta property="og:description" content="Free 2D drafting app in the browser: draw floor plans and details with layers, snapping, dimensions and hatches, place them on a sheet with a title block…">
   <meta property="og:url" content="https://open-aec.com/en/open-2d-studio/">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-2d-studio.jpeg">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-2d-studio-hero.png">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Open 2D Studio">
-  <meta name="twitter:description" content="A free, open-source 2D CAD application for technical drawings, floor plans, and mechanical designs. Lightweight, fast alternative to commercial CAD…">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-2d-studio.jpeg">
+  <meta name="twitter:description" content="Free 2D drafting app in the browser: draw floor plans and details with layers, snapping, dimensions and hatches, place them on a sheet with a title block…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-2d-studio-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -41,26 +39,45 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Open 2D Studio",
-    "applicationCategory": "EngineeringApplication",
-    "applicationSubCategory": "CAD",
-    "operatingSystem": "Windows, macOS, Linux",
+    "applicationCategory": "DesignApplication",
+    "applicationSubCategory": "2D-CAD",
+    "operatingSystem": "Web",
     "url": "https://open-aec.com/open-2d-studio/",
     "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
-    "description": "Open-source 2D CAD application with drawing tools, DXF import/export, layers and dimensions.",
+    "description": "Free 2D CAD drafting app that runs in the browser: lines, polylines, splines, rectangles, circles, arcs and ellipses with object snaps; move, copy, rotate, mirror, array, trim, extend, fillet, chamfer, offset and stretch; layers; aligned, linear, angular, radius and diameter dimensions; 47 built-in hatch patterns; multiple drawings and sheets from A4 to A0 with title block; print and vector PDF export; DXF import and export, PDF and DXF underlays, SVG, JSON and IFC4 export. Desktop and Android builds exist but are not yet publicly available.",
     "featureList": [
-      "Drawing tools",
-      "Precision and snapping",
-      "Layer management",
-      "DXF import/export",
-      "Properties and selection",
-      "Extensions"
+      "Lijnen, polylijnen en splines",
+      "Rechthoek, cirkel, boog en ellips",
+      "Verplaatsen, kopiëren en draaien",
+      "Trimmen, verlengen en afronden",
+      "Snappen en raster",
+      "Lagen",
+      "Eigenschappen",
+      "Zoeken en vervangen",
+      "Maatvoering",
+      "Tekst in ISO-lettertype",
+      "Arceringen en gevulde vlakken",
+      "Meerdere tekeningen en bladen",
+      "Titelhoek",
+      "Afdrukken en PDF",
+      "Eenheden en schaal",
+      "DXF openen en opslaan",
+      "Onderlegger",
+      "Afbeeldingen",
+      "SVG, JSON en IFC4",
+      "Eigen projectbestand",
+      "Uitbreidingen",
+      "Zeven kleurthema's",
+      "Sneltoetsen",
+      "Feedback vanuit de app"
     ],
-    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-2d-studio.jpeg",
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-2d-studio-hero.png",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -68,7 +85,7 @@
       "availability": "https://schema.org/InStock"
     },
     "isAccessibleForFree": true,
-    "keywords": "2D CAD, DXF, drawing, AutoCAD alternative, LibreCAD alternative",
+    "keywords": "2D CAD, tekenprogramma, drafting, plattegrond, floor plan, DXF, PDF, IFC4, lagen, layers, maatvoering, dimensions, arcering, hatch, titelhoek, title block, gratis CAD",
     "sameAs": [
       "https://open-2d-studio.open-aec.com/"
     ],
@@ -79,9 +96,94 @@
     }
   }
   </script>
-  <style>
-    .page-panels .slider-slide video { width: 100%; display: block; background: var(--night-build); }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Je eigen projectbestanden (.o2d) en DXF-bestanden uit AutoCAD, BricsCAD of een ander CAD-programma. Een PDF of groot DXF-bestand kun je als onderlegger gebruiken, en je kunt afbeeldingen invoegen. DWG-bestanden opent Open 2D Studio nog niet; sla ze in je CAD-programma eerst op als DXF."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. De browserversie werkt direct, zonder account. Er zijn ook versies voor Windows, macOS, Linux en Android-tablets, maar die zijn nog niet openbaar te downloaden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost Open 2D Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. Je betaalt geen licentie en hebt geen account of abonnement nodig."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk formaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Als .o2d-projectbestand, met al je tekeningen, bladen en lagen. In de browser download je dat bestand. Daarnaast exporteer je naar DXF, SVG, JSON en IFC4, en via het afdrukvenster naar PDF."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In elke moderne browser op Windows, macOS en Linux. De desktopversies voor Windows, macOS en Linux en de Android-app voor tablets zijn er al, maar nog niet openbaar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de bouwpraktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Je werkt in millimeters op een schaal als 1:50 of 1:100, met A-formaten van A4 tot A0, een titelhoek en tekst en maten in een ISO-lettertype. De bediening is nog in het Engels."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Elke teken-, wijzig- en laagopdracht is als gereedschap beschreven voor AI-assistenten. In de desktopversie typ je in de terminal een opdracht in gewone taal, zoals \"teken een cirkel\", en Claude Code op je eigen computer voert hem uit. In de browser werkt dat nog niet, en een MCP-server om zelf aan te sluiten is er nog niet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil met Open CAD Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Het zijn twee aparte programma's van verschillende makers. Open CAD Studio is gemaakt om DWG- en DXF-bestanden van anderen te openen en bij te werken, in 2D en 3D. Open 2D Studio richt zich op zelf tekenen in 2D: lagen, maatvoering, arceringen en bladen met titelhoek. Werk je vooral met DWG-bestanden van anderen, kijk dan bij Open CAD Studio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is de broncode openbaar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet. Open 2D Studio krijgt de licentie LGPL-3.0, maar de repository op GitHub is nog niet openbaar. Daarom staan er op deze pagina nog geen downloads."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wordt er nog aan gewerkt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De laatste versie, v0.35, is van maart 2026. In april is de browserversie online gezet; sindsdien zijn er alleen kleine onderhoudswijzigingen geweest. Mis je iets, meld het dan met F1 in de app."
+        }
+      }
+    ]
+  }
+  </script>
 
   <meta name="i18n-static" content="en">
   <!-- schema:start -->
@@ -117,7 +219,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "en",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/en/open-2d-studio/#breadcrumb"
         }
@@ -181,91 +283,242 @@
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">Open-source 2D CAD</p>
+      <p class="pill-label" data-i18n="header.label">2D drafting</p>
       <h1 data-i18n="header.title">Open <span class="accent">2D</span> Studio</h1>
-      <p class="lead" data-i18n="header.desc">A free, open-source 2D CAD application for technical drawings, floor plans, and mechanical designs. Lightweight, fast alternative to commercial CAD software.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">From the first line to a print-ready sheet, right in the browser</p>
+      <p class="lead" data-i18n="header.desc">Draw floor plans, details and technical drawings with the tools you know from CAD: layers, snapping, dimensions and hatches. Place your drawing to scale on a sheet with a title block, then print it or save it as PDF or DXF.</p>
       <div class="btn-group">
-        <a href="https://open-2d-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Live demo</span></a>
+        <a href="https://open-2d-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Open in browser</span></a>
+        <a href="#features" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">See the features</span></a>
+        <a href="/en/#contact" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg><span data-i18n="header.contactBtn">Contact us</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg>Browser</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg>DXF</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="header.proof1">DXF in and out</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg><span data-i18n="header.proof2">PDF · SVG · IFC4</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="header.proof3">Works in the browser</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof4">Free · no account</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide">
-            <video controls muted playsinline preload="metadata" poster="/shared/assets/screenshots/open-2d-studio.jpeg">
-              <source src="/shared/assets/screenshots/open-2d-studio-demo.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-2d-studio.jpeg" alt="Open 2D Studio - tekening in de editor"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-2d-studio-hero.png" width="1920" height="1200" alt="Open 2D Studio with the floor plan of a fictitious garden office: hatched walls, window and door frames, furniture, dimensions and room names with floor areas" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-2d-studio-feat-bewerken.png" width="1200" height="750" decoding="async" alt="Meeting table with four chairs selected in the floor plan, with grips on each circle and the properties colour, lineweight, line style and radius on the right" data-i18n="hl.edit.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-2d-studio-feat-lagen.png" width="1200" height="750" decoding="async" alt="Layer list opened from the status bar with the layers Walls, Frames, Furniture, Dimensions and Text, each with its own colour and buttons for visibility and locking" data-i18n="hl.layers.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-2d-studio-feat-patronen.png" width="1200" height="750" decoding="async" alt="Hatch pattern manager with the built-in patterns, with Concrete selected showing a preview and its description" data-i18n="hl.hatch.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-2d-studio-feat-blad.png" width="1200" height="750" decoding="async" alt="A3 sheet with the floor plan at 1:50 in a viewport and a filled-in title block with drawing title, number A-101, project and date" data-i18n="hl.sheet.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-2d-studio-feat-print.png" width="1200" height="750" decoding="async" alt="Print dialog with paper size, print range, margins and a preview of the floor plan, with the buttons Export PDF and Print" data-i18n="hl.print.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-2d-studio-feat-ifc.png" width="1200" height="750" decoding="async" alt="IFC Model panel below the floor plan with the IFC4 text that is built live from the drawing, with the buttons Copy and Export .ifc" data-i18n="hl.ifc.alt" data-i18n-attr="alt"></div>
         </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende">&rsaquo;</button>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap"><div class="container">
-    <h2 data-i18n="features.heading">Features</h2>
-    <div class="features">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg></div>
-        <h4 data-i18n="features.drawing.title">Drawing tools</h4>
-        <p data-i18n="features.drawing.desc">Line, rectangle, circle, arc, polyline, ellipse, and text. CAD-style command input for precise control.</p>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="notice.text">The browser version works straight away. The desktop and Android apps are not yet available for public download, and the latest version (v0.35) dates from March 2026.</span></p>
+  </div>
+
+  <nav class="pp-subnav" aria-label="On this page" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Features</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">What's new</a>
+      <a href="#faq" data-i18n="subnav.faq">FAQ</a>
+    </div>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Features</p><h2 data-i18n="features.heading">Draw, dimension and print</h2><p data-i18n="features.sub">Start with the highlights, or pick a topic.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Features by topic" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Highlights</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-draw" data-tab="draw" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg><span data-i18n="tabs.draw">Drawing and editing</span> <span class="pp-tab-count" data-count="draw"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-annotate" data-tab="annotate" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg><span data-i18n="tabs.annotate">Dimensions and hatching</span> <span class="pp-tab-count" data-count="annotate"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-sheets" data-tab="sheets" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg><span data-i18n="tabs.sheets">Sheets and printing</span> <span class="pp-tab-count" data-count="sheets"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-exchange" data-tab="exchange" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg><span data-i18n="tabs.exchange">Exchange</span> <span class="pp-tab-count" data-count="exchange"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">All features</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-2d-studio-feat-bewerken.png" width="1200" height="750" loading="lazy" decoding="async" alt="Meeting table with four chairs selected in the floor plan, with grips on each circle and the properties colour, lineweight, line style and radius on the right" data-i18n="hl.edit.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.edit.kicker">Drawing</span></p>
+            <h3 data-i18n="hl.edit.title">Draw the way you are used to in CAD</h3>
+            <p data-i18n="hl.edit.desc">Line, polyline, rectangle, circle, arc, ellipse and spline, with snapping to endpoint, midpoint, centre and intersection. Move, copy, rotate, mirror, trim or fillet, and adjust colour, lineweight and line style in the properties panel.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-2d-studio-feat-lagen.png" width="1200" height="750" loading="lazy" decoding="async" alt="Layer list opened from the status bar with the layers Walls, Frames, Furniture, Dimensions and Text, each with its own colour and buttons for visibility and locking" data-i18n="hl.layers.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.layers.kicker">Layers</span></p>
+            <h3 data-i18n="hl.layers.title">Layers keep your drawing clear</h3>
+            <p data-i18n="hl.layers.desc">Put walls, frames, furniture and dimensions each on their own layer with their own colour. Switch a layer off to work without it for a while, or lock it so you don't draw on it by accident.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-2d-studio-feat-patronen.png" width="1200" height="750" loading="lazy" decoding="async" alt="Hatch pattern manager with the built-in patterns, with Concrete selected showing a preview and its description" data-i18n="hl.hatch.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.hatch.kicker">Hatches</span></p>
+            <h3 data-i18n="hl.hatch.title">A hatch for every material</h3>
+            <p data-i18n="hl.hatch.desc">Choose from 47 built-in patterns, from diagonal and cross-hatching to concrete, or make your own pattern. Keep your favourites, and import and export patterns to share them with colleagues.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-2d-studio-feat-blad.png" width="1200" height="750" loading="lazy" decoding="async" alt="A3 sheet with the floor plan at 1:50 in a viewport and a filled-in title block with drawing title, number A-101, project and date" data-i18n="hl.sheet.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.sheet.kicker">Sheets</span></p>
+            <h3 data-i18n="hl.sheet.title">From drawing to sheet with a title block</h3>
+            <p data-i18n="hl.sheet.desc">Place your drawing to scale on a sheet from A4 to A0, portrait or landscape. Fill in the title block with title, drawing number, project, scale and date, or start from a sheet template.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-2d-studio-feat-print.png" width="1200" height="750" loading="lazy" decoding="async" alt="Print dialog with paper size, print range, margins and a preview of the floor plan, with the buttons Export PDF and Print" data-i18n="hl.print.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">05</span> <span data-i18n="hl.print.kicker">Printing</span></p>
+            <h3 data-i18n="hl.print.title">Print or save as PDF</h3>
+            <p data-i18n="hl.print.desc">Choose the paper size, portrait or landscape, the margins and what to print: the current view or a selection of sheets. You see a preview straight away, and save your settings as a preset for next time.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-2d-studio-feat-ifc.png" width="1200" height="750" loading="lazy" decoding="async" alt="IFC Model panel below the floor plan with the IFC4 text that is built live from the drawing, with the buttons Copy and Export .ifc" data-i18n="hl.ifc.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">06</span> <span data-i18n="hl.ifc.kicker">Exchange</span></p>
+            <h3 data-i18n="hl.ifc.title">Works with other CAD and BIM software</h3>
+            <p data-i18n="hl.ifc.desc">Read and write DXF for AutoCAD, BricsCAD and other CAD programs, and export to SVG, JSON and IFC4. The IFC panel shows live how your drawing is written out as IFC.</p>
+          </div>
+        </article>
       </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-move"/></svg></div>
-        <h4 data-i18n="features.snapping.title">Precision and snapping</h4>
-        <p data-i18n="features.snapping.desc">Snap to grid and object snaps: endpoint, midpoint, center, intersection. Configurable grid system.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div>
-        <h4 data-i18n="features.layers.title">Layer management</h4>
-        <p data-i18n="features.layers.desc">Multiple layers with visibility, lock, and color controls. Organize drawings into logical groups.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div>
-        <h4 data-i18n="features.dxf.title">DXF import/export</h4>
-        <p data-i18n="features.dxf.desc">Read and write DXF files via the Rust dxf-rs backend for interoperability with AutoCAD, BricsCAD, and other CAD software.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div>
-        <h4 data-i18n="features.properties.title">Properties and selection</h4>
-        <p data-i18n="features.properties.desc">Edit stroke color, width, and line style. Click, box select, or Shift+Click to build selections. Multi-select alignment and distribution.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div>
-        <h4 data-i18n="features.extensions.title">Extensions</h4>
-        <p data-i18n="features.extensions.desc">Extensible architecture for add-ins. See <a href="/ext-drawing-statistics">Drawing Statistics</a> for an example extension.</p>
-      </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="draw"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg></div><div><h3 data-i18n="f.lines.title">Lines, polylines and splines</h3><p data-i18n="f.lines.desc">Straight or smooth, open or closed.</p></div></div></li>
+        <li class="pp-tile" data-cats="draw"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div><div><h3 data-i18n="f.shapes.title">Rectangle, circle, arc and ellipse</h3><p data-i18n="f.shapes.desc">The basic shapes for any floor plan or detail.</p></div></div></li>
+        <li class="pp-tile" data-cats="draw"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-move"/></svg></div><div><h3 data-i18n="f.modify.title">Move, copy and rotate</h3><p data-i18n="f.modify.desc">Also mirror, scale and array.</p></div></div></li>
+        <li class="pp-tile" data-cats="draw"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-scissors"/></svg></div><div><h3 data-i18n="f.edit.title">Trim, extend and fillet</h3><p data-i18n="f.edit.desc">Plus chamfer, offset and stretch.</p></div></div></li>
+        <li class="pp-tile" data-cats="draw"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.snap.title">Snapping and grid</h3><p data-i18n="f.snap.desc">Endpoint, midpoint, centre and intersection, and ortho mode with F8.</p></div></div></li>
+        <li class="pp-tile" data-cats="draw"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.layers.title">Layers</h3><p data-i18n="f.layers.desc">With colour, visibility and locking per layer.</p></div></div></li>
+        <li class="pp-tile" data-cats="draw"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.props.title">Properties</h3><p data-i18n="f.props.desc">Colour, lineweight, line style and sizes of what you select.</p></div></div></li>
+        <li class="pp-tile" data-cats="draw"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-text"/></svg></div><div><h3 data-i18n="f.find.title">Find and replace</h3><p data-i18n="f.find.desc">Find text in your drawing and change it in one go.</p></div></div></li>
+        <li class="pp-tile" data-cats="annotate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><h3 data-i18n="f.dims.title">Dimensions</h3><p data-i18n="f.dims.desc">Aligned, linear, angular, radius and diameter.</p></div></div></li>
+        <li class="pp-tile" data-cats="annotate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-text"/></svg></div><div><h3 data-i18n="f.text.title">Text in an ISO typeface</h3><p data-i18n="f.text.desc">Osifont to ISO 3098, with text heights in millimetres on paper.</p></div></div></li>
+        <li class="pp-tile" data-cats="annotate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-hatch"/></svg></div><div><h3 data-i18n="f.hatch.title">Hatches and filled regions</h3><p data-i18n="f.hatch.desc">47 built-in patterns and your own.</p></div></div></li>
+        <li class="pp-tile" data-cats="sheets"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.sheets.title">Several drawings and sheets</h3><p data-i18n="f.sheets.desc">Keep plan, section and details together in one file.</p></div></div></li>
+        <li class="pp-tile" data-cats="sheets"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.title.title">Title block</h3><p data-i18n="f.title.desc">Title, number, project, scale and date; with your own SVG templates.</p></div></div></li>
+        <li class="pp-tile" data-cats="sheets"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div><div><h3 data-i18n="f.print.title">Printing and PDF</h3><p data-i18n="f.print.desc">With preview, margins and saved presets.</p></div></div></li>
+        <li class="pp-tile" data-cats="sheets"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div><div><h3 data-i18n="f.units.title">Units and scale</h3><p data-i18n="f.units.desc">Millimetres, centimetres, metres, inches or feet, and a drawing scale such as 1:100.</p></div></div></li>
+        <li class="pp-tile" data-cats="exchange"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h3 data-i18n="f.dxf.title">Open and save DXF</h3><p data-i18n="f.dxf.desc">Exchange drawings with AutoCAD, BricsCAD and other CAD programs.</p></div></div></li>
+        <li class="pp-tile" data-cats="exchange"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.underlay.title">Underlay</h3><p data-i18n="f.underlay.desc">A PDF or large DXF file as a background to draw over.</p></div></div></li>
+        <li class="pp-tile" data-cats="exchange"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h3 data-i18n="f.image.title">Images</h3><p data-i18n="f.image.desc">Insert a photo or scan into your drawing.</p></div></div></li>
+        <li class="pp-tile" data-cats="exchange"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.export.title">SVG, JSON and IFC4</h3><p data-i18n="f.export.desc">For the web, your own scripts or a BIM model.</p></div></div></li>
+        <li class="pp-tile" data-cats="exchange"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.project.title">Own project file</h3><p data-i18n="f.project.desc">All drawings, sheets and layers together in one .o2d file.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.ext.title">Extensions</h3><p data-i18n="f.ext.desc">Browse, install and update extensions from the menu.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.themes.title">Seven colour themes</h3><p data-i18n="f.themes.desc">From light and dark to high contrast.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h3 data-i18n="f.keys.title">Keyboard shortcuts</h3><p data-i18n="f.keys.desc">Work fast with the keyboard, with an overview in the menu.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h3 data-i18n="f.feedback.title">Feedback from the app</h3><p data-i18n="f.feedback.desc">Report a bug or idea with F1, without leaving the app.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section"><div class="container">
-    <h2 data-i18n="tech.heading">Tech stack</h2>
-    <div class="features features-compact">
-      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h4 data-i18n="tech.tauri.title">Tauri 2.0</h4><p data-i18n="tech.tauri.desc">~10 MB app size, ~30 MB RAM usage, native performance via Rust backend.</p></div></div>
-      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.react.title">React 18 + TypeScript</h4><p data-i18n="tech.react.desc">Component-based UI with type safety and Zustand state management.</p></div></div>
-      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.canvas.title">Canvas 2D rendering</h4><p data-i18n="tech.canvas.desc">Fast rendering that handles 10k+ elements smoothly.</p></div></div>
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
+    <div class="panel-split">
+      <div class="panel-split-text">
+        <p class="pill-label" data-i18n="whatsnew.label">New in v0.35</p>
+        <h2 data-i18n="whatsnew.title">Your own colours and <span>extensions</span></h2>
+        <p data-i18n="whatsnew.desc">The latest releases, from v0.30 to v0.35 in March 2026, brought colour themes, a cleaner interface, extensions and feedback from within the app.</p>
+        <div class="btn-group">
+          <a href="https://open-2d-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="whatsnew.ctaDemo">Try it in the browser</span></a>
+        </div>
+      </div>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h4 data-i18n="whatsnew.items.themes.title">Colour themes</h4><p data-i18n="whatsnew.items.themes.desc">Pick one of seven themes under View, including light and high contrast.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h4 data-i18n="whatsnew.items.ext.title">Manage extensions</h4><p data-i18n="whatsnew.items.ext.desc">Browse, install and update via File > Extensions.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-history"/></svg></div><div><h4 data-i18n="whatsnew.items.settings.title">Settings are kept</h4><p data-i18n="whatsnew.items.settings.desc">Your preferences are ready when you open the app again.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h4 data-i18n="whatsnew.items.feedback.title">Feedback with F1</h4><p data-i18n="whatsnew.items.feedback.desc">Report a bug or idea straight from the app.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Frequently asked questions</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Which files can I open?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">Your own project files (.o2d) and DXF files from AutoCAD, BricsCAD or another CAD program. You can use a PDF or a large DXF file as an underlay, and insert images. Open 2D Studio does not open DWG files yet; save them as DXF in your CAD program first.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Do I need to install anything?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">No. The browser version works straight away, without an account. There are also versions for Windows, macOS, Linux and Android tablets, but they are not yet available for public download.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">What does Open 2D Studio cost?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Nothing. You pay no licence fee and need no account or subscription.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.save.q">In what format is my work saved?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.save.a">As an .o2d project file, with all your drawings, sheets and layers. In the browser you download that file. You can also export to DXF, SVG, JSON and IFC4, and to PDF via the print dialog.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">Which systems does it run on?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">In any modern browser on Windows, macOS and Linux. Desktop versions for Windows, macOS and Linux and an Android app for tablets exist, but are not public yet.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">Does it fit construction practice?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">You work in millimetres at a scale such as 1:50 or 1:100, with paper sizes from A4 to A0, a title block, and text and dimensions in an ISO typeface. The interface is in English for now.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">What can an AI assistant do with it?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">Every draw, modify and layer command is described as a tool for AI assistants. In the desktop version you type a request in plain language in the terminal, such as "draw a circle", and Claude Code on your own computer carries it out. This does not work in the browser yet, and there is no MCP server to connect to yourself yet.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.cad.q">How is it different from Open CAD Studio?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.cad.a">They are two separate programs by different makers. Open CAD Studio is built to open and update DWG and DXF files from others, in 2D and 3D. Open 2D Studio focuses on drawing in 2D yourself: layers, dimensions, hatches and sheets with a title block. If you mostly work with DWG files from others, take a look at Open CAD Studio.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.source.q">Is the source code public?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.source.a">Not yet. Open 2D Studio carries the LGPL-3.0 licence, but its GitHub repository is not public yet. That is why this page has no downloads yet.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.status.q">Is it still being worked on?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.status.a">The latest version, v0.35, dates from March 2026. The browser version went online in April; since then there have only been small maintenance changes. If you miss something, report it with F1 in the app.</p></div>
+      </details>
     </div>
   </div></section>
+
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Technology</h2><p data-i18n="tech.sub">For those who want to know how it is built.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.tauri.title">Tauri 2</h4><p data-i18n="tech.tauri.desc">A thin native shell in Rust for Windows, macOS, Linux and Android, with an installer of a few megabytes.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="tech.react.title">React 19 en TypeScript</h4><p data-i18n="tech.react.desc">The interface in separate components with type checking; Zustand keeps track of the drawing state.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.canvas.title">Canvas 2D</h4><p data-i18n="tech.canvas.desc">Own drawing engine on the HTML canvas, with snapping, grips and selection.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h4 data-i18n="tech.dxf.title">DXF</h4><p data-i18n="tech.dxf.desc">Own DXF reader and writer in TypeScript, so exchange works in the browser too.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div><div><h4 data-i18n="tech.pdf.title">jsPDF en pdf.js</h4><p data-i18n="tech.pdf.desc">Vector PDF for printing, and reading PDF files as an underlay.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-text"/></svg></div><div><h4 data-i18n="tech.osifont.title">Osifont</h4><p data-i18n="tech.osifont.desc">Open typeface to ISO 3098 for text and dimensions.</p></div></div>
+    </div>
+  </div></section>
+
+
+  <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
+  <div data-release-notes="open-2d-studio"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Show all releases</span><span data-rel-hide hidden data-i18n="releases.showLess">Show only the latest three</span></button>
+  </p>
+  </section>
+  <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">Open <span class="accent">2D</span> Studio</h2>
       <div class="btn-group">
-        <a href="https://open-2d-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Live demo</span></a>
+        <a href="https://open-2d-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Open in browser</span></a>
+        <a href="#features" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">See the features</span></a>
+        <a href="/en/#contact" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg><span data-i18n="header.contactBtn">Contact us</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -319,28 +572,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-  <script>
-  (function(){
-    const track = document.getElementById('sliderTrack');
-    const dots = document.getElementById('sliderDots');
-    if (!track || !dots) return;
-    const slides = track.children.length;
-    let current = 0;
-    for(let i=0;i<slides;i++){
-      const d = document.createElement('button');
-      d.className = 'slider-dot' + (i===0?' active':'');
-      d.onclick = ()=>slideTo(i);
-      dots.appendChild(d);
-    }
-    window.slideMove = function(dir){slideTo(current+dir);};
-    window.slideTo = function(i){
-      current = (i+slides)%slides;
-      track.style.transform = 'translateX(-'+current*100+'%)';
-      dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-      track.querySelectorAll('video').forEach(v=>v.pause());
-    };
-  })();
-  </script>
   <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

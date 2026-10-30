@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenAEC Docs — OpenAEC Foundation</title>
-  <meta name="description" content="Plataforma open source de gestión documental BIM. Gestiona, comparte y archiva todos los documentos del proyecto en un lugar central.">
+  <meta name="description" content="Concepto de gestión documental de código abierto para proyectos de construcción: proyectos, carpetas de proyecto fijas y manifiestos sobre tu propio…">
   <link rel="canonical" href="https://open-aec.com/es/openaec-docs/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/openaec-docs/">
@@ -15,23 +15,22 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/openaec-docs/">
   <!-- hreflang:end -->
 
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="OpenAEC Docs">
-  <meta property="og:description" content="Plataforma open source de gestión documental BIM. Gestiona, comparte y archiva todos los documentos del proyecto en un lugar central.">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/openaec-docs-projecten.jpg">
+  <meta property="og:title" content="OpenAEC Docs — OpenAEC Foundation">
+  <meta property="og:description" content="Concepto de gestión documental de código abierto para proyectos de construcción: proyectos, carpetas de proyecto fijas y manifiestos sobre tu propio…">
   <meta property="og:url" content="https://open-aec.com/es/openaec-docs/">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/openaec-docs-hero.png">
   <meta property="og:locale" content="es_ES">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="OpenAEC Docs">
-  <meta name="twitter:description" content="Plataforma open source de gestión documental BIM. Gestiona, comparte y archiva todos los documentos del proyecto en un lugar central.">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/openaec-docs-projecten.jpg">
+  <meta name="twitter:description" content="Concepto de gestión documental de código abierto para proyectos de construcción: proyectos, carpetas de proyecto fijas y manifiestos sobre tu propio…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/openaec-docs-hero.png">
+
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
   <link rel="alternate" type="application/json" href="/api/tools.json" title="Machine-readable tools catalog">
@@ -40,27 +39,37 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "OpenAEC Docs",
-    "applicationCategory": "EngineeringApplication",
+    "applicationCategory": "BusinessApplication",
     "applicationSubCategory": "Document Management",
     "operatingSystem": "Web, Self-hosted",
     "url": "https://open-aec.com/openaec-docs/",
-    "downloadUrl": "https://github.com/OpenAEC-Foundation/openaec-docs/releases",
-    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
-    "description": "Open-source document management system for BIM projects. Built on Nextcloud. Manage, share and archive project documents.",
+    "license": "https://opensource.org/licenses/MIT",
+    "description": "Concept for open-source document management in construction (AEC) projects: a project overview, fixed project folders and .wefc manifests on top of your own Nextcloud, with a REST API, OIDC single sign-on and multiple organisations per installation. Self-hosted with Docker. Still in development, no release yet.",
     "featureList": [
-      "Documentbeheer",
-      "Versiebeheer",
-      "IFCX-koppeling",
-      "Toegangscontrole",
-      "Zoeken & filteren",
-      "API & integratie"
+      "Projectoverzicht",
+      "Actief, archief of sjabloon",
+      "Projecten aanmaken en archiveren",
+      "Vaste projectmappen",
+      "Bladeren met kruimelpad",
+      "Rechtstreeks uit Nextcloud",
+      "Instellingen per map",
+      "Indeling voorstellen",
+      "Uploaden, verwijderen, mappen maken",
+      "Manifesten bekijken",
+      "Meerdere manifesten per project",
+      "Onderdelen toevoegen",
+      "Koppelen met eigen tools",
+      "Op je eigen server",
+      "Inloggen met single sign-on",
+      "Meerdere organisaties"
     ],
-    "screenshot": "https://open-aec.com/shared/assets/screenshots/openaec-docs-projecten.jpg",
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/openaec-docs-hero.png",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -68,13 +77,103 @@
       "availability": "https://schema.org/InStock"
     },
     "isAccessibleForFree": true,
-    "keywords": "document management, DMS, BIM docs, Nextcloud, project documents, BIM360 Docs alternative",
-    "sameAs": "https://github.com/OpenAEC-Foundation/openaec-docs",
+    "keywords": "document management, DMS, BIM, Nextcloud, project folders, IFC, manifest, WEFC, self-hosted, OpenAEC",
+    "sameAs": [
+      "https://github.com/OpenAEC-Foundation/openaec-docs"
+    ],
     "publisher": {
       "@type": "Organization",
       "name": "OpenAEC Foundation",
       "url": "https://open-aec.com"
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "OpenAEC Docs toont alle bestanden in de projectmap in Nextcloud, van IFC-modellen tot PDF- en DWG-tekeningen, met naam en grootte. Manifesten (.wefc) kun je in het scherm lezen. Een bestand openen of een voorbeeld tonen kan in het scherm nog niet; via de API haal je elk bestand op."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. OpenAEC Docs is een serverprogramma dat je in Docker op je eigen server zet, samen met PostgreSQL, een Nextcloud voor de bestanden en een inlogserver. Gebruikers werken daarna in de browser. Er is nog geen kant-en-klare release en geen openbare proefversie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. OpenAEC Docs is open source onder de MIT-licentie. Je betaalt alleen voor je eigen server."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk bestandsformaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Je bestanden blijven ongewijzigd in Nextcloud staan. De projectgegevens en de mapindeling staan in een PostgreSQL-database, en manifesten zijn .wefc-bestanden (JSON) in de projectmap."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De server draait in Docker, op Linux. Gebruikers werken in een moderne browser op Windows, macOS of Linux."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de bouwpraktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Het volgt de gewone werkwijze: een vaste mappenstructuur per project, IFC-modellen per discipline en manifesten die modellen, issuesets (BCF) en rapporten bij elkaar houden. Koppelingen met de BIM Validator en het BCF-platform zijn voorbereid, maar werken nog niet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Er is nog geen MCP-server. Wel kan een assistent of script via de REST API projecten, mappen, bestanden en manifesten lezen en onderdelen aan een manifest toevoegen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik het al gebruiken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet voor echt werk. OpenAEC Docs is een concept: de basis staat, maar er is geen release, geen openbare installatie en sinds april 2026 geen nieuwe ontwikkeling. Wil je helpen, kijk dan in de broncode op GitHub."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik in het scherm uploaden en mappen maken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet. De knoppen voor uploaden, een nieuwe map, zoeken en documentstatus staan al in het lint, maar doen nog niets. Uploaden, verwijderen en mappen maken werken wel via de API."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Heb ik Nextcloud nodig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. OpenAEC Docs heeft geen eigen bestandsopslag; het werkt met de bestanden in de Nextcloud van je organisatie. Per organisatie stel je in welke Nextcloud erbij hoort."
+        }
+      }
+    ]
   }
   </script>
 
@@ -112,7 +211,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "es",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/es/openaec-docs/#breadcrumb"
         }
@@ -176,109 +275,216 @@
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">Ecosistema OpenAEC</p>
+      <p class="pill-label" data-i18n="header.label">Gestión documental</p>
       <h1 data-i18n="header.title">OpenAEC <span class="accent">Docs</span></h1>
-      <p class="lead" data-i18n="header.desc">Plataforma open source de gestión documental BIM. Gestiona, comparte y archiva todos los documentos del proyecto en un lugar central.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">Carpetas de proyecto, modelos y manifiestos ordenados en un solo lugar, en tu propio servidor</p>
+      <p class="lead" data-i18n="header.desc">OpenAEC Docs es un concepto de gestión documental para proyectos de construcción. Añade una vista de proyectos, carpetas fijas y manifiestos sobre los archivos que ya tienes en tu Nextcloud.</p>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/openaec-docs" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg>GitHub</a>
+        <a href="#features" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Ver las funciones</span></a>
+        <a href="#faq" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="header.faqBtn">Preguntas frecuentes</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/openaec-docs" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Código fuente</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg><span data-i18n="header.badge">Beta</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg>Nextcloud · PostgreSQL</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg>Self-hosted · Docker</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg><span data-i18n="header.proof1">Archivos en tu propio Nextcloud</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof2">Tu propio servidor · Docker</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg><span data-i18n="header.proof3">Inicio de sesión único</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="header.proof4">Concepto · gratis · MIT</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/openaec-docs-projecten.jpg" alt="OpenAEC Docs - projectoverzicht" width="1920" height="1080"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/openaec-docs-hero.png" width="1920" height="1200" alt="Carpeta con los planos del arquitecto en un proyecto de ejemplo, con las carpetas de proyecto fijas y dos manifiestos en la barra lateral" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/openaec-docs-feat-projecten.png" width="1200" height="750" decoding="async" alt="Vista de seis proyectos ficticios, entre ellos una escuela primaria, una pasarela ciclista y una plantilla de vivienda, cada uno con su estado y su carpeta" data-i18n="hl.projects.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/openaec-docs-feat-mappen.png" width="1200" height="750" decoding="async" alt="Carpeta de una escuela primaria ficticia con las carpetas fijas modelos, planos, cálculos, informes, permisos y correspondencia" data-i18n="hl.folders.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/openaec-docs-feat-modellen.png" width="1200" height="750" decoding="async" alt="Carpeta con modelos IFC del arquitecto, el ingeniero de estructuras y los ingenieros de instalaciones, con el tamaño de los archivos y la ruta arriba" data-i18n="hl.models.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/openaec-docs-feat-manifest.png" width="1200" height="750" decoding="async" alt="Manifiesto de un proyecto de ejemplo con cuatro modelos IFC, un conjunto de incidencias y un informe de validación, cada uno con ruta y GUID" data-i18n="hl.manifest.alt" data-i18n-attr="alt"></div>
         </div>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="what.title">¿Qué es OpenAEC <span class="accent">Docs</span>?</h2>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="notice.text">Concepto: aún no hay ninguna versión para instalar o probar en línea, y el desarrollo está parado desde abril de 2026. Las capturas proceden de una instalación de prueba local con proyectos ficticios.</span></p>
+  </div>
+
+  <nav class="pp-subnav" aria-label="En esta página" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Funciones</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Novedades</a>
+      <a href="#faq" data-i18n="subnav.faq">Preguntas</a>
+    </div>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Funciones</p><h2 data-i18n="features.heading">Lo que OpenAEC Docs hace ahora</h2><p data-i18n="features.sub">Empieza por lo más destacado o elige un tema.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Funciones por tema" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Destacados</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-projects" data-tab="projects" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg><span data-i18n="tabs.projects">Proyectos</span> <span class="pp-tab-count" data-count="projects"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-files" data-tab="files" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg><span data-i18n="tabs.files">Carpetas y archivos</span> <span class="pp-tab-count" data-count="files"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-links" data-tab="links" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg><span data-i18n="tabs.links">Manifiestos y API</span> <span class="pp-tab-count" data-count="links"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-server" data-tab="server" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="tabs.server">Tu servidor</span> <span class="pp-tab-count" data-count="server"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Todas las funciones</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/openaec-docs-feat-projecten.png" width="1200" height="750" loading="lazy" decoding="async" alt="Vista de seis proyectos ficticios, entre ellos una escuela primaria, una pasarela ciclista y una plantilla de vivienda, cada uno con su estado y su carpeta" data-i18n="hl.projects.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.projects.kicker">Proyectos</span></p>
+            <h3 data-i18n="hl.projects.title">Todos tus proyectos en una sola vista</h3>
+            <p data-i18n="hl.projects.desc">Cada proyecto aparece como una tarjeta con una breve descripción, su estado y la carpeta de Nextcloud donde están los archivos. Proyectos activos, expedientes archivados y plantillas se distinguen a simple vista. Un clic y estás dentro del proyecto.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/openaec-docs-feat-mappen.png" width="1200" height="750" loading="lazy" decoding="async" alt="Carpeta de una escuela primaria ficticia con las carpetas fijas modelos, planos, cálculos, informes, permisos y correspondencia" data-i18n="hl.folders.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.folders.kicker">Carpetas fijas</span></p>
+            <h3 data-i18n="hl.folders.title">La misma estructura reconocible en cada proyecto</h3>
+            <p data-i18n="hl.folders.desc">La barra lateral muestra las carpetas fijas del proyecto, como modelos, planos, cálculos e informes, con nombres legibles. Así todos encuentran enseguida el sitio correcto en cada proyecto, también quien acaba de llegar.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/openaec-docs-feat-modellen.png" width="1200" height="750" loading="lazy" decoding="async" alt="Carpeta con modelos IFC del arquitecto, el ingeniero de estructuras y los ingenieros de instalaciones, con el tamaño de los archivos y la ruta arriba" data-i18n="hl.models.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.models.kicker">Archivos</span></p>
+            <h3 data-i18n="hl.models.title">Tus archivos se quedan donde ya están</h3>
+            <p data-i18n="hl.models.desc">OpenAEC Docs lee los archivos directamente de tu Nextcloud. Recorres modelos, planos y subcarpetas, ves el tamaño de cada archivo y vuelves atrás con la ruta. No se añade un segundo almacenamiento ni copias.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/openaec-docs-feat-manifest.png" width="1200" height="750" loading="lazy" decoding="async" alt="Manifiesto de un proyecto de ejemplo con cuatro modelos IFC, un conjunto de incidencias y un informe de validación, cada uno con ruta y GUID" data-i18n="hl.manifest.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.manifest.kicker">Manifiestos</span></p>
+            <h3 data-i18n="hl.manifest.title">Registra qué va junto</h3>
+            <p data-i18n="hl.manifest.desc">Un manifiesto en la carpeta del proyecto registra qué modelos, conjuntos de incidencias e informes pertenecen al proyecto, cada uno con una clave fija. OpenAEC Docs muestra su contenido con claridad y otras herramientas pueden añadir elementos mediante la API.</p>
+          </div>
+        </article>
       </div>
-      <div class="panel-split-body">
-        <p data-i18n="what.desc">OpenAEC Docs es un sistema de gestión documental (DMS) diseñado específicamente para proyectos BIM en el sector de la construcción. Se basa en <a href="https://nextcloud.com" target="_blank" rel="noopener">Nextcloud</a>, la plataforma open source más popular para la gestión de archivos y la colaboración. Ofrece un lugar central para gestionar, compartir y archivar todos los documentos del proyecto: desde planos e informes hasta contratos y permisos.</p>
-        <p data-i18n="what.tech">Un servidor en Rust (Axum) y un frontend en React sobre Nextcloud, con PostgreSQL para los metadatos e inicio de sesión mediante OIDC.</p>
-      </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="projects"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.overview.title">Vista de proyectos</h3><p data-i18n="f.overview.desc">Todos los proyectos de tu organización como tarjetas, con descripción y carpeta.</p></div></div></li>
+        <li class="pp-tile" data-cats="projects"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h3 data-i18n="f.status.title">Activo, archivado o plantilla</h3><p data-i18n="f.status.desc">Cada proyecto tiene un estado, para no mezclar trabajo en curso, expedientes cerrados y plantillas.</p></div></div></li>
+        <li class="pp-tile" data-cats="projects links"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.projectapi.title">Crear y archivar proyectos</h3><p data-i18n="f.projectapi.desc">Un proyecto se vincula a una carpeta de Nextcloud. Crear, editar y archivar funciona de momento por la API, aún no en pantalla.</p></div></div></li>
+        <li class="pp-tile" data-cats="files projects"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.fixed.title">Carpetas de proyecto fijas</h3><p data-i18n="f.fixed.desc">Una estructura fija por proyecto en la barra lateral, como modelos, planos e informes, en un orden fijo.</p></div></div></li>
+        <li class="pp-tile" data-cats="files"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></div><div><h3 data-i18n="f.browse.title">Navegar con ruta</h3><p data-i18n="f.browse.desc">Recorre carpetas y subcarpetas, primero las carpetas, con el tamaño de cada archivo y un clic para volver.</p></div></div></li>
+        <li class="pp-tile" data-cats="files server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.nextcloud.title">Directamente desde Nextcloud</h3><p data-i18n="f.nextcloud.desc">Los archivos se quedan en Nextcloud. OpenAEC Docs solo guarda los datos del proyecto y la estructura de carpetas.</p></div></div></li>
+        <li class="pp-tile" data-cats="files"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.folderset.title">Ajustes por carpeta</h3><p data-i18n="f.folderset.desc">Para cada carpeta defines un nombre, un orden, un icono, solo lectura y los tipos de archivo que le corresponden.</p></div></div></li>
+        <li class="pp-tile" data-cats="files"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.suggest.title">Proponer una estructura</h3><p data-i18n="f.suggest.desc">OpenAEC Docs propone las carpetas fijas a partir de las que ya existen: 01_Modellen pasa a ser Modellen.</p></div></div></li>
+        <li class="pp-tile" data-cats="files links"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.fileapi.title">Subir, borrar, crear carpetas</h3><p data-i18n="f.fileapi.desc">Descargar, subir y borrar archivos y crear carpetas en la carpeta del proyecto, de momento por la API.</p></div></div></li>
+        <li class="pp-tile" data-cats="links"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.manifests.title">Ver manifiestos</h3><p data-i18n="f.manifests.desc">La cabecera y los elementos de un manifiesto, bien visibles: tipo, nombre, ruta y clave.</p></div></div></li>
+        <li class="pp-tile" data-cats="links"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.multi.title">Varios manifiestos por proyecto</h3><p data-i18n="f.multi.desc">Por ejemplo uno para los modelos y otro para los informes, cada uno se abre desde la barra lateral.</p></div></div></li>
+        <li class="pp-tile" data-cats="links"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.upsert.title">Añadir elementos</h3><p data-i18n="f.upsert.desc">Otras herramientas añaden o actualizan un elemento de un manifiesto mediante la API, según su clave fija.</p></div></div></li>
+        <li class="pp-tile" data-cats="links"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h3 data-i18n="f.api.title">Conecta tus propias herramientas</h3><p data-i18n="f.api.desc">Proyectos, carpetas, archivos y manifiestos están disponibles a través de una sola API.</p></div></div></li>
+        <li class="pp-tile" data-cats="server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><h3 data-i18n="f.selfhost.title">En tu propio servidor</h3><p data-i18n="f.selfhost.desc">Funciona en Docker en un servidor que gestionas tú. Tus datos de proyecto no van a una nube externa.</p></div></div></li>
+        <li class="pp-tile" data-cats="server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h3 data-i18n="f.sso.title">Inicio de sesión único</h3><p data-i18n="f.sso.desc">Entra con el servidor de inicio de sesión de tu organización, sin una contraseña aparte para OpenAEC Docs.</p></div></div></li>
+        <li class="pp-tile" data-cats="server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><h3 data-i18n="f.tenants.title">Varias organizaciones</h3><p data-i18n="f.tenants.desc">Una instalación para varias organizaciones, cada una con su propio Nextcloud y acceso solo a sus proyectos.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel">
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
     <div class="panel-split">
       <div class="panel-split-text">
-        <p class="pill-label">Self-hosted</p>
-        <h2 data-i18n="highlight.title">Autoalojado &amp; con la privacidad primero</h2>
-        <p data-i18n="highlight.desc">OpenAEC Docs funciona en tu propio servidor mediante Docker. Control total sobre tus datos, sin dependencia de la nube. Ideal para organizaciones con requisitos estrictos de privacidad y cumplimiento.</p>
+        <p class="pill-label" data-i18n="whatsnew.label">Novedades de abril de 2026</p>
+        <h2 data-i18n="whatsnew.title">Manifiestos: <span>qué va con qué</span></h2>
+        <p data-i18n="whatsnew.desc">La última función nueva es de abril de 2026: un proyecto puede tener varios manifiestos, que ves en pantalla. Desde entonces el desarrollo está parado; aún no hay ninguna versión.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/openaec-docs/commits/master" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaCommits">Todos los cambios</span></a>
+        </div>
       </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><strong>Nextcloud</strong></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><strong>Rust · Axum</strong></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><strong>React · TypeScript</strong></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><strong>PostgreSQL</strong></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><strong>Docker</strong></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><strong>OIDC</strong></div></li>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="whatsnew.items.multi.title">Varios manifiestos</h4><p data-i18n="whatsnew.items.multi.desc">Cada archivo de manifiesto de la carpeta del proyecto aparece por separado en la barra lateral.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h4 data-i18n="whatsnew.items.viewer.title">Manifiesto en pantalla</h4><p data-i18n="whatsnew.items.viewer.desc">La cabecera y los elementos de un manifiesto, con tipo, nombre, ruta y clave.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h4 data-i18n="whatsnew.items.upsert.title">Añadir por la API</h4><p data-i18n="whatsnew.items.upsert.desc">Otras herramientas añaden o actualizan elementos; si el manifiesto aún no existe, se crea.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div><div><h4 data-i18n="whatsnew.items.shared.title">El mismo formato que otras herramientas</h4><p data-i18n="whatsnew.items.shared.desc">El manifiesto usa la biblioteca compartida de las herramientas en la nube de OpenAEC, para que también puedan leerlo.</p></div></li>
       </ul>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <h2 data-i18n="features.title">Funcionalidades</h2>
-    <div class="features">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div>
-        <h4 data-i18n="features.documents.title">Archivos del proyecto</h4>
-        <p data-i18n="features.documents.desc">Sube, abre y elimina archivos y crea carpetas, por proyecto y directamente en Nextcloud.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div>
-        <h4 data-i18n="features.folders.title">Carpetas de proyecto fijas</h4>
-        <p data-i18n="features.folders.desc">Una estructura fija por proyecto, como modelos, planos, cálculos e informes, con tipos de archivo permitidos por carpeta.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-        <h4 data-i18n="features.manifests.title">Manifiesto del proyecto</h4>
-        <p data-i18n="features.manifests.desc">Un manifiesto por proyecto registra qué modelos, conjuntos de incidencias e informes le pertenecen, para que otras herramientas los encuentren.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div>
-        <h4 data-i18n="features.integrations.title">BIM Validator y BCF</h4>
-        <p data-i18n="features.integrations.desc">Conexiones con el BIM Validator y la plataforma BCF de OpenAEC, para validaciones e incidencias junto a los documentos.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div>
-        <h4 data-i18n="features.access.title">Inicio de sesión y organizaciones</h4>
-        <p data-i18n="features.access.desc">Inicio de sesión único (OIDC) y varias organizaciones en una sola instalación, cada una con su propio Nextcloud.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div>
-        <h4 data-i18n="features.api.title">API REST</h4>
-        <p data-i18n="features.api.desc">Todas las funciones mediante una API REST, para conectar otras herramientas.</p>
-      </div>
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Preguntas frecuentes</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">¿Qué archivos puedo abrir?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">OpenAEC Docs muestra todos los archivos de la carpeta del proyecto en Nextcloud, desde modelos IFC hasta planos PDF y DWG, con nombre y tamaño. Los manifiestos (.wefc) se leen en pantalla. Abrir un archivo o ver una vista previa aún no es posible en pantalla; con la API puedes descargar cualquier archivo.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">¿Tengo que instalar algo?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Sí. OpenAEC Docs es una aplicación de servidor que instalas en Docker en tu propio servidor, junto con PostgreSQL, un Nextcloud para los archivos y un servidor de inicio de sesión. Después los usuarios trabajan en el navegador. Aún no hay una versión lista para usar ni una versión de prueba pública.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">¿Cuánto cuesta?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Nada. OpenAEC Docs es de código abierto con licencia MIT. Solo pagas tu propio servidor.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.format.q">¿En qué formato se guarda mi trabajo?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.format.a">Tus archivos se quedan sin cambios en Nextcloud. Los datos del proyecto y la estructura de carpetas están en una base de datos PostgreSQL, y los manifiestos son archivos .wefc (JSON) en la carpeta del proyecto.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">¿En qué sistemas funciona?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">El servidor funciona en Docker, en Linux. Los usuarios trabajan en un navegador moderno en Windows, macOS o Linux.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">¿Se ajusta a la práctica de la construcción?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">Sigue la forma de trabajo habitual: una estructura de carpetas fija por proyecto, modelos IFC por disciplina y manifiestos que mantienen juntos modelos, conjuntos de incidencias (BCF) e informes. Los enlaces con el BIM Validator y la plataforma BCF están previstos, pero aún no funcionan.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">¿Qué puede hacer un asistente de IA con él?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">Aún no hay un servidor MCP. Sin embargo, un asistente o un script puede usar la API REST para leer proyectos, carpetas, archivos y manifiestos y añadir elementos a un manifiesto.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.status.q">¿Ya puedo usarlo?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.status.a">Todavía no para trabajo real. OpenAEC Docs es un concepto: la base está, pero no hay versión, ni instalación pública, ni desarrollo nuevo desde abril de 2026. Si quieres ayudar, consulta el código fuente en GitHub.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.buttons.q">¿Puedo subir archivos y crear carpetas en pantalla?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.buttons.a">Todavía no. Los botones de subir, nueva carpeta, buscar y estado del documento ya están en la cinta, pero aún no hacen nada. Subir, borrar y crear carpetas sí funciona mediante la API.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.nextcloud.q">¿Necesito Nextcloud?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.nextcloud.a">Sí. OpenAEC Docs no tiene almacenamiento propio; trabaja con los archivos del Nextcloud de tu organización. Para cada organización indicas qué Nextcloud le corresponde.</p></div>
+      </details>
     </div>
   </div></section>
 
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Tecnología</h2><p data-i18n="tech.sub">Para quien quiera saber cómo está hecho.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.rust.title">Rust · Axum</h4><p data-i18n="tech.rust.desc">Un servidor rápido y compacto en Rust con Axum, que transmite todas las peticiones a Nextcloud.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.react.title">React · TypeScript</h4><p data-i18n="tech.react.desc">La interfaz web en React 19 y TypeScript, construida con Vite y con estilos Tailwind en el estilo OpenAEC.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h4 data-i18n="tech.nextcloud.title">Nextcloud · WebDAV</h4><p data-i18n="tech.nextcloud.desc">Los archivos están en Nextcloud y se leen y escriben por WebDAV; OpenAEC Docs no guarda archivos.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><h4 data-i18n="tech.postgres.title">PostgreSQL 16</h4><p data-i18n="tech.postgres.desc">Proyectos, estructura de carpetas, usuarios y roles en PostgreSQL, con SQLx y migraciones numeradas.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h4 data-i18n="tech.oidc.title">OIDC · JWT</h4><p data-i18n="tech.oidc.desc">Inicio de sesión con OpenID Connect y PKCE (por ejemplo Authentik) y un token de sesión válido 24 horas.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h4 data-i18n="tech.docker.title">Docker</h4><p data-i18n="tech.docker.desc">Una sola imagen con servidor e interfaz web, más archivos Docker Compose para desarrollo y producción.</p></div></div>
+    </div>
+  </div></section>
+
+
   <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
   <div data-release-notes="openaec-docs"></div>
+  <p class="pp-rel-more">
+    <a href="https://github.com/OpenAEC-Foundation/openaec-docs/commits/master" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.commits">Todos los cambios en GitHub</span></a>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">OpenAEC <span class="accent">Docs</span></h2>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/openaec-docs" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg>GitHub</a>
+        <a href="#features" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Ver las funciones</span></a>
+        <a href="#faq" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="header.faqBtn">Preguntas frecuentes</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/openaec-docs" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Código fuente</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -332,6 +538,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-<script src="/shared/i18n.js?v=20261015"></script>
+  <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

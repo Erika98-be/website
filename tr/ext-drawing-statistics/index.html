@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drawing Statistics — OpenAEC Foundation</title>
-  <meta name="description" content="Şekil sayılarını ve çizim istatistiklerini gösteren uzantı. Shape Count düğmesi ve terminal komutu içeren bir Add-Ins ribbon sekmesi ekler.">
+  <meta name="description" content="Open 2D Studio için ücretsiz eklenti: Shape Count düğmeli Add-Ins sekmesi çizimdeki tüm şekilleri toplamda ve türe göre sayar. stats show komutu olarak da…">
   <link rel="canonical" href="https://open-aec.com/tr/ext-drawing-statistics/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/ext-drawing-statistics/">
@@ -15,21 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/ext-drawing-statistics/">
   <!-- hreflang:end -->
 
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="Drawing Statistics">
-  <meta property="og:description" content="Şekil sayılarını ve çizim istatistiklerini gösteren uzantı. Shape Count düğmesi ve terminal komutu içeren bir Add-Ins ribbon sekmesi ekler.">
+  <meta property="og:title" content="Drawing Statistics — OpenAEC Foundation">
+  <meta property="og:description" content="Open 2D Studio için ücretsiz eklenti: Shape Count düğmeli Add-Ins sekmesi çizimdeki tüm şekilleri toplamda ve türe göre sayar. stats show komutu olarak da…">
   <meta property="og:url" content="https://open-aec.com/tr/ext-drawing-statistics/">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/ext-drawing-statistics-hero.png">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Drawing Statistics">
-  <meta name="twitter:description" content="Şekil sayılarını ve çizim istatistiklerini gösteren uzantı. Shape Count düğmesi ve terminal komutu içeren bir Add-Ins ribbon sekmesi ekler.">
+  <meta name="twitter:description" content="Open 2D Studio için ücretsiz eklenti: Shape Count düğmeli Add-Ins sekmesi çizimdeki tüm şekilleri toplamda ve türe göre sayar. stats show komutu olarak da…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/ext-drawing-statistics-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -39,6 +39,137 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Drawing Statistics",
+    "applicationCategory": "DesignApplication",
+    "applicationSubCategory": "Extensie voor Open 2D Studio",
+    "operatingSystem": "",
+    "url": "https://open-aec.com/ext-drawing-statistics/",
+    "description": "Free sample extension for the Open 2D Studio desktop app. Adds an Add-Ins ribbon tab with a Shape Count button that shows the total number of shapes and the count per type, and registers the stats show command (MCP tool name cad_stats_show). Distributed as a 1.4 kB zip with manifest.json and main.js.",
+    "featureList": [
+      "Eigen tabblad Add-Ins",
+      "Knop Shape Count",
+      "Totaal aantal vormen",
+      "Aantal per soort",
+      "Op alfabet",
+      "Duidelijk bij een lege tekening",
+      "Verandert niets aan je tekening",
+      "Commando stats show",
+      "In de commandolijst",
+      "Bekend bij de AI-terminal",
+      "Eén zip van 1,4 kB",
+      "Install from file",
+      "Aan, uit of weg",
+      "Vaste rechten",
+      "Werkt zonder internet",
+      "Voorbeeldextensie",
+      "Ongeveer honderd regels",
+      "Broncode op GitHub",
+      "Gratis"
+    ],
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/ext-drawing-statistics-hero.png",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    },
+    "isAccessibleForFree": true,
+    "keywords": "Open 2D Studio, extension, add-in, shape count, drawing statistics, CAD, 2D, plugin, stats show",
+    "sameAs": [
+      "https://github.com/OpenAEC-Foundation/ext-drawing-statistics"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "OpenAEC Foundation",
+      "url": "https://open-aec.com"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De extensie opent zelf geen bestanden. Ze telt wat er in Open 2D Studio openstaat, dus ook een tekening die je daar uit DXF hebt geïmporteerd."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja: de desktop-app van Open 2D Studio (v0.15 of nieuwer) en daarin deze extensie. Haal drawing-statistics-1.0.1.zip op bij release v1.0.1 op GitHub en kies in Open 2D Studio File, Extensions, Install from file. De webversie van Open 2D Studio kan nog geen extensies installeren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. De broncode staat openbaar op GitHub. Er staat nog geen licentiebestand bij; wil je de code hergebruiken, vraag dat dan in de repository."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk bestandsformaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De extensie slaat niets op en verandert niets aan je tekening. De telling verschijnt in een melding; je tekening bewaar je zoals altijd in Open 2D Studio."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Overal waar de desktop-app van Open 2D Studio draait: Windows, macOS en Linux. Niet in de webversie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Het commando stats show staat in de commandolijst van Open 2D Studio. De AI-terminal van de desktop-app krijgt die lijst mee en kan de telling dus opvragen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Telt het alleen de tekening die ik zie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. Het telt alle vormen in het geopende bestand, ook die op andere tekeningen en verborgen vormen. Per tekening, per laag of alleen de selectie tellen kan nog niet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik de telling bewaren of exporteren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet. De telling verschijnt alleen in een melding, met de Engelse namen van de soorten vormen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik hiermee mijn eigen extensie maken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Daar is ze voor bedoeld. Een extensie is een map met manifest.json en een JavaScript-bestand met een functie onLoad. Daarin voeg je tabbladen, knoppen en commando's toe. Kijk in main.js hoe dat gaat."
+        }
+      }
+    ]
+  }
+  </script>
 
   <meta name="i18n-static" content="tr">
   <!-- schema:start -->
@@ -74,7 +205,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "tr",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/tr/ext-drawing-statistics/#breadcrumb"
         }
@@ -103,7 +234,7 @@
   <!-- schema:end -->
 </head>
 <body class="page-panels">
-  <div id="shared-nav"><!-- nav:start -->
+    <div id="shared-nav"><!-- nav:start -->
 <nav class="navbar">
   <div class="nav-container">
     <a href="/tr/" class="nav-brand" aria-label="OpenAEC — home"><img class="nav-logo" src="/shared/assets/logo/openaec-symbol-v2-transparent.svg" alt="" width="28" height="32"><span class="nav-word">Open<span class="accent">AEC</span></span></a>
@@ -133,62 +264,226 @@
   </div>
 </nav>
 <!-- nav:end --></div>
-  <script src="/shared/nav.js?v=20261015"></script>
-  <script src="/shared/feedback.js?v=20261022" defer></script>
+<script src="/shared/nav.js?v=20261015"></script>
+<script src="/shared/feedback.js?v=20261022" defer></script>
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">Open 2D Studio için uzantı</p>
+      <p class="pill-label" data-i18n="header.label">Open 2D Studio eklentisi</p>
       <h1 data-i18n="header.title">Drawing <span class="accent">Statistics</span></h1>
-      <p class="lead" data-i18n="header.desc">Şekil sayılarını ve çizim istatistiklerini gösteren uzantı. Shape Count düğmesi ve terminal komutu içeren bir Add-Ins ribbon sekmesi ekler.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">Çiziminizde kaç şekil olduğunu tek tıkla öğrenin</p>
+      <p class="lead" data-i18n="header.desc">Open 2D Studio masaüstü uygulaması için küçük, ücretsiz bir eklenti. Shape Count düğmeli Add-Ins sekmesini ekler; düğme tüm şekilleri sayar ve toplamı ile tür başına sayıyı gösterir.</p>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases/download/v1.0.1/drawing-statistics-1.0.1.zip" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">v1.0.1 indir (1.4 KB)</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Kaynak kodu görüntüle</span></a>
+        <a href="#features" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Özellikleri gör</span></a>
+        <a href="#faq" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="header.faqBtn">Sık sorulan sorular</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Kaynak kodu</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg>Open 2D Studio v0.15+</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg>stats show</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg><span data-i18n="header.proof1">Open 2D Studio v0.15+ için</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.proof2">1,4 kB zip</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg><span>stats show</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg><span data-i18n="header.proof4">Ücretsiz</span></li>
+      </ul>
+    </div>
+    <div class="media-slider shot-overlap" data-pp-slider>
+      <div class="slider-container">
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/ext-drawing-statistics-hero.png" width="1920" height="1200" alt="Örnek bir bahçe ofisi planının üzerinde Add-Ins sekmesi ve Shape Count düğmesiyle Open 2D Studio" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/ext-drawing-statistics-feat-parkeren.png" width="1200" height="750" decoding="async" alt="Park yerleri ve ağaçlarla örnek bir otopark çizimi; Add-Ins sekmesi ve Shape Count düğmesi açık" data-i18n="hl.tellen.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/ext-drawing-statistics-feat-commando.png" width="1200" height="750" decoding="async" alt="Komut listesiyle Open 2D Studio terminali; en altta show komutuyla STATS grubu" data-i18n="hl.commando.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/ext-drawing-statistics-feat-beheer.png" width="1200" height="750" decoding="async" alt="Installed altında Drawing Statistics v1.0.1 ile Open 2D Studio Extension Manager; Disable ve Remove düğmeleri" data-i18n="hl.installeren.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/ext-drawing-statistics-feat-code.png" width="1200" height="750" decoding="async" alt="GitHub'da Drawing Statistics'in main.js kaynak kodu; eklentinin kaydettiği sekme, düğme ve komut" data-i18n="hl.voorbeeld.alt" data-i18n-attr="alt"></div>
+        </div>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section"><div class="container">
-    <div class="section-head">
-      <h2 data-i18n="features.title">Özellikler</h2>
-      <p data-i18n="features.requires"><a href="/open-2d-studio">Open 2D Studio</a> v0.15.0 veya üstünü gerektirir.</p>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="notice.text">Open 2D Studio masaüstü uygulamasında (v0.15 veya üstü) çalışır, web sürümünde çalışmaz.</span> <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases/tag/v1.0.1" target="_blank" rel="noopener"><span data-i18n="notice.link">GitHub'da v1.0.1 sürümü (zip, 1,4 kB)</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a></p>
+  </div>
+
+  <nav class="pp-subnav" aria-label="Bu sayfada" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Özellikler</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Yenilikler</a>
+      <a href="#faq" data-i18n="subnav.faq">SSS</a>
+      <a href="#releases" data-i18n="subnav.releases">Sürümler</a>
     </div>
-    <div class="features">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div>
-        <h4 data-i18n="features.ribbon.title">Add-Ins ribbon sekmesi</h4>
-        <p data-i18n="features.ribbon.desc">Open 2D Studio'daki Add-Ins ribbon sekmesine bir Shape Count düğmesi ekler.</p>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Özellikler</p><h2 data-i18n="features.heading">Küçük ama kullanışlı</h2><p data-i18n="features.sub">Öne çıkanlarla başlayın veya bir konu seçin.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Konuya göre özellikler" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Öne çıkanlar</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-tellen" data-tab="tellen" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.tellen">Sayma</span> <span class="pp-tab-count" data-count="tellen"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-commando" data-tab="commando" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg><span data-i18n="tabs.commando">Komut</span> <span class="pp-tab-count" data-count="commando"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-installeren" data-tab="installeren" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="tabs.installeren">Kurulum</span> <span class="pp-tab-count" data-count="installeren"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-ontwikkelaars" data-tab="ontwikkelaars" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg><span data-i18n="tabs.ontwikkelaars">Kendi eklentiniz</span> <span class="pp-tab-count" data-count="ontwikkelaars"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Tüm özellikler</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/ext-drawing-statistics-feat-parkeren.png" width="1200" height="750" loading="lazy" decoding="async" alt="Park yerleri ve ağaçlarla örnek bir otopark çizimi; Add-Ins sekmesi ve Shape Count düğmesi açık" data-i18n="hl.tellen.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.tellen.kicker">Sayma</span></p>
+            <h3 data-i18n="hl.tellen.title">Tek tıkla toplam ve tür başına sayı</h3>
+            <p data-i18n="hl.tellen.desc">Add-Ins sekmesini açıp Shape Count'a tıklayın. Bir mesaj kaç şekil olduğunu ve bunların kaçının daire, dikdörtgen, çizgi, ölçü veya metin olduğunu gösterir. Bir çizimde ne olduğunu hızlıca görmek için kullanışlı.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Devamını oku</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/ext-drawing-statistics-feat-commando.png" width="1200" height="750" loading="lazy" decoding="async" alt="Komut listesiyle Open 2D Studio terminali; en altta show komutuyla STATS grubu" data-i18n="hl.commando.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.commando.kicker">Komut</span></p>
+            <h3 data-i18n="hl.commando.title">Betikler ve yapay zekâ terminali için komut olarak da</h3>
+            <p data-i18n="hl.commando.desc">Eklenti, stats show komutunu Open 2D Studio komut listesine ekler. Terminalde commands yazınca görürsünüz. Aynı sayımı metin olarak döndürür.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Devamını oku</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/ext-drawing-statistics-feat-beheer.png" width="1200" height="750" loading="lazy" decoding="async" alt="Installed altında Drawing Statistics v1.0.1 ile Open 2D Studio Extension Manager; Disable ve Remove düğmeleri" data-i18n="hl.installeren.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.installeren.kicker">Kurulum</span></p>
+            <h3 data-i18n="hl.installeren.title">Tek zip ile kurun, tek tıkla kapatın</h3>
+            <p data-i18n="hl.installeren.desc">Zip'i indirin ve Open 2D Studio'da File, Extensions, Install from file'ı seçin. Eklenti ardından Installed altında görünür; orada kapatabilir veya kaldırabilirsiniz.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases/tag/v1.0.1" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Devamını oku</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/ext-drawing-statistics-feat-code.png" width="1200" height="750" loading="lazy" decoding="async" alt="GitHub'da Drawing Statistics'in main.js kaynak kodu; eklentinin kaydettiği sekme, düğme ve komut" data-i18n="hl.voorbeeld.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.voorbeeld.kicker">Kendi eklentiniz</span></p>
+            <h3 data-i18n="hl.voorbeeld.title">Kendi eklentinizi kurmak için bir örnek</h3>
+            <p data-i18n="hl.voorbeeld.desc">İki dosya ve yaklaşık yüz satır JavaScript, bir eklentinin nasıl sekme, düğme ve komut eklediğini gösterir. Kopyalayın, değiştirin; Open 2D Studio'da kendi aracınız olsun.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/blob/v1.0.1/main.js" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Devamını oku</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
       </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div>
-        <h4 data-i18n="features.terminal.title">Terminal komutu</h4>
-        <p data-i18n="features.terminal.desc">İstatistikleri komut satırından görüntülemek için <code>stats show</code> terminal komutunu kaydeder.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-        <h4 data-i18n="features.count.title">Eleman sayımı</h4>
-        <p data-i18n="features.count.desc">Mevcut çizimdeki tüm elemanları türüne göre sayar.</p>
-      </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="tellen"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.tab.title">Kendi Add-Ins sekmesi</h3><p data-i18n="f.tab.desc">Düğme ayrı bir sekmede durur, Home değişmeden kalır.</p></div></div></li>
+        <li class="pp-tile" data-cats="tellen"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.button.title">Shape Count düğmesi</h3><p data-i18n="f.button.desc">Statistics grubunda tek tık sayımı başlatır.</p></div></div></li>
+        <li class="pp-tile" data-cats="tellen commando"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h3 data-i18n="f.total.title">Toplam şekil sayısı</h3><p data-i18n="f.total.desc">Toplam şekil sayısı en üstte yer alır.</p></div></div></li>
+        <li class="pp-tile" data-cats="tellen commando"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.pertype.title">Tür başına sayı</h3><p data-i18n="f.pertype.desc">Çizgiler, daireler, yaylar, dikdörtgenler, taramalar, ölçüler, metinler: her biri kendi sayısıyla.</p></div></div></li>
+        <li class="pp-tile" data-cats="tellen"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-text"/></svg></div><div><h3 data-i18n="f.sorted.title">Alfabetik sırayla</h3><p data-i18n="f.sorted.desc">Türler alfabetik sıralanır, hızlıca bulursunuz.</p></div></div></li>
+        <li class="pp-tile" data-cats="tellen"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg></div><div><h3 data-i18n="f.empty.title">Boş çizimde net</h3><p data-i18n="f.empty.desc">Hiçbir şey yoksa mesaj bunu söyler.</p></div></div></li>
+        <li class="pp-tile" data-cats="tellen"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><h3 data-i18n="f.safe.title">Çiziminizde hiçbir şeyi değiştirmez</h3><p data-i18n="f.safe.desc">Eklenti yalnızca okur; şekiller, katmanlar ve dosya olduğu gibi kalır.</p></div></div></li>
+        <li class="pp-tile" data-cats="commando"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h3 data-i18n="f.statsshow.title">stats show komutu</h3><p data-i18n="f.statsshow.desc">Aynı sayımı metin olarak döndürür.</p></div></div></li>
+        <li class="pp-tile" data-cats="commando"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.list.title">Komut listesinde</h3><p data-i18n="f.list.desc">Terminalde commands yazın; STATS altında görünür.</p></div></div></li>
+        <li class="pp-tile" data-cats="commando"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h3 data-i18n="f.ai.title">Yapay zekâ terminali tanır</h3><p data-i18n="f.ai.desc">Open 2D Studio yapay zekâ terminali komut listesini, bu komut dahil, alır.</p></div></div></li>
+        <li class="pp-tile" data-cats="installeren"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h3 data-i18n="f.zip.title">1,4 kB'lık tek zip</h3><p data-i18n="f.zip.desc">İndirin, bitti; yükleyici gerekmez.</p></div></div></li>
+        <li class="pp-tile" data-cats="installeren"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.fromfile.title">Install from file</h3><p data-i18n="f.fromfile.desc">Open 2D Studio'da File, Extensions üzerinden; eklenti hemen açılır.</p></div></div></li>
+        <li class="pp-tile" data-cats="installeren"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.toggle.title">Açık, kapalı veya kaldırılmış</h3><p data-i18n="f.toggle.desc">Extension Manager'da kapatın veya kaldırın.</p></div></div></li>
+        <li class="pp-tile" data-cats="installeren ontwikkelaars"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h3 data-i18n="f.permissions.title">Belirli izinler</h3><p data-i18n="f.permissions.desc">Manifest yalnızca komutlar, şerit ve olaylar için izin ister.</p></div></div></li>
+        <li class="pp-tile" data-cats="installeren"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h3 data-i18n="f.offline.title">İnternetsiz çalışır</h3><p data-i18n="f.offline.desc">Kurulumdan sonra her şey kendi bilgisayarınızda olur.</p></div></div></li>
+        <li class="pp-tile" data-cats="ontwikkelaars"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg></div><div><h3 data-i18n="f.sample.title">Örnek eklenti</h3><p data-i18n="f.sample.desc">Open 2D Studio'ya bir şey eklemek isteyenler için başlangıç noktası.</p></div></div></li>
+        <li class="pp-tile" data-cats="ontwikkelaars"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.readable.title">Yaklaşık yüz satır</h3><p data-i18n="f.readable.desc">Bir manifest ve bir JavaScript dosyası, derleme adımı yok.</p></div></div></li>
+        <li class="pp-tile" data-cats="ontwikkelaars"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.source.title">Kaynak kodu GitHub'da</h3><p data-i18n="f.source.desc">Okuyun, kopyalayın veya iyileştirme önerin.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg></div><div><h3 data-i18n="f.free.title">Ücretsiz</h3><p data-i18n="f.free.desc">Hesap yok, abonelik yok.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
+
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
+    <div class="panel-split">
+      <div class="panel-split-text">
+        <p class="pill-label" data-i18n="whatsnew.label">v1.0.1 sürümünde yeni</p>
+        <h2 data-i18n="whatsnew.title">Şeritte kendine ait bir yer</h2>
+        <p data-i18n="whatsnew.desc">1.0.1 sürümü (Şubat 2026) düğmeyi Home sekmesinden kendi Add-Ins sekmesine taşır. Sayım ve komut 1.0.0'daki gibi çalışır.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaChangelog">Tüm sürüm notları</span></a>
+        </div>
+      </div>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="whatsnew.items.addins.title">Add-Ins sekmesi</h4><p data-i18n="whatsnew.items.addins.desc">Shape Count artık Statistics grubunda kendi sekmesinde.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h4 data-i18n="whatsnew.items.home.title">Home sade kalır</h4><p data-i18n="whatsnew.items.home.desc">Eklenti artık Open 2D Studio Home sekmesine bir şey eklemiyor.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h4 data-i18n="whatsnew.items.same.title">Aynı sayım ve komut</h4><p data-i18n="whatsnew.items.same.desc">Toplam, tür başına sayı ve stats show 1.0.0'daki gibi çalışır.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h4 data-i18n="whatsnew.items.package.title">Sürümle birlikte zip olarak</h4><p data-i18n="whatsnew.items.package.desc">drawing-statistics-1.0.1.zip, Install from file için hazır.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Sık sorulan sorular</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Hangi dosyaları açabilirim?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">Eklenti kendisi dosya açmaz. Open 2D Studio'da açık olanı sayar; oraya DXF'ten aktardığınız bir çizim de dahil.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Bir şey kurmam gerekiyor mu?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Evet: <a href="/tr/open-2d-studio/">Open 2D Studio</a> masaüstü uygulaması (v0.15 veya üstü) ve içinde bu eklenti. drawing-statistics-1.0.1.zip dosyasını <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases/tag/v1.0.1">GitHub'daki v1.0.1 sürümünden</a> alın ve Open 2D Studio'da File, Extensions, Install from file'ı seçin. Open 2D Studio web sürümü henüz eklenti kuramıyor.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.cost.q">Ücreti nedir?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.cost.a">Hiçbir şey. Kaynak kodu GitHub'da herkese açık. Henüz bir lisans dosyası yok; kodu yeniden kullanmak isterseniz depoda sorun.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.format.q">Çalışmam hangi dosya biçiminde kaydedilir?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.format.a">Eklenti hiçbir şey kaydetmez ve çiziminizi değiştirmez. Sayım bir mesajda görünür; çiziminizi her zamanki gibi Open 2D Studio'da kaydedersiniz.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.platforms.q">Hangi sistemlerde çalışır?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.platforms.a">Open 2D Studio masaüstü uygulamasının çalıştığı her yerde: Windows, macOS ve Linux. Web sürümünde değil.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">Bir yapay zekâ asistanı bununla ne yapabilir?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">stats show komutu Open 2D Studio komut listesindedir. Masaüstü uygulamasının yapay zekâ terminali bu listeyi alır ve sayımı isteyebilir.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.scope.q">Yalnızca gördüğüm çizimi mi sayar?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.scope.a">Hayır. Açık dosyadaki tüm şekilleri, diğer çizimlerdekiler ve gizli şekiller dahil, sayar. Çizim başına, katman başına veya yalnızca seçimi saymak henüz mümkün değil.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.export.q">Sayımı kaydedebilir veya dışa aktarabilir miyim?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.export.a">Henüz değil. Sayım yalnızca bir mesajda, şekil türlerinin İngilizce adlarıyla görünür.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.own.q">Bununla kendi eklentimi yapabilir miyim?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.own.a">Tam da bunun için. Bir eklenti, manifest.json ve onLoad fonksiyonlu bir JavaScript dosyası içeren bir klasördür; orada sekme, düğme ve komut eklersiniz. Nasıl yapıldığını <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/blob/v1.0.1/main.js">main.js</a> dosyasında görün.</p></div>
+      </details>
+    </div>
+  </div></section>
+
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Teknoloji</h2><p data-i18n="tech.sub">Nasıl yapıldığını merak edenler için.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h4 data-i18n="tech.js.title">JavaScript</h4><p data-i18n="tech.js.desc">Tek bir main.js, CommonJS modülü (module.exports); bağımlılık veya derleme adımı yok.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h4 data-i18n="tech.manifest.title">manifest.json</h4><p data-i18n="tech.manifest.desc">id, sürüm, minAppVersion 0.15.0, Utility kategorisi ve commands, ribbon, events izinleri.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.api.title">Extension API</h4><p data-i18n="tech.api.desc">api.ui.addRibbonTab, api.ui.addRibbonButton, api.commands.register ve api.entities.list ile onLoad(api).</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h4 data-i18n="tech.command.title">Command registry</h4><p data-i18n="tech.command.desc">stats/show'u Open 2D Studio komut kaydına ekler; araç olarak adı cad_stats_show.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h4 data-i18n="tech.package.title">Zip</h4><p data-i18n="tech.package.desc">Sürüm, manifest.json ve main.js içeren bir zip'tir; Open 2D Studio bunu eklenti klasörüne açar.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg></div><div><h4 data-i18n="tech.host.title">Open 2D Studio</h4><p data-i18n="tech.host.desc">Masaüstü uygulaması (Tauri) eklentiyi açılışta yükler ve kapatıldığında sekme, düğme ve komutu kaldırır.</p></div></div>
+    </div>
+  </div></section>
+
+
+  <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
+  <div data-release-notes="ext-drawing-statistics"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Tüm sürümleri göster</span><span data-rel-hide hidden data-i18n="releases.showLess">Yalnızca son üçünü göster</span></button>
+    <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.github">GitHub'daki tüm sürümler</span></a>
+  </p>
+  </section>
+  <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">Drawing <span class="accent">Statistics</span></h2>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases/download/v1.0.1/drawing-statistics-1.0.1.zip" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">v1.0.1 indir (1.4 KB)</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="header.sourceBtn">Kaynak kodu görüntüle</span></a>
+        <a href="#features" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Özellikleri gör</span></a>
+        <a href="#faq" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="header.faqBtn">Sık sorulan sorular</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/ext-drawing-statistics" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Kaynak kodu</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->

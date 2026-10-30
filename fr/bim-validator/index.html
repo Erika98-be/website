@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BIM Validator — OpenAEC Foundation</title>
-  <meta name="description" content="Outil open source de validation IFC. Validez vos modèles contre les spécifications IDS, les standards néerlandais et les exigences projet — dans le…">
+  <meta name="description" content="Contrôle gratuit et open source des maquettes IFC selon des exigences IDS, avec les normes néerlandaises NL-BIM Basis ILS et RVB BIM Norm intégrées. Voyez…">
   <link rel="canonical" href="https://open-aec.com/fr/bim-validator/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/bim-validator/">
@@ -15,23 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/bim-validator/">
   <!-- hreflang:end -->
 
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="BIM Validator">
-  <meta property="og:description" content="Outil open source de validation IFC. Validez vos modèles contre les spécifications IDS, les standards néerlandais et les exigences projet — dans le…">
+  <meta property="og:title" content="BIM Validator — OpenAEC Foundation">
+  <meta property="og:description" content="Contrôle gratuit et open source des maquettes IFC selon des exigences IDS, avec les normes néerlandaises NL-BIM Basis ILS et RVB BIM Norm intégrées. Voyez…">
   <meta property="og:url" content="https://open-aec.com/fr/bim-validator/">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/bim-validator.png">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/bim-validator-hero.png">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BIM Validator">
-  <meta name="twitter:description" content="Outil open source de validation IFC. Validez vos modèles contre les spécifications IDS, les standards néerlandais et les exigences projet — dans le…">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/bim-validator.png">
+  <meta name="twitter:description" content="Contrôle gratuit et open source des maquettes IFC selon des exigences IDS, avec les normes néerlandaises NL-BIM Basis ILS et RVB BIM Norm intégrées. Voyez…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/bim-validator-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -41,6 +39,7 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -50,10 +49,33 @@
     "applicationSubCategory": "BIM / Validation",
     "operatingSystem": "Web",
     "url": "https://open-aec.com/bim-validator/",
-    "downloadUrl": "https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator/releases",
-    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
-    "description": "Browser-based IFC validation tool. Upload an IFC model, validate against IDS specifications (NL-BIM Basis ILS, RVB BIM Norm), view results in 3D, export BCF issues.",
-    "screenshot": "https://open-aec.com/shared/assets/screenshots/bim-validator.png",
+    "license": "https://opensource.org/licenses/MIT",
+    "description": "Free, open-source IFC model checker that runs in the browser on your own server. Validates IFC2X3 and IFC4 models against IDS requirements, with the Dutch NL-BIM Basis ILS (12 requirements) and RVB BIM Norm v1.1 (26 requirements) built in, or your own IDS file. Shows failing elements in a 3D viewer, turns errors into BCF 2.1 issues and exports results as JSON. Includes a REST API, a command line tool, projects with Nextcloud storage and separation per organisation.",
+    "featureList": [
+      "Controle tegen IDS",
+      "NL-BIM Basis ILS",
+      "RVB BIM Norm",
+      "Eigen IDS-bestand",
+      "IFC2X3 en IFC4",
+      "Uitslag per eis",
+      "Fouten oplichten in 3D",
+      "3D-viewer in de browser",
+      "Eigenschappen per element",
+      "Snijvlakken",
+      "Meerdere modellen",
+      "BCF-issues uit fouten",
+      "BCF 2.1-zip",
+      "OpenAEC BCF-platform",
+      "Uitslag als JSON",
+      "Opdrachtregel",
+      "Projecten opslaan en openen",
+      "Nextcloud-koppeling",
+      "Gescheiden per organisatie",
+      "Op je eigen server",
+      "REST-API",
+      "Nederlands en Engels"
+    ],
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/bim-validator-hero.png",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -61,8 +83,10 @@
       "availability": "https://schema.org/InStock"
     },
     "isAccessibleForFree": true,
-    "keywords": "IFC validation, IDS, NL-BIM Basis ILS, RVB BIM Norm, BIM compliance, Solibri alternative",
-    "sameAs": "https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator",
+    "keywords": "IFC validation, IDS, NL-BIM Basis ILS, RVB BIM Norm, BIM checker, IFC checker, BCF, NL/SfB, IfcTester, IfcOpenShell, Solibri alternative",
+    "sameAs": [
+      "https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator"
+    ],
     "publisher": {
       "@type": "Organization",
       "name": "OpenAEC Foundation",
@@ -70,13 +94,86 @@
     }
   }
   </script>
-  <style>
-    .page-panels .slider-slide video { width: 100%; display: block; background: var(--night-build); }
-    .dev-card time { display: block; font-family: var(--font-code); font-size: 0.75rem; letter-spacing: 0.04em; color: var(--warm-gold); margin-bottom: 4px; }
-    .dev-card a { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 0.85rem; font-weight: 600; color: var(--warm-gold); text-decoration: none; }
-    .dev-card a:hover { color: white; }
-    .dev-card a .ico { width: 14px; height: 14px; }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "IFC-modellen in IFC2X3 en IFC4, zoals je ze exporteert uit Revit, ArchiCAD, Tekla of een ander BIM-pakket, tot 500 MB per bestand. Eisen laad je als IDS-bestand (tot 5 MB)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gebruikers niet: zij werken in de browser. Wel moet iemand de validator eenmalig op een server zetten met Docker. Er is nog geen kant-en-klare release en geen openbare proefversie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. BIM Validator is open source onder de MIT-licentie. Je betaalt alleen je eigen server."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk bestandsformaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Een project bewaart je IFC-modellen, de uitslag en de issues samen, met een projectbestand (.wefc) dat bijhoudt wat bij wat hoort. Issues download je als BCF 2.1-zip, de uitslag als JSON; via de opdrachtregel ook als HTML-rapport."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gebruikers hebben een moderne browser nodig met WebGL, op Windows, macOS of Linux. De server draait in Docker op Linux. Een desktop-app is er niet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de bouwpraktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. De NL-BIM Basis ILS en de RVB BIM Norm v1.1 zitten erin, met NL/SfB-classificatie. Eisen volgen de buildingSMART-standaard IDS, issues de BCF 2.1-standaard die Revit, ArchiCAD, Solibri en BIMcollab lezen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Via de REST-API kan een assistent of script een model laten controleren en de uitslag als JSON ophalen; de opdrachtregel werkt ook. Een MCP-server is er nog niet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Blijven mijn modellen binnen mijn organisatie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Je draait de validator op je eigen server, dus modellen gaan niet naar een externe dienst. Met meerdere organisaties op één server ziet elke organisatie alleen haar eigen projecten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan het ook botsingen tussen modellen vinden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet. Het tabblad Clashes staat er al, maar botsingscontrole is nog niet gebouwd. Je kunt wel meerdere modellen samen bekijken."
+        }
+      }
+    ]
+  }
+  </script>
 
   <meta name="i18n-static" content="fr">
   <!-- schema:start -->
@@ -112,7 +209,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "fr",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/fr/bim-validator/#breadcrumb"
         }
@@ -176,255 +273,226 @@
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">Écosystème OpenAEC</p>
-      <h1>BIM <span class="accent">Validator</span></h1>
-      <p class="lead" data-i18n="header.desc">Outil open source de validation IFC. Validez vos modèles contre les spécifications IDS, les standards néerlandais et les exigences projet — dans le navigateur, en CLI ou via API.</p>
+      <p class="pill-label" data-i18n="header.label">Contrôle BIM</p>
+      <h1 data-i18n="header.title">BIM <span class="accent">Validator</span></h1>
+      <p class="pp-tagline" data-i18n="header.tagline">Sachez avant la livraison si votre maquette IFC répond aux exigences</p>
+      <p class="lead" data-i18n="header.desc">Ajoutez une maquette IFC dans le navigateur, choisissez la NL-BIM Basis ILS, la RVB BIM Norm ou votre propre fichier IDS, puis cliquez sur Valider. Vous voyez par exigence ce qui passe ou échoue, et chaque élément en défaut s'allume en 3D.</p>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.github">Voir le code source sur GitHub</span></a>
+        <a href="#features" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Voir les fonctions</span></a>
+        <a href="#faq" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="header.faqBtn">Questions fréquentes</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Code source</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg>IDS · <span data-i18n="stats.ids">Norme de validation</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg>12+ <span data-i18n="stats.nlbim">Spécifications NL BIM Basis ILS</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg>27+ <span data-i18n="stats.rvb">Spécifications RVB BIM Norm</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg><span data-i18n="stats.maxsize">Taille de fichier max</span> 1 GB+</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg><span>IFC2X3 · IFC4</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg><span>IDS · NL-BIM Basis ILS · RVB BIM Norm</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span>BCF 2.1</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="header.proof4">Navigateur, votre serveur</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg><span data-i18n="header.proof5">Open source, MIT</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide">
-            <video controls muted playsinline preload="metadata" poster="/shared/assets/screenshots/bim-validator.png">
-              <source src="/shared/assets/screenshots/bim-validator-demo.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/bim-validator.png" alt="BIM Validator - Overzicht"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/bim-validator-2.png" alt="BIM Validator - Validatie"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/bim-validator-3.png" alt="BIM Validator - Resultaten"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/bim-validator-4.png" alt="BIM Validator - 3D Viewer"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/bim-validator-hero.png" width="1920" height="1200" alt="BIM Validator avec une maquette de bureaux en 3D : le mur extérieur sans valeur U est mis en évidence, à droite le résultat par exigence de la NL-BIM Basis ILS" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/bim-validator-feat-deur.png" width="1200" height="750" decoding="async" alt="Une porte au nom non conforme mise en évidence en 3D ; à droite l'exigence de nommage des portes avec l'élément en défaut et ses détails" data-i18n="hl.deur.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/bim-validator-feat-standaarden.png" width="1200" height="750" decoding="async" alt="Résultat de la RVB BIM Norm : 26 exigences, dont dix respectées, avec la maquette de bureaux en 3D" data-i18n="hl.standaarden.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/bim-validator-feat-eigenschappen.png" width="1200" height="750" decoding="async" alt="Une fenêtre sélectionnée dans la maquette 3D ; à gauche ses propriétés avec niveau, matériau et code NL/SfB" data-i18n="hl.eigenschappen.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/bim-validator-feat-bcf.png" width="1200" height="750" decoding="async" alt="Six tickets BCF avec vignette, créés à partir des exigences non respectées, et le bouton pour les télécharger en zip BCF" data-i18n="hl.bcf.alt" data-i18n-attr="alt"></div>
         </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende">&rsaquo;</button>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap" id="functies"><div class="container">
-    <div class="section-head">
-      <h2 data-i18n="features.title">Fonctionnalités</h2>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="notice.text">Pas encore de version publiée ni de version web publique : vous l'installez vous-même sur un serveur avec Docker. Les captures proviennent d'une installation de test locale avec une maquette fictive.</span></p>
+  </div>
+
+  <nav class="pp-subnav" aria-label="Sur cette page" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Fonctions</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Nouveautés</a>
+      <a href="#faq" data-i18n="subnav.faq">FAQ</a>
+      <a href="#releases" data-i18n="subnav.releases">Versions</a>
     </div>
-    <div class="mod-tabs" role="tablist" hidden>
-      <button type="button" class="mod-tab" role="tab" id="tab-validation" aria-controls="grp-validation" aria-selected="true"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg><span data-i18n="validation.title">Validation</span> <span class="mod-count">6</span></button>
-      <button type="button" class="mod-tab" role="tab" id="tab-viewer" aria-controls="grp-viewer" aria-selected="false"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg><span data-i18n="viewer.title">Visualiseur 3D</span> <span class="mod-count">4</span></button>
-      <button type="button" class="mod-tab" role="tab" id="tab-bcf" aria-controls="grp-bcf" aria-selected="false"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="bcf.title">Export BCF</span> <span class="mod-count">3</span></button>
-      <button type="button" class="mod-tab" role="tab" id="tab-interfaces" aria-controls="grp-interfaces" aria-selected="false"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg><span data-i18n="interfaces.title">Interfaces</span> <span class="mod-count">3</span></button>
-      <button type="button" class="mod-tab" role="tab" id="tab-reporting" aria-controls="grp-reporting" aria-selected="false"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="reporting.title">Rapports &amp; export</span> <span class="mod-count">4</span></button>
-      <button type="button" class="mod-tab" role="tab" id="tab-fileprocessing" aria-controls="grp-fileprocessing" aria-selected="false"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg><span data-i18n="fileprocessing.title">Traitement des fichiers</span> <span class="mod-count">3</span></button>
-      <button type="button" class="mod-tab" role="tab" id="tab-deployment" aria-controls="grp-deployment" aria-selected="false"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="deployment.title">Déploiement &amp; intégration</span> <span class="mod-count">4</span></button>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Fonctions</p><h2 data-i18n="features.heading">De la maquette IFC à une liste d'erreurs que vous pouvez corriger</h2><p data-i18n="features.sub">Commencez par les points forts ou choisissez un thème.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Fonctions par thème" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Points forts</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-check" data-tab="check" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg><span data-i18n="tabs.check">Contrôle</span> <span class="pp-tab-count" data-count="check"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-view" data-tab="view" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg><span data-i18n="tabs.view">Consulter la maquette</span> <span class="pp-tab-count" data-count="view"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-issues" data-tab="issues" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="tabs.issues">Tickets et rapports</span> <span class="pp-tab-count" data-count="issues"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-server" data-tab="server" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg><span data-i18n="tabs.server">Projets et serveur</span> <span class="pp-tab-count" data-count="server"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Toutes les fonctions</span> <span class="pp-tab-count" data-count="all"></span></button>
     </div>
-    <div class="mod-group" id="grp-validation" role="tabpanel" aria-labelledby="tab-validation">
-      <h3><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg><span data-i18n="validation.title">Validation</span></h3>
-      <div class="features">
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-          <h4 data-i18n="validation.ids.feature">Validation IDS</h4>
-          <p data-i18n="validation.ids.desc">Validez les modèles IFC par rapport aux fichiers Information Delivery Specification (IDS). Chaque spécification est vérifiée par élément avec un résultat réussite/échec et des messages d'erreur détaillés.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div>
-          <h4 data-i18n="validation.nlbim.feature">NL BIM Basis ILS v2</h4>
-          <p data-i18n="validation.nlbim.desc">Standard néerlandais de base BIM intégré avec 12 spécifications : dénomination des étages, classification NL/SfB, attributs d'espace, structure porteuse, surfaces extérieures, résistance au feu, valeur U, matériaux et statut de rénovation.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div>
-          <h4 data-i18n="validation.rvb.feature">RVB BIM Norm v1.1</h4>
-          <p data-i18n="validation.rvb.desc">Norme intégrée du Rijksvastgoedbedrijf (agence immobilière de l'État néerlandais) avec 27 spécifications pour les projets de construction publics : informations projet, coordonnées du site, NL-SfB par type d'élément, propriétés structurelles et de sécurité incendie, et informations de zone.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div>
-          <h4 data-i18n="validation.customids.feature">Import IDS personnalisé</h4>
-          <p data-i18n="validation.customids.desc">Importez votre propre fichier de spécification IDS (max 10 Mo) pour valider selon des exigences spécifiques au projet ou à l'organisation.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div>
-          <h4 data-i18n="validation.multischema.feature">Multi-schéma</h4>
-          <p data-i18n="validation.multischema.desc">Prend en charge les schémas IFC2X3 et IFC4 — compatible avec les exports de Revit, ArchiCAD, Tekla et autres logiciels BIM.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg></div>
-          <h4 data-i18n="validation.elementreport.feature">Rapport au niveau des éléments</h4>
-          <p data-i18n="validation.elementreport.desc">Pour chaque élément en échec, le GlobalId, la classe IFC, le nom de l'élément et un message d'erreur détaillé sont affichés.</p>
-        </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/bim-validator-feat-deur.png" width="1200" height="750" loading="lazy" decoding="async" alt="Une porte au nom non conforme mise en évidence en 3D ; à droite l'exigence de nommage des portes avec l'élément en défaut et ses détails" data-i18n="hl.deur.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.deur.kicker">Erreurs en 3D</span></p>
+            <h3 data-i18n="hl.deur.title">Voyez tout de suite quel élément pose problème</h3>
+            <p data-i18n="hl.deur.desc">Cliquez sur une erreur dans les résultats : l'application zoome sur l'élément et rend le reste de la maquette transparent. À côté figurent l'exigence, le type, le GlobalId et le nom, pour le retrouver vite dans votre logiciel BIM.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/bim-validator-feat-standaarden.png" width="1200" height="750" loading="lazy" decoding="async" alt="Résultat de la RVB BIM Norm : 26 exigences, dont dix respectées, avec la maquette de bureaux en 3D" data-i18n="hl.standaarden.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.standaarden.kicker">Normes</span></p>
+            <h3 data-i18n="hl.standaarden.title">Les exigences néerlandaises sont intégrées</h3>
+            <p data-i18n="hl.standaarden.desc">Choisissez en un clic la NL-BIM Basis ILS (12 exigences) ou la RVB BIM Norm de l'agence immobilière de l'État néerlandais (26 exigences) : nommage, codes NL/SfB, matériaux, résistance au feu, valeurs U et plus. Votre client a ses propres exigences ? Chargez son fichier IDS.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator#nederlandse-bim-standaarden" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/bim-validator-feat-eigenschappen.png" width="1200" height="750" loading="lazy" decoding="async" alt="Une fenêtre sélectionnée dans la maquette 3D ; à gauche ses propriétés avec niveau, matériau et code NL/SfB" data-i18n="hl.eigenschappen.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.eigenschappen.kicker">Consulter la maquette</span></p>
+            <h3 data-i18n="hl.eigenschappen.title">Cliquez sur un élément et voyez son contenu</h3>
+            <p data-i18n="hl.eigenschappen.desc">Faites pivoter, zoomez et cliquez dans la maquette sans rien installer. Pour chaque élément, vous voyez le niveau, le matériau, la classification, les jeux de propriétés et les quantités. Les plans de coupe vous font entrer dans le bâtiment.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/bim-validator-feat-bcf.png" width="1200" height="750" loading="lazy" decoding="async" alt="Six tickets BCF avec vignette, créés à partir des exigences non respectées, et le bouton pour les télécharger en zip BCF" data-i18n="hl.bcf.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.bcf.kicker">Tickets BCF</span></p>
+            <h3 data-i18n="hl.bcf.title">Transmettez les erreurs au modeleur</h3>
+            <p data-i18n="hl.bcf.desc">Transformez en un clic toutes les erreurs en tickets BCF, avec votre préfixe, priorité, responsable et échéance. Chaque ticket reçoit un point de vue et une vignette. Téléchargez-les en zip BCF pour Revit, ArchiCAD, Solibri ou BIMcollab, ou envoyez-les sur la plateforme BCF d'OpenAEC.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
       </div>
-    </div>
-    <div class="mod-group" id="grp-viewer" role="tabpanel" aria-labelledby="tab-viewer">
-      <h3><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg><span data-i18n="viewer.title">Visualiseur 3D</span></h3>
-      <div class="features">
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div>
-          <h4 data-i18n="viewer.webgl.feature">Visualiseur 3D WebGL</h4>
-          <p data-i18n="viewer.webgl.desc">Vue 3D interactive du modèle IFC dans le navigateur via That Open Engine (Three.js). Aucune installation ni plugin nécessaire.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div>
-          <h4 data-i18n="viewer.selection.feature">Sélection d'éléments</h4>
-          <p data-i18n="viewer.selection.desc">Cliquez sur un élément dans le visualiseur 3D pour voir ses propriétés, ou cliquez sur une erreur dans la liste des résultats pour mettre en évidence l'élément en 3D.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-move"/></svg></div>
-          <h4 data-i18n="viewer.navigation.feature">Navigation caméra</h4>
-          <p data-i18n="viewer.navigation.desc">Orbitez, déplacez-vous et zoomez dans le modèle. Bouton « tout ajuster » pour afficher le modèle entier.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div>
-          <h4 data-i18n="viewer.panels.feature">Panneaux redimensionnables</h4>
-          <p data-i18n="viewer.panels.desc">Division à trois volets déplaçable : panneau de navigation (gauche), visualiseur 3D (centre) et panneau de détail (droite). Chaque panneau est repliable.</p>
-        </div>
-      </div>
-    </div>
-    <div class="mod-group" id="grp-bcf" role="tabpanel" aria-labelledby="tab-bcf">
-      <h3><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="bcf.title">Export BCF</span></h3>
-      <div class="features">
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div>
-          <h4 data-i18n="bcf.zip.feature">Export BCF 2.1 ZIP</h4>
-          <p data-i18n="bcf.zip.desc">Exportez toutes les erreurs de validation sous forme de fichier BCF 2.1 ZIP. Chaque élément en échec devient un sujet BCF avec un point de vue, directement importable dans Revit, Solibri, BIMcollab ou Navisworks.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div>
-          <h4 data-i18n="bcf.platform.feature">Intégration BCF Platform</h4>
-          <p data-i18n="bcf.platform.desc">Connectez-vous à la BCF Platform d'OpenAEC pour transmettre les problèmes directement à un tableau de bord central de projet. Comprend l'authentification OIDC et la sélection de projet.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-          <h4 data-i18n="bcf.queue.feature">File d'attente des problèmes</h4>
-          <p data-i18n="bcf.queue.desc">Aperçu local des problèmes BCF générés avec miniatures et détails extensibles, avant l'export ou la transmission à la plateforme.</p>
-        </div>
-      </div>
-    </div>
-    <div class="mod-group" id="grp-interfaces" role="tabpanel" aria-labelledby="tab-interfaces">
-      <h3><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg><span data-i18n="interfaces.title">Interfaces</span></h3>
-      <div class="features">
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div>
-          <h4 data-i18n="interfaces.web.feature">Application web</h4>
-          <p data-i18n="interfaces.web.desc">Interface entièrement basée sur le navigateur avec import par glisser-déposer, sélection de standard, barre de progression, vue des résultats et visualiseur 3D.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div>
-          <h4 data-i18n="interfaces.cli.feature">CLI</h4>
-          <p data-i18n="interfaces.cli.desc"><code>ifc-validate model.ifc --ids nl-bim</code> — adapté au traitement par lots, aux pipelines CI/CD et au scripting. Sortie en console, JSON ou HTML.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div>
-          <h4 data-i18n="interfaces.restapi.feature">API REST</h4>
-          <p data-i18n="interfaces.restapi.desc">Backend FastAPI avec endpoints de validation asynchrones. Intégrable dans vos propres workflows, tableaux de bord ou outils tiers.</p>
-        </div>
-      </div>
-    </div>
-    <div class="mod-group" id="grp-reporting" role="tabpanel" aria-labelledby="tab-reporting">
-      <h3><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="reporting.title">Rapports &amp; export</span></h3>
-      <div class="features">
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div>
-          <h4 data-i18n="reporting.dashboard.feature">Tableau de bord des résultats</h4>
-          <p data-i18n="reporting.dashboard.desc">Carte de synthèse avec total réussite/échec, pourcentage, nombre d'éléments validés et horodatage.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div>
-          <h4 data-i18n="reporting.breakdown.feature">Détail par spécification</h4>
-          <p data-i18n="reporting.breakdown.desc">Liste extensible par spécification avec statut réussite/échec, pourcentage et liste paginée des éléments en échec.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div>
-          <h4 data-i18n="reporting.jsonexport.feature">Export JSON</h4>
-          <p data-i18n="reporting.jsonexport.desc">Téléchargez les résultats complets de validation sous forme de fichier JSON structuré pour une analyse ou un archivage ultérieur.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div>
-          <h4 data-i18n="reporting.htmlreport.feature">Rapport HTML</h4>
-          <p data-i18n="reporting.htmlreport.desc">Générez un rapport HTML autonome à partager avec l'équipe projet ou le client.</p>
-        </div>
-      </div>
-    </div>
-    <div class="mod-group" id="grp-fileprocessing" role="tabpanel" aria-labelledby="tab-fileprocessing">
-      <h3><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg><span data-i18n="fileprocessing.title">Traitement des fichiers</span></h3>
-      <div class="features">
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div>
-          <h4 data-i18n="fileprocessing.dragdrop.feature">Import par glisser-déposer</h4>
-          <p data-i18n="fileprocessing.dragdrop.desc">Glissez des fichiers IFC, IFCXML ou IFCZIP dans le navigateur. Maximum 500 Mo par fichier.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div>
-          <h4 data-i18n="fileprocessing.memory.feature">Gestion de la mémoire</h4>
-          <p data-i18n="fileprocessing.memory.desc">Vérification automatique de la disponibilité de RAM suffisante (les fichiers IFC utilisent environ 10 fois leur taille en mémoire). Les fichiers temporaires sont supprimés immédiatement.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div>
-          <h4 data-i18n="fileprocessing.largefiles.feature">Fichiers volumineux</h4>
-          <p data-i18n="fileprocessing.largefiles.desc">Optimisé pour les modèles IFC jusqu'à plus de 1 Go. Indicateur de progression pendant le traitement.</p>
-        </div>
-      </div>
-    </div>
-    <div class="mod-group" id="grp-deployment" role="tabpanel" aria-labelledby="tab-deployment">
-      <h3><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="deployment.title">Déploiement &amp; intégration</span></h3>
-      <div class="features">
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-crane"/></svg></div>
-          <h4 data-i18n="deployment.docker.feature">Déploiement Docker</h4>
-          <p data-i18n="deployment.docker.desc">Configuration Docker Compose complète avec backend, frontend, nginx, PostgreSQL et Redis. Une seule commande pour tout démarrer.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div>
-          <h4 data-i18n="deployment.onpremises.feature">Sur site (on-premises)</h4>
-          <p data-i18n="deployment.onpremises.desc">Exécutez le validateur sur votre propre serveur pour un contrôle maximal des données et de la confidentialité. Aucune dépendance au cloud.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div>
-          <h4 data-i18n="deployment.multitenant.feature">Multi-tenant</h4>
-          <p data-i18n="deployment.multitenant.desc">Stockage de projets avec intégration NextCloud optionnelle pour la gestion des fichiers par organisation.</p>
-        </div>
-        <div class="feature">
-          <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div>
-          <h4 data-i18n="deployment.sso.feature">Authentification SSO</h4>
-          <p data-i18n="deployment.sso.desc">Authentification unique basée sur OIDC pour les environnements d'entreprise.</p>
-        </div>
-      </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="check"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h3 data-i18n="f.ids.title">Contrôle selon IDS</h3><p data-i18n="f.ids.desc">Chaque élément est testé par exigence, avec réussite ou échec et la raison.</p></div></div></li>
+        <li class="pp-tile" data-cats="check"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div><div><h3 data-i18n="f.nlbim.title">NL-BIM Basis ILS</h3><p data-i18n="f.nlbim.desc">Douze exigences de la BIM basis ILS, des noms de niveaux au statut de rénovation.</p></div></div></li>
+        <li class="pp-tile" data-cats="check"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><h3 data-i18n="f.rvb.title">RVB BIM Norm</h3><p data-i18n="f.rvb.desc">26 exigences pour les bâtiments de l'État : données du projet et du terrain, NL/SfB par type d'élément, espaces.</p></div></div></li>
+        <li class="pp-tile" data-cats="check"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.custom.title">Votre propre fichier IDS</h3><p data-i18n="f.custom.desc">Chargez les exigences de votre client ou de votre organisation en fichier IDS.</p></div></div></li>
+        <li class="pp-tile" data-cats="check"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.schema.title">IFC2X3 et IFC4</h3><p data-i18n="f.schema.desc">Pour les exports de Revit, ArchiCAD, Tekla et d'autres logiciels BIM.</p></div></div></li>
+        <li class="pp-tile" data-cats="check"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.tree.title">Résultats par exigence</h3><p data-i18n="f.tree.desc">Une arborescence dépliable de l'exigence à la règle puis à l'élément, avec compteurs d'erreurs.</p></div></div></li>
+        <li class="pp-tile" data-cats="check view"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h3 data-i18n="f.highlight.title">Erreurs mises en évidence en 3D</h3><p data-i18n="f.highlight.desc">Mettez en évidence tous les éléments en défaut d'un coup, ou zoomez sur un seul.</p></div></div></li>
+        <li class="pp-tile" data-cats="view"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h3 data-i18n="f.viewer.title">Visionneuse 3D dans le navigateur</h3><p data-i18n="f.viewer.desc">Rotation, panoramique et zoom, avec un cube pour changer vite de vue.</p></div></div></li>
+        <li class="pp-tile" data-cats="view"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.props.title">Propriétés par élément</h3><p data-i18n="f.props.desc">Niveau, matériau, classification, jeux de propriétés, quantités et type.</p></div></div></li>
+        <li class="pp-tile" data-cats="view"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-scissors"/></svg></div><div><h3 data-i18n="f.section.title">Plans de coupe</h3><p data-i18n="f.section.desc">Coupez la maquette en X, Y ou Z et déplacez le plan pour regarder à l'intérieur.</p></div></div></li>
+        <li class="pp-tile" data-cats="view server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.models.title">Plusieurs maquettes</h3><p data-i18n="f.models.desc">Placez architecture, structure et fluides côte à côte et masquez ce dont vous n'avez pas besoin.</p></div></div></li>
+        <li class="pp-tile" data-cats="issues"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h3 data-i18n="f.bcfmake.title">Tickets BCF à partir des erreurs</h3><p data-i18n="f.bcfmake.desc">Par exigence, règle ou élément, avec priorité, étiquette, jalon et échéance.</p></div></div></li>
+        <li class="pp-tile" data-cats="issues"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h3 data-i18n="f.bcfzip.title">Zip BCF 2.1</h3><p data-i18n="f.bcfzip.desc">Téléchargez tous les tickets avec point de vue et vignette pour votre logiciel BIM.</p></div></div></li>
+        <li class="pp-tile" data-cats="issues server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.platform.title">Plateforme BCF d'OpenAEC</h3><p data-i18n="f.platform.desc">Connectez-vous et envoyez les tickets directement dans un tableau de projet partagé.</p></div></div></li>
+        <li class="pp-tile" data-cats="issues"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.json.title">Résultats en JSON</h3><p data-i18n="f.json.desc">Téléchargez les résultats complets pour l'archive ou vos propres analyses.</p></div></div></li>
+        <li class="pp-tile" data-cats="issues server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h3 data-i18n="f.cli.title">Ligne de commande</h3><p data-i18n="f.cli.desc">Contrôlez les maquettes dans un script ou une chaîne d'intégration, avec sortie écran, JSON ou HTML.</p></div></div></li>
+        <li class="pp-tile" data-cats="server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.projects.title">Enregistrer et ouvrir des projets</h3><p data-i18n="f.projects.desc">Conservez maquettes, résultats et tickets ensemble comme projet, en local ou dans le stockage du projet.</p></div></div></li>
+        <li class="pp-tile" data-cats="server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h3 data-i18n="f.nextcloud.title">Connexion Nextcloud</h3><p data-i18n="f.nextcloud.desc">Ouvrez les fichiers IFC du dossier du projet et enregistrez-y les résultats.</p></div></div></li>
+        <li class="pp-tile" data-cats="server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h3 data-i18n="f.tenant.title">Séparé par organisation</h3><p data-i18n="f.tenant.desc">Projets et fichiers ne sont visibles que par leur propre organisation.</p></div></div></li>
+        <li class="pp-tile" data-cats="server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h3 data-i18n="f.docker.title">Sur votre propre serveur</h3><p data-i18n="f.docker.desc">Une seule installation Docker ; vos maquettes ne quittent pas votre réseau.</p></div></div></li>
+        <li class="pp-tile" data-cats="server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.api.title">API REST</h3><p data-i18n="f.api.desc">Lancez des contrôles depuis votre logiciel et récupérez les résultats.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h3 data-i18n="f.lang.title">Néerlandais et anglais</h3><p data-i18n="f.lang.desc">L'interface est disponible en néerlandais et en anglais.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel" id="recent-developments">
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
     <div class="panel-split">
       <div class="panel-split-text">
-        <p class="pill-label" data-i18n="developments.label">Développement du projet</p>
-        <h2 data-i18n="developments.title">Développements récents</h2>
-        <p data-i18n="developments.intro">Le validateur est en développement actif. Voici les améliorations récentes les plus notables du dépôt public.</p>
+        <p class="pill-label" data-i18n="whatsnew.label">Nouveau en avril 2026</p>
+        <h2 data-i18n="whatsnew.title">Projets, <span>enregistrement et plans de coupe</span></h2>
+        <p data-i18n="whatsnew.desc">Les dernières nouvelles fonctions datent d'avril 2026. Il n'y a pas encore de version publiée ; les changements se trouvent dans le code source sur GitHub.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator/commits/master" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaChangelog">Toutes les notes de version</span></a>
+        </div>
       </div>
-      <ul class="split-cards">
-        <li class="split-card dev-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-history"/></svg></div><div><time datetime="2026-04-21">21 april 2026</time><strong data-i18n="developments.item1.title">Projets cloisonnés par organisation</strong><p data-i18n="developments.item1.desc">Les routes de projet, de fichier et de cloud vérifient désormais le contexte de l'organisation avant que des données ne soient ouvertes ou modifiées.</p><a href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator/commit/562f071" target="_blank" rel="noopener"><span data-i18n="developments.link">Voir la modification</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg></a></div></li>
-        <li class="split-card dev-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-history"/></svg></div><div><time datetime="2026-04-20">20 april 2026</time><strong data-i18n="developments.item2.title">Dépendances sécurisées</strong><p data-i18n="developments.item2.desc">Les outils frontend et l'analyseur de données ont été mis à jour, et les problèmes de sécurité signalés dans le contrôle des dépendances ont été résolus.</p><a href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator/commit/f80e92c" target="_blank" rel="noopener"><span data-i18n="developments.link">Voir la modification</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg></a></div></li>
-        <li class="split-card dev-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-history"/></svg></div><div><time datetime="2026-04-16">16 april 2026</time><strong data-i18n="developments.item3.title">Ouvrir et enregistrer des projets localement et dans le cloud</strong><p data-i18n="developments.item3.desc">Le workflow de projet prend désormais en charge les fichiers de projet locaux, l'enregistrement en tant que nouveau projet, ainsi que l'ouverture ou la mise à jour depuis un stockage de projet lié.</p><a href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator/commit/f73da0e" target="_blank" rel="noopener"><span data-i18n="developments.link">Voir la modification</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg></a></div></li>
-        <li class="split-card dev-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-history"/></svg></div><div><time datetime="2026-04-02">2 april 2026</time><strong data-i18n="developments.item4.title">Plans de coupe interactifs</strong><p data-i18n="developments.item4.desc">Les plans de coupe peuvent être sélectionnés et déplacés directement dans la vue 3D pour une inspection ciblée du modèle.</p><a href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator/commit/ecf9f10" target="_blank" rel="noopener"><span data-i18n="developments.link">Voir la modification</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg></a></div></li>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h4 data-i18n="whatsnew.items.tenant.title">Séparé par organisation</h4><p data-i18n="whatsnew.items.tenant.desc">Chaque requête sur les projets, fichiers et le stockage cloud vérifie d'abord votre organisation.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h4 data-i18n="whatsnew.items.save.title">Ouvrir et enregistrer</h4><p data-i18n="whatsnew.items.save.desc">Une nouvelle fenêtre pour ouvrir et enregistrer des projets en local ou dans le stockage du projet, aussi avec Ctrl+S et Ctrl+O.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h4 data-i18n="whatsnew.items.wefc.title">Tout réuni dans un projet</h4><p data-i18n="whatsnew.items.wefc.desc">Maquettes, résultats et tickets BCF sont conservés ensemble, avec un fichier de projet qui indique ce qui va avec quoi.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-scissors"/></svg></div><div><h4 data-i18n="whatsnew.items.section.title">Plans de coupe</h4><p data-i18n="whatsnew.items.section.desc">Coupez la maquette en X, Y ou Z et déplacez le plan à la souris pour regarder dans le bâtiment.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><h4 data-i18n="whatsnew.items.deps.title">Composants plus sûrs</h4><p data-i18n="whatsnew.items.deps.desc">Les sept problèmes de sécurité signalés dans les composants utilisés ont été corrigés.</p></div></li>
       </ul>
     </div>
   </section>
 
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Questions fréquentes</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Quels fichiers puis-je ouvrir ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">Des maquettes IFC en IFC2X3 et IFC4, telles qu'exportées depuis Revit, ArchiCAD, Tekla ou un autre logiciel BIM, jusqu'à 500 Mo par fichier. Les exigences se chargent en fichier IDS (jusqu'à 5 Mo).</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Dois-je installer quelque chose ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Pas pour les utilisateurs : ils travaillent dans le navigateur. Quelqu'un doit en revanche installer une fois le validateur sur un serveur avec Docker. Il n'existe pas encore de version prête à l'emploi ni de version d'essai publique.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">Combien ça coûte ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Rien. BIM Validator est open source sous licence MIT. Vous ne payez que votre propre serveur.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.save.q">Dans quel format mon travail est-il enregistré ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.save.a">Un projet conserve ensemble vos maquettes IFC, les résultats et les tickets, avec un fichier de projet (.wefc) qui indique ce qui va avec quoi. Les tickets se téléchargent en zip BCF 2.1, les résultats en JSON ; en ligne de commande aussi en rapport HTML.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">Sur quels systèmes fonctionne-t-il ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">Les utilisateurs ont besoin d'un navigateur récent avec WebGL, sous Windows, macOS ou Linux. Le serveur tourne dans Docker sous Linux. Il n'y a pas d'application de bureau.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">Est-ce adapté à la pratique du bâtiment ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">Oui. La NL-BIM Basis ILS et la RVB BIM Norm v1.1 néerlandaises sont intégrées, avec la classification NL/SfB. Les exigences suivent le standard IDS de buildingSMART, les tickets le standard BCF 2.1 que lisent Revit, ArchiCAD, Solibri et BIMcollab.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">Que peut en faire un assistant IA ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">Par l'API REST, un assistant ou un script peut faire contrôler une maquette et récupérer les résultats en JSON ; la ligne de commande fonctionne aussi. Il n'y a pas encore de serveur MCP.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.privacy.q">Mes maquettes restent-elles dans mon organisation ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.privacy.a">Oui. Vous faites tourner le validateur sur votre propre serveur : les maquettes ne partent pas vers un service externe. Avec plusieurs organisations sur un serveur, chacune ne voit que ses propres projets.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.clash.q">Peut-il aussi détecter les conflits entre maquettes ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.clash.a">Pas encore. L'onglet Clashes existe déjà, mais la détection de conflits n'est pas encore développée. Vous pouvez en revanche afficher plusieurs maquettes ensemble.</p></div>
+      </details>
+    </div>
+  </div></section>
+
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Technologie</h2><p data-i18n="tech.sub">Pour ceux qui veulent savoir comment c'est construit.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h4 data-i18n="tech.ifcos.title">IfcOpenShell · IfcTester</h4><p data-i18n="tech.ifcos.desc">Le contrôle lui-même : IfcTester teste la maquette selon les exigences IDS, IfcOpenShell lit le fichier IFC.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.fastapi.title">Python · FastAPI</h4><p data-i18n="tech.fastapi.desc">Le serveur avec l'API REST, les contrôles en arrière-plan et la ligne de commande ifc-validate.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.thatopen.title">That Open Engine · web-ifc · Three.js</h4><p data-i18n="tech.thatopen.desc">La visionneuse 3D dans le navigateur, avec des fragments pour un affichage rapide des grandes maquettes.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h4 data-i18n="tech.react.title">React · TypeScript · Vite</h4><p data-i18n="tech.react.desc">L'interface avec ruban, panneaux et thèmes, en néerlandais et en anglais.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h4 data-i18n="tech.storage.title">PostgreSQL · Nextcloud</h4><p data-i18n="tech.storage.desc">Projets dans PostgreSQL (SQLite pour les tests locaux) et fichiers dans Nextcloud via WebDAV.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="tech.docker.title">Docker · OIDC</h4><p data-i18n="tech.docker.desc">Une seule installation Docker Compose avec connexion facultative via OpenID Connect.</p></div></div>
+    </div>
+  </div></section>
+
+
+  <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
   <div data-release-notes="OpenAEC-BIM-validator"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Afficher toutes les versions</span><span data-rel-hide hidden data-i18n="releases.showLess">Afficher seulement les trois dernières</span></button>
+    <a href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator/releases" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.github">Toutes les versions sur GitHub</span></a>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
-      <h2>BIM <span class="accent">Validator</span></h2>
+      <h2 data-i18n="header.title">BIM <span class="accent">Validator</span></h2>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="header.github">Voir le code source sur GitHub</span></a>
+        <a href="#features" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Voir les fonctions</span></a>
+        <a href="#faq" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="header.faqBtn">Questions fréquentes</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/OpenAEC-BIM-validator" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Code source</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -478,48 +546,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-  <script>
-  (function(){
-    const track = document.getElementById('sliderTrack');
-    const dots = document.getElementById('sliderDots');
-    if (!track || !dots) return;
-    const slides = track.children.length;
-    let current = 0;
-    for(let i=0;i<slides;i++){
-      const d = document.createElement('button');
-      d.className = 'slider-dot' + (i===0?' active':'');
-      d.onclick = ()=>slideTo(i);
-      dots.appendChild(d);
-    }
-    window.slideMove = function(dir){slideTo(current+dir);};
-    window.slideTo = function(i){
-      current = (i+slides)%slides;
-      track.style.transform = 'translateX(-'+current*100+'%)';
-      dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-      track.querySelectorAll('video').forEach(v=>v.pause());
-    };
-  })();
-  // Functionaliteiten: één groep tegelijk via tabbladen. Zonder JavaScript staan alle groepen onder elkaar.
-  (function () {
-    var wrap = document.getElementById('functies');
-    if (!wrap) return;
-    var tabs = Array.prototype.slice.call(wrap.querySelectorAll('.mod-tab'));
-    var groups = Array.prototype.slice.call(wrap.querySelectorAll('.mod-group'));
-    wrap.querySelector('.mod-tabs').hidden = false;
-    wrap.classList.add('js-tabs');
-    function kies(i) {
-      tabs.forEach(function (t, n) { t.setAttribute('aria-selected', n === i ? 'true' : 'false'); t.tabIndex = n === i ? 0 : -1; });
-      groups.forEach(function (gr, n) { gr.hidden = n !== i; });
-    }
-    tabs.forEach(function (t, i) {
-      t.addEventListener('click', function () { kies(i); });
-      t.addEventListener('keydown', function (e) {
-        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { var n = (i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length; kies(n); tabs[n].focus(); }
-      });
-    });
-    kies(0);
-  })();
-  </script>
   <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

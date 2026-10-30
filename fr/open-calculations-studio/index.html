@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Calculations Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Application de bureau open source pour les calculs structuraux — inspirée de CalcPAD, avec export direct vers IFC4x3 STEP et IFCX JSON-LD. Anciennement…">
+  <meta name="description" content="Application gratuite de calculs de structure dans le navigateur : écrivez votre calcul en texte avec unités et voyez aussitôt le développement. Avec des…">
   <link rel="canonical" href="https://open-aec.com/fr/open-calculations-studio/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/open-calculations-studio/">
@@ -15,24 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/open-calculations-studio/">
   <!-- hreflang:end -->
 
-
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="Open Calculations Studio">
-  <meta property="og:description" content="Application de bureau open source pour les calculs structuraux — inspirée de CalcPAD, avec export direct vers IFC4x3 STEP et IFCX JSON-LD. Anciennement…">
+  <meta property="og:title" content="Open Calculations Studio — OpenAEC Foundation">
+  <meta property="og:description" content="Application gratuite de calculs de structure dans le navigateur : écrivez votre calcul en texte avec unités et voyez aussitôt le développement. Avec des…">
   <meta property="og:url" content="https://open-aec.com/fr/open-calculations-studio/">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-calculations-studio.png">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-calculations-studio-hero.png">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Open Calculations Studio">
-  <meta name="twitter:description" content="Application de bureau open source pour les calculs structuraux — inspirée de CalcPAD, avec export direct vers IFC4x3 STEP et IFCX JSON-LD. Anciennement…">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-calculations-studio.png">
+  <meta name="twitter:description" content="Application gratuite de calculs de structure dans le navigateur : écrivez votre calcul en texte avec unités et voyez aussitôt le développement. Avec des…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-calculations-studio-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -42,47 +39,138 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
-
-  <!-- Schema.org -->
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Open Calculations Studio",
-    "alternateName": ["Ifc-Calc"],
     "applicationCategory": "EngineeringApplication",
-    "operatingSystem": "Windows, macOS, Linux",
-    "softwareVersion": "0.1.4",
-    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "applicationSubCategory": "Constructieberekeningen",
+    "operatingSystem": "Web",
     "url": "https://open-aec.com/open-calculations-studio/",
-    "description": "Open-source desktop application for structural calculations — inspired by CalcPAD. With live IFCX and IFC4x3 STEP export, under the OpenAEC Foundation. Works as standalone Tauri app or embedded library for FEM applications and code-checking.",
-    "publisher": { "@type": "Organization", "name": "OpenAEC Foundation", "url": "https://open-aec.com" }
+    "description": "Free browser app for structural calculations in CalcPAD-style syntax: write a calculation as text with units and see formula, substituted values and result rendered live. Library of more than fifty sheets for NEN-EN 1990, EN 1991 (imposed, snow, wind), EN 1992-1-1 concrete, EN 1993-1-1 steel, EN 1995-1-1 timber, EN 1996-1-1 masonry and NEN 9997-1 foundations, with drop-down lists and input fields. Saving and exporting are not yet available in the browser version.",
+    "featureList": [
+      "Rekenen met eenheden",
+      "Formule, waarden en uitkomst",
+      "Live uitwerking",
+      "Voorwaarden en herhalingen",
+      "Eigen functies en tabellen",
+      "CalcPAD-syntax",
+      "Grondslagen en combinaties",
+      "Belastingen",
+      "Beton",
+      "Staal",
+      "Hout",
+      "Metselwerk",
+      "Funderingen",
+      "Uitgewerkte voorbeelden",
+      "Keuzelijsten",
+      "Invoervelden",
+      "Sondering inlezen",
+      "Drie weergaven",
+      "Editor met kleuren",
+      "Zonder account"
+    ],
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-calculations-studio-hero.png",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    },
+    "isAccessibleForFree": true,
+    "keywords": "constructieberekening, structural calculation, CalcPAD, Eurocode, EN 1992, EN 1993, EN 1995, NEN 9997-1, unity check, rekenblad, eenheden, IFC4x3, IFCX",
+    "sameAs": [
+      "https://open-calculations-studio.open-aec.com/"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "OpenAEC Foundation",
+      "url": "https://open-aec.com"
+    }
   }
   </script>
-
-  <style>
-    .shot-caption { font-family: var(--font-code); font-size: 0.75rem; color: var(--text-muted); text-align: center; max-width: 760px; margin: 0 auto var(--sp-10); }
-    code { font-family: var(--font-code); font-size: 0.86em; background: var(--concrete); color: var(--deep-forge); padding: 1px 6px; border-radius: var(--radius-sm); }
-    .surface-dark code, .surface-spot code { background: rgba(217,119,6,0.15); color: var(--warm-gold); }
-
-
-    /* Voorbeelddocument */
-    .code-window { max-width: 860px; margin: 0 auto; border-radius: var(--radius-lg); overflow: hidden; background: var(--night-build); border: 1px solid rgba(42,42,50,0.2); box-shadow: 0 40px 80px -30px rgba(42,42,50,0.55); }
-    .code-window-bar { display: flex; align-items: center; gap: 8px; padding: 12px 16px; border-bottom: 1px solid rgba(255,255,255,0.08); font-family: var(--font-code); font-size: 0.75rem; color: var(--scaffold-gray); }
-    .code-window-bar i { width: 10px; height: 10px; border-radius: var(--radius-full); background: rgba(255,255,255,0.18); }
-    .code-window-bar i:first-child { background: var(--amber); }
-    .code-window-bar span { margin-left: 8px; }
-    .code-block { margin: 0; padding: var(--sp-5) var(--sp-6); overflow-x: auto; font-family: var(--font-code); font-size: 0.85rem; line-height: 1.65; color: #E7E5E4; white-space: pre; }
-    .code-block .comment { color: #8A8A93; }
-    .code-block .keyword { color: var(--amber); font-weight: 600; }
-    .code-block .string { color: var(--warm-gold); }
-    .code-block .number { color: #FDE68A; }
-
-    .tech-chips { margin-bottom: var(--sp-6); }
-    .tech-desc { color: var(--text-muted); font-size: 1.02rem; line-height: 1.7; max-width: 760px; margin: 0 auto; text-align: center; }
-
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In de browserversie begin je bij een rekenblad uit de bibliotheek of typ je zelf. Een berekening in CalcPAD-syntax kun je in de editor plakken. Een rekenblad kan een sondering als GEF-bestand inlezen. Bestanden openen via het menu werkt in de browser nog niet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. De browserversie werkt direct, zonder account. Er is ook een desktop-app voor Windows, macOS en Linux, met projecten, rekenmodules en een constructierapport, maar de installers zijn nog niet openbaar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost Open Calculations Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. De browserversie is gratis, zonder account of abonnement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk formaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In de browserversie nog niet: opslaan en exporteren naar PDF, IFC, HTML of JSON werken daar nog niet. Kopieer je tekst om hem te bewaren. De desktop-app bewaart een project als .ifccalculation-bestand."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In elke moderne browser, op Windows, macOS en Linux. Het rekenen gebeurt in je eigen browser."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de Nederlandse praktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De normbladen volgen de Eurocodes met de Nederlandse bijlagen en NEN 9997-1, met de artikelnummers erbij. Controleer de uitkomst altijd zelf. In de desktop-app zijn tot nu toe alleen de houten balklaag en de spuwer (noodoverlaat) nagekeken en vrijgegeven; de andere modules staan nog op controleren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik naar IFC exporteren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet in de browser. De rekenkern kan een berekening als IFC4x3 en IFCX wegschrijven, zodat een toets bij het juiste bouwdeel in het BIM-model hoort; dat zit in de desktop-app."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is de broncode openbaar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet. De repository op GitHub is nog niet openbaar; daarom staan er op deze pagina nog geen downloads."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is de relatie met CalcPAD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Open Calculations Studio is geïnspireerd op CalcPAD en ondersteunt een groot deel van de syntax: koppen, tekst, voorwaarden, herhalingen, macro's en grafieken. Het draait in de browser, dus ook op macOS en Linux."
+        }
+      }
+    ]
+  }
+  </script>
 
   <meta name="i18n-static" content="fr">
   <!-- schema:start -->
@@ -118,7 +206,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "fr",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/fr/open-calculations-studio/#breadcrumb"
         }
@@ -147,7 +235,7 @@
   <!-- schema:end -->
 </head>
 <body class="page-panels">
-  <div id="shared-nav"><!-- nav:start -->
+    <div id="shared-nav"><!-- nav:start -->
 <nav class="navbar">
   <div class="nav-container">
     <a href="/fr/" class="nav-brand" aria-label="OpenAEC — home"><img class="nav-logo" src="/shared/assets/logo/openaec-symbol-v2-transparent.svg" alt="" width="28" height="32"><span class="nav-word">Open<span class="accent">AEC</span></span></a>
@@ -177,265 +265,220 @@
   </div>
 </nav>
 <!-- nav:end --></div>
-  <script src="/shared/nav.js?v=20261015"></script>
-  <script src="/shared/feedback.js?v=20261022" defer></script>
+<script src="/shared/nav.js?v=20261015"></script>
+<script src="/shared/feedback.js?v=20261022" defer></script>
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">Écosystème OpenAEC</p>
+      <p class="pill-label" data-i18n="header.label">Calculs de structure</p>
       <h1 data-i18n="header.title">Open <span class="accent">Calculations</span> Studio</h1>
-      <p class="lead" data-i18n="header.desc">Application de bureau open source pour les calculs structuraux — <strong>inspirée de CalcPAD</strong>, avec export direct vers <strong>IFC4x3 STEP</strong> et <strong>IFCX JSON-LD</strong>. Anciennement Ifc-Calc, reconstruite sous l'égide de l'OpenAEC Foundation.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">Des calculs que votre collègue relit d'une seule traite</p>
+      <p class="lead" data-i18n="header.desc">Écrivez votre calcul en texte avec unités et voyez aussitôt le développement : formule, valeurs substituées et résultat sur une ligne. Partez d'une feuille pour le béton, l'acier, le bois, la maçonnerie ou les fondations, directement dans le navigateur.</p>
       <div class="btn-group">
-        <a href="https://open-calculations-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.liveDemo">Ouvrir la démo en ligne</span></a>
-        <!-- later: terugzetten zodra de releases van Open-Calculations-Studio openbaar zijn (repo is privé, links gaven bezoekers een 404):
-        <a href="https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/download/v0.1.9/Open.Calculations.Studio_0.1.9_x64-setup.exe" data-gh-download="OpenAEC-Foundation/Open-Calculations-Studio" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="cta.download">Télécharger — Windows, macOS &amp; Linux</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/Open-Calculations-Studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="cta.github">Dépôt GitHub</span></a>
-        -->
-        <a href="/fr/#contact" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg><span data-i18n="cta.contact">Nous contacter</span></a>
+        <a href="https://open-calculations-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Ouvrir dans le navigateur</span></a>
+        <a href="#features" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Voir les fonctions</span></a>
+        <a href="/fr/#contact" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg><span data-i18n="header.contactBtn">Nous contacter</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clock"/></svg><span data-i18n="header.badge">En développement</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg>CalcPAD (.cpd)</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg>IFC4x3 · IFCX</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-text"/></svg><span data-i18n="header.proof1">Syntaxe CalcPAD</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg><span>Eurocode · NEN 9997-1</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="header.proof3">Fonctionne dans le navigateur</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof4">Gratuit · sans compte</span></li>
+      </ul>
     </div>
-    <div class="shot-float shot-overlap"><img src="/shared/assets/screenshots/open-calculations-studio.png" alt="Open Calculations Studio - CalcPAD-syntax editor met live preview, wind-belastingberekening en SVG-tekening"></div>
+    <div class="media-slider shot-overlap" data-pp-slider>
+      <div class="slider-container">
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-calculations-studio-hero.png" width="1920" height="1200" alt="Open Calculations Studio : vérification d'une poutre acier IPE 300, avec le texte du calcul à gauche et le développement avec moments, efforts tranchants et taux de travail à droite" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-calculations-studio-feat-rekenblad.png" width="1200" height="750" decoding="async" alt="Calcul au poinçonnement selon l'EN 1992-1-1 : à gauche le texte avec unités et conditions, à droite les formules développées avec les valeurs substituées" data-i18n="hl.calc.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-calculations-studio-feat-normbladen.png" width="1200" height="750" decoding="async" alt="Bibliothèque de feuilles par Eurocode, avec l'EN 1995-1-1 Bois déplié et la vérification complète d'une poutre bois ouverte" data-i18n="hl.codes.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-calculations-studio-feat-wind.png" width="1200" height="750" decoding="async" alt="Charge de vent selon la NEN-EN 1991-1-4 : listes déroulantes pour la zone de vent et la catégorie de terrain, et un champ pour la hauteur de référence" data-i18n="hl.input.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-calculations-studio-feat-weergave.png" width="1200" height="750" decoding="async" alt="Seul le développement à l'écran : flexion et effort tranchant d'une poutre béton selon l'EN 1992-1-1 avec le taux de travail" data-i18n="hl.review.alt" data-i18n-attr="alt"></div>
+        </div>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
+      </div>
+      <div class="slider-dots"></div>
+    </div>
   </header>
 
-  <section class="section after-overlap"><div class="container">
-    <p class="shot-caption" data-i18n="screenshot.caption">Éditeur en syntaxe CalcPAD avec aperçu en direct &middot; calcul de charge au vent &middot; dessin SVG paramétrique</p>
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="why.title">Pourquoi Open <span class="accent">Calculations</span> Studio ?</h2>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="notice.text">La version navigateur calcule entièrement, mais l'enregistrement et l'export n'y fonctionnent pas encore. L'application de bureau avec projets et note de calcul n'est pas encore publique.</span></p>
+  </div>
+
+  <nav class="pp-subnav" aria-label="Sur cette page" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Fonctions</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Nouveautés</a>
+      <a href="#faq" data-i18n="subnav.faq">FAQ</a>
+    </div>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Fonctions</p><h2 data-i18n="features.heading">Calculer, vérifier et faire relire</h2><p data-i18n="features.sub">Commencez par les points forts ou choisissez un thème.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Fonctions par thème" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Points forts</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-calc" data-tab="calc" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-text"/></svg><span data-i18n="tabs.calc">Calcul avec unités</span> <span class="pp-tab-count" data-count="calc"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-codes" data-tab="codes" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg><span data-i18n="tabs.codes">Feuilles normatives</span> <span class="pp-tab-count" data-count="codes"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-input" data-tab="input" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg><span data-i18n="tabs.input">Saisie et affichage</span> <span class="pp-tab-count" data-count="input"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Toutes les fonctions</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-calculations-studio-feat-rekenblad.png" width="1200" height="750" loading="lazy" decoding="async" alt="Calcul au poinçonnement selon l'EN 1992-1-1 : à gauche le texte avec unités et conditions, à droite les formules développées avec les valeurs substituées" data-i18n="hl.calc.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.calc.kicker">Calcul</span></p>
+            <h3 data-i18n="hl.calc.title">Écrivez le calcul comme sur papier</h3>
+            <p data-i18n="hl.calc.desc">Tapez une formule avec unités, comme d_eff = (d_y + d_z) / 2. Le développement apparaît aussitôt en vraie notation mathématique : formule, valeurs substituées et résultat sur une ligne, avec l'unité. Des conditions choisissent la bonne formule, par exemple selon le type de poteau.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-calculations-studio-feat-normbladen.png" width="1200" height="750" loading="lazy" decoding="async" alt="Bibliothèque de feuilles par Eurocode, avec l'EN 1995-1-1 Bois déplié et la vérification complète d'une poutre bois ouverte" data-i18n="hl.codes.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.codes.kicker">Feuilles normatives</span></p>
+            <h3 data-i18n="hl.codes.title">Partez d'une feuille normative plutôt que d'une page blanche</h3>
+            <p data-i18n="hl.codes.desc">Plus de cinquante feuilles par article, des combinaisons de charges de la NEN-EN 1990 à la flexion, au flambement et à la flèche du béton, de l'acier et du bois, la maçonnerie et la portance des pieux selon la NEN 9997-1. Avec des vérifications complètes d'une poutre béton, d'une poutre acier et d'une poutre bois.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-calculations-studio-feat-wind.png" width="1200" height="750" loading="lazy" decoding="async" alt="Charge de vent selon la NEN-EN 1991-1-4 : listes déroulantes pour la zone de vent et la catégorie de terrain, et un champ pour la hauteur de référence" data-i18n="hl.input.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.input.kicker">Saisie</span></p>
+            <h3 data-i18n="hl.input.title">Choisissez, saisissez, le résultat suit</h3>
+            <p data-i18n="hl.input.desc">Une feuille peut demander une saisie : une liste pour la zone de vent, la classe de résistance ou la classe de conséquences, ou un champ pour une hauteur ou une portée. Changez un choix et tout le développement se recalcule aussitôt.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-calculations-studio-feat-weergave.png" width="1200" height="750" loading="lazy" decoding="async" alt="Seul le développement à l'écran : flexion et effort tranchant d'une poutre béton selon l'EN 1992-1-1 avec le taux de travail" data-i18n="hl.review.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.review.kicker">Relecture</span></p>
+            <h3 data-i18n="hl.review.title">Chaque étape visible, pas de boîte noire</h3>
+            <p data-i18n="hl.review.desc">Masquez l'éditeur et lisez seulement le développement, avec les numéros d'article de la norme. Celui qui vérifie le calcul voit exactement quelle formule et quelles valeurs mènent au taux de travail.</p>
+          </div>
+        </article>
       </div>
-      <div class="panel-split-body">
-        <p data-i18n="why.desc1">CalcPAD est utilisé depuis des années par les ingénieurs structure néerlandais pour les calculs manuels. Mais il est closed-source, ne fonctionne que sur Windows et n'a pas d'intégration BIM native. Open Calculations Studio apporte la fonctionnalité CalcPAD aux technologies web modernes : multiplateforme, open source, avec export IFC direct.</p>
-        <p data-i18n="why.desc2">Le fichier de régression <code>2259-Intertek-units.cpd</code> de 1094 lignes s'évalue avec <strong>0 erreur</strong> et produit <strong>6 dessins SVG</strong>. Suffisant pour de vrais calculs de projet.</p>
-      </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="calc"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><h3 data-i18n="f.units.title">Calcul avec unités</h3><p data-i18n="f.units.desc">mm, kN, N/mm², mm⁴ et toutes les unités SI. b*h devient mm² tout seul ; « to » convertit dans l'unité voulue.</p></div></div></li>
+        <li class="pp-tile" data-cats="calc"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-text"/></svg></div><div><h3 data-i18n="f.chain.title">Formule, valeurs et résultat</h3><p data-i18n="f.chain.desc">Chaque ligne montre nom = formule = valeurs substituées = résultat, avec de vraies fractions, racines et lettres grecques.</p></div></div></li>
+        <li class="pp-tile" data-cats="calc"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.live.title">Développement en direct</h3><p data-i18n="f.live.desc">Le texte à gauche, le développement à droite. Ce que vous tapez est calculé aussitôt.</p></div></div></li>
+        <li class="pp-tile" data-cats="calc"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-route"/></svg></div><div><h3 data-i18n="f.conditions.title">Conditions et boucles</h3><p data-i18n="f.conditions.desc">#if, #else if et #else pour « vérifié » ou « non vérifié », et #repeat et #for pour les séries.</p></div></div></li>
+        <li class="pp-tile" data-cats="calc"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.macros.title">Vos fonctions et tableaux</h3><p data-i18n="f.macros.desc">Macros avec #def, matrices et tables de recherche pour les valeurs des matériaux.</p></div></div></li>
+        <li class="pp-tile" data-cats="calc"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.calcpad.title">Syntaxe CalcPAD</h3><p data-i18n="f.calcpad.desc">Si vous connaissez CalcPAD, vous reconnaîtrez la structure : titres, lignes de texte, commentaires et commandes fonctionnent de la même façon.</p></div></div></li>
+        <li class="pp-tile" data-cats="codes"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div><div><h3 data-i18n="f.en1990.title">Bases et combinaisons</h3><p data-i18n="f.en1990.desc">NEN-EN 1990 : états limites ultimes et de service, EQU, accidentel, sismique et valeurs de calcul.</p></div></div></li>
+        <li class="pp-tile" data-cats="codes"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.loads.title">Charges</h3><p data-i18n="f.loads.desc">Charges d'exploitation, neige et vent selon l'EN 1991 avec l'annexe néerlandaise, y compris un bâtiment plus haut à proximité.</p></div></div></li>
+        <li class="pp-tile" data-cats="codes"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h3 data-i18n="f.concrete.title">Béton</h3><p data-i18n="f.concrete.desc">Flexion, effort tranchant avec et sans étriers, poinçonnement, ouverture des fissures et flèche selon l'EN 1992-1-1.</p></div></div></li>
+        <li class="pp-tile" data-cats="codes"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-crane"/></svg></div><div><h3 data-i18n="f.steel.title">Acier</h3><p data-i18n="f.steel.desc">Classe de section, traction, compression, flexion, cisaillement, flambement, déversement et flexion de semelle inférieure selon l'EN 1993-1-1.</p></div></div></li>
+        <li class="pp-tile" data-cats="codes"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.timber.title">Bois</h3><p data-i18n="f.timber.desc">Flexion, cisaillement, compression, torsion, flambement, poutre à inertie variable, entaille, flèche et platelage de plancher et de toiture selon l'EN 1995-1-1.</p></div></div></li>
+        <li class="pp-tile" data-cats="codes"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-hatch"/></svg></div><div><h3 data-i18n="f.masonry.title">Maçonnerie</h3><p data-i18n="f.masonry.desc">Résistance à la compression, mur comprimé, cisaillement et élancement selon l'EN 1996-1-1.</p></div></div></li>
+        <li class="pp-tile" data-cats="codes"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><h3 data-i18n="f.geo.title">Fondations</h3><p data-i18n="f.geo.desc">Semelle filante, portance des pieux, tassement et glissement selon la NEN 9997-1.</p></div></div></li>
+        <li class="pp-tile" data-cats="codes"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.examples.title">Exemples développés</h3><p data-i18n="f.examples.desc">Exemples tirés de Vandepitte sur les contraintes de cisaillement, la flèche, le flambement, la fréquence propre et le travail virtuel.</p></div></div></li>
+        <li class="pp-tile" data-cats="input"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.select.title">Listes déroulantes</h3><p data-i18n="f.select.desc">Choisissez la classe de conséquences, de résistance, de service ou le type de pieu dans une liste ; le calcul suit.</p></div></div></li>
+        <li class="pp-tile" data-cats="input"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h3 data-i18n="f.prompts.title">Champs de saisie</h3><p data-i18n="f.prompts.desc">Les valeurs propres au projet, comme une hauteur ou une charge, se saisissent dans un champ du développement.</p></div></div></li>
+        <li class="pp-tile" data-cats="input"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><h3 data-i18n="f.gef.title">Lire un essai au pénétromètre</h3><p data-i18n="f.gef.desc">Une feuille peut demander un fichier GEF pour utiliser les données d'essai dans votre calcul de fondation.</p></div></div></li>
+        <li class="pp-tile" data-cats="input"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h3 data-i18n="f.views.title">Trois vues</h3><p data-i18n="f.views.desc">Texte et développement côte à côte, l'éditeur seul ou le développement seul.</p></div></div></li>
+        <li class="pp-tile" data-cats="input"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg></div><div><h3 data-i18n="f.editor.title">Éditeur coloré</h3><p data-i18n="f.editor.desc">Numéros de ligne et couleurs pour les titres, commandes et listes, pour garder la vue d'ensemble des longs calculs.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><h3 data-i18n="f.free.title">Sans compte</h3><p data-i18n="f.free.desc">Ouvrez la page et commencez. Votre calcul s'exécute dans votre propre navigateur.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel">
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
     <div class="panel-split">
       <div class="panel-split-text">
-        <p class="pill-label">CalcPAD · IFC4x3 · IFCX</p>
-        <h2 data-i18n="what.title">Qu'est-ce qu'Open Calculations Studio ?</h2>
-        <p data-i18n="what.desc">Open Calculations Studio est un outil moderne et open source pour les calculs structuraux — <strong>inspiré de CalcPAD</strong>, l'outil largement utilisé par les ingénieurs structure néerlandais et européens. Nous avons reconstruit tout le moteur de calcul en TypeScript avec prise en charge de la syntaxe CalcPAD, et ajouté l'export IFC et IFCX en direct pour que les calculs s'intègrent directement avec les modèles BIM.</p>
+        <p class="pill-label" data-i18n="whatsnew.label">Nouveau en septembre 2026</p>
+        <h2 data-i18n="whatsnew.title">Plus de feuilles pour <span>le bois et l'acier</span></h2>
+        <p data-i18n="whatsnew.desc">La bibliothèque du navigateur s'est enrichie de nouvelles vérifications pour le bois et l'acier, et le calcul du vent tient compte d'un bâtiment plus haut à proximité.</p>
+        <div class="btn-group">
+          <a href="https://open-calculations-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="whatsnew.ctaDemo">Essayer dans le navigateur</span></a>
+        </div>
       </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><p data-i18n="what.list1"><strong>Compatible CalcPAD</strong> Les fichiers <code>.cpd</code> existants fonctionnent sans modification</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><p data-i18n="what.list2"><strong>Gestion des unités</strong> <code>mm</code>, <code>kN</code>, <code>N/mm²</code>, <code>mm⁴</code> via mathjs</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><p data-i18n="what.list3"><strong>Export IFCX + IFC4x3 STEP en direct</strong> Le calcul devient immédiatement un élément BIM</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg></div><div><p data-i18n="what.list4"><strong>Rendu KaTeX</strong> Formules mathématiques avec vraies fractions, indices/exposants et lettres grecques</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div><div><p data-i18n="what.list5"><strong>Dessins SVG</strong> Schémas paramétriques directement dans le calcul</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><p data-i18n="what.list6"><strong>Cas de charge</strong> ELS / ELU / sismique dans des onglets distincts</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><p data-i18n="what.list7"><strong>Utilisable comme bibliothèque</strong> À intégrer dans des applications EF ou des vérifications normatives</p></div></li>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h4 data-i18n="whatsnew.items.timber.title">Torsion, poutre à inertie variable et entaille</h4><p data-i18n="whatsnew.items.timber.desc">Trois nouvelles feuilles bois selon l'EN 1995-1-1 : §6.1.8, §6.4.2 et §6.5.2.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="whatsnew.items.sheathing.title">Platelage de plancher et de toiture</h4><p data-i18n="whatsnew.items.sheathing.desc">Vérifiez les planches ou panneaux d'un plancher ou d'une toiture en bois.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-crane"/></svg></div><div><h4 data-i18n="whatsnew.items.flange.title">Flexion de la semelle inférieure</h4><p data-i18n="whatsnew.items.flange.desc">Une poutre acier avec une charge roulante ou suspendue sur la semelle inférieure, en feuille dédiée.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h4 data-i18n="whatsnew.items.wind.title">Vent près d'un bâtiment plus haut</h4><p data-i18n="whatsnew.items.wind.desc">La charge de vent applique l'annexe A.4 lorsqu'un bâtiment plus haut se trouve à proximité.</p></div></li>
       </ul>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <div class="section-head">
-      <h2 data-i18n="example.title"><span class="accent">Document</span> d'exemple</h2>
-      <p data-i18n="example.desc">Un document CalcPAD est naturel pour un ingénieur — formules, unités, logique conditionnelle et dessins côte à côte :</p>
-    </div>
-    <div class="code-window">
-      <div class="code-window-bar" aria-hidden="true"><i></i><i></i><i></i><span>woning-laageind-57.cpd</span></div>
-      <pre class="code-block"><span class="string">"Project — woning Laageind 57</span>
-
-<span class="keyword">#include</span> svg_drawing.cpd
-
-<span class="comment"># 1. Invoer</span>
-b = <span class="number">300</span> mm
-h = <span class="number">500</span> mm
-N_Ed = ?*(kN)
-fck = <span class="number">30</span> N/mm^2
-
-<span class="comment"># 2. Geometrie</span>
-A = b*h          <span class="comment">// mm² — automatisch</span>
-W_y = b*h^<span class="number">2</span>/<span class="number">6</span>    <span class="comment">// mm³</span>
-
-<span class="comment"># 3. Toetsing</span>
-sigma = N_Ed/A to N/mm^<span class="number">2</span>
-
-<span class="keyword">#if</span> sigma ≤ fck/<span class="number">1.5</span>
-    <span class="string">'Voldoet ✓</span>
-<span class="keyword">#else</span>
-    <span class="string">'Voldoet NIET ✗</span>
-<span class="keyword">#end if</span>
-
-<span class="comment"># 4. Detail-tekening</span>
-@img(detail-D1.svg)
-
-<span class="comment"># 5. Belasting-diagram</span>
-$Plot{f(x) @ x = <span class="number">0</span> : L}</pre>
-    </div>
-  </div></section>
-
-  <section class="section"><div class="container">
-    <h2 data-i18n="features.title">Fonctionnalités</h2>
-    <div class="features" id="ocalc-features">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div>
-        <h4 data-i18n="features.units.title">Formules avec unités</h4>
-        <p data-i18n="features.units.desc">Travaillez avec <code>mm</code>, <code>kN</code>, <code>N/mm²</code>, <code>mm⁴</code> et toutes les unités SI. Mathjs gère l'arithmétique sensible aux unités et la simplification automatique (<code>b*h</code> → <code>mm²</code>).</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg></div>
-        <h4 data-i18n="features.katex.title">Mise en forme mathématique</h4>
-        <p data-i18n="features.katex.desc">Rendu KaTeX avec vraies fractions, exposants, indices et lettres grecques (σ, ε, ρ, Φ, ψ). Les formules affichent <code>nom = formule = valeurs remplies = résultat</code> sur une ligne.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div>
-        <h4 data-i18n="features.editor.title">Aperçu en direct</h4>
-        <p data-i18n="features.editor.desc">Éditeur en split-pane (CodeMirror 6) avec coloration syntaxique pour <code>.cpd</code>. L'aperçu se met à jour pendant que vous tapez.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div>
-        <h4 data-i18n="features.loadcases.title">Cas de charge</h4>
-        <p data-i18n="features.loadcases.desc">Onglets pour ELS / ELU / sismique, etc., chacun avec ses propres valeurs pour les variables d'entrée. Un document, plusieurs scénarios.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div>
-        <h4 data-i18n="features.calcpad.title">Compatible CalcPAD</h4>
-        <p data-i18n="features.calcpad.desc">Entièrement compatible avec les fichiers <code>.cpd</code> existants : <code>#if/#else if/#end if</code>, <code>#repeat</code>, <code>#for</code>, macros <code>#def</code>, <code>#include</code>, <code>$Plot</code>, matrices, lookups.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div>
-        <h4 data-i18n="features.ifc.title">Export IFC4x3 STEP</h4>
-        <p data-i18n="features.ifc.desc">Détecte les éléments structuraux via des noms de variables conventionnels (<code>b_fdn</code>, <code>l_fdn</code>, <code>D_paal</code>, <code>M_Ed</code>, <code>R_c_d</code>). Génère un squelette valide Project → Site → Building → Storey.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div>
-        <h4 data-i18n="features.ifcx.title">IFCX JSON-LD</h4>
-        <p data-i18n="features.ifcx.desc">Export IFCX en direct (draft) — la nouvelle génération d'IFC avec espaces de noms pour calculs, normes et métadonnées. Calcul et modèle BIM dans un seul format.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div>
-        <h4 data-i18n="features.svg.title">Dessins SVG</h4>
-        <p data-i18n="features.svg.desc">Macros SVG paramétriques avec interpolation de valeurs. <code>@img(file.svg)</code> intègre des dessins externes en ligne. <code>@svg ... @end</code> pour du SVG manuscrit.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div>
-        <h4 data-i18n="features.viewer.title">Onglet IFC</h4>
-        <p data-i18n="features.viewer.desc">Visualiseur STEP et visualiseur IFCX JSON intégrés avec coloration syntaxique. Les types d'entités sont cliquables et renvoient à la documentation buildingSMART.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div>
-        <h4 data-i18n="features.gef.title">Import GEF</h4>
-        <p data-i18n="features.gef.desc"><code>@gef name</code> — utilisez les données de sondage directement dans les calculs de fondation. S'intègre avec Open Geotechniek Studio.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div>
-        <h4 data-i18n="features.themes.title">5 thèmes</h4>
-        <p data-i18n="features.themes.desc">Light, Forge, OpenAEC, Blueprint et Contrast — tous basés sur les design tokens OpenAEC. Choisissez ce qui fonctionne le mieux pour vous.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div>
-        <h4 data-i18n="features.pdf.title">Export PDF</h4>
-        <p data-i18n="features.pdf.desc">Export PDF prêt à imprimer via shell Tauri avec aperçu headless. Prêt pour le dossier projet ou une revue tierce.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div>
-        <h4 data-i18n="features.library.title">Mode bibliothèque</h4>
-        <p data-i18n="features.library.desc">Utilisez <code>@ifc-calc/core</code> en tant que bibliothèque TypeScript : parser, évaluer, rendre, générer IFC/IFCX depuis vos applications FEM ou contrôles normatifs.</p>
-      </div>
-    </div>
-    <p class="more-row" data-features-more hidden>
-      <button type="button" class="btn btn-secondary btn-lg more-btn" data-features-toggle aria-expanded="false" aria-controls="ocalc-features">
-        <span data-feat-show class="more-label"><span data-i18n="features.showAll">Afficher toutes les fonctions</span> <span class="more-count">(<span data-feat-count>13</span>)</span></span>
-        <span data-feat-hide hidden data-i18n="features.showLess">Afficher moins</span>
-        <svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg>
-      </button>
-    </p>
-  </div></section>
-
-  <section class="section surface-dark panel">
-    <div class="panel-split">
-      <div class="panel-split-text">
-        <p class="pill-label">.cpd</p>
-        <h2 data-i18n="compat.title">Compatibilité CalcPAD</h2>
-        <p data-i18n="compat.desc">Entièrement <em>compatible sous-ensemble</em> avec les fichiers CalcPAD du monde réel. Fonctionne directement sur vos documents <code>.cpd</code> existants :</p>
-      </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><p><code>"Title</code>, <code>'prose</code>, <code>// comment</code></p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><p><code>#if … #else if … #else … #end if</code>, <code>#hide / #show / #pre / #post</code></p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><p><code>#repeat n … #end repeat</code> en <code>#for var = lo : hi … #loop</code> (incl. nested)</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><p><code>#def name(p1; p2; …) … #end def</code> macros, <code>#def Name$ = literal</code> constants</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><p><code>#include filename.cpd</code> — externe macro-libraries en SVG drawings</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><p><code>$Plot{ … @ x = lo : hi }</code> — inline parametrische plots</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><p>Subscript-comma's (<code>V_b,0</code>), <code>$</code>-getypeerde refs, matrix <code>[a;b|c;d]</code></p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><p>Format-specs (<code>:F2</code>), dotted/percent identifiers</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><p>mathjs Matrix-aware <code>take</code>, <code>hlookup</code>, <code>hlookup_ge</code>, <code>vlookup</code>, <code>get</code></p></div></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section"><div class="container">
-    <h2 data-i18n="useCases.title">Profils d'utilisateurs</h2>
-    <div class="features features-4">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-crane"/></svg></div>
-        <h4 data-i18n="useCases.structural.title">Ingénieurs structure</h4>
-        <p data-i18n="useCases.structural.desc">Calculs manuels pour poutres, poteaux, fondations — directement dans un document lisible. Ouvrez vos fichiers CalcPAD existants sans migration.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div>
-        <h4 data-i18n="useCases.bim.title">Modeleurs BIM</h4>
-        <p data-i18n="useCases.bim.desc">Liez les calculs directement aux éléments IFC. Pas de transfert manuel de valeurs — la vérification vit dans le modèle.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div>
-        <h4 data-i18n="useCases.education.title">Enseignement &amp; formation</h4>
-        <p data-i18n="useCases.education.desc">Les étudiants en génie civil apprennent à calculer avec la vraie syntaxe qu'ils rencontreront en pratique. Open source — pas de frais de licence.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div>
-        <h4 data-i18n="useCases.fem.title">Développeurs FEM</h4>
-        <p data-i18n="useCases.fem.desc">Intégrez <code>@ifc-calc/core</code> dans votre propre application FEM pour pré/post-traitement ou contrôle normatif. Bibliothèque TypeScript, installable via npm.</p>
-      </div>
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Questions fréquentes</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Quels fichiers puis-je ouvrir ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">Dans la version navigateur, vous partez d'une feuille de la bibliothèque ou tapez la vôtre. Vous pouvez coller un calcul en syntaxe CalcPAD dans l'éditeur. Une feuille peut lire un essai au pénétromètre en fichier GEF. L'ouverture de fichiers par le menu ne fonctionne pas encore dans le navigateur.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Dois-je installer quelque chose ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Non. La version navigateur fonctionne immédiatement, sans compte. Il existe aussi une application de bureau pour Windows, macOS et Linux, avec projets, modules de calcul et note de calcul, mais ses installateurs ne sont pas encore publics.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">Combien coûte Open Calculations Studio ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Rien. La version navigateur est gratuite, sans compte ni abonnement.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.save.q">Dans quel format mon travail est-il enregistré ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.save.a">Pas encore dans la version navigateur : l'enregistrement et l'export en PDF, IFC, HTML ou JSON n'y fonctionnent pas encore. Copiez votre texte pour le conserver. L'application de bureau enregistre un projet dans un fichier .ifccalculation.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">Sur quels systèmes fonctionne-t-il ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">Dans tout navigateur moderne, sous Windows, macOS et Linux. Le calcul se fait dans votre propre navigateur.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">Est-ce adapté à la pratique néerlandaise ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">Les feuilles suivent les Eurocodes avec les annexes nationales néerlandaises et la NEN 9997-1, avec les numéros d'article. Vérifiez toujours le résultat vous-même. Dans l'application de bureau, seuls le plancher à solives bois et le trop-plein de secours ont été vérifiés et validés à ce jour ; les autres modules restent à contrôler.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ifc.q">Puis-je exporter en IFC ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ifc.a">Pas encore dans le navigateur. Le moteur de calcul peut écrire un calcul en IFC4x3 et IFCX, pour rattacher une vérification au bon élément du modèle BIM ; cela fait partie de l'application de bureau.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.source.q">Le code source est-il public ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.source.a">Pas encore. Le dépôt sur GitHub n'est pas encore public ; c'est pourquoi cette page ne propose pas encore de téléchargements.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.calcpad.q">Quel est le lien avec CalcPAD ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.calcpad.a">Open Calculations Studio s'inspire de CalcPAD et prend en charge une grande partie de sa syntaxe : titres, texte, conditions, boucles, macros et graphiques. Il fonctionne dans le navigateur, donc aussi sous macOS et Linux.</p></div>
+      </details>
     </div>
   </div></section>
 
-  <section class="section"><div class="container">
-    <div class="section-head">
-      <h2 data-i18n="tech.title">Technologie</h2>
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Technologie</h2><p data-i18n="tech.sub">Pour ceux qui veulent savoir comment c'est construit.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.core.title">Moteur de calcul propre</h4><p data-i18n="tech.core.desc">Analyseur, évaluateur et rendu en TypeScript, utilisables aussi comme bibliothèque dans d'autres logiciels.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><h4 data-i18n="tech.mathjs.title">mathjs</h4><p data-i18n="tech.mathjs.desc">Calcul avec unités et matrices, avec simplification automatique de l'unité.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-text"/></svg></div><div><h4 data-i18n="tech.katex.title">KaTeX</h4><p data-i18n="tech.katex.desc">Des formules en notation mathématique soignée, avec fractions, racines, indices et exposants.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h4 data-i18n="tech.codemirror.title">CodeMirror 6</h4><p data-i18n="tech.codemirror.desc">L'éditeur avec numéros de ligne et couleurs pour la syntaxe de calcul.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h4 data-i18n="tech.ifc.title">IFC4x3 et IFCX</h4><p data-i18n="tech.ifc.desc">Le moteur convertit un calcul en IFC4x3 STEP et IFCX JSON-LD.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.tauri.title">Vite et Tauri 2</h4><p data-i18n="tech.tauri.desc">Vite construit la version navigateur ; l'application de bureau utilise une fine couche native en Rust.</p></div></div>
     </div>
-    <div class="chip-row chip-row-light tech-chips">
-      <span class="chip">TypeScript</span>
-      <span class="chip">React 19</span>
-      <span class="chip">Rust</span>
-      <span class="chip">Tauri 2</span>
-      <span class="chip">mathjs</span>
-      <span class="chip">KaTeX</span>
-      <span class="chip">CodeMirror 6</span>
-      <span class="chip">Vite</span>
-      <span class="chip">npm workspaces</span>
-    </div>
-    <p class="tech-desc" data-i18n="tech.desc">Monorepo avec trois packages : <code>@ifc-calc/core</code> (parser + évaluateur + générateur IFC en bibliothèque TypeScript), <code>@openaec/calculations-studio</code> (application de bureau Tauri 2 avec interface React 19), et <code>@ifc-calc/web</code> (build navigateur uniquement). Multiplateforme : Windows, macOS, Linux.</p>
   </div></section>
+
 
   <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
   <div data-release-notes="Open-Calculations-Studio"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Afficher toutes les versions</span><span data-rel-hide hidden data-i18n="releases.showLess">Afficher seulement les trois dernières</span></button>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">Open <span class="accent">Calculations</span> Studio</h2>
       <div class="btn-group">
-        <a href="https://open-calculations-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.liveDemo">Ouvrir la démo en ligne</span></a>
-        <!-- later: terugzetten zodra de releases van Open-Calculations-Studio openbaar zijn (repo is privé, links gaven bezoekers een 404):
-        <a href="https://github.com/OpenAEC-Foundation/Open-Calculations-Studio/releases/download/v0.1.9/Open.Calculations.Studio_0.1.9_x64-setup.exe" data-gh-download="OpenAEC-Foundation/Open-Calculations-Studio" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="cta.download">Télécharger — Windows, macOS &amp; Linux</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/Open-Calculations-Studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="cta.github">Dépôt GitHub</span></a>
-        -->
-        <a href="/fr/#contact" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg><span data-i18n="cta.contact">Nous contacter</span></a>
+        <a href="https://open-calculations-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Ouvrir dans le navigateur</span></a>
+        <a href="#features" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Voir les fonctions</span></a>
+        <a href="/fr/#contact" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg><span data-i18n="header.contactBtn">Nous contacter</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -489,34 +532,6 @@ $Plot{f(x) @ x = <span class="number">0</span> : L}</pre>
   </div>
 </footer>
 <!-- footer:end --></div>
-  <script src="/shared/downloads.js?v=20261015"></script>
-  <script>
-  // Functies: eerste 6 zichtbaar, de rest achter "Toon alle functies". Zonder JavaScript staat alles open.
-  (function () {
-    var VISIBLE = 6;
-    var grid = document.getElementById('ocalc-features');
-    var wrap = document.querySelector('[data-features-more]');
-    if (!grid || !wrap) return;
-    var cards = Array.prototype.slice.call(grid.querySelectorAll('.feature'));
-    if (cards.length <= VISIBLE) return;
-    var btn = wrap.querySelector('[data-features-toggle]');
-    var show = wrap.querySelector('[data-feat-show]');
-    var hide = wrap.querySelector('[data-feat-hide]');
-    var count = wrap.querySelector('[data-feat-count]');
-    var extra = cards.slice(VISIBLE);
-    if (count) count.textContent = String(cards.length);
-    extra.forEach(function (c) { c.style.display = 'none'; });
-    wrap.hidden = false;
-    btn.addEventListener('click', function () {
-      var open = btn.getAttribute('aria-expanded') === 'true';
-      extra.forEach(function (c) { c.style.display = open ? 'none' : ''; });
-      btn.setAttribute('aria-expanded', open ? 'false' : 'true');
-      show.hidden = !open;
-      hide.hidden = open;
-      if (open) grid.scrollIntoView({ block: 'start' });
-    });
-  })();
-  </script>
   <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

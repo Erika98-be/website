@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Heatloss Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Binalar için açık kaynak ısı kaybı hesaplaması, NEN 12831 standardına uygundur.">
+  <meta name="description" content="ISSO 51:2023'e göre ücretsiz ve açık kaynaklı ısı kaybı hesabı: oda girişi, Rc değerleri ve buhar basıncı, havalandırma dengesi, TO-juli ve açık bir IFCX…">
   <link rel="canonical" href="https://open-aec.com/tr/open-heatloss-studio/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/open-heatloss-studio/">
@@ -15,23 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/open-heatloss-studio/">
   <!-- hreflang:end -->
 
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="Open Heatloss Studio">
-  <meta property="og:description" content="Binalar için açık kaynak ısı kaybı hesaplaması, NEN 12831 standardına uygundur.">
+  <meta property="og:title" content="Open Heatloss Studio — OpenAEC Foundation">
+  <meta property="og:description" content="ISSO 51:2023'e göre ücretsiz ve açık kaynaklı ısı kaybı hesabı: oda girişi, Rc değerleri ve buhar basıncı, havalandırma dengesi, TO-juli ve açık bir IFCX…">
   <meta property="og:url" content="https://open-aec.com/tr/open-heatloss-studio/">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-heatloss-studio.png">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-heatloss-studio-hero.png">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Open Heatloss Studio">
-  <meta name="twitter:description" content="Binalar için açık kaynak ısı kaybı hesaplaması, NEN 12831 standardına uygundur.">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-heatloss-studio.png">
+  <meta name="twitter:description" content="ISSO 51:2023'e göre ücretsiz ve açık kaynaklı ısı kaybı hesabı: oda girişi, Rc değerleri ve buhar basıncı, havalandırma dengesi, TO-juli ve açık bir IFCX…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-heatloss-studio-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -41,45 +39,43 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Open Heatloss Studio",
     "applicationCategory": "EngineeringApplication",
-    "applicationSubCategory": "Building Physics",
-    "operatingSystem": "Windows, macOS, Linux, Web",
+    "applicationSubCategory": "Warmteverliesberekening / ISSO 51",
+    "operatingSystem": "Web",
     "url": "https://open-aec.com/open-heatloss-studio/",
-    "downloadUrl": "https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases",
-    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
-    "description": "Heat loss calculations for buildings per NEN 12831 and ISSO 51:2023. Rust calculation engine, IFCX integration, PDF reports.",
+    "license": "https://opensource.org/licenses/MIT",
+    "description": "Free, open-source heat loss calculation for dwellings following ISSO 51:2023 (with erratum), with a Rust calculation core. Room table with boundary surfaces, results per room and building, Rc calculator (ISO 6946) with Glaser vapour diffusion and annual moisture balance (NEN-EN-ISO 13788), window Uw (NEN-EN-ISO 10077-1), ventilation balance to the Dutch Building Decree (Bbl), TO-juli and BENG following NTA 8800, IFC reconstruction (beta), Revit import via pyRevit, .ifcenergy project files (IFCX) and IFC4X3 export, PDF reports, MCP server and REST API. Runs in the browser; Windows test build. Public alpha.",
     "featureList": [
-      "NEN 12831 berekeningen",
-      "ISSO 51:2023",
-      "Transmissieverliezen",
-      "Grondgebonden constructies",
-      "Ventilatieverliezen",
-      "Opwarmtoeslag",
-      "Klimaatdata KNMI",
-      "U-waarde calculator",
-      "Thermische bruggen",
-      "IFCX-import",
-      "Zonering",
-      "Radiatorenberekening",
-      "Vloerverwarming",
-      "Warmtepomp dimensionering",
-      "Ketelvermogen",
-      "Rapportgeneratie",
-      "Exports",
-      "Materiaalbibliotheek",
-      "Constructie-opbouwen",
-      "Variantenstudie",
-      "Dashboard",
-      "CLI & batch",
-      "100% lokaal",
-      "Cross-platform"
+      "Rekenen volgens ISSO 51:2023",
+      "Elk soort grensvlak",
+      "Resultaten per vertrek",
+      "Gebouwinstellingen",
+      "Zones",
+      "PDF-rapport",
+      "Rc-calculator",
+      "Dampspanning en vochtbalans",
+      "Bibliotheek met opbouwen",
+      "U-waarde van een kozijn",
+      "Ventilatiebalans volgens het Bbl",
+      "WTW- en afzuigunits",
+      "Deurspleet-calculator",
+      "TO-juli volgens NTA 8800",
+      "BENG 1, 2 en 3",
+      "Open projectbestand",
+      "IFC4X3 en JSON",
+      "IFC-reconstructie (bèta)",
+      "Overnemen uit Revit",
+      "MCP-server en REST API",
+      "Projecten in tabbladen",
+      "Extra rekenhulpen"
     ],
-    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-heatloss-studio.png",
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-heatloss-studio-hero.png",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -87,7 +83,7 @@
       "availability": "https://schema.org/InStock"
     },
     "isAccessibleForFree": true,
-    "keywords": "heat loss, warmteverlies, NEN 12831, ISSO 51, building physics, transmissieverlies, ventilatieverlies, U-waarde",
+    "keywords": "warmteverlies, warmteverliesberekening, ISSO 51, ISSO 53, heat loss, NTA 8800, TO-juli, BENG, Rc-waarde, Glaser, ventilatiebalans, Bbl, IFCX, IFC4X3, ifcenergy, MCP",
     "sameAs": [
       "https://github.com/OpenAEC-Foundation/open-heatloss-studio",
       "https://open-heatloss-studio.open-aec.com/"
@@ -99,10 +95,86 @@
     }
   }
   </script>
-  <style>
-    .page-panels .slider-slide video { width: 100%; display: block; background: var(--night-build); }
-    .tech-chips { margin-bottom: var(--sp-6); justify-content: flex-start; }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Projecten in .ifcenergy (IFCX) en oudere .isso51.json-bestanden. Daarnaast lees je een thermische export uit Revit (via pyRevit), een IFC-model voor de IFC-reconstructie en een Uniec 3-bestand voor BENG."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee, de app draait in de browser. Voor Windows staat er een testversie (alfa) bij de releases op GitHub. Die is nog niet ondertekend, dus Windows toont eerst een waarschuwing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost Open Heatloss Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. De app is gratis en open source onder de MIT-licentie. Voor het rekenen heb je geen account of abonnement nodig."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk formaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In .ifcenergy, een open IFCX-bestand (IFC5 alpha) met je vertrekken, constructies en resultaten. Je kunt ook IFC4X3 en JSON exporteren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In elke moderne browser, en als testversie op Windows. Voor macOS en Linux is er nog geen downloadbare versie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de Nederlandse praktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. De berekening volgt ISSO 51:2023 met het erratum, de ventilatie-eisen komen uit het Bbl en de koelbehoefte uit NTA 8800. De rekenkern is getoetst tegen drie referentieprojecten, waaronder het rekenvoorbeeld uit ISSO 51. De app is nog in de testfase: controleer de uitkomsten voordat je ze gebruikt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Er is een MCP-server (Model Context Protocol) voor Claude Desktop en Claude Code. Daarmee kan een assistent een project doorrekenen, een .ifcenergy-bestand lezen, constructies opvragen en een PDF-rapport maken. Voor eigen scripts is er een REST API."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik ook utiliteitsgebouwen berekenen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet volledig. In de instellingen schakel je over naar ISSO 53 voor utiliteit, maar die berekening is nog in ontwikkeling."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik de plattegrond tekenen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet. De Modeller toont de vertrekken nu alleen in 2D en 3D; tekenen komt in een latere versie. Je voert vertrekken in de tabel in of neemt ze over uit Revit of IFC."
+        }
+      }
+    ]
+  }
+  </script>
 
   <meta name="i18n-static" content="tr">
   <!-- schema:start -->
@@ -138,7 +210,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "tr",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/tr/open-heatloss-studio/#breadcrumb"
         }
@@ -202,246 +274,248 @@
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">OpenAEC ekosistemi</p>
+      <p class="pill-label" data-i18n="header.label">Isı kaybı</p>
       <h1 data-i18n="header.title">Open <span class="accent">Heatloss</span> Studio</h1>
-      <p class="lead" data-i18n="header.desc">Binalar için açık kaynak ısı kaybı hesaplaması, NEN 12831 standardına uygundur.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">ISSO 51'e göre oda oda ısı kaybı, lisans ücreti olmadan</p>
+      <p class="lead" data-i18n="header.desc">Her oda için sıcaklığı, havalandırmayı ve sınır yüzeylerini girin ve gereken ısıtma kapasitesini hesaplayın. Rc hesaplayıcısıyla yapı elemanlarını oluşturun, havalandırmayı ve temmuz ayındaki soğutma ihtiyacını kontrol edin ve her şeyi açık bir IFCX dosyasında saklayın.</p>
       <div class="btn-group">
-        <a href="https://open-heatloss-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Canlı demoyu görüntüle</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="cta.github">GitHub'da görüntüle</span></a>
+        <a href="https://open-heatloss-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Tarayıcıda aç</span></a>
+        <a href="#features" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Özellikleri gör</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Kaynak kodu</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg><span data-i18n="header.badge">Beta</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg>NEN 12831 · ISSO 51:2023</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg>Windows · macOS · Linux · Browser</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span>ISSO 51:2023 · Bbl · NTA 8800</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg><span>.ifcenergy (IFCX) · IFC4X3</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="header.proof3">Felemenkçe ve İngilizce</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg><span data-i18n="header.proof4">Tarayıcı · Windows (test)</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof5">Ücretsiz · MIT</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide">
-            <video controls muted playsinline poster="/shared/assets/screenshots/open-heatloss-studio.png">
-              <source src="/shared/assets/screenshots/open-heatloss-demo.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-studio.png" alt="Open Heatloss Studio - Overzicht"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-1.png" alt="Open Heatloss Studio - Projectinvoer"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-2.png" alt="Open Heatloss Studio - Ruimte-eigenschappen"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-3.png" alt="Open Heatloss Studio - Constructie-opbouw"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-4.png" alt="Open Heatloss Studio - U-waarde berekening"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-5.png" alt="Open Heatloss Studio - Transmissieverliezen"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-6.png" alt="Open Heatloss Studio - Ventilatieverliezen"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-7.png" alt="Open Heatloss Studio - Resultaten per ruimte"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-8.png" alt="Open Heatloss Studio - Zonering"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-9.png" alt="Open Heatloss Studio - Rapportgeneratie"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-10.png" alt="Open Heatloss Studio - Dashboard"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-heatloss-studio-hero.png" width="1920" height="1200" alt="Open Heatloss Studio: bir dairenin sonuçları; gereken ısıtma kapasitesi, oda başına kayıplar ve bina toplamı" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-heatloss-studio-feat-vertrekken.png" width="1200" height="750" decoding="async" alt="Salon açılmış hâlde bir dairenin oda tablosu: alan, U değeri ve sınır türüyle on iki sınır yüzeyi" data-i18n="hl.rooms.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-heatloss-studio-feat-resultaten.png" width="1200" height="750" decoding="async" alt="Oda başına ısı kayıplarının iletim, havalandırma, sızıntı ve yeniden ısıtma payına ayrıldığı büyütülmüş grafik" data-i18n="hl.results.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-heatloss-studio-feat-constructie.png" width="1200" height="750" decoding="async" alt="Beş katmanlı boşluklu duvar ve Glaser buhar basıncı diyagramıyla Rc hesaplayıcısı" data-i18n="hl.rc.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-heatloss-studio-feat-ventilatie.png" width="1200" height="750" decoding="async" alt="C sistemi seçili havalandırma dengesi; bina dengesi ve oda başına gereksinim ve durum" data-i18n="hl.vent.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-heatloss-studio-feat-tojuli.png" width="1200" height="750" decoding="async" alt="Bir konutun girdileriyle TO-juli kontrolü; sonuç olarak 1,71 kW minimum soğutma kapasitesi" data-i18n="hl.summer.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-heatloss-studio-feat-ifc.png" width="1200" height="750" decoding="async" alt="Solda konutun IFC4X3 dosyası, sağda IFCX yapısıyla IFC sekmesi" data-i18n="hl.ifc.alt" data-i18n-attr="alt"></div>
         </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende">&rsaquo;</button>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="why.title">Neden Open <span class="accent">Heatloss</span> Studio?</h2>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="notice.text">Herkese açık test sürümü (alfa): sonuçları kontrol edin ve karşılaştığınız sorunları bildirin.</span> <a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio/issues" target="_blank" rel="noopener"><span data-i18n="notice.link">Sorun bildirin</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a></p>
+  </div>
+
+  <nav class="pp-subnav" aria-label="Bu sayfada" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Özellikler</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Yenilikler</a>
+      <a href="#faq" data-i18n="subnav.faq">SSS</a>
+      <a href="#releases" data-i18n="subnav.releases">Sürümler</a>
+    </div>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Özellikler</p><h2 data-i18n="features.heading">Odadan gereken ısıtma kapasitesine, tek uygulamada</h2><p data-i18n="features.sub">Öne çıkanlarla başlayın veya bir konu seçin.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Konuya göre özellikler" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Öne çıkanlar</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-heatloss" data-tab="heatloss" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.heatloss">Isı kaybı</span> <span class="pp-tab-count" data-count="heatloss"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-build" data-tab="build" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg><span data-i18n="tabs.build">Yapı elemanları</span> <span class="pp-tab-count" data-count="build"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-climate" data-tab="climate" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg><span data-i18n="tabs.climate">Havalandırma ve yaz</span> <span class="pp-tab-count" data-count="climate"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-connect" data-tab="connect" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg><span data-i18n="tabs.connect">Dosyalar ve entegrasyonlar</span> <span class="pp-tab-count" data-count="connect"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Tüm özellikler</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-heatloss-studio-feat-vertrekken.png" width="1200" height="750" loading="lazy" decoding="async" alt="Salon açılmış hâlde bir dairenin oda tablosu: alan, U değeri ve sınır türüyle on iki sınır yüzeyi" data-i18n="hl.rooms.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.rooms.kicker">Odalar</span></p>
+            <h3 data-i18n="hl.rooms.title">Tüm odalar tek bir görünümde</h3>
+            <p data-i18n="hl.rooms.desc">Her oda için kullanım, tasarım sıcaklığı, alan ve yükseklik; altında da her sınır yüzeyi: dış duvar, pencere, döşeme veya komşu konut, alanı ve U değeriyle. Havalandırma ve ısıtma aynı satırda ayarlanır.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-heatloss-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Devamını oku</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-heatloss-studio-feat-resultaten.png" width="1200" height="750" loading="lazy" decoding="async" alt="Oda başına ısı kayıplarının iletim, havalandırma, sızıntı ve yeniden ısıtma payına ayrıldığı büyütülmüş grafik" data-i18n="hl.results.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.results.kicker">Sonuçlar</span></p>
+            <h3 data-i18n="hl.results.title">Isının nereden kaçtığını hemen görün</h3>
+            <p data-i18n="hl.results.desc">Hesapla'ya tek tıklama; gereken ısıtma kapasitesini, iletim, havalandırma ve yeniden ısıtma payı dağılımını ve oda başına bir grafiği verir. Büyük görmek için bir grafiğe tıklayın.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-heatloss-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Devamını oku</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-heatloss-studio-feat-constructie.png" width="1200" height="750" loading="lazy" decoding="async" alt="Beş katmanlı boşluklu duvar ve Glaser buhar basıncı diyagramıyla Rc hesaplayıcısı" data-i18n="hl.rc.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.rc.kicker">Yapı elemanları</span></p>
+            <h3 data-i18n="hl.rc.title">Bir yapı elemanını katman katman hesaplayın</h3>
+            <p data-i18n="hl.rc.desc">150'den fazla malzemeden bir duvar, döşeme veya çatı oluşturun ve ISO 6946'ya göre Rc ve U değerini, bağlantı elemanları düzeltmesiyle birlikte hemen görün. Glaser diyagramı iç yoğuşma riski olup olmadığını gösterir.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-heatloss-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Devamını oku</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-heatloss-studio-feat-ventilatie.png" width="1200" height="750" loading="lazy" decoding="async" alt="C sistemi seçili havalandırma dengesi; bina dengesi ve oda başına gereksinim ve durum" data-i18n="hl.vent.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.vent.kicker">Havalandırma</span></p>
+            <h3 data-i18n="hl.vent.title">Havalandırma gereksinimleri oda oda kontrol edilir</h3>
+            <p data-i18n="hl.vent.desc">A'dan D'ye havalandırma sistemini seçin ve her oda için Hollanda Yapı Yönetmeliği'nin (Bbl) gereksinimini mevcut olanla yan yana görün. Isı geri kazanımlı veya egzoz üniteleri atayın ve kapasitelerinin yeterli olup olmadığını kontrol edin.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-heatloss-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Devamını oku</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-heatloss-studio-feat-tojuli.png" width="1200" height="750" loading="lazy" decoding="async" alt="Bir konutun girdileriyle TO-juli kontrolü; sonuç olarak 1,71 kW minimum soğutma kapasitesi" data-i18n="hl.summer.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">05</span> <span data-i18n="hl.summer.kicker">Yaz</span></p>
+            <h3 data-i18n="hl.summer.title">Temmuz ayı soğutma ihtiyacı, hızlıca kontrol edilir</h3>
+            <p data-i18n="hl.summer.desc">Konutlar için NTA 8800 Ek AA'ya göre TO-juli kontrolü projenizdeki verileri kullanır ve minimum soğutma kapasitesini ve belirleyici soğutma ihtiyacını verir. Diğer binalar için 10. bölümdeki tam hesap vardır.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-heatloss-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Devamını oku</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-heatloss-studio-feat-ifc.png" width="1200" height="750" loading="lazy" decoding="async" alt="Solda konutun IFC4X3 dosyası, sağda IFCX yapısıyla IFC sekmesi" data-i18n="hl.ifc.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">06</span> <span data-i18n="hl.ifc.kicker">Açık dosyalar</span></p>
+            <h3 data-i18n="hl.ifc.title">Projeniz açık IFC olarak</h3>
+            <p data-i18n="hl.ifc.desc">Projeniz bir IFCX dosyası olan .ifcenergy olarak kaydedilir. IFC sekmesinde onu odalar, duvarlar, döşemeler ve çatılarla canlı olarak IFC4X3 biçiminde de görürsünüz; kopyalamaya veya indirmeye hazır.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-heatloss-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Devamını oku</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
       </div>
-      <div class="panel-split-body">
-        <p data-i18n="why.desc">Isı kaybı hesaplamaları, ısıtma sistemlerinin tasarımı ve bina enerji performansı için esastır. Open Heatloss Studio, pahalı ticari yazılımlara erişilebilir, açık kaynak bir alternatif sunar — NEN 12831 ile tam uyumludur.</p>
-        <p data-i18n="why.desc2">Azami hız ve doğruluk için Rust hesap çekirdeği üzerine kurulu — binlerce hacim saniyeler içinde hesaplanır. Her şey yerel çalışır, bulut bağımlılığı yoktur; proje verileriniz sizde kalır.</p>
-      </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="heatloss"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h3 data-i18n="f.isso51.title">ISSO 51:2023'e göre hesap</h3><p data-i18n="f.isso51.desc">Oda başına iletim, havalandırma, sızıntı, yeniden ısıtma payı ve sistem kayıpları; 2023 düzeltmesi dahil.</p></div></div></li>
+        <li class="pp-tile" data-cats="heatloss"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-hatch"/></svg></div><div><h3 data-i18n="f.boundaries.title">Her tür sınır yüzeyi</h3><p data-i18n="f.boundaries.desc">Dış hava, zemin, ısıtılmayan alan, başka bir oda, komşu konut ve hatta su (yüzer evler için).</p></div></div></li>
+        <li class="pp-tile" data-cats="heatloss"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.results.title">Oda başına sonuçlar</h3><p data-i18n="f.results.desc">Oda başına ve tüm bina için gereken kapasite, dağılım ve grafikler.</p></div></div></li>
+        <li class="pp-tile" data-cats="heatloss"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.settings.title">Bina ayarları</h3><p data-i18n="f.settings.desc">Bina tipi, gece düşüşü ve ısınma süresi, ısıtma sistemi ve hava sızdırmazlığı (qv10).</p></div></div></li>
+        <li class="pp-tile" data-cats="heatloss"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.zones.title">Bölgeler</h3><p data-i18n="f.zones.desc">Odaları bölgelerde gruplayın ve projeden yönetin.</p></div></div></li>
+        <li class="pp-tile" data-cats="heatloss connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div><div><h3 data-i18n="f.report.title">PDF raporu</h3><p data-i18n="f.report.desc">Kapak, varsayımlar, yapı katmanları, oda başına sonuçlar ve grafikler; her bölüm açılıp kapatılabilir, A4 veya A3.</p></div></div></li>
+        <li class="pp-tile" data-cats="build"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><h3 data-i18n="f.rc.title">Rc hesaplayıcısı</h3><p data-i18n="f.rc.desc">ISO 6946'ya göre Rc ve U; bağlantı elemanları düzeltmesiyle (Ek F).</p></div></div></li>
+        <li class="pp-tile" data-cats="build"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><h3 data-i18n="f.glaser.title">Buhar basıncı ve nem dengesi</h3><p data-i18n="f.glaser.desc">Glaser diyagramı ve Hollanda meteoroloji istasyonlarının iklim yıllarıyla NEN-EN-ISO 13788'e göre yıllık nem dengesi.</p></div></div></li>
+        <li class="pp-tile" data-cats="build"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.library.title">Katman yapıları kütüphanesi</h3><p data-i18n="f.library.desc">Hazır boşluklu duvarlar, ahşap karkas duvarlar, döşemeler ve çatılar; 150'den fazla malzeme. Kendi yapılarınızı ekleyin.</p></div></div></li>
+        <li class="pp-tile" data-cats="build"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h3 data-i18n="f.uw.title">Pencerenin U değeri</h3><p data-i18n="f.uw.desc">NEN-EN-ISO 10077-1'e göre cam, çerçeve ve kenar bağlantısından birleşik Uw.</p></div></div></li>
+        <li class="pp-tile" data-cats="climate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-route"/></svg></div><div><h3 data-i18n="f.ventbal.title">Bbl'ye göre havalandırma dengesi</h3><p data-i18n="f.ventbal.desc">A'dan D'ye sistemler için oda başına gereksinim ve bina dengesi, dm³/s ve m³/h cinsinden.</p></div></div></li>
+        <li class="pp-tile" data-cats="climate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.units.title">Isı geri kazanım ve egzoz üniteleri</h3><p data-i18n="f.units.desc">Katalogdan bir ünite seçin veya kendinizinkini ekleyin; uygulama kapasiteyi kontrol eder.</p></div></div></li>
+        <li class="pp-tile" data-cats="climate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-move"/></svg></div><div><h3 data-i18n="f.doorgap.title">Kapı aralığı hesaplayıcısı</h3><p data-i18n="f.doorgap.desc">Havalandırma havasının geçişi için iç kapının altındaki aralık, NEN 1087'ye göre.</p></div></div></li>
+        <li class="pp-tile" data-cats="climate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-calendar"/></svg></div><div><h3 data-i18n="f.tojuli.title">NTA 8800'e göre TO-juli</h3><p data-i18n="f.tojuli.desc">Konutlar için hızlı kontrol (Ek AA) ve 10. bölümdeki tam hesap.</p></div></div></li>
+        <li class="pp-tile" data-cats="climate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.beng.title">BENG 1, 2 ve 3</h3><p data-i18n="f.beng.desc">Isıtma, sıcak su, havalandırma, soğutma ve güneş panelleriyle NTA 8800'e göre enerji performansı; bir Uniec 3 dosyasıyla karşılaştırın.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.ifcenergy.title">Açık proje dosyası</h3><p data-i18n="f.ifcenergy.desc">IFCX tabanlı .ifcenergy. Eski .isso51.json dosyaları da açılır.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h3 data-i18n="f.ifcexport.title">IFC4X3 ve JSON</h3><p data-i18n="f.ifcexport.desc">Modelinizi odalar ve yapı elemanlarıyla IFC4X3 olarak veya sonuçları JSON olarak indirin.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h3 data-i18n="f.ifcrecon.title">IFC yeniden oluşturma (beta)</h3><p data-i18n="f.ifcrecon.desc">Bir IFC modeli yükleyin; oda ve sınır yüzeyi başına alanları 3B görünüm ve CSV dışa aktarımıyla alın.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.revit.title">Revit'ten aktarma</h3><p data-i18n="f.revit.desc">pyRevit dışa aktarımı ve bir içe aktarma sihirbazıyla Revit modelinden odaları ve sınır yüzeylerini alın.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h3 data-i18n="f.mcp.title">MCP sunucusu ve REST API</h3><p data-i18n="f.mcp.desc">Bir yapay zekâ asistanının veya kendi betiğinizin bir projeyi hesaplamasına, dosyaları okumasına ve PDF raporu oluşturmasına izin verin.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.tabs.title">Sekmelerde projeler</h3><p data-i18n="f.tabs.desc">Her biri kendi geri al ve yinele özelliğine sahip birden fazla proje üzerinde aynı anda çalışın.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div><div><h3 data-i18n="f.tools.title">Ek hesaplayıcılar</h3><p data-i18n="f.tools.desc">Çatı yüzeyi başına yağmur suyu tahliyesi, otopark rampaları (NEN 2443), açılar ve eğimler ile malzeme genleşmesi.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel">
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
     <div class="panel-split">
       <div class="panel-split-text">
-        <p class="pill-label">NEN · ISSO · NTA</p>
-        <h2 data-i18n="norm.title">Hangi standartlar destekleniyor?</h2>
-        <p data-i18n="norm.desc">Open Heatloss Studio, ısı kaybı hesapları için resmî Hollanda ve Avrupa standartlarını uygular. Isıtma tasarımı ve enerji performansına ilişkin yürürlükteki metodolojilere tam uyumlu.</p>
+        <p class="pill-label" data-i18n="whatsnew.label">v0.2 sürümünde yeni</p>
+        <h2 data-i18n="whatsnew.title">ISSO 51 tamamlandı, <span>havalandırmada daha fazla kontrol</span></h2>
+        <p data-i18n="whatsnew.desc">0.2 sürümüyle ISSO 51'e göre ısı kaybı hesabı şimdilik tamamlandı. Havalandırma daha fazla seçenek kazandı ve sayı girişi daha iyi çalışıyor. Konut dışı binalar için ISSO 53 üzerinde çalışma sürüyor.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio/blob/master/CHANGELOG.md" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaChangelog">Tüm sürüm notları</span></a>
+          <a href="https://open-heatloss-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="whatsnew.ctaDemo">Tarayıcıda deneyin</span></a>
+        </div>
       </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><p data-i18n="norm.list1"><strong>NEN-EN 12831-1:2017</strong> Binalarda enerji performansı, tasarım ısı yükü hesap yöntemi</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><p data-i18n="norm.list2"><strong>NEN 12831-1+NEN 1:2019/A1:2021</strong> Hollanda ulusal eki</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><p data-i18n="norm.list3"><strong>ISSO 51:2023</strong> Konutlar ve konut binaları için ısı kaybı hesabı</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><p data-i18n="norm.list4"><strong>ISSO 53/57</strong> Ticari ve karmaşık binalar için metodolojiler</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><p data-i18n="norm.list5"><strong>NTA 8800</strong> Bütünleşik enerji performansı (BENG)</p></div></li>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h4 data-i18n="whatsnew.items.complete.title">ISSO 51 tamamlandı</h4><p data-i18n="whatsnew.items.complete.desc">Konutlar için ısı kaybı hesabının tüm bölümleri mevcut ve referans projelerle test edildi.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h4 data-i18n="whatsnew.items.totals.title">Bina toplamları</h4><p data-i18n="whatsnew.items.totals.desc">Toplam havalandırma debisi ve bina kabuğu alanı sonuçlarda ve raporda yer alır.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h4 data-i18n="whatsnew.items.units.title">Üniteler kontrol edilir</h4><p data-i18n="whatsnew.items.units.desc">Bina için kapasitesi yetersiz ısı geri kazanım üniteleri gri gösterilir.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-route"/></svg></div><div><h4 data-i18n="whatsnew.items.transfer.title">Başka bir odadan hava</h4><p data-i18n="whatsnew.items.transfer.desc">Her oda için havalandırma havasının dışarıdan mı yoksa komşu bir odadan mı geldiğini seçin.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><h4 data-i18n="whatsnew.items.dualunit.title">dm³/s ve m³/h</h4><p data-i18n="whatsnew.items.dualunit.desc">Debileri iki birimde de girin; qv10'u toplam veya m² başına.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h4 data-i18n="whatsnew.items.decimal.title">Virgül veya nokta</h4><p data-i18n="whatsnew.items.decimal.desc">Sayıları virgül veya noktayla yazın; ondalıklar artık kaymıyor.</p></div></li>
       </ul>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <h2 data-i18n="features.title">Özellikler</h2>
-    <div class="features" id="ohs-features" data-fold="6">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div>
-        <h4 data-i18n="features.nen12831.title">NEN 12831 hesaplamaları</h4>
-        <p data-i18n="features.nen12831.desc">NEN 12831'e uygun tam ısı kaybı hesaplamaları. Isıtma sistemi tasarımı için doğru sonuçlar.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div>
-        <h4 data-i18n="features.isso51.title">ISSO 51:2023</h4>
-        <p data-i18n="features.isso51.desc">ISSO 51 yayınına (2023) göre konutlar ve konut binaları için ısı kaybı hesabına özgü metodoloji.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div>
-        <h4 data-i18n="features.transmission.title">Oda başına iletim kayıpları</h4>
-        <p data-i18n="features.transmission.desc">Zemine bağlı yapılar için düzeltme faktörleri dahil olmak üzere oda başına iletim kayıplarının ayrıntılı hesaplanması.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div>
-        <h4 data-i18n="features.ground.title">Zeminle temas eden bileşenler</h4>
-        <p data-i18n="features.ground.desc">Zemine oturan döşeme, bodrum duvarı, sürünme boşluğu ve bitişik ısıtılmayan hacimler için düzeltme katsayıları (b katsayıları).</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div>
-        <h4 data-i18n="features.ventilation.title">Havalandırma kayıpları</h4>
-        <p data-i18n="features.ventilation.desc">Havalandırma sistemine, hava debisine ve infiltrasyona dayalı havalandırma kayıplarının hesaplanması.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clock"/></svg></div>
-        <h4 data-i18n="features.heatup.title">Isıtma ilavesi</h4>
-        <p data-i18n="features.heatup.desc">Gece düşürmesi sonrası ısıtma için gereken ek kapasitenin hesabı — NEN 12831 Ek F tablolarına uygun.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div>
-        <h4 data-i18n="features.climate.title">KNMI iklim verileri</h4>
-        <p data-i18n="features.climate.desc">Konuma göre tasarım iç ve dış sıcaklıkları. KNMI iklim bölgeleri posta koduna göre otomatik seçilir.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div>
-        <h4 data-i18n="features.uvalue.title">U-değeri hesaplayıcı</h4>
-        <p data-i18n="features.uvalue.desc">Yapı bileşenlerinin U-değerlerini katman katman hesaplayın. NEN-EN 12524 ve NTA 8800'e uygun λ değerleriyle malzeme kütüphanesi.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div>
-        <h4 data-i18n="features.thermal.title">Isı köprüleri</h4>
-        <p data-i18n="features.thermal.desc">NEN-EN ISO 14683'e göre doğrusal ısı köprüleri (Ψ). Varsayılan değerler ya da düğüm bazında detaya dayalı hesap.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div>
-        <h4 data-i18n="features.ifcx.title">IFCX entegrasyonu</h4>
-        <p data-i18n="features.ifcx.desc">Daha hızlı giriş için bina geometrisini ve yapı özelliklerini doğrudan IFCX modellerinden içe aktarın.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div>
-        <h4 data-i18n="features.zones.title">Bölgeleme</h4>
-        <p data-i18n="features.zones.desc">Hacimleri ısıtma bölgesine, kontrol cihazına veya tesisat konumuna göre gruplayın. Bölge başına farklı ayar değerleri mümkündür.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div>
-        <h4 data-i18n="features.radiator.title">Radyatör hesabı</h4>
-        <p data-i18n="features.radiator.desc">Isı kaybı, su sıcaklığı ve üstelden hareketle hacim başına radyatör kapasitesini belirleyin. Üretici kütüphanesinden seçim.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div>
-        <h4 data-i18n="features.floor.title">Yerden ısıtma</h4>
-        <p data-i18n="features.floor.desc">Hacim başına yerden ısıtma kapasitesi; sistem sıcaklığı, boru aralığı ve gidiş sıcaklığı ile.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div>
-        <h4 data-i18n="features.heatpump.title">Isı pompası boyutlandırma</h4>
-        <p data-i18n="features.heatpump.desc">Tasarım sıcaklığındaki toplam ısı kaybına göre ön ısı pompası boyutlandırması. Tipe göre SCOP göstergesi.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-crane"/></svg></div>
-        <h4 data-i18n="features.boiler.title">Kazan kapasitesi</h4>
-        <p data-i18n="features.boiler.desc">Kullanım sıcak suyu, eşzamanlılık katsayıları ve tampon hacimleri dâhil kazan kapasitesi.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div>
-        <h4 data-i18n="features.reports.title">Rapor oluşturma</h4>
-        <p data-i18n="features.reports.desc">Oda başına ısı kaybı, genel özetler ve grafik gösterimlerle net raporlar oluşturun.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div>
-        <h4 data-i18n="features.export.title">Dışa aktarımlar</h4>
-        <p data-i18n="features.export.desc">Daha ileri analiz için Excel (XLSX), BIM entegrasyonu için IFCX, otomasyon ve API bağlantıları için JSON.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div>
-        <h4 data-i18n="features.library.title">Yapı fiziği kütüphanesi</h4>
-        <p data-i18n="features.library.desc">Malzeme özellikleri, yapı kompozisyonları ve standart U değerleri içeren kapsamlı kütüphane.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div>
-        <h4 data-i18n="features.constructions.title">Yapı bileşeni kurguları</h4>
-        <p data-i18n="features.constructions.desc">Otomatik U-değeriyle önceden tanımlı kurgular (cepheler, çatılar, döşemeler). Kendi kurgularınızı oluşturun ve yeniden kullanın.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-        <h4 data-i18n="features.compare.title">Varyant çalışması</h4>
-        <p data-i18n="features.compare.desc">Birden çok tasarım varyantını yan yana karşılaştırın. Yalıtım, havalandırma ve güneş yönlenmesi için what-if analizleri.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div>
-        <h4 data-i18n="features.dashboard.title">Gösterge paneli</h4>
-        <p data-i18n="features.dashboard.desc">Gerçek zamanlı genel bakış: toplam ısı kaybı, bölge başına kayıp, en yüksek kayıplı ilk 10 hacim, enerji göstergeleri.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div>
-        <h4 data-i18n="features.cli.title">CLI ve toplu işlem</h4>
-        <p data-i18n="features.cli.desc">Toplu hesaplar için komut satırı arayüzü. CI hatlarına entegre edin veya portföyler genelinde otomatikleştirin.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div>
-        <h4 data-i18n="features.local.title">%100 yerel</h4>
-        <p data-i18n="features.local.desc">Tüm hesaplar kendi makinenizde yerel olarak çalışır. Bulut yok, izleme yok. Proje verileriniz sizde kalır.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div>
-        <h4 data-i18n="features.crossplatform.title">Çoklu platform</h4>
-        <p data-i18n="features.crossplatform.desc">Windows, macOS, Linux ve web uygulaması olarak mevcut. Azami performans için Tauri 2 + Rust.</p>
-      </div>
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Sık sorulan sorular</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Hangi dosyaları açabilirim?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">.ifcenergy (IFCX) projeleri ve eski .isso51.json dosyaları. Ayrıca Revit'ten (pyRevit ile) bir termal dışa aktarımı, IFC yeniden oluşturma için bir IFC modelini ve BENG için bir Uniec 3 dosyasını okuyabilirsiniz.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Bir şey kurmam gerekiyor mu?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Hayır, uygulama tarayıcıda çalışır. Windows için GitHub'daki sürümler arasında bir test sürümü (alfa) var. Henüz imzalı olmadığından Windows önce bir uyarı gösterir.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">Open Heatloss Studio ne kadar?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Hiçbir şey. Uygulama MIT lisansıyla ücretsiz ve açık kaynaklıdır. Hesap yapmak için hesap veya abonelik gerekmez.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.save.q">Çalışmam hangi biçimde kaydedilir?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.save.a">Odalarınızı, yapı elemanlarınızı ve sonuçlarınızı içeren açık bir IFCX dosyası (IFC5 alpha) olan .ifcenergy biçiminde. IFC4X3 ve JSON olarak da dışa aktarabilirsiniz.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">Hangi sistemlerde çalışır?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">Her modern tarayıcıda ve Windows'ta test sürümü olarak. macOS ve Linux için henüz indirilebilir bir sürüm yok.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">Hollanda uygulamasına uyuyor mu?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">Evet. Hesap, düzeltmesiyle birlikte ISSO 51:2023'ü izler; havalandırma gereksinimleri Bbl'den, soğutma ihtiyacı NTA 8800'den gelir. Hesap çekirdeği, ISSO 51'deki örnek dahil üç referans projeyle test edilmiştir. Uygulama hâlâ test aşamasında: sonuçları kullanmadan önce kontrol edin.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">Bir yapay zekâ asistanı bununla ne yapabilir?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">Claude Desktop ve Claude Code için bir MCP sunucusu (Model Context Protocol) vardır. Bir asistan bununla bir projeyi hesaplayabilir, bir .ifcenergy dosyasını okuyabilir, yapı elemanlarını sorgulayabilir ve PDF raporu oluşturabilir. Kendi betikleriniz için bir REST API vardır.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.utility.q">Konut dışı binaları da hesaplayabilir miyim?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.utility.a">Henüz tam olarak değil. Ayarlarda konut dışı binalar için ISSO 53'e geçebilirsiniz, ancak bu hesap hâlâ geliştirilmektedir.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.draw.q">Kat planını çizebilir miyim?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.draw.a">Henüz değil. Modeller şu anda odaları yalnızca 2B ve 3B olarak gösteriyor; çizim sonraki bir sürümde gelecek. Odaları tabloya girersiniz ya da Revit veya IFC'den alırsınız.</p></div>
+      </details>
     </div>
-    <p class="more-row" data-fold-for="ohs-features" hidden>
-      <button type="button" class="btn btn-secondary btn-lg more-btn" aria-expanded="false" aria-controls="ohs-features">
-        <span data-fold-show class="more-label"><span data-i18n="features.showAll">Tüm özellikleri göster</span> <span class="more-count" data-fold-count></span></span>
-        <span data-fold-hide hidden data-i18n="features.showLess">Daha az göster</span>
-        <svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg>
-      </button>
-    </p>
   </div></section>
 
-  <section class="section"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="tech.title">Teknoloji</h2>
-      </div>
-      <div class="panel-split-body">
-        <div class="chip-row chip-row-light tech-chips">
-          <span class="chip">Rust</span>
-          <span class="chip">TypeScript</span>
-          <span class="chip">Tauri 2</span>
-          <span class="chip">NEN 12831</span>
-          <span class="chip">ISSO 51:2023</span>
-          <span class="chip">IFC/IFCX</span>
-          <span class="chip">PDF.js</span>
-          <span class="chip">REST API</span>
-        </div>
-        <p data-i18n="tech.desc">Standartlara uygun hesaplar için Rust tabanlı bir hesap çekirdeği, arayüz için TypeScript/SolidJS ön yüzü ve çoklu platform dağıtımı için Tauri 2. Sorunsuz entegrasyon için OpenAEC ekosisteminin geri kalanıyla aynı yığın.</p>
-      </div>
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Teknoloji</h2><p data-i18n="tech.sub">Nasıl yapıldığını merak edenler için.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.rust.title">Rust ile hesap çekirdeği</h4><p data-i18n="tech.rust.desc">Referans projelerde regresyon testleriyle saf Rust ile ISSO 51, ISSO 53 ve NTA 8800.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.tauri.title">Tauri 2</h4><p data-i18n="tech.tauri.desc">Masaüstü uygulaması için yerel olarak hesap yapan ve PDF oluşturan ince bir yerel kabuk.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="tech.react.title">React ve TypeScript</h4><p data-i18n="tech.react.desc">Tarayıcıda ve masaüstünde şerit, sekmeler ve grafiklerle aynı arayüz.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h4 data-i18n="tech.ifcx.title">IFCX ve IFC4X3</h4><p data-i18n="tech.ifcx.desc">Proje dosyası IFCX'tir (IFC5 alpha); IFC4X3 dışa aktarımı Python gerektirmez.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div><div><h4 data-i18n="tech.reports.title">openaec-layout</h4><p data-i18n="tech.reports.desc">Gömülü yazı tipleriyle ortak OpenAEC rapor motoru üzerinden PDF raporlar.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h4 data-i18n="tech.mcp.title">MCP ve REST API</h4><p data-i18n="tech.mcp.desc">Entegrasyonlar için TypeScript ile bir MCP sunucusu ve Rust (Axum) ile bir REST API.</p></div></div>
     </div>
   </div></section>
+
 
   <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
   <div data-release-notes="open-heatloss-studio"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Tüm sürümleri göster</span><span data-rel-hide hidden data-i18n="releases.showLess">Yalnızca son üçünü göster</span></button>
+    <a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio/releases" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.github">GitHub'daki tüm sürümler</span></a>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">Open <span class="accent">Heatloss</span> Studio</h2>
       <div class="btn-group">
-        <a href="https://open-heatloss-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Canlı demoyu görüntüle</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="cta.github">GitHub'da görüntüle</span></a>
+        <a href="https://open-heatloss-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Tarayıcıda aç</span></a>
+        <a href="#features" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Özellikleri gör</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/open-heatloss-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Kaynak kodu</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -495,51 +569,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-<script>
-  (function(){
-    const track = document.getElementById('sliderTrack');
-    const dots = document.getElementById('sliderDots');
-    if (!track || !dots) return;
-    const slides = track.children.length;
-    let current = 0;
-    for(let i=0;i<slides;i++){
-      const d = document.createElement('button');
-      d.className = 'slider-dot' + (i===0?' active':'');
-      d.onclick = ()=>slideTo(i);
-      dots.appendChild(d);
-    }
-    window.slideMove = function(dir){slideTo(current+dir);};
-    window.slideTo = function(i){
-      current = (i+slides)%slides;
-      track.style.transform = 'translateX(-'+current*100+'%)';
-      dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-      track.querySelectorAll('video').forEach(v=>v.pause());
-    };
-  })();
-  // Lange lijsten: de eerste paar zichtbaar, de rest achter de vaste "Toon alles"-knop. Zonder JavaScript staat alles open.
-  document.querySelectorAll('[data-fold]').forEach(function (grid) {
-    var n = +grid.getAttribute('data-fold');
-    var items = Array.prototype.slice.call(grid.children);
-    var row = document.querySelector('[data-fold-for="' + grid.id + '"]');
-    if (!row || items.length <= n) return;
-    var btn = row.querySelector('.more-btn');
-    var show = btn.querySelector('[data-fold-show]');
-    var hide = btn.querySelector('[data-fold-hide]');
-    btn.querySelector('[data-fold-count]').textContent = '(' + items.length + ')';
-    function zet(open) {
-      items.forEach(function (c, i) { c.style.display = (!open && i >= n) ? 'none' : ''; });
-      show.hidden = open; hide.hidden = !open;
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    }
-    zet(false);
-    row.hidden = false;
-    btn.addEventListener('click', function () {
-      var open = btn.getAttribute('aria-expanded') !== 'true';
-      zet(open);
-      if (!open) grid.scrollIntoView({ block: 'start' });
-    });
-  });
-</script>
-<script src="/shared/i18n.js?v=20261015"></script>
+  <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

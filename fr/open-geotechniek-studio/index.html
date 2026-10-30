@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Geotechniek Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Outil de bureau open source pour sondages CPT (CPT/GEF), forages (BHR/BRO-xml) et plans de situation.">
+  <meta name="description" content="Application gratuite et open source pour les essais au pénétromètre (GEF, BRO-xml) et les sondages : graphiques et découpage en couches, données BRO sur la…">
   <link rel="canonical" href="https://open-aec.com/fr/open-geotechniek-studio/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/open-geotechniek-studio/">
@@ -15,24 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/open-geotechniek-studio/">
   <!-- hreflang:end -->
 
-
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="Open Geotechniek Studio">
-  <meta property="og:description" content="Outil de bureau open source pour sondages CPT (CPT/GEF), forages (BHR/BRO-xml) et plans de situation.">
+  <meta property="og:title" content="Open Geotechniek Studio — OpenAEC Foundation">
+  <meta property="og:description" content="Application gratuite et open source pour les essais au pénétromètre (GEF, BRO-xml) et les sondages : graphiques et découpage en couches, données BRO sur la…">
   <meta property="og:url" content="https://open-aec.com/fr/open-geotechniek-studio/">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-geotechniek-studio-1.jpg">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-geotechniek-studio-hero.png">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Open Geotechniek Studio">
-  <meta name="twitter:description" content="Outil de bureau open source pour sondages CPT (CPT/GEF), forages (BHR/BRO-xml) et plans de situation.">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-geotechniek-studio-1.jpg">
+  <meta name="twitter:description" content="Application gratuite et open source pour les essais au pénétromètre (GEF, BRO-xml) et les sondages : graphiques et découpage en couches, données BRO sur la…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-geotechniek-studio-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -42,24 +39,145 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
-
-  <!-- Schema.org -->
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Open Geotechniek Studio",
     "applicationCategory": "EngineeringApplication",
-    "operatingSystem": "Windows, macOS, Linux",
-    "softwareVersion": "0.4.0",
-    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "applicationSubCategory": "Geotechniek / CPT",
+    "operatingSystem": "Windows, macOS, Linux, Web",
+    "softwareVersion": "2026.44.4",
     "url": "https://open-aec.com/open-geotechniek-studio/",
-    "description": "Open-source viewer for cone penetration tests (CPT, GEF) and borings (BHR, BRO-xml). Soil layer interpretation, Robertson SBT classification, IFCX integration. For civil engineering and GWW projects.",
-    "publisher": { "@type": "Organization", "name": "OpenAEC Foundation", "url": "https://open-aec.com" }
+    "downloadUrl": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases",
+    "license": "https://opensource.org/licenses/MIT",
+    "description": "Free, open-source app for cone penetration tests (GEF, BRO-xml), boreholes (BHR-GT, NEN 5104) and groundwater wells. Charts of qc, fs and Rf with an indicative soil layering and a normalized Qt/Fr/Bq/Ic analysis; BRO data on a map with PDOK layers; site drawings exported to PDF and DWG; PDF reports; GEF export; concept settlement and EC7 pad foundation worksheets; MCP server, local HTTP API, Node library and native SDK. For Windows, macOS, Linux and the browser.",
+    "featureList": [
+      "GEF en BRO-xml openen",
+      "qc, fs en Rf per diepte",
+      "Indicatieve laagindeling",
+      "Genormaliseerde analyse",
+      "Boringen en grondwater",
+      "Controle van de gegevens",
+      "Meerdere sonderingen naast elkaar",
+      "Zoeken op adres",
+      "BRO-gegevens laden",
+      "Kaartlagen van PDOK",
+      "Meten en exporteren",
+      "Sonderingsraster",
+      "Tekengereedschap",
+      "PDF of afbeelding eronder",
+      "PDF op A2 of A3",
+      "PDF-rapport",
+      "Bronvaste GEF-export",
+      "Eigen projectbestand",
+      "Zetting van één laag",
+      "Poer op staal (EC7)",
+      "MCP en HTTP API",
+      "Node-library en SDK",
+      "Vijf thema's"
+    ],
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-geotechniek-studio-hero.png",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    },
+    "isAccessibleForFree": true,
+    "keywords": "sondering, CPT, GEF, BRO, BRO-xml, BHR-GT, boring, NEN 5104, geotechniek, geotechnics, cone penetration test, situatietekening, PDOK, IFCX, MCP",
+    "sameAs": [
+      "https://github.com/OpenAEC-Foundation/open-geotechniek-studio",
+      "https://open-geotechniek-studio.open-aec.com/"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "OpenAEC Foundation",
+      "url": "https://open-aec.com"
+    }
   }
   </script>
-
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sonderingen in GEF en BRO-xml, boringen als BHR-GT of GEF-BORE, grondwaterputten (GMW) en eigen projecten in .ifcgeo. Bestanden uit de BRO kun je ook rechtstreeks van de kaart openen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. De webversie werkt direct in de browser. Voor de berekeningen, DWG-export en CSV of GeoJSON is er de desktop-app voor Windows, macOS en Linux."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost Open Geotechniek Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. De app is gratis en open source onder de MIT-licentie, zonder account of abonnement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk formaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In een eigen .ifcgeo-bestand, een open JSON-formaat met IFCX-inhoud. Een sondering exporteer je ook weer als GEF."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Windows, macOS (Intel en Apple Silicon) en Linux (.deb en AppImage), en elke moderne browser. De installers zijn ondertekend."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de Nederlandse praktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Het leest GEF en de BRO-formaten met hun kwaliteitsregimes, beschrijft boringen volgens NEN 5104 en werkt in RD-coördinaten en NAP. De laagindeling is indicatief en vervangt geen beoordeling door een geotechnicus."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De desktop-app en de Node-library hebben een MCP-server (Model Context Protocol). Daarmee kan een assistent zoals Claude sonderingen lezen, BRO-gegevens ophalen, lagen indelen, rekenen en een rapport maken. Er is ook een lokale HTTP API voor eigen scripts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Heb ik internet nodig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Alleen voor de kaart en de BRO. Je eigen bestanden worden op je computer verwerkt en nergens geüpload."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik naar IFC exporteren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet. Een IFC4x3-export staat uit tot hij aan het schema voldoet. De app maakt wel al een experimentele IFCX-weergave van je gegevens."
+        }
+      }
+    ]
+  }
+  </script>
 
   <meta name="i18n-static" content="fr">
   <!-- schema:start -->
@@ -95,7 +213,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "fr",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/fr/open-geotechniek-studio/#breadcrumb"
         }
@@ -124,7 +242,7 @@
   <!-- schema:end -->
 </head>
 <body class="page-panels">
-  <div id="shared-nav"><!-- nav:start -->
+    <div id="shared-nav"><!-- nav:start -->
 <nav class="navbar">
   <div class="nav-container">
     <a href="/fr/" class="nav-brand" aria-label="OpenAEC — home"><img class="nav-logo" src="/shared/assets/logo/openaec-symbol-v2-transparent.svg" alt="" width="28" height="32"><span class="nav-word">Open<span class="accent">AEC</span></span></a>
@@ -154,264 +272,262 @@
   </div>
 </nav>
 <!-- nav:end --></div>
-  <script src="/shared/nav.js?v=20261015"></script>
-  <script src="/shared/feedback.js?v=20261022" defer></script>
+<script src="/shared/nav.js?v=20261015"></script>
+<script src="/shared/feedback.js?v=20261022" defer></script>
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">Écosystème OpenAEC</p>
+      <p class="pill-label" data-i18n="header.label">Géotechnique</p>
       <h1 data-i18n="header.title">Open <span class="accent">Geotechniek</span> Studio</h1>
-      <p class="lead" data-i18n="header.desc">Outil de bureau open source pour sondages CPT (CPT/GEF), forages (BHR/BRO-xml) et plans de situation.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">Du sondage BRO au plan de situation et au rapport, dans une seule application gratuite</p>
+      <p class="lead" data-i18n="header.desc">Ouvrez un fichier GEF ou BRO, ou trouvez sur la carte tous les essais autour de votre site. Visualisez qc, fs et Rf avec un découpage indicatif en couches, placez les points sur un plan de situation et produisez un rapport.</p>
       <div class="btn-group">
-        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="download.title">Télécharger</span></a>
-        <a href="https://open-geotechniek-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.liveDemo">Ouvrir la démo en ligne</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="cta.github">GitHub</span></a>
+        <a href="https://open-geotechniek-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Ouvrir dans le navigateur</span></a>
+        <a href="#download" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Télécharger</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Code source</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg><span data-i18n="header.badge">Beta</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg><span data-i18n="header.gww">Civil / Géotechnique</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg>GEF · BRO-xml · NEN 5104</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span>GEF · BRO-xml · NEN 5104</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="header.proof2">Néerlandais et anglais</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg><span>Windows · macOS · Linux · Web</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg><span data-i18n="header.proof4">MCP pour assistants IA</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof5">Gratuit · MIT</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-1.jpg" alt="Open Geotechniek Studio - CPT sondering met Robertson SBT-classificatie"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-2.jpg" alt="Open Geotechniek Studio - BHR boring met grondsoort-lagen volgens BRO"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-3.jpg" alt="Open Geotechniek Studio - Kaart-view met 66 sonderingen uit BRO op Kadaster luchtfoto"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-4.png" alt="Open Geotechniek Studio - Rapport-tab met professioneel PDF sonderingsrapport"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-5.jpg" alt="Open Geotechniek Studio - Situatietekening en automatisch offertes opvragen bij sondeerbedrijven"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-geotechniek-studio-hero.png" width="1920" height="1200" alt="Open Geotechniek Studio : essai au pénétromètre avec résistance de pointe, frottement latéral et rapport de frottement, et le découpage en couches à gauche" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-geotechniek-studio-feat-sondering.png" width="1200" height="750" decoding="async" alt="Essai avec la composition du sol par couche à gauche et l'analyse normalisée Qt/Fr/Bq/Ic à droite" data-i18n="hl.cpt.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-geotechniek-studio-feat-kaart.png" width="1200" height="750" decoding="async" alt="Carte avec photo aérienne, limites cadastrales et les essais BRO de la zone en triangles rouges" data-i18n="hl.map.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-geotechniek-studio-feat-tekening.png" width="1200" height="750" decoding="async" alt="Plan de situation A3 au 1:500 avec les essais sur la carte et le cartouche OpenAEC" data-i18n="hl.drawing.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-geotechniek-studio-feat-rapport.png" width="1200" height="750" decoding="async" alt="Aperçu du rapport avec un graphique d'essai à l'échelle, et à gauche les sections à cocher ou décocher" data-i18n="hl.report.alt" data-i18n-attr="alt"></div>
         </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende">&rsaquo;</button>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap" id="download"><div class="container">
-    <div class="download-section">
-      <h3 data-i18n="download.title">Télécharger</h3>
-      <div class="download-grid">
-        <div class="download-item"><div class="os">Windows</div><div class="size" data-i18n="download.windows">Installateur (.exe)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v0.4.1/Open.Geotechniek.Studio_0.4.1_x64-setup.exe" data-gh-download="OpenAEC-Foundation/open-geotechniek-studio" data-platform="windows" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download .exe</a></div>
-        <div class="download-item"><div class="os">Linux</div><div class="size" data-i18n="download.linuxDeb">Debian, Ubuntu (.deb)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v0.4.1/Open.Geotechniek.Studio_0.4.1_amd64.deb" data-gh-download="OpenAEC-Foundation/open-geotechniek-studio" data-platform="linux-deb" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download .deb</a></div>
-        <div class="download-item"><div class="os">Linux</div><div class="size" data-i18n="download.linuxAppimage">Toute distribution (AppImage)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v0.4.1/Open.Geotechniek.Studio_0.4.1_amd64.AppImage" data-gh-download="OpenAEC-Foundation/open-geotechniek-studio" data-platform="linux-appimage" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download AppImage</a></div>
+  <nav class="pp-subnav" aria-label="Sur cette page" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Fonctions</a>
+      <a href="#download" data-i18n="subnav.download">Télécharger</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Nouveautés</a>
+      <a href="#faq" data-i18n="subnav.faq">FAQ</a>
+      <a href="#releases" data-i18n="subnav.releases">Versions</a>
+    </div>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Fonctions</p><h2 data-i18n="features.heading">Tout pour les essais et les sondages, dans une seule application</h2><p data-i18n="features.sub">Commencez par les points forts ou choisissez un thème.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Fonctions par thème" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Points forts</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-cpt" data-tab="cpt" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg><span data-i18n="tabs.cpt">Essais et sondages</span> <span class="pp-tab-count" data-count="cpt"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-map" data-tab="map" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg><span data-i18n="tabs.map">Carte et BRO</span> <span class="pp-tab-count" data-count="map"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-drawing" data-tab="drawing" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg><span data-i18n="tabs.drawing">Plan de situation</span> <span class="pp-tab-count" data-count="drawing"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-report" data-tab="report" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="tabs.report">Rapport et export</span> <span class="pp-tab-count" data-count="report"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-connect" data-tab="connect" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg><span data-i18n="tabs.connect">Calculs et intégrations</span> <span class="pp-tab-count" data-count="connect"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Toutes les fonctions</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-geotechniek-studio-feat-sondering.png" width="1200" height="750" loading="lazy" decoding="async" alt="Essai avec la composition du sol par couche à gauche et l'analyse normalisée Qt/Fr/Bq/Ic à droite" data-i18n="hl.cpt.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.cpt.kicker">Essais</span></p>
+            <h3 data-i18n="hl.cpt.title">Lisez un essai d'un seul coup d'œil</h3>
+            <p data-i18n="hl.cpt.desc">Résistance de pointe, frottement latéral et rapport de frottement côte à côte sur un même axe de profondeur en NAP. L'application découpe l'essai en couches indicatives ; vous ajustez vous-même les limites et voyez une analyse normalisée Qt/Fr/Bq/Ic par point.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-geotechniek-studio-feat-kaart.png" width="1200" height="750" loading="lazy" decoding="async" alt="Carte avec photo aérienne, limites cadastrales et les essais BRO de la zone en triangles rouges" data-i18n="hl.map.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.map.kicker">Carte et BRO</span></p>
+            <h3 data-i18n="hl.map.title">Toutes les données BRO autour de votre site</h3>
+            <p data-i18n="hl.map.desc">Recherchez par adresse ou coordonnée RD et chargez les essais, sondages et puits de la base néerlandaise du sous-sol (BRO) dans la zone visible. Ajoutez en fond des photos aériennes depuis 2016, la carte d'altitude AHN, les limites cadastrales ou les bâtiments BAG.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-geotechniek-studio-feat-tekening.png" width="1200" height="750" loading="lazy" decoding="async" alt="Plan de situation A3 au 1:500 avec les essais sur la carte et le cartouche OpenAEC" data-i18n="hl.drawing.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.drawing.kicker">Plan de situation</span></p>
+            <h3 data-i18n="hl.drawing.title">Un plan de situation sans logiciel de CAO</h3>
+            <p data-i18n="hl.drawing.desc">Placez des essais, des sondages ou toute une grille d'essais sur la carte, avec cotes, coordonnées RD et remarques. Ajoutez un PDF ou une image en fond et exportez en PDF au format A2 ou A3, avec un cartouche rempli.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-geotechniek-studio-feat-rapport.png" width="1200" height="750" loading="lazy" decoding="async" alt="Aperçu du rapport avec un graphique d'essai à l'échelle, et à gauche les sections à cocher ou décocher" data-i18n="hl.report.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.report.kicker">Rapport</span></p>
+            <h3 data-i18n="hl.report.title">Un rapport pour le dossier du projet</h3>
+            <p data-i18n="hl.report.desc">Choisissez le contenu : page de garde, tableau des coordonnées, carte d'ensemble, une page par essai, la légende et les métadonnées. Réglez l'échelle des graphiques, par exemple 1:50 sur plusieurs feuilles.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
       </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.gef.title">Ouvrir GEF et BRO-xml</h3><p data-i18n="f.gef.desc">Essais en GEF ou BRO-xml, sondages (BHR-GT, GEF-BORE) et puits (GMW). Aussi plusieurs essais dans un même fichier.</p></div></div></li>
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><h3 data-i18n="f.chart.title">qc, fs et Rf par profondeur</h3><p data-i18n="f.chart.desc">Graphiques sur un même axe de profondeur en NAP, avec les valeurs sous la souris et la pression interstitielle (u2) si mesurée.</p></div></div></li>
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.layers.title">Découpage indicatif en couches</h3><p data-i18n="f.layers.desc">Découpage automatique sur qc et Rf, avec épaisseur minimale et hystérésis. Ajustez les limites et exportez les couches en JSON avec leur provenance.</p></div></div></li>
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h3 data-i18n="f.normalized.title">Analyse normalisée</h3><p data-i18n="f.normalized.desc">Qt, Fr, Bq et Ic par point de mesure, avec les contraintes que vous saisissez.</p></div></div></li>
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-hatch"/></svg></div><div><h3 data-i18n="f.bore.title">Sondages et eaux souterraines</h3><p data-i18n="f.bore.desc">Descriptions de sondages avec couches, couleur et mélanges, et puits avec leurs séries temporelles.</p></div></div></li>
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h3 data-i18n="f.validation.title">Contrôle des données</h3><p data-i18n="f.validation.desc">Messages sur les colonnes, unités, valeurs manquantes et profondeur, avec la ligne du fichier source. Exportez le contrôle en JSON ou CSV.</p></div></div></li>
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.tabs.title">Plusieurs essais côte à côte</h3><p data-i18n="f.tabs.desc">Chaque fichier dans son onglet, ou un projet avec plusieurs essais sur un même axe de profondeur.</p></div></div></li>
+        <li class="pp-tile" data-cats="map"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><h3 data-i18n="f.search.title">Recherche par adresse</h3><p data-i18n="f.search.desc">Via le PDOK Locatieserver par adresse, lieu ou coordonnée RD.</p></div></div></li>
+        <li class="pp-tile" data-cats="map"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h3 data-i18n="f.bro.title">Charger les données BRO</h3><p data-i18n="f.bro.desc">Essais, sondages et puits dans la zone visible, même au-delà de la limite de 2 000 objets.</p></div></div></li>
+        <li class="pp-tile" data-cats="map drawing"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.pdok.title">Couches cartographiques PDOK</h3><p data-i18n="f.pdok.desc">Topographie, photos aériennes actuelles et de 2016 à 2025, AHN, cadastre, BAG, BGT, plans d'urbanisme et cartes historiques.</p></div></div></li>
+        <li class="pp-tile" data-cats="map"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><h3 data-i18n="f.measure.title">Mesurer et exporter</h3><p data-i18n="f.measure.desc">Mesurez des distances sur la carte et enregistrez-la en image.</p></div></div></li>
+        <li class="pp-tile" data-cats="drawing"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.grid.title">Grille d'essais</h3><p data-i18n="f.grid.desc">Disposez d'un coup toute une grille d'essais sur le plan.</p></div></div></li>
+        <li class="pp-tile" data-cats="drawing"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-move"/></svg></div><div><h3 data-i18n="f.edit.title">Outils de dessin</h3><p data-i18n="f.edit.desc">Lignes, surfaces, cotes et coordonnées RD, avec déplacer, copier, pivoter, ajuster, prolonger, miroir et décaler.</p></div></div></li>
+        <li class="pp-tile" data-cats="drawing"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h3 data-i18n="f.overlay.title">PDF ou image en fond</h3><p data-i18n="f.overlay.desc">Une page PDF, une photo ou un cadre SVG en fond, recadré et à l'échelle.</p></div></div></li>
+        <li class="pp-tile" data-cats="drawing"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div><div><h3 data-i18n="f.drawexport.title">PDF en A2 ou A3</h3><p data-i18n="f.drawexport.desc">Avec cartouche, échelle graphique et flèche du nord. L'application de bureau exporte aussi en DWG.</p></div></div></li>
+        <li class="pp-tile" data-cats="report"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.report.title">Rapport PDF</h3><p data-i18n="f.report.desc">Page de garde, tableau des coordonnées, carte d'ensemble, une page par essai, légende et métadonnées, chacun activable.</p></div></div></li>
+        <li class="pp-tile" data-cats="report"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h3 data-i18n="f.gefexport.title">Export GEF fidèle à la source</h3><p data-i18n="f.gefexport.desc">Réécrit les colonnes d'origine, les valeurs manquantes et les codes RD/NAP, et s'arrête en cas de données douteuses.</p></div></div></li>
+        <li class="pp-tile" data-cats="report"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.project.title">Fichier de projet propre</h3><p data-i18n="f.project.desc">Conservez essais, couches et plan ensemble dans un fichier .ifcgeo. L'application de bureau exporte aussi en CSV et GeoJSON.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><h3 data-i18n="f.settlement.title">Tassement d'une couche</h3><p data-i18n="f.settlement.desc">Feuille de calcul conceptuelle dans l'application de bureau, avec unités et étapes visibles.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h3 data-i18n="f.pad.title">Semelle superficielle (EC7)</h3><p data-i18n="f.pad.desc">Feuille conceptuelle pour une semelle rectangulaire chargée au centre selon l'EC7 annexe D, dans l'application de bureau.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.mcp.title">MCP et API HTTP</h3><p data-i18n="f.mcp.desc">Un assistant IA ou votre script lit les essais, découpe les couches et calcule via MCP ou une API HTTP locale.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h3 data-i18n="f.core.title">Bibliothèque Node et SDK</h3><p data-i18n="f.core.desc">Le même lecteur GEF, contrôles et calculs en bibliothèque Node séparée, plus un SDK natif pour vos logiciels.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.themes.title">Cinq thèmes</h3><p data-i18n="f.themes.desc">Clair, sombre, Blueprint et deux à contraste élevé, dans le style de toutes les applications OpenAEC.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel">
-    <div class="panel-split">
-      <div class="panel-split-text">
-        <p class="pill-label">BRO · CPT</p>
-        <h2 data-i18n="what.title">Qu'est-ce qu'Open Geotechniek Studio ?</h2>
-        <p data-i18n="what.desc">Open Geotechniek Studio est une application de bureau pour visualiser et analyser les données géotechniques du registre national néerlandais du sous-sol (BRO). Ouvrez n'importe quel fichier GEF ou BRO-xml et examinez les données de sondage ou de forage avec classification Robertson SBT automatique, détection de la stratification et découpage en couches.</p>
+  <section class="section surface-dark panel pp-anchor" id="download" data-pp-repo="OpenAEC-Foundation/open-geotechniek-studio">
+    <div class="pp-dl">
+      <p class="pill-label" data-i18n="download.label">Télécharger</p>
+      <h2 data-i18n="download.title" data-pp-ver>Télécharger v2026.44.4</h2>
+      <p class="pp-dl-lead" data-i18n="download.lead">Gratuit, sans compte. Pour Windows, macOS et Linux.</p>
+      <div class="pp-dl-main" data-pp-main>
+        <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v2026.44.4/Open.Geotechniek.Studio_2026.44.4_x64-setup.exe" class="btn btn-glow btn-lg" data-pp-dl="windows" data-pp-primary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-os="windows" data-i18n="download.forWindows">Télécharger pour Windows</span><span data-os="macos" data-i18n="download.forMac" hidden>Télécharger pour macOS</span><span data-os="linux-appimage" data-i18n="download.forLinux" hidden>Télécharger pour Linux</span></a>
+        <a href="https://open-geotechniek-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="download.browserBtn">Ouvrir dans le navigateur</span></a>
       </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><p data-i18n="what.list1">Sondages CPT (format GEF) — résistance au cône, frottement, pression interstitielle</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><p data-i18n="what.list2">Forages (BRO-xml) — types de sol selon NEN5104, régimes qualité BIMRO/IMBRO/A</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><p data-i18n="what.list3">Classification Robertson SBT — détection automatique du type de sol par profondeur</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><p data-i18n="what.list4">Multi-onglets — comparez plusieurs sondages/forages côte à côte</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><p data-i18n="what.list5">Vue cartographique — toutes les mesures localisées (coordonnées RD)</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><p data-i18n="what.list6">Rapports — export PDF pour dossiers de projet</p></div></li>
-      </ul>
+      <p class="pp-dl-meta"><span data-os="windows" data-i18n="download.metaWindows">programme d'installation .exe</span><span data-os="macos" data-i18n="download.metaMac" hidden>.dmg universel, Intel et Apple Silicon</span><span data-os="linux-appimage" data-i18n="download.metaLinux" hidden>AppImage, fonctionne sur la plupart des distributions</span> · <span data-pp-primary-size>14.6 MB</span></p>
+      <p class="pp-dl-mobile" data-pp-mobile hidden data-i18n="download.mobileNote">Open Geotechniek Studio est conçu pour un grand écran. Ouvrez-le sur votre ordinateur, ou essayez-le ici dans le navigateur.</p>
+      <details class="pp-dl-other" data-pp-other>
+        <summary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg><span data-i18n="download.other">Autres plateformes</span></summary>
+        <div class="pp-files">
+          <div class="pp-files-col"><h3>Windows</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v2026.44.4/Open.Geotechniek.Studio_2026.44.4_x64-setup.exe" data-pp-dl="windows" data-pp-item="windows"><span class="pp-file"><span data-i18n="download.fileExe">Programme d'installation (.exe)</span><span class="pp-file-size"> · <span data-pp-size="windows">14.6 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+          <div class="pp-files-col"><h3>macOS</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v2026.44.4/Open.Geotechniek.Studio_2026.44.4_universal.dmg" data-pp-dl="macos" data-pp-item="macos"><span class="pp-file"><span data-i18n="download.fileDmg">.dmg universel</span><span class="pp-file-size"> · <span data-pp-size="macos">31.6 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+          <div class="pp-files-col"><h3>Linux</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v2026.44.4/Open.Geotechniek.Studio_2026.44.4_amd64.deb" data-pp-dl="linux-deb" data-pp-item="linux-deb"><span class="pp-file"><span data-i18n="download.fileDeb">.deb</span><span class="pp-file-size"> · <span data-pp-size="linux-deb">19.8 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/download/v2026.44.4/Open.Geotechniek.Studio_2026.44.4_amd64.AppImage" data-pp-dl="linux-appimage" data-pp-item="linux-appimage"><span class="pp-file"><span data-i18n="download.fileAppImage">AppImage</span><span class="pp-file-size"> · <span data-pp-size="linux-appimage">94.4 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+        </div>
+      </details>
+      <p class="pp-dl-note" data-i18n="download.browserNote">Vous préférez ne rien installer ? L'application <a href="https://open-geotechniek-studio.open-aec.com/" target="_blank" rel="noopener">fonctionne aussi dans le navigateur</a>.</p>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="why.title">Pourquoi Open <span class="accent">Geotechniek</span> Studio ?</h2>
-      </div>
-      <div class="panel-split-body">
-        <p data-i18n="why.desc1">Les logiciels géotechniques sur le marché néerlandais sont souvent coûteux et fragmentés : différents outils pour sondages, forages, calculs de pieux et rapports. Open Geotechniek Studio rassemble tout — gratuit, open source et entièrement conforme aux standards néerlandais (BRO, NEN5104, IMBRO/A).</p>
-        <p data-i18n="why.desc2">Pour tout le secteur du génie civil et de l'infrastructure : des ingénieurs en fondations aux entreprises de pose de réseaux, des ingénieurs structure aux projets de wateringues. Lisez les données BRO directement, exportez vers IFCX pour l'intégration BIM et partagez des rapports professionnels sans frais de licence.</p>
-      </div>
-    </div>
-  </div></section>
-
-  <section class="section surface-dark panel">
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
     <div class="panel-split">
       <div class="panel-split-text">
-        <p class="pill-label">NEN · BRO</p>
-        <h2 data-i18n="standards.title">Normes prises en charge</h2>
-        <p data-i18n="standards.desc">Open Geotechniek Studio lit et interprète les formats géotechniques officiels néerlandais :</p>
+        <p class="pill-label" data-i18n="whatsnew.label">Nouveau dans la v2026.44</p>
+        <h2 data-i18n="whatsnew.title">Nouveau style, <span>BRO plus fiable</span></h2>
+        <p data-i18n="whatsnew.desc">Quatre versions sont sorties cette semaine : le style de toutes les applications OpenAEC, des installateurs signés, les premiers calculs dans l'application de bureau et un contrôle plus strict des données sources.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaChangelog">Toutes les notes de version</span></a>
+          <a href="https://open-geotechniek-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="whatsnew.ctaDemo">Essayer dans le navigateur</span></a>
+        </div>
       </div>
       <ul class="split-cards split-cards-2">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><p data-i18n="standards.list1"><strong>GEF</strong> Geotechnical Exchange Format pour les essais CPT</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><p data-i18n="standards.list2"><strong>BRO-xml (BHR-GT)</strong> Registre néerlandais du sous-sol, sondages géotechniques</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><p data-i18n="standards.list3"><strong>NEN 5104</strong> Description géotechnique des échantillons de sol</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><p data-i18n="standards.list4"><strong>IMBRO / IMBRO-A</strong> Modèle d'information BRO (régimes de qualité)</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><p data-i18n="standards.list5"><strong>Robertson SBT</strong> Classification Soil Behaviour Type</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><p data-i18n="standards.list6"><strong>Coordonnées RD</strong> Système de triangulation néerlandais pour les localisations</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div><div><p data-i18n="standards.list7"><strong>NAP</strong> Niveau de référence d'Amsterdam pour le terrain naturel et les profondeurs</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h4 data-i18n="whatsnew.items.style.title">Cinq thèmes</h4><p data-i18n="whatsnew.items.style.desc">Nouvelle interface et couleurs selon le style OpenAEC 0.4, avec clair, sombre, Blueprint et contraste élevé.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h4 data-i18n="whatsnew.items.calc.title">Tassement et semelle</h4><p data-i18n="whatsnew.items.calc.desc">Deux feuilles conceptuelles dans l'application de bureau : tassement d'une couche et semelle selon l'EC7.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h4 data-i18n="whatsnew.items.bro.title">Recherche BRO sans trous</h4><p data-i18n="whatsnew.items.bro.desc">Les grandes zones sont découpées au-delà de 2 000 objets, et les erreurs sont visibles.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="whatsnew.items.layers.title">Ajuster soi-même les couches</h4><p data-i18n="whatsnew.items.layers.desc">Épaisseur minimale, hystérésis et limites manuelles, avec un export JSON qui garde la provenance.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h4 data-i18n="whatsnew.items.gef.title">GEF fidèle à la source</h4><p data-i18n="whatsnew.items.gef.desc">L'export GEF conserve les colonnes d'origine et est vérifié avec Bedrock et pygef.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><h4 data-i18n="whatsnew.items.signed.title">Installateurs signés</h4><p data-i18n="whatsnew.items.signed.desc">Les téléchargements pour Windows, macOS et Linux sont signés et vérifiés avant publication.</p></div></li>
       </ul>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <h2 data-i18n="features.title">Fonctionnalités</h2>
-    <div class="features" id="ogs-features" data-fold="6">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div>
-        <h4 data-i18n="features.cpt.title">Visualisation CPT</h4>
-        <p data-i18n="features.cpt.desc">Résistance au cône (qc), frottement latéral (fs), rapport de frottement (Rf) et éventuellement pression interstitielle (u2) par profondeur, avec curseur en croix et superposition de valeurs.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div>
-        <h4 data-i18n="features.bhr.title">Forages BHR</h4>
-        <p data-i18n="features.bhr.desc">Visualisation des forages avec couches de sol, mélanges, structure, teneur en humus et couleur — directement depuis BRO-xml.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div>
-        <h4 data-i18n="features.sbt.title">Robertson SBT</h4>
-        <p data-i18n="features.sbt.desc">Classification automatique du type de comportement du sol selon Robertson (1990) — du fin sensible au sable/argile très raide.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div>
-        <h4 data-i18n="features.layers.title">Stratification des sols</h4>
-        <p data-i18n="features.layers.desc">Détection automatique des couches de sol par profondeur (haut, bas, zone). Ajustez vous-même la stratification selon les mesures.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div>
-        <h4 data-i18n="features.map.title">Vue cartographique avec intégration BRO</h4>
-        <p data-i18n="features.map.desc">Carte interactive avec intégration BRO directe : recherchez par adresse et tous les sondages et forages disponibles autour du lieu se chargent automatiquement. Cliquez pour voir les détails, ouvrez dans le visualiseur ou ajoutez au projet.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div>
-        <h4 data-i18n="features.mapLayers.title">Couches cartographiques Kadaster</h4>
-        <p data-i18n="features.mapLayers.desc">Topographie (BRT), photos aériennes actuelles et historiques (2016-2025), adresses et rues, carte d'élévation AHN, limites cadastrales, bâtiments BAG et topographie BGT — tout directement depuis Kadaster PDOK.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div>
-        <h4 data-i18n="features.multitab.title">Multi-onglets</h4>
-        <p data-i18n="features.multitab.desc">Ouvrez plusieurs CPT et forages dans des onglets. Comparez profondeurs, couches et propriétés côte à côte.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div>
-        <h4 data-i18n="features.report.title">Rapports PDF</h4>
-        <p data-i18n="features.report.desc">Générez des rapports de sondage professionnels avec sections sélectionnables : page de garde, tableau de coordonnées, carte d'aperçu, pages par sondage, légende Robertson SBT et récapitulatif de métadonnées. Adapté aux dossiers de projet, demandes de permis ou livrables client.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div>
-        <h4 data-i18n="features.situatie.title">Plan de situation</h4>
-        <p data-i18n="features.situatie.desc">Fonctionnalité de dessin complète pour plans de situation : placement de sondages et forages, génération de grilles de sondage, coordonnées RD, cotations, opérations trim/extend/mirror/offset. Importez image/PDF ou cadres SVG en référence. Export en PDF A3 professionnel avec cartouche OpenAEC.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div>
-        <h4 data-i18n="features.ifc.title">Export IFC / IFCX</h4>
-        <p data-i18n="features.ifc.desc">Exportez les données géotechniques en tant qu'éléments IFC ou dans l'espace de noms IFCX pour une intégration transparente avec les modèles BIM et Open Frame Studio.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-        <h4 data-i18n="features.metadata.title">Métadonnées</h4>
-        <p data-i18n="features.metadata.desc">Données complètes de forage et de sondage : registrar, régime qualité, méthode de forage, livraison, date de description, codage NEN5104plus.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div>
-        <h4 data-i18n="features.rawxml.title">Données brutes (XML)</h4>
-        <p data-i18n="features.rawxml.desc">Inspectez la source BRO-xml ou GEF sous-jacente directement depuis l'application pour vérification et débogage.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div>
-        <h4 data-i18n="features.local.title">100 % local</h4>
-        <p data-i18n="features.local.desc">Toutes les données restent sur votre propre machine. Pas de cloud, pas d'upload vers des tiers — vie privée et RGPD garantis.</p>
-      </div>
-    </div>
-    <p class="more-row" data-fold-for="ogs-features" hidden>
-      <button type="button" class="btn btn-secondary btn-lg more-btn" aria-expanded="false" aria-controls="ogs-features">
-        <span data-fold-show class="more-label"><span data-i18n="features.showAll">Afficher toutes les fonctions</span> <span class="more-count" data-fold-count></span></span>
-        <span data-fold-hide hidden data-i18n="features.showLess">Afficher moins</span>
-        <svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg>
-      </button>
-    </p>
-  </div></section>
-
-  <section class="section surface-dark panel">
-    <div class="panel-split">
-      <div class="panel-split-text">
-        <p class="pill-label">RD · Outlook</p>
-        <h2 data-i18n="quotes.title">Unique : demande automatique de devis aux entreprises de sondage</h2>
-        <p data-i18n="quotes.desc">Dessinez une grille de sondage sur votre plan de situation et cliquez sur <strong>Demander des devis</strong>. Open Geotechniek Studio recherche toutes les entreprises néerlandaises de sondage dans notre catalogue public et envoie une demande de devis aux trois entreprises les plus proches, avec détails du projet et spécifications de sondage.</p>
-      </div>
-      <ul class="split-cards inline-strong">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><p data-i18n="quotes.list1"><strong>43 entreprises de sondage néerlandaises</strong> au catalogue (et le nombre augmente)</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><p data-i18n="quotes.list2">Triées par <strong>distance au projet</strong></p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><p data-i18n="quotes.list3">Pré-sélection des 3 plus proches — ajustable avant envoi</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg></div><div><p data-i18n="quotes.list4">Intégration Outlook avec infos projet, lieu et spécifications pré-remplis</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><p data-i18n="quotes.list5"><strong>Pas d'intermédiaires</strong>, pas de commissions — contact direct entre le maître d'ouvrage et l'entreprise de sondage</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg></div><div><p data-i18n="quotes.list6">Catalogue open source : les entreprises peuvent s'ajouter via une pull request GitHub</p></div></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section"><div class="container">
-    <h2 data-i18n="useCases.title">Profils d'utilisateurs</h2>
-    <div class="features features-4">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div>
-        <h4 data-i18n="useCases.geotech.title">Bureaux d'études géotechniques</h4>
-        <p data-i18n="useCases.geotech.desc">Consultez rapidement les données BRO pour des conseils sur pieux, fondations et tassements. Comparez plusieurs sondages pour interprétation de projet.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-crane"/></svg></div>
-        <h4 data-i18n="useCases.civil.title">Ingénieurs civils</h4>
-        <p data-i18n="useCases.civil.desc">Justifiez vos choix de fondation pour ponts, viaducs, tunnels et ouvrages d'art sur la base de graphiques CPT.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-set-square"/></svg></div>
-        <h4 data-i18n="useCases.gww.title">Entreprises d'infrastructure civile</h4>
-        <p data-i18n="useCases.gww.desc">Évaluez profondeur d'excavation, amélioration de sol et drainage avant le démarrage d'un projet d'infrastructure.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div>
-        <h4 data-i18n="useCases.bim.title">Coordinateurs BIM</h4>
-        <p data-i18n="useCases.bim.desc">Intégrez les données géotechniques aux modèles BIM via IFCX. Une seule source de vérité pour le dessus et le dessous du sol.</p>
-      </div>
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Questions fréquentes</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Quels fichiers puis-je ouvrir ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">Les essais en GEF et BRO-xml, les sondages en BHR-GT ou GEF-BORE, les puits (GMW) et vos projets en .ifcgeo. Vous pouvez aussi ouvrir les fichiers BRO directement depuis la carte.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Dois-je installer quelque chose ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Non. La version web fonctionne directement dans le navigateur. Pour les calculs, l'export DWG et le CSV ou GeoJSON, il y a l'application de bureau pour Windows, macOS et Linux.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">Combien coûte Open Geotechniek Studio ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Rien. L'application est gratuite et open source sous licence MIT, sans compte ni abonnement.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.save.q">Dans quel format mon travail est-il enregistré ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.save.a">Dans un fichier .ifcgeo, un format JSON ouvert avec un contenu IFCX. Vous pouvez aussi réexporter un essai en GEF.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">Sur quels systèmes fonctionne-t-il ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">Windows, macOS (Intel et Apple Silicon) et Linux (.deb et AppImage), ainsi que tout navigateur moderne. Les installateurs sont signés.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">Est-ce adapté à la pratique néerlandaise ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">Oui. Il lit le GEF et les formats BRO avec leurs régimes de qualité, décrit les sondages selon la NEN 5104 et travaille en coordonnées RD et en NAP. Le découpage est indicatif et ne remplace pas l'avis d'un géotechnicien.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">Que peut en faire un assistant IA ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">L'application de bureau et la bibliothèque Node ont un serveur MCP (Model Context Protocol). Un assistant comme Claude peut ainsi lire des essais, récupérer des données BRO, découper des couches, calculer et produire un rapport. Il existe aussi une API HTTP locale pour vos scripts.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.internet.q">Ai-je besoin d'internet ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.internet.a">Seulement pour la carte et la BRO. Vos fichiers sont traités sur votre ordinateur et ne sont envoyés nulle part.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ifc.q">Puis-je exporter en IFC ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ifc.a">Pas encore. L'export IFC4x3 est désactivé tant qu'il ne respecte pas le schéma. L'application produit déjà une vue IFCX expérimentale de vos données.</p></div>
+      </details>
     </div>
   </div></section>
 
-  <section class="section"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="tech.title">Technologie</h2>
-      </div>
-      <div class="panel-split-body">
-        <div class="chip-row chip-row-light tech-chips">
-          <span class="chip">Rust</span>
-          <span class="chip">TypeScript</span>
-          <span class="chip">Tauri 2</span>
-          <span class="chip">GEF parser</span>
-          <span class="chip">BRO-xml</span>
-          <span class="chip">NEN 5104</span>
-          <span class="chip">Robertson SBT</span>
-        </div>
-        <p data-i18n="tech.desc">Un noyau de calcul Rust pour le parsing rapide de GEF et BRO-xml, un frontend TypeScript pour l'interface, et Tauri 2 pour la distribution multiplateforme (Windows, macOS, Linux). La même stack que tout l'écosystème OpenAEC pour une intégration transparente.</p>
-      </div>
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Technologie</h2><p data-i18n="tech.sub">Pour ceux qui veulent savoir comment c'est construit.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.tauri.title">Tauri 2</h4><p data-i18n="tech.tauri.desc">Une fine couche native en Rust pour Windows, macOS et Linux, avec de petits installateurs signés.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="tech.react.title">React en TypeScript</h4><p data-i18n="tech.react.desc">La même interface dans le navigateur et sur le bureau, avec des graphiques sur canvas.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.core.title">Noyau partagé</h4><p data-i18n="tech.core.desc">Un seul lecteur GEF, contrôle et export pour navigateur, bureau et Node, vérifiés avec Bedrock et pygef.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><h4 data-i18n="tech.map.title">Leaflet en PDOK</h4><p data-i18n="tech.map.desc">Cartes en RD et WGS84 avec les services cartographiques ouverts du Kadaster et de PDOK.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h4 data-i18n="tech.bro.title">BRO REST API</h4><p data-i18n="tech.bro.desc">Essais, sondages et puits directement depuis la base publique néerlandaise du sous-sol.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h4 data-i18n="tech.mcp.title">MCP, HTTP et SDK</h4><p data-i18n="tech.mcp.desc">Un serveur MCP, une API HTTP locale, une bibliothèque Node et une DLL/.so native pour les intégrations.</p></div></div>
     </div>
   </div></section>
+
 
   <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
   <div data-release-notes="open-geotechniek-studio"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Afficher toutes les versions</span><span data-rel-hide hidden data-i18n="releases.showLess">Afficher seulement les trois dernières</span></button>
+    <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.github">Toutes les versions sur GitHub</span></a>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">Open <span class="accent">Geotechniek</span> Studio</h2>
       <div class="btn-group">
-        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="download.title">Télécharger</span></a>
-        <a href="https://open-geotechniek-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.liveDemo">Ouvrir la démo en ligne</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="cta.github">GitHub</span></a>
+        <a href="https://open-geotechniek-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Ouvrir dans le navigateur</span></a>
+        <a href="#download" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Télécharger</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/open-geotechniek-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Code source</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -465,52 +581,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-
-  <script>
-    (function(){
-      const track = document.getElementById('sliderTrack');
-      const dots = document.getElementById('sliderDots');
-      if (!track || !dots) return;
-      const slides = track.children.length;
-      let current = 0;
-      for(let i=0;i<slides;i++){
-        const d = document.createElement('button');
-        d.className = 'slider-dot' + (i===0?' active':'');
-        d.onclick = ()=>slideTo(i);
-        dots.appendChild(d);
-      }
-      window.slideMove = function(dir){slideTo(current+dir);};
-      window.slideTo = function(i){
-        current = (i+slides)%slides;
-        track.style.transform = 'translateX(-'+current*100+'%)';
-        dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-      };
-    })();
-    // Lange lijsten: de eerste paar zichtbaar, de rest achter de vaste "Toon alles"-knop. Zonder JavaScript staat alles open.
-    document.querySelectorAll('[data-fold]').forEach(function (grid) {
-      var n = +grid.getAttribute('data-fold');
-      var items = Array.prototype.slice.call(grid.children);
-      var row = document.querySelector('[data-fold-for="' + grid.id + '"]');
-      if (!row || items.length <= n) return;
-      var btn = row.querySelector('.more-btn');
-      var show = btn.querySelector('[data-fold-show]');
-      var hide = btn.querySelector('[data-fold-hide]');
-      btn.querySelector('[data-fold-count]').textContent = '(' + items.length + ')';
-      function zet(open) {
-        items.forEach(function (c, i) { c.style.display = (!open && i >= n) ? 'none' : ''; });
-        show.hidden = open; hide.hidden = !open;
-        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      }
-      zet(false);
-      row.hidden = false;
-      btn.addEventListener('click', function () {
-        var open = btn.getAttribute('aria-expanded') !== 'true';
-        zet(open);
-        if (!open) grid.scrollIntoView({ block: 'start' });
-      });
-    });
-  </script>
-  <script src="/shared/downloads.js?v=20261015"></script>
   <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

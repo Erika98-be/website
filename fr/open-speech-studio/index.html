@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Open Speech Studio — Reconnaissance vocale locale pour l'AEC | OpenAEC Foundation</title>
-  <meta name="description" content="Reconnaissance vocale locale gratuite avec Whisper AI. Appuyez sur CTRL+Win et dictez dans n'importe quelle application — chat, e-mail, terminal, IDE. Sans…">
+  <title>Open Speech Studio — OpenAEC Foundation</title>
+  <meta name="description" content="Reconnaissance vocale gratuite et open source sur votre propre ordinateur : dictez dans n'importe quelle application avec un raccourci, transcrivez…">
   <link rel="canonical" href="https://open-aec.com/fr/open-speech-studio/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/open-speech-studio/">
@@ -15,24 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/open-speech-studio/">
   <!-- hreflang:end -->
 
-
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="Open Speech Studio — Reconnaissance vocale locale pour l'AEC | OpenAEC Foundation">
-  <meta property="og:description" content="Reconnaissance vocale locale gratuite avec Whisper AI. Appuyez sur CTRL+Win et dictez dans n'importe quelle application — chat, e-mail, terminal, IDE. Sans…">
+  <meta property="og:title" content="Open Speech Studio — OpenAEC Foundation">
+  <meta property="og:description" content="Reconnaissance vocale gratuite et open source sur votre propre ordinateur : dictez dans n'importe quelle application avec un raccourci, transcrivez…">
   <meta property="og:url" content="https://open-aec.com/fr/open-speech-studio/">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-speech-studio.png">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-speech-studio-hero.png">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Open Speech Studio — Lokale spraak-naar-tekst voor de AEC | OpenAEC Foundation">
-  <meta name="twitter:description" content="Reconnaissance vocale locale gratuite avec Whisper AI. Appuyez sur CTRL+Win et dictez dans n'importe quelle application — chat, e-mail, terminal, IDE. Sans…">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-speech-studio.png">
+  <meta name="twitter:title" content="Open Speech Studio">
+  <meta name="twitter:description" content="Reconnaissance vocale gratuite et open source sur votre propre ordinateur : dictez dans n'importe quelle application avec un raccourci, transcrivez…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-speech-studio-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -41,69 +38,142 @@
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-  <!-- Schema.org SoftwareApplication -->
+  <link rel="stylesheet" href="/shared/style.css?v=20261015">
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Open Speech Studio",
-    "alternateName": "OpenAEC Speech Studio",
-    "applicationCategory": "UtilitiesApplication",
-    "applicationSubCategory": "Speech Recognition",
-    "operatingSystem": "Windows 10, Windows 11",
-    "softwareVersion": "0.10.3",
-    "datePublished": "2026-05-19",
+    "applicationCategory": "MultimediaApplication",
+    "applicationSubCategory": "Speech recognition",
+    "operatingSystem": "Windows, macOS, Linux",
+    "softwareVersion": "0.12.2",
     "url": "https://open-aec.com/open-speech-studio/",
     "downloadUrl": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases",
-    "installUrl": "https://github.com/OpenAEC-Foundation/open-speech-studio/releases",
-    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
-    "description": "Gratis lokale spraak-naar-tekst tool voor AEC professionals. Druk CTRL+Windows en dicteer in elke applicatie - e-mail, chat, IDE, Outlook, terminal. 100% lokaal met Whisper AI, geen cloud, geen abonnement, GDPR-veilig. Alternatief voor Dragon NaturallySpeaking en Otter.ai.",
+    "license": "https://www.apache.org/licenses/LICENSE-2.0",
+    "description": "Free, open-source local speech-to-text. Dictate into any application with a global hotkey (hold or toggle), transcribe meetings in segments with microphone and, on Windows, PC audio for online meetings, transcribe audio and video files in parallel, custom dictionary with replacements, eight Whisper models from tiny to large-v3 with NVIDIA CUDA acceleration, 99 recognition languages, Piper text-to-speech with Dutch, Flemish and English voices, exports to TXT, Markdown and ODT, interface in 25 languages. For Windows, macOS and Linux.",
     "featureList": [
-      "Dicteer in elke applicatie via systeembrede overlay",
-      "100% lokaal met OpenAI Whisper - geen cloud",
-      "CUDA GPU-versnelling",
-      "Parallelle transcriptie van audiobestanden",
-      "Real-time vergader-transcriptie",
-      "99 talen ondersteund (Nederlands, Engels, Duits, Frans, ...)",
-      "Whisper modellen: tiny, base, small, medium, large",
-      "Sneltoetsen: CTRL+Win en CTRL+SHIFT+Spatie",
-      "Export naar TXT, SRT, VTT",
-      "Geschiedenis van transcripties",
-      "Automatische klembord-integratie",
-      "GDPR-compliant - data verlaat nooit je PC"
+      "Sneltoets in elk programma",
+      "Vasthouden of aan en uit",
+      "Tekst op je cursor",
+      "Geluid bij start en stop",
+      "Microfoontest",
+      "Online vergaderingen",
+      "Schrijft mee in segmenten",
+      "Niveau van microfoon en pc",
+      "Verslag als .txt, .md of .odt",
+      "Audio en video",
+      "Meerdere bestanden tegelijk",
+      "Opslaan als tekst",
+      "Acht spraakmodellen",
+      "99 talen",
+      "Eigen woordenboek",
+      "Videokaart of processor",
+      "Alles op je eigen pc",
+      "Voorlezen",
+      "App in 25 talen",
+      "Altijd bij de hand"
     ],
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-speech-studio-hero.png",
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock"
     },
+    "isAccessibleForFree": true,
+    "keywords": "speech to text, spraakherkenning, dicteren, dictation, Whisper, whisper.cpp, transcriptie, transcription, meeting minutes, notulen, text to speech, Piper, offline, local, Tauri",
+    "sameAs": [
+      "https://github.com/OpenAEC-Foundation/open-speech-studio"
+    ],
     "publisher": {
       "@type": "Organization",
       "name": "OpenAEC Foundation",
       "url": "https://open-aec.com"
-    },
-    "isAccessibleForFree": true,
-    "keywords": "spraakherkenning, speech-to-text, dicteren, whisper, lokaal, GDPR, AEC, bouw, notulen, transcriptie",
-    "sameAs": [
-      "https://github.com/OpenAEC-Foundation/open-speech-studio"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik uitschrijven?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Audio en video: WAV, MP3, FLAC, OGG, M4A, MP4, MKV, AVI, MOV en meer. Dicteren en vergaderen gaan rechtstreeks via je microfoon."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Open Speech Studio is een desktop-app; een webversie is er niet. Na de installatie download je in de app een spraakmodel naar keuze. In de pakketten voor macOS en Linux zit er al een."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost Open Speech Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. De app is gratis en open source onder de Apache-2.0-licentie, zonder account, abonnement of limiet op het aantal minuten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk bestandsformaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gedicteerde tekst komt direct in het programma waar je cursor staat. Transcripten van bestanden sla je op als .txt, vergaderverslagen als .txt, Markdown of .odt. Beide kunnen ook vanzelf in een map die je kiest."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Windows, macOS (Apple Silicon en Intel) en Linux (AppImage, .deb en .rpm). Op macOS is de app nog niet ondertekend met een Apple Developer ID: open hem de eerste keer met rechtsklik en Open. Voorlezen en pc-geluid opnemen werken daar nog niet. De .dmg voor Intel staat bij de releases op GitHub."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Gaat mijn stem naar internet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. De herkenning draait met Whisper op je eigen computer. Internet heb je alleen nodig om modellen en stemmen te downloaden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Heb ik een zware computer nodig?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. De kleine modellen draaien vlot op een gewone processor met 1 tot 2 GB geheugen. Voor de grootste modellen is een NVIDIA-videokaart met minstens 6 GB videogeheugen aan te raden."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welke talen herkent het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "99 talen, waaronder Nederlands, Engels, Frans, Duits, Turks en Spaans. Kies een vaste taal of laat de app hem zelf herkennen. De app zelf is er in 25 talen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Herkent het vaktermen en namen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Zet namen, afkortingen en vaktermen in het woordenboek, met desgewenst een vervanging. Vanaf het model small worden vaktaal en accenten duidelijk beter herkend."
+        }
+      }
     ]
   }
   </script>
-
-  <link rel="stylesheet" href="/shared/style.css?v=20261015">
-  <style>
-    .case-tag { display: inline-block; font-family: var(--font-code); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: #B45309; background: rgba(217,119,6,0.12); border-radius: var(--radius-full); padding: 3px 10px; margin-bottom: var(--sp-3); }
-    .panel-split-text h2 .why-sub { display: block; margin-top: 6px; font-size: 0.6em; font-weight: 500; color: var(--text-on-dark); opacity: 0.75; }
-    .price-callout { display: inline-block; margin-top: 6px; font-family: var(--font-code); font-size: 0.78rem; color: var(--deep-forge); background: var(--warm-gold); border-radius: var(--radius-full); padding: 3px 10px; }
-    /* Sneltoetsen */
-    .keys-row { display: flex; gap: var(--sp-4); justify-content: center; flex-wrap: wrap; align-items: center; margin: var(--sp-6) 0 var(--sp-4); }
-    .keys-row kbd { font-family: var(--font-code); font-size: 0.95rem; color: var(--deep-forge); background: #FFFFFF; border: 1px solid rgba(42,42,50,0.15); border-bottom-width: 3px; border-radius: var(--radius-md); padding: 9px 18px; box-shadow: var(--shadow-float); }
-    .keys-or { color: var(--text-on-light); }
-    .keys-note { color: var(--text-on-light); font-size: 0.95rem; text-align: center; max-width: 640px; margin: 0 auto; }
-    .cta-meta { font-family: var(--font-code); font-size: 0.8rem; margin-top: var(--sp-5) !important; }
-  </style>
 
   <meta name="i18n-static" content="fr">
   <!-- schema:start -->
@@ -139,7 +209,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "fr",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/fr/open-speech-studio/#breadcrumb"
         }
@@ -203,262 +273,263 @@
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">Écosystème OpenAEC</p>
+      <p class="pill-label" data-i18n="header.label">Reconnaissance vocale</p>
       <h1 data-i18n="header.title">Open <span class="accent">Speech</span> Studio</h1>
-      <p class="lead" data-i18n="header.desc">Reconnaissance vocale locale gratuite avec Whisper AI. Appuyez sur <strong>CTRL+Win</strong> et dictez dans n'importe quelle application — chat, e-mail, terminal, IDE. Sans cloud, sans abonnement, sans limites. v0.10.3 stable, 1 installateur, prêt en 30 secondes.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">Parlez au lieu de taper, dans n'importe quelle application et sans cloud</p>
+      <p class="lead" data-i18n="header.desc">Maintenez un raccourci, parlez et relâchez : votre texte apparaît là où était le curseur. Transcrivez aussi réunions et enregistrements. La reconnaissance tourne sur votre propre ordinateur, gratuitement et sans abonnement.</p>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.10.3/Open.Speech.Studio_0.10.3_x64-setup.exe" data-gh-download="OpenAEC-Foundation/open-speech-studio" data-platform="windows" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.cta.download">Télécharger l'installateur (.exe)</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/open-speech-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.cta.github">Voir sur GitHub</span></a>
+        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Télécharger</span></a>
+        <a href="#features" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Voir les fonctions</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/open-speech-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Code source</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg><span data-i18n="header.badge">v0.10.3 STABLE</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg>Whisper · 100% lokaal</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg>99 talen</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mic"/></svg><span data-i18n="header.proof1">Whisper · 99 langues</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg><span data-i18n="header.proof2">Local, sans cloud</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg><span>Windows · macOS · Linux</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="header.proof4">Application en 25 langues</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof5">Gratuit · Apache-2.0</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-speech-studio-tts.png" alt="Open Speech Studio — tekst-naar-spraak met lokale stemmen"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-speech-studio-models.png" alt="Open Speech Studio — Whisper-spraakmodellen beheren"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-speech-studio-settings.png" alt="Open Speech Studio — instellingen met GPU-versnelling"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-speech-studio-hero.png" width="917" height="573" alt="Open Speech Studio : les modèles vocaux de tiny à large-v3-turbo, avec vitesse, précision et mémoire par modèle" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-speech-studio-feat-dicteren.png" width="900" height="562" decoding="async" alt="Écran d'accueil indiquant que l'application est prête, avec le raccourci pour dicter" data-i18n="hl.dictate.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-speech-studio-feat-vergadering.png" width="900" height="562" decoding="async" alt="Écran Enregistrer et transcrire avec la langue, l'intervalle, le bouton d'enregistrement et le vumètre du micro" data-i18n="hl.meeting.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-speech-studio-feat-bestanden.png" width="900" height="562" decoding="async" alt="Écran Transcrire des fichiers avec une zone de dépôt pour fichiers audio et vidéo" data-i18n="hl.files.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-speech-studio-feat-voorlezen.png" width="917" height="573" decoding="async" alt="Écran Synthèse vocale avec le choix de la voix, des curseurs pour le débit et les pauses, et la bibliothèque de voix" data-i18n="hl.tts.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-speech-studio-feat-gpu.png" width="917" height="573" decoding="async" alt="Réglages vocaux avec la langue, une carte graphique NVIDIA active, le collage automatique et les effets sonores" data-i18n="hl.gpu.alt" data-i18n-attr="alt"></div>
         </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende">&rsaquo;</button>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap"><div class="container">
-    <div class="section-head">
-      <h2 data-i18n="usecases.heading">Cas d'usage pour les <span class="accent">professionnels AEC</span></h2>
-      <p data-i18n="usecases.intro">Que vous inspectiez sur site, preniez des notes en réunion de projet ou dictiez un e-mail entre deux tâches — Open Speech Studio fonctionne partout, même hors ligne.</p>
+  <nav class="pp-subnav" aria-label="Sur cette page" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Fonctions</a>
+      <a href="#download" data-i18n="subnav.download">Télécharger</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Nouveautés</a>
+      <a href="#faq" data-i18n="subnav.faq">FAQ</a>
+      <a href="#releases" data-i18n="subnav.releases">Versions</a>
     </div>
-    <div class="features">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-crane"/></svg></div>
-        <span class="case-tag" data-i18n="usecases.inspection.tag">CHANTIER</span>
-        <h4 data-i18n="usecases.inspection.title">Inspections sur site</h4>
-        <p data-i18n="usecases.inspection.desc">Dictez vos constats directement dans Open Field Studio tout en prenant des photos. Pas besoin d'enlever vos gants, ni de taper sur un petit écran. Parlez — c'est fait.</p>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Fonctions</p><h2 data-i18n="features.heading">Dicter, enregistrer des réunions et transcrire dans une seule application</h2><p data-i18n="features.sub">Commencez par les points forts ou choisissez un thème.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Fonctions par thème" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Points forts</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-dictate" data-tab="dictate" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg><span data-i18n="tabs.dictate">Dictée</span> <span class="pp-tab-count" data-count="dictate"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-meeting" data-tab="meeting" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg><span data-i18n="tabs.meeting">Réunions</span> <span class="pp-tab-count" data-count="meeting"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-files" data-tab="files" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg><span data-i18n="tabs.files">Fichiers</span> <span class="pp-tab-count" data-count="files"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-models" data-tab="models" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg><span data-i18n="tabs.models">Modèles et langues</span> <span class="pp-tab-count" data-count="models"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Toutes les fonctions</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-speech-studio-feat-dicteren.png" width="900" height="562" loading="lazy" decoding="async" alt="Écran d'accueil indiquant que l'application est prête, avec le raccourci pour dicter" data-i18n="hl.dictate.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.dictate.kicker">Dictée</span></p>
+            <h3 data-i18n="hl.dictate.title">Dictez votre texte dans n'importe quelle application</h3>
+            <p data-i18n="hl.dictate.desc">Maintenez Ctrl+Win, dites votre phrase et relâchez : le texte apparaît à l'emplacement du curseur, dans votre e-mail, rapport, chat ou éditeur de code. Vous préférez appuyer une fois pour démarrer et une fois pour arrêter ? C'est possible aussi, et vous choisissez le raccourci.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-speech-studio#usage" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-speech-studio-feat-vergadering.png" width="900" height="562" loading="lazy" decoding="async" alt="Écran Enregistrer et transcrire avec la langue, l'intervalle, le bouton d'enregistrement et le vumètre du micro" data-i18n="hl.meeting.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.meeting.kicker">Réunions</span></p>
+            <h3 data-i18n="hl.meeting.title">Le compte rendu de votre réunion, sans cloud</h3>
+            <p data-i18n="hl.meeting.desc">Enregistrez une réunion de chantier ou une conversation ; l'application transcrit au fur et à mesure, par segments de quelques minutes. En réunion en ligne, elle enregistre aussi le son du PC, pour que les participants de Teams, Zoom ou Meet figurent dans la transcription (Windows). Export en .txt, Markdown ou .odt.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-speech-studio#recording-a-meeting" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-speech-studio-feat-bestanden.png" width="900" height="562" loading="lazy" decoding="async" alt="Écran Transcrire des fichiers avec une zone de dépôt pour fichiers audio et vidéo" data-i18n="hl.files.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.files.kicker">Fichiers</span></p>
+            <h3 data-i18n="hl.files.title">Transcrire enregistrements et vidéos</h3>
+            <p data-i18n="hl.files.desc">Glissez des fichiers audio ou vidéo dans l'application, du WAV et MP3 au MP4 et MOV. Plusieurs fichiers sont traités en même temps. Copiez le texte, enregistrez-le en .txt ou faites enregistrer chaque transcription automatiquement dans un dossier.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-speech-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-speech-studio-feat-voorlezen.png" width="917" height="573" loading="lazy" decoding="async" alt="Écran Synthèse vocale avec le choix de la voix, des curseurs pour le débit et les pauses, et la bibliothèque de voix" data-i18n="hl.tts.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.tts.kicker">Lecture à voix haute</span></p>
+            <h3 data-i18n="hl.tts.title">Faites lire du texte avec une voix naturelle</h3>
+            <p data-i18n="hl.tts.desc">Choisissez une voix néerlandaise, flamande ou anglaise, réglez le débit, l'expressivité et les pauses, et faites lire un texte. Une voix pèse environ 60 Mo et tourne sur votre propre processeur. La lecture fonctionne pour l'instant sous Windows.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-speech-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-speech-studio-feat-gpu.png" width="917" height="573" loading="lazy" decoding="async" alt="Réglages vocaux avec la langue, une carte graphique NVIDIA active, le collage automatique et les effets sonores" data-i18n="hl.gpu.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">05</span> <span data-i18n="hl.gpu.kicker">Vitesse</span></p>
+            <h3 data-i18n="hl.gpu.title">Rapide sur un portable ordinaire, encore plus avec une carte graphique</h3>
+            <p data-i18n="hl.gpu.desc">Choisissez un modèle adapté à votre ordinateur : les petits modèles tournent bien sur le processeur, les grands sont plus précis. Sous Windows, une carte graphique NVIDIA est utilisée automatiquement, et vous voyez quelle carte est active et sa mémoire.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-speech-studio#models" target="_blank" rel="noopener"><span data-i18n="features.learnMore">En savoir plus</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
       </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div>
-        <span class="case-tag" data-i18n="usecases.meetings.tag">RÉUNIONS</span>
-        <h4 data-i18n="usecases.meetings.title">Comptes rendus de réunion</h4>
-        <p data-i18n="usecases.meetings.desc">Transcription en temps réel des réunions de projet sur place. Entièrement traité localement — aucune préoccupation de confidentialité pour les noms de clients, prix ou données de projet.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mail"/></svg></div>
-        <span class="case-tag" data-i18n="usecases.email.tag">COMMUNICATION</span>
-        <h4 data-i18n="usecases.email.title">E-mails rapides sur site</h4>
-        <p data-i18n="usecases.email.desc">Dictez dans Outlook ou Gmail entre deux tâches. Mains libres quand vos mains sont sales, que vous portez des gants de sécurité ou que vous tenez une échelle.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div>
-        <span class="case-tag" data-i18n="usecases.ai.tag">WORKFLOW IA</span>
-        <h4 data-i18n="usecases.ai.title">Écrire des prompts IA</h4>
-        <p data-i18n="usecases.ai.desc">Dictez un prompt pour Claude ou ChatGPT bien plus vite qu'en tapant. Parler est ~3× plus rapide et l'on formule souvent plus naturellement — idéal pour des prompts longs et détaillés.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div>
-        <span class="case-tag" data-i18n="usecases.code.tag">DÉVELOPPEURS</span>
-        <h4 data-i18n="usecases.code.title">Commentaires de code et commits</h4>
-        <p data-i18n="usecases.code.desc">Dictez explications de code, docstrings et messages de commit directement dans votre IDE ou terminal. Fonctionne dans VS Code, Cursor, Neovim — partout où vous pouvez saisir du texte.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div>
-        <span class="case-tag" data-i18n="usecases.accessibility.tag">ACCESSIBILITÉ</span>
-        <h4 data-i18n="usecases.accessibility.title">Accessibilité</h4>
-        <p data-i18n="usecases.accessibility.desc">Pour les personnes souffrant de TMS, de déficiences motrices ou de blessures temporaires. Utilisez votre ordinateur entièrement sans clavier — conforme RGPD, sans abonnement.</p>
-      </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="dictate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h3 data-i18n="f.hotkey.title">Raccourci dans toute application</h3><p data-i18n="f.hotkey.desc">Ctrl+Win ou Ctrl+Maj+Espace, ou votre propre combinaison de deux ou trois touches.</p></div></div></li>
+        <li class="pp-tile" data-cats="dictate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.mode.title">Maintenir ou basculer</h3><p data-i18n="f.mode.desc">Maintenez la touche pendant que vous parlez, ou appuyez une fois pour démarrer et une autre pour arrêter.</p></div></div></li>
+        <li class="pp-tile" data-cats="dictate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg></div><div><h3 data-i18n="f.paste.title">Texte au curseur</h3><p data-i18n="f.paste.desc">Le texte est saisi à l'emplacement du curseur. Une case ajoute Entrée, pratique pour le chat et les prompts d'IA.</p></div></div></li>
+        <li class="pp-tile" data-cats="dictate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg></div><div><h3 data-i18n="f.sounds.title">Son au début et à la fin</h3><p data-i18n="f.sounds.desc">Entendez quand l'enregistrement commence et se termine, avec deux jeux de sons et un volume réglable.</p></div></div></li>
+        <li class="pp-tile" data-cats="dictate meeting"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mic"/></svg></div><div><h3 data-i18n="f.mictest.title">Test du micro</h3><p data-i18n="f.mictest.desc">Choisissez votre micro, voyez le niveau et vérifiez avec une phrase test que la reconnaissance fonctionne.</p></div></div></li>
+        <li class="pp-tile" data-cats="meeting"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><h3 data-i18n="f.online.title">Réunions en ligne</h3><p data-i18n="f.online.desc">Micro et son du PC ensemble, pour que les participants de Teams, Zoom ou Meet figurent dans la transcription. Sous Windows.</p></div></div></li>
+        <li class="pp-tile" data-cats="meeting"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clock"/></svg></div><div><h3 data-i18n="f.segments.title">Transcription par segments</h3><p data-i18n="f.segments.desc">Automatiquement toutes les quelques minutes, ou à tout moment avec Enregistrer le segment, sans arrêter l'enregistrement.</p></div></div></li>
+        <li class="pp-tile" data-cats="meeting"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.meters.title">Niveaux du micro et du PC</h3><p data-i18n="f.meters.desc">Voyez pendant l'enregistrement si le son arrive, avec crête, moyenne et saturation.</p></div></div></li>
+        <li class="pp-tile" data-cats="meeting"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.meetexport.title">Compte rendu en .txt, .md ou .odt</h3><p data-i18n="f.meetexport.desc">Copiez tout ou exportez ; le fichier s'ouvre aussitôt dans votre éditeur. L'enregistrement automatique dans un dossier fixe est aussi possible.</p></div></div></li>
+        <li class="pp-tile" data-cats="files"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.formats.title">Audio et vidéo</h3><p data-i18n="f.formats.desc">WAV, MP3, FLAC, OGG, M4A, MP4, MKV, AVI, MOV et plus. Glissez-les dans l'application ou parcourez.</p></div></div></li>
+        <li class="pp-tile" data-cats="files"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.parallel.title">Plusieurs fichiers à la fois</h3><p data-i18n="f.parallel.desc">Les fichiers sont traités en parallèle ; vous choisissez combien à la fois.</p></div></div></li>
+        <li class="pp-tile" data-cats="files"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h3 data-i18n="f.txt.title">Enregistrer en texte</h3><p data-i18n="f.txt.desc">Copiez le texte, exportez en .txt ou faites enregistrer chaque transcription automatiquement dans un dossier.</p></div></div></li>
+        <li class="pp-tile" data-cats="models"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h3 data-i18n="f.models.title">Huit modèles vocaux</h3><p data-i18n="f.models.desc">De tiny (75 Mo) à large-v3 (3,1 Go). Pour chaque modèle, vous voyez vitesse, précision et mémoire.</p></div></div></li>
+        <li class="pp-tile" data-cats="models"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h3 data-i18n="f.languages.title">99 langues</h3><p data-i18n="f.languages.desc">Choisissez une langue fixe ou laissez l'application détecter la langue parlée.</p></div></div></li>
+        <li class="pp-tile" data-cats="models dictate"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-text"/></svg></div><div><h3 data-i18n="f.dictionary.title">Votre propre dictionnaire</h3><p data-i18n="f.dictionary.desc">Apprenez à l'application des noms, abréviations et termes techniques, avec un remplacement si vous le souhaitez.</p></div></div></li>
+        <li class="pp-tile" data-cats="models"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.gpu.title">Carte graphique ou processeur</h3><p data-i18n="f.gpu.desc">Sous Windows, une carte graphique NVIDIA accélère le calcul ; sans elle, tout tourne sur le processeur.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h3 data-i18n="f.local.title">Tout sur votre PC</h3><p data-i18n="f.local.desc">Votre voix et votre texte ne quittent pas votre ordinateur. Ni compte, ni abonnement, ni limite.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h3 data-i18n="f.tts.title">Lecture à voix haute</h3><p data-i18n="f.tts.desc">Neuf voix en néerlandais, flamand et anglais, avec débit, expressivité et pauses. Sous Windows.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h3 data-i18n="f.ui.title">Application en 25 langues</h3><p data-i18n="f.ui.desc">Du néerlandais et de l'anglais au turc, au polonais et au japonais.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><h3 data-i18n="f.tray.title">Toujours à portée de main</h3><p data-i18n="f.tray.desc">L'application attend dans la zone de notification et est prête dès que vous appuyez sur le raccourci.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel">
-    <div class="panel-split">
-      <div class="panel-split-text">
-        <p class="pill-label">GDPR · Offline</p>
-        <h2 data-i18n="why.heading">Pourquoi local ?</h2>
-        <p data-i18n="why.intro">La reconnaissance vocale cloud envoie votre voix vers des serveurs tiers. Open Speech Studio fait tout sur votre propre PC — plus rapide, plus sûr et sans frais mensuels.</p>
+  <section class="section surface-dark panel pp-anchor" id="download" data-pp-repo="OpenAEC-Foundation/open-speech-studio">
+    <div class="pp-dl">
+      <p class="pill-label" data-i18n="download.label">Télécharger</p>
+      <h2 data-i18n="download.title" data-pp-ver>Télécharger v0.12.2</h2>
+      <p class="pp-dl-lead" data-i18n="download.lead">Gratuit, sans compte. Pour Windows, macOS et Linux.</p>
+      <div class="pp-dl-main" data-pp-main>
+        <a href="https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.12.2/Open.Speech.Studio_0.12.2_x64-setup.exe" class="btn btn-glow btn-lg" data-pp-dl="windows" data-pp-primary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-os="windows" data-i18n="download.forWindows">Télécharger pour Windows</span><span data-os="macos" data-i18n="download.forMac" hidden>Télécharger pour macOS</span><span data-os="linux-appimage" data-i18n="download.forLinux" hidden>Télécharger pour Linux</span></a>
       </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h4 data-i18n="why.privacy.title">Vie privée</h4><p data-i18n="why.privacy.desc">Votre voix ne quitte jamais votre ordinateur. Conforme RGPD automatiquement — aucun DPA nécessaire avec des prestataires externes, aucun risque de fuite de données.</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg></div><div><h4 data-i18n="why.cost.title">Sans abonnement</h4><p data-i18n="why.cost.desc">Otter.ai facture ~20 €/mois. Dragon NaturallySpeaking ~500 € en une fois. Open Speech Studio est gratuit pour toujours — open source LGPL-3.0.</p><span class="price-callout" data-i18n="why.cost.callout">0 € pour toujours</span></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-infinity"/></svg></div><div><h4 data-i18n="why.limits.title">Sans limites d'utilisation</h4><p data-i18n="why.limits.desc">Dictez 10 heures par jour si vous voulez. Pas de quota API, pas de « Fair Use Policy », pas de factures surprise. Seul votre matériel limite.</p></div></li>
-      </ul>
-    </div>
-    <div class="cmp-wrap table-wrapper">
-      <table class="cmp-table">
-      <thead>
-        <tr>
-          <th data-i18n="compare.feature">Fonctionnalité</th>
-          <th class="us" data-i18n="compare.us">Open Speech Studio</th>
-          <th data-i18n="compare.dragon">Dragon NaturallySpeaking</th>
-          <th data-i18n="compare.otter">Otter.ai</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="row-label" data-i18n="compare.price">Prix</td>
-          <td class="us-cell" data-i18n="compare.priceUs">0 € (open source)</td>
-          <td data-i18n="compare.priceDragon">~500 € en une fois</td>
-          <td data-i18n="compare.priceOtter">~20 €/mois</td>
-        </tr>
-        <tr>
-          <td class="row-label" data-i18n="compare.local">100 % local</td>
-          <td class="us-cell" data-i18n="compare.yes">Oui</td>
-          <td data-i18n="compare.yes2">Oui</td>
-          <td data-i18n="compare.no">Non (cloud)</td>
-        </tr>
-        <tr>
-          <td class="row-label" data-i18n="compare.gdpr">Conforme RGPD sans DPA</td>
-          <td class="us-cell" data-i18n="compare.yes3">Oui</td>
-          <td data-i18n="compare.yes4">Oui</td>
-          <td data-i18n="compare.no2">Non</td>
-        </tr>
-        <tr>
-          <td class="row-label" data-i18n="compare.langs">Langues</td>
-          <td class="us-cell" data-i18n="compare.langsUs">99 langues (Whisper)</td>
-          <td data-i18n="compare.langsDragon">~6 langues</td>
-          <td data-i18n="compare.langsOtter">~10 langues</td>
-        </tr>
-        <tr>
-          <td class="row-label" data-i18n="compare.gpu">Accélération GPU (CUDA)</td>
-          <td class="us-cell" data-i18n="compare.yes5">Oui</td>
-          <td data-i18n="compare.no3">Non</td>
-          <td data-i18n="compare.na">N/A (cloud)</td>
-        </tr>
-        <tr>
-          <td class="row-label" data-i18n="compare.opensource">Open source</td>
-          <td class="us-cell" data-i18n="compare.opensourceUs">Oui (LGPL-3.0)</td>
-          <td data-i18n="compare.no4">Non</td>
-          <td data-i18n="compare.no5">Non</td>
-        </tr>
-      </tbody>
-    </table>
+      <p class="pp-dl-meta"><span data-os="windows" data-i18n="download.metaWindows">programme d'installation .exe</span><span data-os="macos" data-i18n="download.metaMacArm" hidden>.dmg pour Apple Silicon</span><span data-os="linux-appimage" data-i18n="download.metaLinux" hidden>AppImage, fonctionne sur la plupart des distributions</span> · <span data-pp-primary-size>681.3 MB</span></p>
+      <p class="pp-dl-mobile" data-pp-mobile hidden data-i18n="download.mobileNote">Open Speech Studio est une application de bureau. Téléchargez-la sur votre ordinateur.</p>
+      <details class="pp-dl-other" data-pp-other>
+        <summary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg><span data-i18n="download.other">Autres plateformes</span></summary>
+        <div class="pp-files">
+          <div class="pp-files-col"><h3>Windows</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.12.2/Open.Speech.Studio_0.12.2_x64-setup.exe" data-pp-dl="windows" data-pp-item="windows"><span class="pp-file"><span data-i18n="download.fileExe">Programme d'installation (.exe)</span><span class="pp-file-size"> · <span data-pp-size="windows">681.3 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.12.2/Open.Speech.Studio_0.12.2_x64_en-US.msi" data-pp-dl="windows-msi" data-pp-item="windows-msi"><span class="pp-file"><span data-i18n="download.fileMsi">Programme d'installation (.msi)</span><span class="pp-file-size"> · <span data-pp-size="windows-msi">846.4 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+          <div class="pp-files-col"><h3>macOS</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.12.2/Open.Speech.Studio_0.12.2_aarch64.dmg" data-pp-dl="macos" data-pp-item="macos"><span class="pp-file"><span data-i18n="download.fileDmgArm">.dmg (Apple Silicon)</span><span class="pp-file-size"> · <span data-pp-size="macos">435.6 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+          <div class="pp-files-col"><h3>Linux</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.12.2/Open.Speech.Studio_0.12.2_amd64.deb" data-pp-dl="linux-deb" data-pp-item="linux-deb"><span class="pp-file"><span data-i18n="download.fileDeb">.deb</span><span class="pp-file-size"> · <span data-pp-size="linux-deb">431.8 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.12.2/Open.Speech.Studio-0.12.2-1.x86_64.rpm" data-pp-dl="linux-rpm" data-pp-item="linux-rpm"><span class="pp-file"><span data-i18n="download.fileRpm">.rpm</span><span class="pp-file-size"> · <span data-pp-size="linux-rpm">481.5 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.12.2/Open.Speech.Studio_0.12.2_amd64.AppImage" data-pp-dl="linux-appimage" data-pp-item="linux-appimage"><span class="pp-file"><span data-i18n="download.fileAppImage">AppImage</span><span class="pp-file-size"> · <span data-pp-size="linux-appimage">505.2 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+        </div>
+      </details>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <div class="section-head">
-      <h2 data-i18n="features.heading">Fonctionnalités — que peut <span class="accent">faire</span> Open Speech Studio ?</h2>
-      <p data-i18n="features.intro">Open Speech Studio est plus qu'un outil de dictée. C'est une suite speech-to-text complète avec transcription de fichiers audio, enregistrement de réunions, plusieurs modèles Whisper et export vers les formats de sous-titres standard.</p>
-    </div>
-    <div class="features" id="oss-features" data-fold="6">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mic"/></svg></div>
-        <h4 data-i18n="features.dictate.title">Dictez partout</h4>
-        <p data-i18n="features.dictate.desc">Dictez du texte directement dans n'importe quelle application via une superposition globale au système. Fonctionne dans Outlook, Word, Chrome, VS Code, Slack, Teams — littéralement partout dans votre OS.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div>
-        <h4 data-i18n="features.transcribe.title">Transcription de fichiers audio</h4>
-        <p data-i18n="features.transcribe.desc">Transcrivez des fichiers audio (.mp3, .wav, .m4a, .ogg) avec traitement parallèle. Plusieurs fichiers à la fois, rapide et précis.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div>
-        <h4 data-i18n="features.meetings.title">Transcription de réunions en temps réel</h4>
-        <p data-i18n="features.meetings.desc">Enregistrez vos réunions de projet et regardez la transcription apparaître en temps réel. Compte-rendu automatique, même hors ligne sur le chantier.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div>
-        <h4 data-i18n="features.gpu.title">Accélération GPU CUDA</h4>
-        <p data-i18n="features.gpu.desc">Accélération GPU CUDA pour des résultats plus rapides. Sur un GPU moderne, Whisper Large tourne quasiment en temps réel — utilisation optimale de votre matériel.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div>
-        <h4 data-i18n="features.shortcuts.title">Raccourcis clavier</h4>
-        <p data-i18n="features.shortcuts.desc">CTRL+Win pour la superposition, CTRL+SHIFT+Espace en alternative. Pas de clic souris nécessaire, pas de recherche dans les menus — la dictée démarre en &lt;100 ms.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div>
-        <h4 data-i18n="features.models.title">Modèles Whisper AI</h4>
-        <p data-i18n="features.models.desc">5 modèles : tiny, base, small, medium, large. Choisissez entre vitesse (tiny) ou précision (large). Mémoire utilisée 1 à 10 Go selon le modèle.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div>
-        <h4 data-i18n="features.languages.title">99 langues</h4>
-        <p data-i18n="features.languages.desc">Whisper prend en charge 99 langues : néerlandais, anglais, allemand, français, espagnol, polonais, arabe, mandarin et bien d'autres. Détection automatique de la langue.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div>
-        <h4 data-i18n="features.overlay.title">Superposition de style Spotify</h4>
-        <p data-i18n="features.overlay.desc">Interface de superposition élégante et minimaliste avec visualisation en direct de l'onde sonore. Reste discrète, disparaît automatiquement après insertion.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-history"/></svg></div>
-        <h4 data-i18n="features.history.title">Historique</h4>
-        <p data-i18n="features.history.desc">Historique complet des transcriptions — interrogeable, réutilisable. Tout stocké localement, vous gardez le contrôle.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div>
-        <h4 data-i18n="features.export.title">Export TXT, SRT, VTT</h4>
-        <p data-i18n="features.export.desc">Exportez les transcriptions en texte brut (.txt) ou en sous-titres (.srt, .vtt) pour du contenu vidéo avec timestamps.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-        <h4 data-i18n="features.clipboard.title">Intégration presse-papiers</h4>
-        <p data-i18n="features.clipboard.desc">Intégration automatique au presse-papiers — dictez et collez directement, ou laissez le texte s'insérer automatiquement à la position du curseur.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div>
-        <h4 data-i18n="features.local.title">100 % local</h4>
-        <p data-i18n="features.local.desc">Tout fonctionne localement sur votre propre ordinateur. Vos données ne quittent jamais votre PC. Sans cloud, sans abonnement, sans limites. Conforme RGPD prêt à l'emploi.</p>
-      </div>
-    </div>
-    <p class="more-row" data-fold-for="oss-features" hidden>
-      <button type="button" class="btn btn-secondary btn-lg more-btn" aria-expanded="false" aria-controls="oss-features">
-        <span data-fold-show class="more-label"><span data-i18n="features.showAll">Afficher toutes les fonctions</span> <span class="more-count" data-fold-count></span></span>
-        <span data-fold-hide hidden data-i18n="features.showLess">Afficher moins</span>
-        <svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg>
-      </button>
-    </p>
-  </div></section>
-
-  <section class="section"><div class="container">
-    <div class="section-head">
-      <h2 data-i18n="shortcuts.title">Raccourcis clavier</h2>
-      <p data-i18n="shortcuts.desc">Démarrez la reconnaissance vocale partout dans votre système d'exploitation :</p>
-    </div>
-    <div class="keys-row">
-      <kbd>CTRL + Windows</kbd>
-      <span class="keys-or" data-i18n="shortcuts.or">ou</span>
-      <kbd>CTRL + SHIFT + Spatie</kbd>
-    </div>
-    <p class="keys-note" data-i18n="shortcuts.note">Configurable dans les paramètres — choisissez votre propre raccourci s'il entre en conflit avec d'autres logiciels.</p>
-  </div></section>
-
-  <section class="section"><div class="container">
-    <div class="panel-split on-light">
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
+    <div class="panel-split">
       <div class="panel-split-text">
-        <h2 data-i18n="tech.heading">Stack <span class="accent">technique</span></h2>
+        <p class="pill-label" data-i18n="whatsnew.label">Nouveau dans la v0.12</p>
+        <h2 data-i18n="whatsnew.title">Réunions en ligne, <span>désormais aussi sur macOS et Linux</span></h2>
+        <p data-i18n="whatsnew.desc">La version 0.12 enregistre aussi le son du PC en réunion en ligne, apporte des installateurs pour macOS et Linux et ajoute deux modèles vocaux de taille moyenne.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/open-speech-studio/releases" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaChangelog">Toutes les notes de version</span></a>
+          <a href="#download" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="whatsnew.ctaDownload">Télécharger</span></a>
+        </div>
       </div>
-      <div class="panel-split-body">
-        <p data-i18n="tech.desc">Open Speech Studio repose sur une stack moderne et performante. <strong>OpenAI Whisper</strong> pour une reconnaissance vocale à l'état de l'art. <strong>Rust</strong> pour un backend léger et rapide (sans runtime Python). <strong>Tauri 2</strong> pour l'application de bureau — bien plus léger qu'Electron (~10 Mo au lieu de 200 Mo). <strong>TypeScript + Svelte</strong> pour l'interface. Entièrement open source sous LGPL-3.0.</p>
-      </div>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><h4 data-i18n="whatsnew.items.online.title">Réunions en ligne</h4><p data-i18n="whatsnew.items.online.desc">Enregistrez micro et son du PC ensemble, pour que tous les participants de Teams, Zoom ou Meet figurent dans la transcription (Windows).</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="whatsnew.items.macos.title">De retour sur macOS</h4><p data-i18n="whatsnew.items.macos.desc">Pour Apple Silicon et Intel, avec Ctrl+Maj+Espace pour dicter. La lecture à voix haute et le son du PC suivront.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h4 data-i18n="whatsnew.items.linux.title">Linux prêt à l'emploi</h4><p data-i18n="whatsnew.items.linux.desc">AppImage, .deb et .rpm avec moteur vocal et modèle inclus. Ctrl+Win fonctionne désormais aussi sous Linux (X11).</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="whatsnew.items.models.title">Deux nouveaux modèles</h4><p data-i18n="whatsnew.items.models.desc">Versions compactes de large-v3-turbo (574 et 874 Mo) : plus précises que small, plus légères que medium.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h4 data-i18n="whatsnew.items.export.title">Compte rendu ouvert aussitôt</h4><p data-i18n="whatsnew.items.export.desc">Un compte rendu enregistré en .txt, .md ou .odt s'ouvre aussitôt dans votre éditeur.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><h4 data-i18n="whatsnew.items.signed.title">Téléchargements signés</h4><p data-i18n="whatsnew.items.signed.desc">Les installateurs Windows sont signés ; les paquets Linux ont une signature (.asc) vérifiable.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Questions fréquentes</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Quels fichiers puis-je transcrire ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">Audio et vidéo : WAV, MP3, FLAC, OGG, M4A, MP4, MKV, AVI, MOV et plus. La dictée et les réunions passent directement par votre micro.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Dois-je installer quelque chose ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Oui. Open Speech Studio est une application de bureau ; il n'existe pas de version web. Après l'installation, vous téléchargez dans l'application le modèle vocal de votre choix. Les paquets macOS et Linux en contiennent déjà un.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">Combien coûte Open Speech Studio ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Rien. L'application est gratuite et open source sous licence Apache-2.0, sans compte, abonnement ni limite de minutes.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.save.q">Dans quel format mon travail est-il enregistré ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.save.a">Le texte dicté arrive directement dans l'application où se trouve le curseur. Les transcriptions de fichiers s'enregistrent en .txt, les comptes rendus de réunion en .txt, Markdown ou .odt. Les deux peuvent aussi être enregistrés automatiquement dans un dossier de votre choix.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">Sur quels systèmes fonctionne-t-elle ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">Windows, macOS (Apple Silicon et Intel) et Linux (AppImage, .deb et .rpm). Sur macOS, l'application n'est pas encore signée avec un Apple Developer ID : ouvrez-la la première fois par clic droit puis Ouvrir. La lecture à voix haute et l'enregistrement du son du PC n'y fonctionnent pas encore. Le .dmg pour Intel se trouve dans les versions sur GitHub.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.privacy.q">Ma voix part-elle sur internet ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.privacy.a">Non. La reconnaissance tourne avec Whisper sur votre propre ordinateur. Internet ne sert qu'à télécharger les modèles et les voix.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.hardware.q">Me faut-il un ordinateur puissant ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.hardware.a">Non. Les petits modèles tournent bien sur un processeur ordinaire avec 1 à 2 Go de mémoire. Pour les plus grands, une carte graphique NVIDIA avec au moins 6 Go de mémoire vidéo est conseillée.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.languages.q">Quelles langues reconnaît-elle ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.languages.a">99 langues, dont le néerlandais, l'anglais, le français, l'allemand, le turc et l'espagnol. Choisissez une langue fixe ou laissez l'application la détecter. L'application elle-même existe en 25 langues.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.jargon.q">Reconnaît-elle les termes techniques et les noms ?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.jargon.a">Ajoutez noms, abréviations et termes techniques au dictionnaire, avec un remplacement si vous le souhaitez. À partir du modèle small, le jargon et les accents sont nettement mieux reconnus.</p></div>
+      </details>
     </div>
   </div></section>
+
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Technologie</h2><p data-i18n="tech.sub">Pour ceux qui veulent savoir comment c'est construit.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.tauri.title">Tauri 2</h4><p data-i18n="tech.tauri.desc">Une fine couche native en Rust pour Windows, macOS et Linux.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-mic"/></svg></div><div><h4 data-i18n="tech.whisper.title">whisper.cpp</h4><p data-i18n="tech.whisper.desc">Les modèles Whisper d'OpenAI, exécutés localement, avec CUDA sous Windows et Metal sur Apple Silicon.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="tech.solid.title">SolidJS et Vite</h4><p data-i18n="tech.solid.desc">Une interface rapide en TypeScript, en 25 langues et au style OpenAEC.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h4 data-i18n="tech.cpal.title">cpal</h4><p data-i18n="tech.cpal.desc">L'audio du micro et, sous Windows, le son du PC via le loopback WASAPI.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h4 data-i18n="tech.piper.title">Piper</h4><p data-i18n="tech.piper.desc">Synthèse vocale locale avec des voix néerlandaises, flamandes et anglaises.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><h4 data-i18n="tech.release.title">GitHub Actions</h4><p data-i18n="tech.release.desc">Chaque version est compilée et vérifiée automatiquement par plateforme ; les paquets Windows et Linux sont signés.</p></div></div>
+    </div>
+  </div></section>
+
 
   <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
   <div data-release-notes="open-speech-studio"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Afficher toutes les versions</span><span data-rel-hide hidden data-i18n="releases.showLess">Afficher seulement les trois dernières</span></button>
+    <a href="https://github.com/OpenAEC-Foundation/open-speech-studio/releases" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.github">Toutes les versions sur GitHub</span></a>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
-      <h2 data-i18n="finalcta.heading">Téléchargez maintenant <span class="accent">— installation en 30 secondes</span></h2>
-      <p data-i18n="finalcta.desc">1 fichier d'installation (.exe), sans inscription, sans compte, sans carte bancaire. Prêt à dicter en &lt;1 minute. Fonctionne sur Windows 10 et Windows 11.</p>
+      <h2 data-i18n="header.title">Open <span class="accent">Speech</span> Studio</h2>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/open-speech-studio/releases/download/v0.10.3/Open.Speech.Studio_0.10.3_x64-setup.exe" data-gh-download="OpenAEC-Foundation/open-speech-studio" data-platform="windows" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="finalcta.download">Télécharger l'installateur (.exe)</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/open-speech-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="finalcta.github">Voir le code source sur GitHub</span></a>
+        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Télécharger</span></a>
+        <a href="#features" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Voir les fonctions</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/open-speech-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Code source</span></a>
       </div>
-      <p class="cta-meta" data-i18n="finalcta.meta">v0.10.3 stable &middot; LGPL-3.0 &middot; Windows 10/11 &middot; téléchargement ~40 Mo</p>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -512,53 +583,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-<script>
-  (function(){
-    const track = document.getElementById('sliderTrack');
-    const dots = document.getElementById('sliderDots');
-    if(!track || !dots) return;
-    let current = 0;
-    const slides = track.children.length;
-    for(let i=0;i<slides;i++){
-      const d = document.createElement('button');
-      d.className = 'slider-dot' + (i===0?' active':'');
-      d.onclick = ()=>slideTo(i);
-      dots.appendChild(d);
-    }
-    window.slideMove = function(dir){slideTo(current+dir);};
-    window.slideTo = function(i){
-      current = (i+slides)%slides;
-      track.style.transform = 'translateX(-' + (current*100) + '%)';
-      dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-    };
-  })();
-</script>
-  <script src="/shared/downloads.js?v=20261015"></script>
-<script>
-  // Lange lijsten: de eerste paar zichtbaar, de rest achter de vaste "Toon alles"-knop. Zonder JavaScript staat alles open.
-  document.querySelectorAll('[data-fold]').forEach(function (grid) {
-    var n = +grid.getAttribute('data-fold');
-    var items = Array.prototype.slice.call(grid.children);
-    var row = document.querySelector('[data-fold-for="' + grid.id + '"]');
-    if (!row || items.length <= n) return;
-    var btn = row.querySelector('.more-btn');
-    var show = btn.querySelector('[data-fold-show]');
-    var hide = btn.querySelector('[data-fold-hide]');
-    btn.querySelector('[data-fold-count]').textContent = '(' + items.length + ')';
-    function zet(open) {
-      items.forEach(function (c, i) { c.style.display = (!open && i >= n) ? 'none' : ''; });
-      show.hidden = open; hide.hidden = !open;
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    }
-    zet(false);
-    row.hidden = false;
-    btn.addEventListener('click', function () {
-      var open = btn.getAttribute('aria-expanded') !== 'true';
-      zet(open);
-      if (!open) grid.scrollIntoView({ block: 'start' });
-    });
-  });
-</script>
-<script src="/shared/i18n.js?v=20261015"></script>
+  <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

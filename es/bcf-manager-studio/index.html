@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OpenAEC BCF Manager Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Plataforma open source de gestión de incidencias BCF 2.1 para proyectos BIM. Gestiona incidencias, comunícate con los equipos y vincúlalas a modelos IFC.">
+  <title>BCF Manager Studio — OpenAEC Foundation</title>
+  <meta name="description" content="Concepto de gestión de incidencias de código abierto para proyectos BIM: incidencias BCF 2.1 por proyecto, con capturas, comentarios, un panel, importación…">
   <link rel="canonical" href="https://open-aec.com/es/bcf-manager-studio/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/bcf-manager-studio/">
@@ -15,23 +15,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/bcf-manager-studio/">
   <!-- hreflang:end -->
 
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
-  <meta property="og:title" content="OpenAEC BCF Manager Studio">
-  <meta property="og:description" content="Plataforma open source de gestión de incidencias BCF 2.1 para proyectos BIM. Gestiona incidencias, comunícate con los equipos y vincúlalas a modelos IFC.">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/bcf-manager-studio-dashboard.jpg">
+  <meta property="og:title" content="BCF Manager Studio — OpenAEC Foundation">
+  <meta property="og:description" content="Concepto de gestión de incidencias de código abierto para proyectos BIM: incidencias BCF 2.1 por proyecto, con capturas, comentarios, un panel, importación…">
   <meta property="og:url" content="https://open-aec.com/es/bcf-manager-studio/">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/bcf-manager-studio-hero.png">
   <meta property="og:locale" content="es_ES">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="OpenAEC BCF Manager Studio">
-  <meta name="twitter:description" content="Plataforma open source de gestión de incidencias BCF 2.1 para proyectos BIM. Gestiona incidencias, comunícate con los equipos y vincúlalas a modelos IFC.">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/bcf-manager-studio-dashboard.jpg">
+  <meta name="twitter:title" content="BCF Manager Studio">
+  <meta name="twitter:description" content="Concepto de gestión de incidencias de código abierto para proyectos BIM: incidencias BCF 2.1 por proyecto, con capturas, comentarios, un panel, importación…">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/bcf-manager-studio-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -41,28 +39,41 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "BCF Manager Studio",
-    "applicationCategory": "EngineeringApplication",
-    "applicationSubCategory": "BIM / Issue Management",
-    "operatingSystem": "Web (self-hosted)",
+    "applicationCategory": "BusinessApplication",
+    "applicationSubCategory": "BIM Collaboration",
+    "operatingSystem": "Web, Self-hosted",
     "url": "https://open-aec.com/bcf-manager-studio/",
-        "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
-    "description": "Open-source BCF 2.1 issue management platform for BIM projects. BCF API 2.1 server, IFC GlobalId linking, viewpoints, team collaboration. Self-hosted with Docker.",
+    "description": "Concept for open-source BCF 2.1 issue management in BIM projects: issues per project with viewpoint snapshots, comments, assignment and a dashboard, .bcfzip import and export, the BCF API 2.1 with API keys per project, OIDC single sign-on and storage in your own Nextcloud. Self-hosted with Docker. Still in development, no release yet.",
     "featureList": [
-      "BCF 2.1 issue management",
-      "Viewpoints met 3D-snapshots",
-      "Team-samenwerking",
-      "BCF XML import/export",
-      "REST API (BCF API 2.1)",
-      "Projectbeheer",
-      "IFC-koppeling",
-      "Self-hosted",
-      "Cloudopslag"
+      "Projecten aanmaken",
+      "Nieuw issue",
+      "Status en prioriteit",
+      "Dashboard per project",
+      "Filteren",
+      "Snapshots bij elk issue",
+      "Camerastandpunt",
+      "Elementen via de IFC GlobalId",
+      "Reacties",
+      "Toewijzing en deadline",
+      "Leden per project",
+      "Inloggen met single sign-on",
+      "BCF-bestanden importeren",
+      "BCF-bestanden exporteren",
+      "BCF API 2.1",
+      "API-sleutels per project",
+      "Opslaan in je Nextcloud",
+      "Projectmanifest bijgewerkt",
+      "Op je eigen server",
+      "Meerdere organisaties",
+      "Vertrouwde werkbalk"
     ],
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/bcf-manager-studio-hero.png",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -70,8 +81,10 @@
       "availability": "https://schema.org/InStock"
     },
     "isAccessibleForFree": true,
-    "keywords": "BCF, BIM issues, BCF 2.1, BCF API 2.1, BIMcollab alternative, issue management",
-    "sameAs": "https://github.com/OpenAEC-Foundation/openaec-bcf-platform",
+    "keywords": "BCF, BCF 2.1, BCF API, BIM, issue management, BIM coordination, clash, IFC, buildingSMART, Nextcloud, self-hosted, OpenAEC",
+    "sameAs": [
+      "https://github.com/OpenAEC-Foundation/openaec-bcf-platform"
+    ],
     "publisher": {
       "@type": "Organization",
       "name": "OpenAEC Foundation",
@@ -79,9 +92,94 @@
     }
   }
   </script>
-  <style>
-    .tech-chips { margin-bottom: var(--sp-6); justify-content: flex-start; }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "BCF-bestanden (.bcfzip) in versie 2.1, zoals Solibri, Navisworks, BIMcollab, Revit en de OpenAEC-apps ze maken. BCF 3.0 wordt nog niet ondersteund. Het IFC-model zelf opent BCF Manager Studio niet; daarvoor gebruik je een IFC-viewer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, op een server. BCF Manager Studio is een serverprogramma dat je met Docker op je eigen server zet, samen met PostgreSQL. Je team werkt daarna gewoon in de browser. Er is nog geen kant-en-klare release, en de proefversie online is op 8 oktober 2026 gestopt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. De broncode staat openbaar op GitHub en je betaalt alleen voor je eigen server. Er staat nog geen licentiebestand bij de broncode; dat volgt bij de eerste release."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk bestandsformaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De issues staan in een PostgreSQL-database op je server, de snapshots als afbeeldingen ernaast. Je exporteert ze op elk moment als .bcfzip, de open standaard van buildingSMART, of slaat ze zo op in je Nextcloud."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De server draait in Docker, op Linux. Je team werkt in een moderne browser op Windows, macOS of Linux."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de bouwpraktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. BCF is de open standaard van buildingSMART voor BIM-coördinatie: een modelcontrole levert issues op, die je bespreekt, toewijst en afsluit. Statussen, prioriteiten, fasen en labels volgen BCF 2.1, zodat ze heel blijven als je ze uitwisselt met andere partijen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Er is nog geen MCP-server. Wel kan een assistent of script met een API-sleutel via de BCF API 2.1 issues, reacties en viewpoints van een project lezen en aanmaken."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik het al gebruiken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet zomaar. BCF Manager Studio is een concept: er is geen release en geen openbare proefversie meer, en sinds april 2026 ligt de ontwikkeling stil. Wie wil, kan het uit de broncode op GitHub zelf bouwen en op een eigen server zetten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik een issue in het scherm aanpassen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Deels. In het scherm maak je issues aan en schrijf je reacties. Status, toewijzing en deadline van een bestaand issue wijzig je nog niet in het scherm, wel via een BCF-import of de API. Ook zoeken in de issuelijst komt nog."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Werkt het samen met Revit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Via BCF-bestanden wel: een .bcfzip uit Revit lees je gewoon in. Daarnaast is er een aparte testversie van een plug-in voor Revit 2025 die .bcfzip-bestanden in Revit opent. Een rechtstreekse verbinding tussen die plug-in en BCF Manager Studio werkt nog niet."
+        }
+      }
+    ]
+  }
+  </script>
 
   <meta name="i18n-static" content="es">
   <!-- schema:start -->
@@ -117,7 +215,7 @@
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "es",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-29",
         "breadcrumb": {
           "@id": "https://open-aec.com/es/bcf-manager-studio/#breadcrumb"
         }
@@ -146,7 +244,7 @@
   <!-- schema:end -->
 </head>
 <body class="page-panels">
-  <div id="shared-nav"><!-- nav:start -->
+    <div id="shared-nav"><!-- nav:start -->
 <nav class="navbar">
   <div class="nav-container">
     <a href="/es/" class="nav-brand" aria-label="OpenAEC — home"><img class="nav-logo" src="/shared/assets/logo/openaec-symbol-v2-transparent.svg" alt="" width="28" height="32"><span class="nav-word">Open<span class="accent">AEC</span></span></a>
@@ -176,154 +274,231 @@
   </div>
 </nav>
 <!-- nav:end --></div>
-  <script src="/shared/nav.js?v=20261015"></script>
-  <script src="/shared/feedback.js?v=20261022" defer></script>
+<script src="/shared/nav.js?v=20261015"></script>
+<script src="/shared/feedback.js?v=20261022" defer></script>
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">OpenAEC Ecosystem</p>
-      <h1 data-i18n="header.title">BCF <span class="accent">Manager</span> Studio</h1>
-      <p class="lead" data-i18n="header.desc">Plataforma open source de gestión de incidencias BCF 2.1 para proyectos BIM. Gestiona incidencias, comunícate con los equipos y vincúlalas a modelos IFC.</p>
+      <p class="pill-label" data-i18n="header.label">Colaboración BIM</p>
+      <h1 data-i18n="header.title"><span class="accent">BCF</span> Manager Studio</h1>
+      <p class="pp-tagline" data-i18n="header.tagline">Todas las incidencias BIM de un proyecto en un solo lugar, en tu propio servidor</p>
+      <p class="lead" data-i18n="header.desc">BCF Manager Studio es un concepto de gestión de incidencias en proyectos BIM. Reúnes por proyecto los hallazgos de las comprobaciones del modelo, los comentas con tu equipo y los pasas como archivo BCF a cualquier otro programa BIM.</p>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/openaec-bcf-platform" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="cta.github">GitHub</span></a>
+        <a href="#features" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Ver las funciones</span></a>
+        <a href="#faq" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="header.faqBtn">Preguntas frecuentes</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/openaec-bcf-platform" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Código fuente</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg><span data-i18n="header.badge">En desarrollo</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg>BCF 2.1 · REST API</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg>Self-hosted · Docker</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span>BCF 2.1 · .bcfzip</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg><span>BCF API 2.1</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof3">Tu propio servidor · Docker</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg><span data-i18n="header.proof4">Inicio de sesión único</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="header.proof5">Concepto · gratis</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/bcf-manager-studio-dashboard.jpg" alt="BCF Manager Studio - Projectdashboard met issues per prioriteit" width="1920" height="1080"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/bcf-manager-studio-issue.jpg" alt="BCF Manager Studio - Issue met viewpoint, beschrijving en reacties" width="1920" height="1080"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/bcf-manager-studio-issues.jpg" alt="BCF Manager Studio - Issuelijst met status en prioriteit" width="1920" height="1080"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/bcf-manager-studio-projecten.jpg" alt="BCF Manager Studio - Projectoverzicht" width="1920" height="1080"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/bcf-manager-studio-hero.png" width="1728" height="1080" alt="Panel de un edificio residencial ficticio con el número de incidencias abiertas, en curso y cerradas, un gráfico de barras por prioridad y tarjetas de incidencias con capturas del modelo" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/bcf-manager-studio-feat-projecten.png" width="1200" height="750" decoding="async" alt="Vista general de tres proyectos ficticios, cada uno con una imagen del modelo, ubicación y una breve descripción" data-i18n="hl.issues.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/bcf-manager-studio-feat-issues.png" width="1200" height="750" decoding="async" alt="Lista de incidencias de un edificio residencial ficticio con siete incidencias, cada una con estado, prioridad, tipo y fecha" data-i18n="hl.list.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/bcf-manager-studio-feat-viewpoint.png" width="1200" height="750" decoding="async" alt="Incidencia sobre un elemento de cubierta con la captura del modelo arriba y el elemento afectado resaltado en azul" data-i18n="hl.model.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/bcf-manager-studio-feat-bespreken.png" width="1200" height="750" decoding="async" alt="Incidencia con la descripción, una serie de comentarios y a la derecha los detalles: estado, prioridad, fase, asignada a, fecha límite y etiquetas" data-i18n="hl.team.alt" data-i18n-attr="alt"></div>
         </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende">&rsaquo;</button>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="why.title">¿Por qué BCF <span class="accent">Manager</span> Studio?</h2>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="notice.text">Concepto: aún no hay ninguna versión para instalar, y la versión de prueba en línea se cerró el 8 de octubre de 2026. Las capturas proceden de una instalación de prueba local con proyectos ficticios.</span></p>
+  </div>
+
+  <nav class="pp-subnav" aria-label="En esta página" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Funciones</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Novedades</a>
+      <a href="#faq" data-i18n="subnav.faq">Preguntas</a>
+      <a href="#releases" data-i18n="subnav.releases">Versiones</a>
+    </div>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Funciones</p><h2 data-i18n="features.heading">Del hallazgo a la solución, con todo el equipo</h2><p data-i18n="features.sub">Empieza por lo más destacado o elige un tema.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Funciones por tema" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Destacados</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-issues" data-tab="issues" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg><span data-i18n="tabs.issues">Proyectos e incidencias</span> <span class="pp-tab-count" data-count="issues"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-model" data-tab="model" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg><span data-i18n="tabs.model">Vista del modelo</span> <span class="pp-tab-count" data-count="model"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-team" data-tab="team" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg><span data-i18n="tabs.team">Colaboración</span> <span class="pp-tab-count" data-count="team"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-exchange" data-tab="exchange" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg><span data-i18n="tabs.exchange">BCF y API</span> <span class="pp-tab-count" data-count="exchange"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-server" data-tab="server" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="tabs.server">Tu servidor</span> <span class="pp-tab-count" data-count="server"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Todas las funciones</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/bcf-manager-studio-feat-projecten.png" width="1200" height="750" loading="lazy" decoding="async" alt="Vista general de tres proyectos ficticios, cada uno con una imagen del modelo, ubicación y una breve descripción" data-i18n="hl.issues.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.issues.kicker">Proyectos</span></p>
+            <h3 data-i18n="hl.issues.title">Cada proyecto con su propia lista de incidencias</h3>
+            <p data-i18n="hl.issues.desc">Crea por proyecto un único lugar para todos los hallazgos, con nombre, ubicación, descripción e imagen del proyecto. La vista general muestra de un vistazo de qué edificio se trata, y nadie vuelve a buscar en correos y hojas de cálculo sueltos.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/bcf-manager-studio-feat-issues.png" width="1200" height="750" loading="lazy" decoding="async" alt="Lista de incidencias de un edificio residencial ficticio con siete incidencias, cada una con estado, prioridad, tipo y fecha" data-i18n="hl.list.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.list.kicker">Vista general</span></p>
+            <h3 data-i18n="hl.list.title">Ve en una sola lista lo que sigue abierto</h3>
+            <p data-i18n="hl.list.desc">Cada incidencia aparece en la lista con su estado, prioridad y tipo, como colisión, incidencia u observación. El panel cuenta las incidencias abiertas, en curso y cerradas, y muestra por prioridad dónde está el trabajo.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/bcf-manager-studio-feat-viewpoint.png" width="1200" height="750" loading="lazy" decoding="async" alt="Incidencia sobre un elemento de cubierta con la captura del modelo arriba y el elemento afectado resaltado en azul" data-i18n="hl.model.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.model.kicker">Vista del modelo</span></p>
+            <h3 data-i18n="hl.model.title">Ve enseguida dónde está el problema</h3>
+            <p data-i18n="hl.model.desc">Cada incidencia muestra la captura del modelo, con la posición de la cámara. El punto de vista remite a los elementos por su IFC GlobalId, de modo que un visor BCF salta directamente a la pieza correcta.</p>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/bcf-manager-studio-feat-bespreken.png" width="1200" height="750" loading="lazy" decoding="async" alt="Incidencia con la descripción, una serie de comentarios y a la derecha los detalles: estado, prioridad, fase, asignada a, fecha límite y etiquetas" data-i18n="hl.team.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.team.kicker">Colaboración</span></p>
+            <h3 data-i18n="hl.team.title">Comenta la incidencia donde corresponde</h3>
+            <p data-i18n="hl.team.desc">Los comentarios están en la propia incidencia, con fecha y hora, para que toda la conversación quede junta. Al lado ves a quién está asignada, la fecha límite, la fase y las etiquetas.</p>
+          </div>
+        </article>
       </div>
-      <div class="panel-split-body">
-        <p data-i18n="why.desc1">Las herramientas BCF existentes suelen formar parte de plataformas BIM caras y propietarias. BCF Manager Studio ofrece una alternativa independiente y open source que cualquiera puede usar: gratis, sin costes de licencia, sin vendor lock-in.</p>
-        <p data-i18n="why.desc2">La plataforma se ejecuta en local o en tu propio servidor. Tus datos siguen siendo tuyos. Conéctala a tu propio visor IFC, comparte incidencias con tu equipo y exporta a cualquier paquete compatible con BCF.</p>
-      </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="issues"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.projects.title">Crear proyectos</h3><p data-i18n="f.projects.desc">Con nombre, ubicación y descripción, y una imagen propia del proyecto.</p></div></div></li>
+        <li class="pp-tile" data-cats="issues"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg></div><div><h3 data-i18n="f.newissue.title">Nueva incidencia</h3><p data-i18n="f.newissue.desc">Título, descripción, tipo, estado y prioridad en un solo formulario.</p></div></div></li>
+        <li class="pp-tile" data-cats="issues"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h3 data-i18n="f.status.title">Estado y prioridad</h3><p data-i18n="f.status.desc">Abierta, activa, cerrada o reabierta; de baja a crítica, como las define BCF.</p></div></div></li>
+        <li class="pp-tile" data-cats="issues"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.dashboard.title">Panel por proyecto</h3><p data-i18n="f.dashboard.desc">El número de incidencias abiertas, en curso y cerradas, y un gráfico de barras por prioridad.</p></div></div></li>
+        <li class="pp-tile" data-cats="issues"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.filters.title">Filtrar</h3><p data-i18n="f.filters.desc">Muestra en el panel solo las incidencias con un estado o prioridad concretos.</p></div></div></li>
+        <li class="pp-tile" data-cats="model issues"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h3 data-i18n="f.snapshots.title">Capturas en cada incidencia</h3><p data-i18n="f.snapshots.desc">La imagen del modelo aparece en grande en la incidencia y en pequeño en las tarjetas del panel.</p></div></div></li>
+        <li class="pp-tile" data-cats="model"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h3 data-i18n="f.camera.title">Posición de la cámara</h3><p data-i18n="f.camera.desc">Perspectiva u ortográfica, con la posición de la cámara guardada en el punto de vista.</p></div></div></li>
+        <li class="pp-tile" data-cats="model exchange"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.globalid.title">Elementos por IFC GlobalId</h3><p data-i18n="f.globalid.desc">Selección, visibilidad y coloreado por elemento, para que un visor muestre la pieza correcta.</p></div></div></li>
+        <li class="pp-tile" data-cats="team"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h3 data-i18n="f.comments.title">Comentarios</h3><p data-i18n="f.comments.desc">Escribe un comentario en la incidencia; cada comentario lleva fecha y hora.</p></div></div></li>
+        <li class="pp-tile" data-cats="team"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-calendar"/></svg></div><div><h3 data-i18n="f.details.title">Asignación y fecha límite</h3><p data-i18n="f.details.desc">A quién está asignada la incidencia, la fecha límite, la fase y las etiquetas, tal como vienen del archivo BCF.</p></div></div></li>
+        <li class="pp-tile" data-cats="team"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div><div><h3 data-i18n="f.members.title">Miembros por proyecto</h3><p data-i18n="f.members.desc">Añade compañeros a un proyecto como propietario, administrador, miembro u observador.</p></div></div></li>
+        <li class="pp-tile" data-cats="team server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h3 data-i18n="f.sso.title">Inicio de sesión único</h3><p data-i18n="f.sso.desc">Tu equipo inicia sesión con la cuenta existente de la organización.</p></div></div></li>
+        <li class="pp-tile" data-cats="exchange"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h3 data-i18n="f.import.title">Importar archivos BCF</h3><p data-i18n="f.import.desc">Carga un .bcfzip con todas las incidencias, comentarios y puntos de vista, por ejemplo de una comprobación del modelo.</p></div></div></li>
+        <li class="pp-tile" data-cats="exchange"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.export.title">Exportar archivos BCF</h3><p data-i18n="f.export.desc">Descarga todas las incidencias de un proyecto como .bcfzip para cualquier programa BCF.</p></div></div></li>
+        <li class="pp-tile" data-cats="exchange"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h3 data-i18n="f.api.title">BCF API 2.1</h3><p data-i18n="f.api.desc">La API estándar abierta para proyectos, incidencias, comentarios y puntos de vista, para conectar con otro software.</p></div></div></li>
+        <li class="pp-tile" data-cats="exchange"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h3 data-i18n="f.apikeys.title">Claves API por proyecto</h3><p data-i18n="f.apikeys.desc">Da a un script o herramienta de control acceso a un solo proyecto, opcionalmente con fecha de caducidad.</p></div></div></li>
+        <li class="pp-tile" data-cats="server exchange"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.nextcloud.title">Guardar en tu Nextcloud</h3><p data-i18n="f.nextcloud.desc">Guarda las incidencias como .bcfzip en la carpeta del proyecto, junto a los modelos IFC, y vuelve a abrirlas desde allí.</p></div></div></li>
+        <li class="pp-tile" data-cats="server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.manifest.title">Manifiesto del proyecto al día</h3><p data-i18n="f.manifest.desc">Al guardar, el conjunto de incidencias se añade al manifiesto del proyecto, para que otras aplicaciones OpenAEC lo encuentren.</p></div></div></li>
+        <li class="pp-tile" data-cats="server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><h3 data-i18n="f.selfhosted.title">En tu propio servidor</h3><p data-i18n="f.selfhosted.desc">Una instalación Docker con base de datos; los datos del proyecto no salen de tu entorno.</p></div></div></li>
+        <li class="pp-tile" data-cats="server"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h3 data-i18n="f.tenants.title">Varias organizaciones</h3><p data-i18n="f.tenants.desc">Una instalación puede dar servicio a varias organizaciones, cada una con su propio Nextcloud.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-keyboard"/></svg></div><div><h3 data-i18n="f.ribbon.title">Cinta conocida</h3><p data-i18n="f.ribbon.desc">La misma cinta que las demás aplicaciones OpenAEC, con atajos para importar (Ctrl+I) y exportar (Ctrl+E).</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section surface-dark panel">
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
     <div class="panel-split">
       <div class="panel-split-text">
-        <p class="pill-label">buildingSMART</p>
-        <h2 data-i18n="bcf.title">¿Qué es BCF?</h2>
-        <p data-i18n="bcf.desc">BIM Collaboration Format (BCF) es un estándar abierto (buildingSMART) para intercambiar incidencias y comentarios entre software BIM. Permite notificar, discutir y resolver problemas en un modelo de construcción, con independencia del software que utilicen las partes implicadas.</p>
+        <p class="pill-label" data-i18n="whatsnew.label">Novedades de abril de 2026</p>
+        <h2 data-i18n="whatsnew.title">La API BCF completa, <span>guardar en tu nube</span></h2>
+        <p data-i18n="whatsnew.desc">Las últimas funciones nuevas son de abril de 2026. Desde entonces el desarrollo está parado; aún no hay ninguna versión.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/openaec-bcf-platform/commits/main" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaChangelog">Todas las notas de versión</span></a>
+        </div>
       </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><p data-i18n="bcf.list1"><strong>Estándar abierto</strong> BCF 2.1 como archivo (XML) y como API REST</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><p data-i18n="bcf.list2"><strong>Independiente del software</strong> Funciona con cualquier paquete BIM compatible con BCF</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><p data-i18n="bcf.list3"><strong>Viewpoints</strong> Instantáneas visuales del modelo 3D para cada incidencia</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><p data-i18n="bcf.list4"><strong>Metadatos</strong> Prioridad, estado, asignación, plazos, etiquetas</p></div></li>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h4 data-i18n="whatsnew.items.api.title">API BCF 2.1 completa</h4><p data-i18n="whatsnew.items.api.desc">También versiones, extensiones de proyecto y la selección, visibilidad y coloreado de los puntos de vista.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h4 data-i18n="whatsnew.items.cloud.title">Guardar en Nextcloud</h4><p data-i18n="whatsnew.items.cloud.desc">Desde el menú Archivo guardas las incidencias en la carpeta del proyecto, o las abres desde allí.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="whatsnew.items.manifest.title">Manifiesto del proyecto</h4><p data-i18n="whatsnew.items.manifest.desc">Al guardar, el conjunto de incidencias se incluye en el manifiesto del proyecto.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h4 data-i18n="whatsnew.items.tenants.title">Varias organizaciones</h4><p data-i18n="whatsnew.items.tenants.desc">Una instalación para varias organizaciones, cada una con su propio Nextcloud.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h4 data-i18n="whatsnew.items.login.title">Servidor de inicio de sesión compartido</h4><p data-i18n="whatsnew.items.login.desc">Inicio de sesión a través del mismo servidor que los demás servicios OpenAEC.</p></div></li>
       </ul>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <h2 data-i18n="features.title">Funciones</h2>
-    <div class="features">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-        <h4 data-i18n="features.issues.title">Gestión de incidencias BCF 2.1</h4>
-        <p data-i18n="features.issues.desc">Crea, edita y gestiona incidencias conforme al estándar BCF 2.1. Soporte completo de topics, comentarios, viewpoints e instantáneas.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div>
-        <h4 data-i18n="features.viewpoints.title">Viewpoints con instantáneas 3D</h4>
-        <p data-i18n="features.viewpoints.desc">Vincula viewpoints visuales a las incidencias con posición de cámara, selección y visibilidad. Visibles directamente en tu visor IFC.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg></div>
-        <h4 data-i18n="features.collaboration.title">Colaboración en equipo</h4>
-        <p data-i18n="features.collaboration.desc">Asigna incidencias a miembros del equipo, fija plazos, añade comentarios y sigue el estado. Miembros por proyecto, inicio de sesión único (OIDC).</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div>
-        <h4 data-i18n="features.xml.title">Importación/exportación BCF XML</h4>
-        <p data-i18n="features.xml.desc">Importa y exporta archivos BCF (formato XML) para el intercambio con Solibri, Navisworks, BIMcollab y otro software compatible con BCF.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div>
-        <h4 data-i18n="features.api.title">API REST (BCF API 2.1)</h4>
-        <p data-i18n="features.api.desc">Los 29 endpoints de la BCF API 2.1, más claves API por proyecto para conectar otras herramientas, como el BIM Validator.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div>
-        <h4 data-i18n="features.projects.title">Gestión de proyectos</h4>
-        <p data-i18n="features.projects.desc">Organiza las incidencias por proyecto con etiquetas, prioridades, fases y filtros. Panel claro con estadísticas.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div>
-        <h4 data-i18n="features.ifc.title">Integración IFC</h4>
-        <p data-i18n="features.ifc.desc">Vincula incidencias a elementos IFC mediante su GlobalId, para que un visor BCF salte directamente al elemento correcto del modelo.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div>
-        <h4 data-i18n="features.selfhosted.title">Self-hosted</h4>
-        <p data-i18n="features.selfhosted.desc">Ejecuta la plataforma en tu propio servidor o en local. Control total sobre tus datos, sin dependencia de la nube.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div>
-        <h4 data-i18n="features.cloud.title">Almacenamiento en la nube</h4>
-        <p data-i18n="features.cloud.desc">Guarda las incidencias por proyecto en tu propio Nextcloud, junto a los modelos IFC. Varias organizaciones en una sola instalación.</p>
-      </div>
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Preguntas frecuentes</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">¿Qué archivos puedo abrir?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">Archivos BCF (.bcfzip) en la versión 2.1, como los generan Solibri, Navisworks, BIMcollab, Revit y las aplicaciones OpenAEC. BCF 3.0 aún no es compatible. BCF Manager Studio no abre el propio modelo IFC; para eso usa un visor IFC.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">¿Tengo que instalar algo?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Sí, en un servidor. BCF Manager Studio es una aplicación de servidor que instalas con Docker en tu propio servidor, junto con PostgreSQL. Después tu equipo trabaja simplemente en el navegador. Aún no hay ninguna versión lista para usar, y la versión de prueba en línea se cerró el 8 de octubre de 2026.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">¿Cuánto cuesta?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Nada. El código fuente es público en GitHub y solo pagas tu propio servidor. El código fuente aún no tiene archivo de licencia; llegará con la primera versión.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.format.q">¿En qué formato se guarda mi trabajo?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.format.a">Las incidencias se guardan en una base de datos PostgreSQL en tu servidor, con las capturas como imágenes al lado. Puedes exportarlas en cualquier momento como .bcfzip, el estándar abierto de buildingSMART, o guardarlas así en tu Nextcloud.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">¿En qué sistemas funciona?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">El servidor funciona en Docker, sobre Linux. Tu equipo trabaja en un navegador moderno en Windows, macOS o Linux.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">¿Encaja con la práctica de la construcción?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">Sí. BCF es el estándar abierto de buildingSMART para la coordinación BIM: una comprobación del modelo genera incidencias, que comentas, asignas y cierras. Los estados, prioridades, fases y etiquetas siguen BCF 2.1, así que se mantienen intactos al intercambiarlos con otras partes.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">¿Qué puede hacer un asistente de IA con ello?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">Aún no hay servidor MCP. Sin embargo, un asistente o script con una clave API puede leer y crear incidencias, comentarios y puntos de vista de un proyecto a través de la API BCF 2.1.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ready.q">¿Ya puedo usarlo?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ready.a">Todavía no tal cual. BCF Manager Studio es un concepto: no hay ninguna versión ni ya una versión de prueba pública, y el desarrollo está parado desde abril de 2026. Si quieres, puedes compilarlo tú mismo a partir del código fuente en GitHub e instalarlo en tu propio servidor.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.edit.q">¿Puedo editar una incidencia en pantalla?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.edit.a">En parte. En pantalla creas incidencias y escribes comentarios. El estado, la asignación y la fecha límite de una incidencia existente todavía no se cambian en pantalla, sino mediante una importación BCF o la API. La búsqueda en la lista de incidencias también está por llegar.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.revit.q">¿Funciona con Revit?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.revit.a">A través de archivos BCF, sí: simplemente cargas un .bcfzip de Revit. También hay una versión de prueba aparte de un complemento para Revit 2025 que abre archivos .bcfzip en Revit. Una conexión directa entre ese complemento y BCF Manager Studio todavía no funciona.</p></div>
+      </details>
     </div>
   </div></section>
 
-  <section class="section"><div class="container">
-    <div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="tech.title">Tecnología</h2>
-      </div>
-      <div class="panel-split-body">
-        <div class="chip-row chip-row-light tech-chips">
-          <span class="chip">Rust · Axum</span>
-          <span class="chip">PostgreSQL</span>
-          <span class="chip">React</span>
-          <span class="chip">TypeScript</span>
-          <span class="chip">BCF 2.1</span>
-          <span class="chip">BCF API 2.1</span>
-          <span class="chip">OIDC</span>
-          <span class="chip">Docker</span>
-        </div>
-        <p data-i18n="tech.desc">Un backend en Rust (Axum) con PostgreSQL para velocidad y fiabilidad, un frontend en React y TypeScript con el estilo de OpenAEC, y Docker Compose para arrancarlo todo en tu propio servidor con un solo comando.</p>
-      </div>
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Tecnología</h2><p data-i18n="tech.sub">Para quien quiera saber cómo está hecho.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.rust.title">Rust · Axum</h4><p data-i18n="tech.rust.desc">Servidor rápido y ligero en Rust con Axum y Tokio.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.react.title">React · TypeScript</h4><p data-i18n="tech.react.desc">Interfaz web con Vite y Tailwind, con el estilo de la casa de OpenAEC.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h4 data-i18n="tech.bcf.title">BCF 2.1 · BCF API 2.1</h4><p data-i18n="tech.bcf.desc">Biblioteca Rust propia que lee y escribe .bcfzip, más la API estándar de buildingSMART.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><h4 data-i18n="tech.postgres.title">PostgreSQL 16 · Docker</h4><p data-i18n="tech.postgres.desc">Base de datos con migraciones; todo arranca con Docker Compose detrás de Caddy.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h4 data-i18n="tech.oidc.title">OIDC · JWT · claves API</h4><p data-i18n="tech.oidc.desc">Inicio de sesión único con Authentik, sesiones JWT y claves por proyecto.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h4 data-i18n="tech.nextcloud.title">Nextcloud · WebDAV</h4><p data-i18n="tech.nextcloud.desc">Almacenamiento en tu propio Nextcloud mediante la biblioteca compartida openaec-cloud, con manifiestos .wefc.</p></div></div>
     </div>
   </div></section>
+
 
   <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
   <div data-release-notes="openaec-bcf-platform"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Mostrar todas las versiones</span><span data-rel-hide hidden data-i18n="releases.showLess">Mostrar solo las tres últimas</span></button>
+    <a href="https://github.com/OpenAEC-Foundation/openaec-bcf-platform/releases" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.github">Todas las versiones en GitHub</span></a>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
-      <h2 data-i18n="header.title">BCF <span class="accent">Manager</span> Studio</h2>
+      <h2 data-i18n="header.title"><span class="accent">BCF</span> Manager Studio</h2>
       <div class="btn-group">
-        <a href="https://github.com/OpenAEC-Foundation/openaec-bcf-platform" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="cta.github">GitHub</span></a>
+        <a href="#features" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="header.featuresBtn">Ver las funciones</span></a>
+        <a href="#faq" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n="header.faqBtn">Preguntas frecuentes</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/openaec-bcf-platform" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Código fuente</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -377,27 +552,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-<script>
-  (function(){
-    const track = document.getElementById('sliderTrack');
-    const dots = document.getElementById('sliderDots');
-    if (!track || !dots) return;
-    const slides = track.children.length;
-    let current = 0;
-    for(let i=0;i<slides;i++){
-      const d = document.createElement('button');
-      d.className = 'slider-dot' + (i===0?' active':'');
-      d.onclick = ()=>slideTo(i);
-      dots.appendChild(d);
-    }
-    window.slideMove = function(dir){slideTo(current+dir);};
-    window.slideTo = function(i){
-      current = (i+slides)%slides;
-      track.style.transform = 'translateX(-'+current*100+'%)';
-      dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-    };
-  })();
-</script>
-<script src="/shared/i18n.js?v=20261015"></script>
+  <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>
