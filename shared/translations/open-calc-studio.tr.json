@@ -1,103 +1,299 @@
 {
   "header": {
-    "label": "OpenAEC ekosistemi",
     "title": "Open <span class=\"accent\">Calc</span> Studio",
-    "desc": "İnşaat için açık kaynak bütçeleme ve maliyet hesabı aracı. Maliyet tahmininden kesin hesaba kadar; STABU/RAW, FIEBDC-3 (.bc3), IFCX ve yapay zekâ ile doğrudan bağlantılar — 39 dilde.",
-    "badge": "Beta",
-    "downloadBtn": "v0.13.0 İndir"
+    "demoBtn": "Tarayıcıda aç",
+    "downloadBtn": "İndir",
+    "sourceBtn": "Kaynak kodu",
+    "proof2": "39 dil",
+    "proof4": "Yapay zekâ asistanları için MCP",
+    "proof5": "Ücretsiz · LGPL-3.0",
+    "heroAlt": "Open Calc Studio: bölümler, kalemler ve hesap satırlarıyla hayali bir müstakil evin maliyet hesabı; sağ üstte toplam ve seçili satırın özellikleri",
+    "label": "Maliyet hesabı",
+    "tagline": "Lisans ücreti ve kapalı biçimler olmadan eksiksiz bir inşaat maliyet hesabı yapın",
+    "desc": "Maliyet hesabınızı verim normları ve saat ücretleriyle bölümler, kalemler ve hesap satırlarından oluşturun; genel giderler ve KDV birlikte hesaplanır. Eski hesap programınızın dosyalarını içe aktarın, rapor olarak ya da işvereninizin istediği biçimde teslim edin."
   },
-  "mcp": {
-    "title": "MCP üzerinden AI destekli tahmin",
-    "desc": "Open Calc Studio, Model Context Protocol (MCP) aracılığıyla tamamen erişilebilir. Bu, Claude gibi AI asistanlarının manuel giriş olmadan doğrudan bütçeler oluşturabileceği, öğeler ekleyebileceği, yeniden hesaplayabileceği ve dışa aktarabileceği anlamına gelir.",
-    "item1": "Claude Code veya diğer AI araçlarından bütçeler oluşturun ve yönetin",
-    "item2": "IFC/IFCX modellerinden miktarları otomatik olarak çıkarın",
-    "item3": "Gerçekçi birim fiyatlar için referans projelere bakın",
-    "item4": "AI iş akışından doğrudan PDF ve IFCX'e dışa aktarın",
-    "item5": "Uzantı kataloğu ile genişletilebilir"
+  "meta": {
+    "description": "İnşaat için ücretsiz, açık kaynaklı maliyet hesaplama uygulaması: bölümler, verim normları, ücretler ve genel giderler, raporlar; STABU, RAW, IBIS-TRAD, WPCalc, CUF, FIEBDC-3 (.bc3), ÖNORM ve IFC ile veri alışverişi. Windows, macOS, Linux ve tarayıcı için.",
+    "title": "Open Calc Studio — OpenAEC Foundation"
   },
-  "why": {
-    "title": "Neden Open <span class=\"accent\">Calc</span> Studio?",
-    "desc1": "Maliyet tahminleri ve bütçeler her inşaat projesi için esastır. Mevcut tahmin yazılımı lisans başına binlerce avroya mal olur ve sizi tescilli formatlara hapseder. Open Calc Studio, aynı derecede güçlü tamamen açık kaynak bir alternatif sunar.",
-    "desc2": "STABU/RAW standartlarıyla doğrudan bağlantılar, otomatik miktarlar için IFCX modelleri ve MCP aracılığıyla AI entegrasyonu ile Open Calc Studio AEC maliyet tahmininin geleceği için inşa edilmiştir."
+  "hl": {
+    "prompt": {
+      "alt": "Prompt & Hesapla: solda beton satırı ekleme isteği ve öncesi/sonrası mali öneri, sağda maliyet hesabı",
+      "kicker": "Prompt & Hesapla",
+      "title": "Ne istediğinizi yazın, önce neye mal olacağını görün",
+      "desc": "Gündelik dille bir satır eklemeyi ya da bir toplamı bulmayı isteyin. Önce doğrudan maliyetlerin, toplamın ve KDV'nin öncesi ve sonrasıyla, değişen her satırda neyin değiştiğini gösteren bir öneri alırsınız. Tek seferde uygulayın ya da reddedin."
+    },
+    "wizard": {
+      "alt": "Rehberli hesap, Maliyetler adımı: her satırda birim fiyat, işçilik ve verim normu; altta toplam",
+      "kicker": "Rehberli hesap",
+      "title": "Adım adım tutarlı bir maliyet hesabına",
+      "desc": "Beş adım sizi proje, miktarlar, maliyetler, genel giderler ve KDV ile son bir denetimden geçirir. Her değişiklik hemen tam maliyet hesabında görünür, alttaki toplam da güncellenir."
+    },
+    "exchange": {
+      "alt": "IFC, CUF-XML, Excel, STABU, IBIS-TRAD, RAW, FIEBDC-3, ÖNORM, GAEB ve XPWE gibi seçeneklerle İçe aktar menüsü",
+      "kicker": "Veri alışverişi",
+      "title": "Çalışmalarınızı eski hesap programınızdan getirin",
+      "desc": "Maliyet hesaplarını WPCalc, BasCalc, IBIS-TRAD, CUF-XML, STABU ve RAW'dan ya da kendi sütunlarınızla Excel'den içe aktarın. İspanyol .bc3, Avusturya ÖNORM ve Alman GAEB keşif listeleri de okunur. Yeniden WPCalc, CUF, .bc3, ÖNORM veya IFC olarak teslim edin."
+    },
+    "report": {
+      "alt": "Hayali müstakil evin Ana yüklenici raporu: proje bilgileri, bölümler, ara toplamlar ve sözleşme bedeli",
+      "kicker": "Raporlar",
+      "title": "İşvereniniz için düzgün bir maliyet hesabı",
+      "desc": "İş tanımı ve ana yükleniciden teklif cetveline ve kesin hesaba kadar yedi rapor. Rapor dilini uygulama dilinden ayrı seçin: başlıklar, birimler, sayılar ve tarihler o dili izler. Yazdırın ya da masaüstü uygulamasında PDF oluşturun."
+    }
+  },
+  "notice": {
+    "link": "GitHub üzerinden bildirin",
+    "text": "Open Calc Studio herkese açık test aşamasında. .bc3 dosyalarıyla ya da Mac'te çalışan test kullanıcıları ve çeviriler için ana dili konuşanlar arıyoruz."
+  },
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "download": "İndir",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "estimate": "Hesaplama",
+    "assist": "Yardım ve denetim",
+    "exchange": "Veri alışverişi",
+    "report": "Raporlar",
+    "takeoff": "Metrajlar",
+    "all": "Tüm özellikler"
   },
   "features": {
-    "title": "Özellikler",
-    "stabu": {
-      "title": "STABU/RAW entegrasyonu",
-      "desc": "Hollanda standartlarına göre standartlaştırılmış şartnameler ve maliyet tahminleri için STABU ve RAW standartları için tam destek."
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "İlk tahminden teklif cetveline, tek uygulamada",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "structure": {
+      "title": "Bölümler, kalemler ve hesap satırları",
+      "desc": "Otomatik numaralandırmalı açık bir yapı. Satırları sürükleyin, başka bir bölüme de."
     },
-    "ifcx": {
-      "title": "IFCX miktarları",
-      "desc": "IFCX modellerinden miktarları otomatik olarak çıkarın. Doğru hesaplamalar için bütçe öğelerini doğrudan model öğelerine bağlayın."
+    "norms": {
+      "title": "Normlar ve saat ücretleri",
+      "desc": "Satır başına verim normu ve kendi saat ücretleriyle ücret grupları. Bir saat toplamını değiştirin, normlar orantılı ayarlanır."
+    },
+    "markups": {
+      "title": "Genel giderler ve kâr",
+      "desc": "Genel giderler, işletme giderleri, garantiler, risk, kâr, sigorta ve yuvarlama, olağan sırasıyla."
+    },
+    "vat": {
+      "title": "Genel ve indirimli KDV",
+      "desc": "Oranı bölüm, kalem veya satır başına seçin; toplamlar doğru oranla hesaplanır."
+    },
+    "variants": {
+      "title": "Varyantlar ve sürümler",
+      "desc": "Seçenekleri yan yana koyun, anlık görüntüler saklayın ve hangi satırların değiştiğini görün."
+    },
+    "sheets": {
+      "title": "Hesap tabloları",
+      "desc": "Formüllü ara hesaplar doğrudan maliyet hesabının içinde, yanındaki bir sekmede."
+    },
+    "prompt": {
+      "title": "Prompt & Hesapla",
+      "desc": "Gündelik dilde sorular ve komutlar; önce incelediğiniz bir mali öneriyle. Serbest komutlar için bir OpenAEC hesabı ya da kendi API anahtarınız gerekir."
+    },
+    "wizard": {
+      "title": "Rehberli hesap",
+      "desc": "Proje bilgilerinden denetime beş adım; tam düzenleyiciyle aynı maliyet hesabı üzerinde."
+    },
+    "review": {
+      "title": "Denetim merkezi",
+      "desc": "Etkin varyantın fiyatlarını, kaynaklarını ve birimlerini denetler; uyarının olduğu satıra gider."
     },
     "mcp": {
-      "title": "MCP Sunucusu",
-      "desc": "Model Context Protocol aracılığıyla tamamen erişilebilir. AI asistanları bütçeler oluşturabilir, düzenleyebilir ve dışa aktarabilir."
+      "title": "Yapay zekâ asistanları için MCP",
+      "desc": "Claude gibi bir asistan maliyet hesabı oluşturur, kalem ekler, genel giderleri ayarlar ve PDF üretir."
     },
-    "extensions": {
-      "title": "Uzantı sistemi",
-      "desc": "Uzantı kataloğu aracılığıyla genişletilebilir. Sektöre özgü hesaplama yöntemleri, şablonlar ve entegrasyonlar ekleyin."
+    "dutch": {
+      "title": "WPCalc, BasCalc, IBIS-TRAD ve CUF",
+      "desc": "Bilinen Hollanda hesap programlarından maliyet hesaplarını okuyun; WPCalc ve CUF'a geri de yazın."
     },
-    "chapters": {
-      "title": "Bölümler ve kısımlar",
-      "desc": "Bütçeleri bölümler, kısımlar ve bütçe öğelerine organize edin. Otomatik numaralandırma ile esnek hiyerarşi."
-    },
-    "reference": {
-      "title": "Referans projeler",
-      "desc": "Referans projelerden birim fiyatlara bakın. Yeniden kullanılabilir bir fiyat ve gösterge veri tabanı oluşturun."
-    },
-    "export": {
-      "title": "PDF ve IFCX dışa aktarma",
-      "desc": "Bütçeleri profesyonel PDF raporları olarak veya ekosistemdeki diğer araçlarla değişim için IFCX verileri olarak dışa aktarın."
-    },
-    "staart": {
-      "title": "Genel giderler",
-      "desc": "Yapılandırılabilir genel giderler: genel şantiye maliyetleri, kâr ve risk, CAR sigortası ve diğer ek ücretler otomatik hesaplanır."
-    },
-    "recalc": {
-      "title": "Yeniden hesaplama",
-      "desc": "Tüm bütçenin tek tıkla yeniden hesaplanması. Tüm alt toplamlar, KDV ve genel giderler otomatik olarak güncellenir."
-    },
-    "talen": {
-      "title": "39 dil",
-      "desc": "Arapça, Farsça, İbranice ve Urduca için sağdan sola dahil 39 dilde tam arayüz çevirisi. Varsayılan İngilizce; dilinizi Tercihler → Genel'den seçin."
-    },
-    "rapporttaal": {
-      "title": "Kendi dilinizde raporlar",
-      "desc": "Yazdırma ve PDF raporları ayrı Rapor dili ayarını izler: başlıklar, birimler ile sayı ve tarih biçimi (İspanyolcada 1.234,56 €, Hollandacada € 1.234,56)."
-    },
-    "btw": {
-      "title": "Yüksek ve düşük KDV",
-      "desc": "KDV oranını bölüm, poz veya satır başına seçin. Ara toplamlar ve genel toplam otomatik olarak doğru oranla hesaplanır."
+    "stabu": {
+      "title": "STABU ve RAW",
+      "desc": "Maliyet hesabınızın temeli olarak bir STABU (.s01, .sufx) veya RAW (.rsx, .rsu) şartnamesi ve Excel olarak RAW teklif cetveli."
     },
     "bc3": {
       "title": "FIEBDC-3 (.bc3)",
-      "desc": "İspanyol inşaat sektöründe yaygın değişim formatı FIEBDC-3'ü içe ve dışa aktarın — tutarlar ve yapı için kayıpsızlığı kanıtlandı."
+      "desc": "İspanyol değişim biçimi içe ve dışa; 22 gerçek dosyada test edildi: gidiş-dönüşten sonra tüm tutarlar aynı."
     },
     "onorm": {
-      "title": "ÖNORM A 2063 (.onlv)",
-      "desc": "Avusturya Leistungsverzeichnisse ve Leistungsbücher dosyalarını içe aktarın ve resmi XML şemalarına göre doğrulanmış .onlv olarak dışa aktarın."
+      "title": "ÖNORM A 2063",
+      "desc": "Avusturya keşif listelerini (.onlv) ve standart metinleri (.onlb) okuyun, resmi şemalara uygun .onlv dışa aktarın."
     },
-    "showAll": "Tüm özellikleri göster",
-    "showLess": "Daha az göster"
+    "gaeb": {
+      "title": "GAEB ve XPWE",
+      "desc": "Alman GAEB keşif listelerini (.x83) ve İtalyan ile Çek maliyet hesaplarını (XPWE, XC4) okuyun."
+    },
+    "excel": {
+      "title": "Excel, CSV ve fiyat listeleri",
+      "desc": "Bir Excel veya CSV dosyasının sütunlarını kendiniz eşleştirin, fiyat listelerini (ZSX, BMEcat) kütüphanenize yükleyin."
+    },
+    "ifc": {
+      "title": "IFC maliyet çizelgesi",
+      "desc": "BIM yazılımlarıyla alışveriş için maliyet hesabını IfcCostSchedule olarak okuyun ve yazın."
+    },
+    "reports": {
+      "title": "Yedi rapor",
+      "desc": "İş tanımı, ana yüklenici, taşeron, teklif cetveli, kesin hesap ve iki ayrıntılı özet."
+    },
+    "reportlang": {
+      "title": "İşvereninizin dilinde rapor",
+      "desc": "Başlıklar, birimler ve sayı ile tarih yazımı seçilen rapor dilini izler."
+    },
+    "pdf": {
+      "title": "Yazdırma ve PDF",
+      "desc": "Kapak sayfası, özet, sayfa numarası ve dikey veya yatay düzenle. PDF önizlemesi masaüstü uygulamasındadır."
+    },
+    "ifclite": {
+      "title": "3B modelden metrajlar",
+      "desc": "Bir IFC dosyası açın, elemanlara tıklayın ve miktarlarını seçili kaleme aktarın."
+    },
+    "pdfmeasure": {
+      "title": "PDF çizim üzerinde ölçüm",
+      "desc": "Ölçeği iki noktayla ayarlayın, uzunlukları ve alanları ölçün, ölçümleri maliyet hesabıyla saklayın."
+    },
+    "provenance": {
+      "title": "Her miktarın kaynağı",
+      "desc": "Bir miktarın PDF'den, IFC modelinden veya hesap tablosundan mı geldiğini, sayfa veya nesneyle birlikte görün; kaynak eksikse uyarı alın."
+    },
+    "workspaces": {
+      "title": "Çalışma alanları ve ikinci ekran",
+      "desc": "Ölçme, hesaplama veya denetim için düzeninizi kaydedin, çizimi ikinci ekrana alın."
+    },
+    "languages": {
+      "title": "39 dil ve beş tema",
+      "desc": "Arapça, Farsça, İbranice ve Urduca için sağdan sola dahil; açık, koyu, Blueprint ve yüksek kontrast."
+    }
+  },
+  "download": {
+    "title": "v0.13.0 indir",
+    "lead": "Ücretsiz, hesap gerekmez. Windows, macOS ve Linux için.",
+    "forWindows": "Windows için indir",
+    "forMac": "macOS için indir",
+    "forLinux": "Linux için indir",
+    "metaWindows": ".exe yükleyici",
+    "metaMac": "Apple Silicon için .dmg (M1 ve sonrası)",
+    "metaLinux": "AppImage, çoğu dağıtımda çalışır",
+    "browserBtn": "Tarayıcıda aç",
+    "fileExe": "Yükleyici (.exe)",
+    "fileMsi": "Yükleyici (.msi)",
+    "fileDmg": ".dmg (Apple Silicon)",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "fileSnap": "Snap",
+    "browserNote": "Hiçbir şey kurmak istemiyor musunuz? Uygulama <a href=\"https://open-calc-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">tarayıcıda da çalışır</a>.",
+    "label": "İndir",
+    "mobileNote": "Open Calc Studio büyük ekran için yapılmıştır. Bilgisayarınızda açın veya burada tarayıcıda deneyin.",
+    "other": "Diğer platformlar"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDemo": "Tarayıcıda deneyin",
+    "items": {
+      "onlv": {
+        "title": "Avusturya keşif listelerini okuyun",
+        "desc": "Bir .onlv maliyet hesabına dönüşür: gruplar bölüm, pozisyonlar numara, miktar, birim, işçilik ve malzemeyle kalem olur."
+      },
+      "onlb": {
+        "title": "Katalog olarak standart metinler",
+        "desc": "Yaklaşık 20.000 pozisyonlu LB-Hochbau gibi bir .onlb, yaklaşık 0,3 saniyede yüklenir."
+      },
+      "onlvexport": {
+        "title": ".onlv olarak dışa aktarın",
+        "desc": "Austrian Standards'ın resmi şemalarına göre geçerli; içe aktarma, dışa aktarma ve yeniden içe aktarma fark göstermez."
+      },
+      "bc3": {
+        "title": ".bc3 alan alan aynı",
+        "desc": "22 gerçek dosyanın 21'i alan alan aynı geri gelir; her fiyat farkı raporda açıklanır."
+      },
+      "toplevel": {
+        "title": "Üst düzeyde de birim fiyat",
+        "desc": "Bölümü olmayan bir kalem artık diğer kalemler gibi türetilmiş bir birim fiyat alır."
+      }
+    },
+    "label": "v0.13.0 sürümünde yeni",
+    "title": "İspanya'dan sonra şimdi <span>Avusturya</span>",
+    "desc": "Open Calc Studio artık Avusturya değişim biçimi ÖNORM A 2063'ü okuyup yazıyor; İspanyol .bc3 dosyalarıyla gidiş-dönüş daha da iyileştirildi ve rapor ile ekran görüntüleriyle belgelendi."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "Kendi .ifcCalc dosyalarınız; WPCalc, BasCalc, IBIS-TRAD ve CUF-XML maliyet hesapları; STABU (.s01, .sufx) ve RAW (.rsx, .rsu) şartnameleri; İspanyol .bc3, Avusturya ÖNORM (.onlv, .onlb), Alman GAEB (.x83), İtalyan ve Çek XPWE ile XC4; maliyet çizelgeli IFC ve Excel ya da CSV. Fiyat listeleri ZSX veya BMEcat olarak okunur."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Hayır. Web sürümü doğrudan tarayıcıda çalışır ve dosyalarınız kendi bilgisayarınızda kalır. Raporların PDF önizlemesi için Windows, macOS ve Linux masaüstü uygulaması vardır."
+    },
+    "price": {
+      "q": "Open Calc Studio ne kadar?",
+      "a": "Hiçbir şey. Uygulama LGPL-3.0 lisansıyla ücretsiz ve açık kaynaklıdır, abonelik yoktur. Yalnızca yapay zekâ asistanına verilen serbest komutlar OpenAEC hesabınızın kredisini ya da kendi API anahtarınızı kullanır."
+    },
+    "save": {
+      "q": "Çalışmam hangi biçimde kaydedilir?",
+      "a": "Bir .ifcCalc dosyasında: belgelenmiş yapıya sahip açık, okunabilir JSON. Eski dosyalar her zaman açılır; masaüstü uygulaması iki dakikada bir sessizce kaydeder."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows (.exe veya .msi), Apple Silicon üzerinde macOS (.dmg) ve Linux (AppImage, .deb, .rpm ve Snap) ile her modern tarayıcı. Mac sürümü henüz Apple tarafından onaylanmadı: ilk açılışta Gizlilik ve Güvenlik'ten bir kez izin verin."
+    },
+    "practice": {
+      "q": "İnşaat uygulamasına uyuyor mu?",
+      "a": "Evet. Normlar, ücret grupları, genel giderler ve genel ile indirimli KDV'li yapı Hollanda uygulamasını izler; STABU, RAW ve teklif cetveli içe ya da dışa aktarılır. İspanya, Avusturya ve Almanya için .bc3, ÖNORM ve GAEB vardır."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "Uygulamada Prompt & Hesapla, önce incelediğiniz sorular ve önerilerle yardımcı olur. Ayrıca bir MCP sunucusu (Model Context Protocol) vardır: Claude gibi bir asistan bununla maliyet hesabı oluşturur, kalem ekler, genel giderleri ayarlar ve PDF üretir."
+    },
+    "desktop": {
+      "q": "En yeni özellikler masaüstü uygulamasında var mı?",
+      "a": "Henüz değil. Prompt & Hesapla, rehberli hesap, denetim merkezi, PDF üzerinde ölçüm ve 3B modelden metrajlar şu an web sürümünde. Bir sonraki sürümle yükleyicilere gelecek; v0.13.0'da henüz yok."
+    },
+    "export": {
+      "q": "Hangi biçimlere aktarabilirim?",
+      "a": "PDF, CSV, IFC, WPCalc, CUF-XML, .bc3, ÖNORM (.onlv) ve Excel olarak RAW teklif cetveli. IBIS-TRAD ve RAW-RSX'e aktarım sınırlıdır; GAEB dışa aktarımı henüz yok."
+    },
+    "status": {
+      "q": "Gerçek işe hazır mı?",
+      "a": "Herkese açık test aşamasında: çalışmak için yeterince kararlı, ancak sonuçlarınızı kontrol edin ve değişiklik bekleyin. Karşılaştıklarınızı GitHub'da bildirin; .bc3 dosyaları veya Mac'i olan test kullanıcıları özellikle bekleniyor."
+    },
+    "heading": "Sık sorulan sorular"
   },
   "tech": {
-    "title": "Teknoloji",
-    "desc": "Tauri 2 aracılığıyla TypeScript ve Rust ile inşa edilmiştir. Windows, macOS ve Linux'ta masaüstü uygulaması olarak ve tarayıcıda web uygulaması olarak çalışır. AI entegrasyonu için MCP Sunucusu ve özelleştirme için uzantı sistemi içerir."
+    "tauri": {
+      "desc": "Windows, macOS ve Linux için yerel masaüstü uygulaması; hesaplar ve PDF düzeni Rust ile."
+    },
+    "react": {
+      "desc": "Tarayıcıda ve masaüstünde aynı arayüz; büyük hesaplar için sanallaştırılmış tablo."
+    },
+    "typst": {
+      "desc": "PDF raporları için düzgün tablolar ve sayfa numaralarıyla modern dizgi."
+    },
+    "format": {
+      "title": "Açık .ifcCalc biçimi",
+      "desc": "Kendi sürüm politikası ve eski dosyaların otomatik geçişiyle okunabilir JSON."
+    },
+    "mcp": {
+      "title": "MCP sunucusu",
+      "desc": "Bir yapay zekâ asistanıyla sohbetten maliyet dosyalarını oluşturur ve düzenler, PDF'e kadar."
+    },
+    "embed": {
+      "title": "Gömme",
+      "desc": "Kendi yazılımınız için kaynak kodda bir React/JavaScript SDK'sı, iframe ile gömme ve yerel kütüphane (DLL, .so, .dylib)."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
   },
-  "cta": {
-    "demo": "Canlı demoyu görüntüle",
-    "github": "GitHub'da görüntüle",
-    "extensions": "Uzantı kataloğu",
-    "download": "↓ İndir v0.13.0 — Windows, macOS ve Linux",
-    "testers": "Test kullanıcıları arıyoruz: .bc3 dosyası kullananlar, Mac kullanıcıları ve 39 dil için anadili konuşurlar. GitHub issues üzerinden ulaşın."
-  },
-  "bc3": {
-    "title": "Gerçek dosyalarla test edildi: FIEBDC-3 (.bc3)",
-    "desc": "22 gerçek .bc3 bütçesini içe aktardık, dışa aktardık ve yeniden içe aktardık — 46.215 satırlık Endülüs maliyet veritabanı BCCA 2023 dahil.",
-    "item1": "Gidiş-dönüş sonrasında tüm tutarlar ve bölüm toplamları aynı (± 0,01)",
-    "item2": "22 dosyanın 21'i alan alan birebir aynı; 1 dosyada yalnızca yinelenen bir bölüm kodu sonek alıyor",
-    "item3": "İçe/dışa aktarıcıda bulunan tüm hatalar düzeltildi; test, test paketinin parçası",
-    "link": "Raporun tamamını okuyun"
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }

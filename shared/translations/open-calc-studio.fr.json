@@ -1,103 +1,299 @@
 {
   "header": {
-    "label": "Écosystème OpenAEC",
     "title": "Open <span class=\"accent\">Calc</span> Studio",
-    "desc": "Outil open source de budgétisation et de métré pour la construction. De l'estimation au décompte final, avec des liaisons directes vers STABU/RAW, FIEBDC-3 (.bc3), IFCX et l'IA — en 39 langues.",
-    "badge": "Beta",
-    "downloadBtn": "Télécharger v0.13.0"
+    "demoBtn": "Ouvrir dans le navigateur",
+    "downloadBtn": "Télécharger",
+    "sourceBtn": "Code source",
+    "proof2": "39 langues",
+    "proof4": "MCP pour assistants IA",
+    "proof5": "Gratuit · LGPL-3.0",
+    "heroAlt": "Open Calc Studio : le chiffrage d'une maison individuelle fictive avec chapitres, postes et lignes de calcul, le total en haut à droite et les propriétés de la ligne sélectionnée",
+    "label": "Chiffrage",
+    "tagline": "Établissez un chiffrage complet, sans frais de licence ni formats fermés",
+    "desc": "Construisez votre chiffrage à partir de chapitres, de postes et de lignes de calcul avec cadences et taux horaires ; les frais généraux et la TVA suivent. Importez les fichiers de votre ancien logiciel et livrez un rapport ou le format demandé par votre client."
   },
-  "mcp": {
-    "title": "Estimation pilotée par IA via MCP",
-    "desc": "Open Calc Studio est entièrement accessible via le Model Context Protocol (MCP). Les assistants IA comme Claude peuvent créer des budgets, ajouter des postes, recalculer et exporter directement — sans saisie manuelle.",
-    "item1": "Créez et gérez des budgets depuis Claude Code ou autres outils IA",
-    "item2": "Extrayez automatiquement les quantités depuis les modèles IFC/IFCX",
-    "item3": "Recherchez des projets de référence pour des prix unitaires réalistes",
-    "item4": "Exportez vers PDF et IFCX directement depuis le flux IA",
-    "item5": "Extensible via le catalogue d'extensions"
+  "meta": {
+    "description": "Logiciel gratuit et open source de chiffrage pour la construction : chapitres, cadences, taux et frais généraux, rapports, et échanges avec STABU, RAW, IBIS-TRAD, WPCalc, CUF, FIEBDC-3 (.bc3), ÖNORM et IFC. Pour Windows, macOS, Linux et le navigateur.",
+    "title": "Open Calc Studio — OpenAEC Foundation"
   },
-  "why": {
-    "title": "Pourquoi Open <span class=\"accent\">Calc</span> Studio ?",
-    "desc1": "Les devis et budgets sont essentiels à chaque projet de construction. Les logiciels d'estimation existants coûtent des milliers d'euros par licence et vous enferment dans des formats propriétaires. Open Calc Studio offre une alternative entièrement open source tout aussi puissante.",
-    "desc2": "Avec des connexions directes aux standards STABU/RAW, aux modèles IFCX pour les quantités automatiques et l'intégration IA via MCP, Open Calc Studio est conçu pour l'avenir de l'estimation de coûts AEC."
+  "hl": {
+    "prompt": {
+      "alt": "Prompt & Chiffrage : à gauche la demande d'ajouter une ligne de béton avec la proposition financière avant et après, à droite le chiffrage",
+      "kicker": "Prompt & Chiffrage",
+      "title": "Tapez ce que vous voulez, voyez d'abord ce que ça coûte",
+      "desc": "Demandez en langage courant d'ajouter une ligne ou de retrouver un total. Vous recevez d'abord une proposition avec les coûts directs, le total et la TVA avant et après, et pour chaque ligne modifiée ce qui change. Appliquez-la d'un coup ou rejetez-la."
+    },
+    "wizard": {
+      "alt": "Chiffrage guidé, étape Coûts : par ligne le prix unitaire, la main-d'œuvre et la cadence, avec le total en bas",
+      "kicker": "Chiffrage guidé",
+      "title": "Pas à pas vers un chiffrage solide",
+      "desc": "Cinq étapes vous guident : projet, quantités, coûts, frais généraux et TVA, puis un contrôle final. Chaque modification apparaît aussitôt dans le chiffrage complet, et le total en bas suit."
+    },
+    "exchange": {
+      "alt": "Le menu Importer avec notamment IFC, CUF-XML, Excel, STABU, IBIS-TRAD, RAW, FIEBDC-3, ÖNORM, GAEB et XPWE",
+      "kicker": "Échanges",
+      "title": "Reprenez votre travail depuis votre ancien logiciel",
+      "desc": "Importez des chiffrages depuis WPCalc, BasCalc, IBIS-TRAD, CUF-XML, STABU et RAW, ou depuis Excel avec vos propres colonnes. Les métrés espagnols .bc3, autrichiens ÖNORM et allemands GAEB passent aussi. Livrez à nouveau en WPCalc, CUF, .bc3, ÖNORM ou IFC."
+    },
+    "report": {
+      "alt": "Rapport Entreprise générale de la maison fictive avec les données du projet, les chapitres, les sous-totaux et le montant du marché",
+      "kicker": "Rapports",
+      "title": "Un chiffrage soigné pour votre client",
+      "desc": "Sept rapports, de la description des travaux et l'entreprise générale au bordereau de soumission et au post-calcul. Choisissez la langue du rapport indépendamment de celle de l'application : titres, unités, nombres et dates la suivent. Imprimez, ou créez un PDF dans l'application de bureau."
+    }
+  },
+  "notice": {
+    "link": "Inscrivez-vous sur GitHub",
+    "text": "Open Calc Studio est en phase de test public. Nous cherchons des testeurs qui travaillent avec des fichiers .bc3 ou sur Mac, et des locuteurs natifs pour les traductions."
+  },
+  "subnav": {
+    "label": "Sur cette page",
+    "features": "Fonctions",
+    "download": "Télécharger",
+    "whatsnew": "Nouveautés",
+    "faq": "FAQ",
+    "releases": "Versions"
+  },
+  "tabs": {
+    "highlights": "Points forts",
+    "estimate": "Chiffrage",
+    "assist": "Aide et contrôle",
+    "exchange": "Échanges",
+    "report": "Rapports",
+    "takeoff": "Métrés",
+    "all": "Toutes les fonctions"
   },
   "features": {
-    "title": "Fonctionnalités",
-    "stabu": {
-      "title": "Intégration STABU/RAW",
-      "desc": "Prise en charge complète des standards STABU et RAW pour cahiers des charges et estimations selon les normes néerlandaises."
+    "learnMore": "En savoir plus",
+    "label": "Fonctions",
+    "heading": "De la première estimation au bordereau de soumission, dans une seule application",
+    "sub": "Commencez par les points forts ou choisissez un thème.",
+    "tabsLabel": "Fonctions par thème"
+  },
+  "f": {
+    "structure": {
+      "title": "Chapitres, postes et lignes de calcul",
+      "desc": "Une structure claire avec numérotation automatique. Glissez les lignes, aussi vers un autre chapitre."
     },
-    "ifcx": {
-      "title": "Quantités IFCX",
-      "desc": "Extrayez automatiquement les quantités depuis les modèles IFCX. Liez les postes de budget directement aux éléments du modèle pour des calculs précis."
+    "norms": {
+      "title": "Cadences et taux horaires",
+      "desc": "Une cadence par ligne et des groupes de taux avec leurs taux horaires. Modifiez un total d'heures et les cadences suivent."
+    },
+    "markups": {
+      "title": "Frais généraux et marge",
+      "desc": "Frais généraux, frais de structure, garanties, risque, bénéfice, assurance et arrondi, dans l'ordre habituel."
+    },
+    "vat": {
+      "title": "TVA normale et réduite",
+      "desc": "Choisissez le taux par chapitre, poste ou ligne ; les totaux appliquent le bon taux."
+    },
+    "variants": {
+      "title": "Variantes et versions",
+      "desc": "Comparez des options, gardez des instantanés et voyez quelles lignes ont changé."
+    },
+    "sheets": {
+      "title": "Feuilles de calcul",
+      "desc": "Des calculs annexes avec formules dans le chiffrage même, dans un onglet à côté."
+    },
+    "prompt": {
+      "title": "Prompt & Chiffrage",
+      "desc": "Questions et instructions en langage courant, avec une proposition financière à vérifier d'abord. Les instructions libres demandent un compte OpenAEC ou votre propre clé API."
+    },
+    "wizard": {
+      "title": "Chiffrage guidé",
+      "desc": "Cinq étapes des données du projet au contrôle, sur le même chiffrage que l'éditeur complet."
+    },
+    "review": {
+      "title": "Centre de contrôle",
+      "desc": "Contrôle prix, sources et unités de la variante active, et saute à la ligne concernée."
     },
     "mcp": {
-      "title": "Serveur MCP",
-      "desc": "Entièrement accessible via Model Context Protocol. Les assistants IA peuvent créer, modifier et exporter des budgets."
+      "title": "MCP pour assistants IA",
+      "desc": "Un assistant comme Claude crée des chiffrages, ajoute des postes, règle les frais généraux et produit un PDF."
     },
-    "extensions": {
-      "title": "Système d'extensions",
-      "desc": "Extensible via un catalogue d'extensions. Ajoutez des méthodes de calcul, modèles et intégrations spécifiques au secteur."
+    "dutch": {
+      "title": "WPCalc, BasCalc, IBIS-TRAD et CUF",
+      "desc": "Importez des chiffrages de logiciels néerlandais connus ; réécrivez aussi en WPCalc et CUF."
     },
-    "chapters": {
-      "title": "Chapitres &amp; sections",
-      "desc": "Organisez les budgets en chapitres, sections et postes. Hiérarchie flexible avec numérotation automatique."
-    },
-    "reference": {
-      "title": "Projets de référence",
-      "desc": "Recherchez des prix unitaires issus de projets de référence. Constituez une base de données réutilisable de prix et indicateurs."
-    },
-    "export": {
-      "title": "Export PDF &amp; IFCX",
-      "desc": "Exportez les budgets sous forme de rapports PDF professionnels ou de données IFCX pour échange avec d'autres outils de l'écosystème."
-    },
-    "staart": {
-      "title": "Frais généraux",
-      "desc": "Frais généraux configurables : frais de chantier, bénéfice et risque, assurance TRC et autres majorations calculés automatiquement."
-    },
-    "recalc": {
-      "title": "Recalcul",
-      "desc": "Recalcul du budget complet en un clic. Tous les sous-totaux, TVA et frais généraux sont automatiquement mis à jour."
-    },
-    "talen": {
-      "title": "39 langues",
-      "desc": "Interface entièrement traduite en 39 langues, y compris droite-à-gauche pour l'arabe, le farsi, l'hébreu et l'ourdou. L'anglais est la langue par défaut ; choisissez la vôtre via Préférences → Général."
-    },
-    "rapporttaal": {
-      "title": "Des rapports dans votre langue",
-      "desc": "L'impression et les rapports PDF suivent le réglage distinct Langue du rapport : titres, unités et format des nombres et des dates (1.234,56 € en espagnol, 1 234,56 € en français)."
-    },
-    "btw": {
-      "title": "TVA haute et basse",
-      "desc": "Choisissez le taux de TVA par chapitre, poste ou ligne. Les sous-totaux et le total général appliquent automatiquement le bon taux."
+    "stabu": {
+      "title": "STABU et RAW",
+      "desc": "Un cahier des charges STABU (.s01, .sufx) ou RAW (.rsx, .rsu) comme base de chiffrage, et un bordereau RAW en Excel."
     },
     "bc3": {
       "title": "FIEBDC-3 (.bc3)",
-      "desc": "Importez et exportez le format d'échange espagnol FIEBDC-3, courant dans le BTP espagnol — sans perte prouvée pour les montants et la structure."
+      "desc": "Le format d'échange espagnol en entrée et en sortie, testé sur 22 fichiers réels : tous les montants identiques après l'aller-retour."
     },
     "onorm": {
-      "title": "ÖNORM A 2063 (.onlv)",
-      "desc": "Importez les Leistungsverzeichnisse et Leistungsbücher autrichiens et exportez en .onlv, validé selon les schémas XML officiels."
+      "title": "ÖNORM A 2063",
+      "desc": "Importez des métrés autrichiens (.onlv) et des textes types (.onlb), et exportez en .onlv selon les schémas officiels."
     },
-    "showAll": "Afficher toutes les fonctions",
-    "showLess": "Afficher moins"
+    "gaeb": {
+      "title": "GAEB et XPWE",
+      "desc": "Importez des métrés allemands GAEB (.x83) et des chiffrages italiens et tchèques (XPWE, XC4)."
+    },
+    "excel": {
+      "title": "Excel, CSV et listes de prix",
+      "desc": "Associez vous-même les colonnes d'un fichier Excel ou CSV, et chargez des listes de prix (ZSX, BMEcat) dans votre bibliothèque."
+    },
+    "ifc": {
+      "title": "Planning de coûts IFC",
+      "desc": "Lisez et écrivez un chiffrage en IfcCostSchedule, pour l'échange avec les logiciels BIM."
+    },
+    "reports": {
+      "title": "Sept rapports",
+      "desc": "Description des travaux, entreprise générale, sous-traitance, bordereau de soumission, post-calcul et deux vues détaillées."
+    },
+    "reportlang": {
+      "title": "Rapport dans la langue de votre client",
+      "desc": "Titres, unités et format des nombres et des dates suivent la langue de rapport choisie."
+    },
+    "pdf": {
+      "title": "Impression et PDF",
+      "desc": "Avec page de garde, résumé, pagination et portrait ou paysage. L'aperçu PDF est dans l'application de bureau."
+    },
+    "ifclite": {
+      "title": "Quantités depuis une maquette 3D",
+      "desc": "Ouvrez un fichier IFC, cliquez sur des éléments et reprenez leurs quantités dans le poste sélectionné."
+    },
+    "pdfmeasure": {
+      "title": "Mesurer sur un plan PDF",
+      "desc": "Calez l'échelle avec deux points, mesurez longueurs et surfaces, et gardez les mesures avec le chiffrage."
+    },
+    "provenance": {
+      "title": "Origine de chaque quantité",
+      "desc": "Voyez si une quantité vient d'un PDF, d'une maquette IFC ou d'une feuille de calcul, avec la page ou l'objet et un avertissement si la source manque."
+    },
+    "workspaces": {
+      "title": "Espaces de travail et second écran",
+      "desc": "Enregistrez votre disposition pour mesurer, chiffrer ou contrôler, et placez le plan sur un second écran."
+    },
+    "languages": {
+      "title": "39 langues et cinq thèmes",
+      "desc": "Y compris de droite à gauche pour l'arabe, le persan, l'hébreu et l'ourdou, et clair, sombre, Blueprint et contraste élevé."
+    }
+  },
+  "download": {
+    "title": "Télécharger v0.13.0",
+    "lead": "Gratuit, sans compte. Pour Windows, macOS et Linux.",
+    "forWindows": "Télécharger pour Windows",
+    "forMac": "Télécharger pour macOS",
+    "forLinux": "Télécharger pour Linux",
+    "metaWindows": "programme d'installation .exe",
+    "metaMac": ".dmg pour Apple Silicon (M1 et plus récent)",
+    "metaLinux": "AppImage, fonctionne sur la plupart des distributions",
+    "browserBtn": "Ouvrir dans le navigateur",
+    "fileExe": "Programme d'installation (.exe)",
+    "fileMsi": "Programme d'installation (.msi)",
+    "fileDmg": ".dmg (Apple Silicon)",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "fileSnap": "Snap",
+    "browserNote": "Vous préférez ne rien installer ? L'application <a href=\"https://open-calc-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">fonctionne aussi dans le navigateur</a>.",
+    "label": "Télécharger",
+    "mobileNote": "Open Calc Studio est conçu pour un grand écran. Ouvrez-le sur votre ordinateur, ou essayez-le ici dans le navigateur.",
+    "other": "Autres plateformes"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Toutes les notes de version",
+    "ctaDemo": "Essayer dans le navigateur",
+    "items": {
+      "onlv": {
+        "title": "Importer des métrés autrichiens",
+        "desc": "Un .onlv devient un chiffrage : les groupes deviennent des chapitres, les positions des postes avec numéro, quantité, unité, main-d'œuvre et matériaux."
+      },
+      "onlb": {
+        "title": "Textes types en catalogue",
+        "desc": "Un .onlb, comme le LB-Hochbau et ses près de 20 000 positions, se charge en 0,3 seconde environ."
+      },
+      "onlvexport": {
+        "title": "Exporter en .onlv",
+        "desc": "Conforme aux schémas officiels d'Austrian Standards ; importer, exporter et réimporter ne montre aucune différence."
+      },
+      "bc3": {
+        "title": ".bc3 identique champ par champ",
+        "desc": "Sur 22 fichiers réels, 21 reviennent identiques champ par champ ; chaque écart de prix est expliqué dans le rapport."
+      },
+      "toplevel": {
+        "title": "Prix unitaire aussi au premier niveau",
+        "desc": "Un poste sans chapitre reçoit désormais un prix unitaire dérivé, comme les autres postes."
+      }
+    },
+    "label": "Nouveau dans la v0.13.0",
+    "title": "Après l'Espagne, <span>l'Autriche</span>",
+    "desc": "Open Calc Studio lit et écrit désormais le format d'échange autrichien ÖNORM A 2063, et l'aller-retour avec les fichiers espagnols .bc3 a encore été affiné, rapport et captures à l'appui."
+  },
+  "faq": {
+    "files": {
+      "q": "Quels fichiers puis-je ouvrir ?",
+      "a": "Vos fichiers .ifcCalc, les chiffrages de WPCalc, BasCalc, IBIS-TRAD et CUF-XML, les cahiers des charges STABU (.s01, .sufx) et RAW (.rsx, .rsu), le .bc3 espagnol, l'ÖNORM autrichien (.onlv, .onlb), le GAEB allemand (.x83), les XPWE et XC4 italiens et tchèques, l'IFC avec planning de coûts, et Excel ou CSV. Les listes de prix s'importent en ZSX ou BMEcat."
+    },
+    "install": {
+      "q": "Dois-je installer quelque chose ?",
+      "a": "Non. La version web fonctionne directement dans le navigateur et vos fichiers restent sur votre ordinateur. Pour l'aperçu PDF des rapports, il y a l'application de bureau pour Windows, macOS et Linux."
+    },
+    "price": {
+      "q": "Combien coûte Open Calc Studio ?",
+      "a": "Rien. L'application est gratuite et open source sous licence LGPL-3.0, sans abonnement. Seules les instructions libres à l'assistant IA utilisent le crédit de votre compte OpenAEC ou votre propre clé API."
+    },
+    "save": {
+      "q": "Dans quel format mon travail est-il enregistré ?",
+      "a": "Dans un fichier .ifcCalc : du JSON ouvert et lisible, à la structure documentée. Les anciens fichiers s'ouvrent toujours ; l'application de bureau enregistre discrètement toutes les deux minutes."
+    },
+    "systems": {
+      "q": "Sur quels systèmes fonctionne-t-il ?",
+      "a": "Windows (.exe ou .msi), macOS sur Apple Silicon (.dmg) et Linux (AppImage, .deb, .rpm et Snap), ainsi que tout navigateur moderne. La version Mac n'est pas encore notarisée par Apple : la première fois, autorisez-la une fois dans Confidentialité et sécurité."
+    },
+    "practice": {
+      "q": "Est-ce adapté à la pratique du bâtiment ?",
+      "a": "Oui. La structure avec cadences, groupes de taux, frais généraux et TVA normale et réduite suit la pratique néerlandaise, et STABU, RAW et le bordereau de soumission entrent ou sortent. Pour l'Espagne, l'Autriche et l'Allemagne, il y a .bc3, ÖNORM et GAEB."
+    },
+    "ai": {
+      "q": "Que peut en faire un assistant IA ?",
+      "a": "Dans l'application, Prompt & Chiffrage aide avec des questions et des propositions que vous vérifiez d'abord. Il existe aussi un serveur MCP (Model Context Protocol) : un assistant comme Claude crée des chiffrages, ajoute des postes, règle les frais généraux et produit un PDF."
+    },
+    "desktop": {
+      "q": "Les dernières fonctions sont-elles déjà dans l'application de bureau ?",
+      "a": "Pas encore. Prompt & Chiffrage, le chiffrage guidé, le centre de contrôle, la mesure sur PDF et les quantités depuis une maquette 3D sont dans la version web. Ils arriveront dans les installateurs avec la prochaine version ; la v0.13.0 ne les a pas encore."
+    },
+    "export": {
+      "q": "Vers quels formats puis-je exporter ?",
+      "a": "PDF, CSV, IFC, WPCalc, CUF-XML, .bc3, ÖNORM (.onlv) et le bordereau RAW en Excel. L'export vers IBIS-TRAD et RAW-RSX est limité ; il n'y a pas encore d'export GAEB."
+    },
+    "status": {
+      "q": "Est-ce prêt pour un usage réel ?",
+      "a": "Il est en test public : assez stable pour travailler, mais vérifiez vos résultats et attendez-vous à des changements. Signalez ce que vous trouvez sur GitHub ; les testeurs avec des fichiers .bc3 ou un Mac sont particulièrement bienvenus."
+    },
+    "heading": "Questions fréquentes"
   },
   "tech": {
-    "title": "Technologie",
-    "desc": "Construit avec TypeScript et Rust via Tauri 2. Fonctionne en tant qu'application de bureau sur Windows, macOS et Linux, et en tant qu'application web dans le navigateur. Comprend un serveur MCP pour l'intégration IA et un système d'extensions pour la personnalisation."
+    "tauri": {
+      "desc": "Une application de bureau native pour Windows, macOS et Linux, avec calculs et mise en page PDF en Rust."
+    },
+    "react": {
+      "desc": "La même interface dans le navigateur et sur le bureau, avec une grille virtualisée pour les gros chiffrages."
+    },
+    "typst": {
+      "desc": "Composition moderne pour les rapports PDF, avec des tableaux soignés et la pagination."
+    },
+    "format": {
+      "title": "Format ouvert .ifcCalc",
+      "desc": "Du JSON lisible avec sa propre politique de versions et la migration automatique des anciens fichiers."
+    },
+    "mcp": {
+      "title": "Serveur MCP",
+      "desc": "Crée et modifie des fichiers de chiffrage depuis une conversation avec un assistant IA, jusqu'au PDF."
+    },
+    "embed": {
+      "title": "Intégration",
+      "desc": "Un SDK React/JavaScript, l'intégration par iframe et une bibliothèque native (DLL, .so, .dylib) dans le code source, pour vos logiciels."
+    },
+    "heading": "Technologie",
+    "sub": "Pour ceux qui veulent savoir comment c'est construit."
   },
-  "cta": {
-    "demo": "Voir la démo en ligne",
-    "github": "Voir sur GitHub",
-    "extensions": "Catalogue d'extensions",
-    "download": "↓ Télécharger v0.13.0 — Windows, macOS & Linux",
-    "testers": "Nous cherchons des testeurs : utilisateurs de fichiers .bc3, utilisateurs Mac et locuteurs natifs pour les 39 langues. Réagissez via les issues GitHub."
-  },
-  "bc3": {
-    "title": "Testé sur des fichiers réels : FIEBDC-3 (.bc3)",
-    "desc": "Nous avons importé 22 budgets .bc3 réels, puis les avons exportés et réimportés — jusqu'à la base de coûts andalouse BCCA 2023 avec 46 215 lignes.",
-    "item1": "Tous les montants et totaux de chapitres identiques après l'aller-retour (± 0,01)",
-    "item2": "21 des 22 fichiers identiques champ par champ ; dans 1 fichier, seul un code de chapitre en double reçoit un suffixe",
-    "item3": "Tous les bogues trouvés dans l'importateur et l'exportateur corrigés ; le test fait partie de la suite de tests",
-    "link": "Lire le rapport complet"
+  "releases": {
+    "showAll": "Afficher toutes les versions",
+    "showLess": "Afficher seulement les trois dernières",
+    "github": "Toutes les versions sur GitHub"
   }
 }

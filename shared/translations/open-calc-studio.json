@@ -1,103 +1,299 @@
 {
   "header": {
-    "label": "OpenAEC Ecosystem",
     "title": "Open <span class=\"accent\">Calc</span> Studio",
-    "desc": "Open-source budgeting and cost estimation tool for construction. From cost estimates to final accounts, with direct connections to STABU/RAW, FIEBDC-3 (.bc3), IFCX and AI — in 39 languages.",
-    "badge": "Beta",
-    "downloadBtn": "Download v0.13.0"
+    "demoBtn": "Open in browser",
+    "downloadBtn": "Download",
+    "sourceBtn": "Source code",
+    "proof2": "39 languages",
+    "proof4": "MCP for AI assistants",
+    "proof5": "Free · LGPL-3.0",
+    "heroAlt": "Open Calc Studio: the estimate of a fictitious single-family house with chapters, items and calculation lines, the total at the top right and the properties of the selected row",
+    "label": "Cost estimating",
+    "tagline": "Build a complete construction estimate, without licence fees or closed formats",
+    "desc": "Build your estimate from chapters, items and calculation lines with production norms and hourly rates; markups and VAT are calculated along. Read files from your old estimating program and deliver a report or the format your client asks for."
   },
-  "mcp": {
-    "title": "AI-powered estimation via MCP",
-    "desc": "Open Calc Studio is fully accessible via the Model Context Protocol (MCP). This means AI assistants like Claude can directly create budgets, add items, recalculate and export — without manual input.",
-    "item1": "Create and manage budgets from Claude Code or other AI tools",
-    "item2": "Automatically extract quantities from IFC/IFCX models",
-    "item3": "Look up reference projects for realistic unit prices",
-    "item4": "Export to PDF and IFCX directly from the AI workflow",
-    "item5": "Extensible via the extension catalog"
+  "meta": {
+    "description": "Free, open-source construction cost estimating: chapters, production norms, rates and markups, reports, and exchange with STABU, RAW, IBIS-TRAD, WPCalc, CUF, FIEBDC-3 (.bc3), ÖNORM and IFC. For Windows, macOS, Linux and the browser.",
+    "title": "Open Calc Studio — OpenAEC Foundation"
   },
-  "why": {
-    "title": "Why Open <span class=\"accent\">Calc</span> Studio?",
-    "desc1": "Cost estimates and budgets are essential for every construction project. Existing estimation software costs thousands of euros per license and locks you into proprietary formats. Open Calc Studio offers a fully open-source alternative that is just as powerful.",
-    "desc2": "With direct connections to STABU/RAW standards, IFCX models for automatic quantities, and AI integration via MCP, Open Calc Studio is built for the future of AEC cost estimation."
+  "hl": {
+    "prompt": {
+      "alt": "Prompt & Estimate: on the left the request to add a concrete line with the financial proposal before and after, on the right the estimate",
+      "kicker": "Prompt & Estimate",
+      "title": "Type what you want, see what it costs first",
+      "desc": "Ask in plain language to add a line or look up a total. You first get a proposal with the direct costs, the total and the VAT before and after, and per changed row what changes. Apply it in one go or reject it."
+    },
+    "wizard": {
+      "alt": "Guided estimate, Costs step: per line the unit price, the labour and the production norm, with the total at the bottom",
+      "kicker": "Guided estimate",
+      "title": "Step by step to a sound estimate",
+      "desc": "Five steps take you through project, quantities, costs, markups and VAT, and a final check. Every change appears straight away in the full estimate, and the total at the bottom keeps up."
+    },
+    "exchange": {
+      "alt": "The Import menu with IFC, CUF-XML, Excel, STABU, IBIS-TRAD, RAW, FIEBDC-3, ÖNORM, GAEB and XPWE, among others",
+      "kicker": "Exchange",
+      "title": "Bring your work from your old estimating program",
+      "desc": "Read estimates from WPCalc, BasCalc, IBIS-TRAD, CUF-XML, STABU and RAW, or from Excel with your own columns. Spanish .bc3, Austrian ÖNORM and German GAEB bills of quantities go in too. Deliver again as WPCalc, CUF, .bc3, ÖNORM or IFC."
+    },
+    "report": {
+      "alt": "Main contract report of the fictitious single-family house with project details, chapters, subtotals and the contract sum",
+      "kicker": "Reports",
+      "title": "A clean estimate for your client",
+      "desc": "Seven reports, from work description and main contract to tender sheet and post-calculation. Choose the report language separately from the app language: headings, units, numbers and dates follow it. Print, or create a PDF in the desktop app."
+    }
+  },
+  "notice": {
+    "link": "Sign up on GitHub",
+    "text": "Open Calc Studio is in public testing. We are looking for testers who work with .bc3 files or on a Mac, and native speakers for the translations."
+  },
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "download": "Download",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "estimate": "Estimating",
+    "assist": "Help and checks",
+    "exchange": "Exchange",
+    "report": "Reports",
+    "takeoff": "Quantities",
+    "all": "All features"
   },
   "features": {
-    "title": "Features",
-    "stabu": {
-      "title": "STABU/RAW integration",
-      "desc": "Full support for STABU and RAW standards for standardized specifications and cost estimates according to Dutch norms."
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "From first estimate to tender sheet, in one app",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
+    "structure": {
+      "title": "Chapters, items and calculation lines",
+      "desc": "A clear structure with automatic numbering. Drag rows, also to another chapter."
     },
-    "ifcx": {
-      "title": "IFCX quantities",
-      "desc": "Automatically extract quantities from IFCX models. Link budget items directly to model elements for accurate calculations."
+    "norms": {
+      "title": "Norms and hourly rates",
+      "desc": "A production norm per line and rate groups with their own hourly rates. Change an hours total and the norms scale along."
+    },
+    "markups": {
+      "title": "Markups",
+      "desc": "General costs, overhead, guarantees, risk, profit, insurance and rounding, in the usual order."
+    },
+    "vat": {
+      "title": "Standard and reduced VAT",
+      "desc": "Choose the rate per chapter, item or line; the totals use the right rate."
+    },
+    "variants": {
+      "title": "Variants and versions",
+      "desc": "Put options side by side, keep snapshots and see which rows have changed."
+    },
+    "sheets": {
+      "title": "Spreadsheets",
+      "desc": "Sub-calculations with formulas inside the estimate itself, in a tab beside it."
+    },
+    "prompt": {
+      "title": "Prompt & Estimate",
+      "desc": "Questions and commands in plain language, with a financial proposal you review first. Free-form commands need an OpenAEC account or your own API key."
+    },
+    "wizard": {
+      "title": "Guided estimate",
+      "desc": "Five steps from project details to checks, on the same estimate as the full editor."
+    },
+    "review": {
+      "title": "Review center",
+      "desc": "Checks prices, sources and units of the active variant, and jumps to the row with the issue."
     },
     "mcp": {
-      "title": "MCP Server",
-      "desc": "Fully accessible via Model Context Protocol. AI assistants can create, edit and export budgets."
+      "title": "MCP for AI assistants",
+      "desc": "An assistant such as Claude creates estimates, adds items, sets markups and produces a PDF."
     },
-    "extensions": {
-      "title": "Extension system",
-      "desc": "Extensible via an extension catalog. Add industry-specific calculation methods, templates and integrations."
+    "dutch": {
+      "title": "WPCalc, BasCalc, IBIS-TRAD and CUF",
+      "desc": "Read estimates from well-known Dutch estimating programs; write WPCalc and CUF back too."
     },
-    "chapters": {
-      "title": "Chapters & sections",
-      "desc": "Organize budgets into chapters, sections and budget items. Flexible hierarchy with automatic numbering."
-    },
-    "reference": {
-      "title": "Reference projects",
-      "desc": "Look up unit prices from reference projects. Build a reusable database of prices and key figures."
-    },
-    "export": {
-      "title": "PDF & IFCX export",
-      "desc": "Export budgets as professional PDF reports or as IFCX data for exchange with other tools in the ecosystem."
-    },
-    "staart": {
-      "title": "Overhead costs",
-      "desc": "Configurable overhead costs: general site costs, profit & risk, CAR insurance and other surcharges automatically calculated."
-    },
-    "recalc": {
-      "title": "Recalculation",
-      "desc": "One-click recalculation of the entire budget. All subtotals, VAT and overhead costs are automatically updated."
-    },
-    "talen": {
-      "title": "39 languages",
-      "desc": "Full interface translation in 39 languages, including right-to-left for Arabic, Farsi, Hebrew and Urdu. English is the default; pick your language via Preferences → General."
-    },
-    "rapporttaal": {
-      "title": "Reports in your own language",
-      "desc": "Printing and PDF reports follow the separate Report language setting: headings, units and number and date formatting (1.234,56 € in Spanish, € 1,234.56 in English)."
-    },
-    "btw": {
-      "title": "High and low VAT",
-      "desc": "Choose the VAT rate per chapter, item or line. Subtotals and the grand total automatically use the right rate."
+    "stabu": {
+      "title": "STABU and RAW",
+      "desc": "A STABU specification (.s01, .sufx) or RAW specification (.rsx, .rsu) as the basis for your estimate, and a RAW tender sheet as Excel."
     },
     "bc3": {
       "title": "FIEBDC-3 (.bc3)",
-      "desc": "Import and export the Spanish exchange format FIEBDC-3, common across the Spanish construction sector — proven loss-free for amounts and structure."
+      "desc": "The Spanish exchange format in and out, tested on 22 real files: all amounts equal after the round trip."
     },
     "onorm": {
-      "title": "ÖNORM A 2063 (.onlv)",
-      "desc": "Read Austrian Leistungsverzeichnisse and Leistungsbücher and export as .onlv, validated against the official XML schemas."
+      "title": "ÖNORM A 2063",
+      "desc": "Read Austrian bills of quantities (.onlv) and standard texts (.onlb), and export .onlv following the official schemas."
     },
-    "showAll": "Show all features",
-    "showLess": "Show less"
+    "gaeb": {
+      "title": "GAEB and XPWE",
+      "desc": "Read German GAEB bills of quantities (.x83) and Italian and Czech estimates (XPWE, XC4)."
+    },
+    "excel": {
+      "title": "Excel, CSV and price lists",
+      "desc": "Map the columns of an Excel or CSV file yourself, and load price lists (ZSX, BMEcat) into your library."
+    },
+    "ifc": {
+      "title": "IFC cost schedule",
+      "desc": "Read and write an estimate as IfcCostSchedule, for exchange with BIM software."
+    },
+    "reports": {
+      "title": "Seven reports",
+      "desc": "Work description, main contract, subcontracting, tender sheet, post-calculation and two extended overviews."
+    },
+    "reportlang": {
+      "title": "Report in your client's language",
+      "desc": "Headings, units and the notation of numbers and dates follow the chosen report language."
+    },
+    "pdf": {
+      "title": "Print and PDF",
+      "desc": "With cover page, summary, page numbering and portrait or landscape. The PDF preview is in the desktop app."
+    },
+    "ifclite": {
+      "title": "Quantities from a 3D model",
+      "desc": "Open an IFC file, click elements and take their quantities into the selected item."
+    },
+    "pdfmeasure": {
+      "title": "Measure on a PDF drawing",
+      "desc": "Set the scale with two points, measure lengths and areas, and keep the measurements with the estimate."
+    },
+    "provenance": {
+      "title": "Origin of every quantity",
+      "desc": "See whether a quantity comes from a PDF, IFC model or spreadsheet, with page or object and a warning when the source is missing."
+    },
+    "workspaces": {
+      "title": "Workspaces and second screen",
+      "desc": "Save your layout for measuring, estimating or checking, and put the drawing on a second screen."
+    },
+    "languages": {
+      "title": "39 languages and five themes",
+      "desc": "Including right-to-left for Arabic, Persian, Hebrew and Urdu, and light, dark, Blueprint and high contrast."
+    }
+  },
+  "download": {
+    "title": "Download v0.13.0",
+    "lead": "Free, no account needed. For Windows, macOS and Linux.",
+    "forWindows": "Download for Windows",
+    "forMac": "Download for macOS",
+    "forLinux": "Download for Linux",
+    "metaWindows": ".exe installer",
+    "metaMac": ".dmg for Apple Silicon (M1 and later)",
+    "metaLinux": "AppImage, runs on most distributions",
+    "browserBtn": "Open in browser",
+    "fileExe": "Installer (.exe)",
+    "fileMsi": "Installer (.msi)",
+    "fileDmg": ".dmg (Apple Silicon)",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "fileSnap": "Snap",
+    "browserNote": "Rather not install anything? The app also <a href=\"https://open-calc-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">runs in the browser</a>.",
+    "label": "Download",
+    "mobileNote": "Open Calc Studio is made for a large screen. Open it on your computer, or try it here in the browser.",
+    "other": "Other platforms"
+  },
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "ctaDemo": "Try it in the browser",
+    "items": {
+      "onlv": {
+        "title": "Read Austrian bills of quantities",
+        "desc": "An .onlv becomes an estimate: groups become chapters, positions become items with number, quantity, unit, labour and material."
+      },
+      "onlb": {
+        "title": "Standard texts as a catalogue",
+        "desc": "An .onlb, such as LB-Hochbau with almost 20,000 positions, loads in about 0.3 seconds."
+      },
+      "onlvexport": {
+        "title": "Export as .onlv",
+        "desc": "Valid against the official Austrian Standards schemas; import, export and re-import show no difference."
+      },
+      "bc3": {
+        "title": ".bc3 equal field by field",
+        "desc": "Of 22 real files, 21 come back identical field by field; every price difference is explained in the report."
+      },
+      "toplevel": {
+        "title": "Unit price at the top level too",
+        "desc": "An item without a chapter now gets a derived unit price, just like other items."
+      }
+    },
+    "label": "New in v0.13.0",
+    "title": "After Spain, now <span>Austria</span>",
+    "desc": "Open Calc Studio now reads and writes the Austrian exchange format ÖNORM A 2063, and the round trip with Spanish .bc3 files has been tightened further and backed up with a report and screenshots."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "Your own .ifcCalc files, estimates from WPCalc, BasCalc, IBIS-TRAD and CUF-XML, STABU specifications (.s01, .sufx), RAW specifications (.rsx, .rsu), Spanish .bc3, Austrian ÖNORM (.onlv, .onlb), German GAEB (.x83), Italian and Czech XPWE and XC4, IFC with a cost schedule, and Excel or CSV. Price lists come in as ZSX or BMEcat."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "No. The web version works straight in the browser and your files stay on your own computer. For the PDF preview of reports there is the desktop app for Windows, macOS and Linux."
+    },
+    "price": {
+      "q": "What does Open Calc Studio cost?",
+      "a": "Nothing. The app is free and open source under the LGPL-3.0 licence, with no subscription. Only free-form commands to the AI assistant use credit from your OpenAEC account or your own API key."
+    },
+    "save": {
+      "q": "In which format is my work saved?",
+      "a": "In an .ifcCalc file: open, readable JSON with a documented structure. Older files always open; the desktop app saves quietly every two minutes."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "Windows (.exe or .msi), macOS on Apple Silicon (.dmg) and Linux (AppImage, .deb, .rpm and Snap), and any modern browser. The Mac version is not yet notarized by Apple: the first time, you allow it once under Privacy & Security."
+    },
+    "practice": {
+      "q": "Does it fit construction practice?",
+      "a": "Yes. The structure with norms, rate groups, markups and standard and reduced VAT follows Dutch practice, and STABU, RAW and the tender sheet go in or out. For Spain, Austria and Germany there are .bc3, ÖNORM and GAEB."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "In the app, Prompt & Estimate helps with questions and proposals you review first. There is also an MCP server (Model Context Protocol): with it, an assistant such as Claude creates estimates, adds items, sets markups and produces a PDF."
+    },
+    "desktop": {
+      "q": "Are the newest features already in the desktop app?",
+      "a": "Not yet. Prompt & Estimate, the guided estimate, the review center, measuring on PDF and quantities from a 3D model are in the web version now. They come to the installers with the next release; v0.13.0 does not have them yet."
+    },
+    "export": {
+      "q": "Which formats can I export to?",
+      "a": "PDF, CSV, IFC, WPCalc, CUF-XML, .bc3, ÖNORM (.onlv) and the RAW tender sheet as Excel. Export to IBIS-TRAD and RAW-RSX is limited; there is no GAEB export yet."
+    },
+    "status": {
+      "q": "Is it ready for real work?",
+      "a": "It is in public testing: stable enough to work with, but check your results and expect changes. Report what you find on GitHub; testers with .bc3 files or a Mac are especially welcome."
+    },
+    "heading": "Frequently asked questions"
   },
   "tech": {
-    "title": "Technology",
-    "desc": "Built with TypeScript and Rust via Tauri 2. Runs as a desktop application on Windows, macOS and Linux, and as a web application in the browser. Includes MCP Server for AI integration and extension system for customization."
+    "tauri": {
+      "desc": "A native desktop app for Windows, macOS and Linux, with calculations and PDF layout in Rust."
+    },
+    "react": {
+      "desc": "The same interface in the browser and on the desktop, with a virtualized grid for large estimates."
+    },
+    "typst": {
+      "desc": "Modern typesetting for the PDF reports, with clean tables and page numbering."
+    },
+    "format": {
+      "title": "Open .ifcCalc format",
+      "desc": "Readable JSON with its own versioning policy and automatic migration of older files."
+    },
+    "mcp": {
+      "title": "MCP server",
+      "desc": "Creates and edits estimate files from a conversation with an AI assistant, all the way to the PDF."
+    },
+    "embed": {
+      "title": "Embedding",
+      "desc": "A React/JavaScript SDK, iframe embedding and a native library (DLL, .so, .dylib) in the source code, for your own software."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
   },
-  "cta": {
-    "demo": "View live demo",
-    "github": "View on GitHub",
-    "extensions": "Extension catalog",
-    "download": "↓ Download v0.13.0 — Windows, macOS & Linux",
-    "testers": "We are looking for testers: users of .bc3 files, Mac users and native speakers for the 39 languages. Get in touch via GitHub issues."
-  },
-  "bc3": {
-    "title": "Tested on real files: FIEBDC-3 (.bc3)",
-    "desc": "We imported 22 real .bc3 budgets, exported them and imported them again — including the Andalusian cost database BCCA 2023 with 46,215 rows.",
-    "item1": "All amounts and chapter totals identical after the round trip (± 0.01)",
-    "item2": "21 of the 22 files identical field by field; in 1 file only a duplicate chapter code gets a suffix",
-    "item3": "Every bug found in the importer and exporter fixed; the test runs in the test suite",
-    "link": "Read the full report"
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }

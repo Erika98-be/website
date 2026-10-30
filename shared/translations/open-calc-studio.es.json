@@ -1,103 +1,299 @@
 {
   "header": {
-    "label": "Ecosistema OpenAEC",
     "title": "Open <span class=\"accent\">Calc</span> Studio",
-    "desc": "Herramienta de código abierto para presupuestos y estimación de costes en la construcción. Desde estimaciones de costes hasta liquidaciones finales, con conexiones directas a STABU/RAW, FIEBDC-3 (.bc3), IFCX e IA — en 39 idiomas.",
-    "badge": "Beta",
-    "downloadBtn": "Descargar v0.13.0"
+    "demoBtn": "Abrir en el navegador",
+    "downloadBtn": "Descargar",
+    "sourceBtn": "Código fuente",
+    "proof2": "39 idiomas",
+    "proof4": "MCP para asistentes de IA",
+    "proof5": "Gratis · LGPL-3.0",
+    "heroAlt": "Open Calc Studio: el presupuesto de una vivienda unifamiliar ficticia con capítulos, partidas y líneas de cálculo, el total arriba a la derecha y las propiedades de la fila seleccionada",
+    "label": "Presupuestos de obra",
+    "tagline": "Haz un presupuesto de obra completo, sin licencias de pago ni formatos cerrados",
+    "desc": "Monta tu presupuesto con capítulos, partidas y líneas de cálculo con rendimientos y tarifas horarias; los costes indirectos y el IVA se calculan solos. Importa los archivos de tu antiguo programa de presupuestos y entrega un informe o el formato que pide tu cliente."
   },
-  "mcp": {
-    "title": "Presupuestos con IA vía MCP",
-    "desc": "Open Calc Studio es totalmente accesible mediante el Model Context Protocol (MCP). Esto significa que asistentes de IA como Claude pueden crear presupuestos, añadir partidas, recalcular y exportar directamente — sin entrada manual.",
-    "item1": "Crea y gestiona presupuestos desde Claude Code u otras herramientas de IA",
-    "item2": "Extrae mediciones automáticamente de modelos IFC/IFCX",
-    "item3": "Consulta proyectos de referencia para obtener precios unitarios realistas",
-    "item4": "Exporta a PDF e IFCX directamente desde el flujo de trabajo de IA",
-    "item5": "Ampliable mediante el catálogo de extensiones"
+  "meta": {
+    "description": "Aplicación gratuita y de código abierto para presupuestos de obra: capítulos, rendimientos, tarifas y costes indirectos, informes, e intercambio con STABU, RAW, IBIS-TRAD, WPCalc, CUF, FIEBDC-3 (.bc3), ÖNORM e IFC. Para Windows, macOS, Linux y el navegador.",
+    "title": "Open Calc Studio — OpenAEC Foundation"
   },
-  "why": {
-    "title": "¿Por qué Open <span class=\"accent\">Calc</span> Studio?",
-    "desc1": "Las estimaciones de costes y los presupuestos son esenciales en todo proyecto de construcción. El software de presupuestos existente cuesta miles de euros por licencia y te encierra en formatos propietarios. Open Calc Studio ofrece una alternativa totalmente de código abierto e igual de potente.",
-    "desc2": "Con conexiones directas a los estándares STABU/RAW, modelos IFCX para mediciones automáticas e integración de IA mediante MCP, Open Calc Studio está construido para el futuro de la estimación de costes en AEC."
+  "hl": {
+    "prompt": {
+      "alt": "Prompt y presupuesto: a la izquierda la petición de añadir una línea de hormigón con la propuesta económica antes y después, a la derecha el presupuesto",
+      "kicker": "Prompt y presupuesto",
+      "title": "Escribe lo que quieres y mira primero lo que cuesta",
+      "desc": "Pide en lenguaje normal que añada una línea o busque un total. Primero recibes una propuesta con los costes directos, el total y el IVA antes y después, y en cada fila cambiada qué cambia. Aplícala de una vez o recházala."
+    },
+    "wizard": {
+      "alt": "Presupuesto guiado, paso Costes: por línea el precio unitario, la mano de obra y el rendimiento, con el total abajo",
+      "kicker": "Presupuesto guiado",
+      "title": "Paso a paso hacia un presupuesto sólido",
+      "desc": "Cinco pasos te llevan por proyecto, cantidades, costes, costes indirectos e IVA y un control final. Cada cambio aparece al momento en el presupuesto completo y el total de abajo se actualiza."
+    },
+    "exchange": {
+      "alt": "El menú Importar con, entre otros, IFC, CUF-XML, Excel, STABU, IBIS-TRAD, RAW, FIEBDC-3, ÖNORM, GAEB y XPWE",
+      "kicker": "Intercambio",
+      "title": "Trae tu trabajo desde tu antiguo programa de presupuestos",
+      "desc": "Importa presupuestos de WPCalc, BasCalc, IBIS-TRAD, CUF-XML, STABU y RAW, o de Excel con tus propias columnas. También entran mediciones españolas .bc3, austriacas ÖNORM y alemanas GAEB. Entrega de nuevo como WPCalc, CUF, .bc3, ÖNORM o IFC."
+    },
+    "report": {
+      "alt": "Informe de contratista principal de la vivienda ficticia con los datos del proyecto, capítulos, subtotales y el importe del contrato",
+      "kicker": "Informes",
+      "title": "Un presupuesto limpio para tu cliente",
+      "desc": "Siete informes, desde la descripción de obra y el contratista principal hasta la hoja de oferta y la liquidación. Elige el idioma del informe aparte del de la aplicación: títulos, unidades, números y fechas lo siguen. Imprime o crea un PDF en la aplicación de escritorio."
+    }
+  },
+  "notice": {
+    "link": "Apúntate en GitHub",
+    "text": "Open Calc Studio está en fase de pruebas pública. Buscamos testers que trabajen con archivos .bc3 o en Mac, y hablantes nativos para las traducciones."
+  },
+  "subnav": {
+    "label": "En esta página",
+    "features": "Funciones",
+    "download": "Descargar",
+    "whatsnew": "Novedades",
+    "faq": "Preguntas",
+    "releases": "Versiones"
+  },
+  "tabs": {
+    "highlights": "Destacados",
+    "estimate": "Presupuestar",
+    "assist": "Ayuda y control",
+    "exchange": "Intercambio",
+    "report": "Informes",
+    "takeoff": "Mediciones",
+    "all": "Todas las funciones"
   },
   "features": {
-    "title": "Funciones",
-    "stabu": {
-      "title": "Integración STABU/RAW",
-      "desc": "Compatibilidad completa con los estándares STABU y RAW para especificaciones y estimaciones de costes estandarizadas según las normas neerlandesas."
+    "learnMore": "Leer más",
+    "label": "Funciones",
+    "heading": "De la primera estimación a la hoja de oferta, en una sola aplicación",
+    "sub": "Empieza por lo más destacado o elige un tema.",
+    "tabsLabel": "Funciones por tema"
+  },
+  "f": {
+    "structure": {
+      "title": "Capítulos, partidas y líneas de cálculo",
+      "desc": "Una estructura clara con numeración automática. Arrastra filas, también a otro capítulo."
     },
-    "ifcx": {
-      "title": "Mediciones IFCX",
-      "desc": "Extrae mediciones automáticamente de modelos IFCX. Vincula partidas del presupuesto directamente a elementos del modelo para cálculos precisos."
+    "norms": {
+      "title": "Rendimientos y tarifas horarias",
+      "desc": "Un rendimiento por línea y grupos de tarifa con su propia tarifa horaria. Cambia un total de horas y los rendimientos se ajustan."
+    },
+    "markups": {
+      "title": "Costes indirectos y beneficio",
+      "desc": "Gastos generales, costes de empresa, garantías, riesgo, beneficio, seguro y redondeo, en el orden habitual."
+    },
+    "vat": {
+      "title": "IVA general y reducido",
+      "desc": "Elige el tipo por capítulo, partida o línea; los totales usan el tipo correcto."
+    },
+    "variants": {
+      "title": "Variantes y versiones",
+      "desc": "Pon opciones lado a lado, guarda instantáneas y ve qué filas han cambiado."
+    },
+    "sheets": {
+      "title": "Hojas de cálculo",
+      "desc": "Cálculos auxiliares con fórmulas dentro del propio presupuesto, en una pestaña al lado."
+    },
+    "prompt": {
+      "title": "Prompt y presupuesto",
+      "desc": "Preguntas y órdenes en lenguaje normal, con una propuesta económica que revisas primero. Las órdenes libres requieren una cuenta OpenAEC o tu propia clave API."
+    },
+    "wizard": {
+      "title": "Presupuesto guiado",
+      "desc": "Cinco pasos de los datos del proyecto al control, sobre el mismo presupuesto que el editor completo."
+    },
+    "review": {
+      "title": "Centro de revisión",
+      "desc": "Revisa precios, orígenes y unidades de la variante activa, y salta a la fila del aviso."
     },
     "mcp": {
-      "title": "Servidor MCP",
-      "desc": "Totalmente accesible mediante el Model Context Protocol. Los asistentes de IA pueden crear, editar y exportar presupuestos."
+      "title": "MCP para asistentes de IA",
+      "desc": "Un asistente como Claude crea presupuestos, añade partidas, ajusta los costes indirectos y genera un PDF."
     },
-    "extensions": {
-      "title": "Sistema de extensiones",
-      "desc": "Ampliable mediante un catálogo de extensiones. Añade métodos de cálculo, plantillas e integraciones específicos de tu sector."
+    "dutch": {
+      "title": "WPCalc, BasCalc, IBIS-TRAD y CUF",
+      "desc": "Importa presupuestos de conocidos programas neerlandeses; también vuelve a escribir WPCalc y CUF."
     },
-    "chapters": {
-      "title": "Capítulos y secciones",
-      "desc": "Organiza los presupuestos en capítulos, secciones y partidas. Jerarquía flexible con numeración automática."
-    },
-    "reference": {
-      "title": "Proyectos de referencia",
-      "desc": "Consulta precios unitarios de proyectos de referencia. Construye una base de datos reutilizable de precios y ratios."
-    },
-    "export": {
-      "title": "Exportación PDF e IFCX",
-      "desc": "Exporta presupuestos como informes PDF profesionales o como datos IFCX para intercambiarlos con otras herramientas del ecosistema."
-    },
-    "staart": {
-      "title": "Costes indirectos",
-      "desc": "Costes indirectos configurables: gastos generales de obra, beneficio y riesgo, seguro CAR y otros recargos calculados automáticamente."
-    },
-    "recalc": {
-      "title": "Recálculo",
-      "desc": "Recálculo de todo el presupuesto con un clic. Todos los subtotales, el IVA y los costes indirectos se actualizan automáticamente."
-    },
-    "talen": {
-      "title": "39 idiomas",
-      "desc": "Traducción completa de la interfaz a 39 idiomas, incluyendo escritura de derecha a izquierda para árabe, farsi, hebreo y urdu. El inglés es el idioma por defecto; elige tu idioma en Preferencias → General."
-    },
-    "rapporttaal": {
-      "title": "Informes en tu propio idioma",
-      "desc": "La impresión y los informes PDF siguen el ajuste independiente de idioma del informe: encabezados, unidades y formato de números y fechas (1.234,56 € en español, € 1,234.56 en inglés)."
-    },
-    "btw": {
-      "title": "IVA general y reducido",
-      "desc": "Elige el tipo de IVA por capítulo, partida o línea. Los subtotales y el total general aplican automáticamente el tipo correcto."
+    "stabu": {
+      "title": "STABU y RAW",
+      "desc": "Un pliego STABU (.s01, .sufx) o RAW (.rsx, .rsu) como base del presupuesto, y una hoja de oferta RAW en Excel."
     },
     "bc3": {
       "title": "FIEBDC-3 (.bc3)",
-      "desc": "Importa y exporta el formato de intercambio español FIEBDC-3, habitual en el sector de la construcción en España — con fidelidad demostrada sin pérdidas en importes y estructura."
+      "desc": "El formato de intercambio español de entrada y salida, probado con 22 archivos reales: todos los importes iguales tras el viaje de ida y vuelta."
     },
     "onorm": {
-      "title": "ÖNORM A 2063 (.onlv)",
-      "desc": "Importa Leistungsverzeichnisse y Leistungsbücher austriacos y exporta como .onlv, validado con los esquemas XML oficiales."
+      "title": "ÖNORM A 2063",
+      "desc": "Importa mediciones austriacas (.onlv) y textos estándar (.onlb), y exporta .onlv según los esquemas oficiales."
     },
-    "showAll": "Mostrar todas las funciones",
-    "showLess": "Mostrar menos"
+    "gaeb": {
+      "title": "GAEB y XPWE",
+      "desc": "Importa mediciones alemanas GAEB (.x83) y presupuestos italianos y checos (XPWE, XC4)."
+    },
+    "excel": {
+      "title": "Excel, CSV y listas de precios",
+      "desc": "Asigna tú mismo las columnas de un archivo Excel o CSV y carga listas de precios (ZSX, BMEcat) en tu biblioteca."
+    },
+    "ifc": {
+      "title": "Cuadro de costes IFC",
+      "desc": "Lee y escribe un presupuesto como IfcCostSchedule, para intercambiar con software BIM."
+    },
+    "reports": {
+      "title": "Siete informes",
+      "desc": "Descripción de obra, contratista principal, subcontratas, hoja de oferta, liquidación y dos resúmenes ampliados."
+    },
+    "reportlang": {
+      "title": "Informe en el idioma de tu cliente",
+      "desc": "Títulos, unidades y el formato de números y fechas siguen el idioma de informe elegido."
+    },
+    "pdf": {
+      "title": "Imprimir y PDF",
+      "desc": "Con portada, resumen, paginación y vertical u horizontal. La vista previa en PDF está en la aplicación de escritorio."
+    },
+    "ifclite": {
+      "title": "Cantidades desde un modelo 3D",
+      "desc": "Abre un archivo IFC, haz clic en elementos y lleva sus cantidades a la partida seleccionada."
+    },
+    "pdfmeasure": {
+      "title": "Medir sobre un plano PDF",
+      "desc": "Fija la escala con dos puntos, mide longitudes y superficies y guarda las mediciones con el presupuesto."
+    },
+    "provenance": {
+      "title": "Origen de cada cantidad",
+      "desc": "Ve si una cantidad viene de un PDF, un modelo IFC o una hoja de cálculo, con página u objeto y un aviso si falta el origen."
+    },
+    "workspaces": {
+      "title": "Espacios de trabajo y segunda pantalla",
+      "desc": "Guarda tu disposición para medir, presupuestar o revisar, y pon el plano en una segunda pantalla."
+    },
+    "languages": {
+      "title": "39 idiomas y cinco temas",
+      "desc": "También de derecha a izquierda para árabe, persa, hebreo y urdu, y claro, oscuro, Blueprint y alto contraste."
+    }
+  },
+  "download": {
+    "title": "Descargar v0.13.0",
+    "lead": "Gratis y sin cuenta. Para Windows, macOS y Linux.",
+    "forWindows": "Descargar para Windows",
+    "forMac": "Descargar para macOS",
+    "forLinux": "Descargar para Linux",
+    "metaWindows": "instalador .exe",
+    "metaMac": ".dmg para Apple Silicon (M1 y posteriores)",
+    "metaLinux": "AppImage, funciona en la mayoría de distribuciones",
+    "browserBtn": "Abrir en el navegador",
+    "fileExe": "Instalador (.exe)",
+    "fileMsi": "Instalador (.msi)",
+    "fileDmg": ".dmg (Apple Silicon)",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "fileSnap": "Snap",
+    "browserNote": "¿Prefieres no instalar nada? La aplicación también <a href=\"https://open-calc-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">funciona en el navegador</a>.",
+    "label": "Descargar",
+    "mobileNote": "Open Calc Studio está hecho para una pantalla grande. Ábrelo en tu ordenador o pruébalo aquí en el navegador.",
+    "other": "Otras plataformas"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Todas las notas de versión",
+    "ctaDemo": "Pruébalo en el navegador",
+    "items": {
+      "onlv": {
+        "title": "Importar mediciones austriacas",
+        "desc": "Un .onlv se convierte en presupuesto: los grupos pasan a capítulos y las posiciones a partidas con número, cantidad, unidad, mano de obra y material."
+      },
+      "onlb": {
+        "title": "Textos estándar como catálogo",
+        "desc": "Un .onlb, como el LB-Hochbau con casi 20 000 posiciones, carga en unos 0,3 segundos."
+      },
+      "onlvexport": {
+        "title": "Exportar como .onlv",
+        "desc": "Válido según los esquemas oficiales de Austrian Standards; importar, exportar y volver a importar no muestra diferencias."
+      },
+      "bc3": {
+        "title": ".bc3 igual campo a campo",
+        "desc": "De 22 archivos reales, 21 vuelven idénticos campo a campo; cada diferencia de precio se explica en el informe."
+      },
+      "toplevel": {
+        "title": "Precio unitario también en el nivel superior",
+        "desc": "Una partida sin capítulo recibe ahora un precio unitario derivado, como las demás."
+      }
+    },
+    "label": "Novedades de la v0.13.0",
+    "title": "Tras España, ahora <span>Austria</span>",
+    "desc": "Open Calc Studio ahora lee y escribe el formato de intercambio austriaco ÖNORM A 2063, y el viaje de ida y vuelta con archivos españoles .bc3 se ha afinado aún más, con informe y capturas."
+  },
+  "faq": {
+    "files": {
+      "q": "¿Qué archivos puedo abrir?",
+      "a": "Tus archivos .ifcCalc, presupuestos de WPCalc, BasCalc, IBIS-TRAD y CUF-XML, pliegos STABU (.s01, .sufx) y RAW (.rsx, .rsu), .bc3 español, ÖNORM austriaco (.onlv, .onlb), GAEB alemán (.x83), XPWE y XC4 italianos y checos, IFC con cuadro de costes, y Excel o CSV. Las listas de precios entran como ZSX o BMEcat."
+    },
+    "install": {
+      "q": "¿Tengo que instalar algo?",
+      "a": "No. La versión web funciona directamente en el navegador y tus archivos se quedan en tu ordenador. Para la vista previa en PDF de los informes está la aplicación de escritorio para Windows, macOS y Linux."
+    },
+    "price": {
+      "q": "¿Cuánto cuesta Open Calc Studio?",
+      "a": "Nada. La aplicación es gratuita y de código abierto con licencia LGPL-3.0, sin suscripción. Solo las órdenes libres al asistente de IA usan saldo de tu cuenta OpenAEC o tu propia clave API."
+    },
+    "save": {
+      "q": "¿En qué formato se guarda mi trabajo?",
+      "a": "En un archivo .ifcCalc: JSON abierto y legible con una estructura documentada. Los archivos antiguos siempre se abren; la aplicación de escritorio guarda en silencio cada dos minutos."
+    },
+    "systems": {
+      "q": "¿En qué sistemas funciona?",
+      "a": "Windows (.exe o .msi), macOS en Apple Silicon (.dmg) y Linux (AppImage, .deb, .rpm y Snap), y cualquier navegador moderno. La versión para Mac aún no está notarizada por Apple: la primera vez la permites una vez en Privacidad y seguridad."
+    },
+    "practice": {
+      "q": "¿Se ajusta a la práctica de la construcción?",
+      "a": "Sí. La estructura con rendimientos, grupos de tarifa, costes indirectos e IVA general y reducido sigue la práctica neerlandesa, y STABU, RAW y la hoja de oferta entran o salen. Para España, Austria y Alemania hay .bc3, ÖNORM y GAEB."
+    },
+    "ai": {
+      "q": "¿Qué puede hacer un asistente de IA con ello?",
+      "a": "En la aplicación, Prompt y presupuesto ayuda con preguntas y propuestas que revisas primero. Además hay un servidor MCP (Model Context Protocol): con él, un asistente como Claude crea presupuestos, añade partidas, ajusta los costes indirectos y genera un PDF."
+    },
+    "desktop": {
+      "q": "¿Están ya las funciones más nuevas en la aplicación de escritorio?",
+      "a": "Todavía no. Prompt y presupuesto, el presupuesto guiado, el centro de revisión, la medición sobre PDF y las cantidades desde un modelo 3D están ya en la versión web. Llegarán a los instaladores con la próxima versión; la v0.13.0 aún no los tiene."
+    },
+    "export": {
+      "q": "¿A qué formatos puedo exportar?",
+      "a": "PDF, CSV, IFC, WPCalc, CUF-XML, .bc3, ÖNORM (.onlv) y la hoja de oferta RAW en Excel. La exportación a IBIS-TRAD y RAW-RSX es limitada; todavía no hay exportación GAEB."
+    },
+    "status": {
+      "q": "¿Está listo para trabajo real?",
+      "a": "Está en pruebas públicas: lo bastante estable para trabajar, pero revisa tus resultados y espera cambios. Informa de lo que encuentres en GitHub; los testers con archivos .bc3 o un Mac son especialmente bienvenidos."
+    },
+    "heading": "Preguntas frecuentes"
   },
   "tech": {
-    "title": "Tecnología",
-    "desc": "Construido con TypeScript y Rust mediante Tauri 2. Funciona como aplicación de escritorio en Windows, macOS y Linux, y como aplicación web en el navegador. Incluye servidor MCP para integración de IA y sistema de extensiones para personalización."
+    "tauri": {
+      "desc": "Una aplicación de escritorio nativa para Windows, macOS y Linux, con cálculos y maquetación PDF en Rust."
+    },
+    "react": {
+      "desc": "La misma interfaz en el navegador y en el escritorio, con una cuadrícula virtualizada para presupuestos grandes."
+    },
+    "typst": {
+      "desc": "Composición moderna para los informes PDF, con tablas limpias y paginación."
+    },
+    "format": {
+      "title": "Formato abierto .ifcCalc",
+      "desc": "JSON legible con su propia política de versiones y migración automática de archivos antiguos."
+    },
+    "mcp": {
+      "title": "Servidor MCP",
+      "desc": "Crea y edita archivos de presupuesto desde una conversación con un asistente de IA, hasta el PDF."
+    },
+    "embed": {
+      "title": "Integración",
+      "desc": "Un SDK de React/JavaScript, integración por iframe y una biblioteca nativa (DLL, .so, .dylib) en el código fuente, para tu software."
+    },
+    "heading": "Tecnología",
+    "sub": "Para quien quiera saber cómo está hecho."
   },
-  "cta": {
-    "demo": "Ver demo en vivo",
-    "github": "Ver en GitHub",
-    "extensions": "Catálogo de extensiones",
-    "download": "↓ Descargar v0.13.0 — Windows, macOS y Linux",
-    "testers": "Buscamos testers: usuarios de archivos .bc3, usuarios de Mac y hablantes nativos para los 39 idiomas. Ponte en contacto a través de los issues de GitHub."
-  },
-  "bc3": {
-    "title": "Probado con archivos reales: FIEBDC-3 (.bc3)",
-    "desc": "Importamos 22 presupuestos .bc3 reales, los exportamos y los volvimos a importar — incluida la base de costes andaluza BCCA 2023 con 46.215 líneas.",
-    "item1": "Todos los importes y totales de capítulo idénticos tras el viaje de ida y vuelta (± 0,01)",
-    "item2": "21 de los 22 archivos idénticos campo por campo; en 1 archivo solo un código de capítulo duplicado recibe un sufijo",
-    "item3": "Todos los errores encontrados en el importador y el exportador corregidos; la prueba forma parte de la batería de tests",
-    "link": "Lee el informe completo"
+  "releases": {
+    "showAll": "Mostrar todas las versiones",
+    "showLess": "Mostrar solo las tres últimas",
+    "github": "Todas las versiones en GitHub"
   }
 }
