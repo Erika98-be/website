@@ -3,18 +3,14 @@
 <head>
 
 
-  <!-- lang-boot:start -->
-  <style>html.lang-pending body{visibility:hidden}</style>
-  <script>(function(){try{var l=localStorage.getItem("openaec-lang");if(!l){var a=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||"en"];l="en";for(var i=0;i<a.length;i++){var c=String(a[i]||"").toLowerCase().split("-")[0];if("nl en fr tr es".split(" ").indexOf(c)>-1){l=c;break}}}if(l!=="nl"){var d=document.documentElement;d.classList.add("lang-pending");setTimeout(function(){d.classList.remove("lang-pending")},3000)}}catch(e){}})()</script>
-  <!-- lang-boot:end -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title data-i18n="meta.title">Open AEC Foundation - Open source voor een open bouw- en infrasector</title>
   <meta name="description" data-i18n-attr="content" data-i18n="meta.description" content="Open AEC Foundation ontwikkelt, ondersteunt en promoot open source software voor de volledige AEC-keten (bouw, utiliteit, GWW en civiele techniek).">
-  <link rel="canonical" href="https://open-aec.com/">
+  <link rel="canonical" href="https://open-aec.com/nl/">
   <!-- hreflang:start -->
-  <link rel="alternate" hreflang="nl" href="https://open-aec.com/">
-  <link rel="alternate" hreflang="en" href="https://open-aec.com/en/">
+  <link rel="alternate" hreflang="nl" href="https://open-aec.com/nl/">
+  <link rel="alternate" hreflang="en" href="https://open-aec.com/">
   <link rel="alternate" hreflang="fr" href="https://open-aec.com/fr/">
   <link rel="alternate" hreflang="tr" href="https://open-aec.com/tr/">
   <link rel="alternate" hreflang="es" href="https://open-aec.com/es/">
@@ -39,12 +35,15 @@
   <meta property="og:site_name" content="OpenAEC Foundation">
   <meta property="og:title" content="OpenAEC Foundation — Open source voor de hele AEC-sector">
   <meta property="og:description" content="Open-source software ecosystem voor bouw, GWW en civiele techniek. 70+ repos, alle tools LGPL-3.0, gebouwd in Rust + Tauri.">
-  <meta property="og:url" content="https://open-aec.com/">
+  <meta property="og:url" content="https://open-aec.com/nl/">
   <!-- LinkedIn, X, Slack en WhatsApp weigeren SVG als preview-afbeelding; daarom
        een raster. TODO: vervang door een op maat gemaakte 1200x630 merk-afbeelding. -->
   <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-calc-studio-new.png">
   <meta property="og:locale" content="nl_NL">
   <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="es_ES">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -771,6 +770,7 @@
 
 
 
+  <meta name="i18n-static" content="nl">
   <!-- schema:start -->
   <script type="application/ld+json">
   {
@@ -798,26 +798,26 @@
       },
       {
         "@type": "WebPage",
-        "@id": "https://open-aec.com/#webpage",
-        "url": "https://open-aec.com/",
+        "@id": "https://open-aec.com/nl/#webpage",
+        "url": "https://open-aec.com/nl/",
         "isPartOf": {
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "nl",
         "dateModified": "2026-10-30",
         "breadcrumb": {
-          "@id": "https://open-aec.com/#breadcrumb"
+          "@id": "https://open-aec.com/nl/#breadcrumb"
         }
       },
       {
-        "@id": "https://open-aec.com/#breadcrumb",
+        "@id": "https://open-aec.com/nl/#breadcrumb",
         "@type": "BreadcrumbList",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://open-aec.com/"
+            "item": "https://open-aec.com/nl/"
           }
         ]
       }
@@ -831,25 +831,25 @@
   <div id="shared-nav"><!-- nav:start -->
 <nav class="navbar">
   <div class="nav-container">
-    <a href="/" class="nav-brand" aria-label="OpenAEC — home"><img class="nav-logo" src="/shared/assets/logo/openaec-symbol-v2-transparent.svg" alt="" width="28" height="32"><span class="nav-word">Open<span class="accent">AEC</span></span></a>
+    <a href="/nl/" class="nav-brand" aria-label="OpenAEC — home"><img class="nav-logo" src="/shared/assets/logo/openaec-symbol-v2-transparent.svg" alt="" width="28" height="32"><span class="nav-word">Open<span class="accent">AEC</span></span></a>
     <button class="hamburger" onclick="var open=this.classList.toggle('active');this.parentElement.querySelector('.nav-menu').classList.toggle('active',open);this.setAttribute('aria-expanded',open);" aria-label="Menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <div class="nav-menu" onclick="if(event.target.closest('a')){this.classList.remove('active');var h=this.parentElement.querySelector('.hamburger');h.classList.remove('active');h.setAttribute('aria-expanded','false');}">
       <ul class="nav-links">
-        <li><a href="/#ecosysteem" class="nav-link" data-i18n-en="Ecosystem" data-i18n-fr="Écosystème" data-i18n-tr="Ekosistem" data-i18n-es="Ecosistema">Ecosysteem</a></li>
-        <li><a href="/roadmap/" class="nav-link" data-i18n-en="Roadmap" data-i18n-fr="Feuille de route" data-i18n-tr="Yol haritası" data-i18n-es="Hoja de ruta">Roadmap</a></li>
-        <li><a href="/architectuur/" class="nav-link" data-i18n-en="Architecture" data-i18n-fr="Architecture" data-i18n-tr="Mimari" data-i18n-es="Arquitectura">Architectuur</a></li>
-        <li><a href="/statistieken/" class="nav-link" data-i18n-en="Statistics" data-i18n-fr="Statistiques" data-i18n-tr="İstatistikler" data-i18n-es="Estadísticas">Statistieken</a></li>
-        <li><a href="/nieuws/" class="nav-link" data-i18n-en="News" data-i18n-fr="Actualités" data-i18n-tr="Haberler" data-i18n-es="Noticias">Nieuws</a></li>
-        <li><a href="/supporters/" class="nav-link" data-i18n-en="Supporters" data-i18n-fr="Partenaires" data-i18n-tr="Destekçiler" data-i18n-es="Colaboradores">Supporters</a></li>
-        <li><a href="/wij-ondersteunen/" class="nav-link" data-i18n-en="We support" data-i18n-fr="Nous soutenons" data-i18n-tr="Desteklerimiz" data-i18n-es="Apoyamos">Wij steunen</a></li>
-        <li><a href="/structuur/" class="nav-link" data-i18n-en="Structure" data-i18n-fr="Structure" data-i18n-tr="Yapı" data-i18n-es="Estructura">Structuur</a></li>
+        <li><a href="/nl/#ecosysteem" class="nav-link" data-i18n-en="Ecosystem" data-i18n-fr="Écosystème" data-i18n-tr="Ekosistem" data-i18n-es="Ecosistema">Ecosysteem</a></li>
+        <li><a href="/nl/roadmap/" class="nav-link" data-i18n-en="Roadmap" data-i18n-fr="Feuille de route" data-i18n-tr="Yol haritası" data-i18n-es="Hoja de ruta">Roadmap</a></li>
+        <li><a href="/nl/architectuur/" class="nav-link" data-i18n-en="Architecture" data-i18n-fr="Architecture" data-i18n-tr="Mimari" data-i18n-es="Arquitectura">Architectuur</a></li>
+        <li><a href="/nl/statistieken/" class="nav-link" data-i18n-en="Statistics" data-i18n-fr="Statistiques" data-i18n-tr="İstatistikler" data-i18n-es="Estadísticas">Statistieken</a></li>
+        <li><a href="/nl/nieuws/" class="nav-link" data-i18n-en="News" data-i18n-fr="Actualités" data-i18n-tr="Haberler" data-i18n-es="Noticias">Nieuws</a></li>
+        <li><a href="/nl/supporters/" class="nav-link" data-i18n-en="Supporters" data-i18n-fr="Partenaires" data-i18n-tr="Destekçiler" data-i18n-es="Colaboradores">Supporters</a></li>
+        <li><a href="/nl/wij-ondersteunen/" class="nav-link" data-i18n-en="We support" data-i18n-fr="Nous soutenons" data-i18n-tr="Desteklerimiz" data-i18n-es="Apoyamos">Wij steunen</a></li>
+        <li><a href="/nl/structuur/" class="nav-link" data-i18n-en="Structure" data-i18n-fr="Structure" data-i18n-tr="Yapı" data-i18n-es="Estructura">Structuur</a></li>
       </ul>
       <a href="https://open-feedback-studio.open-aec.com/" class="nav-feedback-btn"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n-en="Feedback" data-i18n-fr="Commentaires" data-i18n-tr="Geri bildirim" data-i18n-es="Comentarios">Feedback</span></a>
       <div class="lang-switcher">
-        <a class="lang-btn active" data-lang="nl" href="/" hreflang="nl">NL</a>
-        <a class="lang-btn" data-lang="en" href="/en/" hreflang="en">EN</a>
+        <a class="lang-btn active" data-lang="nl" href="/nl/" hreflang="nl">NL</a>
+        <a class="lang-btn" data-lang="en" href="/" hreflang="en">EN</a>
         <a class="lang-btn" data-lang="fr" href="/fr/" hreflang="fr">FR</a>
         <a class="lang-btn" data-lang="tr" href="/tr/" hreflang="tr">TR</a>
         <a class="lang-btn" data-lang="es" href="/es/" hreflang="es">ES</a>
@@ -941,7 +941,7 @@
           </ul>
           <div class="featured-actions">
             <a href="https://www.opencadstudio.com/" target="_blank" rel="noopener" class="btn btn-glow" data-i18n="featuredCad.cta_live"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg> Open live demo</a>
-            <a href="/open-cad-studio/" class="btn btn-glass" data-i18n="featuredCad.cta_download"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg> Productpagina</a>
+            <a href="/nl/open-cad-studio/" class="btn btn-glass" data-i18n="featuredCad.cta_download"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg> Productpagina</a>
             <a href="https://github.com/HakanSeven12/OpenCADStudio" target="_blank" rel="noopener" class="btn-textlink" data-i18n="featuredCad.cta_github"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg> GitHub</a>
           </div>
         </div>
@@ -984,7 +984,7 @@
             </div>
             </div>
           <div class="tool-links">
-            <a href="/open-cad-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
+            <a href="/nl/open-cad-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
             <a href="https://www.opencadstudio.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
             <a href="https://github.com/HakanSeven12/OpenCADStudio" target="_blank" rel="noopener" class="tool-link-secondary">GitHub &rarr;</a>
           </div>
@@ -1004,8 +1004,8 @@
             </div>
             </div>
           <div class="tool-links">
-            <a href="/open-infra-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
-            <a href="/open-infra-studio/#installeren" class="tool-link" data-i18n="tools.install">Installeren →</a>
+            <a href="/nl/open-infra-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
+            <a href="/nl/open-infra-studio/#installeren" class="tool-link" data-i18n="tools.install">Installeren →</a>
           </div>
         </article>
         <article class="tool-card" data-repo="open-pdf-studio" data-categories="A,E,C,I">
@@ -1023,7 +1023,7 @@
             </div>
             </div>
           <div class="tool-links">
-            <a href="/open-pdf-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
+            <a href="/nl/open-pdf-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
             <a href="https://open-pdf-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
             <a href="https://github.com/OpenAEC-Foundation/open-pdf-studio" target="_blank" rel="noopener" class="tool-link-secondary">GitHub &rarr;</a>
           </div>
@@ -1043,7 +1043,7 @@
             </div>
             </div>
           <div class="tool-links">
-            <a href="/open-planner-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
+            <a href="/nl/open-planner-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
             <a href="https://open-planner-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
           </div>
         </article>
@@ -1062,8 +1062,8 @@
             </div>
             </div>
           <div class="tool-links">
-            <a href="/open-pointcloud-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
-            <a href="/open-pointcloud-studio/#download" class="tool-link" data-i18n="tools.download">Download →</a>
+            <a href="/nl/open-pointcloud-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
+            <a href="/nl/open-pointcloud-studio/#download" class="tool-link" data-i18n="tools.download">Download →</a>
           </div>
         </article>
         <article class="tool-card" data-repo="Y-app" data-categories="A,E,C,I">
@@ -1079,7 +1079,7 @@
               <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> 18 mei 2026</span>
             </div>
           </div>
-          <a href="/y-app/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
+          <a href="/nl/y-app/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
         </article>
         <article class="tool-card" data-repo="pile-plan-studio" data-categories="E,I,NL" data-catalog="general">
           <img class="tool-thumb" src="/shared/assets/screenshots/open-pile-plan-studio.png" alt="Open Pile Plan Studio — interactief paalplan met belastinglocaties en paalopties">
@@ -1096,7 +1096,7 @@
             </div>
             </div>
           <div class="tool-links">
-            <a href="/open-pile-plan-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
+            <a href="/nl/open-pile-plan-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
             <a href="https://pile-plan-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
           </div>
         </article>
@@ -1115,7 +1115,7 @@
             </div>
             </div>
           <div class="tool-links">
-            <a href="/open-geotechniek-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
+            <a href="/nl/open-geotechniek-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
             <a href="https://open-geotechniek-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
           </div>
         </article>
@@ -1134,7 +1134,7 @@
             </div>
             </div>
           <div class="tool-links">
-            <a href="/open-calc-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
+            <a href="/nl/open-calc-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
             <a href="https://open-calc-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
           </div>
         </article>
@@ -1171,7 +1171,7 @@
             </div>
             </div>
           <div class="tool-links">
-            <a href="/open-energy-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
+            <a href="/nl/open-energy-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
             <a href="https://open-energy-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
           </div>
         </article>
@@ -1189,7 +1189,7 @@
               <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">10 okt 2026</span><span class="lang-en">10 Oct 2026</span></span>
             </div>
             </div>
-          <a href="/open-speech-studio/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
+          <a href="/nl/open-speech-studio/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
         </article>
         <article class="tool-card" data-repo="open-bim-studio" data-categories="A,E,C">
           <img class="tool-thumb" src="/shared/assets/screenshots/open-bim-studio.png" alt="Open BIM Studio met het funderingsplan van een paviljoen en de wapening in 3D" data-i18n="tools.items.openBim.alt" data-i18n-attr="alt">
@@ -1205,7 +1205,7 @@
               <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">29 okt 2026</span><span class="lang-en">29 Oct 2026</span></span>
             </div>
             </div>
-          <a href="/open-bim-studio/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
+          <a href="/nl/open-bim-studio/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
         </article>
         <article class="tool-card" data-repo="ifccad" data-categories="A,E,C,I">
           <img class="tool-thumb" src="/shared/assets/screenshots/ifccad-format-explorer.png" alt="IFCCAD Format Explorer met tekenstructuur en een woningplattegrond in Open CAD Studio" data-i18n="tools.items.ifccad.alt" data-i18n-attr="alt" loading="lazy" width="1920" height="948" style="object-fit: contain; background: #2d2d35;">
@@ -1222,7 +1222,7 @@
             </div>
             </div>
           <div class="tool-links">
-            <a href="/ifccad/" class="tool-link-secondary" data-i18n="tools.items.ifccad.link">Lees meer →</a>
+            <a href="/nl/ifccad/" class="tool-link-secondary" data-i18n="tools.items.ifccad.link">Lees meer →</a>
             <a href="https://ifccad-explorer.open-aec.com" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.items.ifccad.explorer">Format Explorer →</a>
             <a href="https://github.com/OpenAEC-Foundation/ifccad" target="_blank" rel="noopener" class="tool-link-secondary">GitHub &rarr;</a>
           </div>
@@ -1242,7 +1242,7 @@
             </div>
             </div>
           <div class="tool-links">
-            <a href="/open-field-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
+            <a href="/nl/open-field-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
             <a href="https://open-field-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
           </div>
         </article>
@@ -1262,7 +1262,7 @@
             </div>
           </div>
           <div class="tool-links">
-            <a href="/open-3d-viewer/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
+            <a href="/nl/open-3d-viewer/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
           </div>
         </article>
         <article class="tool-card" data-repo="open-paint-studio" data-categories="A,E,C,I">
@@ -1278,7 +1278,7 @@
               <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">24 okt 2026</span><span class="lang-en">24 Oct 2026</span></span>
             </div>
             </div>
-          <a href="/open-paint-studio/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
+          <a href="/nl/open-paint-studio/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
         </article>
         <article class="tool-card" data-repo="monty-ifc-viewer" data-categories="C">
           <img class="tool-thumb" src="/shared/assets/screenshots/monty-ifc-viewer.png" alt="Monty IFC Viewer">
@@ -1295,7 +1295,7 @@
             </div>
             </div>
           <div class="tool-links">
-            <a href="/monty-ifc-viewer/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
+            <a href="/nl/monty-ifc-viewer/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
             <a href="https://monty-ifc-viewer.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
           </div>
         </article>
@@ -1314,7 +1314,7 @@
             </div>
             </div>
           <div class="tool-links">
-            <a href="/open-heatloss-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
+            <a href="/nl/open-heatloss-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
             <a href="https://open-heatloss-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
           </div>
         </article>
@@ -1346,7 +1346,7 @@
               <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">26 okt 2026</span><span class="lang-en">26 Oct 2026</span></span>
             </div>
             </div>
-          <a href="/bim-validator/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
+          <a href="/nl/bim-validator/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
         </article>
         <article class="tool-card" data-repo="openaec-bcf-platform" data-categories="E,C">
           <img class="tool-thumb" src="/shared/assets/screenshots/bcf-manager-studio-dashboard.jpg" alt="BCF Manager Studio - projectdashboard">
@@ -1360,7 +1360,7 @@
               <span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title"><svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M4 1.5a.5.5 0 011 0V2h6v-.5a.5.5 0 011 0V2h1a1 1 0 011 1v11a1 1 0 01-1 1H3a1 1 0 01-1-1V3a1 1 0 011-1h1v-.5zM2 5v9h12V5H2z"/></svg> <span class="lang-nl">22 sep 2026</span><span class="lang-en">22 Sep 2026</span></span>
             </div>
             </div>
-          <a href="/bcf-manager-studio/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
+          <a href="/nl/bcf-manager-studio/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
         </article>
         <article class="tool-card" data-repo="Open-Calculations-Studio" data-categories="E,I">
           <img class="tool-thumb" src="/shared/assets/screenshots/open-calculations-studio.png" alt="Open Structural Calculation Studio - CalcPAD-syntax editor met live preview, wind-belasting berekening en SVG-tekening">
@@ -1376,7 +1376,7 @@
             </div>
             </div>
           <div class="tool-links">
-            <a href="/open-calculations-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
+            <a href="/nl/open-calculations-studio/" class="tool-link-secondary" data-i18n="tools.productPage">Productpagina</a>
             <a href="https://open-calculations-studio.open-aec.com/" target="_blank" rel="noopener" class="tool-link" data-i18n="tools.liveDemo">Live demo &rarr;</a>
           </div>
         </article>
@@ -1387,7 +1387,7 @@
             <h3 data-i18n="tools.items.ifcx.title">IFCX</h3>
             <p data-i18n="tools.items.ifcx.desc">Het open dataformaat van het OpenAEC-ecosysteem: alle tools wisselen hun model uit in IFCX.</p>
           </div>
-          <a href="/ifcx/" class="tool-link" data-i18n="tools.items.ifcx.link">Lees meer &rarr;</a>
+          <a href="/nl/ifcx/" class="tool-link" data-i18n="tools.items.ifcx.link">Lees meer &rarr;</a>
         </article>
         <article class="tool-card" data-repo="open-fem-studio" data-categories="E">
           <div>
@@ -1406,7 +1406,7 @@
             <div style="display:flex;align-items:center;gap:var(--sp-2);margin-bottom:var(--sp-2);flex-wrap:wrap;"><h3 data-i18n="tools.items.superCloud.title" style="margin-bottom:0;">OpenAEC SuperCloud</h3><span class="tool-tag tool-tag-dev" data-i18n="tools.tags.dev">In ontwikkeling</span></div>
             <p data-i18n="tools.items.superCloud.desc">Eigen cloud, account en inlog voor het hele OpenAEC-ecosysteem. Zelf gehost en open.</p>
           </div>
-          <a href="/openaec-cloud/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
+          <a href="/nl/openaec-cloud/" class="tool-link" data-i18n="tools.productPageLink">Productpagina &rarr;</a>
         </article>
       </div>
 
@@ -1419,9 +1419,9 @@
       </div>
 
       <div class="tools-actions" style="gap: var(--sp-4); flex-wrap: wrap;">
-        <a href="/offerte/" class="btn btn-glow btn-lg" data-i18n="tools.quoteBtn">Offerte aanvragen</a>
-        <a href="/roadmap/" class="btn btn-secondary btn-lg" data-i18n="tools.roadmapBtn">Roadmap 2026</a>
-        <a href="/architectuur/" class="btn btn-secondary btn-lg" data-i18n="tools.archBtn">Software architectuur</a>
+        <a href="/nl/offerte/" class="btn btn-glow btn-lg" data-i18n="tools.quoteBtn">Offerte aanvragen</a>
+        <a href="/nl/roadmap/" class="btn btn-secondary btn-lg" data-i18n="tools.roadmapBtn">Roadmap 2026</a>
+        <a href="/nl/architectuur/" class="btn btn-secondary btn-lg" data-i18n="tools.archBtn">Software architectuur</a>
       </div>
     </div>
     <script>
@@ -1663,7 +1663,7 @@
       </div>
 
       <div style="text-align: center; margin-top: var(--sp-8);">
-        <a href="/over-ons.html" class="btn btn-secondary" data-i18n="board.moreLink">Meer over het bestuur</a>
+        <a href="/nl/over-ons.html" class="btn btn-secondary" data-i18n="board.moreLink">Meer over het bestuur</a>
       </div>
     </div>
   </section>
@@ -1830,28 +1830,28 @@
         <div class="footer-section">
           <h4 data-i18n="footer.pagesTitle">Pagina's</h4>
           <p style="line-height: 2.2;">
-            <a href="/over-ons.html" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.about">Over ons</a><br>
-            <a href="/ifcx/" style="color: var(--text-on-dark); text-decoration: none;">IFCX</a><br>
-            <a href="/offerte/" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.quote">Offerte aanvragen</a><br>
-            <a href="/faq/" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.faq">FAQ</a><br>
-            <a href="/disclaimer/" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.disclaimer">Disclaimer</a><br>
-            <a href="/statuten/" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.statutes">Concept statuten</a><br>
-            <a href="/credits/" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.credits">Credits</a><br>
-            <a href="/beleid/" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.policy">Beleid &amp; standpunten</a><br>
-            <a href="/socials/" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.socials">Socials</a>
+            <a href="/nl/over-ons.html" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.about">Over ons</a><br>
+            <a href="/nl/ifcx/" style="color: var(--text-on-dark); text-decoration: none;">IFCX</a><br>
+            <a href="/nl/offerte/" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.quote">Offerte aanvragen</a><br>
+            <a href="/nl/faq/" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.faq">FAQ</a><br>
+            <a href="/nl/disclaimer/" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.disclaimer">Disclaimer</a><br>
+            <a href="/nl/statuten/" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.statutes">Concept statuten</a><br>
+            <a href="/nl/credits/" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.credits">Credits</a><br>
+            <a href="/nl/beleid/" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.policy">Beleid &amp; standpunten</a><br>
+            <a href="/nl/socials/" style="color: var(--text-on-dark); text-decoration: none;" data-i18n="footer.pages.socials">Socials</a>
           </p>
         </div>
         <div class="footer-section">
           <h4 data-i18n="footer.moreToolsTitle">Meer tools</h4>
           <p style="line-height: 2.2;">
-            <a href="/open-energy-studio/" style="color: var(--text-on-dark); text-decoration: none;">Open Energy Studio</a><br>
-            <a href="/open-safety-studio/" style="color: var(--text-on-dark); text-decoration: none;">Open Safety Studio</a><br>
-            <a href="/open-3d-viewer/" style="color: var(--text-on-dark); text-decoration: none;">Open 3D Viewer</a><br>
-            <a href="/open-books/" style="color: var(--text-on-dark); text-decoration: none;">OpenBooks</a><br>
-            <a href="/openaec-cloud/" style="color: var(--text-on-dark); text-decoration: none;">SuperCloud</a><br>
-            <a href="/openaec-docs/" style="color: var(--text-on-dark); text-decoration: none;">OpenAEC Docs</a><br>
-            <a href="/ext-drawing-statistics/" style="color: var(--text-on-dark); text-decoration: none;">Drawing Statistics</a><br>
-            <a href="/y-app/" style="color: var(--text-on-dark); text-decoration: none;">Y-app</a>
+            <a href="/nl/open-energy-studio/" style="color: var(--text-on-dark); text-decoration: none;">Open Energy Studio</a><br>
+            <a href="/nl/open-safety-studio/" style="color: var(--text-on-dark); text-decoration: none;">Open Safety Studio</a><br>
+            <a href="/nl/open-3d-viewer/" style="color: var(--text-on-dark); text-decoration: none;">Open 3D Viewer</a><br>
+            <a href="/nl/open-books/" style="color: var(--text-on-dark); text-decoration: none;">OpenBooks</a><br>
+            <a href="/nl/openaec-cloud/" style="color: var(--text-on-dark); text-decoration: none;">SuperCloud</a><br>
+            <a href="/nl/openaec-docs/" style="color: var(--text-on-dark); text-decoration: none;">OpenAEC Docs</a><br>
+            <a href="/nl/ext-drawing-statistics/" style="color: var(--text-on-dark); text-decoration: none;">Drawing Statistics</a><br>
+            <a href="/nl/y-app/" style="color: var(--text-on-dark); text-decoration: none;">Y-app</a>
           </p>
         </div>
         <div class="footer-section">

@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <!-- lang-boot:start -->
-  <style>html.lang-pending body{visibility:hidden}</style>
-  <script>(function(){try{var l=localStorage.getItem("openaec-lang");if(!l){var a=navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||"en"];l="en";for(var i=0;i<a.length;i++){var c=String(a[i]||"").toLowerCase().split("-")[0];if("nl en fr tr es".split(" ").indexOf(c)>-1){l=c;break}}}if(l!=="nl"){var d=document.documentElement;d.classList.add("lang-pending");setTimeout(function(){d.classList.remove("lang-pending")},3000)}}catch(e){}})()</script>
-  <!-- lang-boot:end -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IFCCAD — OpenAEC Foundation</title>
   <meta name="description" content="IFCCAD: een open CAD-tekenformaat op basis van IFCX. Zelfstandig tekenen, aansluiting op BIM en ontwikkeling richting betrouwbare DWG- en DXF-uitwisseling.">
   <meta name="i18n-page" content="ifccad">
-  <link rel="canonical" href="https://open-aec.com/ifccad/">
+  <link rel="canonical" href="https://open-aec.com/nl/ifccad/">
   <!-- hreflang:start -->
-  <link rel="alternate" hreflang="nl" href="https://open-aec.com/ifccad/">
-  <link rel="alternate" hreflang="en" href="https://open-aec.com/en/ifccad/">
+  <link rel="alternate" hreflang="nl" href="https://open-aec.com/nl/ifccad/">
+  <link rel="alternate" hreflang="en" href="https://open-aec.com/ifccad/">
   <link rel="alternate" hreflang="fr" href="https://open-aec.com/fr/ifccad/">
   <link rel="alternate" hreflang="tr" href="https://open-aec.com/tr/ifccad/">
   <link rel="alternate" hreflang="es" href="https://open-aec.com/es/ifccad/">
@@ -24,8 +20,12 @@
   <meta property="og:site_name" content="OpenAEC Foundation">
   <meta property="og:title" content="IFCCAD — open CAD-tekeningen met aansluiting op BIM">
   <meta property="og:description" content="Ontdek het experimentele IFCCAD-formaat, probeer de Format Explorer en lees over de ontwikkeling naar betrouwbare CAD-uitwisseling.">
-  <meta property="og:url" content="https://open-aec.com/ifccad/">
+  <meta property="og:url" content="https://open-aec.com/nl/ifccad/">
   <meta property="og:locale" content="nl_NL">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:locale:alternate" content="es_ES">
   <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/ifccad-format-explorer.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/ifccad-format-explorer.png">
@@ -62,6 +62,7 @@
     a:focus-visible { outline: 3px solid var(--warm-gold); outline-offset: 4px; }
     @media (max-width: 768px) { .hero-actions .btn { width: 100%; max-width: 380px; } .reading-block + .reading-block { margin-top: var(--sp-10); } }
   </style>
+  <meta name="i18n-static" content="nl">
   <!-- schema:start -->
   <script type="application/ld+json">
   {
@@ -89,32 +90,32 @@
       },
       {
         "@type": "WebPage",
-        "@id": "https://open-aec.com/ifccad/#webpage",
-        "url": "https://open-aec.com/ifccad/",
+        "@id": "https://open-aec.com/nl/ifccad/#webpage",
+        "url": "https://open-aec.com/nl/ifccad/",
         "isPartOf": {
           "@id": "https://open-aec.com/#website"
         },
         "inLanguage": "nl",
-        "dateModified": "2026-10-24",
+        "dateModified": "2026-10-30",
         "breadcrumb": {
-          "@id": "https://open-aec.com/ifccad/#breadcrumb"
+          "@id": "https://open-aec.com/nl/ifccad/#breadcrumb"
         }
       },
       {
-        "@id": "https://open-aec.com/ifccad/#breadcrumb",
+        "@id": "https://open-aec.com/nl/ifccad/#breadcrumb",
         "@type": "BreadcrumbList",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://open-aec.com/"
+            "item": "https://open-aec.com/nl/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "IFCCAD",
-            "item": "https://open-aec.com/ifccad/"
+            "item": "https://open-aec.com/nl/ifccad/"
           }
         ]
       }
@@ -127,25 +128,25 @@
   <div id="shared-nav"><!-- nav:start -->
 <nav class="navbar">
   <div class="nav-container">
-    <a href="/" class="nav-brand" aria-label="OpenAEC — home"><img class="nav-logo" src="/shared/assets/logo/openaec-symbol-v2-transparent.svg" alt="" width="28" height="32"><span class="nav-word">Open<span class="accent">AEC</span></span></a>
+    <a href="/nl/" class="nav-brand" aria-label="OpenAEC — home"><img class="nav-logo" src="/shared/assets/logo/openaec-symbol-v2-transparent.svg" alt="" width="28" height="32"><span class="nav-word">Open<span class="accent">AEC</span></span></a>
     <button class="hamburger" onclick="var open=this.classList.toggle('active');this.parentElement.querySelector('.nav-menu').classList.toggle('active',open);this.setAttribute('aria-expanded',open);" aria-label="Menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <div class="nav-menu" onclick="if(event.target.closest('a')){this.classList.remove('active');var h=this.parentElement.querySelector('.hamburger');h.classList.remove('active');h.setAttribute('aria-expanded','false');}">
       <ul class="nav-links">
-        <li><a href="/#ecosysteem" class="nav-link" data-i18n-en="Ecosystem" data-i18n-fr="Écosystème" data-i18n-tr="Ekosistem" data-i18n-es="Ecosistema">Ecosysteem</a></li>
-        <li><a href="/roadmap/" class="nav-link" data-i18n-en="Roadmap" data-i18n-fr="Feuille de route" data-i18n-tr="Yol haritası" data-i18n-es="Hoja de ruta">Roadmap</a></li>
-        <li><a href="/architectuur/" class="nav-link" data-i18n-en="Architecture" data-i18n-fr="Architecture" data-i18n-tr="Mimari" data-i18n-es="Arquitectura">Architectuur</a></li>
-        <li><a href="/statistieken/" class="nav-link" data-i18n-en="Statistics" data-i18n-fr="Statistiques" data-i18n-tr="İstatistikler" data-i18n-es="Estadísticas">Statistieken</a></li>
-        <li><a href="/nieuws/" class="nav-link" data-i18n-en="News" data-i18n-fr="Actualités" data-i18n-tr="Haberler" data-i18n-es="Noticias">Nieuws</a></li>
-        <li><a href="/supporters/" class="nav-link" data-i18n-en="Supporters" data-i18n-fr="Partenaires" data-i18n-tr="Destekçiler" data-i18n-es="Colaboradores">Supporters</a></li>
-        <li><a href="/wij-ondersteunen/" class="nav-link" data-i18n-en="We support" data-i18n-fr="Nous soutenons" data-i18n-tr="Desteklerimiz" data-i18n-es="Apoyamos">Wij steunen</a></li>
-        <li><a href="/structuur/" class="nav-link" data-i18n-en="Structure" data-i18n-fr="Structure" data-i18n-tr="Yapı" data-i18n-es="Estructura">Structuur</a></li>
+        <li><a href="/nl/#ecosysteem" class="nav-link" data-i18n-en="Ecosystem" data-i18n-fr="Écosystème" data-i18n-tr="Ekosistem" data-i18n-es="Ecosistema">Ecosysteem</a></li>
+        <li><a href="/nl/roadmap/" class="nav-link" data-i18n-en="Roadmap" data-i18n-fr="Feuille de route" data-i18n-tr="Yol haritası" data-i18n-es="Hoja de ruta">Roadmap</a></li>
+        <li><a href="/nl/architectuur/" class="nav-link" data-i18n-en="Architecture" data-i18n-fr="Architecture" data-i18n-tr="Mimari" data-i18n-es="Arquitectura">Architectuur</a></li>
+        <li><a href="/nl/statistieken/" class="nav-link" data-i18n-en="Statistics" data-i18n-fr="Statistiques" data-i18n-tr="İstatistikler" data-i18n-es="Estadísticas">Statistieken</a></li>
+        <li><a href="/nl/nieuws/" class="nav-link" data-i18n-en="News" data-i18n-fr="Actualités" data-i18n-tr="Haberler" data-i18n-es="Noticias">Nieuws</a></li>
+        <li><a href="/nl/supporters/" class="nav-link" data-i18n-en="Supporters" data-i18n-fr="Partenaires" data-i18n-tr="Destekçiler" data-i18n-es="Colaboradores">Supporters</a></li>
+        <li><a href="/nl/wij-ondersteunen/" class="nav-link" data-i18n-en="We support" data-i18n-fr="Nous soutenons" data-i18n-tr="Desteklerimiz" data-i18n-es="Apoyamos">Wij steunen</a></li>
+        <li><a href="/nl/structuur/" class="nav-link" data-i18n-en="Structure" data-i18n-fr="Structure" data-i18n-tr="Yapı" data-i18n-es="Estructura">Structuur</a></li>
       </ul>
       <a href="https://open-feedback-studio.open-aec.com/" class="nav-feedback-btn"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg><span data-i18n-en="Feedback" data-i18n-fr="Commentaires" data-i18n-tr="Geri bildirim" data-i18n-es="Comentarios">Feedback</span></a>
       <div class="lang-switcher">
-        <a class="lang-btn active" data-lang="nl" href="/ifccad/" hreflang="nl">NL</a>
-        <a class="lang-btn" data-lang="en" href="/en/ifccad/" hreflang="en">EN</a>
+        <a class="lang-btn active" data-lang="nl" href="/nl/ifccad/" hreflang="nl">NL</a>
+        <a class="lang-btn" data-lang="en" href="/ifccad/" hreflang="en">EN</a>
         <a class="lang-btn" data-lang="fr" href="/fr/ifccad/" hreflang="fr">FR</a>
         <a class="lang-btn" data-lang="tr" href="/tr/ifccad/" hreflang="tr">TR</a>
         <a class="lang-btn" data-lang="es" href="/es/ifccad/" hreflang="es">ES</a>
@@ -192,8 +193,8 @@
     </section>
 
     <section class="section">
-      <div class="container"><div class="reading-block"><div class="panel-split on-light"><div class="panel-split-text"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><h2 data-i18n="studio.title">opencadcodec en Open CAD Studio</h2></div><div class="panel-split-body"><p data-i18n="studio.p1">Voor het lezen en schrijven van DWG en DXF sluiten we aan op <a href="https://github.com/HakanSeven12/opencadcodec">opencadcodec</a>, de CAD-codec uit het ecosysteem van <a href="/open-cad-studio/">Open CAD Studio</a>. Onze converters verbinden het CAD-model van die codec rechtstreeks met IFCCAD. Verbeteringen en geconstateerde beperkingen worden ook met het upstreamproject gedeeld.</p>
-        <p data-i18n="studio.p2">De Format Explorer kan Open CAD Studio al gebruiken om oorspronkelijke en teruggeconverteerde CAD-content te bekijken. We willen IFCCAD binnenkort ook rechtstreeks in Open CAD Studio integreren, zodat het formaat onderdeel wordt van een praktische CAD-werkomgeving.</p></div></div></div><div class="reading-block"><div class="panel-split on-light"><div class="panel-split-text"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><h2 data-i18n="profile.title">Een CAD-profiel binnen IFCX</h2></div><div class="panel-split-body"><p data-i18n="profile.p1">IFCCAD gebruikt de structuur en compositiemogelijkheden van <a href="/ifcx/">IFCX</a> voor CAD-tekeningen. IFCX biedt ruimte om informatie via schema’s en namespaces te beschrijven. IFCCAD voegt daar de betekenis en regels aan toe die nodig zijn voor een tekening: geometrie, presentatie, eigenaarschap en verwijzingen tussen tekenonderdelen.</p>
+      <div class="container"><div class="reading-block"><div class="panel-split on-light"><div class="panel-split-text"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><h2 data-i18n="studio.title">opencadcodec en Open CAD Studio</h2></div><div class="panel-split-body"><p data-i18n="studio.p1">Voor het lezen en schrijven van DWG en DXF sluiten we aan op <a href="https://github.com/HakanSeven12/opencadcodec">opencadcodec</a>, de CAD-codec uit het ecosysteem van <a href="/nl/open-cad-studio/">Open CAD Studio</a>. Onze converters verbinden het CAD-model van die codec rechtstreeks met IFCCAD. Verbeteringen en geconstateerde beperkingen worden ook met het upstreamproject gedeeld.</p>
+        <p data-i18n="studio.p2">De Format Explorer kan Open CAD Studio al gebruiken om oorspronkelijke en teruggeconverteerde CAD-content te bekijken. We willen IFCCAD binnenkort ook rechtstreeks in Open CAD Studio integreren, zodat het formaat onderdeel wordt van een praktische CAD-werkomgeving.</p></div></div></div><div class="reading-block"><div class="panel-split on-light"><div class="panel-split-text"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><h2 data-i18n="profile.title">Een CAD-profiel binnen IFCX</h2></div><div class="panel-split-body"><p data-i18n="profile.p1">IFCCAD gebruikt de structuur en compositiemogelijkheden van <a href="/nl/ifcx/">IFCX</a> voor CAD-tekeningen. IFCX biedt ruimte om informatie via schema’s en namespaces te beschrijven. IFCCAD voegt daar de betekenis en regels aan toe die nodig zijn voor een tekening: geometrie, presentatie, eigenaarschap en verwijzingen tussen tekenonderdelen.</p>
         <p data-i18n="profile.p2">We willen bestaande IFCX-schema’s rechtstreeks hergebruiken waar ze de benodigde CAD-betekenis kunnen uitdrukken. Tijdelijke eigen definities vullen de huidige gaten. Zo onderzoeken we hoe CAD een plaats kan krijgen in het groeiende IFCX-ecosysteem, terwijl een IFCCAD-bestand ook een zelfstandige tekening kan beschrijven.</p>
         <p data-i18n="profile.p3">IFCCAD is momenteel een experimenteel OpenAEC-profiel. Zowel het profiel als IFCX zijn in ontwikkeling; IFCCAD is nog geen officiële buildingSMART CAD-standaard.</p></div></div></div></div>
     </section>
@@ -248,31 +249,31 @@
   <div class="site-footer-inner">
     <div class="site-footer-grid">
       <div class="site-footer-about">
-        <a href="/" class="nav-brand" aria-label="OpenAEC — home"><img class="nav-logo" src="/shared/assets/logo/openaec-symbol-v2-transparent.svg" alt="" width="28" height="32"><span class="nav-word">Open<span class="accent">AEC</span></span></a>
+        <a href="/nl/" class="nav-brand" aria-label="OpenAEC — home"><img class="nav-logo" src="/shared/assets/logo/openaec-symbol-v2-transparent.svg" alt="" width="28" height="32"><span class="nav-word">Open<span class="accent">AEC</span></span></a>
         <p data-i18n-en="Open source software for the entire AEC chain (buildings, infrastructure, civil engineering) — from design to delivery and management." data-i18n-fr="Logiciels open source pour toute la chaîne AEC (bâtiment, infrastructure, génie civil) — de la conception à la livraison et à la gestion." data-i18n-tr="Tüm AEC zinciri (bina, altyapı, inşaat mühendisliği) için açık kaynak yazılım — tasarımdan teslime ve yönetime kadar." data-i18n-es="Software de código abierto para toda la cadena AEC (edificación, infraestructuras, ingeniería civil) — desde el diseño hasta la entrega y la gestión.">Open source software voor de volledige AEC-keten (bouw, utiliteit, GWW en civiele techniek) — van ontwerp tot oplevering en beheer.</p>
       </div>
       <nav class="site-footer-col" aria-label="Pagina's">
         <h4 data-i18n-en="Pages" data-i18n-fr="Pages" data-i18n-tr="Sayfalar" data-i18n-es="Páginas">Pagina's</h4>
-        <a href="/over-ons.html" data-i18n-en="About us" data-i18n-fr="À propos" data-i18n-tr="Hakkımızda" data-i18n-es="Sobre nosotros">Over ons</a>
-        <a href="/ifcx/">IFCX</a>
-        <a href="/offerte/" data-i18n-en="Request quote" data-i18n-fr="Demander un devis" data-i18n-tr="Teklif iste" data-i18n-es="Solicitar presupuesto">Offerte aanvragen</a>
-        <a href="/faq/" data-i18n-en="FAQ" data-i18n-fr="FAQ" data-i18n-tr="SSS" data-i18n-es="Preguntas frecuentes">FAQ</a>
-        <a href="/disclaimer/" data-i18n-en="Disclaimer" data-i18n-fr="Avertissement" data-i18n-tr="Sorumluluk reddi" data-i18n-es="Aviso legal">Disclaimer</a>
-        <a href="/statuten/" data-i18n-en="Draft statutes" data-i18n-fr="Projet de statuts" data-i18n-tr="Taslak tüzük" data-i18n-es="Borrador de estatutos">Concept statuten</a>
-        <a href="/credits/" data-i18n-en="Credits" data-i18n-fr="Crédits" data-i18n-tr="Teşekkürler" data-i18n-es="Créditos">Credits</a>
-        <a href="/beleid/" data-i18n-en="Policy &amp; positions" data-i18n-fr="Politique &amp; positions" data-i18n-tr="Politika &amp; duruşlar" data-i18n-es="Política y posiciones">Beleid & standpunten</a>
-        <a href="/socials/" data-i18n-en="Socials" data-i18n-fr="Réseaux sociaux" data-i18n-tr="Sosyal medya" data-i18n-es="Redes sociales">Socials</a>
+        <a href="/nl/over-ons.html" data-i18n-en="About us" data-i18n-fr="À propos" data-i18n-tr="Hakkımızda" data-i18n-es="Sobre nosotros">Over ons</a>
+        <a href="/nl/ifcx/">IFCX</a>
+        <a href="/nl/offerte/" data-i18n-en="Request quote" data-i18n-fr="Demander un devis" data-i18n-tr="Teklif iste" data-i18n-es="Solicitar presupuesto">Offerte aanvragen</a>
+        <a href="/nl/faq/" data-i18n-en="FAQ" data-i18n-fr="FAQ" data-i18n-tr="SSS" data-i18n-es="Preguntas frecuentes">FAQ</a>
+        <a href="/nl/disclaimer/" data-i18n-en="Disclaimer" data-i18n-fr="Avertissement" data-i18n-tr="Sorumluluk reddi" data-i18n-es="Aviso legal">Disclaimer</a>
+        <a href="/nl/statuten/" data-i18n-en="Draft statutes" data-i18n-fr="Projet de statuts" data-i18n-tr="Taslak tüzük" data-i18n-es="Borrador de estatutos">Concept statuten</a>
+        <a href="/nl/credits/" data-i18n-en="Credits" data-i18n-fr="Crédits" data-i18n-tr="Teşekkürler" data-i18n-es="Créditos">Credits</a>
+        <a href="/nl/beleid/" data-i18n-en="Policy &amp; positions" data-i18n-fr="Politique &amp; positions" data-i18n-tr="Politika &amp; duruşlar" data-i18n-es="Política y posiciones">Beleid & standpunten</a>
+        <a href="/nl/socials/" data-i18n-en="Socials" data-i18n-fr="Réseaux sociaux" data-i18n-tr="Sosyal medya" data-i18n-es="Redes sociales">Socials</a>
       </nav>
       <nav class="site-footer-col" aria-label="Meer tools">
         <h4 data-i18n-en="More tools" data-i18n-fr="Plus d'outils" data-i18n-tr="Daha fazla araç" data-i18n-es="Más herramientas">Meer tools</h4>
-        <a href="/open-energy-studio/">Open Energy Studio</a>
-        <a href="/open-safety-studio/">Open Safety Studio</a>
-        <a href="/open-3d-viewer/">Open 3D Viewer</a>
-        <a href="/open-books/">OpenBooks</a>
-        <a href="/openaec-cloud/">SuperCloud</a>
-        <a href="/openaec-docs/">OpenAEC Docs</a>
-        <a href="/ext-drawing-statistics/">Drawing Statistics</a>
-        <a href="/y-app/">Y-app</a>
+        <a href="/nl/open-energy-studio/">Open Energy Studio</a>
+        <a href="/nl/open-safety-studio/">Open Safety Studio</a>
+        <a href="/nl/open-3d-viewer/">Open 3D Viewer</a>
+        <a href="/nl/open-books/">OpenBooks</a>
+        <a href="/nl/openaec-cloud/">SuperCloud</a>
+        <a href="/nl/openaec-docs/">OpenAEC Docs</a>
+        <a href="/nl/ext-drawing-statistics/">Drawing Statistics</a>
+        <a href="/nl/y-app/">Y-app</a>
       </nav>
       <div class="site-footer-col">
         <h4 data-i18n-en="Foundation i.f." data-i18n-fr="Fondation en cours de constitution" data-i18n-tr="Kuruluş aşamasında vakıf" data-i18n-es="Fundación en constitución">Stichting i.o.</h4>
