@@ -1,69 +1,294 @@
 {
   "header": {
-    "label": "Éditeur d'images open source",
     "title": "Open <span class=\"accent\">Paint</span> Studio",
-    "desc": "Un éditeur d'images simple dans l'esprit de MS Paint, aux couleurs d'OpenAEC. Dessinez, annotez et retouchez des images, gardez formes et textes modifiables en objets vectoriels et faites participer un assistant IA grâce à l'API et au serveur MCP.",
-    "badge": "Nouveau"
+    "downloadBtn": "Télécharger",
+    "featuresBtn": "Voir les fonctions",
+    "sourceBtn": "Code source",
+    "proof2": "Néerlandais et anglais",
+    "proof4": "API et MCP pour assistants IA",
+    "proof5": "Gratuit · MIT",
+    "heroAlt": "Open Paint Studio : un plan esquissé avec les pièces, une cote et des annotations en rouge et vert, avec le ruban Accueil et l'historique à droite",
+    "label": "Retouche d'images",
+    "tagline": "Faites une esquisse rapide ou annotez une capture d'écran, sans logiciel photo lourd",
+    "desc": "Open Paint Studio est un éditeur d'images léger dans l'esprit de MS Paint. Dessinez au pinceau, avec des formes et du texte, recadrez et pivotez en un clic ; formes et texte restent modifiables : déplacez-les, redimensionnez-les ou changez leur couleur après coup."
   },
-  "download": {
-    "title": "Télécharger",
-    "windows": "Programme d'installation (.exe)",
-    "macos": "Processeurs Apple et Intel (.dmg)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxAppimage": "Toute distribution (AppImage)"
+  "meta": {
+    "description": "Éditeur d'images gratuit et open source dans l'esprit de MS Paint : esquissez, annotez et retouchez des images, avec des formes et du texte qui restent modifiables. Ouvre presque tous les formats d'image, exporte en PNG, JPEG, WebP et SVG. Pour Windows, macOS et Linux.",
+    "title": "Open Paint Studio — OpenAEC Foundation"
   },
-  "cta": {
-    "github": "Voir sur GitHub"
+  "hl": {
+    "draw": {
+      "alt": "Saisie de texte directement sur le plan, avec le bouton Appliquer le texte et le choix de la police et du gras dans le ruban",
+      "kicker": "Dessin et texte",
+      "title": "Esquissez et écrivez directement sur le canevas",
+      "desc": "Pinceau, gomme, remplissage, pipette, lignes, rectangles et ellipses, avec épaisseur, opacité et palette de couleurs réglables. Cliquez où vous voulez du texte et tapez ; choisissez police, taille et gras dans le ruban. Les polices sont incluses, donc tout fonctionne aussi hors ligne."
+    },
+    "vector": {
+      "alt": "Thème sombre Forge : une note de texte sur le plan est sélectionnée avec un cadre et une poignée de mise à l'échelle, avec le menu Objet dans le ruban",
+      "kicker": "Formes modifiables",
+      "title": "Déplacez et restylez ce que vous avez déjà dessiné",
+      "desc": "Formes et texte restent des objets distincts. Sélectionnez-en un pour le déplacer, faites glisser le coin pour le redimensionner ou changez sa couleur, son épaisseur ou sa police. Ctrl+A prend tout d'un coup, et un export SVG les garde modifiables pour d'autres logiciels."
+    },
+    "image": {
+      "alt": "Une capture d'écran d'un planning avec un cadre rouge, un cercle, une flèche et un surlignage jaune, avec le ruban Image ouvert",
+      "kicker": "Retouche d'images",
+      "title": "Annotez une capture d'écran et transmettez-la",
+      "desc": "Ouvrez une capture d'écran ou une photo, ajoutez cadres, flèches et texte, puis exportez en PNG ou JPEG. Recadrer, redimensionner, pivoter et retourner se trouvent dans un même ruban, tout comme luminosité, contraste, saturation, niveaux de gris, inversion et sépia."
+    },
+    "files": {
+      "alt": "Le menu Fichier avec ouvrir, enregistrer et exporter, et la fenêtre Formats pris en charge avec une longue liste de types de fichiers",
+      "kicker": "Fichiers",
+      "title": "Ouvre presque toutes les images, sans téléversement",
+      "desc": "PNG, JPEG, WebP et GIF, mais aussi TIFF, HEIC de votre téléphone, PSD, SVG, JPEG XL et RAW d'appareil photo. Tout est traité sur votre propre ordinateur ; rien ne part dans le cloud. Enregistrez votre travail en PNG, JPEG, WebP, SVG ou IFCX."
+    },
+    "ai": {
+      "alt": "Thème Blueprint : le ruban Automatisation avec la fenêtre API · MCP pour l'adresse, le jeton et un identifiant de document",
+      "kicker": "IA et automatisation",
+      "title": "Laissez un assistant IA dessiner avec vous",
+      "desc": "Une API locale avec son propre jeton et un serveur MCP permettent à un assistant comme Claude de créer une image, de dessiner dessus et d'afficher le résultat. Demandez par exemple une esquisse de 1200 × 800 avec une zone colorée ; chargez-la ensuite dans l'application et continuez vous-même."
+    }
   },
-  "why": {
-    "title": "Pourquoi <span class=\"accent\">Open Paint</span> Studio ?",
-    "desc": "Annoter une capture d'écran, esquisser un plan ou recadrer une photo ne demande pas un lourd logiciel de retouche. Open Paint Studio est léger, démarre vite et fonctionne sans connexion internet.",
-    "desc2": "Ce que vous dessinez reste modifiable. Déplacez, redimensionnez et restylez formes et textes après coup, et exportez-les en SVG modifiable."
+  "subnav": {
+    "label": "Sur cette page",
+    "features": "Fonctions",
+    "download": "Télécharger",
+    "whatsnew": "Nouveautés",
+    "faq": "FAQ",
+    "releases": "Versions"
   },
-  "formats": {
-    "title": "Ouvre presque toutes les images",
-    "desc": "Le navigateur lit lui-même les images courantes ; pour le reste, ImageMagick est intégré en WebAssembly. Tout se passe sur votre propre ordinateur.",
-    "open": "<strong>Ouvrir</strong> PNG, JPEG, WebP, GIF, BMP, TIFF, HEIC/HEIF, AVIF, PSD, SVG, ICO, TGA, JPEG 2000, JPEG XL, RAW d'appareil photo et IFCX/IFCXB.",
-    "save": "<strong>Enregistrer</strong> Exportez en PNG, JPEG, WebP ou SVG, ou conservez l'image dans IFCX ou IFCXB.",
-    "local": "<strong>Local</strong> Aucun envoi vers le cloud. Votre brouillon est enregistré sur votre propre appareil pendant le travail."
+  "tabs": {
+    "highlights": "Points forts",
+    "draw": "Dessin et texte",
+    "vector": "Formes modifiables",
+    "image": "Retouche d'images",
+    "files": "Fichiers",
+    "ai": "IA et automatisation",
+    "all": "Toutes les fonctions"
   },
   "features": {
-    "title": "Fonctionnalités",
-    "draw": {
-      "title": "Dessin",
-      "desc": "Pinceau, gomme, remplissage, pipette, lignes, rectangles et ellipses, avec épaisseur, opacité et palette de couleurs réglables."
+    "learnMore": "En savoir plus",
+    "label": "Fonctions",
+    "heading": "Dessiner, annoter et retoucher, dans une seule application légère",
+    "sub": "Commencez par les points forts ou choisissez un thème.",
+    "tabsLabel": "Fonctions par thème"
+  },
+  "f": {
+    "brush": {
+      "title": "Pinceau aux traits fluides",
+      "desc": "Dessinez à main levée avec épaisseur et opacité réglables."
+    },
+    "eraser": {
+      "title": "Gomme, remplissage et pipette",
+      "desc": "Effacez une partie, remplissez une zone de couleur ou prélevez une couleur dans l'image."
+    },
+    "shapes": {
+      "title": "Lignes, rectangles et ellipses",
+      "desc": "En contour ou plein, dans n'importe quelle couleur de la palette ou du sélecteur."
     },
     "text": {
       "title": "Texte sur le canevas",
-      "desc": "Tapez du texte directement dans l'image et choisissez police et taille. Les polices sont fournies, cela fonctionne donc aussi hors ligne."
+      "desc": "Tapez directement dans l'image, en sans empattement, avec empattement ou à chasse fixe, et en gras si vous voulez."
     },
-    "vector": {
-      "title": "Objets vectoriels modifiables",
-      "desc": "Sélectionnez, déplacez, redimensionnez et restylez les formes et textes dessinés. Ctrl+A prend tout d'un coup. Export en SVG modifiable."
+    "palette": {
+      "title": "Palette de couleurs et opacité",
+      "desc": "Choisissez dans la palette en un clic ou définissez votre propre couleur, même semi-transparente."
     },
-    "image": {
-      "title": "Retouche d'image",
-      "desc": "Recadrer, redimensionner, faire pivoter et retourner. Les objets vectoriels sont conservés."
+    "objects": {
+      "title": "Déplacer et redimensionner les objets",
+      "desc": "Sélectionnez une forme ou un texte, déplacez-le ou tirez sur le coin."
     },
-    "colors": {
-      "title": "Corrections de couleur",
-      "desc": "Luminosité, contraste, saturation, niveaux de gris, inversion et sépia."
+    "restyle": {
+      "title": "Restyler après coup",
+      "desc": "Donnez à un objet dessiné une autre couleur, épaisseur ou police, ou supprimez-le."
+    },
+    "selectall": {
+      "title": "Tout sélectionner avec Ctrl+A",
+      "desc": "Déplacez, redimensionnez ou supprimez tous les objets d'un coup."
+    },
+    "svg": {
+      "title": "SVG modifiable",
+      "desc": "Exportez formes et texte en vrais objets SVG, pour continuer dans un logiciel de dessin."
+    },
+    "crop": {
+      "title": "Recadrer et redimensionner",
+      "desc": "Faites glisser un cadre pour recadrer ou saisissez une nouvelle largeur et hauteur."
+    },
+    "rotate": {
+      "title": "Pivoter et retourner",
+      "desc": "Un quart de tour à gauche ou à droite, retournement horizontal ou vertical ; formes et texte restent modifiables."
+    },
+    "adjust": {
+      "title": "Corrections des couleurs",
+      "desc": "Luminosité, contraste et saturation avec des curseurs."
+    },
+    "filters": {
+      "title": "Niveaux de gris, inversion et sépia",
+      "desc": "Filtres en un clic ; l'annulation remet les formes comme elles étaient."
+    },
+    "open": {
+      "title": "Presque tous les formats d'image",
+      "desc": "Du PNG et JPEG au TIFF, HEIC, AVIF, PSD, JPEG XL, JPEG 2000 et RAW d'appareil photo."
+    },
+    "local": {
+      "title": "Tout sur votre propre ordinateur",
+      "desc": "Pas de téléversement ni de compte ; même les formats difficiles sont convertis localement."
+    },
+    "export": {
+      "title": "Exporter en PNG, JPEG et WebP",
+      "desc": "Prêt à envoyer par e-mail, à insérer dans un rapport ou à publier sur un site."
+    },
+    "ifcx": {
+      "title": "IFCX et IFCXB",
+      "desc": "Enregistrez l'image au format ouvert IFCX, lisible par d'autres applications OpenAEC."
+    },
+    "assoc": {
+      "title": "Double-cliquez pour ouvrir",
+      "desc": "L'application de bureau s'associe aux images et aux fichiers IFCX."
+    },
+    "draft": {
+      "title": "Votre brouillon est conservé",
+      "desc": "Fermez la fenêtre : votre dessin est toujours là la fois suivante, avec tous les objets modifiables."
     },
     "undo": {
-      "title": "Annuler et récupérer",
-      "desc": "Annulez ou rétablissez les 40 dernières étapes, et retrouvez un brouillon conservé à la fermeture de la fenêtre."
+      "title": "40 étapes en arrière",
+      "desc": "Annuler et rétablir, avec un historique qui montre chaque étape."
     },
-    "ai": {
-      "title": "API et MCP",
-      "desc": "Une API locale avec son propre jeton et un serveur MCP, pour qu'un assistant IA comme Claude puisse ouvrir et modifier des images."
+    "zoom": {
+      "title": "Zoom, panoramique et grille",
+      "desc": "Ctrl+molette de 10 à 400 pour cent, glisser avec le bouton du milieu et une grille de pixels."
+    },
+    "focus": {
+      "title": "Mode concentration et raccourcis",
+      "desc": "Masquez le ruban pour plus d'espace ; B, E, F, I, L, R, O et T choisissent l'outil."
     },
     "themes": {
       "title": "Cinq thèmes, deux langues",
       "desc": "Clair, Forge, OpenAEC, Blueprint et contraste élevé, en néerlandais et en anglais."
+    },
+    "api": {
+      "title": "API locale avec jeton",
+      "desc": "Envoyez votre image à l'API ou chargez-en une ; un contrôle de révision évite d'écraser le travail de l'autre."
+    },
+    "mcp": {
+      "title": "Serveur MCP pour assistants IA",
+      "desc": "Six outils : créer, lister et lire des documents, dessiner, annuler et afficher le résultat en PNG."
     }
   },
+  "download": {
+    "title": "Télécharger v2026.43.2",
+    "lead": "Gratuit, sans compte. Pour Windows, macOS et Linux.",
+    "forWindows": "Télécharger pour Windows",
+    "forMac": "Télécharger pour macOS",
+    "forLinux": "Télécharger pour Linux",
+    "metaWindows": "programme d'installation .exe",
+    "metaMac": ".dmg universel, Intel et Apple Silicon",
+    "metaLinux": "AppImage, fonctionne sur la plupart des distributions",
+    "fileExe": "Programme d'installation (.exe)",
+    "fileDmg": ".dmg universel",
+    "fileDeb": ".deb",
+    "fileAppImage": "AppImage",
+    "label": "Télécharger",
+    "mobileNote": "Open Paint Studio est une application de bureau. Téléchargez-la sur votre ordinateur.",
+    "other": "Autres plateformes"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Toutes les notes de version",
+    "ctaDownload": "Télécharger",
+    "items": {
+      "windows": {
+        "title": "Windows sans droits d'administrateur",
+        "desc": "L'installateur installe l'application pour vous et installe WebView2 lui-même si nécessaire, sans poser de questions."
+      },
+      "mac": {
+        "title": "Un seul téléchargement pour chaque Mac",
+        "desc": "Un DMG universel pour Intel et Apple Silicon, signé et notarié par Apple."
+      },
+      "signed": {
+        "title": "Téléchargements signés",
+        "desc": "Des installateurs signés numériquement, et des sommes de contrôle pour vérifier votre téléchargement."
+      },
+      "selectall": {
+        "title": "Tout sélectionner",
+        "desc": "Ctrl+A prend tous les objets ; déplacez-les, redimensionnez-les ou supprimez-les d'un coup."
+      },
+      "zoom": {
+        "title": "Zoom et panoramique",
+        "desc": "Ctrl+molette zoome de 10 à 400 pour cent, le bouton du milieu déplace le canevas."
+      },
+      "assoc": {
+        "title": "Associations de fichiers",
+        "desc": "Ouvrez images et fichiers IFCX dans Open Paint Studio d'un double-clic."
+      }
+    },
+    "label": "Nouveau dans la v2026.43.2",
+    "title": "Première version, <span>pour chaque système</span>",
+    "desc": "La première version d'Open Paint Studio publiée par l'OpenAEC Foundation, avec des installateurs signés pour Windows, macOS et Linux."
+  },
+  "faq": {
+    "files": {
+      "q": "Quels fichiers puis-je ouvrir ?",
+      "a": "Presque toutes les images : PNG, JPEG, WebP, GIF, BMP, TIFF, HEIC/HEIF, AVIF, PSD, SVG, ICO, TGA, JPEG 2000, JPEG XL, RAW d'appareil photo et IFCX/IFCXB. Pour les animations et les fichiers multipages, la première image s'ouvre."
+    },
+    "install": {
+      "q": "Dois-je installer quelque chose ?",
+      "a": "Oui, l'application elle-même. Sous Windows, elle s'installe pour votre utilisateur, sans droits d'administrateur ; sous Linux, l'AppImage fonctionne sans installation. Il n'y a pas encore de version web publique."
+    },
+    "price": {
+      "q": "Combien coûte Open Paint Studio ?",
+      "a": "Rien. L'application est gratuite et open source sous licence MIT, sans compte ni abonnement. La charte graphique OpenAEC de l'application est sous CC BY-SA 4.0."
+    },
+    "save": {
+      "q": "Dans quel format mon travail est-il enregistré ?",
+      "a": "L'application conserve automatiquement votre dessin en cours comme brouillon sur votre appareil, avec tous les objets modifiables. Comme fichier, vous exportez en PNG, JPEG, WebP ou SVG, ou enregistrez l'image en IFCX ou IFCXB."
+    },
+    "systems": {
+      "q": "Sur quels systèmes fonctionne-t-il ?",
+      "a": "Windows, macOS (Intel et Apple Silicon, un DMG universel) et Linux (.deb et AppImage). Les installateurs sont signés."
+    },
+    "ai": {
+      "q": "Que peut en faire un assistant IA ?",
+      "a": "Grâce au serveur MCP, un assistant comme Claude peut créer des images, dessiner dessus, annuler une étape et afficher le résultat en PNG. L'API et le MCP se lancent séparément, à côté de l'application, depuis le code source ; l'installateur ne les démarre pas."
+    },
+    "reopen": {
+      "q": "Puis-je modifier à nouveau formes et texte plus tard depuis un fichier ?",
+      "a": "Pas encore dans Open Paint Studio lui-même. Tant que vous travaillez sur un dessin, les objets restent modifiables, même après la fermeture de la fenêtre. L'IFCX enregistre le dessin comme image ; pour continuer à modifier les formes ailleurs, exportez en SVG."
+    },
+    "offline": {
+      "q": "Ai-je besoin d'une connexion internet ?",
+      "a": "Non. Les polices et la conversion d'images sont intégrées à l'application, et vos images ne partent nulle part. Internet n'est nécessaire que pour télécharger l'application."
+    },
+    "photo": {
+      "q": "Remplace-t-il un logiciel de retouche photo ?",
+      "a": "Non, et ce n'est pas le but. Il n'y a ni calques, ni masques, ni sélection d'une partie de la photo. Open Paint Studio sert aux tâches rapides : esquisser, annoter, recadrer et corriger les couleurs."
+    },
+    "heading": "Questions fréquentes"
+  },
   "tech": {
-    "title": "Technologie",
-    "desc": "Fonctionne comme application web ou comme application de bureau avec Tauri 2. L'API et le serveur MCP sont des processus Node distincts sur votre propre ordinateur. L'éditeur est sous licence MIT ; le style OpenAEC est sous CC BY-SA 4.0."
+    "tauri": {
+      "desc": "Une fine couche native en Rust pour Windows, macOS et Linux, avec de petits installateurs."
+    },
+    "react": {
+      "desc": "L'éditeur dessine sur un canevas HTML ; formes et texte sont conservés comme opérations."
+    },
+    "magick": {
+      "desc": "Lit TIFF, HEIC, PSD, RAW et d'autres formats localement, dans un worker séparé."
+    },
+    "ifcx": {
+      "desc": "L'image en PNG dans un document IFCX ; IFCXB est le même contenu en CBOR avec gzip."
+    },
+    "mcp": {
+      "desc": "Un serveur MCP sur le SDK TypeScript officiel et une API qui n'écoute que sur votre ordinateur, avec jeton et contrôle de révision."
+    },
+    "signing": {
+      "title": "Versions signées",
+      "desc": "Installateur Windows signé numériquement, application macOS notariée par Apple, paquets Linux avec signature OpenPGP et SHA256SUMS."
+    },
+    "heading": "Technologie",
+    "sub": "Pour ceux qui veulent savoir comment c'est construit."
+  },
+  "releases": {
+    "showAll": "Afficher toutes les versions",
+    "showLess": "Afficher seulement les trois dernières",
+    "github": "Toutes les versions sur GitHub"
   }
 }

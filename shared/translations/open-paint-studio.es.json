@@ -1,69 +1,294 @@
 {
   "header": {
-    "label": "Editor de imágenes de código abierto",
     "title": "Open <span class=\"accent\">Paint</span> Studio",
-    "desc": "Un editor de imágenes sencillo en el espíritu de MS Paint, con el estilo de OpenAEC. Dibuja, marca y edita imágenes, mantén formas y textos editables como objetos vectoriales y deja que un asistente de IA colabore mediante la API y el servidor MCP.",
-    "badge": "Nuevo"
+    "downloadBtn": "Descargar",
+    "featuresBtn": "Ver las funciones",
+    "sourceBtn": "Código fuente",
+    "proof2": "Neerlandés e inglés",
+    "proof4": "API y MCP para asistentes de IA",
+    "proof5": "Gratis · MIT",
+    "heroAlt": "Open Paint Studio: un plano esbozado con estancias, una cota y notas en rojo y verde, con la cinta Inicio y el historial a la derecha",
+    "label": "Edición de imágenes",
+    "tagline": "Haz un boceto rápido o marca una captura de pantalla, sin un pesado programa de fotos",
+    "desc": "Open Paint Studio es un editor de imágenes ligero al estilo de MS Paint. Dibuja con pincel, formas y texto, recorta y gira con un clic, y las formas y el texto siguen siendo editables: muévelos, escálalos o cambia su color después."
   },
-  "download": {
-    "title": "Descargar",
-    "windows": "Instalador (.exe)",
-    "macos": "Procesadores Apple e Intel (.dmg)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxAppimage": "Cualquier distribución (AppImage)"
+  "meta": {
+    "description": "Editor de imágenes gratuito y de código abierto al estilo de MS Paint: esboza, marca y edita imágenes, con formas y texto que siguen siendo editables. Abre casi cualquier formato de imagen y exporta a PNG, JPEG, WebP y SVG. Para Windows, macOS y Linux.",
+    "title": "Open Paint Studio — OpenAEC Foundation"
   },
-  "cta": {
-    "github": "Ver en GitHub"
+  "hl": {
+    "draw": {
+      "alt": "Escribiendo texto directamente sobre el plano, con el botón Aplicar texto y la elección de fuente y negrita en la cinta",
+      "kicker": "Dibujo y texto",
+      "title": "Esboza y escribe directamente sobre el lienzo",
+      "desc": "Pincel, goma, relleno, cuentagotas, líneas, rectángulos y elipses, con grosor, opacidad y paleta de colores ajustables. Haz clic donde quieras texto y escribe; elige fuente, tamaño y negrita en la cinta. Las fuentes vienen con la aplicación, así que también funciona sin internet."
+    },
+    "vector": {
+      "alt": "Tema oscuro Forge: una nota de texto del plano está seleccionada con un marco y un tirador para escalar, con el menú Objeto en la cinta",
+      "kicker": "Formas editables",
+      "title": "Mueve y cambia el estilo de lo que ya has dibujado",
+      "desc": "Las formas y el texto siguen siendo objetos independientes. Selecciona uno para moverlo, arrastra la esquina para escalarlo o dale otro color, grosor o fuente. Ctrl+A lo toma todo a la vez, y una exportación SVG los mantiene editables para otros programas."
+    },
+    "image": {
+      "alt": "Una captura de pantalla de una planificación con un marco rojo, un círculo, una flecha y un resaltado amarillo, con la cinta Imagen abierta",
+      "kicker": "Editar imágenes",
+      "title": "Marca una captura de pantalla y compártela",
+      "desc": "Abre una captura de pantalla o una foto, añade marcos, flechas y texto, y exporta a PNG o JPEG. Recortar, cambiar el tamaño, girar y voltear están en una sola cinta, igual que brillo, contraste, saturación, escala de grises, invertir y sepia."
+    },
+    "files": {
+      "alt": "El menú Archivo con abrir, guardar y exportar, y la ventana Formatos admitidos con una larga lista de tipos de archivo",
+      "kicker": "Archivos",
+      "title": "Abre casi cualquier imagen, sin subirla",
+      "desc": "PNG, JPEG, WebP y GIF, pero también TIFF, HEIC de tu teléfono, PSD, SVG, JPEG XL y RAW de cámara. Todo se procesa en tu propio ordenador; nada va a la nube. Guarda tu trabajo como PNG, JPEG, WebP, SVG o IFCX."
+    },
+    "ai": {
+      "alt": "Tema Blueprint: la cinta Automatización con la ventana API · MCP para la dirección, el token y un ID de documento",
+      "kicker": "IA y automatización",
+      "title": "Deja que un asistente de IA dibuje contigo",
+      "desc": "Una API local con su propio token y un servidor MCP permiten que un asistente como Claude cree una imagen, dibuje sobre ella y muestre el resultado. Pide, por ejemplo, un boceto de 1200 × 800 con un área de color; después cárgalo en la aplicación y sigue tú."
+    }
   },
-  "why": {
-    "title": "¿Por qué <span class=\"accent\">Open Paint</span> Studio?",
-    "desc": "Marcar una captura de pantalla, esbozar un plano o recortar una foto no requiere un pesado programa de fotografía. Open Paint Studio es ligero, arranca rápido y funciona sin conexión a internet.",
-    "desc2": "Lo que dibujas sigue siendo editable. Mueve, redimensiona y cambia el estilo de formas y textos después, y expórtalos como SVG editable."
+  "subnav": {
+    "label": "En esta página",
+    "features": "Funciones",
+    "download": "Descargar",
+    "whatsnew": "Novedades",
+    "faq": "Preguntas",
+    "releases": "Versiones"
   },
-  "formats": {
-    "title": "Abre casi cualquier imagen",
-    "desc": "El navegador lee por sí mismo las imágenes comunes; para el resto lleva ImageMagick integrado, como WebAssembly. Todo ocurre en tu propio ordenador.",
-    "open": "<strong>Abrir</strong> PNG, JPEG, WebP, GIF, BMP, TIFF, HEIC/HEIF, AVIF, PSD, SVG, ICO, TGA, JPEG 2000, JPEG XL, RAW de cámara e IFCX/IFCXB.",
-    "save": "<strong>Guardar</strong> Exporta a PNG, JPEG, WebP o SVG, o guarda la imagen en IFCX o IFCXB.",
-    "local": "<strong>Local</strong> Sin subidas a la nube. Tu borrador se guarda en tu propio dispositivo mientras trabajas."
+  "tabs": {
+    "highlights": "Destacados",
+    "draw": "Dibujo y texto",
+    "vector": "Formas editables",
+    "image": "Editar imágenes",
+    "files": "Archivos",
+    "ai": "IA y automatización",
+    "all": "Todas las funciones"
   },
   "features": {
-    "title": "Funcionalidades",
-    "draw": {
-      "title": "Dibujo",
-      "desc": "Pincel, goma, relleno, cuentagotas, líneas, rectángulos y elipses, con grosor, opacidad y paleta de colores ajustables."
+    "learnMore": "Leer más",
+    "label": "Funciones",
+    "heading": "Dibuja, marca y retoca, en una sola aplicación ligera",
+    "sub": "Empieza por lo más destacado o elige un tema.",
+    "tabsLabel": "Funciones por tema"
+  },
+  "f": {
+    "brush": {
+      "title": "Pincel de trazo suave",
+      "desc": "Dibuja a mano alzada con grosor y opacidad ajustables."
+    },
+    "eraser": {
+      "title": "Goma, relleno y cuentagotas",
+      "desc": "Borra una parte, rellena un área de color o toma un color de la imagen."
+    },
+    "shapes": {
+      "title": "Líneas, rectángulos y elipses",
+      "desc": "Como contorno o rellenas, en cualquier color de la paleta o del selector."
     },
     "text": {
       "title": "Texto en el lienzo",
-      "desc": "Escribe texto directamente en la imagen y elige fuente y tamaño. Las fuentes van incluidas, así que también funciona sin conexión."
+      "desc": "Escribe directamente en la imagen, en sans serif, serif o monoespaciada, y en negrita si quieres."
     },
-    "vector": {
-      "title": "Objetos vectoriales editables",
-      "desc": "Selecciona, mueve, redimensiona y cambia el estilo de formas y textos dibujados. Ctrl+A los toma todos a la vez. Exporta como SVG editable."
+    "palette": {
+      "title": "Paleta de colores y opacidad",
+      "desc": "Elige de la paleta con un clic o define tu propio color, también semitransparente."
     },
-    "image": {
-      "title": "Edición de imagen",
-      "desc": "Recortar, cambiar el tamaño, girar y voltear. Los objetos vectoriales se conservan."
+    "objects": {
+      "title": "Mover y escalar objetos",
+      "desc": "Selecciona una forma o un texto, arrástralo a otro sitio o tira de la esquina."
     },
-    "colors": {
+    "restyle": {
+      "title": "Cambiar el estilo después",
+      "desc": "Da a un objeto dibujado otro color, grosor o fuente, o elimínalo."
+    },
+    "selectall": {
+      "title": "Seleccionar todo con Ctrl+A",
+      "desc": "Mueve, escala o elimina todos los objetos a la vez."
+    },
+    "svg": {
+      "title": "SVG editable",
+      "desc": "Exporta formas y texto como objetos SVG reales, para seguir en un programa de dibujo."
+    },
+    "crop": {
+      "title": "Recortar y cambiar el tamaño",
+      "desc": "Arrastra un marco para recortar o introduce un nuevo ancho y alto."
+    },
+    "rotate": {
+      "title": "Girar y voltear",
+      "desc": "Un cuarto de vuelta a la izquierda o a la derecha, volteo horizontal o vertical; las formas y el texto siguen siendo editables."
+    },
+    "adjust": {
       "title": "Correcciones de color",
-      "desc": "Brillo, contraste, saturación, escala de grises, inversión y sepia."
+      "desc": "Brillo, contraste y saturación con controles deslizantes."
+    },
+    "filters": {
+      "title": "Escala de grises, invertir y sepia",
+      "desc": "Filtros con un clic; deshacer devuelve las formas a como estaban."
+    },
+    "open": {
+      "title": "Casi cualquier formato de imagen",
+      "desc": "Desde PNG y JPEG hasta TIFF, HEIC, AVIF, PSD, JPEG XL, JPEG 2000 y RAW de cámara."
+    },
+    "local": {
+      "title": "Todo en tu propio ordenador",
+      "desc": "Sin subidas ni cuenta; incluso los formatos difíciles se convierten localmente."
+    },
+    "export": {
+      "title": "Exportar a PNG, JPEG y WebP",
+      "desc": "Listo para enviar por correo, poner en un informe o publicar en una web."
+    },
+    "ifcx": {
+      "title": "IFCX e IFCXB",
+      "desc": "Guarda la imagen en el formato abierto IFCX, para que otras aplicaciones OpenAEC puedan leerla."
+    },
+    "assoc": {
+      "title": "Doble clic para abrir",
+      "desc": "La aplicación de escritorio se asocia a las imágenes y a los archivos IFCX."
+    },
+    "draft": {
+      "title": "Tu borrador se conserva",
+      "desc": "Cierra la ventana y tu dibujo seguirá ahí la próxima vez, con todos los objetos editables."
     },
     "undo": {
-      "title": "Deshacer y recuperar",
-      "desc": "Deshaz o rehaz los últimos 40 pasos, y recupera un borrador que se conserva al cerrar la ventana."
+      "title": "40 pasos atrás",
+      "desc": "Deshacer y rehacer, con un historial que muestra cada paso."
     },
-    "ai": {
-      "title": "API y MCP",
-      "desc": "Una API local con su propio token y un servidor MCP, para que un asistente de IA como Claude pueda abrir y editar imágenes."
+    "zoom": {
+      "title": "Zoom, desplazamiento y cuadrícula",
+      "desc": "Ctrl+rueda del 10 al 400 por ciento, arrastrar con el botón central y una cuadrícula de píxeles."
+    },
+    "focus": {
+      "title": "Modo enfoque y atajos",
+      "desc": "Oculta la cinta para tener más espacio; B, E, F, I, L, R, O y T eligen la herramienta."
     },
     "themes": {
       "title": "Cinco temas, dos idiomas",
       "desc": "Claro, Forge, OpenAEC, Blueprint y alto contraste, en neerlandés e inglés."
+    },
+    "api": {
+      "title": "API local con token",
+      "desc": "Envía tu imagen a la API o carga una desde ella; un control de revisiones evita sobrescribir el trabajo del otro."
+    },
+    "mcp": {
+      "title": "Servidor MCP para asistentes de IA",
+      "desc": "Seis herramientas: crear, listar y leer documentos, dibujar, deshacer y mostrar el resultado como PNG."
     }
   },
+  "download": {
+    "title": "Descargar v2026.43.2",
+    "lead": "Gratis y sin cuenta. Para Windows, macOS y Linux.",
+    "forWindows": "Descargar para Windows",
+    "forMac": "Descargar para macOS",
+    "forLinux": "Descargar para Linux",
+    "metaWindows": "instalador .exe",
+    "metaMac": ".dmg universal, Intel y Apple Silicon",
+    "metaLinux": "AppImage, funciona en la mayoría de distribuciones",
+    "fileExe": "Instalador (.exe)",
+    "fileDmg": ".dmg universal",
+    "fileDeb": ".deb",
+    "fileAppImage": "AppImage",
+    "label": "Descargar",
+    "mobileNote": "Open Paint Studio es una aplicación de escritorio. Descárgala en tu ordenador.",
+    "other": "Otras plataformas"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Todas las notas de versión",
+    "ctaDownload": "Descargar",
+    "items": {
+      "windows": {
+        "title": "Windows sin permisos de administrador",
+        "desc": "El instalador instala la aplicación para ti y, si hace falta, instala WebView2 por sí mismo, sin preguntar."
+      },
+      "mac": {
+        "title": "Una descarga para cada Mac",
+        "desc": "Un DMG universal para Intel y Apple Silicon, firmado y notarizado por Apple."
+      },
+      "signed": {
+        "title": "Descargas firmadas",
+        "desc": "Instaladores con firma digital y sumas de comprobación para verificar tu descarga."
+      },
+      "selectall": {
+        "title": "Seleccionar todo",
+        "desc": "Ctrl+A toma todos los objetos; muévelos, escálalos o elimínalos de una vez."
+      },
+      "zoom": {
+        "title": "Zoom y desplazamiento",
+        "desc": "Ctrl+rueda hace zoom del 10 al 400 por ciento y el botón central desplaza el lienzo."
+      },
+      "assoc": {
+        "title": "Asociaciones de archivos",
+        "desc": "Abre imágenes y archivos IFCX en Open Paint Studio con un doble clic."
+      }
+    },
+    "label": "Novedades de la v2026.43.2",
+    "title": "Primera versión, <span>para cada sistema</span>",
+    "desc": "La primera versión de Open Paint Studio desde la OpenAEC Foundation, con instaladores firmados para Windows, macOS y Linux."
+  },
+  "faq": {
+    "files": {
+      "q": "¿Qué archivos puedo abrir?",
+      "a": "Casi cualquier imagen: PNG, JPEG, WebP, GIF, BMP, TIFF, HEIC/HEIF, AVIF, PSD, SVG, ICO, TGA, JPEG 2000, JPEG XL, RAW de cámara e IFCX/IFCXB. En animaciones y archivos de varias páginas se abre la primera imagen."
+    },
+    "install": {
+      "q": "¿Tengo que instalar algo?",
+      "a": "Sí, la propia aplicación. En Windows se instala para tu usuario, sin permisos de administrador; en Linux el AppImage funciona sin instalar. Todavía no hay una versión web pública."
+    },
+    "price": {
+      "q": "¿Cuánto cuesta Open Paint Studio?",
+      "a": "Nada. La aplicación es gratuita y de código abierto con licencia MIT, sin cuenta ni suscripción. El estilo corporativo OpenAEC de la aplicación está bajo CC BY-SA 4.0."
+    },
+    "save": {
+      "q": "¿En qué formato se guarda mi trabajo?",
+      "a": "La aplicación guarda automáticamente tu dibujo actual como borrador en tu propio dispositivo, con todos los objetos editables. Como archivo, exportas a PNG, JPEG, WebP o SVG, o guardas la imagen en IFCX o IFCXB."
+    },
+    "systems": {
+      "q": "¿En qué sistemas funciona?",
+      "a": "Windows, macOS (Intel y Apple Silicon, un DMG universal) y Linux (.deb y AppImage). Los instaladores están firmados."
+    },
+    "ai": {
+      "q": "¿Qué puede hacer un asistente de IA con ella?",
+      "a": "Mediante el servidor MCP, un asistente como Claude puede crear imágenes, dibujar sobre ellas, deshacer un paso y mostrar el resultado como PNG. La API y el MCP se ejecutan aparte, junto a la aplicación, desde el código fuente; el instalador no los inicia por sí solo."
+    },
+    "reopen": {
+      "q": "¿Puedo volver a editar formas y texto más tarde desde un archivo?",
+      "a": "Todavía no en el propio Open Paint Studio. Mientras trabajas en un dibujo, los objetos siguen siendo editables, incluso después de cerrar la ventana. IFCX guarda el dibujo como imagen; para seguir editando las formas en otro programa, exporta a SVG."
+    },
+    "offline": {
+      "q": "¿Necesito conexión a internet?",
+      "a": "No. Las fuentes y la conversión de imágenes están integradas en la aplicación, y tus imágenes no van a ninguna parte. Solo necesitas internet para descargar la aplicación."
+    },
+    "photo": {
+      "q": "¿Sustituye a un editor de fotos?",
+      "a": "No, y no es su objetivo. No hay capas, máscaras ni selección de una parte de la foto. Open Paint Studio es para las tareas rápidas: esbozar, marcar, recortar y corregir el color."
+    },
+    "heading": "Preguntas frecuentes"
+  },
   "tech": {
-    "title": "Tecnología",
-    "desc": "Funciona como aplicación de navegador o como aplicación de escritorio con Tauri 2. La API y el servidor MCP son procesos de Node independientes en tu propio ordenador. El editor tiene licencia MIT; el estilo de OpenAEC es CC BY-SA 4.0."
+    "tauri": {
+      "desc": "Una capa nativa ligera en Rust para Windows, macOS y Linux, con instaladores pequeños."
+    },
+    "react": {
+      "desc": "El editor dibuja en un lienzo HTML; las formas y el texto se guardan como operaciones."
+    },
+    "magick": {
+      "desc": "Lee TIFF, HEIC, PSD, RAW y otros formatos localmente, en un worker aparte."
+    },
+    "ifcx": {
+      "desc": "La imagen como PNG dentro de un documento IFCX; IFCXB es el mismo contenido en CBOR con gzip."
+    },
+    "mcp": {
+      "desc": "Un servidor MCP sobre el SDK oficial de TypeScript y una API que solo escucha en tu propio ordenador, con token y control de revisiones."
+    },
+    "signing": {
+      "title": "Versiones firmadas",
+      "desc": "Instalador de Windows con firma digital, aplicación de macOS notarizada por Apple, paquetes de Linux con firma OpenPGP y SHA256SUMS."
+    },
+    "heading": "Tecnología",
+    "sub": "Para quien quiera saber cómo está hecho."
+  },
+  "releases": {
+    "showAll": "Mostrar todas las versiones",
+    "showLess": "Mostrar solo las tres últimas",
+    "github": "Todas las versiones en GitHub"
   }
 }

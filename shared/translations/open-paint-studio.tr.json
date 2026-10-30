@@ -1,69 +1,294 @@
 {
   "header": {
-    "label": "Açık kaynak görüntü düzenleyici",
     "title": "Open <span class=\"accent\">Paint</span> Studio",
-    "desc": "MS Paint ruhunda, OpenAEC tarzında basit bir görüntü düzenleyici. Görüntüler üzerinde çizin, işaretleyin ve düzenleyin; şekilleri ve metni vektör nesneleri olarak düzenlenebilir tutun; API ve MCP sunucusu üzerinden bir yapay zekâ asistanını işe katın.",
-    "badge": "Yeni"
+    "downloadBtn": "İndir",
+    "featuresBtn": "Özellikleri gör",
+    "sourceBtn": "Kaynak kodu",
+    "proof2": "Felemenkçe ve İngilizce",
+    "proof4": "Yapay zekâ asistanları için API ve MCP",
+    "proof5": "Ücretsiz · MIT",
+    "heroAlt": "Open Paint Studio: odalar, ölçü çizgisi ve kırmızı ile yeşil notlar içeren çizilmiş bir kat planı; Başlat şeridi ve sağda geçmiş",
+    "label": "Görüntü düzenleme",
+    "tagline": "Ağır bir fotoğraf programı olmadan hızlıca bir taslak çizin veya ekran görüntüsünü işaretleyin",
+    "desc": "Open Paint Studio, MS Paint ruhunda hafif bir görüntü düzenleyicidir. Fırça, şekiller ve metinle çizin, tek tıkla kırpın ve döndürün; şekiller ve metin düzenlenebilir kalır: sonradan taşıyın, ölçekleyin veya rengini değiştirin."
   },
-  "download": {
-    "title": "İndir",
-    "windows": "Kurulum dosyası (.exe)",
-    "macos": "Apple ve Intel işlemciler (.dmg)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxAppimage": "Her dağıtım (AppImage)"
+  "meta": {
+    "description": "MS Paint ruhunda ücretsiz, açık kaynaklı görüntü düzenleyici: görüntüleri çizin, işaretleyin ve düzenleyin; şekiller ve metin düzenlenebilir kalır. Neredeyse her görüntü biçimini açar, PNG, JPEG, WebP ve SVG olarak dışa aktarır. Windows, macOS ve Linux için.",
+    "title": "Open Paint Studio — OpenAEC Foundation"
   },
-  "cta": {
-    "github": "GitHub'da görüntüle"
+  "hl": {
+    "draw": {
+      "alt": "Kat planına doğrudan metin yazma; Metni uygula düğmesi ve şeritte yazı tipi ile kalın seçenekleri",
+      "kicker": "Çizim ve metin",
+      "title": "Doğrudan tuval üzerinde çizin ve yazın",
+      "desc": "Fırça, silgi, doldurma, damlalık, çizgiler, dikdörtgenler ve elipsler; ayarlanabilir kalınlık, opaklık ve renk paletiyle. Metin istediğiniz yere tıklayıp yazın; yazı tipini, boyutu ve kalınlığı şeritte seçin. Yazı tipleri uygulamayla gelir, bu yüzden internetsiz de çalışır."
+    },
+    "vector": {
+      "alt": "Koyu Forge teması: kat planındaki bir metin notu çerçeve ve ölçekleme tutamacıyla seçili, şeritte Nesne menüsü",
+      "kicker": "Düzenlenebilir şekiller",
+      "title": "Zaten çizdiklerinizi taşıyın ve yeniden biçimlendirin",
+      "desc": "Şekiller ve metin ayrı nesneler olarak kalır. Taşımak için birini seçin, ölçeklemek için köşesini sürükleyin veya rengini, kalınlığını ya da yazı tipini değiştirin. Ctrl+A hepsini birden seçer; SVG dışa aktarımı onları diğer programlar için düzenlenebilir tutar."
+    },
+    "image": {
+      "alt": "Kırmızı çerçeve, daire, ok ve sarı vurguyla işaretlenmiş bir iş programı ekran görüntüsü; Görüntü şeridi açık",
+      "kicker": "Görüntü düzenleme",
+      "title": "Bir ekran görüntüsünü işaretleyip iletin",
+      "desc": "Bir ekran görüntüsü veya fotoğraf açın, çerçeve, ok ve metin ekleyin ve PNG ya da JPEG olarak dışa aktarın. Kırpma, yeniden boyutlandırma, döndürme ve çevirme tek bir şeritte; parlaklık, kontrast, doygunluk, gri tonlama, ters çevirme ve sepya da öyle."
+    },
+    "files": {
+      "alt": "Açma, kaydetme ve dışa aktarma seçenekleriyle Dosya menüsü ve uzun bir dosya türü listesiyle Desteklenen biçimler penceresi",
+      "kicker": "Dosyalar",
+      "title": "Neredeyse her görüntüyü yüklemeden açar",
+      "desc": "PNG, JPEG, WebP ve GIF'in yanı sıra TIFF, telefonunuzdan HEIC, PSD, SVG, JPEG XL ve kamera RAW. Her şey kendi bilgisayarınızda işlenir; hiçbir şey buluta gitmez. Çalışmanızı PNG, JPEG, WebP, SVG veya IFCX olarak kaydedin."
+    },
+    "ai": {
+      "alt": "Blueprint teması: adres, belirteç ve belge kimliği için API · MCP penceresiyle Otomasyon şeridi",
+      "kicker": "Yapay zekâ ve otomasyon",
+      "title": "Bir yapay zekâ asistanının birlikte çizmesine izin verin",
+      "desc": "Kendi belirteci olan yerel bir API ve bir MCP sunucusu, Claude gibi bir asistanın görüntü oluşturmasını, üzerine çizmesini ve sonucu göstermesini sağlar. Örneğin renkli bir alanı olan 1200 × 800 bir taslak isteyin; ardından uygulamada açıp kendiniz devam edin."
+    }
   },
-  "why": {
-    "title": "Neden <span class=\"accent\">Open Paint</span> Studio?",
-    "desc": "Bir ekran görüntüsünü işaretlemek, bir kat planı çizmek veya bir fotoğrafı kırpmak için ağır bir fotoğraf programına gerek yok. Open Paint Studio hafiftir, hızlı açılır ve internet olmadan çalışır.",
-    "desc2": "Çizdikleriniz düzenlenebilir kalır. Şekilleri ve metni sonradan taşıyın, boyutlandırın ve yeniden biçimlendirin; düzenlenebilir SVG olarak dışa aktarın."
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "download": "İndir",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
   },
-  "formats": {
-    "title": "Neredeyse her görüntüyü açar",
-    "desc": "Yaygın görüntüleri tarayıcının kendisi okur; geri kalanı için ImageMagick WebAssembly olarak yerleşiktir. Her şey kendi bilgisayarınızda gerçekleşir.",
-    "open": "<strong>Aç</strong> PNG, JPEG, WebP, GIF, BMP, TIFF, HEIC/HEIF, AVIF, PSD, SVG, ICO, TGA, JPEG 2000, JPEG XL, kamera RAW ve IFCX/IFCXB.",
-    "save": "<strong>Kaydet</strong> PNG, JPEG, WebP veya SVG olarak dışa aktarın ya da görüntüyü IFCX veya IFCXB içinde saklayın.",
-    "local": "<strong>Yerel</strong> Buluta yükleme yok. Taslağınız çalışırken kendi cihazınızda saklanır."
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "draw": "Çizim ve metin",
+    "vector": "Düzenlenebilir şekiller",
+    "image": "Görüntü düzenleme",
+    "files": "Dosyalar",
+    "ai": "Yapay zekâ ve otomasyon",
+    "all": "Tüm özellikler"
   },
   "features": {
-    "title": "Özellikler",
-    "draw": {
-      "title": "Çizim",
-      "desc": "Fırça, silgi, doldurma, damlalık, çizgi, dikdörtgen ve elips; ayarlanabilir kalınlık, opaklık ve renk paleti ile."
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Çizin, işaretleyin ve düzeltin; tek bir hafif uygulamada",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "brush": {
+      "title": "Akıcı çizgili fırça",
+      "desc": "Ayarlanabilir kalınlık ve opaklıkla serbest elle çizin."
+    },
+    "eraser": {
+      "title": "Silgi, doldurma ve damlalık",
+      "desc": "Bir parçayı silin, bir alanı renkle doldurun veya görüntüden renk alın."
+    },
+    "shapes": {
+      "title": "Çizgiler, dikdörtgenler ve elipsler",
+      "desc": "Dış çizgi veya dolu olarak, paletten ya da renk seçiciden her renkte."
     },
     "text": {
       "title": "Tuval üzerinde metin",
-      "desc": "Metni doğrudan görüntüye yazın, yazı tipini ve boyutunu seçin. Yazı tipleri dahil olduğundan çevrimdışı da çalışır."
+      "desc": "Doğrudan görüntüye yazın; tırnaksız, tırnaklı veya eş aralıklı, isterseniz kalın."
     },
-    "vector": {
-      "title": "Düzenlenebilir vektör nesneleri",
-      "desc": "Çizilmiş şekilleri ve metni seçin, taşıyın, boyutlandırın ve yeniden biçimlendirin. Ctrl+A hepsini birden seçer. Düzenlenebilir SVG olarak dışa aktarın."
+    "palette": {
+      "title": "Renk paleti ve opaklık",
+      "desc": "Paletten tek tıkla seçin veya kendi renginizi ayarlayın; yarı saydam da olabilir."
     },
-    "image": {
-      "title": "Görüntü düzenleme",
-      "desc": "Kırpma, yeniden boyutlandırma, döndürme ve çevirme. Vektör nesneleri korunur."
+    "objects": {
+      "title": "Nesneleri taşıyın ve ölçekleyin",
+      "desc": "Bir şekil veya metin seçin, başka yere sürükleyin ya da köşesinden çekin."
     },
-    "colors": {
+    "restyle": {
+      "title": "Sonradan yeniden biçimlendirin",
+      "desc": "Çizilmiş bir nesneye başka renk, kalınlık veya yazı tipi verin ya da silin."
+    },
+    "selectall": {
+      "title": "Ctrl+A ile tümünü seçin",
+      "desc": "Tüm nesneleri bir kerede taşıyın, ölçekleyin veya silin."
+    },
+    "svg": {
+      "title": "Düzenlenebilir SVG",
+      "desc": "Şekilleri ve metni gerçek SVG nesneleri olarak dışa aktarın; bir çizim programında devam edin."
+    },
+    "crop": {
+      "title": "Kırpın ve yeniden boyutlandırın",
+      "desc": "Kırpmak için bir çerçeve sürükleyin veya yeni genişlik ve yükseklik girin."
+    },
+    "rotate": {
+      "title": "Döndürün ve çevirin",
+      "desc": "Sola veya sağa çeyrek tur, yatay ya da dikey çevirme; şekiller ve metin düzenlenebilir kalır."
+    },
+    "adjust": {
       "title": "Renk düzeltmeleri",
-      "desc": "Parlaklık, kontrast, doygunluk, gri tonlama, ters çevirme ve sepya."
+      "desc": "Kaydırıcılarla parlaklık, kontrast ve doygunluk."
+    },
+    "filters": {
+      "title": "Gri tonlama, ters çevirme ve sepya",
+      "desc": "Tek tıkla filtreler; geri alma şekilleri eski hâline getirir."
+    },
+    "open": {
+      "title": "Neredeyse her görüntü biçimi",
+      "desc": "PNG ve JPEG'den TIFF, HEIC, AVIF, PSD, JPEG XL, JPEG 2000 ve kamera RAW'a kadar."
+    },
+    "local": {
+      "title": "Her şey kendi bilgisayarınızda",
+      "desc": "Yükleme ve hesap yok; zor biçimler bile yerel olarak dönüştürülür."
+    },
+    "export": {
+      "title": "PNG, JPEG ve WebP olarak dışa aktarın",
+      "desc": "E-postayla göndermeye, rapora eklemeye veya web sitesine koymaya hazır."
+    },
+    "ifcx": {
+      "title": "IFCX ve IFCXB",
+      "desc": "Görüntüyü açık IFCX biçiminde kaydedin; diğer OpenAEC uygulamaları okuyabilsin."
+    },
+    "assoc": {
+      "title": "Açmak için çift tıklayın",
+      "desc": "Masaüstü uygulaması kendini görüntülere ve IFCX dosyalarına bağlar."
+    },
+    "draft": {
+      "title": "Taslağınız korunur",
+      "desc": "Pencereyi kapatın; çiziminiz bir dahaki sefere tüm düzenlenebilir nesneleriyle hâlâ orada."
     },
     "undo": {
-      "title": "Geri alma ve kurtarma",
-      "desc": "Son 40 adımı geri alın veya yineleyin; pencereyi kapattığınızda taslağınız saklanır."
+      "title": "40 adım geri",
+      "desc": "Geri al ve yinele; her adımı gösteren bir geçmişle."
     },
-    "ai": {
-      "title": "API ve MCP",
-      "desc": "Kendi belirteci olan yerel bir API ve bir MCP sunucusu; böylece Claude gibi bir yapay zekâ asistanı görüntüleri açıp düzenleyebilir."
+    "zoom": {
+      "title": "Yakınlaştırma, kaydırma ve ızgara",
+      "desc": "Ctrl+kaydırma ile yüzde 10'dan 400'e, orta fare düğmesiyle sürükleme ve piksel ızgarası."
+    },
+    "focus": {
+      "title": "Odak modu ve kısayollar",
+      "desc": "Daha fazla çizim alanı için şeridi gizleyin; B, E, F, I, L, R, O ve T aracı seçer."
     },
     "themes": {
       "title": "Beş tema, iki dil",
       "desc": "Açık, Forge, OpenAEC, Blueprint ve yüksek kontrast; Felemenkçe ve İngilizce."
+    },
+    "api": {
+      "title": "Belirteçli yerel API",
+      "desc": "Görüntünüzü API'ye gönderin veya ondan yükleyin; sürüm denetimi birbirinizin çalışmasının üzerine yazmanızı önler."
+    },
+    "mcp": {
+      "title": "Yapay zekâ asistanları için MCP sunucusu",
+      "desc": "Altı araç: belge oluşturma, listeleme ve okuma, çizme, geri alma ve sonucu PNG olarak gösterme."
     }
   },
+  "download": {
+    "title": "v2026.43.2 indir",
+    "lead": "Ücretsiz, hesap gerekmez. Windows, macOS ve Linux için.",
+    "forWindows": "Windows için indir",
+    "forMac": "macOS için indir",
+    "forLinux": "Linux için indir",
+    "metaWindows": ".exe yükleyici",
+    "metaMac": "evrensel .dmg, Intel ve Apple Silicon",
+    "metaLinux": "AppImage, çoğu dağıtımda çalışır",
+    "fileExe": "Yükleyici (.exe)",
+    "fileDmg": "Evrensel .dmg",
+    "fileDeb": ".deb",
+    "fileAppImage": "AppImage",
+    "label": "İndir",
+    "mobileNote": "Open Paint Studio bir masaüstü uygulamasıdır. Bilgisayarınıza indirin.",
+    "other": "Diğer platformlar"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDownload": "İndir",
+    "items": {
+      "windows": {
+        "title": "Yönetici hakları olmadan Windows",
+        "desc": "Yükleyici uygulamayı sizin için kurar ve gerekirse WebView2'yi soru sormadan kendisi yükler."
+      },
+      "mac": {
+        "title": "Her Mac için tek indirme",
+        "desc": "Intel ve Apple Silicon için evrensel bir DMG; imzalı ve Apple tarafından onaylanmış."
+      },
+      "signed": {
+        "title": "İmzalı indirmeler",
+        "desc": "Dijital imzalı yükleyiciler ve indirmenizi doğrulamak için sağlama toplamları."
+      },
+      "selectall": {
+        "title": "Tümünü seçin",
+        "desc": "Ctrl+A tüm nesneleri seçer; hepsini tek seferde taşıyın, ölçekleyin veya silin."
+      },
+      "zoom": {
+        "title": "Yakınlaştırma ve kaydırma",
+        "desc": "Ctrl+kaydırma yüzde 10'dan 400'e yakınlaştırır, orta fare düğmesi tuvali kaydırır."
+      },
+      "assoc": {
+        "title": "Dosya ilişkilendirmeleri",
+        "desc": "Görüntüleri ve IFCX dosyalarını çift tıklayarak Open Paint Studio'da açın."
+      }
+    },
+    "label": "v2026.43.2 sürümünde yeni",
+    "title": "İlk sürüm, <span>her sistem için</span>",
+    "desc": "OpenAEC Foundation'dan Open Paint Studio'nun ilk sürümü; Windows, macOS ve Linux için imzalı yükleyicilerle."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "Neredeyse her görüntü: PNG, JPEG, WebP, GIF, BMP, TIFF, HEIC/HEIF, AVIF, PSD, SVG, ICO, TGA, JPEG 2000, JPEG XL, kamera RAW ve IFCX/IFCXB. Animasyonlarda ve çok sayfalı dosyalarda ilk kare açılır."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Evet, uygulamanın kendisini. Windows'ta yönetici hakları olmadan kendi kullanıcınız için kurulur; Linux'ta AppImage kurulum olmadan çalışır. Henüz herkese açık bir web sürümü yok."
+    },
+    "price": {
+      "q": "Open Paint Studio ne kadar?",
+      "a": "Hiçbir şey. Uygulama MIT lisansıyla ücretsiz ve açık kaynaklıdır; hesap veya abonelik yoktur. Uygulamadaki OpenAEC kurumsal stili CC BY-SA 4.0 kapsamındadır."
+    },
+    "save": {
+      "q": "Çalışmam hangi biçimde kaydedilir?",
+      "a": "Uygulama mevcut çiziminizi tüm düzenlenebilir nesneleriyle birlikte cihazınızda otomatik olarak taslak olarak saklar. Dosya olarak PNG, JPEG, WebP veya SVG'ye aktarır ya da görüntüyü IFCX veya IFCXB olarak kaydedersiniz."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows, macOS (Intel ve Apple Silicon, tek evrensel DMG) ve Linux (.deb ve AppImage). Yükleyiciler imzalıdır."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "MCP sunucusu sayesinde Claude gibi bir asistan görüntü oluşturabilir, üzerine çizebilir, bir adımı geri alabilir ve sonucu PNG olarak gösterebilir. API ve MCP'yi uygulamanın yanında, kaynak koddan ayrı olarak çalıştırırsınız; yükleyici bunları kendiliğinden başlatmaz."
+    },
+    "reopen": {
+      "q": "Şekilleri ve metni daha sonra bir dosyadan yeniden düzenleyebilir miyim?",
+      "a": "Henüz Open Paint Studio'nun kendisinde değil. Bir çizim üzerinde çalıştığınız sürece nesneler, pencereyi kapattıktan sonra bile düzenlenebilir kalır. IFCX görüntüyü resim olarak saklar; şekilleri başka yerde düzenlemeye devam etmek için SVG olarak dışa aktarın."
+    },
+    "offline": {
+      "q": "İnternete ihtiyacım var mı?",
+      "a": "Hayır. Yazı tipleri ve görüntü dönüştürme uygulamaya yerleşiktir; görüntüleriniz hiçbir yere gitmez. İnternete yalnızca uygulamayı indirmek için ihtiyacınız var."
+    },
+    "photo": {
+      "q": "Bir fotoğraf düzenleyicinin yerini tutar mı?",
+      "a": "Hayır, amaç da bu değil. Katmanlar, maskeler veya fotoğrafın bir bölümünü seçme yoktur. Open Paint Studio hızlı işler içindir: taslak çizme, işaretleme, kırpma ve renk düzeltme."
+    },
+    "heading": "Sık sorulan sorular"
+  },
   "tech": {
-    "title": "Teknoloji",
-    "desc": "Tarayıcı uygulaması olarak veya Tauri 2 ile masaüstü uygulaması olarak çalışır. API ve MCP sunucusu, kendi bilgisayarınızda ayrı Node süreçleridir. Düzenleyici MIT lisanslıdır; OpenAEC tarzı CC BY-SA 4.0 kapsamındadır."
+    "tauri": {
+      "desc": "Windows, macOS ve Linux için küçük yükleyicilere sahip, Rust ile yazılmış ince bir yerel kabuk."
+    },
+    "react": {
+      "desc": "Düzenleyici bir HTML tuvali üzerinde çizer; şekiller ve metin işlemler olarak saklanır."
+    },
+    "magick": {
+      "desc": "TIFF, HEIC, PSD, RAW ve diğer biçimleri ayrı bir worker içinde yerel olarak okur."
+    },
+    "ifcx": {
+      "desc": "Görüntü bir IFCX belgesi içinde PNG olarak; IFCXB aynı içeriğin gzip'li CBOR hâlidir."
+    },
+    "mcp": {
+      "desc": "Resmî TypeScript SDK'sı üzerinde bir MCP sunucusu ve yalnızca kendi bilgisayarınızda dinleyen, belirteçli ve sürüm denetimli bir API."
+    },
+    "signing": {
+      "title": "İmzalı sürümler",
+      "desc": "Dijital imzalı Windows yükleyicisi, Apple tarafından onaylanmış macOS uygulaması, OpenPGP imzalı Linux paketleri ve SHA256SUMS."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }
