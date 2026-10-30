@@ -172,6 +172,7 @@
     "fileExe": "Installer (.exe)",
     "fileDmg": "Universal .dmg",
     "fileDeb": ".deb",
+    "fileRpm": ".rpm",
     "fileAppImage": "AppImage",
     "browserNote": "Rather not install anything? The app also <a href=\"https://open-3d-viewer.open-aec.com/\" target=\"_blank\" rel=\"noopener\">runs in the browser</a>.",
     "label": "Download",

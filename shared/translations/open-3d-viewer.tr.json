@@ -172,6 +172,7 @@
     "fileExe": "Yükleyici (.exe)",
     "fileDmg": "Evrensel .dmg",
     "fileDeb": ".deb",
+    "fileRpm": ".rpm",
     "fileAppImage": "AppImage",
     "browserNote": "Hiçbir şey kurmak istemiyor musunuz? Uygulama <a href=\"https://open-3d-viewer.open-aec.com/\" target=\"_blank\" rel=\"noopener\">tarayıcıda da çalışır</a>.",
     "label": "İndir",

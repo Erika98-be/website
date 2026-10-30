@@ -172,6 +172,7 @@
     "fileExe": "Programme d'installation (.exe)",
     "fileDmg": ".dmg universel",
     "fileDeb": ".deb",
+    "fileRpm": ".rpm",
     "fileAppImage": "AppImage",
     "browserNote": "Vous préférez ne rien installer ? L'application <a href=\"https://open-3d-viewer.open-aec.com/\" target=\"_blank\" rel=\"noopener\">fonctionne aussi dans le navigateur</a>.",
     "label": "Télécharger",
