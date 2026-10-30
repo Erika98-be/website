@@ -1,204 +1,306 @@
 {
-  "meta": {
-    "title": "Open Infra Studio — OpenAEC Foundation",
-    "description": "Open-source GIS and civil design for Open CAD Studio: map services worldwide, alignments, profiles and corridors, and BGT, cadastre and KLIC to NLCS."
-  },
   "header": {
-    "label": "OpenAEC Ecosystem",
     "title": "Open <span class=\"accent\">Infra</span> Studio",
-    "desc": "GIS and civil design straight into your drawing, wherever in the world your project is. Choose the project location, bring in map services, OpenStreetMap and 3D city models, and design alignments, profiles and corridors. For the Netherlands, BGT, cadastre and KLIC come on top, on NLCS layers with object data and a complete drawing sheet.",
-    "plugin": "Plugin for Open CAD Studio v2026.43",
-    "gww": "GIS · civil design",
-    "note": "International first: the worldwide tools come first, the Dutch modules sit in one group you can switch off, and the language follows Open CAD Studio's."
+    "downloadBtn": "Download",
+    "featuresBtn": "See the features",
+    "sourceBtn": "Source code",
+    "proof1": "Plugin for Open CAD Studio",
+    "proof2": "600+ map services in 45 countries",
+    "proof5": "Free · GPL-3.0",
+    "heroAlt": "Open CAD Studio with the Open Infra — Civiel ribbon and a 3D city model of Dordrecht's old town around the Grote Kerk",
+    "label": "GIS and civil",
+    "tagline": "GIS and civil design in one drawing, wherever in the world your project is",
+    "desc": "A free plugin for Open CAD Studio. Pick the project location, bring in maps, open data and 3D city models, and design alignments, profiles and corridors in the same DWG. In the Netherlands, BGT, cadastre and KLIC on NLCS layers come on top."
   },
-  "cta": {
-    "install": "Install",
-    "github": "GitHub",
-    "ocs": "Open CAD Studio"
+  "meta": {
+    "description": "Free, open-source plugin for Open CAD Studio: GIS and civil design in one DWG. Over 600 map services worldwide, any coordinate system, alignments, profiles and corridors, 3D city models and IFC 4.3. In the Netherlands with BGT, cadastre and KLIC on NLCS layers.",
+    "title": "Open Infra Studio — OpenAEC Foundation"
   },
-  "slides": {
-    "sheet": "A1 drawing of the existing situation around the Grote Kerk in Dordrecht, scale 1:500, with BGT, cadastre and cables and pipes on NLCS layers, legend and title block",
-    "ribbon": "Open CAD Studio with the Open Infra — GIS ribbon tab and the same drawing open",
-    "bgt": "The BGT, cadastre and KLIC to NLCS window, with the fetched BGT previewed on the map and the NLCS settings",
-    "wms": "The WMS / TMS window with the 8 cm PDOK aerial photo previewed over the centre of Dordrecht",
-    "location": "The Geographic location window: project location and import area on the map, with address search and RD New as the coordinate system",
-    "model3d": "Dordrecht city centre in 3D: AHN terrain with the aerial photo, the BGT in 3D and 3D BAG buildings, with a ring road and a dike as corridors and their cross sections",
-    "corridor": "The ring road as a corridor through Dordrecht city centre, with its cross sections",
-    "prev": "Previous",
-    "next": "Next"
-  },
-  "what": {
-    "title": "What is Open Infra Studio?",
-    "desc": "Open Infra Studio is an open-source plugin for Open CAD Studio, and a free alternative to commercial civil-CAD and desktop-GIS suites. Two ribbon tabs, GIS and Civiel, bring a project's geographic context and its civil design together in one DWG, with no export and import between programs. The GIS workbench window follows the GIS workbench we built for FreeCAD in 2020; the Civiel tab is modelled on Hakan Seven's Road workbench for FreeCAD.",
-    "list1": "Project location anywhere in the world, in any coordinate system",
-    "list2": "More than 600 checked map services in 45 countries, searchable",
-    "list3": "Civil design: survey points, TIN, alignments, profiles, corridors and earthworks",
-    "list4": "3D city models from CityGML and CityJSON, and the subsurface in 3D",
-    "list5": "BGT, cadastre and KLIC on NLCS layers, with a complete drawing sheet",
-    "list6": "Scriptable, with an MCP server that lets an AI agent build whole models"
-  },
-  "install": {
-    "title": "Install",
-    "intro": "Open Infra Studio is a plugin for Open CAD Studio and comes in two parts: the GIS plugin and the Civiel plugin. Release 2026.44.3 needs Open CAD Studio v2026.43, so install or update that first.",
-    "step1": "<strong>Install Open CAD Studio v2026.43</strong> Download Open CAD Studio from its <a href=\"/open-cad-studio/\">product page</a>, or update your installation to v2026.43, and start it.",
-    "step2": "<strong>GIS plugin through the Plugin Manager</strong> Type <code>PLUGINS</code>, choose Add a repository and enter <code>OpenAEC-Foundation/Open-Infra-Studio</code>. Pick the release and click Install.",
-    "step3": "<strong>Unzip the Civiel plugin</strong> Download <code>open-infra-civiel-&lt;platform&gt;.zip</code> below and unzip it into <code>&lt;config&gt;/OpenCADStudio/plugins/</code>. That gives the folder <code>openaec.open-infra-civiel</code>.",
-    "step4": "<strong>Restart</strong> Restart Open CAD Studio. The ribbon then shows the tabs GIS and Civiel."
-  },
-  "download": {
-    "title": "Install by hand",
-    "gisTitle": "GIS plugin",
-    "lead": "Download the file for your system and <code>plugin.toml</code>, put both in <code>&lt;config&gt;/OpenCADStudio/plugins/openaec.open-infra/</code> and restart Open CAD Studio.",
-    "civielTitle": "Civiel plugin",
-    "civielLead": "Unzip the zip file for your system into <code>&lt;config&gt;/OpenCADStudio/plugins/</code>. It holds the folder <code>openaec.open-infra-civiel</code> with the library and its own <code>plugin.toml</code>. Then restart Open CAD Studio.",
-    "action": "Download",
-    "winSize": "x86-64 · 20.5 MB",
-    "linuxSize": "x86-64 · 30.0 MB",
-    "macSize": "Apple silicon · 13.0 MB",
-    "civielWinSize": "x86-64 · 7.9 MB",
-    "civielLinuxSize": "x86-64 · 10.5 MB",
-    "civielMacSize": "Apple silicon · 3.4 MB",
-    "manifest": "Manifest",
-    "manifestSize": "Needed on every system",
-    "config": "<code>&lt;config&gt;</code> is <code>%APPDATA%</code> on Windows, <code>~/.config</code> on Linux and <code>~/Library/Application Support</code> on macOS.",
-    "compat": "Release 2026.44.3, published on 29 October 2026, is the first that loads in Open CAD Studio v2026.43 (plugin API 13). Release 2026.44.2 and earlier are for v2026.42. Open CAD Studio only loads a plugin built against its own version, so update the plugin together with Open CAD Studio."
-  },
-  "why": {
-    "title": "Why <span class=\"accent\">Open Infra</span> Studio?",
-    "desc1": "An infrastructure project starts from the existing situation, and then comes the design. Usually that means switching between a GIS program and a CAD program, separate downloads, putting layers on the drawing standard by hand and retyping a title block. Open Infra Studio does it in the drawing itself: map services, open data, terrain, alignments, corridors and drawing sheets all live in the DWG.",
-    "desc2": "Free and open source (GPL-3.0), built on Open CAD Studio. Every command takes arguments and returns its result as JSON, so scripts and AI agents can build whole models. The plugin runs in its own process next to the drawing, so the CAD window stays responsive while map data comes in."
-  },
-  "features": {
-    "title": "Features",
-    "showAll": "Show all features",
-    "showLess": "Show less",
-    "services": {
-      "title": "Map services worldwide",
-      "desc": "A built-in catalogue of more than 600 checked public WMS, WFS and tile services in 45 countries, without API keys. Search by place or theme, in other languages too, see which services cover the project location and load a layer, reprojected to the project's coordinate system."
-    },
-    "civiel": {
-      "title": "The Civiel tab",
-      "desc": "A second ribbon tab for civil design: survey points and LandXML, a TIN with contours and height analysis, alignments with stationing, length, design and cross sections, and corridors with daylight to the ground, earthworks and a mass balance."
-    },
-    "citygml": {
-      "title": "CityGML and CityJSON",
-      "desc": "3D city models from anywhere: CityGML 1.0 to 3.0, CityJSON 1.x and 2.0 and CityJSONSeq. The file is reprojected to the project location and read object by object, keeping only the project area; a 97 MB city tile loads in under two seconds."
-    },
-    "underground": {
-      "title": "The subsurface in 3D",
-      "desc": "Cables and pipes from a KLIC delivery as tubes at their depth, or at the usual cover depth when the delivery gives none. BRO cone penetration tests and boreholes become columns of soil layers. A see-through ground shows it all from below."
-    },
-    "history": {
-      "title": "Historical maps",
-      "desc": "Every Dutch topographic map from 1815 to 2014 (Topotijdreis) and the cadastral maps of 1832 (HisGIS) as underlays, next to Natura 2000, the geomorphological map and the soil map."
-    },
-    "mcp": {
-      "title": "Scripts and AI agents",
-      "desc": "The commands take arguments and write their result as JSON, with handles, lengths and volumes. An MCP server lets an AI agent build whole models, from project location to corridor, and finds every Open CAD Studio window by itself."
-    },
-    "bgt": {
-      "title": "BGT to NLCS",
-      "desc": "42 PDOK collections in 11 groups, current objects only. Each object goes to the most specific rule of the official NLCS-BGT 5.0 mapping (719 rules); street names and house numbers keep their BGT rotation."
-    },
-    "klic": {
-      "title": "KLIC deliveries",
-      "desc": "Open the Kadaster's delivery, as a zip or as the area-information XML. 13 IMKL 2.0 themes go on their own layers, and cables and pipes are labelled per network operator with diameter and material."
-    },
-    "brk": {
-      "title": "Cadastral map",
-      "desc": "Parcel boundaries and parcel numbers from the BRK, the numbers at their BRK rotation, in one click on the NLCS layer for cadastral boundaries."
-    },
-    "mutation": {
-      "title": "BGT mutation",
-      "desc": "The design on NLCS layers goes back to the BGT, as IMGeo-GML 2.1.1 with a report beside the drawing. The file is valid against the IMGeo 2.1.1 schema; anything ambiguous is listed in the report instead of exported."
-    },
-    "nlcs": {
-      "title": "NLCS 5.02 built in",
-      "desc": "3,659 objects, 543 linetypes and 256 colours. Each layer gets the NLCS colour, lineweight and linetype of the chosen drawing status; linetypes are in paper millimetres and follow the plot scale."
-    },
-    "sheet": {
-      "title": "Drawing sheet",
-      "desc": "Frame, title block listing the sources of the imports, legend of the NLCS layers used, north arrow, scale bar and RD crosses. The format, A3 to A0 landscape, is chosen automatically."
-    },
-    "pdok": {
-      "title": "PDOK in one click",
-      "desc": "Aerial photo, cadastral map, AHN, BAG, parcels, NWB road sections, hectometre markers, ProRail tracks and waterways, without opening a window, at the saved location."
+  "hl": {
+    "maps": {
+      "alt": "Paris cadastral parcels with parcel numbers over an aerial photo, imported into the drawing",
+      "kicker": "Maps worldwide",
+      "title": "Over 600 map services in 45 countries, no API key needed",
+      "desc": "Search by place or theme, in other languages too, and see straight away which services cover your project location. Aerial photos, cadastral maps and vector data arrive in the drawing reprojected to your project's coordinate system, like the Paris cadastre over the aerial photo here."
     },
     "location": {
-      "title": "Project location",
-      "desc": "Click the map or search an address, place, parcel or coordinate pair: worldwide through OpenStreetMap, and in the Netherlands also through PDOK, with suggestions as you type. Choose the coordinate system, draw the import area and choose absolute or relative coordinates. The location is stored in the drawing itself."
+      "alt": "Set geographic location window with a map of Dordrecht, the blue import area and the RD New coordinate system",
+      "kicker": "Project location",
+      "title": "Put your project on the map, in any coordinate system",
+      "desc": "Click on the map or search an address, place, parcel or coordinate. Pick a built-in system such as RD New, Lambert-93 or British National Grid, let the app choose the right UTM zone, or fetch any other EPSG code. The location is saved in the drawing."
+    },
+    "nlcs": {
+      "alt": "Open CAD Studio with the Open Infra — GIS ribbon and an NLCS drawing of BGT, cadastre and cables and pipes around the Grote Kerk in Dordrecht",
+      "kicker": "BGT, cadastre and KLIC",
+      "title": "A site drawing on NLCS layers in five commands",
+      "desc": "BGT, cadastral boundaries and a KLIC delivery each land on their own NLCS layer, with colour, linetype and the source's object data. A drawing sheet with title block, legend, north arrow and scale bar finishes it, and your design goes back as a BGT mutation."
+    },
+    "corridor": {
+      "alt": "Corridor through the 3D model of Dordrecht with cross sections along the alignment and the length profiles on the right",
+      "kicker": "Civil design",
+      "title": "From survey points to a corridor with earthworks",
+      "desc": "Import survey points or LandXML, build a terrain model with contours and draw an alignment with stationing. Length, design and cross sections follow, and a corridor with side slopes down to the ground gives the earthworks per cross section and a mass balance."
+    },
+    "underground": {
+      "alt": "3D model around the Grote Kerk in Dordrecht with coloured cables and pipes under a see-through ground",
+      "kicker": "The subsurface",
+      "title": "Cables, pipes and CPTs in 3D under a see-through ground",
+      "desc": "A KLIC delivery becomes tubes at their depth, or at the usual cover where the delivery does not give it. CPTs and boreholes from the BRO become columns of soil layers. Make the ground see-through and look at it all from below."
+    },
+    "history": {
+      "alt": "Topographic map of Dordrecht and Zwijndrecht around 1900 as an underlay in the drawing",
+      "kicker": "Historical maps",
+      "title": "Two centuries of maps as an underlay",
+      "desc": "Every Dutch topographic map from 1815 to 2014 and the cadastral maps of 1832, behind your drawing in one click. Natura 2000, the geomorphological map and the soil map are ready too."
+    }
+  },
+  "notice": {
+    "link": "Go to Open CAD Studio",
+    "text": "A plugin for Open CAD Studio v2026.43: always update the plugin and Open CAD Studio together."
+  },
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "download": "Download",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "maps": "Maps and data",
+    "nl": "Netherlands and NLCS",
+    "civil": "Civil design",
+    "3d": "3D model",
+    "auto": "Scripts, AI and IFC",
+    "all": "All features"
+  },
+  "features": {
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "From existing situation to design, in your drawing",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
+    "services": {
+      "title": "Search map services",
+      "desc": "600 checked WMS, WFS and tile services in 45 countries. Search by place or theme and see what covers your location."
     },
     "wms": {
       "title": "Aerial photos and maps",
-      "desc": "Choose a WMS or TMS server, browse its layers and preview them on the map. The images go behind the drawing as underlays. 19 server presets for the Netherlands, Flanders and the rest of the world, plus your own servers."
+      "desc": "Any WMS or tile server: browse the layers, preview them and put the image behind the drawing as an underlay."
     },
     "wfs": {
-      "title": "WFS vector data",
-      "desc": "Choose a server and a feature type, test it on the map, then choose the label attribute, the colour and clipping to the import area."
+      "title": "Vector data with attributes",
+      "desc": "WFS and OGC API Features: pick a feature type, test it on the map and keep the attributes as object data."
     },
     "osm": {
       "title": "OpenStreetMap, worldwide",
-      "desc": "Buildings, roads, rail, water, civil structures, land use, cables and pipelines, fences and house numbers, anywhere in the world."
-    },
-    "xdata": {
-      "title": "Object data",
-      "desc": "Every object keeps its source attributes: from the BGT its local id, function and material, from KLIC the network operator, diameter and material."
+      "desc": "Buildings, roads, rail, water, structures, land use, cables and pipelines, fences and house numbers, anywhere in the world."
     },
     "crs": {
       "title": "Any coordinate system",
-      "desc": "14 built in, including RD New, ETRS89 / UTM, Belgian Lambert, British National Grid and Lambert-93. The right UTM zone automatically anywhere in the world, and any other EPSG code is fetched once and kept with the drawing."
+      "desc": "14 built-in systems, the right UTM zone automatically anywhere, and any other EPSG code, saved with the drawing."
+    },
+    "files": {
+      "title": "Open GIS files",
+      "desc": "GeoJSON, Shapefile, GeoPackage, KML, GPX, GML, GeoTIFF, ASCII grid and LAS/LAZ, reprojected to your project location."
+    },
+    "history": {
+      "title": "Historical maps",
+      "desc": "Topographic maps from 1815 to 2014 and the cadastral maps of 1832 as an underlay."
+    },
+    "bgt": {
+      "title": "BGT and cadastre on NLCS",
+      "desc": "42 BGT collections and the cadastral map, each object on the right NLCS layer per the official NLCS-BGT mapping."
+    },
+    "klic": {
+      "title": "KLIC deliveries",
+      "desc": "Open the delivery as zip or xml. Cables and pipes land per theme on their layer, with network operator, diameter and material."
+    },
+    "sheet": {
+      "title": "Drawing sheet in one click",
+      "desc": "Frame, title block with the sources, legend of the layers used, north arrow, scale bar and RD crosses. A3 to A0 is chosen for you."
+    },
+    "check": {
+      "title": "NLCS check and quantities",
+      "desc": "Check and repair the drawing against NLCS 5.02, and count quantities per layer or object as CSV or as a table in the drawing."
+    },
+    "mutation": {
+      "title": "Design back to the BGT",
+      "desc": "Your design on NLCS layers as a BGT mutation in IMGeo-GML 2.1.1, with a report of anything ambiguous."
+    },
+    "ahn": {
+      "title": "Heights and point cloud from AHN",
+      "desc": "Spot heights, contour lines and length profiles from AHN4, and the point cloud of just your project area in 3D."
+    },
+    "points": {
+      "title": "Survey points and LandXML",
+      "desc": "PNEZD and PENZD files with automatic detection of separator and order, and LandXML with points, surfaces and alignments."
+    },
+    "tin": {
+      "title": "Terrain model",
+      "desc": "A TIN from points, 3D lines, contours or AHN, with contour lines and a height analysis in colour bands."
+    },
+    "axis": {
+      "title": "Alignments and profiles",
+      "desc": "Alignments with stationing and curve radii, length profile, design profile with vertical curves and cross sections in a grid."
+    },
+    "corridor": {
+      "title": "Corridors and earthworks",
+      "desc": "Templates for road, cycle path, motorway and dike, side slopes to the ground, cut and fill per cross section and a mass balance."
+    },
+    "city3d": {
+      "title": "A 3D city in one command",
+      "desc": "Terrain with the aerial photo, every building from 3D BAG, the whole BGT in 3D, trees and water at its level."
+    },
+    "citygml": {
+      "title": "CityGML and CityJSON",
+      "desc": "3D city models from anywhere, read only within your project area: a 97 MB city tile loads in under two seconds."
+    },
+    "subsurface": {
+      "title": "Subsurface in 3D",
+      "desc": "KLIC cables and pipes at depth and BRO CPTs and boreholes as soil columns, under a see-through ground."
+    },
+    "water": {
+      "title": "Water level",
+      "desc": "Lay a water surface at a chosen level over the project area and see which part lies lower."
+    },
+    "ifc": {
+      "title": "IFC 4.3 export",
+      "desc": "The whole drawing as IFC 4.3: every object its own IFC class, alignments as IfcAlignment, georeferenced and with object data."
+    },
+    "mcp": {
+      "title": "An AI assistant builds along",
+      "desc": "An MCP server with 39 tools lets an AI assistant build whole models, from project location to corridor."
+    },
+    "json": {
+      "title": "Scriptable commands",
+      "desc": "Every command takes arguments and writes its result as JSON, with handles, lengths and volumes."
+    },
+    "lang": {
+      "title": "English and Dutch",
+      "desc": "The interface follows Open CAD Studio's language. Switch the Dutch modules off if you do not need them."
     }
   },
-  "formats": {
-    "title": "File formats",
-    "intro": "Open CAD Studio itself opens and saves the drawing (DWG and DXF, R13 to 2018) and plots it to PDF. Open Infra Studio adds the formats below. Imported files are reprojected to the project location, using the file's own coordinate system where it has one.",
-    "open": {
-      "title": "Open",
-      "vector": "<strong>Vector GIS</strong> GeoJSON, Shapefile, GeoPackage, KML and KMZ, GPX, GML, and CSV, TXT or TSV with coordinate columns",
-      "raster": "<strong>Rasters and height grids</strong> GeoTIFF, ASCII grid (.asc), JPEG and PNG with a world file",
-      "cloud": "<strong>Point clouds</strong> LAS and LAZ",
-      "survey": "<strong>Survey points and LandXML</strong> PNEZD, PENZD, NEZD and ENZD; LandXML 1.x with points, surfaces and alignments",
-      "city": "<strong>3D city models</strong> CityGML 1.0 to 3.0, IMGeo/BGT GML, CityJSON 1.x and 2.0, CityJSONSeq",
-      "klic": "<strong>KLIC delivery</strong> IMKL 2.0, as a zip or as XML"
-    },
-    "write": {
-      "title": "Write",
-      "images": "<strong>Map images and point clouds</strong> PNG beside the drawing; point clouds as .rcs, attached to the drawing",
-      "csv": "<strong>Tables</strong> survey points, the mass balance per corridor and quantities as CSV, quantities also as a table in the drawing",
-      "mutation": "<strong>BGT mutation</strong> IMGeo-GML 2.1.1 with a report",
-      "report": "<strong>NLCS check</strong> a report in Markdown",
-      "json": "<strong>Command results</strong> JSON per call, for scripts and agents"
-    },
-    "web": {
-      "title": "Web services",
-      "maps": "<strong>Maps</strong> WMS 1.1.1 and 1.3.0, XYZ and TMS tiles, and tile caches such as Topotijdreis's",
-      "vector": "<strong>Vector data</strong> WFS 1.1.0 and 2.0.0, OGC API Features, the Overpass API for OpenStreetMap",
-      "heights": "<strong>Heights and 3D</strong> WCS for height grids, COPC for point clouds, the 3D BAG API",
-      "other": "<strong>Other</strong> BRO REST for cone penetration tests and boreholes, address search through PDOK and Nominatim, epsg.io for coordinate systems"
-    },
-    "note": "Not yet: reading JPEG 2000, E57 and PLY, exporting to LandXML, GeoJSON, Shapefile or GeoPackage, and IFC."
+  "download": {
+    "title": "Download v2026.44.5",
+    "lead": "Free, no account needed, for Windows, Linux and macOS. Install the GIS plugin through Open CAD Studio's Plugin Manager (type <code>PLUGINS</code>) and download the Civiel plugin here.",
+    "forWindows": "Download for Windows",
+    "forMac": "Download for macOS",
+    "forLinux": "Download for Linux",
+    "label": "Download",
+    "mobileNote": "Open Infra Studio is a plugin for Open CAD Studio on your computer. Download it there.",
+    "other": "Other platforms",
+    "metaZipWin": "Civiel plugin (.zip), Windows x86-64",
+    "metaZipMac": "Civiel plugin (.zip), macOS on Apple silicon",
+    "metaZipLinux": "Civiel plugin (.zip), Linux x86-64",
+    "fileCivZip": "Civiel plugin (.zip)",
+    "fileGisDll": "GIS plugin (.dll)",
+    "fileGisDylib": "GIS plugin (.dylib)",
+    "fileGisSo": "GIS plugin (.so)",
+    "fileToml": "Manifest plugin.toml",
+    "note": "Unzip the Civiel plugin into <code>&lt;config&gt;/OpenCADStudio/plugins/</code> and restart Open CAD Studio v2026.43. GIS plugin by hand? Put the file for your system and <code>plugin.toml</code> in <code>plugins/openaec.open-infra/</code>. <code>&lt;config&gt;</code> is <code>%APPDATA%</code> on Windows, <code>~/.config</code> on Linux and <code>~/Library/Application Support</code> on macOS."
   },
-  "example": {
-    "title": "Five commands, one drawing",
-    "desc": "The existing situation around the Grote Kerk in Dordrecht: 300 by 250 metres in RD, on an A1 sheet at scale 1:500. Made in an empty metric drawing with these five commands.",
-    "entities": "Entities",
-    "bgt": "From the BGT",
-    "brk": "From the cadastre",
-    "klic": "From the KLIC delivery",
-    "layers": "NLCS layers",
-    "xdata": "With object data",
-    "file": "DWG file"
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "ctaDownload": "Download",
+    "items": {
+      "ifc": {
+        "title": "IFC 4.3 export",
+        "desc": "Terrain, buildings, pavements, cables and pipes, CPTs and earthworks each get their own IFC class; a corridor becomes a road."
+      },
+      "align": {
+        "title": "Alignments as IfcAlignment",
+        "desc": "With horizontal and vertical layout and stationing, georeferenced from the project location and checked with IfcOpenShell."
+      },
+      "pm": {
+        "title": "In the Plugin Manager",
+        "desc": "Open Infra Studio is in the list of Open CAD Studio's Plugin Manager: pick it and install."
+      },
+      "signed": {
+        "title": "Signed plugins",
+        "desc": "Signed on Windows, notarized by Apple on macOS and with an OpenPGP signature on Linux."
+      },
+      "world": {
+        "title": "International first",
+        "desc": "The ribbon puts the worldwide tools first; everything that only works in the Netherlands sits in one group you can switch off."
+      },
+      "klic": {
+        "title": "KLIC manholes visible again",
+        "desc": "Joints and manholes in 3D are now closed columns with a lid and a base, visible from above too."
+      }
+    },
+    "label": "New in v2026.44.5",
+    "title": "Your whole drawing as <span>IFC 4.3</span>",
+    "desc": "Three releases came out this week. The newest turns your drawing into IFC 4.3 for BIM and infra software, the plugin is now in the Plugin Manager, and the ribbon puts the worldwide tools first."
   },
-  "limits": {
-    "title": "Good to know",
-    "rd": "<strong>RD accuracy.</strong> Conversion to RD uses the 7-parameter transformation, about 0.2 metres from RDNAPTRANS. That is enough for underlays and context. For setting out, use data that is already in RD; PDOK, BGT, BRK and KLIC all supply it that way.",
-    "macos": "<strong>macOS.</strong> The ribbon quick buttons and the commands work; the workbench window does not yet.",
-    "version": "<strong>Open CAD Studio version.</strong> Release 2026.44.3 belongs to Open CAD Studio v2026.43. A plugin for v2026.42 does not load in v2026.43, and the other way round. When you update Open CAD Studio, update the plugin too.",
-    "language": "<strong>Language and Dutch modules.</strong> The interface is in English or Dutch and follows Open CAD Studio's language, falling back to English. Next to the language choice you can switch off the Dutch modules; after a restart the Netherlands group and the 3D Netherlands menu are gone from the ribbon.",
-    "sources": "<strong>Sources and licences.</strong> Data from PDOK, the Kadaster, Rijkswaterstaat, ProRail, AHN and the BRO is open data; credit the source, which the title block does for the imports. NLCS and the 3D BAG are CC BY 4.0, OpenStreetMap is ODbL. The Sentinel-2 satellite background is for non-commercial use only."
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "<a href=\"/open-cad-studio/\">Open CAD Studio</a> opens the drawing itself (DWG and DXF). Open Infra Studio also reads GeoJSON, Shapefile, GeoPackage, KML/KMZ, GPX, GML and CSV with coordinates; GeoTIFF, ASCII grid and JPEG/PNG with a world file; LAS and LAZ; survey points (PNEZD, PENZD); LandXML 1.x; CityGML, CityJSON and IMGeo-GML; and KLIC deliveries (IMKL 2.0). Not yet: reading JPEG 2000, E57, PLY and IFC."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "Yes. First install <a href=\"/open-cad-studio/\">Open CAD Studio</a> v2026.43. Type <code>PLUGINS</code> there, pick Open Infra Studio and click Install: that is the GIS plugin. Then download the Civiel plugin above, unzip it into <code>&lt;config&gt;/OpenCADStudio/plugins/</code> and restart Open CAD Studio. The ribbon then shows the GIS and Civiel tabs."
+    },
+    "price": {
+      "q": "What does Open Infra Studio cost?",
+      "a": "Nothing. Open Infra Studio is free and open source under the GPL-3.0, like Open CAD Studio. Most map services are open data; credit the source, the title block does that for you. Only the Sentinel-2 satellite background is limited to non-commercial use."
+    },
+    "save": {
+      "q": "In which file format is my work saved?",
+      "a": "Everything lives in Open CAD Studio's DWG, including the project location and the object data. Map images are saved as PNG beside the drawing. You can export to IFC 4.3, a BGT mutation (IMGeo-GML), CSV for survey points, mass balance and quantities, and PDF via Open CAD Studio. Export to LandXML, GeoJSON, Shapefile or GeoPackage is not available yet."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "Wherever Open CAD Studio runs: Windows and Linux (x86-64) and macOS on Apple silicon. On Windows and Linux everything works. On macOS the ribbon buttons and commands work, but the workbench window does not yet."
+    },
+    "practice": {
+      "q": "Does it fit civil engineering practice?",
+      "a": "Yes. NLCS 5.02 is built in, with layers, colours and linetypes per drawing status. BGT, BRK, KLIC (IMKL 2.0), AHN and BRO come straight from the source in RD and NAP, and a design goes back to the BGT as IMGeo-GML 2.1.1. Outside the Netherlands you work in the national grid or in UTM. Note: reprojecting to RD yourself is accurate to about 0.2 metres; fine for underlays, but use data already in RD for setting out."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "A lot. An MCP server with 39 tools lets an assistant such as Claude build whole models: project location, maps, BGT, 3D buildings, alignments, corridors and IFC export. Every command takes arguments and returns its result as JSON, so your own scripts can use it too."
+    },
+    "abroad": {
+      "q": "Does it work outside the Netherlands?",
+      "a": "Yes. Project location, coordinate systems, the service browser, OpenStreetMap, GIS files, CityGML and the whole civil design work anywhere. Only the Dutch base data and NLCS sit in a group of their own, which you can switch off."
+    },
+    "internet": {
+      "q": "Do I need an internet connection?",
+      "a": "For map services, open data, 3D BAG, AHN and address search, yes. Files you already have, such as GIS files, survey points, LandXML, CityGML and a KLIC delivery, and the civil design work offline. Data loads in the background, so the drawing stays responsive."
+    },
+    "heading": "Frequently asked questions"
   },
   "tech": {
-    "title": "Technology",
-    "desc": "About 29,000 lines of Rust and 120 unit tests, in one Cargo workspace with two plugins. A core with no dependency on the CAD host handles coordinates, servers, parsing and the civil calculations; a separate layer turns the result into DWG entities. Builds for Windows, Linux and macOS."
+    "rust": {
+      "desc": "About 29,000 lines of Rust and 120 unit tests, in one Cargo workspace with two plugins: GIS and Civiel."
+    },
+    "ocs": {
+      "title": "Open CAD Studio plugin API",
+      "desc": "The plugin runs in its own process beside the drawing and talks to Open CAD Studio v2026.43 through plugin API 13."
+    },
+    "egui": {
+      "desc": "The workbench window with map, search and settings, with network work on its own threads so the CAD window stays responsive."
+    },
+    "proj": {
+      "desc": "Coordinate transformations in pure Rust; systems that are not built in are fetched once from epsg.io."
+    },
+    "ogc": {
+      "title": "Open standards"
+    },
+    "mcp": {
+      "desc": "A Python MCP server with 39 tools that finds every Open CAD Studio window by itself."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }

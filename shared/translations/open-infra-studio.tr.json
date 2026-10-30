@@ -1,204 +1,306 @@
 {
-  "meta": {
-    "title": "Open Infra Studio — OpenAEC Foundation",
-    "description": "Open CAD Studio için açık kaynaklı CBS ve inşaat tasarımı: dünya genelinde harita servisleri, güzergâh, profil ve koridorlar, NLCS’ye göre BGT ve KLIC."
-  },
   "header": {
-    "label": "OpenAEC Ekosistemi",
     "title": "Open <span class=\"accent\">Infra</span> Studio",
-    "desc": "CBS ve inşaat tasarımı doğrudan çiziminizde, projeniz dünyanın neresinde olursa olsun. Proje konumunu seçin; harita servislerini, OpenStreetMap’i ve 3D kent modellerini içeri alın, güzergâhlar, profiller ve koridorlar tasarlayın. Hollanda için buna NLCS katmanlarında BGT, kadastro ve KLIC eklenir; nesne verileri ve eksiksiz bir pafta ile.",
-    "plugin": "Open CAD Studio v2026.43 için eklenti",
-    "gww": "CBS · inşaat tasarımı",
-    "note": "Önce uluslararası: dünya genelindeki araçlar önde gelir, Hollanda modülleri kapatabileceğiniz tek bir grupta durur ve dil Open CAD Studio’nunkini izler."
+    "downloadBtn": "İndir",
+    "featuresBtn": "Özellikleri gör",
+    "sourceBtn": "Kaynak kodu",
+    "proof1": "Open CAD Studio eklentisi",
+    "proof2": "45 ülkede 600+ harita servisi",
+    "proof5": "Ücretsiz · GPL-3.0",
+    "heroAlt": "Open Infra — Civiel şeridiyle Open CAD Studio ve Dordrecht tarihi merkezinin Grote Kerk çevresindeki 3B kent modeli",
+    "label": "CBS ve inşaat",
+    "tagline": "Projeniz dünyanın neresinde olursa olsun, CBS ve inşaat tasarımı tek bir çizimde",
+    "desc": "Open CAD Studio için ücretsiz bir eklenti. Proje konumunu seçin, haritaları, açık verileri ve 3B kent modellerini alın; güzergâh, profil ve koridorları aynı DWG'de tasarlayın. Hollanda'da buna NLCS katmanlarında BGT, kadastro ve KLIC eklenir."
   },
-  "cta": {
-    "install": "Kur",
-    "github": "GitHub",
-    "ocs": "Open CAD Studio"
+  "meta": {
+    "description": "Open CAD Studio için ücretsiz, açık kaynaklı eklenti: tek bir DWG'de CBS ve inşaat tasarımı. Dünya çapında 600'den fazla harita servisi, her koordinat sistemi, güzergâhlar, profiller ve koridorlar, 3B kent modelleri ve IFC 4.3. Hollanda'da NLCS katmanlarında BGT, kadastro ve KLIC ile.",
+    "title": "Open Infra Studio — OpenAEC Foundation"
   },
-  "slides": {
-    "sheet": "Dordrecht’teki Grote Kerk çevresindeki mevcut durumun A1 çizimi, 1:500 ölçek, NLCS katmanlarında BGT, kadastro, kablo ve borular, lejant ve antet",
-    "ribbon": "Open Infra — GIS şerit sekmesi ve aynı çizim açık olan Open CAD Studio",
-    "bgt": "NLCS’ye göre BGT, kadastro ve KLIC penceresi; alınan BGT haritada önizlenmiş ve NLCS ayarları",
-    "wms": "Dordrecht merkezinin üzerinde 8 cm PDOK hava fotoğrafı önizlemesiyle WMS / TMS penceresi",
-    "location": "Coğrafi konum penceresi: haritada proje konumu ve içe aktarma alanı, adres arama ve koordinat sistemi olarak RD New",
-    "model3d": "Dordrecht merkezi 3D: hava fotoğraflı AHN arazisi, 3D BGT ve 3D BAG binaları; koridor olarak bir çevre yolu ve bir set, enkesitleriyle birlikte",
-    "corridor": "Dordrecht merkezinden geçen çevre yolu koridoru ve enkesitleri",
-    "prev": "Önceki",
-    "next": "Sonraki"
-  },
-  "what": {
-    "title": "Open Infra Studio nedir?",
-    "desc": "Open Infra Studio, Open CAD Studio için açık kaynaklı bir eklentidir ve ticari inşaat-CAD ve masaüstü CBS paketlerine ücretsiz bir alternatiftir. GIS ve Civiel adlı iki şerit sekmesi, bir projenin coğrafi bağlamını ve inşaat tasarımını programlar arasında dışa ve içe aktarma olmadan tek bir DWG’de birleştirir. CBS çalışma penceresi, 2020’de FreeCAD için yaptığımız CBS çalışma tezgâhını izler; Civiel sekmesi, Hakan Seven’in FreeCAD için Road çalışma tezgâhı örnek alınarak kurulmuştur.",
-    "list1": "Dünyanın her yerinde, her koordinat sisteminde proje konumu",
-    "list2": "45 ülkede 600’den fazla denetlenmiş harita servisi, aranabilir",
-    "list3": "İnşaat tasarımı: ölçüm noktaları, TIN, güzergâhlar, profiller, koridorlar ve hafriyat",
-    "list4": "CityGML ve CityJSON’dan 3D kent modelleri ve 3D yeraltı",
-    "list5": "NLCS katmanlarında BGT, kadastro ve KLIC, eksiksiz bir pafta ile",
-    "list6": "Betiklenebilir; bir yapay zekâ ajanının bütün modeller kurmasını sağlayan bir MCP sunucusuyla"
-  },
-  "install": {
-    "title": "Kurulum",
-    "intro": "Open Infra Studio, Open CAD Studio için bir eklentidir ve iki parçadan oluşur: GIS eklentisi ve Civiel eklentisi. 2026.44.3 sürümü Open CAD Studio v2026.43 gerektirir; bu yüzden önce onu kurun ya da güncelleyin.",
-    "step1": "<strong>Open CAD Studio v2026.43’ü kurun</strong> Open CAD Studio’yu <a href=\"/open-cad-studio/\">ürün sayfasından</a> indirin ya da mevcut kurulumunuzu v2026.43’e güncelleyin ve başlatın.",
-    "step2": "<strong>Eklenti Yöneticisi ile GIS eklentisi</strong> <code>PLUGINS</code> yazın, Add a repository’yi seçin ve <code>OpenAEC-Foundation/Open-Infra-Studio</code> girin. Sürümü seçin ve Install’a tıklayın.",
-    "step3": "<strong>Civiel eklentisini açın</strong> Aşağıdan <code>open-infra-civiel-&lt;platform&gt;.zip</code> dosyasını indirin ve <code>&lt;config&gt;/OpenCADStudio/plugins/</code> klasörüne açın. Böylece <code>openaec.open-infra-civiel</code> klasörü oluşur.",
-    "step4": "<strong>Yeniden başlatın</strong> Open CAD Studio’yu yeniden başlatın. Şeritte GIS ve Civiel sekmeleri görünür."
-  },
-  "download": {
-    "title": "Elle kurulum",
-    "gisTitle": "GIS eklentisi",
-    "lead": "Sisteminize uygun dosyayı ve <code>plugin.toml</code> dosyasını indirin, ikisini de <code>&lt;config&gt;/OpenCADStudio/plugins/openaec.open-infra/</code> klasörüne koyun ve Open CAD Studio’yu yeniden başlatın.",
-    "civielTitle": "Civiel eklentisi",
-    "civielLead": "Sisteminize uygun zip dosyasını <code>&lt;config&gt;/OpenCADStudio/plugins/</code> klasörüne açın. İçinde kütüphane ve kendi <code>plugin.toml</code> dosyasıyla <code>openaec.open-infra-civiel</code> klasörü bulunur. Ardından Open CAD Studio’yu yeniden başlatın.",
-    "action": "İndir",
-    "winSize": "x86-64 · 20,5 MB",
-    "linuxSize": "x86-64 · 30,0 MB",
-    "macSize": "Apple silicon · 13,0 MB",
-    "civielWinSize": "x86-64 · 7,9 MB",
-    "civielLinuxSize": "x86-64 · 10,5 MB",
-    "civielMacSize": "Apple silicon · 3,4 MB",
-    "manifest": "Manifesto",
-    "manifestSize": "Her sistemde gerekli",
-    "config": "<code>&lt;config&gt;</code>, Windows’ta <code>%APPDATA%</code>, Linux’ta <code>~/.config</code> ve macOS’ta <code>~/Library/Application Support</code> klasörüdür.",
-    "compat": "29 Ekim 2026’da yayımlanan 2026.44.3 sürümü, Open CAD Studio v2026.43’te (eklenti API’si 13) yüklenen ilk sürümdür. 2026.44.2 ve önceki sürümler v2026.42 içindir. Open CAD Studio yalnızca kendi sürümüne göre derlenmiş bir eklentiyi yükler; bu yüzden eklentiyi Open CAD Studio ile birlikte güncelleyin."
-  },
-  "why": {
-    "title": "Neden <span class=\"accent\">Open Infra</span> Studio?",
-    "desc1": "Bir altyapı projesi mevcut durumla başlar, ardından tasarım gelir. Bu genellikle bir CBS programıyla bir CAD programı arasında gidip gelmek, ayrı indirmeler, katmanları elle çizim standardına göre düzenlemek ve anteti yeniden yazmak demektir. Open Infra Studio bunu çizimin içinde yapar: harita servisleri, açık veri, arazi, güzergâhlar, koridorlar ve paftalar hep DWG’dedir.",
-    "desc2": "Ücretsiz ve açık kaynaklı (GPL-3.0), Open CAD Studio üzerine kurulu. Her komut argüman alır ve sonucunu JSON olarak döndürür; böylece betikler ve yapay zekâ ajanları bütün modeller kurabilir. Eklenti çizimin yanında kendi işleminde çalışır; harita verileri gelirken CAD penceresi yanıt vermeye devam eder."
-  },
-  "features": {
-    "title": "Özellikler",
-    "showAll": "Tüm özellikleri göster",
-    "showLess": "Daha az göster",
-    "services": {
-      "title": "Dünya genelinde harita servisleri",
-      "desc": "45 ülkede 600’den fazla denetlenmiş, herkese açık WMS, WFS ve karo servisinden oluşan, API anahtarı gerektirmeyen yerleşik bir katalog. Yere ya da temaya göre, başka dillerde de arayın, proje konumunu hangi servislerin kapsadığını görün ve bir katmanı projenin koordinat sistemine dönüştürülmüş olarak yükleyin."
-    },
-    "civiel": {
-      "title": "Civiel sekmesi",
-      "desc": "İnşaat tasarımı için ikinci bir şerit sekmesi: ölçüm noktaları ve LandXML, eş yükselti eğrileri ve yükseklik analiziyle bir TIN, kilometrajlı güzergâhlar, boy kesit, tasarım profili ve enkesitler, ayrıca araziye kadar şevleri, hafriyatı ve kütle dengesiyle koridorlar."
-    },
-    "citygml": {
-      "title": "CityGML ve CityJSON",
-      "desc": "Her yerden 3D kent modelleri: CityGML 1.0–3.0, CityJSON 1.x ve 2.0 ile CityJSONSeq. Dosya proje konumuna dönüştürülür ve yalnızca proje alanı tutularak nesne nesne okunur; 97 MB’lık bir kent karosu iki saniyeden kısa sürede yüklenir."
-    },
-    "underground": {
-      "title": "3D yeraltı",
-      "desc": "Bir KLIC teslimatındaki kablo ve borular, derinliklerinde ya da teslimat derinlik vermiyorsa olağan örtü derinliğinde boru olarak. BRO koni penetrasyon deneyleri ve sondajlar zemin katmanı sütunlarına dönüşür. Saydam bir zemin her şeyi alttan gösterir."
-    },
-    "history": {
-      "title": "Tarihî haritalar",
-      "desc": "1815’ten 2014’e kadar her Hollanda topografik haritası (Topotijdreis) ve 1832 kadastro haritaları (HisGIS) altlık olarak; Natura 2000, jeomorfoloji haritası ve toprak haritasının yanında."
-    },
-    "mcp": {
-      "title": "Betikler ve yapay zekâ ajanları",
-      "desc": "Komutlar argüman alır ve sonuçlarını tanıtıcılar, uzunluklar ve hacimlerle JSON olarak yazar. Bir MCP sunucusu, bir yapay zekâ ajanının proje konumundan koridora kadar bütün modeller kurmasını sağlar ve her Open CAD Studio penceresini kendisi bulur."
-    },
-    "bgt": {
-      "title": "NLCS’ye göre BGT",
-      "desc": "11 grupta 42 PDOK koleksiyonu, yalnızca güncel nesneler. Her nesne resmi NLCS-BGT 5.0 eşlemesinin (719 kural) en özgül kuralına gider; sokak adları ve kapı numaraları BGT dönüşlerini korur."
-    },
-    "klic": {
-      "title": "KLIC teslimatları",
-      "desc": "Kadaster teslimatını zip ya da alan bilgisi XML’i olarak açın. 13 IMKL 2.0 teması kendi katmanına gider; kablo ve borular şebeke işletmecisine göre çap ve malzemeyle etiketlenir."
-    },
-    "brk": {
-      "title": "Kadastro haritası",
-      "desc": "BRK’den parsel sınırları ve parsel numaraları, numaralar BRK dönüşlerinde, tek tıklamayla kadastro sınırlarının NLCS katmanına."
-    },
-    "mutation": {
-      "title": "BGT mutasyonu",
-      "desc": "NLCS katmanlarındaki tasarım, çizimin yanında bir raporla IMGeo-GML 2.1.1 olarak BGT’ye geri gider. Dosya IMGeo 2.1.1 şemasına göre geçerlidir; belirsiz kalan her şey dışa aktarılmak yerine raporda listelenir."
-    },
-    "nlcs": {
-      "title": "Yerleşik NLCS 5.02",
-      "desc": "3.659 nesne, 543 çizgi tipi ve 256 renk. Her katman, seçilen çizim durumunun NLCS rengini, çizgi kalınlığını ve çizgi tipini alır; çizgi tipleri kâğıt milimetresindedir ve çizim ölçeğini izler."
-    },
-    "sheet": {
-      "title": "Pafta",
-      "desc": "Çerçeve, içe aktarmaların kaynaklarını listeleyen antet, kullanılan NLCS katmanlarının lejantı, kuzey oku, ölçek çubuğu ve RD artıları. A3’ten A0’a yatay format kendiliğinden seçilir."
-    },
-    "pdok": {
-      "title": "Tek tıkla PDOK",
-      "desc": "Hava fotoğrafı, kadastro haritası, AHN, BAG, parseller, NWB yol kesimleri, hektometre işaretleri, ProRail hatları ve su yolları; pencere açmadan, kayıtlı konumda."
+  "hl": {
+    "maps": {
+      "alt": "Hava fotoğrafı üzerinde parsel numaralarıyla Paris kadastro parselleri, çizime aktarılmış",
+      "kicker": "Dünya çapında haritalar",
+      "title": "45 ülkede 600'den fazla harita servisi, API anahtarı gerekmez",
+      "desc": "Yere veya konuya göre, başka dillerde de arayın ve proje konumunuzu hangi servislerin kapsadığını hemen görün. Hava fotoğrafları, kadastro haritaları ve vektör veriler projenizin koordinat sistemine dönüştürülerek çizime gelir; burada hava fotoğrafı üzerinde Paris kadastrosu gibi."
     },
     "location": {
-      "title": "Proje konumu",
-      "desc": "Haritaya tıklayın ya da bir adres, yer, parsel veya koordinat çifti arayın: dünya genelinde OpenStreetMap ile, Hollanda’da ayrıca PDOK ile, siz yazarken önerilerle. Koordinat sistemini seçin, içe aktarma alanını çizin ve mutlak ya da göreli koordinatları seçin. Konum çizimin içinde saklanır."
+      "alt": "Dordrecht haritası, mavi içe aktarma alanı ve RD New koordinat sistemiyle coğrafi konum ayarlama penceresi",
+      "kicker": "Proje konumu",
+      "title": "Projenizi haritaya yerleştirin, her koordinat sisteminde",
+      "desc": "Haritaya tıklayın veya bir adres, yer, parsel ya da koordinat arayın. RD New, Lambert-93 veya British National Grid gibi yerleşik bir sistem seçin, doğru UTM dilimini uygulamaya seçtirin ya da başka herhangi bir EPSG kodunu getirin. Konum çizime kaydedilir."
+    },
+    "nlcs": {
+      "alt": "Open Infra — GIS şeridiyle Open CAD Studio ve Dordrecht'teki Grote Kerk çevresinde BGT, kadastro ile kablo ve boruların NLCS çizimi",
+      "kicker": "BGT, kadastro ve KLIC",
+      "title": "Beş komutla NLCS katmanlarında vaziyet planı",
+      "desc": "BGT, kadastro sınırları ve bir KLIC teslimatı renk, çizgi tipi ve kaynaktaki nesne verileriyle her biri kendi NLCS katmanına gelir. Antet, lejant, kuzey oku ve ölçek çubuğuyla bir pafta işi tamamlar; tasarımınız BGT değişikliği olarak geri gider."
+    },
+    "corridor": {
+      "alt": "Dordrecht 3B modelinden geçen koridor, güzergâh boyunca en kesitler ve sağda boy kesitler",
+      "kicker": "İnşaat tasarımı",
+      "title": "Ölçüm noktalarından hafriyatlı koridora",
+      "desc": "Ölçüm noktalarını veya LandXML'i içe aktarın, eş yükselti eğrili bir arazi modeli oluşturun ve kilometrajlı bir güzergâh çizin. Boy kesit, proje profili ve en kesitler gelir; zemine kadar şevli bir koridor, her en kesit için hafriyatı ve kütle dengesini verir."
+    },
+    "underground": {
+      "alt": "Dordrecht'teki Grote Kerk çevresinde saydam zemin altında renkli kablo ve borularla 3B model",
+      "kicker": "Yeraltı",
+      "title": "Saydam bir zemin altında 3B kablolar, borular ve CPT'ler",
+      "desc": "Bir KLIC teslimatı derinliklerinde, teslimat vermiyorsa olağan örtü derinliğinde tüplere dönüşür. BRO'dan gelen CPT'ler ve sondajlar zemin katmanı sütunları olur. Zemini saydam yapın ve her şeye alttan bakın."
+    },
+    "history": {
+      "alt": "Çizimde altlık olarak 1900 civarı Dordrecht ve Zwijndrecht topografik haritası",
+      "kicker": "Tarihî haritalar",
+      "title": "Altlık olarak iki yüzyıllık haritalar",
+      "desc": "1815'ten 2014'e her Hollanda topografik haritası ve 1832 kadastro haritaları, tek tıkla çiziminizin arkasında. Natura 2000, jeomorfoloji haritası ve toprak haritası da hazır."
+    }
+  },
+  "notice": {
+    "link": "Open CAD Studio'ya git",
+    "text": "Open CAD Studio v2026.43 için bir eklenti: eklentiyi ve Open CAD Studio'yu her zaman birlikte güncelleyin."
+  },
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "download": "İndir",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "maps": "Haritalar ve veriler",
+    "nl": "Hollanda ve NLCS",
+    "civil": "İnşaat tasarımı",
+    "3d": "3B model",
+    "auto": "Betikler, YZ ve IFC",
+    "all": "Tüm özellikler"
+  },
+  "features": {
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Mevcut durumdan tasarıma, çiziminizde",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "services": {
+      "title": "Harita servislerinde arama",
+      "desc": "45 ülkede 600 doğrulanmış WMS, WFS ve karo servisi. Yere veya konuya göre arayın, konumunuzu neyin kapsadığını görün."
     },
     "wms": {
       "title": "Hava fotoğrafları ve haritalar",
-      "desc": "Bir WMS ya da TMS sunucusu seçin, katmanlarına göz atın ve haritada önizleyin. Görüntüler altlık olarak çizimin arkasına yerleşir. Hollanda, Flaman Bölgesi ve dünyanın geri kalanı için 19 sunucu ön ayarı, artı kendi sunucularınız."
+      "desc": "Herhangi bir WMS veya karo sunucusu: katmanlara göz atın, önizleyin ve görüntüyü çizimin arkasına altlık olarak koyun."
     },
     "wfs": {
-      "title": "WFS vektör verileri",
-      "desc": "Bir sunucu ve nesne tipi seçin, haritada test edin, ardından etiket özniteliğini, rengi ve içe aktarma alanına kırpmayı seçin."
+      "title": "Öznitelikli vektör veriler",
+      "desc": "WFS ve OGC API Features: bir nesne türü seçin, haritada test edin ve öznitelikleri nesne verisi olarak koruyun."
     },
     "osm": {
-      "title": "Dünya genelinde OpenStreetMap",
-      "desc": "Binalar, yollar, demiryolu, su, yapılar, arazi kullanımı, kablo ve boru hatları, çitler ve kapı numaraları; dünyanın her yerinde."
-    },
-    "xdata": {
-      "title": "Nesne verileri",
-      "desc": "Her nesne kaynak özniteliklerini korur: BGT’den yerel kimlik, işlev ve malzeme; KLIC’ten şebeke işletmecisi, çap ve malzeme."
+      "title": "OpenStreetMap, dünya çapında",
+      "desc": "Binalar, yollar, demiryolu, su, sanat yapıları, arazi kullanımı, kablo ve boru hatları, çitler ve kapı numaraları, dünyanın her yerinde."
     },
     "crs": {
       "title": "Her koordinat sistemi",
-      "desc": "RD New, ETRS89 / UTM, Belçika Lambert, British National Grid ve Lambert-93 dahil 14 yerleşik sistem. Dünyanın her yerinde doğru UTM dilimi kendiliğinden; başka her EPSG kodu bir kez alınır ve çizimle saklanır."
+      "desc": "14 yerleşik sistem, her yerde otomatik doğru UTM dilimi ve çizimle kaydedilen başka herhangi bir EPSG kodu."
+    },
+    "files": {
+      "title": "CBS dosyalarını açın",
+      "desc": "GeoJSON, Shapefile, GeoPackage, KML, GPX, GML, GeoTIFF, ASCII grid ve LAS/LAZ, proje konumunuza dönüştürülerek."
+    },
+    "history": {
+      "title": "Tarihî haritalar",
+      "desc": "Altlık olarak 1815-2014 topografik haritaları ve 1832 kadastro haritaları."
+    },
+    "bgt": {
+      "title": "NLCS'de BGT ve kadastro",
+      "desc": "42 BGT koleksiyonu ve kadastro haritası, resmî NLCS-BGT eşlemesine göre her nesne doğru NLCS katmanında."
+    },
+    "klic": {
+      "title": "KLIC teslimatları",
+      "desc": "Teslimatı zip veya xml olarak açın. Kablo ve borular şebeke işletmecisi, çap ve malzemeyle temaya göre kendi katmanlarına gelir."
+    },
+    "sheet": {
+      "title": "Tek tıkla pafta",
+      "desc": "Çerçeve, kaynaklı antet, kullanılan katmanların lejantı, kuzey oku, ölçek çubuğu ve RD artıları. A3-A0 boyutu kendiliğinden seçilir."
+    },
+    "check": {
+      "title": "NLCS denetimi ve metrajlar",
+      "desc": "Çizimi NLCS 5.02'ye göre denetleyip onarın; metrajları katman veya nesne başına CSV ya da çizimde tablo olarak çıkarın."
+    },
+    "mutation": {
+      "title": "Tasarımı BGT'ye geri gönderin",
+      "desc": "NLCS katmanlarındaki tasarımınız IMGeo-GML 2.1.1 biçiminde BGT değişikliği olarak, belirsiz olanların raporuyla."
+    },
+    "ahn": {
+      "title": "AHN'den yükseklikler ve nokta bulutu",
+      "desc": "AHN4'ten nokta kotları, eş yükselti eğrileri ve boy kesitler; yalnızca proje alanınızın nokta bulutu 3B olarak."
+    },
+    "points": {
+      "title": "Ölçüm noktaları ve LandXML",
+      "desc": "Ayırıcı ve sırayı otomatik tanıyan PNEZD ve PENZD dosyaları; noktalar, yüzeyler ve güzergâhlarla LandXML."
+    },
+    "tin": {
+      "title": "Arazi modeli",
+      "desc": "Noktalardan, 3B çizgilerden, eş yükselti eğrilerinden veya AHN'den TIN; eş yükselti eğrileri ve renk bantlı yükseklik analizi."
+    },
+    "axis": {
+      "title": "Güzergâhlar ve profiller",
+      "desc": "Kilometraj ve kurp yarıçaplı güzergâhlar, boy kesit, düşey kurplu proje profili ve ızgara hâlinde en kesitler."
+    },
+    "corridor": {
+      "title": "Koridorlar ve hafriyat",
+      "desc": "Yol, bisiklet yolu, otoyol ve set şablonları, zemine kadar şevler, en kesit başına kazı ve dolgu, kütle dengesi."
+    },
+    "city3d": {
+      "title": "Tek komutla 3B kent",
+      "desc": "Hava fotoğraflı arazi, 3D BAG'deki tüm binalar, 3B olarak tüm BGT, ağaçlar ve kendi seviyesinde su."
+    },
+    "citygml": {
+      "title": "CityGML ve CityJSON",
+      "desc": "Her yerden 3B kent modelleri, yalnızca proje alanınızda okunur: 97 MB'lık bir kent karosu iki saniyeden kısa sürede yüklenir."
+    },
+    "subsurface": {
+      "title": "3B yeraltı",
+      "desc": "Derinlikte KLIC kablo ve boruları, zemin sütunları olarak BRO CPT'leri ve sondajları, saydam bir zemin altında."
+    },
+    "water": {
+      "title": "Su seviyesi",
+      "desc": "Proje alanına seçilen seviyede bir su yüzeyi koyun ve hangi kısmın daha alçakta kaldığını görün."
+    },
+    "ifc": {
+      "title": "IFC 4.3 dışa aktarma",
+      "desc": "Tüm çizim IFC 4.3 olarak: her nesne kendi IFC sınıfında, güzergâhlar IfcAlignment, coğrafi referanslı ve nesne verileriyle."
+    },
+    "mcp": {
+      "title": "YZ asistanı birlikte kurar",
+      "desc": "39 araçlı bir MCP sunucusu, bir YZ asistanının proje konumundan koridora kadar tüm modelleri kurmasını sağlar."
+    },
+    "json": {
+      "title": "Betiklenebilir komutlar",
+      "desc": "Her komut argüman alır ve sonucunu tanıtıcılar, uzunluklar ve hacimlerle JSON olarak yazar."
+    },
+    "lang": {
+      "title": "İngilizce ve Felemenkçe",
+      "desc": "Arayüz Open CAD Studio'nun dilini izler. Gerekmiyorsa Hollanda modüllerini kapatın."
     }
   },
-  "formats": {
-    "title": "Dosya biçimleri",
-    "intro": "Çizimin kendisini Open CAD Studio açar ve kaydeder (DWG ve DXF, R13’ten 2018’e) ve PDF’ye çizdirir. Open Infra Studio aşağıdaki biçimleri ekler. İçe aktarılan dosyalar, varsa dosyanın kendi koordinat sistemiyle proje konumuna dönüştürülür.",
-    "open": {
-      "title": "Açma",
-      "vector": "<strong>Vektör CBS</strong> GeoJSON, Shapefile, GeoPackage, KML ve KMZ, GPX, GML ile koordinat sütunlu CSV, TXT veya TSV",
-      "raster": "<strong>Raster ve yükseklik gridleri</strong> GeoTIFF, ASCII grid (.asc), world dosyalı JPEG ve PNG",
-      "cloud": "<strong>Nokta bulutları</strong> LAS ve LAZ",
-      "survey": "<strong>Ölçüm noktaları ve LandXML</strong> PNEZD, PENZD, NEZD ve ENZD; noktalar, yüzeyler ve güzergâhlarla LandXML 1.x",
-      "city": "<strong>3D kent modelleri</strong> CityGML 1.0–3.0, IMGeo/BGT GML, CityJSON 1.x ve 2.0, CityJSONSeq",
-      "klic": "<strong>KLIC teslimatı</strong> IMKL 2.0, zip ya da XML olarak"
-    },
-    "write": {
-      "title": "Yazma",
-      "images": "<strong>Harita görüntüleri ve nokta bulutları</strong> çizimin yanında PNG; nokta bulutları .rcs olarak, çizime bağlı",
-      "csv": "<strong>Tablolar</strong> ölçüm noktaları, koridor başına kütle dengesi ve metrajlar CSV olarak, metrajlar ayrıca çizimde tablo olarak",
-      "mutation": "<strong>BGT mutasyonu</strong> raporlu IMGeo-GML 2.1.1",
-      "report": "<strong>NLCS denetimi</strong> Markdown biçiminde bir rapor",
-      "json": "<strong>Komut sonuçları</strong> her çağrı için JSON, betikler ve ajanlar için"
-    },
-    "web": {
-      "title": "Web servisleri",
-      "maps": "<strong>Haritalar</strong> WMS 1.1.1 ve 1.3.0, XYZ ve TMS karoları ve Topotijdreis’inki gibi karo önbellekleri",
-      "vector": "<strong>Vektör verileri</strong> WFS 1.1.0 ve 2.0.0, OGC API Features, OpenStreetMap için Overpass API",
-      "heights": "<strong>Yükseklik ve 3D</strong> yükseklik gridleri için WCS, nokta bulutları için COPC, 3D BAG API’si",
-      "other": "<strong>Diğer</strong> koni penetrasyon deneyleri ve sondajlar için BRO REST, PDOK ve Nominatim ile adres arama, koordinat sistemleri için epsg.io"
-    },
-    "note": "Henüz yok: JPEG 2000, E57 ve PLY okuma; LandXML, GeoJSON, Shapefile veya GeoPackage’e dışa aktarma; IFC."
+  "download": {
+    "title": "v2026.44.5 indir",
+    "lead": "Ücretsiz, hesap gerekmez; Windows, Linux ve macOS için. GIS eklentisini Open CAD Studio'nun Plugin Manager'ı ile kurun (<code>PLUGINS</code> yazın) ve Civiel eklentisini buradan indirin.",
+    "forWindows": "Windows için indir",
+    "forMac": "macOS için indir",
+    "forLinux": "Linux için indir",
+    "label": "İndir",
+    "mobileNote": "Open Infra Studio, bilgisayarınızdaki Open CAD Studio için bir eklentidir. Oradan indirin.",
+    "other": "Diğer platformlar",
+    "metaZipWin": "Civiel eklentisi (.zip), Windows x86-64",
+    "metaZipMac": "Civiel eklentisi (.zip), Apple silicon üzerinde macOS",
+    "metaZipLinux": "Civiel eklentisi (.zip), Linux x86-64",
+    "fileCivZip": "Civiel eklentisi (.zip)",
+    "fileGisDll": "GIS eklentisi (.dll)",
+    "fileGisDylib": "GIS eklentisi (.dylib)",
+    "fileGisSo": "GIS eklentisi (.so)",
+    "fileToml": "plugin.toml bildirimi",
+    "note": "Civiel eklentisini <code>&lt;config&gt;/OpenCADStudio/plugins/</code> içine açın ve Open CAD Studio v2026.43'ü yeniden başlatın. GIS eklentisini elle mi kuracaksınız? Sisteminize ait dosyayı ve <code>plugin.toml</code>'u <code>plugins/openaec.open-infra/</code> içine koyun. <code>&lt;config&gt;</code>, Windows'ta <code>%APPDATA%</code>, Linux'ta <code>~/.config</code>, macOS'ta <code>~/Library/Application Support</code>'tur."
   },
-  "example": {
-    "title": "Beş komut, bir çizim",
-    "desc": "Dordrecht’teki Grote Kerk çevresindeki mevcut durum: RD’de 300’e 250 metre, 1:500 ölçekte A1 paftada. Boş bir metrik çizimde bu beş komutla yapıldı.",
-    "entities": "Nesneler",
-    "bgt": "BGT’den",
-    "brk": "Kadastrodan",
-    "klic": "KLIC teslimatından",
-    "layers": "NLCS katmanları",
-    "xdata": "Nesne verisiyle",
-    "file": "DWG dosyası"
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDownload": "İndir",
+    "items": {
+      "ifc": {
+        "title": "IFC 4.3 dışa aktarma",
+        "desc": "Arazi, binalar, kaplamalar, kablo ve borular, CPT'ler ve hafriyat kendi IFC sınıfını alır; koridor bir yol olur."
+      },
+      "align": {
+        "title": "IfcAlignment olarak güzergâhlar",
+        "desc": "Yatay ve düşey geometri ile kilometrajla, proje konumundan coğrafi referanslı ve IfcOpenShell ile denetlenmiş."
+      },
+      "pm": {
+        "title": "Plugin Manager'da",
+        "desc": "Open Infra Studio, Open CAD Studio'nun Plugin Manager listesinde: seçin ve kurun."
+      },
+      "signed": {
+        "title": "İmzalı eklentiler",
+        "desc": "Windows'ta imzalı, macOS'ta Apple tarafından onaylı ve Linux'ta OpenPGP imzalı."
+      },
+      "world": {
+        "title": "Önce uluslararası",
+        "desc": "Şerit dünya çapındaki araçları öne alır; yalnızca Hollanda'da çalışan her şey kapatabileceğiniz tek bir grupta."
+      },
+      "klic": {
+        "title": "KLIC rögarları yeniden görünür",
+        "desc": "3B bağlantılar ve rögarlar artık kapaklı ve tabanlı kapalı sütunlar; yukarıdan da görünür."
+      }
+    },
+    "label": "v2026.44.5 sürümünde yeni",
+    "title": "Tüm çiziminiz <span>IFC 4.3</span> olarak",
+    "desc": "Bu hafta üç sürüm çıktı. En yenisi çiziminizi BIM ve altyapı yazılımları için IFC 4.3'e dönüştürüyor; eklenti artık Plugin Manager'da ve şerit dünya çapındaki araçları öne alıyor."
   },
-  "limits": {
-    "title": "Bilmekte fayda var",
-    "rd": "<strong>RD doğruluğu.</strong> RD’ye dönüşüm 7 parametreli dönüşümle yapılır, RDNAPTRANS’tan yaklaşık 0,2 metre farkla. Bu, altlıklar ve bağlam için yeterlidir. Aplikasyon için zaten RD’de olan verileri kullanın; PDOK, BGT, BRK ve KLIC verileri bu şekilde sağlar.",
-    "macos": "<strong>macOS.</strong> Şeritteki hızlı düğmeler ve komutlar çalışır; çalışma penceresi henüz çalışmaz.",
-    "version": "<strong>Open CAD Studio sürümü.</strong> 2026.44.3 sürümü Open CAD Studio v2026.43’e aittir. v2026.42 için bir eklenti v2026.43’te yüklenmez, tersi de geçerlidir. Open CAD Studio’yu güncellediğinizde eklentiyi de güncelleyin.",
-    "language": "<strong>Dil ve Hollanda modülleri.</strong> Arayüz İngilizce ya da Felemenkçedir ve Open CAD Studio’nun dilini izler; yedek dil İngilizcedir. Dil seçiminin yanında Hollanda modüllerini kapatabilirsiniz; yeniden başlattıktan sonra Netherlands grubu ve 3D Netherlands menüsü şeritten kalkar.",
-    "sources": "<strong>Kaynaklar ve lisanslar.</strong> PDOK, Kadaster, Rijkswaterstaat, ProRail, AHN ve BRO verileri açık veridir; kaynağı belirtin, antet bunu içe aktarmalar için yapar. NLCS ve 3D BAG CC BY 4.0, OpenStreetMap ODbL lisanslıdır. Sentinel-2 uydu arka planı yalnızca ticari olmayan kullanım içindir."
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "Çizimin kendisini <a href=\"/open-cad-studio/\">Open CAD Studio</a> açar (DWG ve DXF). Open Infra Studio ayrıca koordinatlı GeoJSON, Shapefile, GeoPackage, KML/KMZ, GPX, GML ve CSV; GeoTIFF, ASCII grid ve world dosyalı JPEG/PNG; LAS ve LAZ; ölçüm noktaları (PNEZD, PENZD); LandXML 1.x; CityGML, CityJSON ve IMGeo-GML; ve KLIC teslimatlarını (IMKL 2.0) okur. Henüz yok: JPEG 2000, E57, PLY ve IFC okuma."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Evet. Önce <a href=\"/open-cad-studio/\">Open CAD Studio</a> v2026.43'ü kurun. Orada <code>PLUGINS</code> yazın, Open Infra Studio'yu seçin ve Install'a tıklayın: bu GIS eklentisidir. Ardından yukarıdaki Civiel eklentisini indirin, zip dosyasını <code>&lt;config&gt;/OpenCADStudio/plugins/</code> içine açın ve Open CAD Studio'yu yeniden başlatın. Şeritte GIS ve Civiel sekmeleri görünür."
+    },
+    "price": {
+      "q": "Open Infra Studio ne kadar?",
+      "a": "Hiçbir şey. Open Infra Studio, Open CAD Studio gibi GPL-3.0 altında ücretsiz ve açık kaynaklıdır. Harita servislerinin çoğu açık veridir; kaynağı belirtin, antet bunu sizin için yapar. Yalnızca Sentinel-2 uydu altlığı ticari olmayan kullanımla sınırlıdır."
+    },
+    "save": {
+      "q": "Çalışmam hangi dosya biçiminde kaydedilir?",
+      "a": "Proje konumu ve nesne verileri dahil her şey Open CAD Studio'nun DWG'sinde durur. Harita görüntüleri çizimin yanına PNG olarak kaydedilir. IFC 4.3'e, BGT değişikliğine (IMGeo-GML), ölçüm noktaları, kütle dengesi ve metrajlar için CSV'ye ve Open CAD Studio üzerinden PDF'e aktarırsınız. LandXML, GeoJSON, Shapefile veya GeoPackage'a aktarma henüz yok."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Open CAD Studio'nun çalıştığı her yerde: Windows ve Linux (x86-64) ile Apple silicon üzerinde macOS. Windows ve Linux'ta her şey çalışır. macOS'ta şerit düğmeleri ve komutlar çalışır, ancak çalışma penceresi henüz çalışmaz."
+    },
+    "practice": {
+      "q": "Sektör uygulamasına uyuyor mu?",
+      "a": "Evet. NLCS 5.02 yerleşiktir; çizim durumuna göre katmanlar, renkler ve çizgi tipleriyle. BGT, BRK, KLIC (IMKL 2.0), AHN ve BRO doğrudan kaynaktan RD ve NAP'ta gelir; tasarım IMGeo-GML 2.1.1 olarak BGT'ye geri gider. Hollanda dışında ulusal sistemde veya UTM'de çalışırsınız. Not: RD'ye kendi dönüşümünüz yaklaşık 0,2 metre doğrulukludur; altlıklar için yeterli, aplikasyon için zaten RD'de olan verileri kullanın."
+    },
+    "ai": {
+      "q": "Bir YZ asistanı bununla ne yapabilir?",
+      "a": "Çok şey. 39 araçlı bir MCP sunucusu, Claude gibi bir asistanın tüm modelleri kurmasını sağlar: proje konumu, haritalar, BGT, 3B binalar, güzergâhlar, koridorlar ve IFC dışa aktarma. Her komut argüman alır ve sonucunu JSON olarak verir; kendi betikleriniz de kullanabilir."
+    },
+    "abroad": {
+      "q": "Hollanda dışında da çalışır mı?",
+      "a": "Evet. Proje konumu, koordinat sistemleri, servis tarayıcısı, OpenStreetMap, CBS dosyaları, CityGML ve tüm inşaat tasarımı her yerde çalışır. Yalnızca Hollanda temel verileri ve NLCS, kapatabileceğiniz ayrı bir gruptadır."
+    },
+    "internet": {
+      "q": "İnternet gerekiyor mu?",
+      "a": "Harita servisleri, açık veriler, 3D BAG, AHN ve adres arama için evet. CBS dosyaları, ölçüm noktaları, LandXML, CityGML ve KLIC teslimatı gibi elinizdeki dosyalar ile inşaat tasarımı çevrimdışı çalışır. Veriler arka planda yüklenir, çizim yanıt vermeye devam eder."
+    },
+    "heading": "Sık sorulan sorular"
   },
   "tech": {
-    "title": "Teknoloji",
-    "desc": "Yaklaşık 29.000 satır Rust ve 120 birim testi, iki eklentili tek bir Cargo çalışma alanında. CAD ana uygulamasına bağımlı olmayan bir çekirdek koordinatları, sunucuları, okumayı ve inşaat hesaplarını yapar; ayrı bir katman sonucu DWG nesnelerine dönüştürür. Windows, Linux ve macOS için sürümler."
+    "rust": {
+      "desc": "Yaklaşık 29.000 satır Rust ve 120 birim testi, iki eklentili tek bir Cargo çalışma alanında: GIS ve Civiel."
+    },
+    "ocs": {
+      "title": "Open CAD Studio eklenti API'si",
+      "desc": "Eklenti çizimin yanında kendi sürecinde çalışır ve eklenti API'si 13 üzerinden Open CAD Studio v2026.43 ile konuşur."
+    },
+    "egui": {
+      "desc": "Harita, arama ve ayarlarla çalışma penceresi; ağ işleri ayrı iş parçacıklarında, böylece CAD penceresi yanıt vermeye devam eder."
+    },
+    "proj": {
+      "desc": "Saf Rust'ta koordinat dönüşümleri; yerleşik olmayan sistemler epsg.io'dan bir kez getirilir."
+    },
+    "ogc": {
+      "title": "Açık standartlar"
+    },
+    "mcp": {
+      "desc": "Open CAD Studio'nun her penceresini kendisi bulan, 39 araçlı Python MCP sunucusu."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }
