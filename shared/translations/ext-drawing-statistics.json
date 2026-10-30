@@ -1,17 +1,239 @@
 {
   "header": {
-    "label": "Extension for Open 2D Studio",
     "title": "Drawing <span class=\"accent\">Statistics</span>",
-    "desc": "Extension that displays shape counts and drawing statistics. Adds an Add-Ins ribbon tab with a Shape Count button and a terminal command.",
-    "downloadBtn": "Download v1.0.1 (1.4 KB)",
-    "sourceBtn": "View source"
+    "featuresBtn": "See the features",
+    "faqBtn": "Frequently asked questions",
+    "sourceBtn": "Source code",
+    "proof1": "For Open 2D Studio v0.15+",
+    "proof2": "1.4 kB zip",
+    "proof4": "Free",
+    "heroAlt": "Open 2D Studio with the Add-Ins tab and the Shape Count button above a sample floor plan of a garden office",
+    "label": "Extension for Open 2D Studio",
+    "tagline": "Know in one click how many shapes are in your drawing",
+    "desc": "A small, free extension for the Open 2D Studio desktop app. It adds the Add-Ins tab with the Shape Count button, which counts every shape and shows the total and the number per type."
+  },
+  "meta": {
+    "description": "Free extension for Open 2D Studio: the Add-Ins tab with the Shape Count button counts every shape in your drawing, in total and by type. Also available as the stats show command. A small example to build your own extension on.",
+    "title": "Drawing Statistics — OpenAEC Foundation"
+  },
+  "hl": {
+    "tellen": {
+      "alt": "Sample drawing of a car park with parking bays and trees, with the Add-Ins tab and the Shape Count button open",
+      "kicker": "Counting",
+      "title": "One click gives the total and the count per type",
+      "desc": "Open the Add-Ins tab and click Shape Count. A message shows how many shapes there are and how many of them are circles, rectangles, lines, dimensions or texts. Handy to see quickly what a drawing contains."
+    },
+    "commando": {
+      "alt": "The Open 2D Studio terminal with the list of commands, with the STATS group and the show command at the bottom",
+      "kicker": "Command",
+      "title": "Also a command for scripts and the AI terminal",
+      "desc": "The extension adds the stats show command to the Open 2D Studio command list. Type commands in the terminal and you will see it. It returns the same count as text."
+    },
+    "installeren": {
+      "alt": "The Open 2D Studio Extension Manager with Drawing Statistics v1.0.1 under Installed, with Disable and Remove buttons",
+      "kicker": "Installing",
+      "title": "Install with one zip, switch off with one click",
+      "desc": "Download the zip and in Open 2D Studio choose File, Extensions, Install from file. The extension then appears under Installed, where you can disable or remove it."
+    },
+    "voorbeeld": {
+      "alt": "The main.js source of Drawing Statistics on GitHub, with the tab, button and command the extension registers",
+      "kicker": "Your own extension",
+      "title": "An example to build your own extension on",
+      "desc": "Two files and about a hundred lines of JavaScript show how an extension adds a tab, a button and a command. Copy it, change it and you have your own tool in Open 2D Studio."
+    }
+  },
+  "notice": {
+    "link": "Release v1.0.1 on GitHub (zip, 1.4 kB)",
+    "text": "Works in the Open 2D Studio desktop app (v0.15 or later), not in the web version."
+  },
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "tellen": "Counting",
+    "commando": "Command",
+    "installeren": "Installing",
+    "ontwikkelaars": "Your own extension",
+    "all": "All features"
   },
   "features": {
-    "title": "Features",
-    "ribbon": { "title": "Add-Ins ribbon tab", "desc": "Adds a Shape Count button to the Add-Ins ribbon tab in Open 2D Studio." },
-    "terminal": { "title": "Terminal command", "desc": "Registers a <code>stats show</code> terminal command to display statistics from the command line." },
-    "count": { "title": "Entity counting", "desc": "Counts all entities by type in the current drawing." },
-    "requires": "Requires <a href=\"/open-2d-studio\">Open 2D Studio</a> v0.15.0 or later."
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "Small, but handy",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
   },
-  "footer": { "slogan": "Build free. Build together." }
+  "f": {
+    "tab": {
+      "title": "Its own Add-Ins tab",
+      "desc": "The button sits in a separate tab, so Home stays unchanged."
+    },
+    "button": {
+      "title": "Shape Count button",
+      "desc": "One click in the Statistics group starts the count."
+    },
+    "total": {
+      "title": "Total number of shapes",
+      "desc": "The total number of shapes comes first."
+    },
+    "pertype": {
+      "title": "Count per type",
+      "desc": "Lines, circles, arcs, rectangles, hatches, dimensions, texts: each with its own count."
+    },
+    "sorted": {
+      "title": "In alphabetical order",
+      "desc": "The types are listed alphabetically, so you find them quickly."
+    },
+    "empty": {
+      "title": "Clear on an empty drawing",
+      "desc": "If there is nothing, the message says so."
+    },
+    "safe": {
+      "title": "Changes nothing in your drawing",
+      "desc": "The extension only reads; shapes, layers and file stay as they are."
+    },
+    "statsshow": {
+      "title": "stats show command",
+      "desc": "Returns the same count as text."
+    },
+    "list": {
+      "title": "In the command list",
+      "desc": "Type commands in the terminal and it is listed under STATS."
+    },
+    "ai": {
+      "title": "Known to the AI terminal",
+      "desc": "The Open 2D Studio AI terminal receives the command list, including this command."
+    },
+    "zip": {
+      "title": "One 1.4 kB zip",
+      "desc": "Download and you are done; no installer needed."
+    },
+    "fromfile": {
+      "title": "Install from file",
+      "desc": "In Open 2D Studio via File, Extensions; the extension is switched on right away."
+    },
+    "toggle": {
+      "title": "On, off or gone",
+      "desc": "Disable or remove it in the Extension Manager."
+    },
+    "permissions": {
+      "title": "Fixed permissions",
+      "desc": "The manifest only asks for commands, the ribbon and events."
+    },
+    "offline": {
+      "title": "Works offline",
+      "desc": "After installing, everything happens on your own computer."
+    },
+    "sample": {
+      "title": "Sample extension",
+      "desc": "Made as a starting point for anyone who wants to add something to Open 2D Studio."
+    },
+    "readable": {
+      "title": "About a hundred lines",
+      "desc": "One manifest and one JavaScript file, without a build step."
+    },
+    "source": {
+      "title": "Source code on GitHub",
+      "desc": "Read along, copy it or suggest an improvement."
+    },
+    "free": {
+      "title": "Free",
+      "desc": "No account, no subscription."
+    }
+  },
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "items": {
+      "addins": {
+        "title": "Add-Ins tab",
+        "desc": "Shape Count now has its own tab, in the Statistics group."
+      },
+      "home": {
+        "title": "Home stays clean",
+        "desc": "The extension no longer adds anything to the Open 2D Studio Home tab."
+      },
+      "same": {
+        "title": "Same count and command",
+        "desc": "The total, the count per type and stats show work as in 1.0.0."
+      },
+      "package": {
+        "title": "As a zip with the release",
+        "desc": "drawing-statistics-1.0.1.zip, ready for Install from file."
+      }
+    },
+    "label": "New in v1.0.1",
+    "title": "Its own place in the ribbon",
+    "desc": "Version 1.0.1 (February 2026) moves the button from the Home tab to its own Add-Ins tab. The count and the command work as in 1.0.0."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "The extension does not open files itself. It counts what is open in Open 2D Studio, including a drawing you imported there from DXF."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "Yes: the <a href=\"/open-2d-studio/\">Open 2D Studio</a> desktop app (v0.15 or later) and this extension in it. Get drawing-statistics-1.0.1.zip from <a href=\"https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases/tag/v1.0.1\">release v1.0.1 on GitHub</a> and in Open 2D Studio choose File, Extensions, Install from file. The Open 2D Studio web version cannot install extensions yet."
+    },
+    "cost": {
+      "q": "What does it cost?",
+      "a": "Nothing. The source code is public on GitHub. There is no licence file yet; if you want to reuse the code, ask in the repository."
+    },
+    "format": {
+      "q": "In which file format is my work saved?",
+      "a": "The extension saves nothing and changes nothing in your drawing. The count appears in a message; you save your drawing in Open 2D Studio as usual."
+    },
+    "platforms": {
+      "q": "Which systems does it run on?",
+      "a": "Wherever the Open 2D Studio desktop app runs: Windows, macOS and Linux. Not in the web version."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "The stats show command is in the Open 2D Studio command list. The desktop app's AI terminal receives that list and can therefore request the count."
+    },
+    "scope": {
+      "q": "Does it only count the drawing I am looking at?",
+      "a": "No. It counts every shape in the open file, including those on other drawings and hidden shapes. Counting per drawing, per layer or only the selection is not possible yet."
+    },
+    "export": {
+      "q": "Can I save or export the count?",
+      "a": "Not yet. The count only appears in a message, with the English names of the shape types."
+    },
+    "own": {
+      "q": "Can I use this to make my own extension?",
+      "a": "That is what it is for. An extension is a folder with manifest.json and a JavaScript file with an onLoad function, in which you add tabs, buttons and commands. See <a href=\"https://github.com/OpenAEC-Foundation/ext-drawing-statistics/blob/v1.0.1/main.js\">main.js</a> for how it works."
+    },
+    "heading": "Frequently asked questions"
+  },
+  "tech": {
+    "js": {
+      "desc": "A single main.js as a CommonJS module (module.exports), without dependencies or a build step."
+    },
+    "manifest": {
+      "desc": "id, version, minAppVersion 0.15.0, category Utility and the permissions commands, ribbon and events."
+    },
+    "api": {
+      "desc": "onLoad(api) with api.ui.addRibbonTab, api.ui.addRibbonButton, api.commands.register and api.entities.list."
+    },
+    "command": {
+      "desc": "Registers stats/show in the Open 2D Studio command registry; as a tool it is called cad_stats_show."
+    },
+    "package": {
+      "desc": "The release is a zip with manifest.json and main.js, which Open 2D Studio unpacks into its extensions folder."
+    },
+    "host": {
+      "desc": "The desktop app (Tauri) loads the extension at startup and removes the tab, button and command when it is disabled."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
+  }
 }

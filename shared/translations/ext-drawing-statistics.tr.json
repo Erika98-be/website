@@ -1,17 +1,239 @@
 {
   "header": {
-    "label": "Open 2D Studio için uzantı",
     "title": "Drawing <span class=\"accent\">Statistics</span>",
-    "desc": "Şekil sayılarını ve çizim istatistiklerini gösteren uzantı. Shape Count düğmesi ve terminal komutu içeren bir Add-Ins ribbon sekmesi ekler.",
-    "downloadBtn": "v1.0.1 indir (1.4 KB)",
-    "sourceBtn": "Kaynak kodu görüntüle"
+    "featuresBtn": "Özellikleri gör",
+    "faqBtn": "Sık sorulan sorular",
+    "sourceBtn": "Kaynak kodu",
+    "proof1": "Open 2D Studio v0.15+ için",
+    "proof2": "1,4 kB zip",
+    "proof4": "Ücretsiz",
+    "heroAlt": "Örnek bir bahçe ofisi planının üzerinde Add-Ins sekmesi ve Shape Count düğmesiyle Open 2D Studio",
+    "label": "Open 2D Studio eklentisi",
+    "tagline": "Çiziminizde kaç şekil olduğunu tek tıkla öğrenin",
+    "desc": "Open 2D Studio masaüstü uygulaması için küçük, ücretsiz bir eklenti. Shape Count düğmeli Add-Ins sekmesini ekler; düğme tüm şekilleri sayar ve toplamı ile tür başına sayıyı gösterir."
+  },
+  "meta": {
+    "description": "Open 2D Studio için ücretsiz eklenti: Shape Count düğmeli Add-Ins sekmesi çizimdeki tüm şekilleri toplamda ve türe göre sayar. stats show komutu olarak da kullanılabilir. Kendi eklentinizi kurmak için küçük bir örnek.",
+    "title": "Drawing Statistics — OpenAEC Foundation"
+  },
+  "hl": {
+    "tellen": {
+      "alt": "Park yerleri ve ağaçlarla örnek bir otopark çizimi; Add-Ins sekmesi ve Shape Count düğmesi açık",
+      "kicker": "Sayma",
+      "title": "Tek tıkla toplam ve tür başına sayı",
+      "desc": "Add-Ins sekmesini açıp Shape Count'a tıklayın. Bir mesaj kaç şekil olduğunu ve bunların kaçının daire, dikdörtgen, çizgi, ölçü veya metin olduğunu gösterir. Bir çizimde ne olduğunu hızlıca görmek için kullanışlı."
+    },
+    "commando": {
+      "alt": "Komut listesiyle Open 2D Studio terminali; en altta show komutuyla STATS grubu",
+      "kicker": "Komut",
+      "title": "Betikler ve yapay zekâ terminali için komut olarak da",
+      "desc": "Eklenti, stats show komutunu Open 2D Studio komut listesine ekler. Terminalde commands yazınca görürsünüz. Aynı sayımı metin olarak döndürür."
+    },
+    "installeren": {
+      "alt": "Installed altında Drawing Statistics v1.0.1 ile Open 2D Studio Extension Manager; Disable ve Remove düğmeleri",
+      "kicker": "Kurulum",
+      "title": "Tek zip ile kurun, tek tıkla kapatın",
+      "desc": "Zip'i indirin ve Open 2D Studio'da File, Extensions, Install from file'ı seçin. Eklenti ardından Installed altında görünür; orada kapatabilir veya kaldırabilirsiniz."
+    },
+    "voorbeeld": {
+      "alt": "GitHub'da Drawing Statistics'in main.js kaynak kodu; eklentinin kaydettiği sekme, düğme ve komut",
+      "kicker": "Kendi eklentiniz",
+      "title": "Kendi eklentinizi kurmak için bir örnek",
+      "desc": "İki dosya ve yaklaşık yüz satır JavaScript, bir eklentinin nasıl sekme, düğme ve komut eklediğini gösterir. Kopyalayın, değiştirin; Open 2D Studio'da kendi aracınız olsun."
+    }
+  },
+  "notice": {
+    "link": "GitHub'da v1.0.1 sürümü (zip, 1,4 kB)",
+    "text": "Open 2D Studio masaüstü uygulamasında (v0.15 veya üstü) çalışır, web sürümünde çalışmaz."
+  },
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "tellen": "Sayma",
+    "commando": "Komut",
+    "installeren": "Kurulum",
+    "ontwikkelaars": "Kendi eklentiniz",
+    "all": "Tüm özellikler"
   },
   "features": {
-    "title": "Özellikler",
-    "ribbon": { "title": "Add-Ins ribbon sekmesi", "desc": "Open 2D Studio'daki Add-Ins ribbon sekmesine bir Shape Count düğmesi ekler." },
-    "terminal": { "title": "Terminal komutu", "desc": "İstatistikleri komut satırından görüntülemek için <code>stats show</code> terminal komutunu kaydeder." },
-    "count": { "title": "Eleman sayımı", "desc": "Mevcut çizimdeki tüm elemanları türüne göre sayar." },
-    "requires": "<a href=\"/open-2d-studio\">Open 2D Studio</a> v0.15.0 veya üstünü gerektirir."
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Küçük ama kullanışlı",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
   },
-  "footer": { "slogan": "Özgürce inşa edin. Birlikte inşa edelim." }
+  "f": {
+    "tab": {
+      "title": "Kendi Add-Ins sekmesi",
+      "desc": "Düğme ayrı bir sekmede durur, Home değişmeden kalır."
+    },
+    "button": {
+      "title": "Shape Count düğmesi",
+      "desc": "Statistics grubunda tek tık sayımı başlatır."
+    },
+    "total": {
+      "title": "Toplam şekil sayısı",
+      "desc": "Toplam şekil sayısı en üstte yer alır."
+    },
+    "pertype": {
+      "title": "Tür başına sayı",
+      "desc": "Çizgiler, daireler, yaylar, dikdörtgenler, taramalar, ölçüler, metinler: her biri kendi sayısıyla."
+    },
+    "sorted": {
+      "title": "Alfabetik sırayla",
+      "desc": "Türler alfabetik sıralanır, hızlıca bulursunuz."
+    },
+    "empty": {
+      "title": "Boş çizimde net",
+      "desc": "Hiçbir şey yoksa mesaj bunu söyler."
+    },
+    "safe": {
+      "title": "Çiziminizde hiçbir şeyi değiştirmez",
+      "desc": "Eklenti yalnızca okur; şekiller, katmanlar ve dosya olduğu gibi kalır."
+    },
+    "statsshow": {
+      "title": "stats show komutu",
+      "desc": "Aynı sayımı metin olarak döndürür."
+    },
+    "list": {
+      "title": "Komut listesinde",
+      "desc": "Terminalde commands yazın; STATS altında görünür."
+    },
+    "ai": {
+      "title": "Yapay zekâ terminali tanır",
+      "desc": "Open 2D Studio yapay zekâ terminali komut listesini, bu komut dahil, alır."
+    },
+    "zip": {
+      "title": "1,4 kB'lık tek zip",
+      "desc": "İndirin, bitti; yükleyici gerekmez."
+    },
+    "fromfile": {
+      "title": "Install from file",
+      "desc": "Open 2D Studio'da File, Extensions üzerinden; eklenti hemen açılır."
+    },
+    "toggle": {
+      "title": "Açık, kapalı veya kaldırılmış",
+      "desc": "Extension Manager'da kapatın veya kaldırın."
+    },
+    "permissions": {
+      "title": "Belirli izinler",
+      "desc": "Manifest yalnızca komutlar, şerit ve olaylar için izin ister."
+    },
+    "offline": {
+      "title": "İnternetsiz çalışır",
+      "desc": "Kurulumdan sonra her şey kendi bilgisayarınızda olur."
+    },
+    "sample": {
+      "title": "Örnek eklenti",
+      "desc": "Open 2D Studio'ya bir şey eklemek isteyenler için başlangıç noktası."
+    },
+    "readable": {
+      "title": "Yaklaşık yüz satır",
+      "desc": "Bir manifest ve bir JavaScript dosyası, derleme adımı yok."
+    },
+    "source": {
+      "title": "Kaynak kodu GitHub'da",
+      "desc": "Okuyun, kopyalayın veya iyileştirme önerin."
+    },
+    "free": {
+      "title": "Ücretsiz",
+      "desc": "Hesap yok, abonelik yok."
+    }
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "items": {
+      "addins": {
+        "title": "Add-Ins sekmesi",
+        "desc": "Shape Count artık Statistics grubunda kendi sekmesinde."
+      },
+      "home": {
+        "title": "Home sade kalır",
+        "desc": "Eklenti artık Open 2D Studio Home sekmesine bir şey eklemiyor."
+      },
+      "same": {
+        "title": "Aynı sayım ve komut",
+        "desc": "Toplam, tür başına sayı ve stats show 1.0.0'daki gibi çalışır."
+      },
+      "package": {
+        "title": "Sürümle birlikte zip olarak",
+        "desc": "drawing-statistics-1.0.1.zip, Install from file için hazır."
+      }
+    },
+    "label": "v1.0.1 sürümünde yeni",
+    "title": "Şeritte kendine ait bir yer",
+    "desc": "1.0.1 sürümü (Şubat 2026) düğmeyi Home sekmesinden kendi Add-Ins sekmesine taşır. Sayım ve komut 1.0.0'daki gibi çalışır."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "Eklenti kendisi dosya açmaz. Open 2D Studio'da açık olanı sayar; oraya DXF'ten aktardığınız bir çizim de dahil."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Evet: <a href=\"/open-2d-studio/\">Open 2D Studio</a> masaüstü uygulaması (v0.15 veya üstü) ve içinde bu eklenti. drawing-statistics-1.0.1.zip dosyasını <a href=\"https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases/tag/v1.0.1\">GitHub'daki v1.0.1 sürümünden</a> alın ve Open 2D Studio'da File, Extensions, Install from file'ı seçin. Open 2D Studio web sürümü henüz eklenti kuramıyor."
+    },
+    "cost": {
+      "q": "Ücreti nedir?",
+      "a": "Hiçbir şey. Kaynak kodu GitHub'da herkese açık. Henüz bir lisans dosyası yok; kodu yeniden kullanmak isterseniz depoda sorun."
+    },
+    "format": {
+      "q": "Çalışmam hangi dosya biçiminde kaydedilir?",
+      "a": "Eklenti hiçbir şey kaydetmez ve çiziminizi değiştirmez. Sayım bir mesajda görünür; çiziminizi her zamanki gibi Open 2D Studio'da kaydedersiniz."
+    },
+    "platforms": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Open 2D Studio masaüstü uygulamasının çalıştığı her yerde: Windows, macOS ve Linux. Web sürümünde değil."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "stats show komutu Open 2D Studio komut listesindedir. Masaüstü uygulamasının yapay zekâ terminali bu listeyi alır ve sayımı isteyebilir."
+    },
+    "scope": {
+      "q": "Yalnızca gördüğüm çizimi mi sayar?",
+      "a": "Hayır. Açık dosyadaki tüm şekilleri, diğer çizimlerdekiler ve gizli şekiller dahil, sayar. Çizim başına, katman başına veya yalnızca seçimi saymak henüz mümkün değil."
+    },
+    "export": {
+      "q": "Sayımı kaydedebilir veya dışa aktarabilir miyim?",
+      "a": "Henüz değil. Sayım yalnızca bir mesajda, şekil türlerinin İngilizce adlarıyla görünür."
+    },
+    "own": {
+      "q": "Bununla kendi eklentimi yapabilir miyim?",
+      "a": "Tam da bunun için. Bir eklenti, manifest.json ve onLoad fonksiyonlu bir JavaScript dosyası içeren bir klasördür; orada sekme, düğme ve komut eklersiniz. Nasıl yapıldığını <a href=\"https://github.com/OpenAEC-Foundation/ext-drawing-statistics/blob/v1.0.1/main.js\">main.js</a> dosyasında görün."
+    },
+    "heading": "Sık sorulan sorular"
+  },
+  "tech": {
+    "js": {
+      "desc": "Tek bir main.js, CommonJS modülü (module.exports); bağımlılık veya derleme adımı yok."
+    },
+    "manifest": {
+      "desc": "id, sürüm, minAppVersion 0.15.0, Utility kategorisi ve commands, ribbon, events izinleri."
+    },
+    "api": {
+      "desc": "api.ui.addRibbonTab, api.ui.addRibbonButton, api.commands.register ve api.entities.list ile onLoad(api)."
+    },
+    "command": {
+      "desc": "stats/show'u Open 2D Studio komut kaydına ekler; araç olarak adı cad_stats_show."
+    },
+    "package": {
+      "desc": "Sürüm, manifest.json ve main.js içeren bir zip'tir; Open 2D Studio bunu eklenti klasörüne açar."
+    },
+    "host": {
+      "desc": "Masaüstü uygulaması (Tauri) eklentiyi açılışta yükler ve kapatıldığında sekme, düğme ve komutu kaldırır."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
+  }
 }

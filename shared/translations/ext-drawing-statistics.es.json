@@ -1,17 +1,239 @@
 {
   "header": {
-    "label": "Extensión para Open 2D Studio",
     "title": "Drawing <span class=\"accent\">Statistics</span>",
-    "desc": "Extensión que muestra recuentos de formas y estadísticas del dibujo. Añade una pestaña de cinta Complementos con un botón de recuento de formas y un comando de terminal.",
-    "downloadBtn": "Descargar v1.0.1 (1,4 KB)",
-    "sourceBtn": "Ver código fuente"
+    "featuresBtn": "Ver las funciones",
+    "faqBtn": "Preguntas frecuentes",
+    "sourceBtn": "Código fuente",
+    "proof1": "Para Open 2D Studio v0.15+",
+    "proof2": "zip de 1,4 kB",
+    "proof4": "Gratis",
+    "heroAlt": "Open 2D Studio con la pestaña Add-Ins y el botón Shape Count sobre un plano de ejemplo de una oficina de jardín",
+    "label": "Extensión para Open 2D Studio",
+    "tagline": "Sabe con un clic cuántas formas hay en tu dibujo",
+    "desc": "Una pequeña extensión gratuita para la aplicación de escritorio Open 2D Studio. Añade la pestaña Add-Ins con el botón Shape Count, que cuenta todas las formas y muestra el total y el número por tipo."
+  },
+  "meta": {
+    "description": "Extensión gratuita para Open 2D Studio: la pestaña Add-Ins con el botón Shape Count cuenta todas las formas de tu dibujo, en total y por tipo. También disponible como el comando stats show. Un pequeño ejemplo para crear tu propia extensión.",
+    "title": "Drawing Statistics — OpenAEC Foundation"
+  },
+  "hl": {
+    "tellen": {
+      "alt": "Dibujo de ejemplo de un aparcamiento con plazas y árboles, con la pestaña Add-Ins y el botón Shape Count abiertos",
+      "kicker": "Contar",
+      "title": "Un clic da el total y el número por tipo",
+      "desc": "Abre la pestaña Add-Ins y pulsa Shape Count. Un mensaje muestra cuántas formas hay y cuántas son círculos, rectángulos, líneas, cotas o textos. Práctico para ver rápido qué contiene un dibujo."
+    },
+    "commando": {
+      "alt": "El terminal de Open 2D Studio con la lista de comandos, abajo el grupo STATS con el comando show",
+      "kicker": "Comando",
+      "title": "También como comando para scripts y el terminal de IA",
+      "desc": "La extensión añade el comando stats show a la lista de comandos de Open 2D Studio. Escribe commands en el terminal y lo verás. Devuelve el mismo recuento como texto."
+    },
+    "installeren": {
+      "alt": "El Extension Manager de Open 2D Studio con Drawing Statistics v1.0.1 en Installed, con los botones Disable y Remove",
+      "kicker": "Instalación",
+      "title": "Instala con un zip, desactívala con un clic",
+      "desc": "Descarga el zip y en Open 2D Studio elige File, Extensions, Install from file. La extensión aparece luego en Installed, donde puedes desactivarla o quitarla."
+    },
+    "voorbeeld": {
+      "alt": "El código fuente main.js de Drawing Statistics en GitHub, con la pestaña, el botón y el comando que registra la extensión",
+      "kicker": "Tu propia extensión",
+      "title": "Un ejemplo para crear tu propia extensión",
+      "desc": "Dos archivos y unas cien líneas de JavaScript muestran cómo una extensión añade una pestaña, un botón y un comando. Cópialo, cámbialo y tendrás tu propia herramienta en Open 2D Studio."
+    }
+  },
+  "notice": {
+    "link": "Versión 1.0.1 en GitHub (zip, 1,4 kB)",
+    "text": "Funciona en la aplicación de escritorio Open 2D Studio (v0.15 o posterior), no en la versión web."
+  },
+  "subnav": {
+    "label": "En esta página",
+    "features": "Funciones",
+    "whatsnew": "Novedades",
+    "faq": "Preguntas",
+    "releases": "Versiones"
+  },
+  "tabs": {
+    "highlights": "Destacados",
+    "tellen": "Contar",
+    "commando": "Comando",
+    "installeren": "Instalación",
+    "ontwikkelaars": "Tu propia extensión",
+    "all": "Todas las funciones"
   },
   "features": {
-    "title": "Funciones",
-    "ribbon": { "title": "Pestaña de cinta Complementos", "desc": "Añade un botón de recuento de formas a la pestaña de cinta Complementos en Open 2D Studio." },
-    "terminal": { "title": "Comando de terminal", "desc": "Registra un comando de terminal <code>stats show</code> para mostrar estadísticas desde la línea de comandos." },
-    "count": { "title": "Recuento de entidades", "desc": "Cuenta todas las entidades por tipo en el dibujo actual." },
-    "requires": "Requiere <a href=\"/open-2d-studio\">Open 2D Studio</a> v0.15.0 o posterior."
+    "learnMore": "Leer más",
+    "label": "Funciones",
+    "heading": "Pequeña, pero práctica",
+    "sub": "Empieza por lo más destacado o elige un tema.",
+    "tabsLabel": "Funciones por tema"
   },
-  "footer": { "slogan": "Build free. Build together." }
+  "f": {
+    "tab": {
+      "title": "Su propia pestaña Add-Ins",
+      "desc": "El botón está en una pestaña aparte, así Home no cambia."
+    },
+    "button": {
+      "title": "Botón Shape Count",
+      "desc": "Un clic en el grupo Statistics inicia el recuento."
+    },
+    "total": {
+      "title": "Número total de formas",
+      "desc": "Primero aparece el número total de formas."
+    },
+    "pertype": {
+      "title": "Número por tipo",
+      "desc": "Líneas, círculos, arcos, rectángulos, sombreados, cotas, textos: cada uno con su número."
+    },
+    "sorted": {
+      "title": "En orden alfabético",
+      "desc": "Los tipos aparecen en orden alfabético, así los encuentras rápido."
+    },
+    "empty": {
+      "title": "Claro con un dibujo vacío",
+      "desc": "Si no hay nada, el mensaje lo dice."
+    },
+    "safe": {
+      "title": "No cambia nada en tu dibujo",
+      "desc": "La extensión solo lee; formas, capas y archivo quedan igual."
+    },
+    "statsshow": {
+      "title": "Comando stats show",
+      "desc": "Devuelve el mismo recuento como texto."
+    },
+    "list": {
+      "title": "En la lista de comandos",
+      "desc": "Escribe commands en el terminal y aparece en STATS."
+    },
+    "ai": {
+      "title": "Conocido por el terminal de IA",
+      "desc": "El terminal de IA de Open 2D Studio recibe la lista de comandos, también este."
+    },
+    "zip": {
+      "title": "Un zip de 1,4 kB",
+      "desc": "Descarga y listo; sin instalador."
+    },
+    "fromfile": {
+      "title": "Install from file",
+      "desc": "En Open 2D Studio vía File, Extensions; la extensión se activa al momento."
+    },
+    "toggle": {
+      "title": "Activada, desactivada o quitada",
+      "desc": "Desactívala o quítala en el Extension Manager."
+    },
+    "permissions": {
+      "title": "Permisos fijos",
+      "desc": "El manifiesto solo pide comandos, la cinta y eventos."
+    },
+    "offline": {
+      "title": "Funciona sin internet",
+      "desc": "Tras instalarla, todo ocurre en tu propio ordenador."
+    },
+    "sample": {
+      "title": "Extensión de ejemplo",
+      "desc": "Pensada como punto de partida para quien quiera añadir algo a Open 2D Studio."
+    },
+    "readable": {
+      "title": "Unas cien líneas",
+      "desc": "Un manifiesto y un archivo JavaScript, sin compilación."
+    },
+    "source": {
+      "title": "Código fuente en GitHub",
+      "desc": "Léelo, cópialo o propón una mejora."
+    },
+    "free": {
+      "title": "Gratis",
+      "desc": "Sin cuenta, sin suscripción."
+    }
+  },
+  "whatsnew": {
+    "ctaChangelog": "Todas las notas de versión",
+    "items": {
+      "addins": {
+        "title": "Pestaña Add-Ins",
+        "desc": "Shape Count tiene ahora su propia pestaña, en el grupo Statistics."
+      },
+      "home": {
+        "title": "Home queda limpio",
+        "desc": "La extensión ya no añade nada a la pestaña Home de Open 2D Studio."
+      },
+      "same": {
+        "title": "Mismo recuento y comando",
+        "desc": "El total, el número por tipo y stats show funcionan como en la 1.0.0."
+      },
+      "package": {
+        "title": "Como zip con la versión",
+        "desc": "drawing-statistics-1.0.1.zip, listo para Install from file."
+      }
+    },
+    "label": "Novedades de la v1.0.1",
+    "title": "Su propio lugar en la cinta",
+    "desc": "La versión 1.0.1 (febrero de 2026) mueve el botón de la pestaña Home a su propia pestaña Add-Ins. El recuento y el comando funcionan como en la 1.0.0."
+  },
+  "faq": {
+    "files": {
+      "q": "¿Qué archivos puedo abrir?",
+      "a": "La extensión no abre archivos por sí misma. Cuenta lo que está abierto en Open 2D Studio, también un dibujo importado allí desde DXF."
+    },
+    "install": {
+      "q": "¿Tengo que instalar algo?",
+      "a": "Sí: la aplicación de escritorio <a href=\"/open-2d-studio/\">Open 2D Studio</a> (v0.15 o posterior) y esta extensión. Descarga drawing-statistics-1.0.1.zip desde <a href=\"https://github.com/OpenAEC-Foundation/ext-drawing-statistics/releases/tag/v1.0.1\">la versión 1.0.1 en GitHub</a> y en Open 2D Studio elige File, Extensions, Install from file. La versión web de Open 2D Studio aún no puede instalar extensiones."
+    },
+    "cost": {
+      "q": "¿Cuánto cuesta?",
+      "a": "Nada. El código fuente es público en GitHub. Aún no tiene archivo de licencia; si quieres reutilizar el código, pregúntalo en el repositorio."
+    },
+    "format": {
+      "q": "¿En qué formato se guarda mi trabajo?",
+      "a": "La extensión no guarda nada ni cambia tu dibujo. El recuento aparece en un mensaje; guardas tu dibujo en Open 2D Studio como siempre."
+    },
+    "platforms": {
+      "q": "¿En qué sistemas funciona?",
+      "a": "Donde funcione la aplicación de escritorio Open 2D Studio: Windows, macOS y Linux. No en la versión web."
+    },
+    "ai": {
+      "q": "¿Qué puede hacer un asistente de IA con ella?",
+      "a": "El comando stats show está en la lista de comandos de Open 2D Studio. El terminal de IA de la aplicación de escritorio recibe esa lista y puede pedir el recuento."
+    },
+    "scope": {
+      "q": "¿Cuenta solo el dibujo que estoy viendo?",
+      "a": "No. Cuenta todas las formas del archivo abierto, también las de otros dibujos y las ocultas. Contar por dibujo, por capa o solo la selección aún no es posible."
+    },
+    "export": {
+      "q": "¿Puedo guardar o exportar el recuento?",
+      "a": "Aún no. El recuento solo aparece en un mensaje, con los nombres en inglés de los tipos de forma."
+    },
+    "own": {
+      "q": "¿Puedo usarla para crear mi propia extensión?",
+      "a": "Para eso está. Una extensión es una carpeta con manifest.json y un archivo JavaScript con una función onLoad, donde añades pestañas, botones y comandos. Mira <a href=\"https://github.com/OpenAEC-Foundation/ext-drawing-statistics/blob/v1.0.1/main.js\">main.js</a> para ver cómo."
+    },
+    "heading": "Preguntas frecuentes"
+  },
+  "tech": {
+    "js": {
+      "desc": "Un único main.js como módulo CommonJS (module.exports), sin dependencias ni compilación."
+    },
+    "manifest": {
+      "desc": "id, versión, minAppVersion 0.15.0, categoría Utility y los permisos commands, ribbon y events."
+    },
+    "api": {
+      "desc": "onLoad(api) con api.ui.addRibbonTab, api.ui.addRibbonButton, api.commands.register y api.entities.list."
+    },
+    "command": {
+      "desc": "Registra stats/show en el registro de comandos de Open 2D Studio; como herramienta se llama cad_stats_show."
+    },
+    "package": {
+      "desc": "La versión es un zip con manifest.json y main.js, que Open 2D Studio descomprime en su carpeta de extensiones."
+    },
+    "host": {
+      "desc": "La aplicación de escritorio (Tauri) carga la extensión al iniciar y quita pestaña, botón y comando al desactivarla."
+    },
+    "heading": "Tecnología",
+    "sub": "Para quien quiera saber cómo está hecho."
+  },
+  "releases": {
+    "showAll": "Mostrar todas las versiones",
+    "showLess": "Mostrar solo las tres últimas",
+    "github": "Todas las versiones en GitHub"
+  }
 }
