@@ -1,69 +1,307 @@
 {
   "header": {
-    "label": "Enerji performansı — NTA 8800",
     "title": "Open <span class=\"accent\">Energy</span> Studio",
-    "desc": "Hollanda NTA 8800 standardını izleyen açık kaynak bina enerji performansı hesaplayıcısı. BENG hesaplamaları, U-değeri analizi, ısı pompası boyutlandırma ve termal köprü değerlendirmesi.",
+    "demoBtn": "Tarayıcıda aç",
     "downloadBtn": "İndir",
-    "sourceBtn": "Kaynak kodu görüntüle"
+    "sourceBtn": "Kaynak kodu",
+    "proof2": "Konut ve konut dışı",
+    "proof4": "Felemenkçe ve İngilizce",
+    "proof5": "Ücretsiz · LGPL-3.0",
+    "heroAlt": "Open Energy Studio: kurgusal bir sıra evin sonuçları; A+ enerji etiketi, BENG 1, 2 ve 3, TOjuli ve aylık enerji kullanımı",
+    "label": "Enerji performansı",
+    "tagline": "NTA 8800'e göre BENG, enerji etiketi ve TOjuli; adım adım ve formül düzeyine kadar izlenebilir",
+    "desc": "Proje, bina ve tesisatla ilgili soruları adım adım yanıtlayın; etiket sınıfı ve BENG göstergeleri her değişikliği anında izler. Yeni ve mevcut binalar, konutlar ve konut dışı binalar için; rapor ve kişiye özel tavsiye dahil."
   },
-  "download": {
-    "title": "İndir",
-    "windows": "Yükleyici (.exe)",
-    "macos": "Apple işlemciler (.dmg)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxAppimage": "Her dağıtım (AppImage)"
+  "meta": {
+    "description": "NTA 8800'e göre ücretsiz ve açık kaynaklı enerji performansı yazılımı: konutlar ve konut dışı binalar için BENG 1, 2 ve 3, enerji etiketi ve TOjuli; hesap izi, rapor ve kişiye özel tavsiye dahil. BRL 9501 onayı olmayan test sürümü. Windows, macOS, Linux ve tarayıcı için.",
+    "title": "Open Energy Studio — OpenAEC Foundation"
+  },
+  "hl": {
+    "envelope": {
+      "alt": "Bina adımı: yöne göre cepheler, çatılar, döşeme ve pencereler tablosu; eğim, alan ve yapı elemanıyla, sağda geçici sonuç",
+      "kicker": "Bina kabuğu",
+      "title": "Bina kabuğu, yüzey yüzey",
+      "desc": "Cepheleri, çatıları, döşemeleri ve pencereleri yön, eğim, alan ve yapı elemanıyla kaydedin. Kabuk kontrolleri ve eleman türüne göre iletim kaybı, ısının nereden kaçtığını hemen gösterir."
+    },
+    "installations": {
+      "alt": "Tesisat adımı: üretim, dağıtım, ısı yayımı, kontrol ve yardımcı enerji sorularıyla bir HR107 kazanı ve her veri için bir kaynak",
+      "kicker": "Tesisat",
+      "title": "Hiçbir şeyi atlamadan tesisat",
+      "desc": "Isıtma, sıcak kullanım suyu, havalandırma, soğutma ve güneş panelleri; her biri üretimden yardımcı enerjiye sabit adımlarla. Her verinin nereden geldiğini, örneğin etiket plakası veya çizim, not edersiniz."
+    },
+    "trace": {
+      "alt": "Hesap izi: formül, kullanılan değerler, sonuç ve NTA 8800 formül numarasıyla aylık iletim",
+      "kicker": "Hesap izi",
+      "title": "Her sonuç kontrol edilebilir",
+      "desc": "Hesap izi her adımda formülü, kullanılan değerleri, sonucu ve NTA 8800 formül numarasını gösterir. Bir yüzey veya büyüklük arayın, görmek istediğinizi açın ve izi dışa aktarın."
+    },
+    "report": {
+      "alt": "Rapor ve dosya: özet, standart ve ayrıntılı arasında seçim; işaretlenecek hesaplar ve raporun önizlemesi",
+      "kicker": "Rapor",
+      "title": "İhtiyacınız olan düzeyde bir rapor",
+      "desc": "Özet, standart veya ayrıntılı seçin ve aylık düzeye kadar hangi hesapların gireceğini işaretleyin. PDF olarak indirin; ayrıca bir giriş dosyası ve BRL 9500 kontrol listesi oluşturun."
+    },
+    "tools": {
+      "alt": "U değeri hesaplayıcısı: tuğla, boşluk, mineral yün ve alçı levhalı bir boşluklu duvar, ölçekli kesit ve Rc ile U değeri",
+      "kicker": "Hesap yardımcıları",
+      "title": "U değeri, ısı köprüsü ve ısı pompası elinizin altında",
+      "desc": "Bir yapı katmanlarının Rc ve U değerini katman katman, ölçekli bir kesitle hesaplayın. Ayrıca bir ısı köprüsü hesaplayıcısı ve ısı pompası boyutlandırma yardımcısı vardır."
+    }
+  },
+  "notice": {
+    "link": "Bulduklarınızı bildirin",
+    "text": "BRL 9501 onayı olmayan test sürümü: sonuçlar gösterge niteliğindedir. Özellikle enerji ve EPA danışmanlarından test edenler aranıyor."
+  },
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "download": "İndir",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "input": "Adım adım giriş",
+    "results": "Sonuçlar ve kontrol",
+    "report": "Rapor ve dosya",
+    "existing": "Mevcut binalar ve tavsiye",
+    "connect": "Veri alışverişi ve entegrasyonlar",
+    "all": "Tüm özellikler"
   },
   "features": {
-    "heading": "Özellikler",
-    "beng": {
-      "title": "BENG hesaplamaları",
-      "desc": "BENG göstergesi görselleştirmesi ile Hollanda NTA 8800 standardını izleyen Bina Enerji Performansı (BENG) hesaplamaları."
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "İlk sorudan rapora kadar tek bir iş akışında",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "steps": {
+      "title": "Adım adım çalışın",
+      "desc": "Proje, bina, tesisat ve kontrol: her adım önemli soruları sorar. Atlayabilirsiniz; hesap çekirdeği gerçekten eksik olanı bildirir."
+    },
+    "live": {
+      "title": "Sonuç anında güncellenir",
+      "desc": "Etiket sınıfı, BENG 1, 2 ve 3 ile TOjuli her adımda görünür ve her değişiklikte yeniden hesaplanır."
+    },
+    "zones": {
+      "title": "Bölgeler ve kabuk",
+      "desc": "Hesap bölgeleri, yüzeyler ve pencereler, yapı elemanları, ısı köprüleri, hava sızdırmazlığı ve ısıtılmayan alanlar."
+    },
+    "systems": {
+      "title": "Tüm tesisat",
+      "desc": "Isıtma, sıcak su, havalandırma, soğutma ve güneş elektriği; duş ısı geri kazanımına kadar."
+    },
+    "evidence": {
+      "title": "Her veri için bir kaynak",
+      "desc": "Girişe fotoğraf, çizim veya etiket plakası bağlayın; böylece bir değerin nereden geldiğini sonra da bilirsiniz."
     },
     "uvalue": {
-      "title": "U-değeri hesaplayıcısı",
-      "desc": "Duvar, çatı ve döşeme yapılarının termal geçirgenliğini (U-değeri) hesaplayın."
+      "title": "U değeri hesaplayıcısı",
+      "desc": "Bir duvar, çatı veya döşemenin Rc ve U değeri, katman katman, ölçekli kesitle."
+    },
+    "bridge": {
+      "title": "Isı köprüsü hesaplayıcısı",
+      "desc": "Bir ısı köprüsünün etkisini girmeden önce hesaplayın."
     },
     "heatpump": {
       "title": "Isı pompası boyutlandırma",
-      "desc": "Bina özelliklerine ve iklim verilerine dayanarak gerekli ısı pompası kapasitesini hesaplayın."
+      "desc": "Bir ısı pompasının gereken gücü için hesap yardımcısı."
     },
-    "thermal": {
-      "title": "Termal köprü hesaplayıcısı",
-      "desc": "Termal köprüleri ve enerji performansı üzerindeki etkilerini değerlendirin."
+    "overview": {
+      "title": "Bir bakışta BENG kontrolü",
+      "desc": "Her gösterge için değer, gereklilik ve ne kadar üstünde ya da altında olduğunuz; dikkat noktaları ve Bbl maddesiyle."
     },
-    "charts": {
-      "title": "Enerji dağılım grafikleri",
-      "desc": "Görsel enerji dağılımı ve aylık performans analiz grafikleri."
+    "monthly": {
+      "title": "Aylık değerler ve grafikler",
+      "desc": "Hizmete, enerji taşıyıcısına ve aya göre enerji kullanımı ile ısıtma ve soğutma ihtiyacı; tablo olarak da."
     },
-    "building3d": {
-      "title": "3D bina görünümü",
-      "desc": "Bina dış kabuğunun ve termal özelliklerinin 3D görselleştirmesi."
+    "trace": {
+      "title": "Hesap izi",
+      "desc": "Her adım formül, değerler, sonuç ve formül numarasıyla; aranabilir ve dışa aktarılabilir."
     },
-    "projects": {
-      "title": "Proje yönetimi",
-      "desc": "Birden fazla bina yönetmek için proje tarayıcısı. Ayrıntılı parametre düzenleme için özellikler paneli."
+    "provenance": {
+      "title": "Sonucun kaynağı",
+      "desc": "Hesap çekirdeği sürümü, norm baskısı ve girişin parmak izi; ayrıca çekirdeğin seçtiği yorumlar."
     },
-    "reporting": {
-      "title": "Raporlama",
-      "desc": "Yazdırma önizlemesi ile enerji performansı raporları oluşturun. Ayarlar iletişim kutusu ile ribbon araç çubuğu arayüzü."
+    "editions": {
+      "title": "Eski norm baskıları",
+      "desc": "2024, 2023, 2022 ve 2020+A1 baskılarıyla da hesaplayın; kayıt edilemez olarak açıkça işaretlenir."
+    },
+    "report": {
+      "title": "Üç düzeyde rapor",
+      "desc": "Özet, standart veya ayrıntılı; PDF ya da basılı, kişiye özel tavsiye için ayrı bir raporla."
+    },
+    "dossier": {
+      "title": "Tek ZIP'te dosya",
+      "desc": "Giriş, rapor ve kanıtlar bir arada; içindekiler listesi ve dosya başına sağlama toplamıyla."
+    },
+    "eponline": {
+      "title": "EP-Online düzeninde özet",
+      "desc": "Veriler, alan sınırlarıyla birlikte EP-Online dışa aktarımının beklediği biçimde. Kayıt için önce onay gerekir."
+    },
+    "survey": {
+      "title": "Mevcut bina tespiti",
+      "desc": "ISSO 82.1 ve 75.1'e göre mevcut konut ve konut dışı bina tespiti; yanıtlar proje girişine dönüşür."
+    },
+    "advice": {
+      "title": "Kişiye özel tavsiye",
+      "desc": "Önlemleri ve paketleri gerçek kullanıma göre hesaplayın: tasarruf, CO₂, maliyet, geri ödeme süresi ve net bugünkü değer."
+    },
+    "relabel": {
+      "title": "Yeniden etiketleme",
+      "desc": "Özgün ve iyileştirilmiş projeyi karşılaştırın; iyileştirmenin ne kazandırdığını görün."
+    },
+    "exchange": {
+      "title": "Uniec 3 ve VABI",
+      "desc": "Uniec 3 ve VABI Elements'ten projeleri tüm varsayımların listesiyle içe aktarın. VABI'ye dışa aktarın."
+    },
+    "ifc": {
+      "title": "3B model ve IFC",
+      "desc": "Bölgeleri, yüzeyleri, pencereleri ve güneş panellerini 3B olarak görün ve modeli IFC olarak dışa aktarın."
+    },
+    "api": {
+      "title": "API ve MCP",
+      "desc": "46 hesap işleminin tümü yerel bir HTTP API üzerinden veya bir yapay zekâ asistanı için MCP araçları olarak."
+    },
+    "local": {
+      "title": "Projeleriniz sizde kalır",
+      "desc": "Web sürümü tarayıcıda hesaplar ve projeleri orada saklar; hiçbir proje verisi sunucuya gitmez."
+    },
+    "manual": {
+      "title": "Uygulama içinde kılavuz",
+      "desc": "Konu başına Felemenkçe bir kılavuz; her sayfada doğru bölüme giden bir düğme."
     }
+  },
+  "download": {
+    "title": "v2026.44.0 indir",
+    "lead": "Ücretsiz, hesap gerekmez. Windows, macOS ve Linux için.",
+    "forWindows": "Windows için indir",
+    "forMac": "macOS için indir",
+    "forLinux": "Linux için indir",
+    "metaWindows": ".exe yükleyici",
+    "metaMac": "evrensel .dmg, Intel ve Apple Silicon",
+    "metaLinux": "AppImage, çoğu dağıtımda çalışır",
+    "browserBtn": "Tarayıcıda aç",
+    "fileExe": "Yükleyici (.exe)",
+    "fileMsi": "Yükleyici (.msi)",
+    "fileDmg": "Evrensel .dmg",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "browserNote": "Hiçbir şey kurmak istemiyor musunuz? Uygulama <a href=\"https://open-energy-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">tarayıcıda da çalışır</a>.",
+    "label": "İndir",
+    "mobileNote": "Open Energy Studio büyük ekran için yapılmıştır. Bilgisayarınızda açın veya burada tarayıcıda deneyin.",
+    "other": "Diğer platformlar"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDemo": "Tarayıcıda deneyin",
+    "items": {
+      "tojuli": {
+        "title": "İzlenebilir TOjuli",
+        "desc": "Yön başına formülün tüm terimleri ve bölge başına sabit değerler."
+      },
+      "update": {
+        "title": "Yeni sürüm bildirimi",
+        "desc": "Masaüstü uygulaması daha yeni bir sürümü indirme düğmesiyle bildirir; ayarlardan kapatılabilir."
+      },
+      "uniecgeo": {
+        "title": "Uniec'e geometri",
+        "desc": "Taslak: zemine oturan bir konut Uniec geometri içe aktarımına (Excel). Henüz Uniec'te test edilmedi."
+      },
+      "uniecimport": {
+        "title": "Uniec içe aktarımı daha açık",
+        "desc": "Dosyadaki ikinci bir binayı bildirir ve tüm varsayımları tür ve alanla listeler."
+      },
+      "confirm": {
+        "title": "Önce içe aktarımı kontrol edin",
+        "desc": "Uniec veya VABI'den bir içe aktarım, danışman kontrol edildiğini onaylayınca kayıt için geçerli olur."
+      },
+      "recovery": {
+        "title": "Kurtarma kopyası",
+        "desc": "Tarayıcı otomatik kaydetmeyi reddederse uygulama yeniden dener ve durum çubuğunda bildirir."
+      }
+    },
+    "label": "v2026.44 sürümünde yeni",
+    "title": "İzlenebilir TOjuli, <span>taslak Uniec dışa aktarımı</span>",
+    "desc": "Hesap çekirdeği 0.5.0, TOjuli'yi formül düzeyine kadar izlenebilir kılıyor; Uniec içe aktarımı daha fazla bilgi veriyor ve masaüstü uygulaması yeni bir sürüm çıktığında kendisi haber veriyor."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "Kendi projeleriniz (.oes.json) ile Uniec 3 (.uniec3) ve VABI Elements (.epa veya .xml) değişim dosyaları. Her içe aktarımda uygulama dosya adını, bir sağlama toplamını ve varsayım ve uyarıların listesini saklar."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Hayır. Web sürümü doğrudan tarayıcıda çalışır ve hesabı da orada yapar: proje verileriniz sunucuya gitmez. Projeleri kendi diskinizde dosya olarak saklamak istiyorsanız masaüstü uygulamasını kurun."
+    },
+    "price": {
+      "q": "Open Energy Studio'nun ücreti nedir?",
+      "a": "Hiçbir şey. Uygulama LGPL-3.0 lisansıyla ücretsiz ve açık kaynaklıdır; hesap veya abonelik gerekmez. NEN ve ISSO norm metinleri dahil değildir; kendi kopyalarınız gerekir."
+    },
+    "save": {
+      "q": "Çalışmam hangi biçimde kaydedilir?",
+      "a": "Açık bir JSON dosyasında (.oes.json). Tarayıcıda projeler o tarayıcıda saklanır; masaüstü uygulaması bunları dosya olarak kaydeder. Proje dosyası ZIP olarak dışa aktarılır."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows 10 ve 11, macOS (Intel ve Apple Silicon) ve Linux (.deb, .rpm ve AppImage) ile her modern tarayıcı. Windows yükleyicisi imzalıdır; macOS sürümü henüz değil, ilk seferde sağ tıklayıp Aç ile açın."
+    },
+    "practice": {
+      "q": "Hollanda uygulamasına uygun mu?",
+      "a": "Evet. Bbl'deki BENG gereklilikleriyle NTA 8800:2025+C1:2026'ya göre hesaplar; tespit ve tavsiye için ISSO 82.1, 75.1, 82.2, 75.2 ve BRL 9500'ü izler. Uniec 3 ve VABI ile veri alışverişi yerleşiktir."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "Hesap çekirdeğiyle aynı 46 işleme sahip bir MCP sunucusu ve yerel bir HTTP API vardır. Bir asistan bunlarla bir projeyi hesaplayabilir veya kılavuza bakabilir. Şimdilik ikisini de kaynak koddan kendiniz derlersiniz."
+    },
+    "label": {
+      "q": "Bununla resmî bir enerji etiketi kaydedebilir miyim?",
+      "a": "Henüz değil. Open Energy Studio'nun (henüz) BRL 9501 onayı yok. Sonuçlar gösterge niteliğindedir; resmî enerji etiketi, ruhsat için BENG kontrolü veya EP-Online kaydı için kullanılamaz. Uygulama ve raporlar da bunu belirtir."
+    },
+    "verify": {
+      "q": "Sonucun doğru olduğunu nasıl bilirim?",
+      "a": "Her sonuç hesap çekirdeğinin sürümünü ve girişin parmak izini taşır; hesap izi her formülü gösterir. Çekirdek, kamuya açık hesap raporlarına ve RVO örnek konutlarına karşı test edilir; farklar belgelerde kalem kalem açıklanır."
+    },
+    "testers": {
+      "q": "Teste yardım edebilir miyim?",
+      "a": "Memnuniyetle, özellikle enerji veya EPA danışmanıysanız. Bildiğiniz bir projeyi hesaplayın ve farkları ya da hataları GitHub'da bir issue ile bildirin."
+    },
+    "heading": "Sık sorulan sorular"
   },
   "tech": {
-    "heading": "Teknoloji stack'i",
+    "rust": {
+      "title": "Rust ile hesap çekirdeği",
+      "desc": "G/Ç içermeyen deterministik bir NTA 8800 çekirdeği; her sonuç çekirdek sürümünü ve girişin SHA-256'sını taşır."
+    },
+    "wasm": {
+      "title": "WebAssembly",
+      "desc": "Aynı çekirdek tarayıcıda çalışır; web sürümü sunucu olmadan hesaplar."
+    },
     "tauri": {
       "title": "Tauri 2",
-      "desc": "Rust backend ile yerel masaüstü uygulaması. CalVer sürümleme (YIL.AY.BUILD)."
+      "desc": "İmzalı bir Windows yükleyicisiyle Windows, macOS ve Linux için yerel masaüstü uygulaması."
     },
     "react": {
-      "title": "React 18 + TypeScript",
-      "desc": "Vite build tool ile bileşen tabanlı UI."
-    }
+      "title": "React ve TypeScript",
+      "desc": "Tarayıcı ve masaüstü için tek arayüz; formlar hesap çekirdeğine karşı test edilir."
+    },
+    "api": {
+      "title": "HTTP API ve MCP",
+      "desc": "Tek bir kayıttan 46 işlem; OpenAPI 3.1 API'si ve stdio üzerinden MCP araçları olarak."
+    },
+    "gate": {
+      "title": "Doğrulama kapısı",
+      "desc": "Her hesap değişikliği birim testlerinden, norm metninden bağımsız yeniden hesaplamalardan, fuzz testlerinden ve referans paketlerinden geçer."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
   },
-  "cta": {
-    "demo": "Canlı demo",
-    "github": "GitHub"
-  },
-  "footer": {
-    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }

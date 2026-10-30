@@ -8,7 +8,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Energy Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Open-source building energy performance calculator following the Dutch NTA 8800 standard. BENG calculations, U-value calculator, heat pump sizing, thermal bridge analysis.">
+  <meta name="description" content="Gratis, open-source rekenprogramma voor de energieprestatie volgens NTA 8800: BENG 1, 2 en 3, energielabel en TOjuli voor woningen en utiliteit, met rekenspoor, rapport en maatwerkadvies. Testversie zonder BRL 9501-attest. Voor Windows, macOS, Linux en de browser.">
   <link rel="canonical" href="https://open-aec.com/open-energy-studio/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/open-energy-studio/">
@@ -19,24 +19,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/open-energy-studio/">
   <!-- hreflang:end -->
 
-
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
   <meta property="og:title" content="Open Energy Studio">
-  <meta property="og:description" content="Open-source building energy performance calculator following the Dutch NTA 8800 standard. BENG calculations, U-value calculator, heat pump sizing, thermal bridge analysis.">
+  <meta property="og:description" content="Gratis, open-source rekenprogramma voor de energieprestatie volgens NTA 8800: BENG 1, 2 en 3, energielabel en TOjuli voor woningen en utiliteit, met rekenspoor, rapport en maatwerkadvies. Testversie zonder BRL 9501-attest. Voor Windows, macOS, Linux en de browser.">
   <meta property="og:url" content="https://open-aec.com/open-energy-studio/">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-energy-studio.jpeg">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-energy-studio-hero.png">
   <meta property="og:locale" content="nl_NL">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Open Energy Studio">
-  <meta name="twitter:description" content="Open-source building energy performance calculator following the Dutch NTA 8800 standard. BENG calculations, U-value calculator, heat pump sizing, thermal bridge analysis.">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-energy-studio.jpeg">
+  <meta name="twitter:description" content="Gratis, open-source rekenprogramma voor de energieprestatie volgens NTA 8800: BENG 1, 2 en 3, energielabel en TOjuli voor woningen en utiliteit, met rekenspoor, rapport en maatwerkadvies. Testversie zonder BRL 9501-attest. Voor Windows, macOS, Linux en de browser.">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-energy-studio-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -46,29 +43,47 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Open Energy Studio",
     "applicationCategory": "EngineeringApplication",
-    "applicationSubCategory": "Building Performance",
+    "applicationSubCategory": "Energieprestatie / NTA 8800",
     "operatingSystem": "Windows, macOS, Linux, Web",
+    "softwareVersion": "2026.44.0",
     "url": "https://open-aec.com/open-energy-studio/",
     "downloadUrl": "https://github.com/OpenAEC-Foundation/open-energy-studio/releases",
     "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
-    "description": "Open energy analysis and building performance tool.",
+    "description": "Free, open-source energy performance software for buildings in the Netherlands following NTA 8800:2025+C1:2026: BENG 1, 2 and 3, energy label and TOjuli for dwellings and non-residential buildings. Step-by-step input for envelope and installations, results with monthly values, a calculation trace with NTA 8800 formula numbers, reports at three levels, project file ZIP, survey of existing buildings (ISSO 82.1/75.1), tailored advice (ISSO 82.2/75.2), relabelling, Uniec 3 and VABI exchange, IFC export, U-value, thermal bridge and heat pump tools, local HTTP API and MCP server. Test version without BRL 9501 attestation; results are indicative. For Windows, macOS, Linux and the browser.",
     "featureList": [
-      "BENG calculations",
-      "U-value calculator",
-      "Heat pump sizing",
-      "Thermal bridge calculator",
-      "Energy breakdown charts",
-      "3D building view",
-      "Project management",
-      "Reporting"
+      "Werken in stappen",
+      "Uitkomst rekent mee",
+      "Rekenzones en schil",
+      "Alle installaties",
+      "Bron bij elk gegeven",
+      "U-waardecalculator",
+      "Koudebrugcalculator",
+      "Warmtepomp dimensioneren",
+      "BENG-toets in één oogopslag",
+      "Maandwaarden en grafieken",
+      "Rekenspoor",
+      "Herkomst van de uitkomst",
+      "Oudere normversies",
+      "Rapport op drie niveaus",
+      "Dossier in één ZIP",
+      "Overzicht in EP-Online-opbouw",
+      "Basisopname bestaande bouw",
+      "Maatwerkadvies",
+      "Herlabelen",
+      "Uniec 3 en VABI",
+      "3D-model en IFC",
+      "API en MCP",
+      "Je projecten blijven bij jou",
+      "Handleiding in de app"
     ],
-    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-energy-studio.jpeg",
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-energy-studio-hero.png",
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -76,7 +91,7 @@
       "availability": "https://schema.org/InStock"
     },
     "isAccessibleForFree": true,
-    "keywords": "energy analysis, BENG, NTA 8800, building performance, energy label",
+    "keywords": "NTA 8800, BENG, energielabel, energy label, TOjuli, energieprestatie, energy performance, EPA, basisopname, maatwerkadvies, ISSO 82, ISSO 75, BRL 9500, Uniec, VABI, MCP",
     "sameAs": [
       "https://github.com/OpenAEC-Foundation/open-energy-studio",
       "https://open-energy-studio.open-aec.com/"
@@ -86,6 +101,94 @@
       "name": "OpenAEC Foundation",
       "url": "https://open-aec.com"
     }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eigen projecten (.oes.json) en uitwisselbestanden uit Uniec 3 (.uniec3) en VABI Elements (.epa of .xml). Bij elke import bewaart de app de bestandsnaam, een controlesom en een lijst met aannames en meldingen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. De webversie werkt direct in de browser en rekent daar ook: je projectgegevens gaan niet naar een server. Wil je projecten als bestand op je eigen schijf bewaren, installeer dan de desktop-app."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost Open Energy Studio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. De app is gratis en open source onder de LGPL-3.0, zonder account of abonnement. De normteksten van NEN en ISSO zitten er niet in; die heb je zelf nodig."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk formaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In een open JSON-bestand (.oes.json). In de browser blijven projecten in die browser bewaard; de desktop-app slaat ze op als bestand. Het dossier exporteer je als ZIP."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Windows 10 en 11, macOS (Intel en Apple Silicon) en Linux (.deb, .rpm en AppImage), en elke moderne browser. De Windows-installer is ondertekend; de macOS-versie nog niet, open die de eerste keer via rechtsklik en Openen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de Nederlandse praktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Het rekent volgens NTA 8800:2025+C1:2026 met de BENG-eisen uit het Bbl, en volgt voor opname en advies ISSO 82.1, 75.1, 82.2 en 75.2 en BRL 9500. Uitwisseling met Uniec 3 en VABI is ingebouwd."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Er is een MCP-server en een lokale HTTP API met dezelfde 46 bewerkingen als de rekenkern. Een assistent kan daarmee een project doorrekenen of de handleiding raadplegen. Beide bouw je nu nog zelf uit de broncode."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik er een officieel energielabel mee afmelden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nog niet. Open Energy Studio heeft (nog) geen attest volgens BRL 9501. De uitkomsten zijn indicatief en niet bruikbaar voor een officieel energielabel, een BENG-toets bij een vergunning of registratie in EP-Online. De app en de rapporten zeggen dat ook."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe weet ik of de uitkomst klopt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Elke uitkomst draagt de versie van de rekenkern en een vingerafdruk van de invoer, en het rekenspoor laat elke formule zien. De rekenkern wordt getoetst tegen openbare rekenrapporten en de RVO-voorbeeldwoningen; de verschillen staan per post in de documentatie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik helpen testen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Graag, vooral als energie- of EPA-adviseur. Reken een project door dat je kent en meld verschillen of fouten via een issue op GitHub."
+        }
+      }
+    ]
   }
   </script>
 
@@ -186,121 +289,278 @@
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">Energieprestatie — NTA 8800</p>
+      <p class="pill-label" data-i18n="header.label">Energieprestatie</p>
       <h1 data-i18n="header.title">Open <span class="accent">Energy</span> Studio</h1>
-      <p class="lead" data-i18n="header.desc">Open source rekenprogramma voor de energieprestatie van gebouwen volgens NTA 8800. BENG-berekeningen, U-waarde-analyse, dimensionering van warmtepompen en beoordeling van koudebruggen.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">BENG, energielabel en TOjuli volgens NTA 8800, stap voor stap en tot op de formule na te rekenen</p>
+      <p class="lead" data-i18n="header.desc">Beantwoord per stap de vragen over project, gebouw en installaties, en zie de labelklasse en de BENG-indicatoren bij elke wijziging meebewegen. Voor nieuwbouw en bestaande bouw, woningen en utiliteit, met rapport en maatwerkadvies.</p>
       <div class="btn-group">
-        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Download</span></a>
-        <a href="https://open-energy-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Live demo</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/open-energy-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="cta.github">GitHub</span></a>
+        <a href="https://open-energy-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Open in de browser</span></a>
+        <a href="#download" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Download</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/open-energy-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Broncode</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg>Alpha</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg>NTA 8800 · BENG</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg>Windows · macOS · Linux · Browser</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
-      </div>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span>NTA 8800:2025+C1 · BENG · TOjuli</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-users"/></svg><span data-i18n="header.proof2">Woningen en utiliteit</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg><span>Windows · macOS · Linux · Web</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="header.proof4">Nederlands en Engels</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof5">Gratis · LGPL-3.0</span></li>
+      </ul>
     </div>
-    <div class="media-slider shot-overlap">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-energy-studio.jpeg" alt="Open Energy Studio - BENG-overzicht"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-energy-studio-2.jpeg" alt="Open Energy Studio - gebouwgegevens"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-energy-studio-hero.png" width="1920" height="1200" alt="Open Energy Studio: resultaten van een fictieve tussenwoning met energielabel A+, BENG 1, 2 en 3, TOjuli en het energiegebruik per maand" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-energy-studio-feat-gebouw.png" width="1200" height="750" decoding="async" alt="Stap Gebouw: tabel met gevels, daken, vloer en ramen per oriëntatie, met helling, oppervlak en constructie, en rechts de voorlopige uitkomst" data-i18n="hl.envelope.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-energy-studio-feat-installaties.png" width="1200" height="750" decoding="async" alt="Stap Installaties: een HR107-ketel met de vragen over opwekking, distributie, afgifte, regeling en hulpenergie, en bij elk gegeven een bron" data-i18n="hl.installations.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-energy-studio-feat-rekenspoor.png" width="1200" height="750" decoding="async" alt="Rekenspoor: de transmissie per maand met de formule, de ingevulde waarden, de uitkomst en het formulenummer uit NTA 8800" data-i18n="hl.trace.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-energy-studio-feat-rapport.png" width="1200" height="750" decoding="async" alt="Rapport en dossier: keuze tussen samenvatting, standaard en gedetailleerd, met de berekeningen om aan te vinken en een voorbeeld van het rapport" data-i18n="hl.report.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-energy-studio-feat-gereedschap.png" width="1200" height="750" decoding="async" alt="U-waardecalculator: een spouwmuur met baksteen, spouw, minerale wol en gipsplaat, de doorsnede op schaal en de Rc- en U-waarde" data-i18n="hl.tools.alt" data-i18n-attr="alt"></div>
         </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende">&rsaquo;</button>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
+      <div class="slider-dots"></div>
     </div>
   </header>
 
-  <section class="section after-overlap" id="download"><div class="container">
-    <div class="download-section">
-      <h3 data-i18n="download.title">Download</h3>
-      <div class="download-grid">
-        <div class="download-item"><div class="os">Windows</div><div class="size" data-i18n="download.windows">Installer (.exe)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-energy-studio/releases/download/v0.1.7-alpha/Open.Energy.Studio_0.1.7-alpha_x64-setup.exe" data-gh-download="OpenAEC-Foundation/open-energy-studio" data-platform="windows" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download</a></div>
-        <div class="download-item"><div class="os">macOS</div><div class="size" data-i18n="download.macos">Apple-processors (.dmg)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-energy-studio/releases/download/v0.1.7-alpha/Open.Energy.Studio_0.1.7-alpha_aarch64.dmg" data-gh-download="OpenAEC-Foundation/open-energy-studio" data-platform="macos" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download</a></div>
-        <div class="download-item"><div class="os">Linux</div><div class="size" data-i18n="download.linuxDeb">Debian, Ubuntu (.deb)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-energy-studio/releases/download/v0.1.7-alpha/Open.Energy.Studio_0.1.7-alpha_amd64.deb" data-gh-download="OpenAEC-Foundation/open-energy-studio" data-platform="linux-deb" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download</a></div>
-        <div class="download-item"><div class="os">Linux</div><div class="size" data-i18n="download.linuxAppimage">Elke distributie (AppImage)</div>
-          <a href="https://github.com/OpenAEC-Foundation/open-energy-studio/releases/download/v0.1.7-alpha/Open.Energy.Studio_0.1.7-alpha_amd64.AppImage" data-gh-download="OpenAEC-Foundation/open-energy-studio" data-platform="linux-appimage" class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg>Download</a></div>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="notice.text">Testversie zonder BRL 9501-attest: de uitkomsten zijn indicatief. Testers gezocht, vooral energie- en EPA-adviseurs.</span> <a href="https://github.com/OpenAEC-Foundation/open-energy-studio/issues" target="_blank" rel="noopener"><span data-i18n="notice.link">Meld wat je tegenkomt</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a></p>
+  </div>
+
+  <nav class="pp-subnav" aria-label="Op deze pagina" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Functies</a>
+      <a href="#download" data-i18n="subnav.download">Download</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Nieuw</a>
+      <a href="#faq" data-i18n="subnav.faq">Vragen</a>
+      <a href="#releases" data-i18n="subnav.releases">Releases</a>
+    </div>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Functies</p><h2 data-i18n="features.heading">Van de eerste vraag tot het rapport, in één werkstroom</h2><p data-i18n="features.sub">Begin bij de hoogtepunten of kies een onderwerp.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Functies per onderwerp" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Hoogtepunten</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-input" data-tab="input" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg><span data-i18n="tabs.input">Invoer in stappen</span> <span class="pp-tab-count" data-count="input"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-results" data-tab="results" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg><span data-i18n="tabs.results">Resultaten en controle</span> <span class="pp-tab-count" data-count="results"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-report" data-tab="report" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="tabs.report">Rapport en dossier</span> <span class="pp-tab-count" data-count="report"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-existing" data-tab="existing" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-history"/></svg><span data-i18n="tabs.existing">Bestaande bouw en advies</span> <span class="pp-tab-count" data-count="existing"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-connect" data-tab="connect" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg><span data-i18n="tabs.connect">Uitwisseling en koppelingen</span> <span class="pp-tab-count" data-count="connect"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Alle functies</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-energy-studio-feat-gebouw.png" width="1200" height="750" loading="lazy" decoding="async" alt="Stap Gebouw: tabel met gevels, daken, vloer en ramen per oriëntatie, met helling, oppervlak en constructie, en rechts de voorlopige uitkomst" data-i18n="hl.envelope.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.envelope.kicker">Gebouwschil</span></p>
+            <h3 data-i18n="hl.envelope.title">De gebouwschil vlak voor vlak</h3>
+            <p data-i18n="hl.envelope.desc">Leg gevels, daken, vloeren en ramen vast met oriëntatie, helling, oppervlak en constructie. Controles op de schil en het transmissieverlies per elementtype laten meteen zien waar de warmte weglekt.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-energy-studio/blob/main/docs/handleiding-nta8800/03-projectberekening.md" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Meer lezen</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-energy-studio-feat-installaties.png" width="1200" height="750" loading="lazy" decoding="async" alt="Stap Installaties: een HR107-ketel met de vragen over opwekking, distributie, afgifte, regeling en hulpenergie, en bij elk gegeven een bron" data-i18n="hl.installations.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.installations.kicker">Installaties</span></p>
+            <h3 data-i18n="hl.installations.title">Installaties zonder iets over te slaan</h3>
+            <p data-i18n="hl.installations.desc">Verwarming, warm tapwater, ventilatie, koeling en zonnepanelen, elk in vaste stappen van opwekking tot hulpenergie. Bij elk gegeven noteer je waar het vandaan komt, zoals het typeplaatje of de tekening.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-energy-studio/blob/main/docs/handleiding-nta8800/03-projectberekening.md" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Meer lezen</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-energy-studio-feat-rekenspoor.png" width="1200" height="750" loading="lazy" decoding="async" alt="Rekenspoor: de transmissie per maand met de formule, de ingevulde waarden, de uitkomst en het formulenummer uit NTA 8800" data-i18n="hl.trace.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.trace.kicker">Rekenspoor</span></p>
+            <h3 data-i18n="hl.trace.title">Elke uitkomst na te rekenen</h3>
+            <p data-i18n="hl.trace.desc">Het rekenspoor toont per stap de formule, de gebruikte waarden, de uitkomst en het formulenummer uit NTA 8800. Zoek op een vlak of grootheid, klap open wat je wilt zien en exporteer het spoor.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-energy-studio/blob/main/docs/handleiding-nta8800/04-uitvoer.md" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Meer lezen</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-energy-studio-feat-rapport.png" width="1200" height="750" loading="lazy" decoding="async" alt="Rapport en dossier: keuze tussen samenvatting, standaard en gedetailleerd, met de berekeningen om aan te vinken en een voorbeeld van het rapport" data-i18n="hl.report.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.report.kicker">Rapport</span></p>
+            <h3 data-i18n="hl.report.title">Een rapport op het niveau dat je nodig hebt</h3>
+            <p data-i18n="hl.report.desc">Kies samenvatting, standaard of gedetailleerd, en vink aan welke berekeningen tot op maandniveau erin komen. Download het als PDF, en maak daarnaast een invoerdossier en de checklist BRL 9500.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-energy-studio/blob/main/docs/handleiding-nta8800/04-uitvoer.md" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Meer lezen</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-energy-studio-feat-gereedschap.png" width="1200" height="750" loading="lazy" decoding="async" alt="U-waardecalculator: een spouwmuur met baksteen, spouw, minerale wol en gipsplaat, de doorsnede op schaal en de Rc- en U-waarde" data-i18n="hl.tools.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">05</span> <span data-i18n="hl.tools.kicker">Rekenhulpen</span></p>
+            <h3 data-i18n="hl.tools.title">U-waarde, koudebrug en warmtepomp bij de hand</h3>
+            <p data-i18n="hl.tools.desc">Bereken de Rc- en U-waarde van een opbouw laag voor laag, met een doorsnede op schaal. Daarnaast een koudebrugcalculator en een rekenhulp om een warmtepomp te dimensioneren.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/open-energy-studio/blob/main/docs/handleiding-nta8800/index.md" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Meer lezen</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
       </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="input"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.steps.title">Werken in stappen</h3><p data-i18n="f.steps.desc">Project, gebouw, installaties en controle: elke stap stelt de vragen die ertoe doen. Overslaan mag; de rekenkern meldt wat echt ontbreekt.</p></div></div></li>
+        <li class="pp-tile" data-cats="input results"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.live.title">Uitkomst rekent mee</h3><p data-i18n="f.live.desc">Labelklasse, BENG 1, 2 en 3 en TOjuli staan bij elke stap in beeld en rekenen bij elke wijziging opnieuw.</p></div></div></li>
+        <li class="pp-tile" data-cats="input"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.zones.title">Rekenzones en schil</h3><p data-i18n="f.zones.desc">Rekenzones, vlakken en ramen, constructies, koudebruggen, luchtdichtheid en onverwarmde ruimten.</p></div></div></li>
+        <li class="pp-tile" data-cats="input"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.systems.title">Alle installaties</h3><p data-i18n="f.systems.desc">Verwarming, warm tapwater, ventilatie, koeling en zonnestroom, tot en met de douche-wtw.</p></div></div></li>
+        <li class="pp-tile" data-cats="input report"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><h3 data-i18n="f.evidence.title">Bron bij elk gegeven</h3><p data-i18n="f.evidence.desc">Koppel foto's, tekeningen of typeplaatjes aan de invoer, zodat je later weet waar een waarde vandaan komt.</p></div></div></li>
+        <li class="pp-tile" data-cats="input"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.uvalue.title">U-waardecalculator</h3><p data-i18n="f.uvalue.desc">Rc en U van een wand, dak of vloer, laag voor laag, met een doorsnede op schaal.</p></div></div></li>
+        <li class="pp-tile" data-cats="input"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><h3 data-i18n="f.bridge.title">Koudebrugcalculator</h3><p data-i18n="f.bridge.desc">Reken het effect van een koudebrug uit voordat je hem invoert.</p></div></div></li>
+        <li class="pp-tile" data-cats="input"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.heatpump.title">Warmtepomp dimensioneren</h3><p data-i18n="f.heatpump.desc">Een rekenhulp voor het benodigde vermogen van een warmtepomp.</p></div></div></li>
+        <li class="pp-tile" data-cats="results"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h3 data-i18n="f.overview.title">BENG-toets in één oogopslag</h3><p data-i18n="f.overview.desc">Per indicator de waarde, de eis en hoeveel je erboven of eronder zit, met aandachtspunten en het artikel uit het Bbl.</p></div></div></li>
+        <li class="pp-tile" data-cats="results"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-calendar"/></svg></div><div><h3 data-i18n="f.monthly.title">Maandwaarden en grafieken</h3><p data-i18n="f.monthly.desc">Energiegebruik per dienst, per drager en per maand, en de warmte- en koudebehoefte, ook als tabel.</p></div></div></li>
+        <li class="pp-tile" data-cats="results"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-route"/></svg></div><div><h3 data-i18n="f.trace.title">Rekenspoor</h3><p data-i18n="f.trace.desc">Elke stap met formule, waarden, uitkomst en formulenummer, doorzoekbaar en te exporteren.</p></div></div></li>
+        <li class="pp-tile" data-cats="results"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg></div><div><h3 data-i18n="f.provenance.title">Herkomst van de uitkomst</h3><p data-i18n="f.provenance.desc">Versie van de rekenkern, normversie en een vingerafdruk van de invoer, plus de interpretaties die de rekenkern koos.</p></div></div></li>
+        <li class="pp-tile" data-cats="results"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-history"/></svg></div><div><h3 data-i18n="f.editions.title">Oudere normversies</h3><p data-i18n="f.editions.desc">Reken ook met de uitgaven 2024, 2023, 2022 en 2020+A1, duidelijk gemarkeerd als niet registreerbaar.</p></div></div></li>
+        <li class="pp-tile" data-cats="report"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div><div><h3 data-i18n="f.report.title">Rapport op drie niveaus</h3><p data-i18n="f.report.desc">Samenvatting, standaard of gedetailleerd, als PDF of afgedrukt, met een apart rapport voor maatwerkadvies.</p></div></div></li>
+        <li class="pp-tile" data-cats="report"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.dossier.title">Dossier in één ZIP</h3><p data-i18n="f.dossier.desc">Invoer, rapport en bewijsstukken samen, met een inhoudsopgave en een controlesom per bestand.</p></div></div></li>
+        <li class="pp-tile" data-cats="report"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h3 data-i18n="f.eponline.title">Overzicht in EP-Online-opbouw</h3><p data-i18n="f.eponline.desc">De gegevens zoals de EP-Online-export ze vraagt, met de veldgrenzen. Registreren kan pas met een attest.</p></div></div></li>
+        <li class="pp-tile" data-cats="existing"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.survey.title">Basisopname bestaande bouw</h3><p data-i18n="f.survey.desc">Opname van bestaande woningen en utiliteit volgens ISSO 82.1 en 75.1; de antwoorden worden projectinvoer.</p></div></div></li>
+        <li class="pp-tile" data-cats="existing"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg></div><div><h3 data-i18n="f.advice.title">Maatwerkadvies</h3><p data-i18n="f.advice.desc">Maatregelen en pakketten doorrekenen op werkelijk gebruik: besparing, CO₂, kosten, terugverdientijd en netto contante waarde.</p></div></div></li>
+        <li class="pp-tile" data-cats="existing"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-history"/></svg></div><div><h3 data-i18n="f.relabel.title">Herlabelen</h3><p data-i18n="f.relabel.desc">Vergelijk het oorspronkelijke en het verbeterde project, zodat je ziet wat de verbetering oplevert.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h3 data-i18n="f.exchange.title">Uniec 3 en VABI</h3><p data-i18n="f.exchange.desc">Lees projecten uit Uniec 3 en VABI Elements in, met een lijst van alle aannames. Exporteer naar VABI.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h3 data-i18n="f.ifc.title">3D-model en IFC</h3><p data-i18n="f.ifc.desc">Bekijk zones, vlakken, ramen en zonnepanelen in 3D en exporteer het model als IFC.</p></div></div></li>
+        <li class="pp-tile" data-cats="connect"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h3 data-i18n="f.api.title">API en MCP</h3><p data-i18n="f.api.desc">Alle 46 rekenbewerkingen via een lokale HTTP API of als MCP-tools voor een AI-assistent.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h3 data-i18n="f.local.title">Je projecten blijven bij jou</h3><p data-i18n="f.local.desc">De webversie rekent in de browser en bewaart projecten daar; er gaat geen projectdata naar een server.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.manual.title">Handleiding in de app</h3><p data-i18n="f.manual.desc">Een Nederlandstalige handleiding per onderdeel, met bij elke pagina een knop naar het juiste hoofdstuk.</p></div></div></li>
+      </ul>
     </div>
   </div></section>
 
-  <section class="section"><div class="container">
-    <h2 data-i18n="features.heading">Functies</h2>
-    <div class="features features-4">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div>
-        <h4 data-i18n="features.beng.title">BENG-berekeningen</h4>
-        <p data-i18n="features.beng.desc">BENG-berekeningen volgens NTA 8800, met de BENG-indicatoren overzichtelijk in beeld.</p>
+  <section class="section surface-dark panel pp-anchor" id="download" data-pp-repo="OpenAEC-Foundation/open-energy-studio">
+    <div class="pp-dl">
+      <p class="pill-label" data-i18n="download.label">Download</p>
+      <h2 data-i18n="download.title" data-pp-ver>Download v2026.44.0</h2>
+      <p class="pp-dl-lead" data-i18n="download.lead">Gratis en zonder account. Voor Windows, macOS en Linux.</p>
+      <div class="pp-dl-main" data-pp-main>
+        <a href="https://github.com/OpenAEC-Foundation/open-energy-studio/releases/download/v2026.44.0/Open.Energy.Studio_2026.44.0_x64-setup.exe" class="btn btn-glow btn-lg" data-pp-dl="windows" data-pp-primary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-os="windows" data-i18n="download.forWindows">Download voor Windows</span><span data-os="macos" data-i18n="download.forMac" hidden>Download voor macOS</span><span data-os="linux-appimage" data-i18n="download.forLinux" hidden>Download voor Linux</span></a>
+        <a href="https://open-energy-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="download.browserBtn">Open in de browser</span></a>
       </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div>
-        <h4 data-i18n="features.uvalue.title">U-waarde calculator</h4>
-        <p data-i18n="features.uvalue.desc">Bereken de warmtedoorgangscoëfficiënt (U-waarde) van gevels, daken en vloeren.</p>
+      <p class="pp-dl-meta"><span data-os="windows" data-i18n="download.metaWindows">.exe-installer</span><span data-os="macos" data-i18n="download.metaMac" hidden>universele .dmg, Intel en Apple Silicon</span><span data-os="linux-appimage" data-i18n="download.metaLinux" hidden>AppImage, draait op de meeste distributies</span> · <span data-pp-primary-size>9.8 MB</span></p>
+      <p class="pp-dl-mobile" data-pp-mobile hidden data-i18n="download.mobileNote">Open Energy Studio is gemaakt voor een groot scherm. Open hem op je computer, of probeer hem hier in de browser.</p>
+      <details class="pp-dl-other" data-pp-other>
+        <summary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg><span data-i18n="download.other">Andere platforms</span></summary>
+        <div class="pp-files">
+          <div class="pp-files-col"><h3>Windows</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-energy-studio/releases/download/v2026.44.0/Open.Energy.Studio_2026.44.0_x64-setup.exe" data-pp-dl="windows" data-pp-item="windows"><span class="pp-file"><span data-i18n="download.fileExe">Installer (.exe)</span><span class="pp-file-size"> · <span data-pp-size="windows">9.8 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-energy-studio/releases/download/v2026.44.0/Open.Energy.Studio_2026.44.0_x64_en-US.msi" data-pp-dl="windows-msi" data-pp-item="windows-msi"><span class="pp-file"><span data-i18n="download.fileMsi">Installer (.msi)</span><span class="pp-file-size"> · <span data-pp-size="windows-msi">12.3 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+          <div class="pp-files-col"><h3>macOS</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-energy-studio/releases/download/v2026.44.0/Open.Energy.Studio_2026.44.0_universal.dmg" data-pp-dl="macos" data-pp-item="macos"><span class="pp-file"><span data-i18n="download.fileDmg">Universele .dmg</span><span class="pp-file-size"> · <span data-pp-size="macos">24.3 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+          <div class="pp-files-col"><h3>Linux</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-energy-studio/releases/download/v2026.44.0/Open.Energy.Studio_2026.44.0_amd64.deb" data-pp-dl="linux-deb" data-pp-item="linux-deb"><span class="pp-file"><span data-i18n="download.fileDeb">.deb</span><span class="pp-file-size"> · <span data-pp-size="linux-deb">11.3 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-energy-studio/releases/download/v2026.44.0/Open.Energy.Studio-2026.44.0-1.x86_64.rpm" data-pp-dl="linux-rpm" data-pp-item="linux-rpm"><span class="pp-file"><span data-i18n="download.fileRpm">.rpm</span><span class="pp-file-size"> · <span data-pp-size="linux-rpm">11.3 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+            <li><a href="https://github.com/OpenAEC-Foundation/open-energy-studio/releases/download/v2026.44.0/Open.Energy.Studio_2026.44.0_amd64.AppImage" data-pp-dl="linux-appimage" data-pp-item="linux-appimage"><span class="pp-file"><span data-i18n="download.fileAppImage">AppImage</span><span class="pp-file-size"> · <span data-pp-size="linux-appimage">85.3 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+        </div>
+      </details>
+      <p class="pp-dl-note" data-i18n="download.browserNote">Liever niets installeren? De app draait ook <a href="https://open-energy-studio.open-aec.com/" target="_blank" rel="noopener">in de browser</a>.</p>
+    </div>
+  </section>
+
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
+    <div class="panel-split">
+      <div class="panel-split-text">
+        <p class="pill-label" data-i18n="whatsnew.label">Nieuw in v2026.44</p>
+        <h2 data-i18n="whatsnew.title">TOjuli narekenbaar, <span>Uniec-export in concept</span></h2>
+        <p data-i18n="whatsnew.desc">Rekenkern 0.5.0 maakt TOjuli tot op de formule na te rekenen, de Uniec-import vertelt meer, en de desktop-app meldt zelf wanneer er een nieuwe versie is.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/open-energy-studio/blob/main/docs/nta8800-releasenotes.md" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaChangelog">Alle release notes</span></a>
+          <a href="https://open-energy-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="whatsnew.ctaDemo">Probeer het in de browser</span></a>
+        </div>
       </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div>
-        <h4 data-i18n="features.heatpump.title">Warmtepomp dimensioneren</h4>
-        <p data-i18n="features.heatpump.desc">Bepaal het benodigde vermogen van de warmtepomp op basis van de gebouweigenschappen en de klimaatgegevens.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div>
-        <h4 data-i18n="features.thermal.title">Koudebruggen berekenen</h4>
-        <p data-i18n="features.thermal.desc">Beoordeel koudebruggen en wat ze doen met de energieprestatie.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div>
-        <h4 data-i18n="features.charts.title">Grafieken van het energiegebruik</h4>
-        <p data-i18n="features.charts.desc">Het energiegebruik uitgesplitst in beeld, plus grafieken van de prestatie per maand.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div>
-        <h4 data-i18n="features.building3d.title">3D-weergave van het gebouw</h4>
-        <p data-i18n="features.building3d.desc">De gebouwschil in 3D, inclusief de thermische eigenschappen.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div>
-        <h4 data-i18n="features.projects.title">Projectbeheer</h4>
-        <p data-i18n="features.projects.desc">Een projectoverzicht om meerdere gebouwen naast elkaar te beheren, met een eigenschappenpaneel voor de details.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div>
-        <h4 data-i18n="features.reporting.title">Rapportage</h4>
-        <p data-i18n="features.reporting.desc">Genereer energieprestatierapporten met afdrukvoorbeeld. Ribbon-werkbalk met een instellingenvenster.</p>
-      </div>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-route"/></svg></div><div><h4 data-i18n="whatsnew.items.tojuli.title">TOjuli narekenbaar</h4><p data-i18n="whatsnew.items.tojuli.desc">Per oriëntatie alle termen van de formule, en per rekenzone de vaste waarden.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h4 data-i18n="whatsnew.items.update.title">Melding bij een nieuwe versie</h4><p data-i18n="whatsnew.items.update.desc">De desktop-app meldt een nieuwere release met een knop naar de download; uit te zetten in de instellingen.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="whatsnew.items.uniecgeo.title">Geometrie naar Uniec</h4><p data-i18n="whatsnew.items.uniecgeo.desc">Concept: een grondgebonden woning naar de geometrie-import van Uniec (Excel). Nog niet in Uniec zelf getest.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h4 data-i18n="whatsnew.items.uniecimport.title">Uniec-import vertelt meer</h4><p data-i18n="whatsnew.items.uniecimport.desc">Meldt een tweede gebouw in het bestand en toont alle aannames, met soort en veld.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h4 data-i18n="whatsnew.items.confirm.title">Import eerst controleren</h4><p data-i18n="whatsnew.items.confirm.desc">Een import uit Uniec of VABI telt voor registratie pas mee als de adviseur bevestigt dat hij is gecontroleerd.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-history"/></svg></div><div><h4 data-i18n="whatsnew.items.recovery.title">Herstelkopie</h4><p data-i18n="whatsnew.items.recovery.desc">Weigert de browser automatisch opslaan, dan probeert de app het opnieuw en meldt hij het in de statusbalk.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Veelgestelde vragen</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Welke bestanden kan ik openen?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">Eigen projecten (.oes.json) en uitwisselbestanden uit Uniec 3 (.uniec3) en VABI Elements (.epa of .xml). Bij elke import bewaart de app de bestandsnaam, een controlesom en een lijst met aannames en meldingen.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Moet ik iets installeren?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Nee. De webversie werkt direct in de browser en rekent daar ook: je projectgegevens gaan niet naar een server. Wil je projecten als bestand op je eigen schijf bewaren, installeer dan de desktop-app.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.price.q">Wat kost Open Energy Studio?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.price.a">Niets. De app is gratis en open source onder de LGPL-3.0, zonder account of abonnement. De normteksten van NEN en ISSO zitten er niet in; die heb je zelf nodig.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.save.q">In welk formaat wordt mijn werk opgeslagen?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.save.a">In een open JSON-bestand (.oes.json). In de browser blijven projecten in die browser bewaard; de desktop-app slaat ze op als bestand. Het dossier exporteer je als ZIP.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">Op welke systemen draait het?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">Windows 10 en 11, macOS (Intel en Apple Silicon) en Linux (.deb, .rpm en AppImage), en elke moderne browser. De Windows-installer is ondertekend; de macOS-versie nog niet, open die de eerste keer via rechtsklik en Openen.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">Sluit het aan op de Nederlandse praktijk?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">Ja. Het rekent volgens NTA 8800:2025+C1:2026 met de BENG-eisen uit het Bbl, en volgt voor opname en advies ISSO 82.1, 75.1, 82.2 en 75.2 en BRL 9500. Uitwisseling met Uniec 3 en VABI is ingebouwd.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">Wat kan een AI-assistent ermee?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">Er is een MCP-server en een lokale HTTP API met dezelfde 46 bewerkingen als de rekenkern. Een assistent kan daarmee een project doorrekenen of de handleiding raadplegen. Beide bouw je nu nog zelf uit de broncode.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.label.q">Kan ik er een officieel energielabel mee afmelden?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.label.a">Nog niet. Open Energy Studio heeft (nog) geen attest volgens BRL 9501. De uitkomsten zijn indicatief en niet bruikbaar voor een officieel energielabel, een BENG-toets bij een vergunning of registratie in EP-Online. De app en de rapporten zeggen dat ook.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.verify.q">Hoe weet ik of de uitkomst klopt?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.verify.a">Elke uitkomst draagt de versie van de rekenkern en een vingerafdruk van de invoer, en het rekenspoor laat elke formule zien. De rekenkern wordt getoetst tegen openbare rekenrapporten en de RVO-voorbeeldwoningen; de verschillen staan per post in de documentatie.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.testers.q">Kan ik helpen testen?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.testers.a">Graag, vooral als energie- of EPA-adviseur. Reken een project door dat je kent en meld verschillen of fouten via een issue op GitHub.</p></div>
+      </details>
     </div>
   </div></section>
 
-  <section class="section"><div class="container">
-    <h2 data-i18n="tech.heading">Techniek</h2>
-    <div class="features features-compact features-center">
-      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h4 data-i18n="tech.tauri.title">Tauri 2</h4><p data-i18n="tech.tauri.desc">Een native desktopapplicatie met Rust eronder. Versienummering volgens CalVer (JAAR.MAAND.BUILD).</p></div></div>
-      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.react.title">React 18 + TypeScript</h4><p data-i18n="tech.react.desc">Een interface uit losse componenten, gebouwd met Vite.</p></div></div>
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Technologie</h2><p data-i18n="tech.sub">Voor wie wil weten hoe het gebouwd is.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.rust.title">Rekenkern in Rust</h4><p data-i18n="tech.rust.desc">Een deterministische NTA 8800-kern zonder I/O; elke uitkomst draagt de kernversie en een SHA-256 van de invoer.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h4 data-i18n="tech.wasm.title">WebAssembly</h4><p data-i18n="tech.wasm.desc">Dezelfde kern draait in de browser, zodat de webversie zonder server rekent.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.tauri.title">Tauri 2</h4><p data-i18n="tech.tauri.desc">Een native desktop-app voor Windows, macOS en Linux, met een ondertekende Windows-installer.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="tech.react.title">React en TypeScript</h4><p data-i18n="tech.react.desc">Eén interface voor browser en desktop, met formulieren die tegen de rekenkern worden getest.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h4 data-i18n="tech.api.title">HTTP API en MCP</h4><p data-i18n="tech.api.desc">46 bewerkingen uit één register, als OpenAPI 3.1-API en als MCP-tools over stdio.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><h4 data-i18n="tech.gate.title">Toetspoort</h4><p data-i18n="tech.gate.desc">Elke rekenwijziging gaat door eenheidstests, onafhankelijke herberekeningen vanaf de normtekst, fuzztests en referentiesuites.</p></div></div>
     </div>
   </div></section>
+
 
   <!-- Release Notes (shared component) -->
-  <div data-release-notes="open-energy-studio"></div>
+  <section id="releases" class="pp-releases">
+  <div data-release-notes="open-energy-studio" data-release-notes-timeline></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Toon alle releases</span><span data-rel-hide hidden data-i18n="releases.showLess">Toon alleen de laatste drie</span></button>
+    <a href="https://github.com/OpenAEC-Foundation/open-energy-studio/releases" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.github">Alle releases op GitHub</span></a>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">Open <span class="accent">Energy</span> Studio</h2>
       <div class="btn-group">
-        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Download</span></a>
-        <a href="https://open-energy-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.demo">Live demo</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/open-energy-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="cta.github">GitHub</span></a>
+        <a href="https://open-energy-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Open in de browser</span></a>
+        <a href="#download" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Download</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/open-energy-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Broncode</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -354,28 +614,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-  <script>
-  (function(){
-    const track = document.getElementById('sliderTrack');
-    const dots = document.getElementById('sliderDots');
-    if (!track || !dots) return;
-    const slides = track.children.length;
-    let current = 0;
-    for(let i=0;i<slides;i++){
-      const d = document.createElement('button');
-      d.className = 'slider-dot' + (i===0?' active':'');
-      d.onclick = ()=>slideTo(i);
-      dots.appendChild(d);
-    }
-    window.slideMove = function(dir){slideTo(current+dir);};
-    window.slideTo = function(i){
-      current = (i+slides)%slides;
-      track.style.transform = 'translateX(-'+current*100+'%)';
-      dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-    };
-  })();
-  </script>
-  <script src="/shared/downloads.js?v=20261015"></script>
   <script src="/shared/i18n.js?v=20261015"></script>
 </body>
 </html>

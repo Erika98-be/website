@@ -1,69 +1,307 @@
 {
   "header": {
-    "label": "Energy performance — NTA 8800",
     "title": "Open <span class=\"accent\">Energy</span> Studio",
-    "desc": "Open-source building energy performance calculator following the Dutch NTA 8800 standard. BENG calculations, U-value analysis, heat pump sizing, and thermal bridge assessment.",
+    "demoBtn": "Open in browser",
     "downloadBtn": "Download",
-    "sourceBtn": "View source"
+    "sourceBtn": "Source code",
+    "proof2": "Dwellings and non-residential",
+    "proof4": "Dutch and English",
+    "proof5": "Free · LGPL-3.0",
+    "heroAlt": "Open Energy Studio: results for a fictitious terraced house with energy label A+, BENG 1, 2 and 3, TOjuli and the monthly energy use",
+    "label": "Energy performance",
+    "tagline": "BENG, energy label and TOjuli following NTA 8800, step by step and traceable down to the formula",
+    "desc": "Answer the questions on project, building and installations step by step, and watch the label class and the BENG indicators follow every change. For new and existing buildings, dwellings and non-residential buildings, with report and tailored advice."
   },
-  "download": {
-    "title": "Download",
-    "windows": "Installer (.exe)",
-    "macos": "Apple silicon (.dmg)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxAppimage": "Any distribution (AppImage)"
+  "meta": {
+    "description": "Free, open-source energy performance software following NTA 8800: BENG 1, 2 and 3, energy label and TOjuli for dwellings and non-residential buildings, with calculation trace, report and tailored advice. Test version without BRL 9501 attestation. For Windows, macOS, Linux and the browser.",
+    "title": "Open Energy Studio — OpenAEC Foundation"
+  },
+  "hl": {
+    "envelope": {
+      "alt": "Building step: table of walls, roofs, floor and windows by orientation, with slope, area and construction, and the provisional result on the right",
+      "kicker": "Building envelope",
+      "title": "The building envelope, surface by surface",
+      "desc": "Record walls, roofs, floors and windows with orientation, slope, area and construction. Envelope checks and the transmission loss per element type show right away where the heat escapes."
+    },
+    "installations": {
+      "alt": "Installations step: an HR107 boiler with the questions on generation, distribution, emission, control and auxiliary energy, and a source for each input",
+      "kicker": "Installations",
+      "title": "Installations without missing a thing",
+      "desc": "Heating, domestic hot water, ventilation, cooling and solar panels, each in fixed steps from generation to auxiliary energy. For every input you note where it comes from, such as the rating plate or the drawing."
+    },
+    "trace": {
+      "alt": "Calculation trace: the monthly transmission with the formula, the values used, the result and the NTA 8800 formula number",
+      "kicker": "Calculation trace",
+      "title": "Every result can be checked",
+      "desc": "The calculation trace shows, step by step, the formula, the values used, the result and the NTA 8800 formula number. Search for a surface or quantity, expand what you want to see and export the trace."
+    },
+    "report": {
+      "alt": "Report and file: choice between summary, standard and detailed, with the calculations to tick and a preview of the report",
+      "kicker": "Report",
+      "title": "A report at the level you need",
+      "desc": "Choose summary, standard or detailed, and tick which calculations go in down to monthly level. Download it as a PDF, and also produce an input file and the BRL 9500 checklist."
+    },
+    "tools": {
+      "alt": "U-value calculator: a cavity wall with brick, cavity, mineral wool and plasterboard, the cross-section to scale and the Rc and U value",
+      "kicker": "Calculation aids",
+      "title": "U value, thermal bridge and heat pump at hand",
+      "desc": "Calculate the Rc and U value of a build-up layer by layer, with a cross-section to scale. There is also a thermal bridge calculator and an aid for sizing a heat pump."
+    }
+  },
+  "notice": {
+    "link": "Report what you find",
+    "text": "Test version without BRL 9501 attestation: results are indicative. Testers wanted, especially energy and EPA advisors."
+  },
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "download": "Download",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "input": "Step-by-step input",
+    "results": "Results and checks",
+    "report": "Report and file",
+    "existing": "Existing buildings and advice",
+    "connect": "Exchange and integrations",
+    "all": "All features"
   },
   "features": {
-    "heading": "Features",
-    "beng": {
-      "title": "BENG calculations",
-      "desc": "Building Energy Performance (BENG) calculations following the Dutch NTA 8800 standard with BENG indicator visualization."
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "From the first question to the report, in one workflow",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
+    "steps": {
+      "title": "Work in steps",
+      "desc": "Project, building, installations and check: each step asks the questions that matter. Skipping is fine; the engine reports what is really missing."
+    },
+    "live": {
+      "title": "Results update as you go",
+      "desc": "Label class, BENG 1, 2 and 3 and TOjuli are visible at every step and recalculate with every change."
+    },
+    "zones": {
+      "title": "Zones and envelope",
+      "desc": "Calculation zones, surfaces and windows, constructions, thermal bridges, airtightness and unheated spaces."
+    },
+    "systems": {
+      "title": "All installations",
+      "desc": "Heating, hot water, ventilation, cooling and solar power, down to shower heat recovery."
+    },
+    "evidence": {
+      "title": "A source for every input",
+      "desc": "Link photos, drawings or rating plates to the input, so you know later where a value came from."
     },
     "uvalue": {
       "title": "U-value calculator",
-      "desc": "Calculate thermal transmittance (U-value) of wall, roof, and floor constructions."
+      "desc": "Rc and U of a wall, roof or floor, layer by layer, with a cross-section to scale."
+    },
+    "bridge": {
+      "title": "Thermal bridge calculator",
+      "desc": "Work out the effect of a thermal bridge before you enter it."
     },
     "heatpump": {
       "title": "Heat pump sizing",
-      "desc": "Calculate required heat pump capacity based on building properties and climate data."
+      "desc": "A calculation aid for the capacity a heat pump needs."
     },
-    "thermal": {
-      "title": "Thermal bridge calculator",
-      "desc": "Assess thermal bridges and their impact on energy performance."
+    "overview": {
+      "title": "BENG check at a glance",
+      "desc": "For each indicator the value, the requirement and how far above or below it you are, with points of attention and the article from the Bbl."
     },
-    "charts": {
-      "title": "Energy breakdown charts",
-      "desc": "Visual energy breakdown and monthly performance analysis charts."
+    "monthly": {
+      "title": "Monthly values and charts",
+      "desc": "Energy use per service, per carrier and per month, and the heating and cooling demand, also as a table."
     },
-    "building3d": {
-      "title": "3D building view",
-      "desc": "3D visualization of the building envelope and its thermal properties."
+    "trace": {
+      "title": "Calculation trace",
+      "desc": "Every step with formula, values, result and formula number, searchable and exportable."
     },
-    "projects": {
-      "title": "Project management",
-      "desc": "Project browser for managing multiple buildings. Properties panel for detailed parameter editing."
+    "provenance": {
+      "title": "Where the result comes from",
+      "desc": "Engine version, norm edition and a fingerprint of the input, plus the interpretations the engine chose."
     },
-    "reporting": {
-      "title": "Reporting",
-      "desc": "Generate energy performance reports with print preview. Ribbon toolbar interface with settings dialog."
+    "editions": {
+      "title": "Older norm editions",
+      "desc": "Also calculate with the 2024, 2023, 2022 and 2020+A1 editions, clearly marked as not registrable."
+    },
+    "report": {
+      "title": "Report at three levels",
+      "desc": "Summary, standard or detailed, as a PDF or printed, with a separate report for tailored advice."
+    },
+    "dossier": {
+      "title": "File in one ZIP",
+      "desc": "Input, report and evidence together, with a manifest and a checksum per file."
+    },
+    "eponline": {
+      "title": "Overview in EP-Online layout",
+      "desc": "The data as the EP-Online export expects it, with the field limits. Registering requires an attestation first."
+    },
+    "survey": {
+      "title": "Survey of existing buildings",
+      "desc": "Survey of existing dwellings and non-residential buildings following ISSO 82.1 and 75.1; the answers become project input."
+    },
+    "advice": {
+      "title": "Tailored advice",
+      "desc": "Calculate measures and packages on actual use: savings, CO₂, costs, payback time and net present value."
+    },
+    "relabel": {
+      "title": "Relabelling",
+      "desc": "Compare the original and the improved project, so you see what the improvement achieves."
+    },
+    "exchange": {
+      "title": "Uniec 3 and VABI",
+      "desc": "Import projects from Uniec 3 and VABI Elements, with a list of all assumptions. Export to VABI."
+    },
+    "ifc": {
+      "title": "3D model and IFC",
+      "desc": "View zones, surfaces, windows and solar panels in 3D and export the model as IFC."
+    },
+    "api": {
+      "title": "API and MCP",
+      "desc": "All 46 calculation operations through a local HTTP API or as MCP tools for an AI assistant."
+    },
+    "local": {
+      "title": "Your projects stay with you",
+      "desc": "The web version calculates in the browser and keeps projects there; no project data goes to a server."
+    },
+    "manual": {
+      "title": "Manual in the app",
+      "desc": "A Dutch-language manual per topic, with a button on every page to the right chapter."
     }
+  },
+  "download": {
+    "title": "Download v2026.44.0",
+    "lead": "Free, no account needed. For Windows, macOS and Linux.",
+    "forWindows": "Download for Windows",
+    "forMac": "Download for macOS",
+    "forLinux": "Download for Linux",
+    "metaWindows": ".exe installer",
+    "metaMac": "universal .dmg, Intel and Apple Silicon",
+    "metaLinux": "AppImage, runs on most distributions",
+    "browserBtn": "Open in browser",
+    "fileExe": "Installer (.exe)",
+    "fileMsi": "Installer (.msi)",
+    "fileDmg": "Universal .dmg",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "browserNote": "Rather not install anything? The app also <a href=\"https://open-energy-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">runs in the browser</a>.",
+    "label": "Download",
+    "mobileNote": "Open Energy Studio is made for a large screen. Open it on your computer, or try it here in the browser.",
+    "other": "Other platforms"
+  },
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "ctaDemo": "Try it in the browser",
+    "items": {
+      "tojuli": {
+        "title": "Traceable TOjuli",
+        "desc": "All terms of the formula per orientation, and the fixed values per zone."
+      },
+      "update": {
+        "title": "New version notice",
+        "desc": "The desktop app reports a newer release with a button to the download; can be turned off in the settings."
+      },
+      "uniecgeo": {
+        "title": "Geometry to Uniec",
+        "desc": "Draft: a ground-level dwelling to the Uniec geometry import (Excel). Not yet tested in Uniec itself."
+      },
+      "uniecimport": {
+        "title": "Uniec import tells you more",
+        "desc": "Reports a second building in the file and lists every assumption, with type and field."
+      },
+      "confirm": {
+        "title": "Check imports first",
+        "desc": "An import from Uniec or VABI only counts for registration once the advisor confirms it has been checked."
+      },
+      "recovery": {
+        "title": "Recovery copy",
+        "desc": "If the browser refuses autosave, the app retries and reports it in the status bar."
+      }
+    },
+    "label": "New in v2026.44",
+    "title": "TOjuli traceable, <span>Uniec export in draft</span>",
+    "desc": "Engine 0.5.0 makes TOjuli traceable down to the formula, the Uniec import tells you more, and the desktop app now reports when a new version is out."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "Your own projects (.oes.json) and exchange files from Uniec 3 (.uniec3) and VABI Elements (.epa or .xml). For every import the app keeps the file name, a checksum and a list of assumptions and issues."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "No. The web version runs straight in the browser and calculates there too: your project data does not go to a server. If you want to keep projects as files on your own disk, install the desktop app."
+    },
+    "price": {
+      "q": "What does Open Energy Studio cost?",
+      "a": "Nothing. The app is free and open source under the LGPL-3.0, with no account or subscription. The NEN and ISSO norm texts are not included; you need your own copies."
+    },
+    "save": {
+      "q": "In which format is my work saved?",
+      "a": "In an open JSON file (.oes.json). In the browser, projects are kept in that browser; the desktop app saves them as files. The project file can be exported as a ZIP."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "Windows 10 and 11, macOS (Intel and Apple Silicon) and Linux (.deb, .rpm and AppImage), and any modern browser. The Windows installer is signed; the macOS version is not yet, so open it the first time with right-click and Open."
+    },
+    "practice": {
+      "q": "Does it fit Dutch practice?",
+      "a": "Yes. It calculates following NTA 8800:2025+C1:2026 with the BENG requirements from the Bbl, and follows ISSO 82.1, 75.1, 82.2 and 75.2 and BRL 9500 for surveys and advice. Exchange with Uniec 3 and VABI is built in."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "There is an MCP server and a local HTTP API with the same 46 operations as the engine. An assistant can use them to calculate a project or consult the manual. For now you build both yourself from the source code."
+    },
+    "label": {
+      "q": "Can I register an official energy label with it?",
+      "a": "Not yet. Open Energy Studio does not (yet) hold a BRL 9501 attestation. Results are indicative and cannot be used for an official energy label, a BENG check for a permit or registration in EP-Online. The app and the reports say so too."
+    },
+    "verify": {
+      "q": "How do I know the result is right?",
+      "a": "Every result carries the engine version and a fingerprint of the input, and the calculation trace shows every formula. The engine is tested against public calculation reports and the RVO example dwellings; the differences are explained item by item in the documentation."
+    },
+    "testers": {
+      "q": "Can I help test it?",
+      "a": "Please do, especially if you are an energy or EPA advisor. Calculate a project you know and report differences or bugs through an issue on GitHub."
+    },
+    "heading": "Frequently asked questions"
   },
   "tech": {
-    "heading": "Tech stack",
+    "rust": {
+      "title": "Rust calculation engine",
+      "desc": "A deterministic NTA 8800 core without I/O; every result carries the engine version and a SHA-256 of the input."
+    },
+    "wasm": {
+      "title": "WebAssembly",
+      "desc": "The same core runs in the browser, so the web version calculates without a server."
+    },
     "tauri": {
       "title": "Tauri 2",
-      "desc": "Native desktop application with Rust backend. CalVer versioning (YEAR.MONTH.BUILD)."
+      "desc": "A native desktop app for Windows, macOS and Linux, with a signed Windows installer."
     },
     "react": {
-      "title": "React 18 + TypeScript",
-      "desc": "Component-based UI with Vite build tooling."
-    }
+      "title": "React and TypeScript",
+      "desc": "One interface for browser and desktop, with forms tested against the engine."
+    },
+    "api": {
+      "title": "HTTP API and MCP",
+      "desc": "46 operations from one registry, as an OpenAPI 3.1 API and as MCP tools over stdio."
+    },
+    "gate": {
+      "title": "Verification gate",
+      "desc": "Every calculation change passes unit tests, independent recalculations from the norm text, fuzz tests and reference suites."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
   },
-  "cta": {
-    "demo": "Live demo",
-    "github": "GitHub"
-  },
-  "footer": {
-    "slogan": "Build free. Build together."
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }
