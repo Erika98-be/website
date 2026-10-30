@@ -1,167 +1,285 @@
 {
   "header": {
-    "label": "Projet communautaire · Écosystème OpenAEC",
     "title": "Open <span class=\"accent\">CAD</span> Studio",
-    "desc": "Une <strong>application CAO 2D + 3D complète</strong> développée en Rust avec rendu accéléré par GPU. Lecture et écriture natives <strong>DWG &amp; DXF</strong>, paper space, solides ACIS, cotations, mises en page. Un projet open source communautaire de Hakan Seven, reconnu et promu par la fondation OpenAEC.",
-    "community": "Projet communautaire",
-    "beta": "Beta · v2026.39",
-    "demoBtn": "Démo en direct dans le navigateur",
-    "downloadBtn": "Télécharger v2026.39",
-    "sourceBtn": "Voir le code source"
+    "demoBtn": "Ouvrir dans le navigateur",
+    "downloadBtn": "Télécharger",
+    "sourceBtn": "Code source",
+    "proof2": "Navigateur, Windows, macOS, Linux",
+    "proof3": "23 langues",
+    "heroAlt": "Open CAD Studio : plan d'un bureau avec murs, portes, mobilier et trame, avec le ruban et le panneau des propriétés",
+    "label": "CAO · projet communautaire",
+    "tagline": "Ouvrir, dessiner et enregistrer des DWG et DXF, sans frais de licence",
+    "desc": "Ouvrez le dessin d'un collègue ou d'un bureau d'études, modifiez-le en 2D ou en 3D et réenregistrez-le en DWG ou DXF. Fonctionne directement dans le navigateur, ou comme application sur votre ordinateur."
   },
-  "screenshot": {
-    "caption": "Open CAD Studio en action — dessins DWG d'un projet routier et d'un plan structural de reprise en sous-œuvre (PUNTNIVEAU -14,5 m NAP)"
+  "meta": {
+    "description": "Logiciel de CAO gratuit et open source qui ouvre et enregistre directement les DWG et DXF : dessin 2D, présentations et traçage, et modélisation 3D. Pour Windows, macOS, Linux et le navigateur.",
+    "title": "Open CAD Studio — OpenAEC Foundation"
   },
-  "author": {
-    "desc": "Développeur open source indépendant. Développe Open CAD Studio depuis mars 2026.<br><a href=\"https://github.com/HakanSeven12\" target=\"_blank\" rel=\"noopener\">github.com/HakanSeven12 &rarr;</a>"
-  },
-  "what": {
-    "title": "Qu'est-ce qu'Open CAD Studio ?",
-    "desc": "Open CAD Studio est un projet CAO open source indépendant qui comble une lacune majeure de l'outillage AEC : une <strong>application CAO moderne, performante, nativement compatible DWG/DXF</strong> qui ne dépend pas d'Autodesk, de Bricsys ou d'autres éditeurs commerciaux. Entièrement écrite en Rust, avec rendu accéléré par GPU via wgpu et une interface interactive en iced.",
-    "desc2": "La fondation OpenAEC considère Open CAD Studio comme une extension naturelle de l'écosystème. Le projet n'est pas développé par nous, mais s'inscrit dans notre mission : promouvoir les logiciels open source pour toute la chaîne AEC. Nous y faisons activement référence et encourageons la collaboration.",
-    "license": "<strong>Licence</strong> GPL-3.0 (à noter : différente de nos propres outils LGPL-3.0, qui est plus permissive pour l'usage en bibliothèque)."
-  },
-  "formats": {
-    "title": "Formats de fichiers — <span class=\"accent\">DWG &amp; DXF natifs</span>",
-    "desc": "Peut-être la fonctionnalité la plus importante : Open CAD Studio lit et écrit DWG et DXF nativement, dans toutes les versions de R13 à R2018. Pas de convertisseurs, pas de contournements, pas de bibliothèques Autodesk.",
-    "dwg": {
-      "title": "DWG (R13–R2018)",
-      "desc": "Lecture et écriture natives de fichiers DWG — le format de facto standard de l'industrie. Sans licences de bibliothèques tierces."
+  "hl": {
+    "layers": {
+      "alt": "Gestionnaire de calques sur un plan, avec des calques pour murs, hachures, portes, fenêtres, mobilier, trame et texte",
+      "kicker": "Dessin 2D",
+      "title": "Dessinez comme vous en avez l'habitude",
+      "desc": "Lignes, polylignes, arcs, hachures, blocs et calques, avec accrochage aux objets et commandes en ligne comme OFFSET, TRIM et FILLET. Si vous travaillez avec AutoCAD ou BricsCAD, vous vous y retrouvez tout de suite."
     },
-    "dxf": {
-      "title": "DXF (R13–R2018)",
-      "desc": "Lecture/écriture DXF complète, versions modernes incluses. Compatible avec AutoCAD, BricsCAD, LibreCAD et toute application CAO supportant DXF."
+    "layout": {
+      "alt": "Présentation dans l'espace papier avec une fenêtre sur le plan et le titre du dessin",
+      "kicker": "Présentations",
+      "title": "Du modèle à la feuille",
+      "desc": "Placez votre projet sur une feuille avec des fenêtres, choisissez l'échelle et tracez avec des styles de tracé CTB ou STB. Sur ordinateur, vous tracez en PDF ou directement vers l'imprimante."
     },
-    "stl": {
-      "title": "STL / STEP / OBJ",
-      "desc": "Export vers STL et STEP AP203 pour impression 3D et FAO. Import OBJ pour modèles 3D depuis d'autres sources."
+    "model": {
+      "alt": "Modèle 3D d'une structure avec deux planchers, poteaux, poutres, un bloc et une sphère, ombré avec arêtes",
+      "kicker": "Modélisation 3D",
+      "title": "Aussi en 3D, dans le même logiciel",
+      "desc": "Créez des boîtes, cylindres et sphères, extrudez et faites tourner des profils, ou faites un balayage ou un lissage. Regardez le modèle sous tous les angles avec le cube, en filaire ou ombré."
     },
-    "pdf": {
-      "title": "Plot PDF",
-      "desc": "Plottez les layouts directement en PDF — avec les bons formats de papier lus depuis les PlotSettings embarqués."
-    },
-    "wblock": {
-      "title": "WBLOCK",
-      "desc": "Écrivez des entités sélectionnées ou un bloc vers un fichier externe pour réutilisation."
-    },
-    "xref": {
-      "title": "XREF",
-      "desc": "Références externes (xrefs) — attacher, recharger et résoudre automatiquement, comme dans AutoCAD."
+    "calc": {
+      "alt": "Calculatrice QuickCalc à côté d'un plan, avec clavier, mémoire, unités et variables",
+      "kicker": "Calcul",
+      "title": "Calculez sans quitter le logiciel",
+      "desc": "QuickCalc se trouve à côté de votre dessin : une calculatrice standard et scientifique avec unités, mémoire et variables personnelles. Avec CAL, vous calculez avec des points et des distances sur la ligne de commande."
     }
   },
-  "drafting": {
-    "title": "Dessin <span class=\"accent\">2D</span>",
-    "desc": "Suite complète de dessin 2D avec toutes les commandes attendues d'une application CAO professionnelle :",
-    "geom": {
-      "title": "Géométrie de base",
-      "desc": "<code>LINE</code>, <code>PLINE</code>, <code>RECTANG</code>, <code>POLYGON</code>, <code>CIRCLE</code>, <code>ARC</code>, <code>ELLIPSE</code>, <code>SPLINE</code>"
+  "subnav": {
+    "label": "Sur cette page",
+    "features": "Fonctions",
+    "download": "Télécharger",
+    "whatsnew": "Nouveautés",
+    "faq": "FAQ",
+    "releases": "Versions"
+  },
+  "tabs": {
+    "highlights": "Points forts",
+    "draft": "Dessin 2D",
+    "sheets": "Annotation et présentations",
+    "model": "Modélisation 3D",
+    "files": "Fichiers",
+    "auto": "Automatisation",
+    "all": "Toutes les fonctions"
+  },
+  "features": {
+    "learnMore": "En savoir plus",
+    "label": "Fonctions",
+    "heading": "Un logiciel de CAO complet, aussi dans votre navigateur",
+    "sub": "Commencez par les points forts ou choisissez un thème.",
+    "tabsLabel": "Fonctions par thème"
+  },
+  "f": {
+    "dwg": {
+      "title": "Ouvrir et enregistrer DWG et DXF",
+      "desc": "Directement, sans service de conversion. Enregistrement dans une version de R14 à 2018."
+    },
+    "recover": {
+      "title": "Sauvegardes et récupération",
+      "desc": "Ouvrez les fichiers BAK et SV$ et récupérez les dessins endommagés."
+    },
+    "import": {
+      "title": "Importer depuis d'autres logiciels",
+      "desc": "DGN V7/V8, PDF, STEP, IGES, 3D Studio, OBJ, WMF et points LandXML."
+    },
+    "export": {
+      "title": "Exporter vers des formats 3D",
+      "desc": "STL pour l'impression 3D, STEP et FBX pour d'autres logiciels."
+    },
+    "xref": {
+      "title": "Références externes",
+      "desc": "Attachez d'autres dessins, images et calques sous-jacents PDF, et modifiez-les sur place."
+    },
+    "lines": {
+      "title": "Commandes de dessin",
+      "desc": "Ligne, polyligne, rectangle, polygone, cercle, arc, ellipse et spline."
     },
     "modify": {
       "title": "Modification",
-      "desc": "<code>OFFSET</code>, <code>TRIM</code>, <code>EXTEND</code>, <code>FILLET</code>, <code>BREAK</code>, <code>STRETCH</code>, <code>LENGTHEN</code> — fonctionne sur lignes, arcs, ellipses, polylignes et splines"
+      "desc": "OFFSET, TRIM, EXTEND, FILLET, STRETCH, ARRAY, MIRROR et plus, aussi sur arcs et splines."
     },
-    "transform": {
-      "title": "Transformations",
-      "desc": "<code>ARRAY</code>, <code>MIRROR</code>, <code>MOVE</code>, <code>COPY</code>, <code>ROTATE</code>, <code>SCALE</code>, <code>EXPLODE</code>"
+    "snap": {
+      "title": "Accrochage et repérage",
+      "desc": "Accrochage aux objets, repérage polaire, ortho et saisie d'angles et de distances."
     },
     "hatch": {
       "title": "Hachures",
-      "desc": "<code>HATCH</code> et <code>HATCHEDIT</code> avec édition de motif, d'échelle et d'angle."
+      "desc": "Motifs et remplissages, avec ajustement et modification rapides."
     },
-    "mass": {
-      "title": "Propriétés",
-      "desc": "<code>MASSPROP</code> — surface, périmètre et centre de gravité des entités sélectionnées."
+    "blocks": {
+      "title": "Blocs et blocs dynamiques",
+      "desc": "Créez des blocs avec attributs, paramètres, actions et tables de consultation, et choisissez-les dans la galerie."
+    },
+    "dims": {
+      "title": "Cotation",
+      "desc": "Linéaire, alignée, angulaire, rayon, diamètre et ordonnée, avec styles de cote."
     },
     "text": {
-      "title": "Édition de texte",
-      "desc": "<code>DDEDIT</code> — double-cliquez pour éditer le texte. <code>MTEXT</code>, <code>TEXT</code>, <code>DTEXT</code> avec navigateur de polices."
-    }
-  },
-  "modeling": {
-    "title": "Modélisation <span class=\"accent\">3D</span>",
-    "desc": "Capacités complètes de modélisation 3D avec tessellation des solides ACIS :",
-    "prim": {
-      "title": "Primitives",
-      "desc": "<code>BOX</code>, <code>SPHERE</code>, <code>CYLINDER</code> — solides de base pour la modélisation paramétrique."
+      "title": "Texte, lignes de repère et tableaux",
+      "desc": "Texte et MTEXT, lignes de repère multiples, tableaux et tolérances géométriques."
     },
-    "extrude": {
-      "title": "Extrusion &amp; révolution",
-      "desc": "Solides à partir de profils : <code>EXTRUDE</code> pour l'extrusion linéaire et <code>REVOLVE</code> pour la rotation autour d'un axe."
+    "sheets": {
+      "title": "Présentations et fenêtres",
+      "desc": "Présentations illimitées dans l'espace papier, avec des fenêtres à leur propre échelle."
     },
-    "loft": {
-      "title": "Loft &amp; sweep",
-      "desc": "<code>LOFT</code> entre plusieurs profils, <code>SWEEP</code> le long d'un chemin quelconque."
+    "plot": {
+      "title": "Traçage",
+      "desc": "Styles de tracé CTB et STB ; sur ordinateur vers PDF ou l'imprimante."
     },
-    "array": {
-      "title": "Array 3D",
-      "desc": "<code>ARRAY3D</code> — réseaux rectangulaires ou polaires en 3D."
+    "solids": {
+      "title": "Solides",
+      "desc": "Boîte, sphère et cylindre, extrusion, révolution, balayage, lissage et opérations booléennes."
     },
     "acis": {
-      "title": "Tessellation ACIS",
-      "desc": "Affiche les entités <code>3DSOLID</code>, <code>REGION</code> et <code>BODY</code> — les solides issus de DWG/DXF s'affichent correctement."
+      "title": "3D des DWG correctement affichée",
+      "desc": "Les solides, régions et corps (ACIS) des dessins existants s'affichent correctement."
     },
-    "gpu": {
-      "title": "Accéléré par GPU",
-      "desc": "Rendu basé sur wgpu. Interaction fluide avec de grands modèles, même avec de nombreux solides à la fois."
+    "views": {
+      "title": "Voir sous tous les angles",
+      "desc": "Cube, orbite, orthographique et perspective, et styles visuels du filaire à l'ombré."
+    },
+    "quickcalc": {
+      "title": "QuickCalc et CAL",
+      "desc": "Calculatrice à côté du dessin, avec unités, mémoire et variables."
+    },
+    "mcp": {
+      "title": "Assistant IA via MCP",
+      "desc": "Laissez un assistant IA lire des dessins, dessiner et enregistrer avec contrôle."
+    },
+    "batch": {
+      "title": "Conversion et scripts",
+      "desc": "Convertissez des fichiers sans fenêtre et exécutez des scripts sur tout un dossier."
+    },
+    "plugins": {
+      "title": "Plug-ins",
+      "desc": "Étendez la version de bureau avec des plug-ins, comme Open Infra Studio pour le génie civil."
+    },
+    "web": {
+      "title": "Fonctionne dans le navigateur",
+      "desc": "Sans installation, aussi hors ligne ; vos dessins restent sur votre ordinateur."
+    },
+    "lang": {
+      "title": "23 langues",
+      "desc": "Dont le néerlandais, l'anglais, le français, le turc et l'espagnol."
     }
-  },
-  "annotations": {
-    "title": "<span class=\"accent\">Annotations</span> &amp; cotations",
-    "desc": "Cotation complète, GD&amp;T, leaders, tableaux et mlines — tout avec des gestionnaires de styles et un comportement DIMSTYLE correct (DIMASZ, DIMSCALE, DIMEXO, DIMEXE, …)."
-  },
-  "paperspace": {
-    "title": "Paper space &amp; <span class=\"accent\">mises en page</span>",
-    "layouts": {
-      "title": "Multi-onglets",
-      "desc": "Model space + nombre illimité d'onglets paper space. Position de la caméra et zoom enregistrés par layout."
-    },
-    "viewports": {
-      "title": "Projection viewport",
-      "desc": "Le contenu du modèle est correctement projeté dans les rectangles viewport de paper space. Double-clic pour superposition MSPACE inline."
-    },
-    "vports": {
-      "title": "Préréglages viewport",
-      "desc": "<code>VPORTS</code> — configurations single, 2H, 2V, 4-way."
-    },
-    "styles": {
-      "title": "Styles de tracé",
-      "desc": "<code>PLOTSTYLEPANEL</code> et <code>STYLESMANAGER</code> — éditeur de tables de style de tracé CTB/STB."
-    },
-    "print": {
-      "title": "PRINT",
-      "desc": "Envoyez directement les layouts vers l'imprimante système avec les bons formats de papier issus des PlotSettings embarqués."
-    },
-    "manager": {
-      "title": "Gestionnaire de layouts",
-      "desc": "<code>LAYOUTMANAGER</code> / <code>LAYOUTPANEL</code> — interface graphique pour la gestion des layouts."
-    }
-  },
-  "tech": {
-    "title": "Technologie",
-    "desc": "Entièrement écrit en Rust — sûreté mémoire, performances rapides, compile pour Windows, macOS et Linux. Interface via <a href=\"https://iced.rs\" target=\"_blank\" rel=\"noopener\">iced</a>, rendu GPU via <a href=\"https://wgpu.rs\" target=\"_blank\" rel=\"noopener\">wgpu</a>. DWG/DXF natifs sans verrouillage propriétaire."
   },
   "download": {
-    "title": "Télécharger <span class=\"accent\">v2026.39</span>",
-    "desc": "Publiée en juin 2026. Trois binaires natifs — Windows, macOS (Apple Silicon) et Linux (AppImage). Choisissez celui adapté à votre plateforme et soyez opérationnel en quelques secondes.",
-    "note": "Besoin de compiler depuis les sources ou d'une version antérieure ? Voir <a href=\"https://github.com/HakanSeven12/OpenCADStudio/releases\" target=\"_blank\" rel=\"noopener\">toutes les versions sur GitHub</a> (60 versions à ce jour)."
+    "title": "Télécharger v2026.43",
+    "lead": "Gratuit, sans compte. Pour Windows, macOS et Linux.",
+    "forWindows": "Télécharger pour Windows",
+    "forMac": "Télécharger pour macOS",
+    "forLinux": "Télécharger pour Linux",
+    "metaWindows": "programme d'installation .msi signé",
+    "metaMacArm": ".dmg pour Apple Silicon",
+    "metaLinux": "AppImage, fonctionne sur la plupart des distributions",
+    "browserBtn": "Ouvrir dans le navigateur",
+    "fileExe": "Programme d'installation (.msi)",
+    "fileExeUser": "Portable, sans installation (.exe)",
+    "fileDmgArm": ".dmg (Apple Silicon)",
+    "fileAppImage": "AppImage",
+    "fileSnap": "Snap",
+    "browserNote": "Vous préférez ne rien installer ? L'application <a href=\"https://www.opencadstudio.com/app/\" target=\"_blank\" rel=\"noopener\">fonctionne aussi dans le navigateur</a>.",
+    "label": "Télécharger",
+    "mobileNote": "Open CAD Studio est conçu pour un grand écran. Ouvrez-le sur votre ordinateur, ou essayez-le ici dans le navigateur.",
+    "other": "Autres plateformes"
   },
-  "cta": {
-    "github": "GitHub : HakanSeven12/OpenCADStudio",
-    "issues": "Tickets &amp; retours",
-    "relatedTool": "Voir aussi Open 2D Studio",
-    "starsLine": "étoiles GitHub · application CAO open source construite par un développeur indépendant"
+  "whatsnew": {
+    "ctaChangelog": "Toutes les notes de version",
+    "ctaDemo": "Essayer dans le navigateur",
+    "items": {
+      "blocks": {
+        "title": "Blocs dynamiques",
+        "desc": "Jeux de valeurs, actions d'étirement et d'étirement polaire, tables de consultation à plusieurs sorties et aperçu du résultat."
+      },
+      "calc": {
+        "desc": "Une calculatrice en panneau à côté du dessin, avec unités, mémoire et variables."
+      },
+      "draft": {
+        "title": "Dessin plus rapide",
+        "desc": "EXTEND avec une fenêtre de capture, ajuster les hachures en un clic, ajuster les MLINE et OVERKILL sur la géométrie."
+      },
+      "exchange": {
+        "title": "Meilleurs échanges",
+        "desc": "DGN avec cotes, notes et cellules, PDF avec texte et mot de passe, et export STEP AP214 valide."
+      },
+      "speed": {
+        "title": "Grands dessins plus rapides",
+        "desc": "Moins de calculs pour l'accrochage, les hachures et les propriétés ; le panneau des propriétés est plus de trois fois plus rapide avec 2 000 objets."
+      },
+      "auto": {
+        "title": "Scripts sans fenêtre",
+        "desc": "Exécutez des scripts sur de nombreux dessins à la fois ; un assistant IA lit désormais aussi les blocs et attributs."
+      }
+    },
+    "label": "Nouveau dans la v2026.43",
+    "title": "Blocs dynamiques, <span>QuickCalc et meilleurs échanges</span>",
+    "desc": "La version du 25 octobre 2026 rend les blocs dynamiques presque complets, ajoute une calculatrice à l'écran et lit mieux les fichiers DGN, PDF et STEP. Les grands dessins sont plus rapides."
+  },
+  "faq": {
+    "files": {
+      "q": "Quels fichiers puis-je ouvrir ?",
+      "a": "Les DWG et DXF d'AutoCAD, BricsCAD et d'autres logiciels de CAO, les sauvegardes (BAK, SV$), et par importation DGN, PDF, STEP, IGES, 3D Studio, OBJ, WMF et des points LandXML."
+    },
+    "install": {
+      "q": "Dois-je installer quelque chose ?",
+      "a": "Non. La version web fonctionne directement dans votre navigateur, puis aussi hors ligne. Pour tracer en PDF ou vers l'imprimante, les plug-ins et les scripts, utilisez la version de bureau."
+    },
+    "cost": {
+      "q": "Combien ça coûte ?",
+      "a": "Rien. Open CAD Studio est open source sous licence GPL-3.0, sans compte ni abonnement. Le développeur demande un don volontaire."
+    },
+    "format": {
+      "q": "Dans quel format mon travail est-il enregistré ?",
+      "a": "En DWG ou DXF, dans la version de votre choix de R14 à 2018, pour que chacun puisse ouvrir votre dessin avec un autre logiciel de CAO. Dans le navigateur, vous téléchargez le fichier."
+    },
+    "os": {
+      "q": "Sur quels systèmes fonctionne-t-il ?",
+      "a": "Dans tout navigateur moderne, sous Windows (installateur ou portable), Linux (AppImage, Flatpak, snap) et macOS avec Apple Silicon. La version macOS n'est pas encore notariée par Apple ; au premier lancement, autorisez-la dans les Réglages Système."
+    },
+    "practice": {
+      "q": "Est-il adapté à la pratique ?",
+      "a": "Oui : vous travaillez avec les mêmes fichiers, calques, blocs, styles de cote, présentations et styles de tracé que dans AutoCAD ou BricsCAD, et les commandes portent les mêmes noms. Le projet est encore en plein développement : sauvegardez vos dessins importants."
+    },
+    "ai": {
+      "q": "Que peut en faire un assistant IA ?",
+      "a": "Lancez la version de bureau avec <code>--mcp</code> et un assistant IA peut lire le dessin ouvert, exécuter des commandes et vérifier qu'un fichier enregistré est correct. La version web a aussi un canal de commande pour les scripts."
+    },
+    "who": {
+      "q": "Qui développe Open CAD Studio ?",
+      "a": "Hakan Seven, en tant que projet open source indépendant avec les contributions d'un groupe croissant de développeurs. La fondation OpenAEC le soutient et développe des plug-ins, comme Open Infra Studio."
+    },
+    "web": {
+      "q": "Quelle différence entre la version navigateur et la version de bureau ?",
+      "a": "Le dessin est identique. La version de bureau ouvre les DWG et DXF d'un double-clic, affiche des miniatures dans l'explorateur, trace en PDF et vers l'imprimante, et charge plug-ins et scripts. Dans le navigateur, vous choisissez vos fichiers et les téléchargez à l'enregistrement."
+    },
+    "feedback": {
+      "q": "Où signaler un bug ou une idée ?",
+      "a": "Dans les <a href=\"https://github.com/HakanSeven12/OpenCADStudio/issues\" target=\"_blank\" rel=\"noopener\">issues</a> ou les <a href=\"https://github.com/HakanSeven12/OpenCADStudio/discussions\" target=\"_blank\" rel=\"noopener\">discussions</a> sur GitHub. Les traductions et plug-ins sont aussi bienvenus."
+    },
+    "heading": "Questions fréquentes"
+  },
+  "tech": {
+    "rust": {
+      "desc": "Tout le logiciel est écrit en Rust : rapide et sûr en mémoire."
+    },
+    "wgpu": {
+      "desc": "Rendu 2D et 3D par la carte graphique, sur chaque plateforme."
+    },
+    "iced": {
+      "desc": "Ruban, panneaux et dialogues dans une seule interface Rust pour bureau et web."
+    },
+    "wasm": {
+      "desc": "Le même code tourne dans le navigateur, en PWA qui fonctionne aussi hors ligne."
+    },
+    "dwg": {
+      "title": "Lecteur DWG/DXF maison",
+      "desc": "Lire et écrire DWG et DXF sans bibliothèques tierces sous licence."
+    },
+    "mcp": {
+      "desc": "Un canal de commande pour assistants IA, scripts et conversion sans fenêtre."
+    },
+    "heading": "Technologie",
+    "sub": "Pour ceux qui veulent savoir comment c'est construit."
   },
   "releases": {
-    "title": "Notes de version",
-    "desc": "Chaque version publiée d'Open CAD Studio, récupérée en direct depuis GitHub.",
-    "loading": "Chargement des versions…",
     "showAll": "Afficher toutes les versions",
-    "showLess": "Afficher moins",
-    "github": "Voir toutes les versions sur GitHub",
-    "statReleases": "versions au total",
-    "statLatest": "dernière version",
-    "statStars": "étoiles GitHub",
-    "latest": "Dernière",
-    "viewGitHub": "Voir sur GitHub"
+    "showLess": "Afficher seulement les trois dernières",
+    "github": "Toutes les versions sur GitHub"
   }
 }

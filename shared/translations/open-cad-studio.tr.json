@@ -1,167 +1,285 @@
 {
   "header": {
-    "label": "Topluluk projesi · OpenAEC ekosistemi",
     "title": "Open <span class=\"accent\">CAD</span> Studio",
-    "desc": "Rust ile inşa edilmiş, GPU hızlandırmalı render içeren tam donanımlı <strong>2D + 3D CAD uygulaması</strong>. Yerel <strong>DWG ve DXF</strong> okuma ve yazma, paper space, ACIS solids, ölçüler, layout'lar. Hakan Seven'in OpenAEC Foundation tarafından tanınan ve tanıtılan açık kaynak topluluk projesi.",
-    "community": "Topluluk projesi",
-    "beta": "Beta · v2026.39",
-    "demoBtn": "Tarayıcıda canlı demo",
-    "downloadBtn": "v2026.39 indir",
-    "sourceBtn": "Kaynak kodu görüntüle"
+    "demoBtn": "Tarayıcıda aç",
+    "downloadBtn": "İndir",
+    "sourceBtn": "Kaynak kodu",
+    "proof2": "Tarayıcı, Windows, macOS, Linux",
+    "proof3": "23 dil",
+    "heroAlt": "Open CAD Studio: duvarlar, kapılar, mobilya ve aks çizgileriyle bir ofis biriminin kat planı; şerit ve özellikler paneliyle",
+    "label": "CAD · topluluk projesi",
+    "tagline": "DWG ve DXF açın, çizin ve kaydedin; lisans ücreti yok",
+    "desc": "Bir meslektaşınızdan veya danışmandan gelen çizimi açın, 2B ya da 3B olarak güncelleyin ve yeniden DWG veya DXF olarak kaydedin. Doğrudan tarayıcıda ya da bilgisayarınızda uygulama olarak çalışır."
   },
-  "screenshot": {
-    "caption": "Open CAD Studio iş başında — bir yol tasarımı ve temel onarımı yapısal çizimi (PUNTNIVEAU -14,5 m NAP) DWG çizimleri"
+  "meta": {
+    "description": "DWG ve DXF dosyalarını doğrudan açıp kaydeden ücretsiz, açık kaynaklı CAD uygulaması: 2B çizim, paftalar ve çıktı, 3B modelleme. Windows, macOS, Linux ve tarayıcı için.",
+    "title": "Open CAD Studio — OpenAEC Foundation"
   },
-  "author": {
-    "desc": "Bağımsız açık kaynak geliştirici. Mart 2026'dan beri Open CAD Studio'yu geliştiriyor.<br><a href=\"https://github.com/HakanSeven12\" target=\"_blank\" rel=\"noopener\">github.com/HakanSeven12 &rarr;</a>"
+  "hl": {
+    "layers": {
+      "alt": "Kat planı üzerinde katman yöneticisi; duvar, tarama, kapı, pencere, mobilya, aks ve metin katmanlarıyla",
+      "kicker": "2B çizim",
+      "title": "Alıştığınız gibi çizin",
+      "desc": "Çizgiler, çoklu çizgiler, yaylar, taramalar, bloklar ve katmanlar; nesne kenetleme ve OFFSET, TRIM, FILLET gibi komut satırı komutlarıyla. AutoCAD veya BricsCAD kullanıyorsanız hemen alışırsınız."
+    },
+    "layout": {
+      "alt": "Kağıt alanında kat planına bakan bir görünüm penceresi ve çizim başlığıyla pafta",
+      "kicker": "Paftalar",
+      "title": "Modelden çizim paftasına",
+      "desc": "Tasarımınızı görünüm pencereleriyle bir paftaya yerleştirin, ölçeği seçin ve CTB veya STB çizim stilleriyle çıktı alın. Masaüstünde PDF'e ya da doğrudan yazıcıya çıktı alırsınız."
+    },
+    "model": {
+      "alt": "İki döşeme, kolonlar, kirişler, bir kutu ve bir küre içeren taşıyıcı sistemin kenarlı gölgeli 3B modeli",
+      "kicker": "3B modelleme",
+      "title": "Aynı uygulamada 3B de",
+      "desc": "Kutu, silindir ve küre oluşturun, profilleri ekstrüde edin veya döndürün, ya da süpürme veya loft yapın. Görünüm küpüyle modele her açıdan, tel kafes veya gölgeli olarak bakın."
+    },
+    "calc": {
+      "alt": "Kat planının yanında tuş takımı, bellek, birimler ve değişkenlerle QuickCalc hesap makinesi",
+      "kicker": "Hesaplama",
+      "title": "Uygulamadan çıkmadan hesaplayın",
+      "desc": "QuickCalc çiziminizin yanında durur: birimler, bellek ve kendi değişkenlerinizle standart ve bilimsel hesap makinesi. CAL ile komut satırında noktalar ve mesafelerle hesap yaparsınız."
+    }
   },
-  "what": {
-    "title": "Open CAD Studio nedir?",
-    "desc": "Open CAD Studio, AEC araçlarındaki büyük bir boşluğu dolduran bağımsız bir açık kaynak CAD projesidir: Autodesk, Bricsys veya diğer ticari satıcılara bağımlı olmayan <strong>modern, performanslı, yerel olarak DWG/DXF uyumlu bir CAD uygulaması</strong>. Tamamen Rust'ta yazılmış, wgpu aracılığıyla GPU hızlandırmalı render ve iced ile etkileşimli bir UI.",
-    "desc2": "OpenAEC Foundation, Open CAD Studio'yu ekosistemin doğal bir uzantısı olarak görüyor. Proje bizim tarafımızdan geliştirilmedi, ancak misyonumuza uyuyor: tüm AEC zinciri için açık kaynak yazılımı tanıtmak. Aktif olarak bağlantı veriyor ve işbirliğini teşvik ediyoruz.",
-    "license": "<strong>Lisans</strong> GPL-3.0 (not: kütüphane kullanımı için daha izin verici olan kendi LGPL-3.0 araçlarımızdan farklıdır)."
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "download": "İndir",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
   },
-  "formats": {
-    "title": "Dosya formatları — <span class=\"accent\">yerel DWG ve DXF</span>",
-    "desc": "Belki de en önemli özellik: Open CAD Studio, R13 ile R2018 arasındaki tüm sürümlerde DWG ve DXF'i yerel olarak okur ve yazar. Dönüştürücü yok, geçici çözüm yok, Autodesk kütüphanesi yok.",
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "draft": "2B çizim",
+    "sheets": "Açıklama ve paftalar",
+    "model": "3B modelleme",
+    "files": "Dosyalar",
+    "auto": "Otomasyon",
+    "all": "Tüm özellikler"
+  },
+  "features": {
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Eksiksiz bir CAD uygulaması, tarayıcınızda da",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
     "dwg": {
-      "title": "DWG (R13–R2018)",
-      "desc": "DWG dosyalarının yerel okuma ve yazımı — endüstri standardı format. Üçüncü taraf kütüphane lisansı yok."
+      "title": "DWG ve DXF açma ve kaydetme",
+      "desc": "Dönüştürme hizmeti olmadan, doğrudan. R14'ten 2018'e kadar bir sürümde kaydedin."
     },
-    "dxf": {
-      "title": "DXF (R13–R2018)",
-      "desc": "Modern sürümler dahil tam DXF okuma/yazma. AutoCAD, BricsCAD, LibreCAD ve DXF destekleyen herhangi bir CAD uygulamasıyla uyumlu."
+    "recover": {
+      "title": "Yedekler ve kurtarma",
+      "desc": "BAK ve SV$ dosyalarını açın, hasarlı çizimleri kurtarın."
     },
-    "stl": {
-      "title": "STL / STEP / OBJ",
-      "desc": "3D baskı ve CAM için STL ve STEP AP203'e dışa aktarma. Diğer kaynaklardan 3D modeller için OBJ içe aktarma."
+    "import": {
+      "title": "Diğer programlardan içe aktarma",
+      "desc": "DGN V7/V8, PDF, STEP, IGES, 3D Studio, OBJ, WMF ve LandXML noktaları."
     },
-    "pdf": {
-      "title": "PDF plot",
-      "desc": "Layout'ları doğrudan PDF'e plotlayın — gömülü PlotSettings'ten okunan doğru kağıt boyutlarıyla."
-    },
-    "wblock": {
-      "title": "WBLOCK",
-      "desc": "Seçilen elemanları veya bir bloğu yeniden kullanım için harici bir dosyaya yazın."
+    "export": {
+      "title": "3B biçimlerine dışa aktarma",
+      "desc": "3B baskı için STL, diğer programlar için STEP ve FBX."
     },
     "xref": {
-      "title": "XREF",
-      "desc": "Harici referanslar (xrefs) ekleme, yeniden yükleme ve otomatik çözme — tıpkı AutoCAD gibi."
-    }
-  },
-  "drafting": {
-    "title": "2D <span class=\"accent\">çizim</span>",
-    "desc": "Profesyonel bir CAD uygulamasından beklediğiniz tüm komutları içeren eksiksiz 2D çizim paketi:",
-    "geom": {
-      "title": "Temel geometri",
-      "desc": "<code>LINE</code>, <code>PLINE</code>, <code>RECTANG</code>, <code>POLYGON</code>, <code>CIRCLE</code>, <code>ARC</code>, <code>ELLIPSE</code>, <code>SPLINE</code>"
+      "title": "Dış başvurular",
+      "desc": "Başka çizimleri, görselleri ve PDF altlıklarını bağlayın, yerinde düzenleyin."
+    },
+    "lines": {
+      "title": "Çizim komutları",
+      "desc": "Çizgi, çoklu çizgi, dikdörtgen, çokgen, daire, yay, elips ve spline."
     },
     "modify": {
-      "title": "Değiştir",
-      "desc": "<code>OFFSET</code>, <code>TRIM</code>, <code>EXTEND</code>, <code>FILLET</code>, <code>BREAK</code>, <code>STRETCH</code>, <code>LENGTHEN</code> — çizgiler, yaylar, elipsler, polylines ve spline'larda çalışır"
+      "title": "Düzenleme",
+      "desc": "OFFSET, TRIM, EXTEND, FILLET, STRETCH, ARRAY, MIRROR ve daha fazlası; yaylarda ve spline'larda da."
     },
-    "transform": {
-      "title": "Dönüşümler",
-      "desc": "<code>ARRAY</code>, <code>MIRROR</code>, <code>MOVE</code>, <code>COPY</code>, <code>ROTATE</code>, <code>SCALE</code>, <code>EXPLODE</code>"
+    "snap": {
+      "title": "Kenetleme ve izleme",
+      "desc": "Nesne kenetleme, kutupsal izleme, orto ve açı ile mesafe girişi."
     },
     "hatch": {
-      "title": "Hatch",
-      "desc": "Desen, ölçek ve açı düzenlemesi ile <code>HATCH</code> ve <code>HATCHEDIT</code>."
+      "title": "Taramalar",
+      "desc": "Desenler ve dolgu; hızlı kırpma ve düzenleme ile."
     },
-    "mass": {
-      "title": "Özellikler",
-      "desc": "<code>MASSPROP</code> — seçilen elemanların alanı, çevresi ve ağırlık merkezi."
+    "blocks": {
+      "title": "Bloklar ve dinamik bloklar",
+      "desc": "Öznitelikler, parametreler, eylemler ve arama tablolarıyla bloklar oluşturun ve galeriden seçin."
+    },
+    "dims": {
+      "title": "Ölçülendirme",
+      "desc": "Doğrusal, hizalı, açısal, yarıçap, çap ve koordinat; ölçü stilleriyle."
     },
     "text": {
-      "title": "Metin düzenleme",
-      "desc": "<code>DDEDIT</code> — metin düzenlemek için çift tıklayın. Font tarayıcısı ile <code>MTEXT</code>, <code>TEXT</code>, <code>DTEXT</code>."
-    }
-  },
-  "modeling": {
-    "title": "3D <span class=\"accent\">modelleme</span>",
-    "desc": "ACIS solids tessellation ile tam 3D modelleme yetenekleri:",
-    "prim": {
-      "title": "Primitives",
-      "desc": "<code>BOX</code>, <code>SPHERE</code>, <code>CYLINDER</code> — parametrik modelleme için temel solids."
+      "title": "Metin, işaret çizgileri ve tablolar",
+      "desc": "Metin ve MTEXT, çoklu işaret çizgileri, tablolar ve geometrik toleranslar."
     },
-    "extrude": {
-      "title": "Extrude ve revolve",
-      "desc": "Profil tabanlı solids: doğrusal extrusion için <code>EXTRUDE</code> ve eksen etrafında döndürme için <code>REVOLVE</code>."
+    "sheets": {
+      "title": "Paftalar ve görünüm pencereleri",
+      "desc": "Kağıt alanında sınırsız pafta; her biri kendi ölçeğinde görünüm pencereleri."
     },
-    "loft": {
-      "title": "Loft ve sweep",
-      "desc": "Birden fazla profil arasında <code>LOFT</code>, herhangi bir yol boyunca <code>SWEEP</code>."
+    "plot": {
+      "title": "Çıktı alma",
+      "desc": "CTB ve STB çizim stilleri; masaüstünde PDF'e veya yazıcıya."
     },
-    "array": {
-      "title": "3D Array",
-      "desc": "<code>ARRAY3D</code> — 3D'de dikdörtgensel veya kutupsal diziler."
+    "solids": {
+      "title": "Katılar",
+      "desc": "Kutu, küre ve silindir; ekstrüzyon, döndürme, süpürme, loft ve Boole işlemleri."
     },
     "acis": {
-      "title": "ACIS tessellation",
-      "desc": "<code>3DSOLID</code>, <code>REGION</code> ve <code>BODY</code> elemanlarını render eder — DWG/DXF'ten gelen solids doğru gösterilir."
+      "title": "DWG'deki 3B doğru görüntülenir",
+      "desc": "Mevcut çizimlerdeki katılar, bölgeler ve gövdeler (ACIS) düzgün gösterilir."
     },
-    "gpu": {
-      "title": "GPU hızlandırmalı",
-      "desc": "wgpu tabanlı render. Büyük modellerle akıcı çalışma, aynı anda birçok solid olsa bile."
+    "views": {
+      "title": "Her açıdan bakma",
+      "desc": "Görünüm küpü, yörünge, ortografik ve perspektif; tel kafesten gölgeliye görsel stiller."
+    },
+    "quickcalc": {
+      "title": "QuickCalc ve CAL",
+      "desc": "Çizimin yanında birimler, bellek ve değişkenlerle hesap makinesi."
+    },
+    "mcp": {
+      "title": "MCP ile yapay zekâ asistanı",
+      "desc": "Bir yapay zekâ asistanının çizimleri okumasına, çizmesine ve denetimli kaydetmesine izin verin."
+    },
+    "batch": {
+      "title": "Dönüştürme ve betikler",
+      "desc": "Pencere açmadan dosya dönüştürün ve komut betiklerini bütün bir klasörde çalıştırın."
+    },
+    "plugins": {
+      "title": "Eklentiler",
+      "desc": "Masaüstü sürümünü, inşaat mühendisliği için Open Infra Studio gibi eklentilerle genişletin."
+    },
+    "web": {
+      "title": "Tarayıcıda çalışır",
+      "desc": "Kurulum gerekmez, çevrimdışı da çalışır; çizimleriniz kendi bilgisayarınızda kalır."
+    },
+    "lang": {
+      "title": "23 dil",
+      "desc": "Hollandaca, İngilizce, Fransızca, Türkçe ve İspanyolca dahil."
     }
-  },
-  "annotations": {
-    "title": "<span class=\"accent\">Açıklamalar</span> ve ölçüler",
-    "desc": "Tam boyutlandırma, GD&T, leaders, tablolar ve mlines — tümü stil yöneticileri ve doğru DIMSTYLE davranışı (DIMASZ, DIMSCALE, DIMEXO, DIMEXE, …) ile."
-  },
-  "paperspace": {
-    "title": "Paper space ve <span class=\"accent\">layout'lar</span>",
-    "layouts": {
-      "title": "Multi-tab layout",
-      "desc": "Model space + sınırsız paper space sekmeleri. Kamera konumu ve zoom layout başına kaydedilir."
-    },
-    "viewports": {
-      "title": "Viewport projection",
-      "desc": "Model içeriği paper-space viewport dikdörtgenlerinde doğru şekilde yansıtılır. Inline MSPACE overlay için çift tıklayın."
-    },
-    "vports": {
-      "title": "Viewport ön ayarları",
-      "desc": "<code>VPORTS</code> — single, 2H, 2V, 4-way yapılandırmaları."
-    },
-    "styles": {
-      "title": "Plot stilleri",
-      "desc": "<code>PLOTSTYLEPANEL</code> ve <code>STYLESMANAGER</code> — CTB/STB plot style tablo editörü."
-    },
-    "print": {
-      "title": "PRINT",
-      "desc": "Gömülü PlotSettings'ten doğru kağıt boyutlarıyla layout'ları doğrudan sistem yazıcısına gönderin."
-    },
-    "manager": {
-      "title": "Layout yöneticisi",
-      "desc": "<code>LAYOUTMANAGER</code> / <code>LAYOUTPANEL</code> — layout yönetimi için GUI."
-    }
-  },
-  "tech": {
-    "title": "Teknoloji",
-    "desc": "Tamamen Rust'ta yazılmıştır — bellek güvenli, hızlı, Windows, macOS ve Linux için derlenir. UI <a href=\"https://iced.rs\" target=\"_blank\" rel=\"noopener\">iced</a> aracılığıyla, GPU render <a href=\"https://wgpu.rs\" target=\"_blank\" rel=\"noopener\">wgpu</a> aracılığıyla. Tedarikçi bağımlılığı olmadan yerel DWG/DXF."
   },
   "download": {
-    "title": "<span class=\"accent\">v2026.39</span> indir",
-    "desc": "Haziran 2026'da yayımlandı. Üç yerel binary — Windows, macOS (Apple Silicon) ve Linux (AppImage). Platformunuza uygun olanı seçin ve saniyeler içinde çalışmaya başlayın.",
-    "note": "Kaynaktan derlemeniz veya eski bir sürüm almanız mı gerekiyor? <a href=\"https://github.com/HakanSeven12/OpenCADStudio/releases\" target=\"_blank\" rel=\"noopener\">GitHub'daki tüm sürümlere</a> bakın (şimdiye kadar 60 sürüm)."
+    "title": "v2026.43 indir",
+    "lead": "Ücretsiz, hesap gerekmez. Windows, macOS ve Linux için.",
+    "forWindows": "Windows için indir",
+    "forMac": "macOS için indir",
+    "forLinux": "Linux için indir",
+    "metaWindows": "imzalı .msi yükleyici",
+    "metaMacArm": "Apple Silicon için .dmg",
+    "metaLinux": "AppImage, çoğu dağıtımda çalışır",
+    "browserBtn": "Tarayıcıda aç",
+    "fileExe": "Yükleyici (.msi)",
+    "fileExeUser": "Taşınabilir, kurulumsuz (.exe)",
+    "fileDmgArm": ".dmg (Apple Silicon)",
+    "fileAppImage": "AppImage",
+    "fileSnap": "Snap",
+    "browserNote": "Hiçbir şey kurmak istemiyor musunuz? Uygulama <a href=\"https://www.opencadstudio.com/app/\" target=\"_blank\" rel=\"noopener\">tarayıcıda da çalışır</a>.",
+    "label": "İndir",
+    "mobileNote": "Open CAD Studio büyük ekran için yapılmıştır. Bilgisayarınızda açın veya burada tarayıcıda deneyin.",
+    "other": "Diğer platformlar"
   },
-  "cta": {
-    "github": "GitHub: HakanSeven12/OpenCADStudio",
-    "issues": "Sorunlar ve geri bildirim",
-    "relatedTool": "Ayrıca Open 2D Studio'ya bakın",
-    "starsLine": "GitHub yıldızı · bağımsız bir geliştirici tarafından geliştirilen açık kaynaklı CAD uygulaması"
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDemo": "Tarayıcıda deneyin",
+    "items": {
+      "blocks": {
+        "title": "Dinamik bloklar",
+        "desc": "Değer kümeleri, uzatma ve kutupsal uzatma eylemleri, çok çıktılı arama tabloları ve sonucun önizlemesi."
+      },
+      "calc": {
+        "desc": "Çizimin yanında panel olarak birimler, bellek ve değişkenler içeren bir hesap makinesi."
+      },
+      "draft": {
+        "title": "Daha hızlı çizim",
+        "desc": "Kesişen kutuyla EXTEND, taramaları tek tıkla kırpma, MLINE kırpma ve geometriye dayalı OVERKILL."
+      },
+      "exchange": {
+        "title": "Daha iyi veri alışverişi",
+        "desc": "Ölçüler, notlar ve hücrelerle DGN, metin ve parolayla PDF, geçerli STEP AP214 dışa aktarımı."
+      },
+      "speed": {
+        "title": "Büyük çizimler daha hızlı",
+        "desc": "Kenetleme, tarama ve özelliklerde daha az hesaplama; 2.000 nesnede özellikler paneli üç kattan fazla hızlı."
+      },
+      "auto": {
+        "title": "Penceresiz betikler",
+        "desc": "Komut betiklerini aynı anda birçok çizimde çalıştırın; yapay zekâ asistanı artık blokları ve öznitelikleri de okuyor."
+      }
+    },
+    "label": "v2026.43 sürümünde yeni",
+    "title": "Dinamik bloklar, <span>QuickCalc ve daha iyi veri alışverişi</span>",
+    "desc": "25 Ekim 2026 sürümü dinamik blokları neredeyse tamamlıyor, ekrana bir hesap makinesi ekliyor ve DGN, PDF ve STEP dosyalarını daha iyi okuyor. Büyük çizimler daha hızlı çalışıyor."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "AutoCAD, BricsCAD ve diğer CAD programlarından DWG ve DXF, yedekler (BAK, SV$) ve içe aktarma yoluyla DGN, PDF, STEP, IGES, 3D Studio, OBJ, WMF ile LandXML noktaları."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Hayır. Web sürümü doğrudan tarayıcınızda çalışır ve sonra çevrimdışı da kullanılabilir. PDF'e veya yazıcıya çıktı, eklentiler ve betikler için masaüstü sürümünü kullanın."
+    },
+    "cost": {
+      "q": "Ücreti nedir?",
+      "a": "Hiçbir şey. Open CAD Studio, GPL-3.0 lisansıyla açık kaynaklıdır; hesap veya abonelik gerekmez. Geliştirici gönüllü bağış ister."
+    },
+    "format": {
+      "q": "Çalışmam hangi dosya biçiminde kaydedilir?",
+      "a": "R14'ten 2018'e kadar seçtiğiniz sürümde DWG veya DXF olarak; böylece başka bir CAD programı olan herkes çiziminizi açabilir. Tarayıcıda dosyayı indirirsiniz."
+    },
+    "os": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Her modern tarayıcıda, Windows'ta (yükleyici veya taşınabilir), Linux'ta (AppImage, Flatpak, snap) ve Apple Silicon'lu macOS'ta. macOS sürümü henüz Apple tarafından onaylanmadı; ilk açılışta Sistem Ayarları'ndan izin verin."
+    },
+    "practice": {
+      "q": "Günlük pratiğe uyuyor mu?",
+      "a": "Evet: AutoCAD veya BricsCAD'deki aynı dosyalar, katmanlar, bloklar, ölçü stilleri, paftalar ve çizim stilleriyle çalışırsınız; komutların adları da aynıdır. Proje hâlâ aktif geliştirme aşamasında: önemli çizimlerinizi yedekleyin."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "Masaüstü sürümünü <code>--mcp</code> ile başlatın; yapay zekâ asistanı açık çizimi okuyabilir, komut çalıştırabilir ve kaydedilen dosyanın doğruluğunu denetleyebilir. Web sürümünde de betikler için bir denetim kanalı var."
+    },
+    "who": {
+      "q": "Open CAD Studio'yu kim geliştiriyor?",
+      "a": "Hakan Seven; büyüyen bir geliştirici grubunun katkılarıyla bağımsız bir açık kaynak projesi olarak. OpenAEC Foundation projeyi destekliyor ve Open Infra Studio gibi eklentiler geliştiriyor."
+    },
+    "web": {
+      "q": "Tarayıcı ve masaüstü sürümleri arasındaki fark nedir?",
+      "a": "Çizim aynıdır. Masaüstü sürümü DWG ve DXF'i çift tıkla açar, dosya yöneticisinde küçük resimler gösterir, PDF'e ve yazıcıya çıktı alır, eklenti ve betik yükler. Tarayıcıda dosyaları kendiniz seçer, kaydederken indirirsiniz."
+    },
+    "feedback": {
+      "q": "Bir hatayı veya fikri nereye bildiririm?",
+      "a": "GitHub'daki <a href=\"https://github.com/HakanSeven12/OpenCADStudio/issues\" target=\"_blank\" rel=\"noopener\">issues</a> veya <a href=\"https://github.com/HakanSeven12/OpenCADStudio/discussions\" target=\"_blank\" rel=\"noopener\">tartışmalar</a> bölümünde. Çeviriler ve eklentiler de memnuniyetle karşılanır."
+    },
+    "heading": "Sık sorulan sorular"
+  },
+  "tech": {
+    "rust": {
+      "desc": "Uygulamanın tamamı Rust ile yazıldı: hızlı ve bellek açısından güvenli."
+    },
+    "wgpu": {
+      "desc": "Her platformda ekran kartı üzerinden 2B ve 3B görüntüleme."
+    },
+    "iced": {
+      "desc": "Masaüstü ve web için tek bir Rust arayüzünde şerit, paneller ve iletişim kutuları."
+    },
+    "wasm": {
+      "desc": "Aynı kod tarayıcıda, çevrimdışı da çalışan bir PWA olarak çalışır."
+    },
+    "dwg": {
+      "title": "Kendi DWG/DXF okuyucusu",
+      "desc": "Lisanslı üçüncü taraf kitaplıklar olmadan DWG ve DXF okuma ve yazma."
+    },
+    "mcp": {
+      "desc": "Yapay zekâ asistanları, betikler ve penceresiz dönüştürme için bir denetim kanalı."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
   },
   "releases": {
-    "title": "Sürüm notları",
-    "desc": "Open CAD Studio'nun her yayınlanan sürümü, doğrudan GitHub'dan alınır.",
-    "loading": "Sürümler yükleniyor…",
     "showAll": "Tüm sürümleri göster",
-    "showLess": "Daha az göster",
-    "github": "GitHub'daki tüm sürümleri görüntüle",
-    "statReleases": "toplam sürüm",
-    "statLatest": "en son sürüm",
-    "statStars": "GitHub yıldızı",
-    "latest": "En son",
-    "viewGitHub": "GitHub'da görüntüle"
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }

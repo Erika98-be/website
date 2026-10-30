@@ -1,167 +1,285 @@
 {
   "header": {
-    "label": "Community project · OpenAEC ecosystem",
     "title": "Open <span class=\"accent\">CAD</span> Studio",
-    "desc": "A full-featured <strong>2D + 3D CAD application</strong> built in Rust with GPU-accelerated rendering. Native <strong>DWG &amp; DXF</strong> read and write, paper space, ACIS solids, dimensions, layouts. An open source community project by Hakan Seven, recognized and promoted by the OpenAEC Foundation.",
-    "community": "Community project",
-    "beta": "Beta · v2026.39",
-    "demoBtn": "Live demo in your browser",
-    "downloadBtn": "Download v2026.39",
-    "sourceBtn": "View source"
+    "demoBtn": "Open in browser",
+    "downloadBtn": "Download",
+    "sourceBtn": "Source code",
+    "proof2": "Browser, Windows, macOS, Linux",
+    "proof3": "23 languages",
+    "heroAlt": "Open CAD Studio: floor plan of an office unit with walls, doors, furniture and grid lines, with the ribbon and the properties panel",
+    "label": "CAD · community project",
+    "tagline": "Open, draw and save DWG and DXF, without licence fees",
+    "desc": "Open a drawing from a colleague or consultant, update it in 2D or 3D and save it again as DWG or DXF. Works straight in the browser, or as an app on your computer."
   },
-  "screenshot": {
-    "caption": "Open CAD Studio in action — DWG drawings of a road design and a foundation repair structural drawing (PUNTNIVEAU -14.5 m NAP)"
+  "meta": {
+    "description": "Free, open-source CAD app that opens and saves DWG and DXF directly: 2D drafting, layouts and plotting, and 3D modelling. For Windows, macOS, Linux and the browser.",
+    "title": "Open CAD Studio — OpenAEC Foundation"
   },
-  "author": {
-    "desc": "Independent open-source developer. Building Open CAD Studio since March 2026.<br><a href=\"https://github.com/HakanSeven12\" target=\"_blank\" rel=\"noopener\">github.com/HakanSeven12 &rarr;</a>"
+  "hl": {
+    "layers": {
+      "alt": "Layer manager over a floor plan, with layers for walls, hatching, doors, windows, furniture, grid and text",
+      "kicker": "2D drafting",
+      "title": "Draw the way you are used to",
+      "desc": "Lines, polylines, arcs, hatches, blocks and layers, with object snaps and command-line commands such as OFFSET, TRIM and FILLET. If you work with AutoCAD or BricsCAD, you will find your way straight away."
+    },
+    "layout": {
+      "alt": "Paper space layout with a viewport on the floor plan and the drawing title",
+      "kicker": "Layouts",
+      "title": "From model to drawing sheet",
+      "desc": "Place your design on a sheet with viewports, choose the scale and plot with CTB or STB plot styles. On the desktop you plot to PDF or straight to the printer."
+    },
+    "model": {
+      "alt": "3D model of a structure with two floors, columns, beams, a box and a sphere, shaded with edges",
+      "kicker": "3D modelling",
+      "title": "3D too, in the same app",
+      "desc": "Create boxes, cylinders and spheres, extrude and revolve profiles, or make a sweep or loft. View the model from any angle with the view cube, as wireframe or shaded."
+    },
+    "calc": {
+      "alt": "QuickCalc calculator next to a floor plan, with keypad, memory, units and variables",
+      "kicker": "Calculation",
+      "title": "Calculate without leaving the app",
+      "desc": "QuickCalc sits next to your drawing: a standard and a scientific calculator with units, memory and your own variables. With CAL you calculate with points and distances on the command line."
+    }
   },
-  "what": {
-    "title": "What is Open CAD Studio?",
-    "desc": "Open CAD Studio is an independent open-source CAD project filling a major gap in AEC tooling: a <strong>modern, performant, native DWG/DXF-compatible CAD application</strong> that doesn't depend on Autodesk, Bricsys or other commercial vendors. Entirely written in Rust, with GPU-accelerated rendering via wgpu and an interactive UI in iced.",
-    "desc2": "The OpenAEC Foundation views Open CAD Studio as a natural addition to the ecosystem. The project isn't developed by us, but it fits our mission: promoting open source software for the entire AEC chain. We link to it actively and encourage collaboration.",
-    "license": "<strong>License</strong> GPL-3.0 (note: different from our own LGPL-3.0 tools, which is more permissive for library use)."
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "download": "Download",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
   },
-  "formats": {
-    "title": "File formats — <span class=\"accent\">native DWG &amp; DXF</span>",
-    "desc": "Perhaps the most important feature: Open CAD Studio reads and writes DWG and DXF natively, across all versions from R13 through R2018. No converters, no workarounds, no Autodesk libraries.",
+  "tabs": {
+    "highlights": "Highlights",
+    "draft": "2D drafting",
+    "sheets": "Annotation and layouts",
+    "model": "3D modelling",
+    "files": "Files",
+    "auto": "Automation",
+    "all": "All features"
+  },
+  "features": {
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "A complete CAD app, in your browser too",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
     "dwg": {
-      "title": "DWG (R13–R2018)",
-      "desc": "Native reading and writing of DWG files — the de-facto industry-standard format. Without third-party library licenses."
+      "title": "Open and save DWG and DXF",
+      "desc": "Directly, without a conversion service. Save in any version from R14 to 2018."
     },
-    "dxf": {
-      "title": "DXF (R13–R2018)",
-      "desc": "Full DXF read/write including modern versions. Compatible with AutoCAD, BricsCAD, LibreCAD and any CAD application that supports DXF."
+    "recover": {
+      "title": "Backups and recovery",
+      "desc": "Open BAK and SV$ files and recover damaged drawings."
     },
-    "stl": {
-      "title": "STL / STEP / OBJ",
-      "desc": "Export to STL and STEP AP203 for 3D printing and CAM. OBJ import for 3D models from other sources."
+    "import": {
+      "title": "Import from other programs",
+      "desc": "DGN V7/V8, PDF, STEP, IGES, 3D Studio, OBJ, WMF and LandXML points."
     },
-    "pdf": {
-      "title": "PDF plot",
-      "desc": "Plot layouts directly to PDF — with correct paper sizes read from embedded PlotSettings."
-    },
-    "wblock": {
-      "title": "WBLOCK",
-      "desc": "Write selected entities or a block to an external file for reuse."
+    "export": {
+      "title": "Export to 3D formats",
+      "desc": "STL for 3D printing, STEP and FBX for other programs."
     },
     "xref": {
-      "title": "XREF",
-      "desc": "External references (xrefs) attach, reload and auto-resolve — just like AutoCAD."
-    }
-  },
-  "drafting": {
-    "title": "2D <span class=\"accent\">drafting</span>",
-    "desc": "Complete 2D drafting package with all the commands you'd expect from a professional CAD application:",
-    "geom": {
-      "title": "Basic geometry",
-      "desc": "<code>LINE</code>, <code>PLINE</code>, <code>RECTANG</code>, <code>POLYGON</code>, <code>CIRCLE</code>, <code>ARC</code>, <code>ELLIPSE</code>, <code>SPLINE</code>"
+      "title": "External references",
+      "desc": "Attach other drawings, images and PDF underlays, and edit them in place."
+    },
+    "lines": {
+      "title": "Drawing commands",
+      "desc": "Line, polyline, rectangle, polygon, circle, arc, ellipse and spline."
     },
     "modify": {
-      "title": "Modify",
-      "desc": "<code>OFFSET</code>, <code>TRIM</code>, <code>EXTEND</code>, <code>FILLET</code>, <code>BREAK</code>, <code>STRETCH</code>, <code>LENGTHEN</code> — works on lines, arcs, ellipses, polylines and splines"
+      "title": "Editing",
+      "desc": "OFFSET, TRIM, EXTEND, FILLET, STRETCH, ARRAY, MIRROR and more, also on arcs and splines."
     },
-    "transform": {
-      "title": "Transformations",
-      "desc": "<code>ARRAY</code>, <code>MIRROR</code>, <code>MOVE</code>, <code>COPY</code>, <code>ROTATE</code>, <code>SCALE</code>, <code>EXPLODE</code>"
+    "snap": {
+      "title": "Snapping and tracking",
+      "desc": "Object snaps, polar tracking, ortho and typed angles and distances."
     },
     "hatch": {
-      "title": "Hatch",
-      "desc": "<code>HATCH</code> and <code>HATCHEDIT</code> with pattern, scale and angle editing."
+      "title": "Hatches",
+      "desc": "Patterns and solid fills, with quick trimming and editing."
     },
-    "mass": {
-      "title": "Properties",
-      "desc": "<code>MASSPROP</code> — area, perimeter and centroid of selected entities."
+    "blocks": {
+      "title": "Blocks and dynamic blocks",
+      "desc": "Create blocks with attributes, parameters, actions and lookup tables, and pick them from the gallery."
+    },
+    "dims": {
+      "title": "Dimensions",
+      "desc": "Linear, aligned, angular, radius, diameter and ordinate, with dimension styles."
     },
     "text": {
-      "title": "Text editing",
-      "desc": "<code>DDEDIT</code> — double-click to edit text. <code>MTEXT</code>, <code>TEXT</code>, <code>DTEXT</code> with font browser."
-    }
-  },
-  "modeling": {
-    "title": "3D <span class=\"accent\">modelling</span>",
-    "desc": "Full 3D modelling capabilities with ACIS solids tessellation:",
-    "prim": {
-      "title": "Primitives",
-      "desc": "<code>BOX</code>, <code>SPHERE</code>, <code>CYLINDER</code> — basic solids for parametric modelling."
+      "title": "Text, leaders and tables",
+      "desc": "Text and MTEXT, multileaders, tables and geometric tolerances."
     },
-    "extrude": {
-      "title": "Extrude &amp; revolve",
-      "desc": "Profile-based solids: <code>EXTRUDE</code> for linear extrusion and <code>REVOLVE</code> for rotation about an axis."
+    "sheets": {
+      "title": "Layouts and viewports",
+      "desc": "Unlimited paper space layouts, with viewports at their own scale."
     },
-    "loft": {
-      "title": "Loft &amp; sweep",
-      "desc": "<code>LOFT</code> between multiple profiles, <code>SWEEP</code> along any path."
+    "plot": {
+      "title": "Plotting",
+      "desc": "CTB and STB plot styles; on the desktop to PDF or the printer."
     },
-    "array": {
-      "title": "3D Array",
-      "desc": "<code>ARRAY3D</code> — rectangular or polar arrays in 3D."
+    "solids": {
+      "title": "Solids",
+      "desc": "Box, sphere and cylinder, extrude, revolve, sweep, loft and Boolean operations."
     },
     "acis": {
-      "title": "ACIS tessellation",
-      "desc": "Renders <code>3DSOLID</code>, <code>REGION</code> and <code>BODY</code> entities — solids from DWG/DXF are displayed correctly."
+      "title": "3D from DWG shown correctly",
+      "desc": "Solids, regions and bodies (ACIS) from existing drawings are displayed properly."
     },
-    "gpu": {
-      "title": "GPU-accelerated",
-      "desc": "wgpu-based rendering. Smooth interaction with large models, even with many solids at once."
+    "views": {
+      "title": "View from any angle",
+      "desc": "View cube, orbit, orthographic and perspective, and visual styles from wireframe to shaded."
+    },
+    "quickcalc": {
+      "title": "QuickCalc and CAL",
+      "desc": "Calculator next to the drawing, with units, memory and variables."
+    },
+    "mcp": {
+      "title": "AI assistant via MCP",
+      "desc": "Let an AI assistant read drawings, draw and save with checks."
+    },
+    "batch": {
+      "title": "Conversion and scripts",
+      "desc": "Convert files without a window and run command scripts over a whole folder."
+    },
+    "plugins": {
+      "title": "Plug-ins",
+      "desc": "Extend the desktop version with plug-ins, such as Open Infra Studio for civil engineering."
+    },
+    "web": {
+      "title": "Works in the browser",
+      "desc": "No installation, offline too; your drawings stay on your own computer."
+    },
+    "lang": {
+      "title": "23 languages",
+      "desc": "Including Dutch, English, French, Turkish and Spanish."
     }
-  },
-  "annotations": {
-    "title": "<span class=\"accent\">Annotations</span> &amp; dimensions",
-    "desc": "Full dimensioning, GD&amp;T, leaders, tables and mlines — all with style managers and correct DIMSTYLE behaviour (DIMASZ, DIMSCALE, DIMEXO, DIMEXE, …)."
-  },
-  "paperspace": {
-    "title": "Paper space &amp; <span class=\"accent\">layouts</span>",
-    "layouts": {
-      "title": "Multi-tab layout",
-      "desc": "Model space + unlimited paper space tabs. Camera position and zoom saved per layout."
-    },
-    "viewports": {
-      "title": "Viewport projection",
-      "desc": "Model content correctly projected into paper-space viewport rectangles. Double-click for inline MSPACE overlay."
-    },
-    "vports": {
-      "title": "Viewport presets",
-      "desc": "<code>VPORTS</code> — single, 2H, 2V, 4-way configurations."
-    },
-    "styles": {
-      "title": "Plot styles",
-      "desc": "<code>PLOTSTYLEPANEL</code> and <code>STYLESMANAGER</code> — CTB/STB plot style table editor."
-    },
-    "print": {
-      "title": "PRINT",
-      "desc": "Send layouts directly to the system printer with correct paper sizes from embedded PlotSettings."
-    },
-    "manager": {
-      "title": "Layout manager",
-      "desc": "<code>LAYOUTMANAGER</code> / <code>LAYOUTPANEL</code> — GUI for layout management."
-    }
-  },
-  "tech": {
-    "title": "Technology",
-    "desc": "Entirely written in Rust — memory-safe, fast, compiles to Windows, macOS and Linux. UI via <a href=\"https://iced.rs\" target=\"_blank\" rel=\"noopener\">iced</a>, GPU rendering via <a href=\"https://wgpu.rs\" target=\"_blank\" rel=\"noopener\">wgpu</a>. Native DWG/DXF without vendor lock-in."
   },
   "download": {
-    "title": "Download <span class=\"accent\">v2026.39</span>",
-    "desc": "Released June 2026. Three native binaries — Windows, macOS (Apple Silicon) and Linux (AppImage). Pick the one for your platform and you're up and running in seconds.",
-    "note": "Need to build from source or grab an older version? See <a href=\"https://github.com/HakanSeven12/OpenCADStudio/releases\" target=\"_blank\" rel=\"noopener\">all releases on GitHub</a> (60 releases so far)."
+    "title": "Download v2026.43",
+    "lead": "Free, no account needed. For Windows, macOS and Linux.",
+    "forWindows": "Download for Windows",
+    "forMac": "Download for macOS",
+    "forLinux": "Download for Linux",
+    "metaWindows": "signed .msi installer",
+    "metaMacArm": ".dmg for Apple Silicon",
+    "metaLinux": "AppImage, runs on most distributions",
+    "browserBtn": "Open in browser",
+    "fileExe": "Installer (.msi)",
+    "fileExeUser": "Portable, no installation (.exe)",
+    "fileDmgArm": ".dmg (Apple Silicon)",
+    "fileAppImage": "AppImage",
+    "fileSnap": "Snap",
+    "browserNote": "Rather not install anything? The app also <a href=\"https://www.opencadstudio.com/app/\" target=\"_blank\" rel=\"noopener\">runs in the browser</a>.",
+    "label": "Download",
+    "mobileNote": "Open CAD Studio is made for a large screen. Open it on your computer, or try it here in the browser.",
+    "other": "Other platforms"
   },
-  "cta": {
-    "github": "GitHub: HakanSeven12/OpenCADStudio",
-    "issues": "Issues &amp; feedback",
-    "relatedTool": "Also check Open 2D Studio",
-    "starsLine": "GitHub stars · open-source CAD app built by one independent developer"
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "ctaDemo": "Try it in the browser",
+    "items": {
+      "blocks": {
+        "title": "Dynamic blocks",
+        "desc": "Value sets, stretch and polar stretch actions, lookup tables with several outputs and a preview of the result."
+      },
+      "calc": {
+        "desc": "A calculator as a panel next to the drawing, with units, memory and variables."
+      },
+      "draft": {
+        "title": "Faster drafting",
+        "desc": "EXTEND with a crossing box, trim hatches in one click, trim MLINEs and geometry-based OVERKILL."
+      },
+      "exchange": {
+        "title": "Better exchange",
+        "desc": "DGN with dimensions, notes and cells, PDF with text and passwords, and valid STEP AP214 export."
+      },
+      "speed": {
+        "title": "Large drawings faster",
+        "desc": "Less work for snapping, hatching and properties; the properties panel is over three times faster with 2,000 objects."
+      },
+      "auto": {
+        "title": "Scripts without a window",
+        "desc": "Run command scripts over many drawings at once, and an AI assistant now also reads blocks and attributes."
+      }
+    },
+    "label": "New in v2026.43",
+    "title": "Dynamic blocks, <span>QuickCalc and better exchange</span>",
+    "desc": "The release of 25 October 2026 makes dynamic blocks almost complete, adds a calculator on screen and reads DGN, PDF and STEP files better. Large drawings work faster."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "DWG and DXF from AutoCAD, BricsCAD and other CAD programs, backups (BAK, SV$), and via import DGN, PDF, STEP, IGES, 3D Studio, OBJ, WMF and points from LandXML."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "No. The web version runs straight in your browser and then works offline too. For plotting to PDF or the printer, plug-ins and scripts, use the desktop version."
+    },
+    "cost": {
+      "q": "What does it cost?",
+      "a": "Nothing. Open CAD Studio is open source under the GPL-3.0 licence, with no account or subscription. The developer asks for a voluntary donation."
+    },
+    "format": {
+      "q": "In which file format is my work saved?",
+      "a": "As DWG or DXF, in a version of your choice from R14 to 2018, so anyone with another CAD program can open your drawing. In the browser you download the file."
+    },
+    "os": {
+      "q": "Which systems does it run on?",
+      "a": "In any modern browser, on Windows (installer or portable), Linux (AppImage, Flatpak, snap) and macOS with Apple Silicon. The macOS version is not yet notarized by Apple; on first launch you allow it in System Settings."
+    },
+    "practice": {
+      "q": "Does it fit everyday practice?",
+      "a": "Yes: you work with the same files, layers, blocks, dimension styles, layouts and plot styles as in AutoCAD or BricsCAD, and the commands have the same names. The project is still under active development: back up important drawings."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "Start the desktop version with <code>--mcp</code> and an AI assistant can read the open drawing, run commands and check that a saved file is correct. The web version also has a control channel for scripts."
+    },
+    "who": {
+      "q": "Who makes Open CAD Studio?",
+      "a": "Hakan Seven, as an independent open-source project with contributions from a growing group of developers. The OpenAEC Foundation supports it and builds plug-ins for it, such as Open Infra Studio."
+    },
+    "web": {
+      "q": "What is the difference between the browser and desktop versions?",
+      "a": "Drawing is the same. The desktop version opens DWG and DXF with a double-click, shows thumbnails in the file manager, plots to PDF and the printer, and loads plug-ins and scripts. In the browser you pick files yourself and download them when you save."
+    },
+    "feedback": {
+      "q": "Where do I report a bug or idea?",
+      "a": "In the <a href=\"https://github.com/HakanSeven12/OpenCADStudio/issues\" target=\"_blank\" rel=\"noopener\">issues</a> or <a href=\"https://github.com/HakanSeven12/OpenCADStudio/discussions\" target=\"_blank\" rel=\"noopener\">discussions</a> on GitHub. Translations and plug-ins are welcome too."
+    },
+    "heading": "Frequently asked questions"
+  },
+  "tech": {
+    "rust": {
+      "desc": "The whole app is written in Rust: fast and memory-safe."
+    },
+    "wgpu": {
+      "desc": "2D and 3D rendering on the graphics card, on every platform."
+    },
+    "iced": {
+      "desc": "Ribbon, panels and dialogs in one Rust interface for desktop and web."
+    },
+    "wasm": {
+      "desc": "The same code runs in the browser, as a PWA that also works offline."
+    },
+    "dwg": {
+      "title": "Own DWG/DXF reader",
+      "desc": "Read and write DWG and DXF without licensed third-party libraries."
+    },
+    "mcp": {
+      "desc": "A control channel for AI assistants, scripts and headless conversion."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
   },
   "releases": {
-    "title": "Release notes",
-    "desc": "Every released version of Open CAD Studio, fetched live from GitHub.",
-    "loading": "Loading releases…",
-    "showAll": "Show all versions",
-    "showLess": "Show less",
-    "github": "View all releases on GitHub",
-    "statReleases": "total releases",
-    "statLatest": "latest version",
-    "statStars": "GitHub stars",
-    "latest": "Latest",
-    "viewGitHub": "View on GitHub"
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }
