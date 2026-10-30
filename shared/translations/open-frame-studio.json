@@ -1,108 +1,295 @@
 {
+  "header": {
+    "title": "Open <span class=\"accent\">Frame</span> Studio",
+    "demoBtn": "Open in browser",
+    "downloadBtn": "Download",
+    "sourceBtn": "Source code",
+    "proof2": "Wood · aluminium · PVC",
+    "proof3": "Dutch, English and German",
+    "proof5": "Free · CC BY-SA 4.0",
+    "heroAlt": "Open Frame Studio: a double tilt-and-turn window in the 2D editor with its dimensions, the project's frames on the left and the properties on the right",
+    "label": "Window frames",
+    "tagline": "From frame drawing to cutting list and IFC, in one free app",
+    "desc": "Pick a template, divide the frame into bays and give each bay a door, sash, glass or panel. You see it in 3D straight away, together with the production lists and the Uw value."
+  },
   "meta": {
+    "description": "Free, open-source app for designing window and door frames in wood, aluminium and PVC: 2D editor with free layout, 3D view, production lists, Uw check and export to IFC, DXF, PDF and Excel. For Windows, macOS, Linux and the browser.",
     "title": "Open Frame Studio — OpenAEC Foundation"
   },
-  "header": {
-    "label": "Window frame design",
-    "title": "Open <span class=\"accent\">Frame</span> Studio",
-    "desc": "Free, open-source software for designing, documenting and exporting window and door frames. From 2D drawing and 3D view to frame schedule, workshop drawing and IFC export."
-  },
-  "cta": {
-    "demo": "Open in your browser",
-    "github": "View on GitHub"
-  },
-  "shots": {
-    "s1": "Open Frame Studio — 3D view of a meranti tilt-and-turn window, with the frame properties on the right",
-    "s2": "Open Frame Studio — 2D frame editor with the dimensions of a 900 × 1400 mm tilt-and-turn window",
-    "s3": "Open Frame Studio — Frame schedule with mark, sizes, material, glazing and Ug value per frame",
-    "s4": "Open Frame Studio — Profile editor with the section of a 67 × 114 mm timber frame profile and the profile library"
-  },
-  "download": {
-    "title": "Download",
-    "windows": "Installer (.exe)",
-    "windowsMsi": "MSI package (.msi)",
-    "macos": "Apple and Intel processors (.dmg)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxRpm": "Fedora, openSUSE (.rpm)",
-    "linuxAppimage": "Any distribution (AppImage)"
-  },
-  "what": {
-    "title": "What is Open Frame Studio?",
-    "desc": "A desktop application for designing, documenting and exporting window and door frames — a free, professional alternative to commercial frame software. Draw the frame in 2D, check it in 3D and deliver the frame schedule, workshop drawing and IFC file from the same model."
-  },
-  "materials": {
-    "m1": {
-      "title": "Timber",
-      "desc": "KVT standard profiles (54, 67, 78 and 90 mm), meranti, accoya, spruce, oak, FSC hardwood and softwood."
+  "hl": {
+    "layout": {
+      "alt": "Free layout of a door with side light: a door, a fixed-glass bay and a brick spandrel, with the buttons to split a bay and choose its infill on the left",
+      "kicker": "Free layout",
+      "title": "Divide the frame the way you want",
+      "desc": "Split a bay with a mullion or transom and choose a door, sash, fixed glass, panel or spandrel for each bay, with glazing bead and opening direction. Start from a door with side light, a door with transom light or a grid."
     },
-    "m2": {
-      "title": "Aluminium",
-      "desc": "Standard aluminium profiles, with 45° mitred corners."
+    "view3d": {
+      "alt": "3D view of a front door with transom light, set in the brickwork",
+      "kicker": "3D view",
+      "title": "See the frame in the wall",
+      "desc": "The 3D view follows your drawing: real profiles, glass in the rebate, sashes and doors as separate parts and the brickwork around them. You can check at a glance whether it is right."
     },
-    "m3": {
-      "title": "uPVC",
-      "desc": "Standard uPVC profiles and templates from VEKA, Kömmerling and others."
+    "production": {
+      "alt": "Production lists with the cutting list per part: profile, material, net and gross length and cutting angles, with tabs for glass, hardware, gaskets, panels, glazing beads and the parts list",
+      "kicker": "Production",
+      "title": "The cutting list follows the drawing",
+      "desc": "Every jamb, sill and sash member is in the cutting list, with net and gross length and cutting angle. There are also lists for glass, hardware, gaskets, panels and glazing beads. Joints follow joinery practice: mortise and tenon for wood, mitred for aluminium and PVC."
     },
-    "m4": {
-      "title": "Timber-aluminium",
-      "desc": "Combination profiles with timber inside and aluminium outside."
-    }
-  },
-  "features": {
-    "title": "Features",
-    "showAll": "Show all features",
-    "showLess": "Show less",
-    "editor": {
-      "title": "2D frame editor",
-      "desc": "Interactive editor with grid subdivision, drag handles, dimension lines and infills: glass, sash, door, panel or parapet."
+    "energy": {
+      "alt": "Energy overview with the average Uw value, the area and the transmission loss per frame, and a green OK per frame against the set limit",
+      "kicker": "Energy",
+      "title": "Know straight away whether the Uw value fits",
+      "desc": "For each frame the app calculates the Uw value, the area and the transmission loss from the profiles and the glazing. Set a limit and see at once which frame meets it."
     },
     "profiles": {
-      "title": "Profile editor",
-      "desc": "Edit a profile cross-section point by point, with mirroring, snap grid and undo."
-    },
-    "library": {
-      "title": "80+ profiles",
-      "desc": "Profile library for timber, aluminium, uPVC and timber-aluminium with realistic rebate sections."
+      "alt": "Profile editor with the cross-section of a wooden frame profile with a double rebate, the profile library on the left and dimensions, rebate and Uf value on the right",
+      "kicker": "Profiles",
+      "title": "Work with your own profiles",
+      "desc": "Pick from the library of wood, aluminium, PVC and wood-aluminium, or draw a cross-section point by point. Set width, depth, rebate and Uf value, or import a profile from DXF."
+    }
+  },
+  "notice": {
+    "link": "Report it on GitHub",
+    "text": "Early version (0.6). Try it and tell us what you miss."
+  },
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "download": "Download",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "design": "Design",
+    "profiles": "Profiles",
+    "production": "Production",
+    "energy": "Energy",
+    "connect": "BIM and integrations",
+    "all": "All features"
+  },
+  "features": {
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "Everything for the frame, from drawing to workshop",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
+    "editor": {
+      "title": "2D frame editor",
+      "desc": "Columns and rows, drag handles and a closed chain of dimensions, with undo and redo."
     },
     "templates": {
       "title": "Templates",
-      "desc": "Tilt-and-turn window, double tilt-and-turn, sliding door, front door, stable door and your own templates to build on."
+      "desc": "Tilt-and-turn, double, French window, top-hung, pivot, front door, sliding and lift-and-slide door. Save your own frame as a template."
+    },
+    "infill": {
+      "title": "Free layout",
+      "desc": "Split, merge or swap bays and choose the infill, glazing bead, opening direction and hardware per bay."
+    },
+    "shapes": {
+      "title": "Special shapes",
+      "desc": "Segmental arch, round, trapezoid or an arch on sloping jambs, besides the usual rectangular frame."
     },
     "view3d": {
       "title": "3D view",
-      "desc": "Three.js preview with extruded profiles, glass in the rebate and the surrounding masonry."
+      "desc": "Extruded profiles, glass in the rebate and the brickwork around it, also for stepped shapes such as a door with side light."
     },
-    "ai": {
-      "title": "AI configurator",
-      "desc": "Type \"Make a tilt-and-turn 900×1400\" and the frame is there. Works with OpenAI, Ollama or any compatible endpoint."
-    },
-    "schedule": {
-      "title": "Frame schedule",
-      "desc": "Professional frame schedule as PDF and Excel, with sizes, material, glazing and Ug value per frame."
-    },
-    "workshop": {
-      "title": "Workshop drawing",
-      "desc": "A3 workshop drawings with title block, and DXF drawings with dimension lines for the workshop."
-    },
-    "ifc": {
-      "title": "IFC export",
-      "desc": "IFC files with the ILS Houten Kozijnen v2.0 property sets, for BIM workflows."
-    },
-    "cutting": {
-      "title": "Cutting list and joints",
-      "desc": "A cutting list that follows the drawing, with joints by the book: tenoned timber, mitres for aluminium and uPVC."
+    "colors": {
+      "title": "RAL colours",
+      "desc": "A separate colour for the inside and outside, shown in 2D and 3D."
     },
     "conventions": {
       "title": "Dutch drawing conventions",
-      "desc": "Dimensioning to NEN 3576 and opening symbols to VKG and EN 12519 in the outside view."
+      "desc": "Dimensioning to NEN 3576 and opening symbols in the outside view to VKG and EN 12519."
+    },
+    "library": {
+      "title": "Profile library",
+      "desc": "Wood in standard KVT sizes (meranti, accoya, pine, oak, FSC hardwood), aluminium, PVC and wood-aluminium, with sash, door and glazing-bead profiles."
+    },
+    "systems": {
+      "title": "Well-known systems",
+      "desc": "Templates for VEKA, Kömmerling, Reynaers CS 77 and Schüco AWS 75.SI+, among others, with mitred corners."
+    },
+    "profileeditor": {
+      "title": "Profile editor",
+      "desc": "Draw a cross-section point by point, with mirroring, snap grid and undo."
+    },
+    "dxfprofile": {
+      "title": "Profile from DXF",
+      "desc": "Import a supplier's cross-section from a DXF file."
+    },
+    "joints": {
+      "title": "Corner joints",
+      "desc": "Mortise and tenon, mitre, scribed or butt joint, set per corner. Your own choice always wins."
+    },
+    "lists": {
+      "title": "Production lists",
+      "desc": "Cutting list with net and gross lengths and cutting angles, plus lists for glass, hardware, gaskets, panels, glazing beads and parts."
+    },
+    "schedule": {
+      "title": "Frame schedule",
+      "desc": "All frames with mark, dimensions, material, bays, glazing and Ug value. The desktop app turns it into a PDF or Excel file."
+    },
+    "workshop": {
+      "title": "Workshop drawing",
+      "desc": "A3 drawings with title block, and DXF with dimension lines for the workshop, from the desktop app."
+    },
+    "uw": {
+      "title": "Uw per frame",
+      "desc": "Uw value, area and transmission loss per frame, checked against a limit you set yourself."
+    },
+    "glazing": {
+      "title": "Glazing per bay",
+      "desc": "Choose the glass per bay, such as double or triple glazing, with the Ug value that counts towards the Uw."
+    },
+    "ifc": {
+      "title": "IFC export",
+      "desc": "IFC 4 with the ILS Houten Kozijnen v2.0 property sets, for your BIM model. The desktop app also reads frames from IFC."
+    },
+    "gltf": {
+      "title": "glTF and CSV",
+      "desc": "The 3D model as glTF for visualisation, and the production data as CSV for your own software."
     },
     "blender": {
       "title": "Blender and Bonsai",
-      "desc": "Send frames straight to Blender with Bonsai for further IFC modelling."
+      "desc": "Send a frame from the desktop app straight to Blender with Bonsai to continue modelling in IFC."
+    },
+    "ai": {
+      "title": "AI assistant",
+      "desc": "Type \"Make a tilt-and-turn 900×1400\" and the frame appears. Works with OpenAI, Ollama or another compatible endpoint."
+    },
+    "languages": {
+      "title": "Three languages",
+      "desc": "The app works in Dutch, English and German, with dimensions in millimetres."
+    },
+    "themes": {
+      "title": "Light and dark",
+      "desc": "A light and a dark theme, in the style of the other OpenAEC apps."
     }
   },
+  "download": {
+    "title": "Download v0.6.0",
+    "lead": "Free, no account needed. For Windows, macOS and Linux.",
+    "forWindows": "Download for Windows",
+    "forMac": "Download for macOS",
+    "forLinux": "Download for Linux",
+    "metaWindows": ".exe installer",
+    "metaMac": "universal .dmg, Intel and Apple Silicon",
+    "metaLinux": "AppImage, runs on most distributions",
+    "browserBtn": "Open in browser",
+    "fileExe": "Installer (.exe)",
+    "fileExeUser": "Without admin rights (.exe)",
+    "fileMsi": "Installer (.msi)",
+    "fileDmg": "Universal .dmg",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "browserNote": "Rather not install anything? The app also <a href=\"https://open-frame-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">runs in the browser</a>.",
+    "label": "Download",
+    "mobileNote": "Open Frame Studio is made for a large screen. Open it on your computer, or try it here in the browser.",
+    "other": "Other platforms"
+  },
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "ctaDemo": "Try it in the browser",
+    "items": {
+      "layout": {
+        "title": "Free layout",
+        "desc": "Click a bay for its infill, Ctrl+click for a mullion and drag the dividing lines."
+      },
+      "view3d": {
+        "title": "3D follows the model",
+        "desc": "Stepped shapes, 45° mitres, glass in the rebate and sashes as real profiles."
+      },
+      "cutting": {
+        "title": "Cutting list matches drawing",
+        "desc": "Continuous mullions, spandrels and glass, sash, panel and glazing beads per bay."
+      },
+      "joints": {
+        "title": "Joinery rules",
+        "desc": "Wood with tenoned jambs and continuous sills, aluminium and PVC mitred."
+      },
+      "symbols": {
+        "title": "Opening symbols",
+        "desc": "The outside view shows the opening and sliding direction to the Dutch convention."
+      },
+      "saved": {
+        "title": "Settings are kept",
+        "desc": "Glazing bead, opening direction and hardware are kept after saving, switching and undo."
+      }
+    },
+    "label": "New in v0.6.0",
+    "title": "Drawing, 3D and cutting list <span>one to one</span>",
+    "desc": "In version 0.6 the free layout is the basis: what you draw is exactly what you get in 3D and in the cutting list."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "Your own projects in .ofs. The desktop app also reads frames from an IFC file and profiles from DXF."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "Not to try it out: the web version works right in the browser. To save and to export to IFC, DXF, PDF and Excel you need the desktop app; the browser cannot do that yet."
+    },
+    "price": {
+      "q": "What does Open Frame Studio cost?",
+      "a": "Nothing. The app is free and open source under the CC BY-SA 4.0 licence, with no account or subscription."
+    },
+    "save": {
+      "q": "In which format is my work saved?",
+      "a": "In its own .ofs project file. The desktop app also exports to IFC, DXF, PDF, Excel, CSV and glTF."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "Windows (also without admin rights), macOS (Intel and Apple Silicon) and Linux (.deb, .rpm and AppImage), and in a modern browser."
+    },
+    "practice": {
+      "q": "Does it fit Dutch practice?",
+      "a": "Yes. Dimensioning to NEN 3576, opening symbols to VKG and EN 12519, wood profiles in KVT sizes and IFC with the ILS Houten Kozijnen v2.0 property sets."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "The app has a built-in AI assistant that creates and edits frames from what you type. You connect it to OpenAI, Ollama or another compatible endpoint. There is no MCP server for external assistants yet."
+    },
+    "curtainwall": {
+      "q": "Can I draw a curtain wall too?",
+      "a": "In the desktop app, yes. The browser version cannot do that yet."
+    },
+    "ready": {
+      "q": "Can I already order frames with it?",
+      "a": "It is an early version (0.6). Check dimensions and lists before you order or start cutting, and report errors on GitHub."
+    },
+    "heading": "Frequently asked questions"
+  },
   "tech": {
-    "title": "Technology",
-    "desc": "A Rust core (ofs-core) for the data model, the geometry and every export (IFC, DXF, PDF, glTF, XLSX, CSV), a Svelte 5 interface with Three.js for 3D, and Tauri 2 for Windows, macOS and Linux. The same core runs as WebAssembly in the browser version."
+    "rust": {
+      "title": "Rust core",
+      "desc": "The data model, geometry and all exports (IFC, DXF, PDF, glTF, XLSX, CSV) live in one Rust library, with over a hundred tests."
+    },
+    "tauri": {
+      "desc": "A thin native shell for Windows, macOS and Linux, with small installers."
+    },
+    "svelte": {
+      "desc": "The same interface on the desktop and in the browser, with a 2D editor in SVG."
+    },
+    "three": {
+      "desc": "The 3D view with extruded profiles and glass, right in the app."
+    },
+    "wasm": {
+      "desc": "The Rust core runs as WebAssembly in the browser version."
+    },
+    "ifc": {
+      "desc": "Open exchange with BIM software, following the Dutch ILS Houten Kozijnen v2.0."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }

@@ -1,108 +1,295 @@
 {
+  "header": {
+    "title": "Open <span class=\"accent\">Frame</span> Studio",
+    "demoBtn": "Abrir en el navegador",
+    "downloadBtn": "Descargar",
+    "sourceBtn": "Código fuente",
+    "proof2": "Madera · aluminio · PVC",
+    "proof3": "Neerlandés, inglés y alemán",
+    "proof5": "Gratis · CC BY-SA 4.0",
+    "heroAlt": "Open Frame Studio: una ventana oscilobatiente doble en el editor 2D con sus cotas, las carpinterías del proyecto a la izquierda y las propiedades a la derecha",
+    "label": "Carpinterías",
+    "tagline": "Del dibujo de la carpintería a la lista de corte y el IFC, en una sola aplicación gratuita",
+    "desc": "Elige una plantilla, divide la carpintería en huecos y asigna a cada uno una puerta, una hoja, un vidrio o un panel. Lo ves enseguida en 3D, junto con las listas de producción y el valor Uw."
+  },
   "meta": {
+    "description": "Aplicación gratuita y de código abierto para diseñar carpinterías de madera, aluminio y PVC: editor 2D con división libre, vista 3D, listas de producción, control del Uw y exportación a IFC, DXF, PDF y Excel. Para Windows, macOS, Linux y el navegador.",
     "title": "Open Frame Studio — OpenAEC Foundation"
   },
-  "header": {
-    "label": "Diseño de carpintería",
-    "title": "Open <span class=\"accent\">Frame</span> Studio",
-    "desc": "Software gratuito y de código abierto para diseñar, documentar y exportar carpintería de ventanas y puertas. Del dibujo 2D y la vista 3D a la planilla de carpintería, el plano de taller y la exportación IFC."
-  },
-  "cta": {
-    "demo": "Abrir en el navegador",
-    "github": "Ver en GitHub"
-  },
-  "shots": {
-    "s1": "Open Frame Studio — Vista 3D de una ventana oscilobatiente de meranti, con las propiedades del marco a la derecha",
-    "s2": "Open Frame Studio — Editor 2D de carpintería con las cotas de una ventana oscilobatiente de 900 × 1400 mm",
-    "s3": "Open Frame Studio — Planilla de carpintería con referencia, medidas, material, acristalamiento y valor Ug por marco",
-    "s4": "Open Frame Studio — Editor de perfiles con la sección de un perfil de marco de madera de 67 × 114 mm y la biblioteca de perfiles"
-  },
-  "download": {
-    "title": "Descargar",
-    "windows": "Instalador (.exe)",
-    "windowsMsi": "Paquete MSI (.msi)",
-    "macos": "Procesadores Apple e Intel (.dmg)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxRpm": "Fedora, openSUSE (.rpm)",
-    "linuxAppimage": "Cualquier distribución (AppImage)"
-  },
-  "what": {
-    "title": "¿Qué es Open Frame Studio?",
-    "desc": "Una aplicación de escritorio para diseñar, documentar y exportar carpintería de ventanas y puertas — una alternativa gratuita y profesional al software comercial de carpintería. Dibuja el marco en 2D, compruébalo en 3D y entrega la planilla de carpintería, el plano de taller y el archivo IFC desde el mismo modelo."
-  },
-  "materials": {
-    "m1": {
-      "title": "Madera",
-      "desc": "Perfiles estándar KVT (54, 67, 78 y 90 mm), meranti, accoya, abeto, roble, y madera frondosa y de coníferas con certificación FSC."
+  "hl": {
+    "layout": {
+      "alt": "División libre de una puerta con luz lateral: una puerta, un hueco de vidrio fijo y un antepecho de ladrillo, con los botones para dividir un hueco y elegir su relleno a la izquierda",
+      "kicker": "División libre",
+      "title": "Divide la carpintería como quieras",
+      "desc": "Divide un hueco con un montante o un travesaño y elige para cada uno una puerta, una hoja, un vidrio fijo, un panel o un antepecho, con junquillo y sentido de apertura. Empieza desde una puerta con luz lateral, una puerta con montante o una cuadrícula."
     },
-    "m2": {
-      "title": "Aluminio",
-      "desc": "Perfiles de aluminio estándar, con esquinas a inglete de 45°."
+    "view3d": {
+      "alt": "Vista 3D de una puerta de entrada con montante, colocada en la fábrica de ladrillo",
+      "kicker": "Vista 3D",
+      "title": "Ve la carpintería en el muro",
+      "desc": "La vista 3D sigue tu dibujo: perfiles reales, el vidrio en el galce, hojas y puertas como piezas separadas y la fábrica alrededor. Compruebas de un vistazo que todo cuadra."
     },
-    "m3": {
-      "title": "PVC",
-      "desc": "Perfiles y plantillas estándar de PVC de VEKA, Kömmerling y otros fabricantes."
+    "production": {
+      "alt": "Listas de producción con la lista de corte por pieza: perfil, material, longitud neta y bruta y ángulos de corte, con pestañas para vidrio, herrajes, juntas, paneles, junquillos y la lista de piezas",
+      "kicker": "Producción",
+      "title": "La lista de corte sigue el dibujo",
+      "desc": "Cada montante, peana y pieza de hoja figura en la lista de corte, con longitud neta y bruta y ángulo de corte. Además hay listas de vidrio, herrajes, juntas, paneles y junquillos. Las uniones siguen la carpintería: caja y espiga en madera, inglete en aluminio y PVC."
     },
-    "m4": {
-      "title": "Madera-aluminio",
-      "desc": "Perfiles mixtos con madera en el interior y aluminio en el exterior."
-    }
-  },
-  "features": {
-    "title": "Funcionalidades",
-    "showAll": "Mostrar todas las funcionalidades",
-    "showLess": "Mostrar menos",
-    "editor": {
-      "title": "Editor 2D de carpintería",
-      "desc": "Editor interactivo con división en cuadrícula, tiradores de arrastre, líneas de cota y rellenos: vidrio, hoja, puerta, panel o antepecho."
+    "energy": {
+      "alt": "Resumen energético con el valor Uw medio, la superficie y la pérdida por transmisión de cada carpintería, y un OK verde por carpintería frente al límite fijado",
+      "kicker": "Energía",
+      "title": "Sabe al momento si el valor Uw cumple",
+      "desc": "Para cada carpintería, la aplicación calcula el valor Uw, la superficie y la pérdida por transmisión a partir de los perfiles y el acristalamiento. Fija un límite y ve al instante qué carpintería cumple."
     },
     "profiles": {
-      "title": "Editor de perfiles",
-      "desc": "Edita la sección de un perfil punto a punto, con simetría, rejilla de ajuste y deshacer."
-    },
-    "library": {
-      "title": "80+ perfiles",
-      "desc": "Biblioteca de perfiles de madera, aluminio, PVC y madera-aluminio con secciones de galce realistas."
+      "alt": "Editor de perfiles con la sección de un perfil de marco de madera con doble galce, la biblioteca de perfiles a la izquierda y las medidas, el galce y el valor Uf a la derecha",
+      "kicker": "Perfiles",
+      "title": "Trabaja con tus propios perfiles",
+      "desc": "Elige de la biblioteca de madera, aluminio, PVC y madera-aluminio, o dibuja una sección punto a punto. Fija ancho, profundidad, galce y valor Uf, o importa un perfil desde DXF."
+    }
+  },
+  "notice": {
+    "link": "Avísanos en GitHub",
+    "text": "Versión temprana (0.6). Pruébala y cuéntanos qué echas en falta."
+  },
+  "subnav": {
+    "label": "En esta página",
+    "features": "Funciones",
+    "download": "Descargar",
+    "whatsnew": "Novedades",
+    "faq": "Preguntas",
+    "releases": "Versiones"
+  },
+  "tabs": {
+    "highlights": "Destacados",
+    "design": "Diseño",
+    "profiles": "Perfiles",
+    "production": "Producción",
+    "energy": "Energía",
+    "connect": "BIM e integraciones",
+    "all": "Todas las funciones"
+  },
+  "features": {
+    "learnMore": "Leer más",
+    "label": "Funciones",
+    "heading": "Todo para la carpintería, del dibujo al taller",
+    "sub": "Empieza por lo más destacado o elige un tema.",
+    "tabsLabel": "Funciones por tema"
+  },
+  "f": {
+    "editor": {
+      "title": "Editor 2D de carpinterías",
+      "desc": "Columnas y filas, tiradores de arrastre y una cadena de cotas cerrada, con deshacer y rehacer."
     },
     "templates": {
       "title": "Plantillas",
-      "desc": "Ventana oscilobatiente, oscilobatiente doble, puerta corredera, puerta de entrada, puerta holandesa y tus propias plantillas como base de trabajo."
+      "desc": "Oscilobatiente, doble, balconera, abatible superior, pivotante, puerta de entrada, corredera y elevadora. Guarda tu carpintería como plantilla."
+    },
+    "infill": {
+      "title": "División libre",
+      "desc": "Divide, une o intercambia huecos y elige por hueco el relleno, el junquillo, el sentido de apertura y los herrajes."
+    },
+    "shapes": {
+      "title": "Formas especiales",
+      "desc": "Arco rebajado, redonda, trapecio o arco sobre montantes inclinados, además de la carpintería rectangular habitual."
     },
     "view3d": {
       "title": "Vista 3D",
-      "desc": "Vista previa con Three.js con perfiles extruidos, vidrio en el galce y la fábrica de ladrillo que lo rodea."
+      "desc": "Perfiles extruidos, vidrio en el galce y la fábrica alrededor, también en formas escalonadas como una puerta con luz lateral."
     },
-    "ai": {
-      "title": "Configurador IA",
-      "desc": "Escribe \"Haz una oscilobatiente de 900×1400\" y el marco aparece. Funciona con OpenAI, Ollama o cualquier endpoint compatible."
-    },
-    "schedule": {
-      "title": "Planilla de carpintería",
-      "desc": "Planilla de carpintería profesional en PDF y Excel, con medidas, material, acristalamiento y valor Ug por marco."
-    },
-    "workshop": {
-      "title": "Plano de taller",
-      "desc": "Planos de taller A3 con cajetín, y planos DXF con líneas de cota para el taller."
-    },
-    "ifc": {
-      "title": "Exportación IFC",
-      "desc": "Archivos IFC con los property sets de ILS Houten Kozijnen v2.0, para flujos de trabajo BIM."
-    },
-    "cutting": {
-      "title": "Lista de corte y uniones",
-      "desc": "Una lista de corte que sigue el dibujo, con uniones según las reglas del oficio: caja y espiga en madera, inglete en aluminio y PVC."
+    "colors": {
+      "title": "Colores RAL",
+      "desc": "Un color para la cara interior y otro para la exterior, visibles en 2D y 3D."
     },
     "conventions": {
       "title": "Convenciones de dibujo neerlandesas",
-      "desc": "Acotación según NEN 3576 y símbolos de apertura según VKG y EN 12519 en la vista exterior."
+      "desc": "Acotación según NEN 3576 y símbolos de apertura en la vista exterior según VKG y EN 12519."
+    },
+    "library": {
+      "title": "Biblioteca de perfiles",
+      "desc": "Madera en medidas KVT (meranti, accoya, abeto, roble, madera dura FSC), aluminio, PVC y madera-aluminio, con perfiles de hoja, de puerta y junquillos."
+    },
+    "systems": {
+      "title": "Sistemas conocidos",
+      "desc": "Plantillas para VEKA, Kömmerling, Reynaers CS 77 y Schüco AWS 75.SI+, entre otros, con esquinas a inglete."
+    },
+    "profileeditor": {
+      "title": "Editor de perfiles",
+      "desc": "Dibuja una sección punto a punto, con simetría, rejilla de ajuste y deshacer."
+    },
+    "dxfprofile": {
+      "title": "Perfil desde DXF",
+      "desc": "Importa la sección de un proveedor desde un archivo DXF."
+    },
+    "joints": {
+      "title": "Uniones de esquina",
+      "desc": "Caja y espiga, inglete, contraperfil o a tope, ajustable por esquina. Tu elección siempre prevalece."
+    },
+    "lists": {
+      "title": "Listas de producción",
+      "desc": "Lista de corte con longitudes netas y brutas y ángulos de corte, más listas de vidrio, herrajes, juntas, paneles, junquillos y piezas."
+    },
+    "schedule": {
+      "title": "Cuadro de carpinterías",
+      "desc": "Todas las carpinterías con marca, medidas, material, huecos, acristalamiento y valor Ug. La aplicación de escritorio lo convierte en PDF o Excel."
+    },
+    "workshop": {
+      "title": "Plano de taller",
+      "desc": "Planos A3 con cajetín, y DXF con cotas para el taller, desde la aplicación de escritorio."
+    },
+    "uw": {
+      "title": "Uw por carpintería",
+      "desc": "Valor Uw, superficie y pérdida por transmisión por carpintería, comparados con un límite que fijas tú."
+    },
+    "glazing": {
+      "title": "Acristalamiento por hueco",
+      "desc": "Elige el vidrio por hueco, doble o triple, con el valor Ug que cuenta en el Uw."
+    },
+    "ifc": {
+      "title": "Exportación IFC",
+      "desc": "IFC 4 con los conjuntos de propiedades de ILS Houten Kozijnen v2.0, para tu modelo BIM. La aplicación de escritorio también lee carpinterías desde IFC."
+    },
+    "gltf": {
+      "title": "glTF y CSV",
+      "desc": "El modelo 3D en glTF para visualización y los datos de producción en CSV para tu propio software."
     },
     "blender": {
       "title": "Blender y Bonsai",
-      "desc": "Envía los marcos directamente a Blender con Bonsai para seguir modelando en IFC."
+      "desc": "Envía una carpintería desde la aplicación de escritorio directamente a Blender con Bonsai para seguir modelando en IFC."
+    },
+    "ai": {
+      "title": "Asistente de IA",
+      "desc": "Escribe «Haz una oscilobatiente de 900×1400» y la carpintería aparece. Funciona con OpenAI, Ollama u otro endpoint compatible."
+    },
+    "languages": {
+      "title": "Tres idiomas",
+      "desc": "La aplicación funciona en neerlandés, inglés y alemán, con medidas en milímetros."
+    },
+    "themes": {
+      "title": "Claro y oscuro",
+      "desc": "Un tema claro y uno oscuro, al estilo de las demás aplicaciones de OpenAEC."
     }
   },
+  "download": {
+    "title": "Descargar v0.6.0",
+    "lead": "Gratis y sin cuenta. Para Windows, macOS y Linux.",
+    "forWindows": "Descargar para Windows",
+    "forMac": "Descargar para macOS",
+    "forLinux": "Descargar para Linux",
+    "metaWindows": "instalador .exe",
+    "metaMac": ".dmg universal, Intel y Apple Silicon",
+    "metaLinux": "AppImage, funciona en la mayoría de distribuciones",
+    "browserBtn": "Abrir en el navegador",
+    "fileExe": "Instalador (.exe)",
+    "fileExeUser": "Sin permisos de administrador (.exe)",
+    "fileMsi": "Instalador (.msi)",
+    "fileDmg": ".dmg universal",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "browserNote": "¿Prefieres no instalar nada? La aplicación también <a href=\"https://open-frame-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">funciona en el navegador</a>.",
+    "label": "Descargar",
+    "mobileNote": "Open Frame Studio está hecho para una pantalla grande. Ábrelo en tu ordenador o pruébalo aquí en el navegador.",
+    "other": "Otras plataformas"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Todas las notas de versión",
+    "ctaDemo": "Pruébalo en el navegador",
+    "items": {
+      "layout": {
+        "title": "División libre",
+        "desc": "Haz clic en un hueco para su relleno, Ctrl+clic para un montante y arrastra las líneas divisorias."
+      },
+      "view3d": {
+        "title": "El 3D sigue el modelo",
+        "desc": "Formas escalonadas, ingletes a 45°, vidrio en el galce y hojas como perfiles reales."
+      },
+      "cutting": {
+        "title": "Corte igual al dibujo",
+        "desc": "Montantes continuos, antepechos y, por hueco, vidrio, hoja, panel y junquillos."
+      },
+      "joints": {
+        "title": "Reglas de unión",
+        "desc": "Madera con espigas y peanas continuas, aluminio y PVC a inglete."
+      },
+      "symbols": {
+        "title": "Símbolos de apertura",
+        "desc": "La vista exterior muestra el sentido de apertura y de deslizamiento según la convención neerlandesa."
+      },
+      "saved": {
+        "title": "Ajustes conservados",
+        "desc": "Junquillo, sentido de apertura y herrajes se conservan al guardar, cambiar y deshacer."
+      }
+    },
+    "label": "Novedades de la v0.6.0",
+    "title": "Dibujo, 3D y lista de corte <span>uno a uno</span>",
+    "desc": "En la versión 0.6 la división libre es la base: lo que dibujas es exactamente lo que obtienes en 3D y en la lista de corte."
+  },
+  "faq": {
+    "files": {
+      "q": "¿Qué archivos puedo abrir?",
+      "a": "Tus propios proyectos en .ofs. La aplicación de escritorio también lee carpinterías desde un archivo IFC y perfiles desde DXF."
+    },
+    "install": {
+      "q": "¿Tengo que instalar algo?",
+      "a": "Para probarlo, no: la versión web funciona directamente en el navegador. Para guardar y exportar a IFC, DXF, PDF y Excel necesitas la aplicación de escritorio; el navegador todavía no puede."
+    },
+    "price": {
+      "q": "¿Cuánto cuesta Open Frame Studio?",
+      "a": "Nada. La aplicación es gratuita y de código abierto con licencia CC BY-SA 4.0, sin cuenta ni suscripción."
+    },
+    "save": {
+      "q": "¿En qué formato se guarda mi trabajo?",
+      "a": "En un archivo de proyecto .ofs propio. La aplicación de escritorio también exporta a IFC, DXF, PDF, Excel, CSV y glTF."
+    },
+    "systems": {
+      "q": "¿En qué sistemas funciona?",
+      "a": "Windows (también sin permisos de administrador), macOS (Intel y Apple Silicon) y Linux (.deb, .rpm y AppImage), y en un navegador moderno."
+    },
+    "practice": {
+      "q": "¿Se ajusta a la práctica neerlandesa?",
+      "a": "Sí. Acotación según NEN 3576, símbolos de apertura según VKG y EN 12519, perfiles de madera en medidas KVT e IFC con las propiedades de ILS Houten Kozijnen v2.0."
+    },
+    "ai": {
+      "q": "¿Qué puede hacer un asistente de IA con ella?",
+      "a": "La aplicación incluye un asistente de IA que crea y modifica carpinterías a partir de lo que escribes. Lo conectas a OpenAI, Ollama u otro endpoint compatible. Todavía no hay un servidor MCP para asistentes externos."
+    },
+    "curtainwall": {
+      "q": "¿Puedo dibujar también un muro cortina?",
+      "a": "En la aplicación de escritorio, sí. La versión de navegador todavía no puede."
+    },
+    "ready": {
+      "q": "¿Puedo pedir ya carpinterías con ella?",
+      "a": "Es una versión temprana (0.6). Revisa medidas y listas antes de pedir o cortar, e informa de los errores en GitHub."
+    },
+    "heading": "Preguntas frecuentes"
+  },
   "tech": {
-    "title": "Tecnología",
-    "desc": "Un núcleo en Rust (ofs-core) para el modelo de datos, la geometría y todas las exportaciones (IFC, DXF, PDF, glTF, XLSX, CSV), una interfaz Svelte 5 con Three.js para el 3D y Tauri 2 para Windows, macOS y Linux. El mismo núcleo funciona como WebAssembly en la versión de navegador."
+    "rust": {
+      "title": "Núcleo en Rust",
+      "desc": "El modelo de datos, la geometría y todas las exportaciones (IFC, DXF, PDF, glTF, XLSX, CSV) están en una única biblioteca Rust, con más de cien pruebas."
+    },
+    "tauri": {
+      "desc": "Una capa nativa ligera para Windows, macOS y Linux, con instaladores pequeños."
+    },
+    "svelte": {
+      "desc": "La misma interfaz en el escritorio y en el navegador, con un editor 2D en SVG."
+    },
+    "three": {
+      "desc": "La vista 3D con perfiles extruidos y vidrio, directamente en la aplicación."
+    },
+    "wasm": {
+      "desc": "El núcleo en Rust se ejecuta como WebAssembly en la versión de navegador."
+    },
+    "ifc": {
+      "desc": "Intercambio abierto con software BIM, según la ILS Houten Kozijnen v2.0 neerlandesa."
+    },
+    "heading": "Tecnología",
+    "sub": "Para quien quiera saber cómo está hecho."
+  },
+  "releases": {
+    "showAll": "Mostrar todas las versiones",
+    "showLess": "Mostrar solo las tres últimas",
+    "github": "Todas las versiones en GitHub"
   }
 }

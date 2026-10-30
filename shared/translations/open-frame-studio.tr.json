@@ -1,108 +1,295 @@
 {
+  "header": {
+    "title": "Open <span class=\"accent\">Frame</span> Studio",
+    "demoBtn": "Tarayıcıda aç",
+    "downloadBtn": "İndir",
+    "sourceBtn": "Kaynak kodu",
+    "proof2": "Ahşap · alüminyum · PVC",
+    "proof3": "Felemenkçe, İngilizce ve Almanca",
+    "proof5": "Ücretsiz · CC BY-SA 4.0",
+    "heroAlt": "Open Frame Studio: 2B düzenleyicide ölçüleriyle çift açılır-devrilir pencere, solda projedeki doğramalar, sağda özellikler",
+    "label": "Doğramalar",
+    "tagline": "Doğrama çiziminden kesim listesine ve IFC'ye, tek bir ücretsiz uygulamada",
+    "desc": "Bir şablon seçin, doğramayı bölmelere ayırın ve her bölmeye kapı, kanat, cam veya panel atayın. Sonucu hemen 3B olarak, üretim listeleri ve Uw değeriyle birlikte görürsünüz."
+  },
   "meta": {
+    "description": "Ahşap, alüminyum ve PVC pencere ve kapı doğramaları tasarlamak için ücretsiz, açık kaynaklı uygulama: serbest bölmeli 2B düzenleyici, 3B görünüm, üretim listeleri, Uw kontrolü ve IFC, DXF, PDF ve Excel dışa aktarımı. Windows, macOS, Linux ve tarayıcı için.",
     "title": "Open Frame Studio — OpenAEC Foundation"
   },
-  "header": {
-    "label": "Doğrama tasarımı",
-    "title": "Open <span class=\"accent\">Frame</span> Studio",
-    "desc": "Pencere ve kapı doğramalarını tasarlamak, belgelemek ve dışa aktarmak için ücretsiz, açık kaynak yazılım. 2D çizim ve 3D görünümden doğrama listesine, atölye çizimine ve IFC dışa aktarmaya kadar."
-  },
-  "cta": {
-    "demo": "Tarayıcınızda açın",
-    "github": "GitHub'da görüntüle"
-  },
-  "shots": {
-    "s1": "Open Frame Studio — Meranti ağacından çift açılımlı bir pencerenin 3D görünümü, sağda doğrama özellikleri",
-    "s2": "Open Frame Studio — 900 × 1400 mm çift açılımlı bir pencerenin ölçüleriyle 2D doğrama editörü",
-    "s3": "Open Frame Studio — Doğrama başına poz numarası, ölçüler, malzeme, cam ve Ug değeri içeren doğrama listesi",
-    "s4": "Open Frame Studio — 67 × 114 mm ahşap doğrama profilinin kesiti ve profil kütüphanesiyle profil editörü"
-  },
-  "download": {
-    "title": "İndir",
-    "windows": "Kurulum dosyası (.exe)",
-    "windowsMsi": "MSI paketi (.msi)",
-    "macos": "Apple ve Intel işlemciler (.dmg)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxRpm": "Fedora, openSUSE (.rpm)",
-    "linuxAppimage": "Tüm dağıtımlar (AppImage)"
-  },
-  "what": {
-    "title": "Open Frame Studio nedir?",
-    "desc": "Pencere ve kapı doğramalarını tasarlamak, belgelemek ve dışa aktarmak için bir masaüstü uygulaması — ticari doğrama yazılımlarına ücretsiz ve profesyonel bir alternatif. Doğramayı 2D olarak çizin, 3D olarak kontrol edin; doğrama listesini, atölye çizimini ve IFC dosyasını aynı modelden teslim edin."
-  },
-  "materials": {
-    "m1": {
-      "title": "Ahşap",
-      "desc": "KVT standart profilleri (54, 67, 78 ve 90 mm), meranti, accoya, ladin, meşe, FSC sertifikalı sert ağaç ve yumuşak ağaç."
+  "hl": {
+    "layout": {
+      "alt": "Yan ışıklı kapının serbest bölmesi: bir kapı, sabit camlı bir bölme ve tuğla parapet; solda bölmeyi ayırma ve dolgu seçme düğmeleri",
+      "kicker": "Serbest bölme",
+      "title": "Doğramayı istediğiniz gibi bölün",
+      "desc": "Bir bölmeyi dikme veya kayıtla ayırın ve her bölme için kapı, kanat, sabit cam, panel veya parapet seçin; cam çıtası ve açılış yönüyle birlikte. Yan ışıklı kapıdan, üst ışıklı kapıdan veya bir ızgaradan başlayın."
     },
-    "m2": {
-      "title": "Alüminyum",
-      "desc": "45° gönye birleşimli köşelere sahip standart alüminyum profiller."
+    "view3d": {
+      "alt": "Tuğla duvara yerleştirilmiş, üst ışıklı bir giriş kapısının 3B görünümü",
+      "kicker": "3B görünüm",
+      "title": "Doğramayı duvarın içinde görün",
+      "desc": "3B görünüm çiziminizi izler: gerçek profiller, lambada cam, ayrı parçalar olarak kanatlar ve kapılar, çevresinde tuğla duvar. Her şeyin doğru olup olmadığını bir bakışta kontrol edersiniz."
     },
-    "m3": {
-      "title": "PVC",
-      "desc": "VEKA, Kömmerling ve diğer üreticilerin standart PVC profilleri ve şablonları."
+    "production": {
+      "alt": "Parça başına kesim listesiyle üretim listeleri: profil, malzeme, net ve brüt uzunluk ile kesim açıları; cam, donanım, conta, panel, cam çıtası ve parça listesi sekmeleriyle",
+      "kicker": "Üretim",
+      "title": "Kesim listesi çizimi izler",
+      "desc": "Her dikme, eşik ve kanat elemanı net ve brüt uzunluğu ve kesim açısıyla kesim listesinde yer alır. Ayrıca cam, donanım, conta, panel ve cam çıtası listeleri vardır. Birleşimler doğramacılık kurallarına uyar: ahşapta zıvana, alüminyum ve PVC'de gönye."
     },
-    "m4": {
-      "title": "Ahşap-alüminyum",
-      "desc": "İç tarafı ahşap, dış tarafı alüminyum olan kombinasyon profilleri."
-    }
-  },
-  "features": {
-    "title": "Özellikler",
-    "showAll": "Tüm özellikleri göster",
-    "showLess": "Daha az göster",
-    "editor": {
-      "title": "2D doğrama editörü",
-      "desc": "Izgara bölümlemesi, sürükleme tutamakları, ölçü çizgileri ve dolgu elemanlarıyla etkileşimli editör: cam, kanat, kapı, panel veya parapet."
+    "energy": {
+      "alt": "Ortalama Uw değeri, doğrama başına alan ve iletim kaybıyla enerji özeti; her doğrama için belirlenen sınıra göre yeşil OK",
+      "kicker": "Enerji",
+      "title": "Uw değerinin uyup uymadığını hemen bilin",
+      "desc": "Uygulama her doğrama için profillerden ve camdan Uw değerini, alanı ve iletim kaybını hesaplar. Bir sınır belirleyin ve hangi doğramanın uyduğunu hemen görün."
     },
     "profiles": {
-      "title": "Profil editörü",
-      "desc": "Bir profil kesitini nokta nokta düzenleyin; aynalama, yakalama ızgarası ve geri alma özellikleriyle."
-    },
-    "library": {
-      "title": "80+ profil",
-      "desc": "Gerçekçi lamba kesitlerine sahip ahşap, alüminyum, PVC ve ahşap-alüminyum profil kütüphanesi."
+      "alt": "Çift lambalı ahşap kasa profilinin kesitiyle profil düzenleyici; solda profil kütüphanesi, sağda ölçüler, lamba ve Uf değeri",
+      "kicker": "Profiller",
+      "title": "Kendi profillerinizle çalışın",
+      "desc": "Ahşap, alüminyum, PVC ve ahşap-alüminyum kütüphanesinden seçin veya kesiti nokta nokta çizin. Genişlik, derinlik, lamba ve Uf değerini belirleyin ya da DXF'ten profil içe aktarın."
+    }
+  },
+  "notice": {
+    "link": "GitHub'da bildirin",
+    "text": "Erken sürüm (0.6). Deneyin ve eksik gördüklerinizi bize bildirin."
+  },
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "download": "İndir",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "design": "Tasarım",
+    "profiles": "Profiller",
+    "production": "Üretim",
+    "energy": "Enerji",
+    "connect": "BIM ve bağlantılar",
+    "all": "Tüm özellikler"
+  },
+  "features": {
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Doğrama için her şey, çizimden atölyeye",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "editor": {
+      "title": "2B doğrama düzenleyici",
+      "desc": "Sütunlar ve satırlar, sürükleme tutamakları ve kapalı ölçü zinciri; geri al ve yinele ile."
     },
     "templates": {
       "title": "Şablonlar",
-      "desc": "Çift açılımlı pencere, iki kanatlı çift açılımlı pencere, sürme kapı, giriş kapısı, yatay bölmeli kapı ve üzerine geliştirebileceğiniz kendi şablonlarınız."
+      "desc": "Açılır-devrilir, çift, Fransız pencere, vasistas, pivot, giriş kapısı, sürme ve kaldır-sür kapı. Kendi doğramanızı şablon olarak kaydedin."
+    },
+    "infill": {
+      "title": "Serbest bölme",
+      "desc": "Bölmeleri ayırın, birleştirin veya yer değiştirin; her bölme için dolgu, cam çıtası, açılış yönü ve donanımı seçin."
+    },
+    "shapes": {
+      "title": "Özel biçimler",
+      "desc": "Olağan dikdörtgen doğramanın yanında basık kemer, yuvarlak, yamuk veya eğik dikmeler üzerinde kemer."
     },
     "view3d": {
-      "title": "3D görünüm",
-      "desc": "Ekstrüde profiller, lambaya oturan cam ve çevresindeki duvar örgüsüyle Three.js önizlemesi."
+      "title": "3B görünüm",
+      "desc": "Ekstrüde profiller, lambada cam ve çevresinde tuğla duvar; yan ışıklı kapı gibi basamaklı biçimlerde de."
     },
-    "ai": {
-      "title": "Yapay zekâ yapılandırıcı",
-      "desc": "\"900×1400 çift açılımlı pencere yap\" yazın, doğrama hazır. OpenAI, Ollama veya uyumlu herhangi bir endpoint ile çalışır."
-    },
-    "schedule": {
-      "title": "Doğrama listesi",
-      "desc": "Doğrama başına ölçüler, malzeme, cam ve Ug değeri içeren profesyonel doğrama listesi, PDF ve Excel olarak."
-    },
-    "workshop": {
-      "title": "Atölye çizimi",
-      "desc": "Antetli A3 atölye çizimleri ve atölye için ölçü çizgili DXF çizimleri."
-    },
-    "ifc": {
-      "title": "IFC dışa aktarma",
-      "desc": "BIM iş akışları için ILS Houten Kozijnen v2.0 özellik setlerini içeren IFC dosyaları."
-    },
-    "cutting": {
-      "title": "Kesim listesi ve birleşimler",
-      "desc": "Çizimi takip eden bir kesim listesi, kurallara uygun birleşimlerle: ahşapta zıvana, alüminyum ve PVC'de gönye."
+    "colors": {
+      "title": "RAL renkleri",
+      "desc": "İç ve dış yüz için ayrı renk, 2B ve 3B'de görünür."
     },
     "conventions": {
       "title": "Hollanda çizim kuralları",
-      "desc": "Dış görünüşte NEN 3576'ya göre ölçülendirme, VKG ve EN 12519'a göre açılım sembolleri."
+      "desc": "NEN 3576'ya göre ölçülendirme ve dış görünüşte VKG ile EN 12519'a göre açılış sembolleri."
+    },
+    "library": {
+      "title": "Profil kütüphanesi",
+      "desc": "KVT ölçülerinde ahşap (meranti, accoya, çam, meşe, FSC sert ağaç), alüminyum, PVC ve ahşap-alüminyum; kanat, kapı ve cam çıtası profilleriyle."
+    },
+    "systems": {
+      "title": "Bilinen sistemler",
+      "desc": "Diğerlerinin yanı sıra VEKA, Kömmerling, Reynaers CS 77 ve Schüco AWS 75.SI+ için gönye köşeli şablonlar."
+    },
+    "profileeditor": {
+      "title": "Profil düzenleyici",
+      "desc": "Kesiti nokta nokta çizin; aynalama, yakalama ızgarası ve geri alma ile."
+    },
+    "dxfprofile": {
+      "title": "DXF'ten profil",
+      "desc": "Bir tedarikçinin kesitini DXF dosyasından içe aktarın."
+    },
+    "joints": {
+      "title": "Köşe birleşimleri",
+      "desc": "Zıvana, gönye, kontra profil veya alın birleşim; her köşe için ayarlanır. Sizin seçiminiz her zaman önceliklidir."
+    },
+    "lists": {
+      "title": "Üretim listeleri",
+      "desc": "Net ve brüt uzunluklar ile kesim açılarını içeren kesim listesi; ayrıca cam, donanım, conta, panel, cam çıtası ve parça listeleri."
+    },
+    "schedule": {
+      "title": "Doğrama çizelgesi",
+      "desc": "İşaret, ölçüler, malzeme, bölmeler, cam ve Ug değeriyle tüm doğramalar. Masaüstü uygulaması bundan PDF veya Excel dosyası yapar."
+    },
+    "workshop": {
+      "title": "Atölye çizimi",
+      "desc": "Masaüstü uygulamasından antetli A3 çizimler ve atölye için ölçü çizgili DXF."
+    },
+    "uw": {
+      "title": "Doğrama başına Uw",
+      "desc": "Doğrama başına Uw değeri, alan ve iletim kaybı; kendi belirlediğiniz sınıra göre kontrol edilir."
+    },
+    "glazing": {
+      "title": "Bölme başına cam",
+      "desc": "Her bölme için çift veya üçlü cam gibi camı seçin; Ug değeri Uw'ye dahil edilir."
+    },
+    "ifc": {
+      "title": "IFC dışa aktarımı",
+      "desc": "BIM modeliniz için ILS Houten Kozijnen v2.0 özellik setleriyle IFC 4. Masaüstü uygulaması IFC'den doğrama da okur."
+    },
+    "gltf": {
+      "title": "glTF ve CSV",
+      "desc": "Görselleştirme için 3B model glTF olarak, kendi yazılımınız için üretim verileri CSV olarak."
     },
     "blender": {
       "title": "Blender ve Bonsai",
-      "desc": "IFC modellemeye devam etmek için doğramaları Bonsai ile doğrudan Blender'a gönderin."
+      "desc": "IFC'de modellemeye devam etmek için masaüstü uygulamasından bir doğramayı doğrudan Bonsai yüklü Blender'a gönderin."
+    },
+    "ai": {
+      "title": "Yapay zekâ asistanı",
+      "desc": "\"900×1400 açılır-devrilir yap\" yazın, doğrama hazır. OpenAI, Ollama veya uyumlu başka bir uç noktayla çalışır."
+    },
+    "languages": {
+      "title": "Üç dil",
+      "desc": "Uygulama Felemenkçe, İngilizce ve Almanca çalışır; ölçüler milimetre cinsindendir."
+    },
+    "themes": {
+      "title": "Açık ve koyu",
+      "desc": "Diğer OpenAEC uygulamalarının tarzında açık ve koyu tema."
     }
   },
+  "download": {
+    "title": "v0.6.0 indir",
+    "lead": "Ücretsiz, hesap gerekmez. Windows, macOS ve Linux için.",
+    "forWindows": "Windows için indir",
+    "forMac": "macOS için indir",
+    "forLinux": "Linux için indir",
+    "metaWindows": ".exe yükleyici",
+    "metaMac": "evrensel .dmg, Intel ve Apple Silicon",
+    "metaLinux": "AppImage, çoğu dağıtımda çalışır",
+    "browserBtn": "Tarayıcıda aç",
+    "fileExe": "Yükleyici (.exe)",
+    "fileExeUser": "Yönetici hakları olmadan (.exe)",
+    "fileMsi": "Yükleyici (.msi)",
+    "fileDmg": "Evrensel .dmg",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "browserNote": "Hiçbir şey kurmak istemiyor musunuz? Uygulama <a href=\"https://open-frame-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">tarayıcıda da çalışır</a>.",
+    "label": "İndir",
+    "mobileNote": "Open Frame Studio büyük ekran için yapılmıştır. Bilgisayarınızda açın veya burada tarayıcıda deneyin.",
+    "other": "Diğer platformlar"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDemo": "Tarayıcıda deneyin",
+    "items": {
+      "layout": {
+        "title": "Serbest bölme",
+        "desc": "Dolgu için bölmeye tıklayın, dikme için Ctrl+tıklayın ve bölme çizgilerini sürükleyin."
+      },
+      "view3d": {
+        "title": "3B modeli izler",
+        "desc": "Basamaklı biçimler, 45° gönyeler, lambada cam ve gerçek profil olarak kanatlar."
+      },
+      "cutting": {
+        "title": "Kesim listesi çizimle aynı",
+        "desc": "Kesintisiz dikmeler, parapetler ve her bölme için cam, kanat, panel ve cam çıtaları."
+      },
+      "joints": {
+        "title": "Birleşim kuralları",
+        "desc": "Ahşapta kesintisiz eşiklerle zıvanalı birleşim, alüminyum ve PVC'de gönye."
+      },
+      "symbols": {
+        "title": "Açılış sembolleri",
+        "desc": "Dış görünüş, açılış ve sürme yönünü Hollanda kuralına göre gösterir."
+      },
+      "saved": {
+        "title": "Ayarlar korunur",
+        "desc": "Cam çıtası, açılış yönü ve donanım kaydetme, geçiş ve geri almadan sonra korunur."
+      }
+    },
+    "label": "v0.6.0 sürümünde yeni",
+    "title": "Çizim, 3B ve kesim listesi <span>birebir</span>",
+    "desc": "0.6 sürümünde serbest bölme temel alınır: çizdiğiniz şey 3B'de ve kesim listesinde birebir aynı görünür."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "Kendi .ofs projeleriniz. Masaüstü uygulaması ayrıca IFC dosyasından doğramaları ve DXF'ten profilleri okur."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Denemek için hayır: web sürümü doğrudan tarayıcıda çalışır. Kaydetmek ve IFC, DXF, PDF ve Excel'e aktarmak için masaüstü uygulaması gerekir; tarayıcıda bu henüz mümkün değil."
+    },
+    "price": {
+      "q": "Open Frame Studio'nun fiyatı nedir?",
+      "a": "Hiçbir şey. Uygulama CC BY-SA 4.0 lisansıyla ücretsiz ve açık kaynaklıdır; hesap veya abonelik gerekmez."
+    },
+    "save": {
+      "q": "Çalışmam hangi biçimde kaydedilir?",
+      "a": "Kendi .ofs proje dosyasında. Masaüstü uygulaması ayrıca IFC, DXF, PDF, Excel, CSV ve glTF'ye aktarır."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows (yönetici hakları olmadan da), macOS (Intel ve Apple Silicon) ve Linux (.deb, .rpm ve AppImage), ayrıca modern bir tarayıcıda."
+    },
+    "practice": {
+      "q": "Hollanda uygulamasına uygun mu?",
+      "a": "Evet. NEN 3576'ya göre ölçülendirme, VKG ve EN 12519'a göre açılış sembolleri, KVT ölçülerinde ahşap profiller ve ILS Houten Kozijnen v2.0 özellikleriyle IFC."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "Uygulamada, yazdıklarınıza göre doğrama oluşturan ve düzenleyen yerleşik bir yapay zekâ asistanı vardır. Onu OpenAI, Ollama veya uyumlu başka bir uç noktaya bağlarsınız. Harici asistanlar için henüz bir MCP sunucusu yok."
+    },
+    "curtainwall": {
+      "q": "Giydirme cephe de çizebilir miyim?",
+      "a": "Masaüstü uygulamasında evet. Tarayıcı sürümünde henüz mümkün değil."
+    },
+    "ready": {
+      "q": "Bununla şimdiden doğrama sipariş edebilir miyim?",
+      "a": "Bu erken bir sürümdür (0.6). Sipariş vermeden veya kesime başlamadan önce ölçüleri ve listeleri kontrol edin, hataları GitHub'da bildirin."
+    },
+    "heading": "Sık sorulan sorular"
+  },
   "tech": {
-    "title": "Teknoloji",
-    "desc": "Veri modeli, geometri ve tüm dışa aktarmalar (IFC, DXF, PDF, glTF, XLSX, CSV) için bir Rust çekirdeği (ofs-core), 3D için Three.js içeren bir Svelte 5 arayüzü ve Windows, macOS ve Linux için Tauri 2. Aynı çekirdek, tarayıcı sürümünde WebAssembly olarak çalışır."
+    "rust": {
+      "title": "Rust çekirdeği",
+      "desc": "Veri modeli, geometri ve tüm dışa aktarımlar (IFC, DXF, PDF, glTF, XLSX, CSV) yüzü aşkın testle tek bir Rust kütüphanesindedir."
+    },
+    "tauri": {
+      "desc": "Küçük yükleyicilerle Windows, macOS ve Linux için ince bir yerel kabuk."
+    },
+    "svelte": {
+      "desc": "Masaüstünde ve tarayıcıda aynı arayüz; SVG tabanlı 2B düzenleyiciyle."
+    },
+    "three": {
+      "desc": "Ekstrüde profiller ve camla 3B görünüm, doğrudan uygulamada."
+    },
+    "wasm": {
+      "desc": "Rust çekirdeği tarayıcı sürümünde WebAssembly olarak çalışır."
+    },
+    "ifc": {
+      "desc": "Hollanda ILS Houten Kozijnen v2.0'a uygun, BIM yazılımlarıyla açık veri alışverişi."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }

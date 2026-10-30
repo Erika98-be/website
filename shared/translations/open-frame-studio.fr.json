@@ -1,108 +1,295 @@
 {
+  "header": {
+    "title": "Open <span class=\"accent\">Frame</span> Studio",
+    "demoBtn": "Ouvrir dans le navigateur",
+    "downloadBtn": "Télécharger",
+    "sourceBtn": "Code source",
+    "proof2": "Bois · aluminium · PVC",
+    "proof3": "Néerlandais, anglais et allemand",
+    "proof5": "Gratuit · CC BY-SA 4.0",
+    "heroAlt": "Open Frame Studio : une fenêtre oscillo-battante double dans l'éditeur 2D avec ses cotes, les menuiseries du projet à gauche et les propriétés à droite",
+    "label": "Menuiseries",
+    "tagline": "Du dessin de la menuiserie à la liste de débit et à l'IFC, dans une seule application gratuite",
+    "desc": "Choisissez un modèle, divisez la menuiserie en compartiments et donnez à chacun une porte, un ouvrant, un vitrage ou un panneau. Vous la voyez aussitôt en 3D, avec les listes de production et la valeur Uw."
+  },
   "meta": {
+    "description": "Application gratuite et open source pour concevoir des menuiseries en bois, aluminium et PVC : éditeur 2D à découpage libre, vue 3D, listes de production, contrôle du Uw et export IFC, DXF, PDF et Excel. Pour Windows, macOS, Linux et le navigateur.",
     "title": "Open Frame Studio — OpenAEC Foundation"
   },
-  "header": {
-    "label": "Conception de menuiseries",
-    "title": "Open <span class=\"accent\">Frame</span> Studio",
-    "desc": "Logiciel gratuit et open source pour concevoir, documenter et exporter des menuiseries de fenêtres et de portes. Du dessin 2D et de la vue 3D jusqu’à la nomenclature des menuiseries, au plan d’atelier et à l’export IFC."
-  },
-  "cta": {
-    "demo": "Ouvrir dans votre navigateur",
-    "github": "Voir sur GitHub"
-  },
-  "shots": {
-    "s1": "Open Frame Studio — Vue 3D d’une fenêtre oscillo-battante en méranti, avec les propriétés du châssis à droite",
-    "s2": "Open Frame Studio — Éditeur 2D de châssis avec les cotes d’une fenêtre oscillo-battante de 900 × 1400 mm",
-    "s3": "Open Frame Studio — Nomenclature des menuiseries avec repère, dimensions, matériau, vitrage et valeur Ug par châssis",
-    "s4": "Open Frame Studio — Éditeur de profils avec la section d’un profil de châssis bois de 67 × 114 mm et la bibliothèque de profils"
-  },
-  "download": {
-    "title": "Télécharger",
-    "windows": "Programme d’installation (.exe)",
-    "windowsMsi": "Paquet MSI (.msi)",
-    "macos": "Processeurs Apple et Intel (.dmg)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxRpm": "Fedora, openSUSE (.rpm)",
-    "linuxAppimage": "Toutes distributions (AppImage)"
-  },
-  "what": {
-    "title": "Qu’est-ce qu’Open Frame Studio ?",
-    "desc": "Une application de bureau pour concevoir, documenter et exporter des menuiseries de fenêtres et de portes — une alternative gratuite et professionnelle aux logiciels de menuiserie commerciaux. Dessinez le châssis en 2D, vérifiez-le en 3D et produisez la nomenclature des menuiseries, le plan d’atelier et le fichier IFC à partir du même modèle."
-  },
-  "materials": {
-    "m1": {
-      "title": "Bois",
-      "desc": "Profils standard KVT (54, 67, 78 et 90 mm), méranti, accoya, épicéa, chêne, bois dur et résineux certifiés FSC."
+  "hl": {
+    "layout": {
+      "alt": "Découpage libre d'une porte avec imposte latérale : une porte, un compartiment vitré fixe et une allège en maçonnerie, avec à gauche les boutons pour diviser un compartiment et choisir son remplissage",
+      "kicker": "Découpage libre",
+      "title": "Divisez la menuiserie comme vous le voulez",
+      "desc": "Divisez un compartiment par un montant ou une traverse et choisissez pour chacun une porte, un ouvrant, un vitrage fixe, un panneau ou une allège, avec parclose et sens d'ouverture. Partez d'une porte avec imposte latérale, d'une porte avec imposte ou d'une grille."
     },
-    "m2": {
-      "title": "Aluminium",
-      "desc": "Profils aluminium standard, avec angles assemblés en onglet à 45°."
+    "view3d": {
+      "alt": "Vue 3D d'une porte d'entrée avec imposte, posée dans la maçonnerie",
+      "kicker": "Vue 3D",
+      "title": "Voyez la menuiserie dans le mur",
+      "desc": "La vue 3D suit votre dessin : de vrais profilés, le vitrage dans la feuillure, les ouvrants et portes en pièces distinctes et la maçonnerie autour. Vous vérifiez d'un coup d'œil que tout est juste."
     },
-    "m3": {
-      "title": "PVC",
-      "desc": "Profils PVC standard et modèles de VEKA, Kömmerling et d’autres fabricants."
+    "production": {
+      "alt": "Listes de production avec la liste de débit par pièce : profilé, matériau, longueurs nette et brute et angles de coupe, avec des onglets pour le vitrage, la quincaillerie, les joints, les panneaux, les parcloses et la nomenclature",
+      "kicker": "Production",
+      "title": "La liste de débit suit le dessin",
+      "desc": "Chaque montant, traverse et élément d'ouvrant figure dans la liste de débit, avec longueurs nette et brute et angle de coupe. S'y ajoutent des listes pour le vitrage, la quincaillerie, les joints, les panneaux et les parcloses. Les assemblages suivent les règles de menuiserie : tenon-mortaise pour le bois, onglet pour l'aluminium et le PVC."
     },
-    "m4": {
-      "title": "Bois-aluminium",
-      "desc": "Profils mixtes avec du bois à l’intérieur et de l’aluminium à l’extérieur."
-    }
-  },
-  "features": {
-    "title": "Fonctionnalités",
-    "showAll": "Afficher toutes les fonctionnalités",
-    "showLess": "Afficher moins",
-    "editor": {
-      "title": "Éditeur 2D de châssis",
-      "desc": "Éditeur interactif avec division en grille, poignées de déplacement, lignes de cote et remplissages : vitrage, ouvrant, porte, panneau ou allège."
+    "energy": {
+      "alt": "Vue énergétique avec la valeur Uw moyenne, la surface et les déperditions par transmission par menuiserie, et un OK vert par menuiserie par rapport à la limite fixée",
+      "kicker": "Énergie",
+      "title": "Sachez tout de suite si la valeur Uw convient",
+      "desc": "Pour chaque menuiserie, l'application calcule la valeur Uw, la surface et les déperditions par transmission à partir des profilés et du vitrage. Fixez une limite et voyez aussitôt quelle menuiserie la respecte."
     },
     "profiles": {
-      "title": "Éditeur de profils",
-      "desc": "Modifiez la section d’un profil point par point, avec symétrie, grille d’accrochage et annulation."
-    },
-    "library": {
-      "title": "80+ profils",
-      "desc": "Bibliothèque de profils bois, aluminium, PVC et bois-aluminium avec des sections de feuillure réalistes."
+      "alt": "Éditeur de profilés avec la coupe d'un profilé de dormant en bois à double feuillure, la bibliothèque de profilés à gauche et les dimensions, la feuillure et la valeur Uf à droite",
+      "kicker": "Profilés",
+      "title": "Travaillez avec vos propres profilés",
+      "desc": "Choisissez dans la bibliothèque bois, aluminium, PVC et bois-aluminium, ou dessinez une coupe point par point. Fixez largeur, profondeur, feuillure et valeur Uf, ou importez un profilé depuis un DXF."
+    }
+  },
+  "notice": {
+    "link": "Signalez-le sur GitHub",
+    "text": "Version précoce (0.6). Essayez-la et dites-nous ce qui vous manque."
+  },
+  "subnav": {
+    "label": "Sur cette page",
+    "features": "Fonctions",
+    "download": "Télécharger",
+    "whatsnew": "Nouveautés",
+    "faq": "FAQ",
+    "releases": "Versions"
+  },
+  "tabs": {
+    "highlights": "Points forts",
+    "design": "Conception",
+    "profiles": "Profilés",
+    "production": "Production",
+    "energy": "Énergie",
+    "connect": "BIM et intégrations",
+    "all": "Toutes les fonctions"
+  },
+  "features": {
+    "learnMore": "En savoir plus",
+    "label": "Fonctions",
+    "heading": "Tout pour la menuiserie, du dessin à l'atelier",
+    "sub": "Commencez par les points forts ou choisissez un thème.",
+    "tabsLabel": "Fonctions par thème"
+  },
+  "f": {
+    "editor": {
+      "title": "Éditeur 2D de menuiseries",
+      "desc": "Colonnes et rangées, poignées de déplacement et chaîne de cotes fermée, avec annuler et rétablir."
     },
     "templates": {
       "title": "Modèles",
-      "desc": "Fenêtre oscillo-battante, fenêtre oscillo-battante double, porte coulissante, porte d’entrée, porte d’écurie et vos propres modèles comme base de travail."
+      "desc": "Oscillo-battant, double, fenêtre à la française, à soufflet, pivotant, porte d'entrée, coulissant et levant-coulissant. Enregistrez votre menuiserie comme modèle."
+    },
+    "infill": {
+      "title": "Découpage libre",
+      "desc": "Divisez, fusionnez ou permutez des compartiments et choisissez par compartiment le remplissage, la parclose, le sens d'ouverture et la quincaillerie."
+    },
+    "shapes": {
+      "title": "Formes particulières",
+      "desc": "Cintré, rond, trapèze ou arc sur montants inclinés, en plus de la menuiserie rectangulaire classique."
     },
     "view3d": {
       "title": "Vue 3D",
-      "desc": "Aperçu Three.js avec profils extrudés, vitrage dans la feuillure et maçonnerie environnante."
+      "desc": "Profilés extrudés, vitrage dans la feuillure et maçonnerie autour, y compris pour les formes en escalier comme une porte avec imposte latérale."
     },
-    "ai": {
-      "title": "Configurateur IA",
-      "desc": "Tapez « Fais une oscillo-battante 900×1400 » et le châssis apparaît. Fonctionne avec OpenAI, Ollama ou tout endpoint compatible."
-    },
-    "schedule": {
-      "title": "Nomenclature des menuiseries",
-      "desc": "Nomenclature professionnelle en PDF et Excel, avec dimensions, matériau, vitrage et valeur Ug par châssis."
-    },
-    "workshop": {
-      "title": "Plan d’atelier",
-      "desc": "Plans d’atelier A3 avec cartouche, et plans DXF avec lignes de cote pour l’atelier."
-    },
-    "ifc": {
-      "title": "Export IFC",
-      "desc": "Fichiers IFC avec les jeux de propriétés ILS Houten Kozijnen v2.0, pour les flux de travail BIM."
-    },
-    "cutting": {
-      "title": "Liste de débit et assemblages",
-      "desc": "Une liste de débit qui suit le dessin, avec des assemblages dans les règles de l’art : tenon et mortaise pour le bois, onglets pour l’aluminium et le PVC."
+    "colors": {
+      "title": "Couleurs RAL",
+      "desc": "Une couleur pour la face intérieure et une pour la face extérieure, visibles en 2D et en 3D."
     },
     "conventions": {
       "title": "Conventions de dessin néerlandaises",
-      "desc": "Cotation selon NEN 3576 et symboles d’ouverture selon VKG et EN 12519 en vue extérieure."
+      "desc": "Cotation selon NEN 3576 et symboles d'ouverture en vue extérieure selon VKG et EN 12519."
+    },
+    "library": {
+      "title": "Bibliothèque de profilés",
+      "desc": "Bois aux dimensions KVT (meranti, accoya, sapin, chêne, bois dur FSC), aluminium, PVC et bois-aluminium, avec profilés d'ouvrant, de porte et parcloses."
+    },
+    "systems": {
+      "title": "Systèmes connus",
+      "desc": "Modèles pour VEKA, Kömmerling, Reynaers CS 77 et Schüco AWS 75.SI+, entre autres, avec angles d'onglet."
+    },
+    "profileeditor": {
+      "title": "Éditeur de profilés",
+      "desc": "Dessinez une coupe point par point, avec symétrie, grille magnétique et annulation."
+    },
+    "dxfprofile": {
+      "title": "Profilé depuis un DXF",
+      "desc": "Importez la coupe d'un fournisseur depuis un fichier DXF."
+    },
+    "joints": {
+      "title": "Assemblages d'angle",
+      "desc": "Tenon-mortaise, onglet, contre-profil ou bout à bout, réglable par angle. Votre choix l'emporte toujours."
+    },
+    "lists": {
+      "title": "Listes de production",
+      "desc": "Liste de débit avec longueurs nettes et brutes et angles de coupe, plus des listes pour le vitrage, la quincaillerie, les joints, les panneaux, les parcloses et les pièces."
+    },
+    "schedule": {
+      "title": "Tableau des menuiseries",
+      "desc": "Toutes les menuiseries avec repère, dimensions, matériau, compartiments, vitrage et valeur Ug. L'application de bureau en fait un PDF ou un fichier Excel."
+    },
+    "workshop": {
+      "title": "Plan d'atelier",
+      "desc": "Plans A3 avec cartouche, et DXF avec cotes pour l'atelier, depuis l'application de bureau."
+    },
+    "uw": {
+      "title": "Uw par menuiserie",
+      "desc": "Valeur Uw, surface et déperditions par transmission par menuiserie, comparées à une limite que vous fixez."
+    },
+    "glazing": {
+      "title": "Vitrage par compartiment",
+      "desc": "Choisissez le vitrage par compartiment, double ou triple, avec la valeur Ug prise en compte dans le Uw."
+    },
+    "ifc": {
+      "title": "Export IFC",
+      "desc": "IFC 4 avec les jeux de propriétés ILS Houten Kozijnen v2.0, pour votre maquette BIM. L'application de bureau lit aussi des menuiseries depuis un IFC."
+    },
+    "gltf": {
+      "title": "glTF et CSV",
+      "desc": "Le modèle 3D en glTF pour la visualisation, et les données de production en CSV pour vos propres logiciels."
     },
     "blender": {
       "title": "Blender et Bonsai",
-      "desc": "Envoyez les châssis directement vers Blender avec Bonsai pour poursuivre la modélisation IFC."
+      "desc": "Envoyez une menuiserie depuis l'application de bureau directement vers Blender avec Bonsai pour poursuivre la modélisation en IFC."
+    },
+    "ai": {
+      "title": "Assistant IA",
+      "desc": "Tapez « Fais un oscillo-battant 900×1400 » et la menuiserie apparaît. Fonctionne avec OpenAI, Ollama ou un autre point d'accès compatible."
+    },
+    "languages": {
+      "title": "Trois langues",
+      "desc": "L'application fonctionne en néerlandais, anglais et allemand, avec des cotes en millimètres."
+    },
+    "themes": {
+      "title": "Clair et sombre",
+      "desc": "Un thème clair et un thème sombre, dans le style des autres applications OpenAEC."
     }
   },
+  "download": {
+    "title": "Télécharger v0.6.0",
+    "lead": "Gratuit, sans compte. Pour Windows, macOS et Linux.",
+    "forWindows": "Télécharger pour Windows",
+    "forMac": "Télécharger pour macOS",
+    "forLinux": "Télécharger pour Linux",
+    "metaWindows": "programme d'installation .exe",
+    "metaMac": ".dmg universel, Intel et Apple Silicon",
+    "metaLinux": "AppImage, fonctionne sur la plupart des distributions",
+    "browserBtn": "Ouvrir dans le navigateur",
+    "fileExe": "Programme d'installation (.exe)",
+    "fileExeUser": "Sans droits d'administrateur (.exe)",
+    "fileMsi": "Programme d'installation (.msi)",
+    "fileDmg": ".dmg universel",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "browserNote": "Vous préférez ne rien installer ? L'application <a href=\"https://open-frame-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">fonctionne aussi dans le navigateur</a>.",
+    "label": "Télécharger",
+    "mobileNote": "Open Frame Studio est conçu pour un grand écran. Ouvrez-le sur votre ordinateur, ou essayez-le ici dans le navigateur.",
+    "other": "Autres plateformes"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Toutes les notes de version",
+    "ctaDemo": "Essayer dans le navigateur",
+    "items": {
+      "layout": {
+        "title": "Découpage libre",
+        "desc": "Cliquez sur un compartiment pour son remplissage, Ctrl+clic pour un montant et faites glisser les lignes de division."
+      },
+      "view3d": {
+        "title": "La 3D suit le modèle",
+        "desc": "Formes en escalier, onglets à 45°, vitrage dans la feuillure et ouvrants en vrais profilés."
+      },
+      "cutting": {
+        "title": "Débit conforme au dessin",
+        "desc": "Montants continus, allèges et, par compartiment, vitrage, ouvrant, panneau et parcloses."
+      },
+      "joints": {
+        "title": "Règles d'assemblage",
+        "desc": "Bois à tenons avec traverses continues, aluminium et PVC en onglet."
+      },
+      "symbols": {
+        "title": "Symboles d'ouverture",
+        "desc": "La vue extérieure montre le sens d'ouverture et de coulissement selon la convention néerlandaise."
+      },
+      "saved": {
+        "title": "Réglages conservés",
+        "desc": "Parclose, sens d'ouverture et quincaillerie sont conservés après enregistrement, changement et annulation."
+      }
+    },
+    "label": "Nouveau dans la v0.6.0",
+    "title": "Dessin, 3D et liste de débit <span>à l'identique</span>",
+    "desc": "Dans la version 0.6, le découpage libre est la base : ce que vous dessinez se retrouve à l'identique en 3D et dans la liste de débit."
+  },
+  "faq": {
+    "files": {
+      "q": "Quels fichiers puis-je ouvrir ?",
+      "a": "Vos propres projets en .ofs. L'application de bureau lit aussi des menuiseries depuis un fichier IFC et des profilés depuis un DXF."
+    },
+    "install": {
+      "q": "Dois-je installer quelque chose ?",
+      "a": "Pas pour l'essayer : la version web fonctionne directement dans le navigateur. Pour enregistrer et exporter en IFC, DXF, PDF et Excel, il faut l'application de bureau ; le navigateur ne le permet pas encore."
+    },
+    "price": {
+      "q": "Combien coûte Open Frame Studio ?",
+      "a": "Rien. L'application est gratuite et open source sous licence CC BY-SA 4.0, sans compte ni abonnement."
+    },
+    "save": {
+      "q": "Dans quel format mon travail est-il enregistré ?",
+      "a": "Dans un fichier de projet .ofs. L'application de bureau exporte aussi en IFC, DXF, PDF, Excel, CSV et glTF."
+    },
+    "systems": {
+      "q": "Sur quels systèmes fonctionne-t-il ?",
+      "a": "Windows (aussi sans droits d'administrateur), macOS (Intel et Apple Silicon) et Linux (.deb, .rpm et AppImage), ainsi que dans un navigateur moderne."
+    },
+    "practice": {
+      "q": "Est-il adapté à la pratique néerlandaise ?",
+      "a": "Oui. Cotation selon NEN 3576, symboles d'ouverture selon VKG et EN 12519, profilés bois aux dimensions KVT et IFC avec les propriétés ILS Houten Kozijnen v2.0."
+    },
+    "ai": {
+      "q": "Que peut en faire un assistant IA ?",
+      "a": "L'application intègre un assistant IA qui crée et modifie des menuiseries à partir de ce que vous tapez. Vous le reliez à OpenAI, Ollama ou un autre point d'accès compatible. Il n'y a pas encore de serveur MCP pour des assistants externes."
+    },
+    "curtainwall": {
+      "q": "Puis-je aussi dessiner un mur-rideau ?",
+      "a": "Oui, dans l'application de bureau. La version navigateur ne le permet pas encore."
+    },
+    "ready": {
+      "q": "Puis-je déjà commander des menuiseries avec ?",
+      "a": "C'est une version précoce (0.6). Vérifiez cotes et listes avant de commander ou de débiter, et signalez les erreurs sur GitHub."
+    },
+    "heading": "Questions fréquentes"
+  },
   "tech": {
-    "title": "Technologie",
-    "desc": "Un noyau Rust (ofs-core) pour le modèle de données, la géométrie et tous les exports (IFC, DXF, PDF, glTF, XLSX, CSV), une interface Svelte 5 avec Three.js pour la 3D, et Tauri 2 pour Windows, macOS et Linux. Le même noyau tourne en WebAssembly dans la version navigateur."
+    "rust": {
+      "title": "Noyau Rust",
+      "desc": "Le modèle de données, la géométrie et tous les exports (IFC, DXF, PDF, glTF, XLSX, CSV) sont dans une seule bibliothèque Rust, avec plus de cent tests."
+    },
+    "tauri": {
+      "desc": "Une fine couche native pour Windows, macOS et Linux, avec de petits installateurs."
+    },
+    "svelte": {
+      "desc": "La même interface sur le bureau et dans le navigateur, avec un éditeur 2D en SVG."
+    },
+    "three": {
+      "desc": "La vue 3D avec profilés extrudés et vitrage, directement dans l'application."
+    },
+    "wasm": {
+      "desc": "Le noyau Rust tourne en WebAssembly dans la version navigateur."
+    },
+    "ifc": {
+      "desc": "Échange ouvert avec les logiciels BIM, selon l'ILS Houten Kozijnen v2.0 néerlandais."
+    },
+    "heading": "Technologie",
+    "sub": "Pour ceux qui veulent savoir comment c'est construit."
+  },
+  "releases": {
+    "showAll": "Afficher toutes les versions",
+    "showLess": "Afficher seulement les trois dernières",
+    "github": "Toutes les versions sur GitHub"
   }
 }
