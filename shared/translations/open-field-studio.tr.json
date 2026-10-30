@@ -1,70 +1,310 @@
 {
   "header": {
-    "label": "OpenAEC ekosistemi",
     "title": "Open <span class=\"accent\">Field</span> Studio",
-    "desc": "İnşaat projelerinde denetim, teslim ve kalite güvencesi için ücretsiz ve açık kaynak araç.",
-    "badge": "Beta"
+    "demoBtn": "Tarayıcıda aç",
+    "downloadBtn": "İndir",
+    "sourceBtn": "Kaynak kodu",
+    "proof1": "15 kontrol listesi · NEN 2767",
+    "proof2": "Felemenkçe, İngilizce, Almanca ve Fransızca",
+    "proof5": "Ücretsiz · CC BY-SA 4.0",
+    "heroAlt": "Open Field Studio: her kusur için duruma göre renklendirilmiş numaralı iğneler bulunan bir daire planı ve sağda bilet listesi",
+    "label": "Denetim ve teslim",
+    "tagline": "Kat planındaki kusurdan imzalı teslim tutanağına, internet olmadan da",
+    "desc": "Her kusuru kat planına iğneleyin, bir kontrol listesini tamamlayın ve teslimi ekranda imzalarla bitirin. Dizüstü bilgisayarda, Android tablette veya tarayıcıda."
   },
-  "why": {
-    "title": "Neden Open <span class=\"accent\">Field</span> Studio?",
-    "desc": "Şantiyedeki denetimler ve teslimler çevrimdışı çalışan güvenilir araçlar gerektirir. Open Field Studio, kontrol listelerini, kusur kaydını ve raporlamayı tamamen çevrimdışı çalışan ve dört dilde sunulan bir uygulamada birleştirir."
+  "meta": {
+    "description": "Denetim, teslim ve kalite güvencesi için ücretsiz, açık kaynaklı uygulama: kat planında kusurlar, 15 kontrol listesi, imzalı teslim tutanağı ve PDF ile BCF raporları. Windows, Linux, Android ve tarayıcı için.",
+    "title": "Open Field Studio — OpenAEC Foundation"
   },
-  "features": {
-    "title": "Özellikler",
+  "hl": {
     "tickets": {
-      "title": "Plan üzerinde biletler ve kusurlar",
-      "desc": "Kusurları ve notları doğrudan plan üzerine kaydedin. Konum başına tüm açık öğelerin görsel özeti."
+      "alt": "Banyoda eksik silikon derzi için yüksek öncelikli, tesisatçıya atanmış ve son tarihli bilet",
+      "kicker": "Kusurlar",
+      "title": "Her kusur doğru yerde",
+      "desc": "Kat planına tıklayın ve kusuru kategori, öncelik, ciddiyet, son tarih ve fotoğraflarla kaydedin. Yükleniciye veya tesisatçıya atayın ve durumunu açıktan doğrulandıya kadar izleyin."
     },
-    "checklists": {
-      "title": "15 kontrol listesi şablonu (NEN 2767)",
-      "desc": "NEN 2767 ve diğer standartlara uygun hazır kontrol listeleri. Projeye özel gereksinimlere göre özelleştirilebilir."
-    },
-    "energy": {
-      "title": "Enerji etiketi anketi (NTA 8800)",
-      "desc": "NTA 8800'e uygun enerji etiketi anketlerini yapılandırılmış giriş formlarıyla doğrudan sahada gerçekleştirin."
-    },
-    "monument": {
-      "title": "Anıt denetimi",
-      "desc": "Kültürel-tarihi değerlere dikkat eden tarihi binalar için özel denetim modülleri."
+    "inspect": {
+      "alt": "Konut tipi için seçim düğmeleri, yapım yılı ve kullanım alanı için alanlar içeren enerji etiketi kontrol listesi, 46 maddeden 18'i dolduruldu",
+      "kicker": "Denetimler",
+      "title": "Her denetim için bir kontrol listesi",
+      "desc": "15 hazır kontrol listesinden seçin: yapı, tesisat, Wkb, yerden ısıtma, havalandırma, enerji etiketi ve tarihi yapılar. Her madde için uygun veya değil, NEN 2767 puanı, birimli bir ölçüm ya da fotoğraf girin."
     },
     "handover": {
-      "title": "İmzalı teslim",
-      "desc": "İmza işlevselliğine sahip dijital teslim raporları. Tüm taraflar doğrudan ekranda imzalar."
+      "alt": "On biletli ön teslim; her bilet için onaylandı, koşullu veya reddedildi kararı ve 10'dan 7'si değerlendirildi ilerlemesi",
+      "kicker": "Teslim",
+      "title": "Tutanak ve imzalarla teslim",
+      "desc": "Tüm açık maddeleri gözden geçirin; onaylayın, koşullu onaylayın veya reddedin. Belge ekleyin, her tarafın ekranda imzalamasını sağlayın ve teslim tutanağını oluşturun. Ön teslim, teslim ve son kontrol için."
     },
     "dashboard": {
-      "title": "Canlı istatistiklerle gösterge paneli",
-      "desc": "Tüm denetimlerin, açık kusurların ve proje başına ilerlemenin gerçek zamanlı özeti."
+      "alt": "Beşi açık, ikisinin süresi geçmiş on bir bilet, duruma, kategoriye ve sorumluya göre grafikler ve son etkinlikleri gösteren pano",
+      "kicker": "Pano",
+      "title": "Neyin hâlâ açık olduğunu bir bakışta görün",
+      "desc": "Açık, atanmış, tamamlanmış ve süresi geçmiş biletler için sayaçlar, kategoriye ve sorumluya göre grafikler ve projede olan her şeyin kaydı."
     },
-    "camera": {
-      "title": "Kamera entegrasyonu",
-      "desc": "Uygulamadan doğrudan fotoğraf çekin ve bunları kusurlara, kontrol listelerine veya plan üzerindeki konumlara bağlayın."
+    "report": {
+      "alt": "Proje özeti, dört rapor seçeneği ve PDF, HTML, BCF ile proje dosyası düğmeleri içeren dışa aktarma ekranı",
+      "kicker": "Raporlar",
+      "title": "İşveren ve dosya için raporlar",
+      "desc": "Proje raporu, açık biletler listesi, denetim raporu veya teslim tutanağını fotoğraflar ve işaretli kat planıyla PDF ya da HTML olarak oluşturun. Ya da biletleri BIM yazılımınız için BCF olarak dışa aktarın."
     },
-    "languages": {
-      "title": "4 dil (NL/EN/DE/FR)",
-      "desc": "Hollandaca, İngilizce, Almanca ve Fransızca olarak tamamen mevcuttur. Uluslararası projeler için idealdir."
+    "connect": {
+      "alt": "ERPNext ve n8n'in kurulu olduğu ve veri içe aktarabildiği bağlantılar listesi",
+      "kicker": "Bağlantılar",
+      "title": "Dosyanız kendi sistemlerinizde",
+      "desc": "Müşteriyi, kişileri ve çizimleri ERPNext'ten veya bir n8n webhook'u ile alın; projeyi kaydettikten ya da teslimden sonra otomatik olarak geri gönderin. Woningborg, SWK, AFAS, Exact Online ve Bouw7 için test modlu ilk bir bağlantı var."
+    }
+  },
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "download": "İndir",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "tickets": "Kusurlar ve biletler",
+    "inspect": "Denetimler",
+    "handover": "Teslim",
+    "report": "Raporlar ve dışa aktarma",
+    "connect": "Bağlantılar ve kayıtlar",
+    "all": "Tüm özellikler"
+  },
+  "features": {
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Denetim ve teslim için her şey, tek bir uygulamada",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "floorplans": {
+      "title": "PDF veya görüntüden kat planları",
+      "desc": "PDF, PNG veya JPG yükleyin. Çok sayfalı bir PDF'nin her sayfası ayrı bir kat planı olur."
     },
-    "offline": {
-      "title": "Tamamen çevrimdışı",
-      "desc": "Şantiyede internet bağlantısı olmadan çalışır. Çevrimiçi olduğunuzda senkronize edin."
+    "pins": {
+      "title": "Kat planında biletler",
+      "desc": "Her kusur için duruma göre renklendirilmiş numaralı bir iğne. Duruma, kategoriye ve önceliğe göre filtreleyin."
+    },
+    "fields": {
+      "title": "Kategori, öncelik ve ciddiyet",
+      "desc": "Yapıdan güvenliğe on bir kategori, üç öncelik ve dört ciddiyet düzeyi; son tarih ve sorumluyla birlikte."
+    },
+    "photos": {
+      "title": "Zaman ve konum bilgili fotoğraflar",
+      "desc": "Kamerayla fotoğraf çekin veya yükleyin. Yeni bir fotoğraf zamanı ve izin verirseniz GPS konumunu alır; bunlar raporda da görünür."
+    },
+    "comments": {
+      "title": "Bilet başına yorumlar",
+      "desc": "Her bilet için nelerin kararlaştırıldığını ad ve zamanla birlikte not edin."
+    },
+    "templates": {
+      "title": "15 kontrol listesi",
+      "desc": "Yapı, tesisat, güvenlik, ön denetim, Wkb, yerden ısıtma, havalandırma, enerji etiketi ve tarihi yapılar için dört liste."
+    },
+    "nen2767": {
+      "title": "NEN 2767'ye göre durum puanı",
+      "desc": "Tarihi yapı ve tesisat listeleri her maddeyi 1'den 6'ya durum ölçeğinde puanlar."
+    },
+    "inputs": {
+      "title": "Ölçümler, seçimler ve fotoğraflar",
+      "desc": "Bir madde uygun/uygun değil, bir seçim, dm³/s veya kPa gibi birimli bir sayı, bir metin ya da bir fotoğraf olabilir."
+    },
+    "energy": {
+      "title": "Enerji etiketi tespiti",
+      "desc": "Konut, yapı kabuğu, tesisat, havalandırma, yenilenebilir enerji ve fotoğraflar için 46 maddelik tek liste."
+    },
+    "monument": {
+      "title": "Tarihi yapılar",
+      "desc": "Dört liste: taşıyıcı sistem ve kabuk, tarihi iç mekân, nem ve hasar, koruma planı."
+    },
+    "signing": {
+      "title": "Ekranda imza",
+      "desc": "Denetimler ve teslimler her tarafça ayrı ayrı parmakla veya fareyle imzalanır."
+    },
+    "verdict": {
+      "title": "Madde başına karar",
+      "desc": "Onaylandı, koşullu veya reddedildi. Onaylanan biletler imzadan hemen sonra doğrulandı olur."
+    },
+    "rounds": {
+      "title": "Ön teslim, teslim ve son kontrol",
+      "desc": "Her tur katılımcılar, notlar ve ölçüm raporları ile garanti belgeleri gibi eklerle."
+    },
+    "dashboard": {
+      "title": "Pano ve kayıt",
+      "desc": "Duruma, kategoriye ve sorumluya göre biletler, süresi geçmiş tarihler ve son etkinlik."
     },
     "reports": {
-      "title": "Profesyonel rapor dışa aktarma",
-      "desc": "Denetimleri ve teslimleri fotoğraf ve planlar içeren profesyonel PDF raporları olarak dışa aktarın."
+      "title": "Dört rapor türü",
+      "desc": "Proje raporu, açık biletler listesi, denetim raporu ve teslim tutanağı; PDF veya HTML olarak."
     },
-    "showAll": "Tüm özellikleri göster",
-    "showLess": "Daha az göster"
-  },
-  "cta": {
-    "demo": "Canlı demoyu görüntüle",
-    "github": "GitHub'da görüntüle"
+    "bcf": {
+      "title": "BIM yazılımı için BCF",
+      "desc": "Biletleri madde başına bir fotoğrafla BCF 2.1 olarak BIMcollab, Revit veya Solibri için dışa aktarın."
+    },
+    "project": {
+      "title": "Proje dosyası",
+      "desc": "Uygulama her şeyi otomatik kaydeder. Projeyi tek bir dosya olarak kaydedip başka bir cihazda açın."
+    },
+    "ifc": {
+      "title": "3B modeli görüntüleyin",
+      "desc": "Bir IFC modeli (IFC2x3 veya IFC4) açın; döndürün, kaydırın ve yakınlaştırın."
+    },
+    "bag": {
+      "title": "BAG'den adres",
+      "desc": "Posta kodu ve kapı numarasıyla adresi Hollanda adres ve bina kaydında (BAG) arayın. Kadaster'den kendi API anahtarınız gerekir."
+    },
+    "epol": {
+      "title": "EP-Online'dan enerji etiketi",
+      "desc": "Adresin kayıtlı enerji etiketini alın; projede ve raporda görünür. RVO'dan kendi API anahtarınızla."
+    },
+    "erp": {
+      "title": "ERPNext ve n8n, iki yönlü",
+      "desc": "Projeyi, müşteriyi, kişileri ve çizimleri içe aktarın; proje dosyasını bağlı projeye geri gönderin."
+    },
+    "publish": {
+      "title": "Teslim dosyasını gönderin",
+      "desc": "Woningborg, SWK, AFAS Profit, Exact Online, Bouw7 veya kendi webhook'unuza; ya da açık biletleri KYP Project'e görev olarak gönderin. Hiçbir şey göndermeyen bir test moduyla."
+    },
+    "offline": {
+      "title": "Verileriniz kendi cihazınızda",
+      "desc": "Hesap yok, bulut yok. Masaüstü ve Android uygulamaları internetsiz çalışır; internet yalnızca kayıtlar ve bağlantılar için gerekir."
+    },
+    "languages": {
+      "title": "Dört dil, açık ve koyu",
+      "desc": "Felemenkçe, İngilizce, Almanca ve Fransızca; sisteminizi izleyen açık ve koyu tema."
+    }
   },
   "download": {
-    "title": "İndir",
-    "windows": "Kurulum (.exe)",
-    "windowsMsi": "MSI paketi (.msi)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxRpm": "Fedora, openSUSE (.rpm)",
-    "linuxAppimage": "Her dağıtım (AppImage)",
-    "android": "Telefon veya tablet (.apk)"
+    "title": "v0.3.6 indir",
+    "lead": "Ücretsiz, hesap gerekmez. Windows ve Linux için, ayrıca Android uygulaması olarak.",
+    "forWindows": "Windows için indir",
+    "forLinux": "Linux için indir",
+    "forAndroid": "Android için indir",
+    "metaWindows": ".exe yükleyici",
+    "metaLinux": "AppImage, çoğu dağıtımda çalışır",
+    "metaAndroid": "tablet ve telefonlar için .apk",
+    "browserBtn": "Tarayıcıda aç",
+    "fileExe": "Yükleyici (.exe)",
+    "fileExeUser": "Yönetici hakları olmadan (.exe)",
+    "fileMsi": "Yükleyici (.msi)",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "fileApk": "Uygulama (.apk)",
+    "browserNote": "Hiçbir şey kurmak istemiyor musunuz? Uygulama <a href=\"https://open-field-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">tarayıcıda da çalışır</a>.",
+    "label": "İndir",
+    "mobileNote": "Open Field Studio büyük ekran için yapılmıştır. Bilgisayarınızda açın veya burada tarayıcıda deneyin.",
+    "other": "Diğer platformlar"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDemo": "Tarayıcıda deneyin",
+    "items": {
+      "backsync": {
+        "title": "Projeye otomatik dönüş",
+        "desc": "Kaydettiğinizde ve teslimden sonra proje dosyası bağlı ERPNext projesine veya bir mesaj olarak n8n webhook'unuza gider."
+      },
+      "import": {
+        "title": "Tüm bir projeyi içe aktarın",
+        "desc": "Ad, numara, müşteri, adres, kişiler ve ekler tek seferde ERPNext'ten."
+      },
+      "search": {
+        "title": "Seçim listesinde arama",
+        "desc": "Sekizden fazla projede ada, numaraya veya müşteriye göre filtreleyin."
+      },
+      "tab": {
+        "title": "Kendi Bağlantılar sekmesi",
+        "desc": "Sekiz bağlantının hepsi tek yerde; her birinin kurulu olup olmadığı görünür."
+      },
+      "desktop": {
+        "title": "Kendi sunucunuzla da",
+        "desc": "Masaüstü uygulaması bağlantıyı kendisi kurar; böylece kendi barındırdığınız ERPNext de çalışır."
+      },
+      "update": {
+        "title": "Yeni sürüm bildirimi",
+        "desc": "Yeni bir sürüm hazır olduğunda başlık çubuğunda bir rozet."
+      }
+    },
+    "label": "v0.3.6 sürümünde yeni",
+    "title": "<span>İki yönlü</span> bağlantılar",
+    "desc": "0.3 serisi bağlantılara kendi sekmesini veriyor. Proje verilerini ERPNext'ten veya n8n'den alın; çalışmanız otomatik olarak bağlı projeye geri gider."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "PDF, PNG veya JPG kat planları, 3B görüntüleyicide IFC modelleri (IFC2x3 ve IFC4) ve Open Field Studio proje dosyaları (.json). Fotoğrafları kamerayla çeker veya görüntü olarak yüklersiniz."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Hayır. Web sürümü doğrudan tarayıcıda çalışır. Ayrı bir uygulama isterseniz Windows veya Linux yükleyicisini ya da Android telefon ve tabletler için uygulamayı indirin."
+    },
+    "price": {
+      "q": "Open Field Studio ne kadar?",
+      "a": "Hiçbir şey. Uygulama CC BY-SA 4.0 lisansıyla ücretsiz ve açık kaynaklıdır; hesap veya abonelik gerekmez."
+    },
+    "save": {
+      "q": "Çalışmam hangi biçimde kaydedilir?",
+      "a": "Uygulama her şeyi otomatik olarak kendi cihazınıza kaydeder. Projeyi kaydet ile bunu başka bir bilgisayarda yeniden açabileceğiniz tek bir JSON dosyasına dönüştürürsünüz. Raporlar PDF veya HTML, biletler BCF olarak dışa aktarılır."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows, Linux (.deb, .rpm ve AppImage), Android telefon ve tabletler (.apk) ve her modern tarayıcı. macOS veya iOS sürümü henüz yok."
+    },
+    "practice": {
+      "q": "İnşaat uygulamasına uyuyor mu?",
+      "a": "Evet. Hollanda Wkb temel kontrolü ve NEN 2767'ye göre durum tespiti için listeler var; adresler BAG'den, enerji etiketleri EP-Online'dan gelir. Biletler BCF 2.1 olarak BIM yazılımına gider ve Woningborg ile SWK için ilk bir bağlantı vardır."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "Henüz pek bir şey: henüz MCP sunucusu veya API yok. Verileri başka yazılımlara veya kendi iş akışınıza aktarmak için proje dosyasını (JSON) ya da bir n8n webhook'unu kullanabilirsiniz."
+    },
+    "offline": {
+      "q": "Şantiyede internetsiz çalışır mı?",
+      "a": "Evet, masaüstü ve Android uygulamaları çalışır. PDF görüntüleyici, 3B görüntüleyici ve yazı tipleri dahil her şey cihazınızdadır. İnternet yalnızca BAG, EP-Online ve bağlantılar için gerekir. Web sürümünü açmak için internet gerekir."
+    },
+    "team": {
+      "q": "Birden fazla kişi aynı proje üzerinde çalışabilir mi?",
+      "a": "Henüz aynı anda değil. Her cihazın kendi kopyası vardır. Proje dosyasını paylaşın veya ERPNext ya da n8n bağlantısıyla tek yerde tutun."
+    },
+    "templates": {
+      "q": "Kendi kontrol listelerimi oluşturabilir miyim?",
+      "a": "Henüz değil. 15 yerleşik listeden birini seçersiniz veya kendi gözlemlerinizle serbest bir denetim yaparsınız."
+    },
+    "heading": "Sık sorulan sorular"
+  },
+  "tech": {
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "Windows, Linux ve Android için dosya açma ve kaydetme pencereleri olan küçük, yerel bir uygulama."
+    },
+    "vite": {
+      "title": "Vite ve JavaScript",
+      "desc": "Büyük bir çatı kullanmayan, tarayıcıda ve uygulamada aynı çalışan hafif bir arayüz."
+    },
+    "ifc": {
+      "title": "Three.js ve web-ifc",
+      "desc": "3B görüntüleyici IFC modellerini WebAssembly ile okur ve yalnızca sekmesini açtığınızda yüklenir."
+    },
+    "pdfjs": {
+      "title": "PDF.js",
+      "desc": "PDF'lerden gelen kat planları harici bir hizmet olmadan kendi cihazınızda dönüştürülür."
+    },
+    "idb": {
+      "title": "IndexedDB",
+      "desc": "Fotoğraflar, kat planları ve imzalar cihaz depolamasında tutulur; böylece depolama çabuk dolmaz."
+    },
+    "i18n": {
+      "title": "i18next",
+      "desc": "Tüm metinler dört dilde; başlangıçta sisteminizin dili kullanılır."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }

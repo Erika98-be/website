@@ -1,70 +1,310 @@
 {
   "header": {
-    "label": "OpenAEC Ecosystem",
     "title": "Open <span class=\"accent\">Field</span> Studio",
-    "desc": "Free &amp; open-source tool for inspection, handover and quality assurance in construction projects.",
-    "badge": "Beta"
+    "demoBtn": "Open in browser",
+    "downloadBtn": "Download",
+    "sourceBtn": "Source code",
+    "proof1": "15 checklists · NEN 2767",
+    "proof2": "Dutch, English, German and French",
+    "proof5": "Free · CC BY-SA 4.0",
+    "heroAlt": "Open Field Studio: floor plan of an apartment with a numbered pin for each defect, coloured by status, and the list of tickets on the right",
+    "label": "Inspection and handover",
+    "tagline": "From a defect on the floor plan to a signed handover report, even without internet",
+    "desc": "Pin every defect on the floor plan, work through a checklist and complete the handover with signatures on screen. On a laptop, an Android tablet or in the browser."
   },
-  "why": {
-    "title": "Why Open <span class=\"accent\">Field</span> Studio?",
-    "desc": "Inspections and handovers on the construction site require reliable tools that also work offline. Open Field Studio combines checklists, defect registration and reporting in an app that works fully offline and is available in four languages."
+  "meta": {
+    "description": "Free, open-source app for inspections, handovers and quality assurance: defects on the floor plan, 15 checklists, a handover report with signatures and reports in PDF and BCF. For Windows, Linux, Android and the browser.",
+    "title": "Open Field Studio — OpenAEC Foundation"
   },
-  "features": {
-    "title": "Features",
+  "hl": {
     "tickets": {
-      "title": "Tickets &amp; defects on floor plan",
-      "desc": "Register defects and remarks directly on the floor plan. Visual overview of all open items per location."
+      "alt": "Ticket for a missing sealant joint in the bathroom, with high priority, assigned to the installer and with a deadline",
+      "kicker": "Defects",
+      "title": "Every defect in the right place",
+      "desc": "Click on the floor plan and record the defect with category, priority, severity, deadline and photos. Assign it to the contractor or installer and follow its status from open to verified."
     },
-    "checklists": {
-      "title": "15 checklist templates (NEN 2767)",
-      "desc": "Ready-made checklists conforming to NEN 2767 and other standards. Customizable to project-specific requirements."
-    },
-    "energy": {
-      "title": "Energy label survey (NTA 8800)",
-      "desc": "Perform energy label surveys conforming to NTA 8800 directly on-site with structured input forms."
-    },
-    "monument": {
-      "title": "Monument inspection",
-      "desc": "Specific inspection modules for heritage buildings with attention to cultural-historical values."
+    "inspect": {
+      "alt": "Energy label survey checklist with choice buttons for the dwelling type and fields for year of construction and floor area, 18 of 46 items filled in",
+      "kicker": "Inspections",
+      "title": "A checklist for every inspection",
+      "desc": "Choose from 15 ready-made checklists: building, installations, Wkb, underfloor heating, ventilation, energy label and monuments. Per item, fill in pass or fail, a NEN 2767 score, a measured value with its unit or a photo."
     },
     "handover": {
-      "title": "Handover with signatures",
-      "desc": "Digital handover reports with signature functionality. All parties sign directly on screen."
+      "alt": "Pre-handover with ten tickets, each with a verdict of approved, conditional or rejected, and progress showing 7 of 10 assessed",
+      "kicker": "Handover",
+      "title": "Hand over with a formal report and signatures",
+      "desc": "Go through all open items and approve them, approve them with conditions or reject them. Attach documents, let every party sign on screen and create the handover report. For the pre-handover, the handover and the follow-up inspection."
     },
     "dashboard": {
-      "title": "Dashboard with live statistics",
-      "desc": "Real-time overview of all inspections, open defects and progress per project."
+      "alt": "Dashboard with eleven tickets, five of them open and two overdue, charts by status, category and responsible party, and recent activity",
+      "kicker": "Dashboard",
+      "title": "See at a glance what is still open",
+      "desc": "Counters for open, assigned, completed and overdue tickets, charts per category and per responsible party, and a log of everything that happened in the project."
     },
-    "camera": {
-      "title": "Camera integration",
-      "desc": "Take photos directly from the app and link them to defects, checklists or locations on the floor plan."
+    "report": {
+      "alt": "Export screen with the project overview, a choice of four reports and buttons for PDF, HTML, BCF and the project file",
+      "kicker": "Reports",
+      "title": "Reports for the client and the project file",
+      "desc": "Create a project report, a list of open tickets, an inspection report or the handover report, as PDF or HTML, with photos and the marked-up floor plan. Or export the tickets as BCF for your BIM software."
     },
-    "languages": {
-      "title": "4 languages (NL/EN/DE/FR)",
-      "desc": "Fully available in Dutch, English, German and French. Ideal for international projects."
+    "connect": {
+      "alt": "List of connections, with ERPNext and n8n set up and able to import data",
+      "kicker": "Connections",
+      "title": "Your file in your own systems",
+      "desc": "Fetch the client, contacts and drawings from ERPNext or through an n8n webhook, and send the project back automatically after saving or handover. For Woningborg, SWK, AFAS, Exact Online and Bouw7 there is a first connection with a test mode."
+    }
+  },
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "download": "Download",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "tickets": "Defects and tickets",
+    "inspect": "Inspections",
+    "handover": "Handover",
+    "report": "Reports and export",
+    "connect": "Connections and registers",
+    "all": "All features"
+  },
+  "features": {
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "Everything for inspection and handover, in one app",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
+    "floorplans": {
+      "title": "Floor plans from PDF or image",
+      "desc": "Load a PDF, PNG or JPG. A PDF with several pages becomes one floor plan per page."
     },
-    "offline": {
-      "title": "Fully offline",
-      "desc": "Works without internet connection on the construction site. Sync when you are back online."
+    "pins": {
+      "title": "Tickets on the floor plan",
+      "desc": "A numbered pin per defect, coloured by status. Filter by status, category and priority."
+    },
+    "fields": {
+      "title": "Category, priority and severity",
+      "desc": "Eleven categories from building to safety, three priorities and four severity levels, with a deadline and a responsible party."
+    },
+    "photos": {
+      "title": "Photos with time and place",
+      "desc": "Take photos with the camera or upload them. A new photo gets the time and, if you allow it, the GPS position, also in the report."
+    },
+    "comments": {
+      "title": "Comments per ticket",
+      "desc": "Keep track of what was agreed for each ticket, with name and time."
+    },
+    "templates": {
+      "title": "15 checklists",
+      "desc": "Building, installations, safety, pre-inspection, Wkb, underfloor heating, ventilation, energy label and four for monuments."
+    },
+    "nen2767": {
+      "title": "Condition score to NEN 2767",
+      "desc": "The checklists for monuments and installations score each item on the condition scale from 1 to 6."
+    },
+    "inputs": {
+      "title": "Measurements, choices and photos",
+      "desc": "A checklist item can be pass or fail, a choice, a number with a unit such as dm³/s or kPa, a text or a photo."
+    },
+    "energy": {
+      "title": "Energy label survey",
+      "desc": "One checklist of 46 items for the dwelling, the envelope, installations, ventilation, renewable energy and photos."
+    },
+    "monument": {
+      "title": "Monuments",
+      "desc": "Four checklists: structure and envelope, historic interior, moisture and damage, and the maintenance plan."
+    },
+    "signing": {
+      "title": "Sign on screen",
+      "desc": "Inspections and handovers are signed with a finger or mouse, by each party separately."
+    },
+    "verdict": {
+      "title": "Verdict per item",
+      "desc": "Approved, conditional or rejected. Approved tickets are set to verified as soon as the handover is signed."
+    },
+    "rounds": {
+      "title": "Pre-handover, handover and follow-up",
+      "desc": "Each round with participants, notes and attachments such as measurement reports and warranty certificates."
+    },
+    "dashboard": {
+      "title": "Dashboard and log",
+      "desc": "Tickets by status, category and responsible party, overdue deadlines and the latest activity."
     },
     "reports": {
-      "title": "Professional report export",
-      "desc": "Export inspections and handovers as professional PDF reports with photos and floor plans."
+      "title": "Four kinds of report",
+      "desc": "Project report, list of open tickets, inspection report and handover report, as PDF or HTML."
     },
-    "showAll": "Show all features",
-    "showLess": "Show less"
-  },
-  "cta": {
-    "demo": "View live demo",
-    "github": "View on GitHub"
+    "bcf": {
+      "title": "BCF for BIM software",
+      "desc": "Export the tickets as BCF 2.1 with a photo per item, for BIMcollab, Revit or Solibri."
+    },
+    "project": {
+      "title": "Project file",
+      "desc": "The app saves everything automatically. Save the project as a single file and open it on another device."
+    },
+    "ifc": {
+      "title": "View the 3D model",
+      "desc": "Open an IFC model (IFC2x3 or IFC4) and orbit, pan and zoom through it."
+    },
+    "bag": {
+      "title": "Address from the BAG",
+      "desc": "Look up the address by postcode and house number in the Dutch address and building register (BAG). You need your own API key from the Kadaster."
+    },
+    "epol": {
+      "title": "Energy label from EP-Online",
+      "desc": "Fetch the registered energy label for the address, shown in the project and in the report. With your own API key from RVO."
+    },
+    "erp": {
+      "title": "ERPNext and n8n, both ways",
+      "desc": "Import the project, client, contacts and drawings, and send the project file back to the linked project."
+    },
+    "publish": {
+      "title": "Send the handover file",
+      "desc": "To Woningborg, SWK, AFAS Profit, Exact Online, Bouw7 or your own webhook, or push open tickets as tasks to KYP Project. With a test mode that sends nothing."
+    },
+    "offline": {
+      "title": "Your data on your own device",
+      "desc": "No account and no cloud. The desktop and Android apps work without internet; you only need it for registers and connections."
+    },
+    "languages": {
+      "title": "Four languages, light and dark",
+      "desc": "Dutch, English, German and French, with a light and a dark theme that follows your system."
+    }
   },
   "download": {
-    "title": "Download",
-    "windows": "Installer (.exe)",
-    "windowsMsi": "MSI package (.msi)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxRpm": "Fedora, openSUSE (.rpm)",
-    "linuxAppimage": "Any distribution (AppImage)",
-    "android": "Phone or tablet (.apk)"
+    "title": "Download v0.3.6",
+    "lead": "Free, no account needed. For Windows and Linux, and as an app for Android.",
+    "forWindows": "Download for Windows",
+    "forLinux": "Download for Linux",
+    "forAndroid": "Download for Android",
+    "metaWindows": ".exe installer",
+    "metaLinux": "AppImage, runs on most distributions",
+    "metaAndroid": ".apk for tablets and phones",
+    "browserBtn": "Open in browser",
+    "fileExe": "Installer (.exe)",
+    "fileExeUser": "Without admin rights (.exe)",
+    "fileMsi": "Installer (.msi)",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "fileApk": "App (.apk)",
+    "browserNote": "Rather not install anything? The app also <a href=\"https://open-field-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">runs in the browser</a>.",
+    "label": "Download",
+    "mobileNote": "Open Field Studio is made for a large screen. Open it on your computer, or try it here in the browser.",
+    "other": "Other platforms"
+  },
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "ctaDemo": "Try it in the browser",
+    "items": {
+      "backsync": {
+        "title": "Back to the project automatically",
+        "desc": "When you save and after a handover, the project file goes to the linked ERPNext project or as a message to your n8n webhook."
+      },
+      "import": {
+        "title": "Import a whole project",
+        "desc": "Name, number, client, address, contacts and attachments from ERPNext in one go."
+      },
+      "search": {
+        "title": "Search in the picker",
+        "desc": "With more than eight projects, filter by name, number or client."
+      },
+      "tab": {
+        "title": "A Connections tab of its own",
+        "desc": "All eight connections in one place, each showing whether it is set up."
+      },
+      "desktop": {
+        "title": "Also with your own server",
+        "desc": "The desktop app connects by itself, so a self-hosted ERPNext works too."
+      },
+      "update": {
+        "title": "Notice of a new version",
+        "desc": "A badge in the title bar as soon as a new release is ready."
+      }
+    },
+    "label": "New in v0.3.6",
+    "title": "Connections <span>that work both ways</span>",
+    "desc": "The 0.3 series gives connections their own tab. Fetch project data from ERPNext or n8n, and your work goes back to the linked project automatically."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "Floor plans as PDF, PNG or JPG, IFC models (IFC2x3 and IFC4) in the 3D viewer, and Open Field Studio project files (.json). You take photos with the camera or upload them as images."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "No. The web version works straight away in the browser. If you want a separate app, download the installer for Windows or Linux, or the app for Android phones and tablets."
+    },
+    "price": {
+      "q": "What does Open Field Studio cost?",
+      "a": "Nothing. The app is free and open source under the CC BY-SA 4.0 licence, with no account or subscription."
+    },
+    "save": {
+      "q": "In which format is my work saved?",
+      "a": "The app saves everything automatically on your own device. With Save project you turn it into a single JSON file that you can open again on another computer. Reports export as PDF or HTML, tickets as BCF."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "Windows, Linux (.deb, .rpm and AppImage), Android phones and tablets (.apk) and any modern browser. There is no version for macOS or iOS yet."
+    },
+    "practice": {
+      "q": "Does it fit construction practice?",
+      "a": "Yes. There are checklists for the Dutch Wkb basic check and for condition assessments to NEN 2767, addresses come from the BAG and energy labels from EP-Online. Tickets go to BIM software as BCF 2.1, and there is a first connection for Woningborg and SWK."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "Not much yet: there is no MCP server or API yet. You can use the project file (JSON) or an n8n webhook to pass data to other software or your own workflow."
+    },
+    "offline": {
+      "q": "Does it work without internet on site?",
+      "a": "Yes, the desktop and Android apps do. Everything is on your device, including the PDF viewer, the 3D viewer and the fonts. You only need internet for the BAG, EP-Online and connections. The web version needs internet to open."
+    },
+    "team": {
+      "q": "Can several people work on one project?",
+      "a": "Not at the same time yet. Each device has its own copy. Share the project file, or keep it in one place through the ERPNext or n8n connection."
+    },
+    "templates": {
+      "q": "Can I make my own checklists?",
+      "a": "Not yet. You choose from the 15 built-in checklists, or do a free inspection with your own observations."
+    },
+    "heading": "Frequently asked questions"
+  },
+  "tech": {
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "A small native app for Windows, Linux and Android, with native dialogs to open and save files."
+    },
+    "vite": {
+      "title": "Vite and JavaScript",
+      "desc": "A lightweight interface without a large framework that works the same in the browser and in the app."
+    },
+    "ifc": {
+      "title": "Three.js and web-ifc",
+      "desc": "The 3D viewer reads IFC models with WebAssembly and only loads when you open its tab."
+    },
+    "pdfjs": {
+      "title": "PDF.js",
+      "desc": "Floor plans from PDFs are converted on your own device, without an external service."
+    },
+    "idb": {
+      "title": "IndexedDB",
+      "desc": "Photos, floor plans and signatures are kept in the device's storage, so it does not fill up quickly."
+    },
+    "i18n": {
+      "title": "i18next",
+      "desc": "All texts in four languages, starting with the language of your system."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }

@@ -1,70 +1,310 @@
 {
   "header": {
-    "label": "Ecosistema OpenAEC",
     "title": "Open <span class=\"accent\">Field</span> Studio",
-    "desc": "Herramienta gratuita &amp; de código abierto para inspección, entrega y control de calidad en proyectos de construcción.",
-    "badge": "Beta"
+    "demoBtn": "Abrir en el navegador",
+    "downloadBtn": "Descargar",
+    "sourceBtn": "Código fuente",
+    "proof1": "15 listas · NEN 2767",
+    "proof2": "Neerlandés, inglés, alemán y francés",
+    "proof5": "Gratis · CC BY-SA 4.0",
+    "heroAlt": "Open Field Studio: plano de un piso con una chincheta numerada por cada defecto, coloreada según su estado, y la lista de tickets a la derecha",
+    "label": "Inspección y entrega",
+    "tagline": "Del defecto en el plano al acta firmada, incluso sin internet",
+    "desc": "Marca cada defecto con una chincheta en el plano, recorre una lista de comprobación y cierra la entrega con firmas en pantalla. En el portátil, en una tableta Android o en el navegador."
   },
-  "why": {
-    "title": "¿Por qué Open <span class=\"accent\">Field</span> Studio?",
-    "desc": "Las inspecciones y entregas en la obra requieren herramientas fiables que también funcionen sin conexión. Open Field Studio combina listas de verificación, registro de defectos e informes en una app que funciona completamente sin conexión y está disponible en cuatro idiomas."
+  "meta": {
+    "description": "Aplicación gratuita y de código abierto para inspecciones, entregas y control de calidad: defectos en el plano, 15 listas de comprobación, acta de entrega con firmas e informes en PDF y BCF. Para Windows, Linux, Android y el navegador.",
+    "title": "Open Field Studio — OpenAEC Foundation"
   },
-  "features": {
-    "title": "Funciones",
+  "hl": {
     "tickets": {
-      "title": "Tickets &amp; defectos sobre el plano",
-      "desc": "Registra defectos y observaciones directamente sobre el plano de planta. Vista general visual de todos los elementos abiertos por ubicación."
+      "alt": "Ticket por una junta de sellado que falta en el baño, con prioridad alta, asignado al instalador y con plazo",
+      "kicker": "Defectos",
+      "title": "Cada defecto en su sitio",
+      "desc": "Haz clic en el plano y registra el defecto con categoría, prioridad, gravedad, plazo y fotos. Asígnalo al contratista o al instalador y sigue su estado de abierto a verificado."
     },
-    "checklists": {
-      "title": "15 plantillas de listas de verificación (NEN 2767)",
-      "desc": "Listas de verificación listas para usar conformes a NEN 2767 y otras normas. Personalizables según los requisitos específicos del proyecto."
-    },
-    "energy": {
-      "title": "Inspección de etiqueta energética (NTA 8800)",
-      "desc": "Realiza inspecciones de etiqueta energética conformes a NTA 8800 directamente in situ con formularios de entrada estructurados."
-    },
-    "monument": {
-      "title": "Inspección de monumentos",
-      "desc": "Módulos de inspección específicos para edificios patrimoniales con atención a los valores histórico-culturales."
+    "inspect": {
+      "alt": "Lista para una toma de datos de etiqueta energética con botones para el tipo de vivienda y campos para el año de construcción y la superficie, 18 de 46 puntos rellenados",
+      "kicker": "Inspecciones",
+      "title": "Una lista para cada inspección",
+      "desc": "Elige entre 15 listas listas para usar: obra, instalaciones, Wkb, suelo radiante, ventilación, etiqueta energética y monumentos. En cada punto indica correcto o incorrecto, una puntuación NEN 2767, un valor medido con su unidad o una foto."
     },
     "handover": {
-      "title": "Entrega con firmas",
-      "desc": "Actas de entrega digitales con función de firma. Todas las partes firman directamente en la pantalla."
+      "alt": "Preentrega con diez tickets, cada uno con un veredicto de aprobado, con condiciones o rechazado, y el progreso de 7 de 10 evaluados",
+      "kicker": "Entrega",
+      "title": "Entregar con acta y firmas",
+      "desc": "Repasa todos los puntos abiertos y apruébalos, apruébalos con condiciones o recházalos. Añade documentos, haz que cada parte firme en pantalla y genera el acta. Para la preentrega, la entrega y la revisión posterior."
     },
     "dashboard": {
-      "title": "Panel con estadísticas en vivo",
-      "desc": "Vista general en tiempo real de todas las inspecciones, defectos abiertos y avance por proyecto."
+      "alt": "Panel con once tickets, cinco abiertos y dos vencidos, gráficos por estado, categoría y responsable, y la actividad reciente",
+      "kicker": "Panel",
+      "title": "Ve de un vistazo lo que sigue abierto",
+      "desc": "Contadores de tickets abiertos, asignados, terminados y vencidos, gráficos por categoría y por responsable, y un registro de todo lo que pasó en el proyecto."
     },
-    "camera": {
-      "title": "Integración con la cámara",
-      "desc": "Haz fotos directamente desde la app y vincúlalas a defectos, listas de verificación o ubicaciones en el plano de planta."
+    "report": {
+      "alt": "Pantalla de exportación con el resumen del proyecto, cuatro tipos de informe y botones para PDF, HTML, BCF y el archivo de proyecto",
+      "kicker": "Informes",
+      "title": "Informes para el cliente y el expediente",
+      "desc": "Crea un informe de proyecto, una lista de tickets abiertos, un informe de inspección o el acta, en PDF o HTML, con fotos y el plano marcado. O exporta los tickets en BCF para tu software BIM."
     },
-    "languages": {
-      "title": "4 idiomas (NL/EN/DE/FR)",
-      "desc": "Totalmente disponible en neerlandés, inglés, alemán y francés. Ideal para proyectos internacionales."
+    "connect": {
+      "alt": "Lista de conexiones, con ERPNext y n8n configurados y capaces de importar datos",
+      "kicker": "Conexiones",
+      "title": "Tu expediente en tus propios sistemas",
+      "desc": "Trae el cliente, los contactos y los planos desde ERPNext o mediante un webhook de n8n, y devuelve el proyecto automáticamente al guardar o tras la entrega. Para Woningborg, SWK, AFAS, Exact Online y Bouw7 hay una primera conexión con modo de prueba."
+    }
+  },
+  "subnav": {
+    "label": "En esta página",
+    "features": "Funciones",
+    "download": "Descargar",
+    "whatsnew": "Novedades",
+    "faq": "Preguntas",
+    "releases": "Versiones"
+  },
+  "tabs": {
+    "highlights": "Destacados",
+    "tickets": "Defectos y tickets",
+    "inspect": "Inspecciones",
+    "handover": "Entrega",
+    "report": "Informes y exportación",
+    "connect": "Conexiones y registros",
+    "all": "Todas las funciones"
+  },
+  "features": {
+    "learnMore": "Leer más",
+    "label": "Funciones",
+    "heading": "Todo para la inspección y la entrega, en una sola aplicación",
+    "sub": "Empieza por lo más destacado o elige un tema.",
+    "tabsLabel": "Funciones por tema"
+  },
+  "f": {
+    "floorplans": {
+      "title": "Planos desde PDF o imagen",
+      "desc": "Carga un PDF, PNG o JPG. Un PDF de varias páginas da un plano por página."
     },
-    "offline": {
-      "title": "Completamente sin conexión",
-      "desc": "Funciona sin conexión a internet en la obra. Sincroniza cuando vuelvas a estar en línea."
+    "pins": {
+      "title": "Tickets en el plano",
+      "desc": "Una chincheta numerada por defecto, coloreada según su estado. Filtra por estado, categoría y prioridad."
+    },
+    "fields": {
+      "title": "Categoría, prioridad y gravedad",
+      "desc": "Once categorías, de obra a seguridad, tres prioridades y cuatro niveles de gravedad, con plazo y responsable."
+    },
+    "photos": {
+      "title": "Fotos con hora y lugar",
+      "desc": "Haz fotos con la cámara o súbelas. Cada foto nueva lleva la hora y, si lo permites, la posición GPS, también en el informe."
+    },
+    "comments": {
+      "title": "Comentarios por ticket",
+      "desc": "Anota en cada ticket lo acordado, con nombre y hora."
+    },
+    "templates": {
+      "title": "15 listas de comprobación",
+      "desc": "Obra, instalaciones, seguridad, preinspección, Wkb, suelo radiante, ventilación, etiqueta energética y cuatro para monumentos."
+    },
+    "nen2767": {
+      "title": "Puntuación de estado según NEN 2767",
+      "desc": "Las listas de monumentos e instalaciones puntúan cada punto en la escala de estado de 1 a 6."
+    },
+    "inputs": {
+      "title": "Mediciones, opciones y fotos",
+      "desc": "Un punto puede ser correcto o incorrecto, una opción, un número con unidad como dm³/s o kPa, un texto o una foto."
+    },
+    "energy": {
+      "title": "Toma de datos para la etiqueta energética",
+      "desc": "Una lista de 46 puntos para la vivienda, la envolvente, las instalaciones, la ventilación, la energía renovable y las fotos."
+    },
+    "monument": {
+      "title": "Monumentos",
+      "desc": "Cuatro listas: estructura y envolvente, interior histórico, humedad y daños, y plan de conservación."
+    },
+    "signing": {
+      "title": "Firmar en pantalla",
+      "desc": "Las inspecciones y entregas se firman con el dedo o el ratón, por cada parte por separado."
+    },
+    "verdict": {
+      "title": "Veredicto por punto",
+      "desc": "Aprobado, con condiciones o rechazado. Los tickets aprobados pasan a verificados al firmar."
+    },
+    "rounds": {
+      "title": "Preentrega, entrega y revisión posterior",
+      "desc": "Cada ronda con participantes, notas y adjuntos como informes de medición y certificados de garantía."
+    },
+    "dashboard": {
+      "title": "Panel y registro",
+      "desc": "Tickets por estado, categoría y responsable, plazos vencidos y la última actividad."
     },
     "reports": {
-      "title": "Exportación de informes profesionales",
-      "desc": "Exporta inspecciones y entregas como informes PDF profesionales con fotos y planos de planta."
+      "title": "Cuatro tipos de informe",
+      "desc": "Informe de proyecto, lista de tickets abiertos, informe de inspección y acta de entrega, en PDF o HTML."
     },
-    "showAll": "Mostrar todas las funciones",
-    "showLess": "Mostrar menos"
-  },
-  "cta": {
-    "demo": "Ver demo en vivo",
-    "github": "Ver en GitHub"
+    "bcf": {
+      "title": "BCF para software BIM",
+      "desc": "Exporta los tickets como BCF 2.1 con una foto por punto, para BIMcollab, Revit o Solibri."
+    },
+    "project": {
+      "title": "Archivo de proyecto",
+      "desc": "La aplicación lo guarda todo sola. Guarda el proyecto en un solo archivo y ábrelo en otro dispositivo."
+    },
+    "ifc": {
+      "title": "Ver el modelo 3D",
+      "desc": "Abre un modelo IFC (IFC2x3 o IFC4) y gíralo, desplázalo y haz zoom."
+    },
+    "bag": {
+      "title": "Dirección desde la BAG",
+      "desc": "Busca la dirección por código postal y número en el registro neerlandés de direcciones y edificios (BAG). Necesitas tu propia clave API del Kadaster."
+    },
+    "epol": {
+      "title": "Etiqueta energética desde EP-Online",
+      "desc": "Obtén la etiqueta energética registrada de la dirección, visible en el proyecto y en el informe. Con tu propia clave API de RVO."
+    },
+    "erp": {
+      "title": "ERPNext y n8n, en ambos sentidos",
+      "desc": "Importa el proyecto, el cliente, los contactos y los planos, y devuelve el archivo de proyecto al proyecto vinculado."
+    },
+    "publish": {
+      "title": "Enviar el expediente de entrega",
+      "desc": "A Woningborg, SWK, AFAS Profit, Exact Online, Bouw7 o tu propio webhook, o lleva los tickets abiertos como tareas a KYP Project. Con un modo de prueba que no envía nada."
+    },
+    "offline": {
+      "title": "Tus datos en tu propio dispositivo",
+      "desc": "Sin cuenta y sin nube. Las aplicaciones de escritorio y Android funcionan sin internet; solo lo necesitas para registros y conexiones."
+    },
+    "languages": {
+      "title": "Cuatro idiomas, claro y oscuro",
+      "desc": "Neerlandés, inglés, alemán y francés, con un tema claro y uno oscuro que siguen a tu sistema."
+    }
   },
   "download": {
-    "title": "Descargar",
-    "windows": "Instalador (.exe)",
-    "windowsMsi": "Paquete MSI (.msi)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxRpm": "Fedora, openSUSE (.rpm)",
-    "linuxAppimage": "Cualquier distribución (AppImage)",
-    "android": "Teléfono o tableta (.apk)"
+    "title": "Descargar v0.3.6",
+    "lead": "Gratis y sin cuenta. Para Windows y Linux, y como aplicación para Android.",
+    "forWindows": "Descargar para Windows",
+    "forLinux": "Descargar para Linux",
+    "forAndroid": "Descargar para Android",
+    "metaWindows": "instalador .exe",
+    "metaLinux": "AppImage, funciona en la mayoría de distribuciones",
+    "metaAndroid": ".apk para tabletas y teléfonos",
+    "browserBtn": "Abrir en el navegador",
+    "fileExe": "Instalador (.exe)",
+    "fileExeUser": "Sin permisos de administrador (.exe)",
+    "fileMsi": "Instalador (.msi)",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "fileApk": "Aplicación (.apk)",
+    "browserNote": "¿Prefieres no instalar nada? La aplicación también <a href=\"https://open-field-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">funciona en el navegador</a>.",
+    "label": "Descargar",
+    "mobileNote": "Open Field Studio está hecho para una pantalla grande. Ábrelo en tu ordenador o pruébalo aquí en el navegador.",
+    "other": "Otras plataformas"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Todas las notas de versión",
+    "ctaDemo": "Pruébalo en el navegador",
+    "items": {
+      "backsync": {
+        "title": "De vuelta al proyecto automáticamente",
+        "desc": "Al guardar y tras una entrega, el archivo de proyecto va al proyecto de ERPNext vinculado o como mensaje a tu webhook de n8n."
+      },
+      "import": {
+        "title": "Importar un proyecto completo",
+        "desc": "Nombre, número, cliente, dirección, contactos y adjuntos desde ERPNext de una vez."
+      },
+      "search": {
+        "title": "Búsqueda en la lista",
+        "desc": "Con más de ocho proyectos, filtra por nombre, número o cliente."
+      },
+      "tab": {
+        "title": "Una pestaña propia de Conexiones",
+        "desc": "Las ocho conexiones en un solo lugar, cada una indicando si está configurada."
+      },
+      "desktop": {
+        "title": "También con tu propio servidor",
+        "desc": "La aplicación de escritorio se conecta por sí misma, así que también funciona un ERPNext alojado por ti."
+      },
+      "update": {
+        "title": "Aviso de nueva versión",
+        "desc": "Una insignia en la barra de título en cuanto hay una nueva versión."
+      }
+    },
+    "label": "Novedades de la v0.3.6",
+    "title": "Conexiones <span>en ambos sentidos</span>",
+    "desc": "La serie 0.3 da a las conexiones su propia pestaña. Trae los datos del proyecto desde ERPNext o n8n, y tu trabajo vuelve solo al proyecto vinculado."
+  },
+  "faq": {
+    "files": {
+      "q": "¿Qué archivos puedo abrir?",
+      "a": "Planos en PDF, PNG o JPG, modelos IFC (IFC2x3 e IFC4) en el visor 3D y archivos de proyecto (.json) de Open Field Studio. Las fotos se hacen con la cámara o se suben como imágenes."
+    },
+    "install": {
+      "q": "¿Tengo que instalar algo?",
+      "a": "No. La versión web funciona directamente en el navegador. Si prefieres una aplicación aparte, descarga el instalador para Windows o Linux, o la aplicación para teléfonos y tabletas Android."
+    },
+    "price": {
+      "q": "¿Cuánto cuesta Open Field Studio?",
+      "a": "Nada. La aplicación es gratuita y de código abierto con la licencia CC BY-SA 4.0, sin cuenta ni suscripción."
+    },
+    "save": {
+      "q": "¿En qué formato se guarda mi trabajo?",
+      "a": "La aplicación lo guarda todo sola en tu dispositivo. Con Guardar proyecto lo conviertes en un único archivo JSON que vuelves a abrir en otro ordenador. Los informes se exportan en PDF o HTML y los tickets en BCF."
+    },
+    "systems": {
+      "q": "¿En qué sistemas funciona?",
+      "a": "Windows, Linux (.deb, .rpm y AppImage), teléfonos y tabletas Android (.apk) y cualquier navegador moderno. Todavía no hay versión para macOS ni iOS."
+    },
+    "practice": {
+      "q": "¿Encaja con la práctica de la construcción?",
+      "a": "Sí. Hay listas para el control básico Wkb neerlandés y para evaluaciones de estado según NEN 2767; las direcciones vienen de la BAG y las etiquetas energéticas de EP-Online. Los tickets van al software BIM como BCF 2.1, y hay una primera conexión para Woningborg y SWK."
+    },
+    "ai": {
+      "q": "¿Qué puede hacer un asistente de IA con ella?",
+      "a": "Todavía poco: aún no hay servidor MCP ni API. Puedes usar el archivo de proyecto (JSON) o un webhook de n8n para pasar los datos a otro software o a tu propio flujo de trabajo."
+    },
+    "offline": {
+      "q": "¿Funciona sin internet en la obra?",
+      "a": "Sí, las aplicaciones de escritorio y Android. Todo está en tu dispositivo, también el visor PDF, el visor 3D y las fuentes. Solo necesitas internet para la BAG, EP-Online y las conexiones. La versión web necesita internet para abrirse."
+    },
+    "team": {
+      "q": "¿Pueden varias personas trabajar en un mismo proyecto?",
+      "a": "Todavía no a la vez. Cada dispositivo tiene su propia copia. Comparte el archivo de proyecto o guárdalo en un solo sitio con la conexión de ERPNext o n8n."
+    },
+    "templates": {
+      "q": "¿Puedo crear mis propias listas?",
+      "a": "Todavía no. Eliges entre las 15 listas incluidas o haces una inspección libre con tus propias observaciones."
+    },
+    "heading": "Preguntas frecuentes"
+  },
+  "tech": {
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "Una pequeña aplicación nativa para Windows, Linux y Android, con diálogos nativos para abrir y guardar archivos."
+    },
+    "vite": {
+      "title": "Vite y JavaScript",
+      "desc": "Una interfaz ligera, sin un gran framework, que funciona igual en el navegador y en la aplicación."
+    },
+    "ifc": {
+      "title": "Three.js y web-ifc",
+      "desc": "El visor 3D lee modelos IFC con WebAssembly y solo se carga al abrir su pestaña."
+    },
+    "pdfjs": {
+      "title": "PDF.js",
+      "desc": "Los planos de los PDF se convierten en tu propio dispositivo, sin servicio externo."
+    },
+    "idb": {
+      "title": "IndexedDB",
+      "desc": "Las fotos, los planos y las firmas se guardan en el almacenamiento del dispositivo, que no se llena enseguida."
+    },
+    "i18n": {
+      "title": "i18next",
+      "desc": "Todos los textos en cuatro idiomas, empezando por el idioma de tu sistema."
+    },
+    "heading": "Tecnología",
+    "sub": "Para quien quiera saber cómo está hecho."
+  },
+  "releases": {
+    "showAll": "Mostrar todas las versiones",
+    "showLess": "Mostrar solo las tres últimas",
+    "github": "Todas las versiones en GitHub"
   }
 }
