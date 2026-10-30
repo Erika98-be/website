@@ -1,47 +1,284 @@
 {
   "header": {
-    "label": "OpenAEC ekosistemi",
-    "title": "Open <span class=\"accent\">3D</span> Viewer",
-    "desc": "Tarayıcıda BIM modellerini görüntülemek ve incelemek için açık kaynak 3D görüntüleyici.",
-    "badge": "Beta"
+    "title": "Open <span class=\"accent\">3D Viewer</span> Studio",
+    "demoBtn": "Tarayıcıda aç",
+    "downloadBtn": "İndir",
+    "sourceBtn": "Kaynak kodu",
+    "proof3": "Felemenkçe ve İngilizce",
+    "proof4": "Yapay zekâ asistanları için MCP",
+    "proof5": "Ücretsiz · LGPL-3.0",
+    "heroAlt": "Arsası üzerinde bir evin SketchUp modeliyle Open 3D Viewer Studio; solda modeller ve katmanlar, sağda dosya özellikleri",
+    "label": "3D görüntüleyici",
+    "tagline": "Size gelen her yapı modelini, onu oluşturan program olmadan açın",
+    "desc": "Bir SketchUp, Tekla, DWG veya glTF dosyasını tarayıcınıza bırakın ya da IFC ve Revit dosyalarını masaüstü uygulamasında açın. Modelin etrafında dolaşın, ölçün, kesit alın ve IFC olarak kaydedin."
   },
-  "why": {
-    "title": "Neden Open <span class=\"accent\">3D</span> Viewer?",
-    "desc": "BIM modellerini görüntülemek genellikle pahalı masaüstü yazılımı gerektirir. Open 3D Viewer, herkesin kurulum olmadan IFC ve diğer 3D modelleri incelemesine olanak tanıyan hafif, tarayıcı tabanlı bir 3D görüntüleyici sunar."
+  "meta": {
+    "description": "Yapı modelleri için ücretsiz, açık kaynaklı 3D görüntüleyici: IFC, Revit, SketchUp, Tekla, DWG/DXF, CityJSON, LandXML, glTF, OBJ, STL ve PLY. Tarayıcıda ve Windows, macOS ve Linux'ta ölçün, kesit alın ve IFC olarak kaydedin.",
+    "title": "Open 3D Viewer Studio — OpenAEC Foundation"
   },
-  "features": {
-    "title": "Özellikler",
-    "webgl": {
-      "title": "WebGL 3D render",
-      "desc": "WebGL aracılığıyla tarayıcıda hızlı 3D render. Eklenti veya kurulum olmadan karmaşık modelleri görüntüleyin."
-    },
-    "import": {
-      "title": "IFC/STEP/OBJ içe aktarma",
-      "desc": "IFC, STEP ve OBJ dahil yaygın olarak kullanılan 3D formatlar için destek. Dosyaları doğrudan görüntüleyiciye sürükleyip bırakın."
-    },
-    "selection": {
-      "title": "Özellikler ve katmanlar",
-      "desc": "Dosyasını, köşe ve üçgen sayılarını ve sınırlarını görmek için bir modele tıklayın. Katmanları tek tek açıp kapatın."
-    },
-    "clipping": {
-      "title": "Kesitler ve kırpma düzlemleri",
-      "desc": "Kırpma düzlemleri ile model boyunca kesitler oluşturun. Dahili yapıları ve gizli elemanları görüntüleyin."
-    },
+  "hl": {
     "measure": {
-      "title": "Ölçüm araçları",
-      "desc": "3D modelde mesafeleri ve açıları doğrudan ölçün ve model istatistiklerini görün."
+      "alt": "Bir ev modelinin garajında iki mesafe ölçümü; değerler ve birimler sağdaki panelde",
+      "kicker": "Ölçüm",
+      "title": "Doğrudan modelde ölçün",
+      "desc": "İki nokta, kenar veya yüzeye tıklayın ve X, Y ve Z farklarıyla mesafeyi okuyun. Açılar, alanlar, hacimler ve çokgenler de. Ölçümler siz silene kadar görünür kalır."
     },
-    "multiformat": {
-      "title": "Yirmiden fazla format",
-      "desc": "GLB, OBJ, STL, FBX, SKP, STEP, DXF, IFC, 3MF, DAE, PLY, PCD, WRL, XYZ, VTK, G-code, KMZ, VOX, AMF, BLEND, IGES ve daha fazlası, nokta bulutları dahil."
+    "section": {
+      "alt": "Birinci katta kesit kutusuyla ev modeli; odalar ve mobilyalar görünüyor",
+      "kicker": "Kesitler",
+      "title": "Kesitle içeri bakın",
+      "desc": "Kesit kutusu veya kesit düzlemi modeli açar, kesit yüzeyleri doldurulur. Aradığınız katı tam olarak görene kadar her ekseni kaydırın."
     },
-    "modes": {
-      "title": "Görünüm modları",
-      "desc": "Katı, tel kafes, noktalar veya gizli çizgi; ızgara, ortam ışığı ve standart görünümlerle."
+    "explode": {
+      "alt": "Eleman bazında ayrılmış banyo modeli; X, Y ve Z kaydırıcıları sağdaki panelde",
+      "kicker": "Patlatılmış görünüm",
+      "title": "Nasıl birleştiğini görün",
+      "desc": "Modeli kat veya eleman bazında, eksen başına bir yüzdeyle ayırın. Bir banyonun ya da binanın nasıl kurulduğunu tek bakışta görün."
+    },
+    "themes": {
+      "alt": "Ortografik kamerayla arsadaki evin üstten görünüşü, koyu temada",
+      "kicker": "Çalışma alanı",
+      "title": "İstediğiniz gibi çalışın",
+      "desc": "Açık ve koyudan Blueprint ve yüksek kontrasta beş temadan birini seçin. Üst, ön ve yan görünüşler ile ortografik kamera tek tuş uzağınızda; her komuta istediğiniz kısayolu verebilirsiniz."
     }
   },
-  "cta": {
-    "demo": "Canlı demoyu görüntüle",
-    "github": "GitHub'da görüntüle"
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "download": "İndir",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "view": "Görüntüleme",
+    "measure": "Ölçüm ve kesit",
+    "formats": "Dosyalar ve IFC",
+    "work": "Çalışma alanı ve entegrasyonlar",
+    "all": "Tüm özellikler"
+  },
+  "features": {
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Tek pencerede görüntüleyin, ölçün ve kesit alın",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "orbit": {
+      "title": "Döndürme, kaydırma ve yakınlaştırma",
+      "desc": "Sol tuş döndürür, orta tuş kaydırır, tekerlek imlece doğru yakınlaştırır. F tüm modeli ekrana sığdırır."
+    },
+    "views": {
+      "title": "Görünüm küpü ve standart görünüşler",
+      "desc": "Küple modeli bir yüze çevirin. İzometrik, üst, ön ve sağ 0–3 tuşlarında; perspektif veya ortografik P ve O'da."
+    },
+    "render": {
+      "title": "Katı, tel kafes veya kenarlı",
+      "desc": "S, W ve E ile görünüm modları arasında geçin, G ile ızgarayı açıp kapatın."
+    },
+    "layers": {
+      "title": "Katmanları açıp kapatma",
+      "desc": "Gezgin katmanları renk ve sayılarıyla listeler: IFC katmanları, Revit kategorileri, SketchUp etiketleri, Tekla sınıfları veya CAD katmanları. Tek tek açıp kapatın."
+    },
+    "select": {
+      "title": "Bir elemanın özellikleri",
+      "desc": "Bir elemana tıklayın ve özelliklerini okuyun. Dosya için biçim, boyut, üçgen sayısı ve ölçüleri görürsünüz."
+    },
+    "flip": {
+      "title": "Farklı yukarı ekseni",
+      "desc": "Dosya farklı bir yukarı ekseni kullandığı için model yan mı yatıyor? Tek tıkla dikleştirin."
+    },
+    "distance": {
+      "title": "Mesafeler ve açılar",
+      "desc": "Noktalar, kenarlar ve yüzeyler arasında ya da iki eleman arasında ölçün. Her mesafede X, Y ve Z farkı gösterilir."
+    },
+    "area": {
+      "title": "Alan, hacim ve çokgen",
+      "desc": "Bir alan veya hacim ölçün ya da bir çokgen çizin. Birimi (mm, cm veya m) ve ondalık sayısını siz seçin."
+    },
+    "section": {
+      "title": "Kesit kutusu ve kesit düzlemi",
+      "desc": "Modeli bir kutu veya düzlemle açın, kesit yüzeyleri doldurulur. Kutu seçime göre ayarlanabilir."
+    },
+    "explode": {
+      "title": "Patlatılmış görünüm",
+      "desc": "Modeli kat veya eleman bazında, eksen başına bir yüzdeyle ayırın."
+    },
+    "ifcrevit": {
+      "title": "IFC ve Revit açma",
+      "desc": "Masaüstü uygulaması IFC ve Revit (.rvt, .rfa) dosyalarını kotlar, akslar, odalar ve kayıtlı görünüşlerle açar. IFC mekânları kendi katmanlarında gizli başlar."
+    },
+    "schedules": {
+      "title": "Tablo olarak Revit çizelgeleri",
+      "desc": "Revit dosyasındaki bir çizelge 3D görünümün altında tablo olarak açılır. Bir satıra tıklayınca elemanları seçilir."
+    },
+    "cad": {
+      "title": "SketchUp, Tekla ve DWG/DXF",
+      "desc": "Sürüm 3'ten itibaren SketchUp, Tekla Structures (beta) ve DWG ile DXF çizimlerinin yüzeyleri; tarayıcıda ve masaüstünde."
+    },
+    "geo": {
+      "title": "CityJSON ve LandXML",
+      "desc": "CityJSON şehir modelinden binalar (nesne başına en yüksek ayrıntı düzeyiyle) ve LandXML'den arazi yüzeyleri (TIN)."
+    },
+    "mesh": {
+      "title": "glTF, OBJ, STL ve PLY",
+      "desc": "Tasarım, tarama ve baskı yazılımlarının yaygın 3D biçimleri de açılır."
+    },
+    "multi": {
+      "title": "Aynı anda birden çok model",
+      "desc": "Aç modeli değiştirir, Ekle yanına başka bir dosya koyar. Her modelin göstermek veya gizlemek için kendi göz simgesi vardır."
+    },
+    "saveifc": {
+      "title": "IFC olarak kaydetme",
+      "desc": "Görüntüleyicinin açtığı her modeli katlar, sınıflar, özellikler ve malzemelerle IFC 4 olarak kaydedin. Tarayıcıda dosya indirilenlere gider."
+    },
+    "themes": {
+      "title": "Beş tema",
+      "desc": "Açık, koyu, Blueprint ve iki yüksek kontrast çeşidi; diğer OpenAEC uygulamalarıyla aynı pencerede."
+    },
+    "shortcuts": {
+      "title": "Kendi kısayollarınız",
+      "desc": "Her komut şerit, başlık çubuğu ve klavyenin paylaştığı tek bir listededir. Ayarlarda her komuta kendi tuşunuzu verin."
+    },
+    "lang": {
+      "title": "Felemenkçe ve İngilizce",
+      "desc": "Pencerenin dilini ayarlardan seçin."
+    },
+    "mcp": {
+      "title": "Bir yapay zekâ asistanı kullansın",
+      "desc": "MCP sunucusu üzerinden bir yapay zekâ asistanı dosya açar, kamerayı çevirir, elemanları özelliğe göre bulur, ölçer ve kesit alır; gördüğünüz pencerede."
+    },
+    "private": {
+      "title": "Modeliniz sizde kalır",
+      "desc": "Tarayıcıda bile hiçbir şey yüklenmez: dosya kendi bilgisayarınızda okunur."
+    },
+    "update": {
+      "title": "İmzalı indirmeler ve güncellemeler",
+      "desc": "Her yükleyici imzalıdır. OpenAEC Installer'da daha yeni bir sürüm olduğunda başlık çubuğu bunu bildirir ve Güncelle onu kurar."
+    }
+  },
+  "download": {
+    "title": "v2026.44.18 indir",
+    "lead": "Ücretsiz, hesap gerekmez. Windows, macOS ve Linux için.",
+    "forWindows": "Windows için indir",
+    "forMac": "macOS için indir",
+    "forLinux": "Linux için indir",
+    "metaWindows": ".exe yükleyici",
+    "metaMac": "evrensel .dmg, Intel ve Apple Silicon",
+    "metaLinux": "AppImage, çoğu dağıtımda çalışır",
+    "browserBtn": "Tarayıcıda aç",
+    "fileExe": "Yükleyici (.exe)",
+    "fileDmg": "Evrensel .dmg",
+    "fileDeb": ".deb",
+    "fileAppImage": "AppImage",
+    "browserNote": "Hiçbir şey kurmak istemiyor musunuz? Uygulama <a href=\"https://open-3d-viewer.open-aec.com/\" target=\"_blank\" rel=\"noopener\">tarayıcıda da çalışır</a>.",
+    "label": "İndir",
+    "mobileNote": "Open 3D Viewer Studio büyük ekran için yapılmıştır. Bilgisayarınızda açın veya burada tarayıcıda deneyin.",
+    "other": "Diğer platformlar"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDemo": "Tarayıcıda deneyin",
+    "items": {
+      "revit": {
+        "title": "Masaüstünde Revit ve IFC",
+        "desc": "Kotlar, odalar, görünüşler ve tablo hâlinde çizelgelerle Revit dosyaları; katlar ve katmanlarla IFC."
+      },
+      "formats": {
+        "title": "CityJSON, LandXML ve DWG/DXF",
+        "desc": "Yeni: şehir modelleri, arazi yüzeyleri ve CAD çizimlerinin yüzeyleri."
+      },
+      "multi": {
+        "title": "Birden çok model",
+        "desc": "Ekle ilk dosyanın yanına ikinci bir dosya koyar; her modelin kendi göz simgesi olur."
+      },
+      "shell": {
+        "title": "OpenAEC penceresi",
+        "desc": "Kompakt şerit, gezgin ve özellikler, beş tema ve kendi kısayollarınız; diğer OpenAEC uygulamalarında olduğu gibi."
+      },
+      "mcp": {
+        "title": "Yapay zekâ için patlatılmış görünüm",
+        "desc": "Bir yapay zekâ asistanı artık MCP sunucusu üzerinden modeli ayırabilir."
+      },
+      "signed": {
+        "title": "Her platform için imzalı",
+        "desc": "Windows'ta imzalı yükleyici ve kaldırıcı, macOS'ta Apple onaylı, Linux'ta OpenAEC anahtarıyla."
+      }
+    },
+    "label": "v2026.44 sürümünde yeni",
+    "title": "Revit, IFC ve <span>yeni biçimler</span>",
+    "desc": "Yenilenen görüntüleyici: masaüstü ve tarayıcı için tek uygulama, tüm OpenAEC uygulamalarının penceresinde, daha fazla biçim ve her platform için imzalı indirmelerle."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "Masaüstü uygulamasında IFC ve Revit (.rvt, .rfa). SketchUp (sürüm 3 ve sonrası), Tekla Structures (.db1, beta), DWG/DXF, CityJSON, LandXML, glTF, OBJ, STL ve PLY hem masaüstünde hem tarayıcıda. Nokta bulutları (E57, LAS), FBX, STEP ve IGES henüz açılmıyor."
+    },
+    "install": {
+      "q": "Bir şey yüklemem gerekiyor mu?",
+      "a": "Hayır. Tarayıcı sürümü WebGPU destekli güncel bir Chrome, Edge, Firefox veya Safari'de çalışır. IFC ve Revit için ve bir yapay zekâ asistanı bağlamak için masaüstü uygulamasını kurun; en kolayı OpenAEC Installer ile."
+    },
+    "price": {
+      "q": "Ücreti ne kadar?",
+      "a": "Hiçbir şey. Görüntüleyici ücretsizdir; hesap ve lisans ücreti yoktur. Kaynak kodu LGPL-3.0'dır; masaüstü uygulaması Revit için kendi lisansı olan bir OpenAEC kitaplığı kullanır."
+    },
+    "save": {
+      "q": "Çalışmam hangi dosya biçiminde kaydedilir?",
+      "a": "Görüntüleyici dosyanızı değiştirmez. Farklı kaydet modeli katlar, sınıflar, özellikler ve malzemelerle IFC 4 olarak saklar. Elemanlar parametrik geometri olarak değil, üçgenler olarak yazılır."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows 10 ve 11 (x64), macOS 11 veya üstü (Apple silicon ve Intel) ve Linux (.deb, .rpm, AppImage); ayrıca WebGPU destekli her tarayıcıda."
+    },
+    "practice": {
+      "q": "Yapı pratiğine uygun mu?",
+      "a": "Evet. Revit, SketchUp, Tekla ve CAD'den size gönderilenleri açar ve openBIM iş akışı için IFC 4'e dönüştürürsünüz. IFC dışa aktarımı IfcOpenShell ile denetlenmiştir. Sınıflar Revit kategorisinden veya Tekla parçasından gelir; açılan bir IFC dosyasındaki elemanlar sınıflarını henüz korumaz."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "Masaüstü uygulamasıyla gelen MCP sunucusu sayesinde Claude veya başka bir MCP istemcisi görüntüleyiciyi sizin gibi kullanır: dosya açar, ekran görüntüsü alır, görünüş ve katman seçer, eleman bulur ve seçer, ölçer, kesit alır, ayırır ve Revit çizelgelerini okur. Her şey kendi bilgisayarınızda kalır."
+    },
+    "browser": {
+      "q": "IFC neden tarayıcıda açılmıyor?",
+      "a": "IFC ve Revit okuyucuları henüz tarayıcı sürümünde yok. Bunlar için masaüstü uygulamasını kullanın. Tarayıcıda .gltf dosyalarının arabellekleri gömülü olmalıdır ve OBJ malzemeleri henüz okunmaz."
+    },
+    "privacy": {
+      "q": "Modelim karşıya yükleniyor mu?",
+      "a": "Hayır. Tarayıcıda bile dosya kendi bilgisayarınızda okunur; hiçbir şey sunucuya gitmez."
+    },
+    "notyet": {
+      "q": "Henüz neler yapamıyor?",
+      "a": "Henüz geri alma, yürüme modu veya gizli çizgi görünümü yok. Dokular ortalama renklerine dönüşür. Tarayıcı sürümü büyük bir model yüklenirken kısa süre donar ve ayarlarınızı henüz hatırlamaz."
+    },
+    "heading": "Sık sorulan sorular"
+  },
+  "tech": {
+    "rust": {
+      "desc": "Masaüstü uygulaması, tarayıcı sürümü ve MCP sunucusu için tek kod tabanı."
+    },
+    "iced": {
+      "desc": "Arayüz; yerel ve WebAssembly olarak, web görünümü veya JavaScript çatısı olmadan."
+    },
+    "wgpu": {
+      "desc": "4x MSAA'lı özel bir 3D hattı; aynı kod masaüstünde ve tarayıcıda çizer."
+    },
+    "readers": {
+      "desc": "IFC için IFClite, DWG/DXF için acadrust ve SketchUp, Tekla, PLY ve Revit için OpenAEC'in kendi okuyucuları."
+    },
+    "blueprint": {
+      "desc": "Ortak openaec-ui paketinden pencere, tasarım belirteçleri, yazı tipleri ve simgeler."
+    },
+    "mcp": {
+      "desc": "open-3d-viewer-mcp ekrandaki pencereyi rastgele bir belirteçle 127.0.0.1 üzerinden yönetir."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }

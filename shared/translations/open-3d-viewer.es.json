@@ -1,47 +1,284 @@
 {
   "header": {
-    "label": "Ecosistema OpenAEC",
-    "title": "Open <span class=\"accent\">3D</span> Viewer",
-    "desc": "Visor 3D de código abierto para ver e inspeccionar modelos BIM en el navegador.",
-    "badge": "Beta"
+    "title": "Open <span class=\"accent\">3D Viewer</span> Studio",
+    "demoBtn": "Abrir en el navegador",
+    "downloadBtn": "Descargar",
+    "sourceBtn": "Código fuente",
+    "proof3": "Neerlandés e inglés",
+    "proof4": "MCP para asistentes de IA",
+    "proof5": "Gratis · LGPL-3.0",
+    "heroAlt": "Open 3D Viewer Studio con un modelo de SketchUp de una casa en su parcela; a la izquierda modelos y capas, a la derecha las propiedades del archivo",
+    "label": "Visor 3D",
+    "tagline": "Abre cualquier modelo que recibas, sin el programa que lo creó",
+    "desc": "Arrastra un archivo de SketchUp, Tekla, DWG o glTF a tu navegador, o abre IFC y Revit en la aplicación de escritorio. Recorre el modelo, mide, córtalo y guárdalo como IFC."
   },
-  "why": {
-    "title": "¿Por qué Open <span class=\"accent\">3D</span> Viewer?",
-    "desc": "Ver modelos BIM suele requerir software de escritorio caro. Open 3D Viewer ofrece un visor 3D ligero basado en navegador que permite a cualquiera inspeccionar modelos IFC y otros modelos 3D sin instalación."
+  "meta": {
+    "description": "Visor 3D gratuito y de código abierto para modelos de construcción: IFC, Revit, SketchUp, Tekla, DWG/DXF, CityJSON, LandXML, glTF, OBJ, STL y PLY. Mide, secciona y guarda como IFC, en el navegador y en Windows, macOS y Linux.",
+    "title": "Open 3D Viewer Studio — OpenAEC Foundation"
   },
-  "features": {
-    "title": "Funciones",
-    "webgl": {
-      "title": "Renderizado 3D con WebGL",
-      "desc": "Renderizado 3D rápido en el navegador mediante WebGL. Visualiza modelos complejos sin plugins ni instalación."
-    },
-    "import": {
-      "title": "Importación IFC/STEP/OBJ",
-      "desc": "Compatibilidad con los formatos 3D más utilizados, incluyendo IFC, STEP y OBJ. Arrastra y suelta archivos directamente en el visor."
-    },
-    "selection": {
-      "title": "Propiedades y capas",
-      "desc": "Haz clic en un modelo para ver su archivo, el número de vértices y triángulos y sus límites. Activa o desactiva las capas una a una."
-    },
-    "clipping": {
-      "title": "Secciones &amp; planos de corte",
-      "desc": "Crea secciones transversales del modelo con planos de corte. Visualiza construcciones internas y elementos ocultos."
-    },
+  "hl": {
     "measure": {
-      "title": "Herramientas de medición",
-      "desc": "Mide distancias y ángulos directamente en el modelo 3D y consulta las estadísticas del modelo."
+      "alt": "Dos medidas de distancia en el garaje de un modelo de casa, con los valores y las unidades en el panel derecho",
+      "kicker": "Medir",
+      "title": "Mide directamente en el modelo",
+      "desc": "Haz clic en dos puntos, aristas o caras y lee la distancia, con la diferencia en X, Y y Z. También ángulos, áreas, volúmenes y polígonos. Las medidas siguen a la vista hasta que las borres."
     },
-    "multiformat": {
-      "title": "Más de veinte formatos",
-      "desc": "GLB, OBJ, STL, FBX, SKP, STEP, DXF, IFC, 3MF, DAE, PLY, PCD, WRL, XYZ, VTK, G-code, KMZ, VOX, AMF, BLEND, IGES y más, incluidas nubes de puntos."
+    "section": {
+      "alt": "Modelo de casa con una caja de sección en la primera planta, que muestra las habitaciones y el mobiliario",
+      "kicker": "Secciones",
+      "title": "Mira dentro con una sección",
+      "desc": "Una caja o un plano de sección abre el modelo, con las caras de corte rellenas. Desliza cada eje hasta ver justo la planta que buscas."
     },
-    "modes": {
-      "title": "Modos de visualización",
-      "desc": "Sólido, alámbrico, puntos o línea oculta, con cuadrícula, luz ambiental y vistas estándar."
+    "explode": {
+      "alt": "Modelo de baño separado por elementos, con los deslizadores X, Y y Z en el panel derecho",
+      "kicker": "Vista explosionada",
+      "title": "Mira cómo encaja todo",
+      "desc": "Separa el modelo por plantas o por elementos, con un porcentaje por eje. Una sola vista muestra cómo está montado un baño o un edificio."
+    },
+    "themes": {
+      "alt": "Vista superior de la casa en su parcela con cámara ortográfica, en el tema oscuro",
+      "kicker": "Espacio de trabajo",
+      "title": "Trabaja a tu manera",
+      "desc": "Elige entre cinco temas, de claro y oscuro a Blueprint y alto contraste. Las vistas superior, frontal y lateral y la cámara ortográfica están a una tecla, y cada comando puede tener el atajo que quieras."
     }
   },
-  "cta": {
-    "demo": "Ver demo en vivo",
-    "github": "Ver en GitHub"
+  "subnav": {
+    "label": "En esta página",
+    "features": "Funciones",
+    "download": "Descargar",
+    "whatsnew": "Novedades",
+    "faq": "Preguntas",
+    "releases": "Versiones"
+  },
+  "tabs": {
+    "highlights": "Destacados",
+    "view": "Visualizar",
+    "measure": "Medición y secciones",
+    "formats": "Archivos e IFC",
+    "work": "Espacio de trabajo e integraciones",
+    "all": "Todas las funciones"
+  },
+  "features": {
+    "learnMore": "Leer más",
+    "label": "Funciones",
+    "heading": "Ver, medir y seccionar en una sola ventana",
+    "sub": "Empieza por lo más destacado o elige un tema.",
+    "tabsLabel": "Funciones por tema"
+  },
+  "f": {
+    "orbit": {
+      "title": "Girar, desplazar y hacer zoom",
+      "desc": "El botón izquierdo gira, el central desplaza y la rueda acerca hacia el cursor. F encuadra todo el modelo."
+    },
+    "views": {
+      "title": "Cubo de vista y vistas estándar",
+      "desc": "Gira el modelo hacia una cara con el cubo. Iso, superior, frontal y derecha en 0 a 3; perspectiva u ortográfica en P y O."
+    },
+    "render": {
+      "title": "Sólido, alámbrico o con aristas",
+      "desc": "Cambia de modo de visualización con S, W y E, y activa o desactiva la cuadrícula con G."
+    },
+    "layers": {
+      "title": "Capas visibles u ocultas",
+      "desc": "El explorador muestra las capas con color y número: capas IFC, categorías de Revit, etiquetas de SketchUp, clases de Tekla o capas CAD. Actívalas o desactívalas una a una."
+    },
+    "select": {
+      "title": "Propiedades de un elemento",
+      "desc": "Haz clic en un elemento y lee sus propiedades. Del archivo ves el formato, el tamaño, el número de triángulos y las dimensiones."
+    },
+    "flip": {
+      "title": "Otro eje vertical",
+      "desc": "¿Un modelo aparece tumbado porque el archivo usa otro eje vertical? Un clic lo pone de pie."
+    },
+    "distance": {
+      "title": "Distancias y ángulos",
+      "desc": "Mide entre puntos, aristas y caras, o entre dos elementos. Cada distancia muestra la diferencia en X, Y y Z."
+    },
+    "area": {
+      "title": "Área, volumen y polígono",
+      "desc": "Mide un área o un volumen, o marca un polígono. Elige la unidad (mm, cm o m) y el número de decimales."
+    },
+    "section": {
+      "title": "Caja y plano de sección",
+      "desc": "Abre el modelo con una caja o un plano, con las caras de corte rellenas. La caja puede ajustarse a la selección."
+    },
+    "explode": {
+      "title": "Vista explosionada",
+      "desc": "Separa el modelo por plantas o por elementos, con un porcentaje por eje."
+    },
+    "ifcrevit": {
+      "title": "Abrir IFC y Revit",
+      "desc": "La aplicación de escritorio abre IFC y Revit (.rvt, .rfa), con niveles, rejillas, habitaciones y vistas guardadas. Los espacios IFC empiezan ocultos en su propia capa."
+    },
+    "schedules": {
+      "title": "Tablas de planificación de Revit",
+      "desc": "Una tabla de un archivo de Revit se abre bajo la vista 3D. Haz clic en una fila y se seleccionan sus elementos."
+    },
+    "cad": {
+      "title": "SketchUp, Tekla y DWG/DXF",
+      "desc": "SketchUp desde la versión 3, Tekla Structures (beta) y las caras de los dibujos DWG y DXF, en el navegador y en el escritorio."
+    },
+    "geo": {
+      "title": "CityJSON y LandXML",
+      "desc": "Edificios de un modelo urbano CityJSON, con el mayor nivel de detalle por objeto, y superficies de terreno (TIN) de LandXML."
+    },
+    "mesh": {
+      "title": "glTF, OBJ, STL y PLY",
+      "desc": "Los formatos 3D habituales de programas de diseño, escaneo e impresión también se abren."
+    },
+    "multi": {
+      "title": "Varios modelos a la vez",
+      "desc": "Abrir sustituye el modelo y Añadir coloca otro archivo al lado. Cada modelo tiene su propio ojo para mostrarlo u ocultarlo."
+    },
+    "saveifc": {
+      "title": "Guardar como IFC",
+      "desc": "Guarda cualquier modelo que abra el visor como IFC 4, con plantas, clases, propiedades y materiales. En el navegador, el archivo va a tus descargas."
+    },
+    "themes": {
+      "title": "Cinco temas",
+      "desc": "Claro, oscuro, Blueprint y dos variantes de alto contraste, en la misma ventana que las demás aplicaciones de OpenAEC."
+    },
+    "shortcuts": {
+      "title": "Tus propios atajos",
+      "desc": "Cada comando está en una sola lista, compartida por la cinta, la barra de título y el teclado. Asigna tu propia tecla en la configuración."
+    },
+    "lang": {
+      "title": "Neerlandés e inglés",
+      "desc": "Elige el idioma de la ventana en la configuración."
+    },
+    "mcp": {
+      "title": "Deja que un asistente de IA lo maneje",
+      "desc": "Con el servidor MCP, un asistente de IA abre archivos, gira la cámara, busca elementos por propiedad, mide y secciona, en la ventana que ves."
+    },
+    "private": {
+      "title": "Tu modelo se queda contigo",
+      "desc": "Incluso en el navegador no se sube nada: el archivo se lee en tu propio ordenador."
+    },
+    "update": {
+      "title": "Descargas firmadas y actualizaciones",
+      "desc": "Cada instalador está firmado. Cuando el OpenAEC Installer tiene una versión más reciente, la barra de título lo indica y Actualizar la instala."
+    }
+  },
+  "download": {
+    "title": "Descargar v2026.44.18",
+    "lead": "Gratis y sin cuenta. Para Windows, macOS y Linux.",
+    "forWindows": "Descargar para Windows",
+    "forMac": "Descargar para macOS",
+    "forLinux": "Descargar para Linux",
+    "metaWindows": "instalador .exe",
+    "metaMac": ".dmg universal, Intel y Apple Silicon",
+    "metaLinux": "AppImage, funciona en la mayoría de distribuciones",
+    "browserBtn": "Abrir en el navegador",
+    "fileExe": "Instalador (.exe)",
+    "fileDmg": ".dmg universal",
+    "fileDeb": ".deb",
+    "fileAppImage": "AppImage",
+    "browserNote": "¿Prefieres no instalar nada? La aplicación también <a href=\"https://open-3d-viewer.open-aec.com/\" target=\"_blank\" rel=\"noopener\">funciona en el navegador</a>.",
+    "label": "Descargar",
+    "mobileNote": "Open 3D Viewer Studio está hecho para una pantalla grande. Ábrelo en tu ordenador o pruébalo aquí en el navegador.",
+    "other": "Otras plataformas"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Todas las notas de versión",
+    "ctaDemo": "Pruébalo en el navegador",
+    "items": {
+      "revit": {
+        "title": "Revit e IFC en el escritorio",
+        "desc": "Archivos de Revit con niveles, habitaciones, vistas y tablas; IFC con plantas y capas."
+      },
+      "formats": {
+        "title": "CityJSON, LandXML y DWG/DXF",
+        "desc": "Nuevo: modelos urbanos, superficies de terreno y las caras de los dibujos CAD."
+      },
+      "multi": {
+        "title": "Varios modelos",
+        "desc": "Añadir coloca un segundo archivo junto al primero; cada modelo tiene su propio ojo."
+      },
+      "shell": {
+        "title": "La ventana de OpenAEC",
+        "desc": "Cinta compacta, explorador y propiedades, cinco temas y tus propios atajos, como en las demás aplicaciones de OpenAEC."
+      },
+      "mcp": {
+        "title": "Vista explosionada para la IA",
+        "desc": "Un asistente de IA ahora también puede separar el modelo mediante el servidor MCP."
+      },
+      "signed": {
+        "title": "Firmado para cada plataforma",
+        "desc": "Windows con instalador y desinstalador firmados, macOS notarizado por Apple, Linux con la clave de OpenAEC."
+      }
+    },
+    "label": "Novedades de la v2026.44",
+    "title": "Revit, IFC y <span>nuevos formatos</span>",
+    "desc": "El visor renovado: una sola aplicación para escritorio y navegador, en la ventana de todas las aplicaciones de OpenAEC, con más formatos y descargas firmadas para cada plataforma."
+  },
+  "faq": {
+    "files": {
+      "q": "¿Qué archivos puedo abrir?",
+      "a": "IFC y Revit (.rvt, .rfa) en la aplicación de escritorio. SketchUp (versión 3 y posteriores), Tekla Structures (.db1, beta), DWG/DXF, CityJSON, LandXML, glTF, OBJ, STL y PLY en el escritorio y en el navegador. Las nubes de puntos (E57, LAS), FBX, STEP e IGES todavía no se abren."
+    },
+    "install": {
+      "q": "¿Tengo que instalar algo?",
+      "a": "No. La versión de navegador funciona en un Chrome, Edge, Firefox o Safari actual con WebGPU. Para IFC y Revit, y para conectar un asistente de IA, instala la aplicación de escritorio, lo más fácil con el OpenAEC Installer."
+    },
+    "price": {
+      "q": "¿Cuánto cuesta?",
+      "a": "Nada. El visor es gratuito, sin cuenta ni costes de licencia. El código fuente es LGPL-3.0; para Revit, la aplicación de escritorio usa una biblioteca de OpenAEC con licencia propia."
+    },
+    "save": {
+      "q": "¿En qué formato se guarda mi trabajo?",
+      "a": "El visor no modifica tu archivo. Guardar como almacena el modelo como IFC 4, con plantas, clases, propiedades y materiales. Los elementos se escriben como triángulos, no como geometría paramétrica."
+    },
+    "systems": {
+      "q": "¿En qué sistemas funciona?",
+      "a": "Windows 10 y 11 (x64), macOS 11 o posterior (Apple silicon e Intel) y Linux (.deb, .rpm, AppImage), y en cualquier navegador con WebGPU."
+    },
+    "practice": {
+      "q": "¿Encaja con la práctica de la construcción?",
+      "a": "Sí. Abres lo que te envían desde Revit, SketchUp, Tekla y CAD, y lo conviertes a IFC 4 para un flujo openBIM. La exportación IFC está verificada con IfcOpenShell. Las clases vienen de la categoría de Revit o de la pieza de Tekla; los elementos de un IFC abierto aún no conservan su clase."
+    },
+    "ai": {
+      "q": "¿Qué puede hacer un asistente de IA con él?",
+      "a": "Con el servidor MCP que acompaña a la aplicación de escritorio, Claude u otro cliente MCP maneja el visor como tú: abrir archivos, hacer capturas, elegir vistas y capas, buscar y seleccionar elementos, medir, seccionar, separar y leer tablas de Revit. Todo se queda en tu ordenador."
+    },
+    "browser": {
+      "q": "¿Por qué IFC no se abre en el navegador?",
+      "a": "Los lectores de IFC y Revit todavía no están en la versión de navegador. Usa la aplicación de escritorio para ellos. En el navegador, los archivos .gltf deben llevar sus búferes incrustados y los materiales OBJ aún no se leen."
+    },
+    "privacy": {
+      "q": "¿Se sube mi modelo?",
+      "a": "No. Incluso en el navegador, el archivo se lee en tu propio ordenador; nada va a un servidor."
+    },
+    "notyet": {
+      "q": "¿Qué no hace todavía?",
+      "a": "Todavía no hay deshacer, modo de paseo ni vista de líneas ocultas. Las texturas pasan a su color medio. La versión de navegador se congela un momento al cargar un modelo grande y aún no recuerda tu configuración."
+    },
+    "heading": "Preguntas frecuentes"
+  },
+  "tech": {
+    "rust": {
+      "desc": "Una sola base de código para la aplicación de escritorio, la versión de navegador y el servidor MCP."
+    },
+    "iced": {
+      "desc": "La interfaz, nativa y como WebAssembly, sin web view ni framework de JavaScript."
+    },
+    "wgpu": {
+      "desc": "Un pipeline 3D propio con MSAA 4x; el mismo código dibuja en el escritorio y en el navegador."
+    },
+    "readers": {
+      "desc": "IFC con IFClite, DWG/DXF con acadrust, y lectores propios de OpenAEC para SketchUp, Tekla, PLY y Revit."
+    },
+    "blueprint": {
+      "desc": "La ventana, los tokens de diseño, las fuentes y los iconos de la crate compartida openaec-ui."
+    },
+    "mcp": {
+      "desc": "open-3d-viewer-mcp controla la ventana en pantalla a través de 127.0.0.1 con un token aleatorio."
+    },
+    "heading": "Tecnología",
+    "sub": "Para quien quiera saber cómo está hecho."
+  },
+  "releases": {
+    "showAll": "Mostrar todas las versiones",
+    "showLess": "Mostrar solo las tres últimas",
+    "github": "Todas las versiones en GitHub"
   }
 }
