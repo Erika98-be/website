@@ -1,44 +1,227 @@
 {
   "header": {
-    "label": "OpenAEC ekosistemi",
     "title": "OpenAEC <span class=\"accent\">Docs</span>",
-    "desc": "Açık kaynak BIM belge yönetim platformu. Tüm proje belgelerini tek bir merkezi yerde yönetin, paylaşın ve arşivleyin.",
-    "badge": "Beta"
+    "featuresBtn": "Özellikleri gör",
+    "sourceBtn": "Kaynak kodu",
+    "proof1": "Dosyalar kendi Nextcloud'unuzda",
+    "proof2": "Kendi sunucunuz · Docker",
+    "proof3": "Tek oturum açma",
+    "proof4": "Konsept · ücretsiz · MIT",
+    "heroAlt": "Örnek bir projede mimarın çizimlerinin bulunduğu klasör; kenar çubuğunda sabit proje klasörleri ve iki manifest",
+    "label": "Belge yönetimi",
+    "tagline": "Proje klasörleri, modeller ve manifestler düzenli bir arada, kendi sunucunuzda",
+    "desc": "OpenAEC Docs, inşaat projelerinde belge yönetimi için bir konsepttir. Nextcloud'unuzda zaten bulunan dosyaların üzerine projelerin, sabit klasörlerin ve manifestlerin bir özetini koyar.",
+    "faqBtn": "Sık sorulan sorular"
   },
-  "what": {
-    "title": "OpenAEC <span class=\"accent\">Docs</span> nedir?",
-    "desc": "OpenAEC Docs, inşaat sektöründeki BIM projeleri için özel olarak tasarlanmış bir belge yönetim sistemidir (DMS). <a href=\"https://nextcloud.com\" target=\"_blank\" rel=\"noopener\">Nextcloud</a> üzerine inşa edilmiştir — dosya yönetimi ve işbirliği için en popüler açık kaynak platformdur. Çizimler ve raporlardan sözleşmeler ve izinlere kadar tüm proje belgelerini yönetmek, paylaşmak ve arşivlemek için merkezi bir yer sağlar.",
-    "tech": "Nextcloud üzerinde bir Rust sunucusu (Axum) ve bir React ön ucu; meta veriler için PostgreSQL, giriş için OIDC."
+  "meta": {
+    "description": "İnşaat projeleri için açık kaynaklı belge yönetimi konsepti: kendi Nextcloud'unuzun üzerinde, kendi sunucunuzda projeler, sabit proje klasörleri ve manifestler. Hâlâ geliştirme aşamasında.",
+    "title": "OpenAEC Docs — OpenAEC Foundation"
   },
-  "features": {
-    "title": "Özellikler",
-    "documents": {
-      "title": "Proje dosyaları",
-      "desc": "Dosyaları yükleyin, açın ve silin, klasör oluşturun; proje başına ve doğrudan Nextcloud’da."
+  "hl": {
+    "projects": {
+      "alt": "Her biri durum ve proje klasörüyle birlikte bir ilkokul, bir bisiklet köprüsü ve bir konut şablonu dahil altı hayali projenin özeti",
+      "kicker": "Projeler",
+      "title": "Tüm projeleriniz tek bir özette",
+      "desc": "Her proje kısa bir açıklama, durumu ve dosyaların bulunduğu Nextcloud klasörüyle bir kart olarak görünür. Etkin projeleri, arşivlenmiş dosyaları ve şablonları hemen ayırt edersiniz. Tek tıkla projenin içindesiniz."
     },
     "folders": {
-      "title": "Sabit proje klasörleri",
-      "desc": "Her proje için modeller, çizimler, hesaplar ve raporlar gibi sabit bir düzen; klasör başına izin verilen dosya türleriyle."
+      "alt": "Modeller, çizimler, hesaplar, raporlar, izinler ve yazışmalar sabit klasörleriyle hayali bir ilkokulun proje klasörü",
+      "kicker": "Sabit klasörler",
+      "title": "Her projede aynı, tanıdık düzen",
+      "desc": "Kenar çubuğunda projenin modeller, çizimler, hesaplar ve raporlar gibi sabit klasörleri okunaklı adlarla yer alır. Böylece yeni katılanlar dahil herkes her projede doğru yeri hemen bulur."
     },
-    "manifests": {
-      "title": "Proje manifestosu",
-      "desc": "Her proje için bir manifesto hangi modellerin, sorun setlerinin ve raporların projeye ait olduğunu tutar; böylece diğer araçlar onları bulur."
+    "models": {
+      "alt": "Mimar, statik mühendisi ve tesisat mühendislerinin IFC modellerinin bulunduğu klasör; dosya boyutları ve üstte içerik yolu",
+      "kicker": "Dosyalar",
+      "title": "Dosyalarınız zaten bulundukları yerde kalır",
+      "desc": "OpenAEC Docs dosyaları doğrudan Nextcloud'unuzdan okur. Modeller, çizimler ve alt klasörler arasında gezinir, her dosyanın boyutunu görür ve içerik yoluyla geri dönersiniz. İkinci bir depolama ya da kopya eklenmez."
     },
-    "integrations": {
-      "title": "BIM Validator ve BCF",
-      "desc": "Belgelerin yanında doğrulamalar ve sorunlar için OpenAEC BIM Validator ve BCF platformu ile bağlantılar."
-    },
-    "access": {
-      "title": "Giriş ve kuruluşlar",
-      "desc": "Tek oturum açma (OIDC) ile giriş; tek kurulumda her biri kendi Nextcloud’una sahip birden fazla kuruluş."
-    },
-    "api": {
-      "title": "REST API",
-      "desc": "Diğer araçlarla bağlantı için tüm işlevler bir REST API üzerinden."
+    "manifest": {
+      "alt": "Her biri yol ve GUID ile dört IFC modeli, bir sorun seti ve bir doğrulama raporu içeren örnek proje manifesti",
+      "kicker": "Manifestler",
+      "title": "Neyin birbirine ait olduğunu kaydedin",
+      "desc": "Proje klasöründeki bir manifest, hangi modellerin, sorun setlerinin ve raporların projeye ait olduğunu her biri sabit bir anahtarla kaydeder. OpenAEC Docs içeriği düzenli gösterir; diğer araçlar API üzerinden öğe ekleyebilir."
     }
   },
-  "highlight": {
-    "title": "Kendi sunucunuzda barındırılır ve gizlilik öncelikli",
-    "desc": "OpenAEC Docs, Docker aracılığıyla kendi sunucunuzda çalışır. Verileriniz üzerinde tam kontrol, bulut bağımlılığı yok. Sıkı gizlilik ve uyumluluk gereksinimleri olan kuruluşlar için idealdir."
+  "notice": {
+    "text": "Konsept: henüz kurulacak ya da çevrimiçi denenecek bir sürüm yok ve geliştirme Nisan 2026'dan beri duruyor. Ekran görüntüleri, hayali projelerle kurulmuş yerel bir test ortamından alınmıştır."
+  },
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "projects": "Projeler",
+    "files": "Klasörler ve dosyalar",
+    "links": "Manifestler ve API",
+    "server": "Kendi sunucunuz",
+    "all": "Tüm özellikler"
+  },
+  "f": {
+    "overview": {
+      "title": "Proje özeti",
+      "desc": "Kuruluşunuzun tüm projeleri açıklama ve proje klasörüyle kartlar halinde."
+    },
+    "status": {
+      "title": "Etkin, arşiv ya da şablon",
+      "desc": "Her projenin bir durumu vardır; süren işler, kapanmış dosyalar ve şablonlar karışmaz."
+    },
+    "projectapi": {
+      "title": "Proje oluşturma ve arşivleme",
+      "desc": "Bir projeyi Nextcloud'daki bir klasöre bağlarsınız. Oluşturma, düzenleme ve arşivleme şimdilik API üzerinden yapılır, henüz ekrandan değil."
+    },
+    "fixed": {
+      "title": "Sabit proje klasörleri",
+      "desc": "Kenar çubuğunda proje başına modeller, çizimler ve raporlar gibi sabit sırada bir düzen."
+    },
+    "browse": {
+      "title": "İçerik yoluyla gezinme",
+      "desc": "Önce klasörler olmak üzere klasör ve alt klasörlerde gezinin; her dosyanın boyutu görünür, tek tıkla geri dönersiniz."
+    },
+    "nextcloud": {
+      "title": "Doğrudan Nextcloud'dan",
+      "desc": "Dosyalar Nextcloud'da kalır. OpenAEC Docs yalnızca proje bilgilerini ve klasör düzenini saklar."
+    },
+    "folderset": {
+      "title": "Klasör başına ayarlar",
+      "desc": "Her klasör için ad, sıra, simge, salt okunur ayarı ve içine ait dosya türlerini kaydedersiniz."
+    },
+    "suggest": {
+      "title": "Düzen önerisi",
+      "desc": "OpenAEC Docs sabit klasörleri mevcut klasörlerden önerir: 01_Modellen, Modellen olur."
+    },
+    "fileapi": {
+      "title": "Yükleme, silme, klasör oluşturma",
+      "desc": "Proje klasöründe dosya indirme, yükleme, silme ve klasör oluşturma; şimdilik API üzerinden."
+    },
+    "manifests": {
+      "title": "Manifestleri görüntüleme",
+      "desc": "Bir manifestin başlığı ve öğeleri düzenli biçimde: tür, ad, yol ve anahtar."
+    },
+    "multi": {
+      "title": "Proje başına birden çok manifest",
+      "desc": "Örneğin biri modeller, biri raporlar için; her biri doğrudan kenar çubuğundan açılır."
+    },
+    "upsert": {
+      "title": "Öğe ekleme",
+      "desc": "Diğer araçlar API üzerinden, sabit anahtara göre bir manifeste öğe ekler ya da onu günceller."
+    },
+    "api": {
+      "title": "Kendi araçlarınızı bağlayın",
+      "desc": "Projeler, klasörler, dosyalar ve manifestler tek bir API üzerinden erişilebilir."
+    },
+    "selfhost": {
+      "title": "Kendi sunucunuzda",
+      "desc": "Kendi yönettiğiniz bir sunucuda Docker içinde çalışır. Proje verileriniz dış bir buluta gitmez."
+    },
+    "sso": {
+      "title": "Tek oturum açma",
+      "desc": "OpenAEC Docs için ayrı bir parola olmadan, kuruluşunuzun oturum açma sunucusu üzerinden giriş yapın."
+    },
+    "tenants": {
+      "title": "Birden çok kuruluş",
+      "desc": "Birden çok kuruluş için tek kurulum; her birinin kendi Nextcloud'u vardır ve yalnızca kendi projelerini görür."
+    }
+  },
+  "features": {
+    "label": "Özellikler",
+    "heading": "OpenAEC Docs şu an neler yapabilir",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "whatsnew": {
+    "items": {
+      "multi": {
+        "title": "Birden çok manifest",
+        "desc": "Proje klasöründeki her manifest dosyası kenar çubuğunda ayrı görünür."
+      },
+      "viewer": {
+        "title": "Ekranda manifest",
+        "desc": "Tür, ad, yol ve anahtarla bir manifestin başlığı ve öğeleri."
+      },
+      "upsert": {
+        "title": "API ile ekleme",
+        "desc": "Diğer araçlar öğe ekler ya da günceller; manifest henüz yoksa oluşturulur."
+      },
+      "shared": {
+        "title": "Diğer araçlarla aynı biçim",
+        "desc": "Manifest, OpenAEC bulut araçlarının ortak kütüphanesini kullanır; böylece onlar da okuyabilir."
+      }
+    },
+    "label": "Nisan 2026'da yeni",
+    "title": "Manifestler: <span>ne neye ait</span>",
+    "desc": "Son yeni özellik Nisan 2026 tarihli: bir projenin ekranda görüntüleyebileceğiniz birden çok manifesti olabilir. Geliştirme o zamandan beri duruyor; henüz bir sürüm yok.",
+    "ctaCommits": "Tüm değişiklikler"
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "OpenAEC Docs, Nextcloud'daki proje klasörünün tüm dosyalarını IFC modellerinden PDF ve DWG çizimlerine kadar ad ve boyutuyla gösterir. Manifestleri (.wefc) ekranda okuyabilirsiniz. Bir dosyayı açmak ya da önizlemek ekranda henüz mümkün değil; API üzerinden her dosyayı alabilirsiniz."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Evet. OpenAEC Docs, kendi sunucunuzda PostgreSQL, dosyalar için bir Nextcloud ve bir oturum açma sunucusuyla birlikte Docker içinde çalıştırdığınız bir sunucu uygulamasıdır. Kullanıcılar ardından tarayıcıda çalışır. Henüz hazır bir sürüm ya da herkese açık deneme sürümü yok."
+    },
+    "price": {
+      "q": "Ücreti ne kadar?",
+      "a": "Hiçbir şey. OpenAEC Docs, MIT lisansıyla açık kaynaklıdır. Yalnızca kendi sunucunuz için ödeme yaparsınız."
+    },
+    "format": {
+      "q": "Çalışmam hangi dosya biçiminde kaydedilir?",
+      "a": "Dosyalarınız Nextcloud'da değişmeden kalır. Proje bilgileri ve klasör düzeni bir PostgreSQL veritabanında, manifestler ise proje klasöründe .wefc (JSON) dosyaları olarak tutulur."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Sunucu Linux üzerinde Docker içinde çalışır. Kullanıcılar Windows, macOS ya da Linux'ta modern bir tarayıcıda çalışır."
+    },
+    "practice": {
+      "q": "İnşaat pratiğine uygun mu?",
+      "a": "Yaygın çalışma biçimini izler: proje başına sabit klasör yapısı, disipline göre IFC modelleri ve modelleri, sorun setlerini (BCF) ve raporları bir arada tutan manifestler. BIM Validator ve BCF platformu bağlantıları hazırlandı ancak henüz çalışmıyor."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "Henüz bir MCP sunucusu yok. Ancak bir asistan ya da betik, REST API ile projeleri, klasörleri, dosyaları ve manifestleri okuyabilir ve bir manifeste öğe ekleyebilir."
+    },
+    "status": {
+      "q": "Şimdiden kullanabilir miyim?",
+      "a": "Gerçek iş için henüz değil. OpenAEC Docs bir konsepttir: temel hazır, ancak sürüm yok, herkese açık bir kurulum yok ve Nisan 2026'dan beri yeni geliştirme yapılmadı. Yardım etmek isterseniz GitHub'daki kaynak koduna göz atın."
+    },
+    "buttons": {
+      "q": "Ekrandan dosya yükleyip klasör oluşturabilir miyim?",
+      "a": "Henüz değil. Yükleme, yeni klasör, arama ve belge durumu düğmeleri şeritte duruyor ama henüz bir şey yapmıyor. Yükleme, silme ve klasör oluşturma API üzerinden çalışır."
+    },
+    "nextcloud": {
+      "q": "Nextcloud'a ihtiyacım var mı?",
+      "a": "Evet. OpenAEC Docs'un kendi dosya deposu yoktur; kuruluşunuzun Nextcloud'undaki dosyalarla çalışır. Her kuruluş için hangi Nextcloud'un ona ait olduğunu ayarlarsınız."
+    },
+    "heading": "Sık sorulan sorular"
+  },
+  "tech": {
+    "rust": {
+      "desc": "Tüm istekleri Nextcloud'a ileten, Axum ile Rust'ta yazılmış hızlı ve küçük bir sunucu."
+    },
+    "react": {
+      "desc": "Vite ile derlenen ve Tailwind ile OpenAEC tarzında biçimlendirilen React 19 ve TypeScript web arayüzü."
+    },
+    "nextcloud": {
+      "desc": "Dosyalar Nextcloud'da durur ve WebDAV ile okunup yazılır; OpenAEC Docs kendisi dosya saklamaz."
+    },
+    "postgres": {
+      "desc": "Projeler, klasör düzeni, kullanıcılar ve roller SQLx ve numaralı geçişlerle PostgreSQL'de."
+    },
+    "oidc": {
+      "desc": "PKCE ile OpenID Connect üzerinden oturum açma (örneğin Authentik) ve 24 saat geçerli bir oturum belirteci."
+    },
+    "docker": {
+      "desc": "Sunucu ve web arayüzünü içeren tek bir imaj ile geliştirme ve üretim için Docker Compose dosyaları."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "commits": "GitHub'daki tüm değişiklikler"
   }
 }

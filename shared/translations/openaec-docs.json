@@ -1,44 +1,227 @@
 {
   "header": {
-    "label": "OpenAEC Ecosystem",
     "title": "OpenAEC <span class=\"accent\">Docs</span>",
-    "desc": "Open source BIM document management platform. Manage, share and archive all project documents in one central place.",
-    "badge": "Beta"
+    "featuresBtn": "See the features",
+    "sourceBtn": "Source code",
+    "proof1": "Files in your own Nextcloud",
+    "proof2": "Your own server · Docker",
+    "proof3": "Single sign-on",
+    "proof4": "Concept · free · MIT",
+    "heroAlt": "Folder with the architect's drawings in a sample project, with the fixed project folders and two manifests in the sidebar",
+    "label": "Document management",
+    "tagline": "Project folders, models and manifests neatly together, on your own server",
+    "desc": "OpenAEC Docs is a concept for document management in construction projects. It puts an overview of projects, fixed folders and manifests on top of the files already in your Nextcloud.",
+    "faqBtn": "Frequently asked questions"
   },
-  "what": {
-    "title": "What is OpenAEC <span class=\"accent\">Docs</span>?",
-    "desc": "OpenAEC Docs is a document management system (DMS) specifically designed for BIM projects in the construction industry. It is based on <a href=\"https://nextcloud.com\" target=\"_blank\" rel=\"noopener\">Nextcloud</a> — the most popular open source platform for file management and collaboration. It provides a central place for managing, sharing and archiving all project documents — from drawings and reports to contracts and permits.",
-    "tech": "A Rust server (Axum) and a React frontend on top of Nextcloud, with PostgreSQL for the metadata and sign-in through OIDC."
+  "meta": {
+    "description": "Concept for open-source document management in construction projects: projects, fixed project folders and manifests on top of your own Nextcloud, on your own server. Still in development.",
+    "title": "OpenAEC Docs — OpenAEC Foundation"
   },
-  "features": {
-    "title": "Features",
-    "documents": {
-      "title": "Project files",
-      "desc": "Upload, open and delete files and create folders, per project and straight in Nextcloud."
+  "hl": {
+    "projects": {
+      "alt": "Overview of six fictitious projects, including a primary school, a cycle bridge and a housing template, each with status and project folder",
+      "kicker": "Projects",
+      "title": "All your projects in one overview",
+      "desc": "Each project appears as a card with a short description, its status and the Nextcloud folder that holds the files. Active projects, archived records and templates are easy to tell apart. One click takes you into the project."
     },
     "folders": {
-      "title": "Fixed project folders",
-      "desc": "A fixed layout per project, such as models, drawings, calculations and reports, with allowed file types per folder."
+      "alt": "Project folder of a fictitious primary school with the fixed folders models, drawings, calculations, reports, permits and correspondence",
+      "kicker": "Fixed folders",
+      "title": "The same recognisable layout in every project",
+      "desc": "The sidebar shows the project's fixed folders, such as models, drawings, calculations and reports, with readable names. Everyone finds the right place straight away in every project, including newcomers."
     },
-    "manifests": {
-      "title": "Project manifest",
-      "desc": "A manifest per project records which models, issue sets and reports belong to it, so other tools can find them."
+    "models": {
+      "alt": "Folder with IFC models from the architect, structural engineer and building services engineers, with file sizes and the breadcrumb at the top",
+      "kicker": "Files",
+      "title": "Your files stay where they already are",
+      "desc": "OpenAEC Docs reads the files straight from your Nextcloud. You browse models, drawings and subfolders, see the size of every file and jump back through the breadcrumb. No second storage or copy is added."
     },
-    "integrations": {
-      "title": "BIM Validator and BCF",
-      "desc": "Connections with the OpenAEC BIM Validator and BCF platform, for validations and issues next to the documents."
-    },
-    "access": {
-      "title": "Sign-in and organisations",
-      "desc": "Sign in through single sign-on (OIDC), with several organisations on one installation, each with its own Nextcloud."
-    },
-    "api": {
-      "title": "REST API",
-      "desc": "Every function through a REST API, for connections with other tools."
+    "manifest": {
+      "alt": "Manifest of a sample project with four IFC models, an issue set and a validation report, each with path and GUID",
+      "kicker": "Manifests",
+      "title": "Record what belongs together",
+      "desc": "A manifest in the project folder records which models, issue sets and reports belong to the project, each with a fixed key. OpenAEC Docs shows its contents clearly, and other tools can add items to it through the API."
     }
   },
-  "highlight": {
-    "title": "Self-hosted &amp; privacy-first",
-    "desc": "OpenAEC Docs runs on your own server via Docker. Full control over your data, no cloud dependency. Ideal for organizations with strict privacy and compliance requirements."
+  "notice": {
+    "text": "Concept: there is no version to install or try online yet, and development has been paused since April 2026. The screenshots come from a local test setup with fictitious projects."
+  },
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "whatsnew": "What's new",
+    "faq": "FAQ"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "projects": "Projects",
+    "files": "Folders and files",
+    "links": "Manifests and API",
+    "server": "Your own server",
+    "all": "All features"
+  },
+  "f": {
+    "overview": {
+      "title": "Project overview",
+      "desc": "All your organisation's projects as cards, with description and project folder."
+    },
+    "status": {
+      "title": "Active, archived or template",
+      "desc": "Every project has a status, so ongoing work, closed records and templates do not get mixed up."
+    },
+    "projectapi": {
+      "title": "Create and archive projects",
+      "desc": "You link a project to a Nextcloud folder. Creating, editing and archiving work through the API for now, not yet on screen."
+    },
+    "fixed": {
+      "title": "Fixed project folders",
+      "desc": "A fixed layout per project in the sidebar, such as models, drawings and reports, in a fixed order."
+    },
+    "browse": {
+      "title": "Browse with a breadcrumb",
+      "desc": "Browse folders and subfolders, folders first, with the size of every file and one click back."
+    },
+    "nextcloud": {
+      "title": "Straight from Nextcloud",
+      "desc": "The files stay in Nextcloud. OpenAEC Docs only stores the project details and the folder layout."
+    },
+    "folderset": {
+      "title": "Settings per folder",
+      "desc": "For each folder you record a name, order, icon, read-only and the file types that belong in it."
+    },
+    "suggest": {
+      "title": "Suggest a layout",
+      "desc": "OpenAEC Docs suggests the fixed folders from the folders that already exist: 01_Modellen becomes Modellen."
+    },
+    "fileapi": {
+      "title": "Upload, delete, create folders",
+      "desc": "Fetch, upload and delete files and create folders in the project folder, through the API for now."
+    },
+    "manifests": {
+      "title": "View manifests",
+      "desc": "A manifest's header and items shown clearly: type, name, path and key."
+    },
+    "multi": {
+      "title": "Several manifests per project",
+      "desc": "For example one for the models and one for the reports, each opened straight from the sidebar."
+    },
+    "upsert": {
+      "title": "Add items",
+      "desc": "Other tools add or update an item in a manifest through the API, matched on its fixed key."
+    },
+    "api": {
+      "title": "Connect your own tools",
+      "desc": "Projects, folders, files and manifests are all available through a single API."
+    },
+    "selfhost": {
+      "title": "On your own server",
+      "desc": "Runs in Docker on a server you manage yourself. Your project data does not go to an outside cloud."
+    },
+    "sso": {
+      "title": "Single sign-on",
+      "desc": "Sign in through your organisation's sign-in server, without a separate password for OpenAEC Docs."
+    },
+    "tenants": {
+      "title": "Several organisations",
+      "desc": "One installation for several organisations, each with its own Nextcloud and only access to its own projects."
+    }
+  },
+  "features": {
+    "label": "Features",
+    "heading": "What OpenAEC Docs can do now",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "whatsnew": {
+    "items": {
+      "multi": {
+        "title": "Several manifests",
+        "desc": "Every manifest file in the project folder appears separately in the sidebar."
+      },
+      "viewer": {
+        "title": "Manifest on screen",
+        "desc": "A manifest's header and items, with type, name, path and key."
+      },
+      "upsert": {
+        "title": "Add through the API",
+        "desc": "Other tools add or update items; if the manifest does not exist yet, it is created."
+      },
+      "shared": {
+        "title": "Same format as other tools",
+        "desc": "The manifest uses the shared library of the OpenAEC cloud tools, so they can read it too."
+      }
+    },
+    "label": "New in April 2026",
+    "title": "Manifests: <span>what belongs with what</span>",
+    "desc": "The latest new feature dates from April 2026: a project can have several manifests, which you view on screen. Development has been paused since then; there is no release yet.",
+    "ctaCommits": "All changes"
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "OpenAEC Docs shows every file in the project folder in Nextcloud, from IFC models to PDF and DWG drawings, with name and size. You can read manifests (.wefc) on screen. Opening a file or showing a preview is not yet possible on screen; through the API you can fetch any file."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "Yes. OpenAEC Docs is a server application you run in Docker on your own server, together with PostgreSQL, a Nextcloud for the files and a sign-in server. Users then work in the browser. There is no ready-made release and no public trial version yet."
+    },
+    "price": {
+      "q": "What does it cost?",
+      "a": "Nothing. OpenAEC Docs is open source under the MIT licence. You only pay for your own server."
+    },
+    "format": {
+      "q": "In which file format is my work saved?",
+      "a": "Your files stay unchanged in Nextcloud. The project details and folder layout are kept in a PostgreSQL database, and manifests are .wefc files (JSON) in the project folder."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "The server runs in Docker, on Linux. Users work in a modern browser on Windows, macOS or Linux."
+    },
+    "practice": {
+      "q": "Does it fit construction practice?",
+      "a": "It follows common practice: a fixed folder structure per project, IFC models per discipline and manifests that keep models, issue sets (BCF) and reports together. Links with the BIM Validator and the BCF platform are prepared but do not work yet."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "There is no MCP server yet. An assistant or script can, however, use the REST API to read projects, folders, files and manifests and add items to a manifest."
+    },
+    "status": {
+      "q": "Can I use it yet?",
+      "a": "Not for real work yet. OpenAEC Docs is a concept: the basis is in place, but there is no release, no public installation and no new development since April 2026. If you want to help, have a look at the source code on GitHub."
+    },
+    "buttons": {
+      "q": "Can I upload and create folders on screen?",
+      "a": "Not yet. The buttons for upload, new folder, search and document status are already in the ribbon but do nothing yet. Uploading, deleting and creating folders do work through the API."
+    },
+    "nextcloud": {
+      "q": "Do I need Nextcloud?",
+      "a": "Yes. OpenAEC Docs has no file storage of its own; it works with the files in your organisation's Nextcloud. For each organisation you set which Nextcloud belongs to it."
+    },
+    "heading": "Frequently asked questions"
+  },
+  "tech": {
+    "rust": {
+      "desc": "A fast, compact server in Rust with Axum that passes all requests on to Nextcloud."
+    },
+    "react": {
+      "desc": "The web interface in React 19 and TypeScript, built with Vite and styled with Tailwind in the OpenAEC style."
+    },
+    "nextcloud": {
+      "desc": "Files live in Nextcloud and are read and written over WebDAV; OpenAEC Docs stores no files itself."
+    },
+    "postgres": {
+      "desc": "Projects, folder layout, users and roles in PostgreSQL, with SQLx and numbered migrations."
+    },
+    "oidc": {
+      "desc": "Sign-in through OpenID Connect with PKCE (for example Authentik) and a session token valid for 24 hours."
+    },
+    "docker": {
+      "desc": "A single image with server and web interface, plus Docker Compose files for development and production."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "commits": "All changes on GitHub"
   }
 }

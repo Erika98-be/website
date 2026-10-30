@@ -1,44 +1,227 @@
 {
   "header": {
-    "label": "Ecosistema OpenAEC",
     "title": "OpenAEC <span class=\"accent\">Docs</span>",
-    "desc": "Plataforma open source de gestión documental BIM. Gestiona, comparte y archiva todos los documentos del proyecto en un lugar central.",
-    "badge": "Beta"
+    "featuresBtn": "Ver las funciones",
+    "sourceBtn": "Código fuente",
+    "proof1": "Archivos en tu propio Nextcloud",
+    "proof2": "Tu propio servidor · Docker",
+    "proof3": "Inicio de sesión único",
+    "proof4": "Concepto · gratis · MIT",
+    "heroAlt": "Carpeta con los planos del arquitecto en un proyecto de ejemplo, con las carpetas de proyecto fijas y dos manifiestos en la barra lateral",
+    "label": "Gestión documental",
+    "tagline": "Carpetas de proyecto, modelos y manifiestos ordenados en un solo lugar, en tu propio servidor",
+    "desc": "OpenAEC Docs es un concepto de gestión documental para proyectos de construcción. Añade una vista de proyectos, carpetas fijas y manifiestos sobre los archivos que ya tienes en tu Nextcloud.",
+    "faqBtn": "Preguntas frecuentes"
   },
-  "what": {
-    "title": "¿Qué es OpenAEC <span class=\"accent\">Docs</span>?",
-    "desc": "OpenAEC Docs es un sistema de gestión documental (DMS) diseñado específicamente para proyectos BIM en el sector de la construcción. Se basa en <a href=\"https://nextcloud.com\" target=\"_blank\" rel=\"noopener\">Nextcloud</a>, la plataforma open source más popular para la gestión de archivos y la colaboración. Ofrece un lugar central para gestionar, compartir y archivar todos los documentos del proyecto: desde planos e informes hasta contratos y permisos.",
-    "tech": "Un servidor en Rust (Axum) y un frontend en React sobre Nextcloud, con PostgreSQL para los metadatos e inicio de sesión mediante OIDC."
+  "meta": {
+    "description": "Concepto de gestión documental de código abierto para proyectos de construcción: proyectos, carpetas de proyecto fijas y manifiestos sobre tu propio Nextcloud, en tu propio servidor. Aún en desarrollo.",
+    "title": "OpenAEC Docs — OpenAEC Foundation"
   },
-  "features": {
-    "title": "Funcionalidades",
-    "documents": {
-      "title": "Archivos del proyecto",
-      "desc": "Sube, abre y elimina archivos y crea carpetas, por proyecto y directamente en Nextcloud."
+  "hl": {
+    "projects": {
+      "alt": "Vista de seis proyectos ficticios, entre ellos una escuela primaria, una pasarela ciclista y una plantilla de vivienda, cada uno con su estado y su carpeta",
+      "kicker": "Proyectos",
+      "title": "Todos tus proyectos en una sola vista",
+      "desc": "Cada proyecto aparece como una tarjeta con una breve descripción, su estado y la carpeta de Nextcloud donde están los archivos. Proyectos activos, expedientes archivados y plantillas se distinguen a simple vista. Un clic y estás dentro del proyecto."
     },
     "folders": {
-      "title": "Carpetas de proyecto fijas",
-      "desc": "Una estructura fija por proyecto, como modelos, planos, cálculos e informes, con tipos de archivo permitidos por carpeta."
+      "alt": "Carpeta de una escuela primaria ficticia con las carpetas fijas modelos, planos, cálculos, informes, permisos y correspondencia",
+      "kicker": "Carpetas fijas",
+      "title": "La misma estructura reconocible en cada proyecto",
+      "desc": "La barra lateral muestra las carpetas fijas del proyecto, como modelos, planos, cálculos e informes, con nombres legibles. Así todos encuentran enseguida el sitio correcto en cada proyecto, también quien acaba de llegar."
     },
-    "manifests": {
-      "title": "Manifiesto del proyecto",
-      "desc": "Un manifiesto por proyecto registra qué modelos, conjuntos de incidencias e informes le pertenecen, para que otras herramientas los encuentren."
+    "models": {
+      "alt": "Carpeta con modelos IFC del arquitecto, el ingeniero de estructuras y los ingenieros de instalaciones, con el tamaño de los archivos y la ruta arriba",
+      "kicker": "Archivos",
+      "title": "Tus archivos se quedan donde ya están",
+      "desc": "OpenAEC Docs lee los archivos directamente de tu Nextcloud. Recorres modelos, planos y subcarpetas, ves el tamaño de cada archivo y vuelves atrás con la ruta. No se añade un segundo almacenamiento ni copias."
     },
-    "integrations": {
-      "title": "BIM Validator y BCF",
-      "desc": "Conexiones con el BIM Validator y la plataforma BCF de OpenAEC, para validaciones e incidencias junto a los documentos."
-    },
-    "access": {
-      "title": "Inicio de sesión y organizaciones",
-      "desc": "Inicio de sesión único (OIDC) y varias organizaciones en una sola instalación, cada una con su propio Nextcloud."
-    },
-    "api": {
-      "title": "API REST",
-      "desc": "Todas las funciones mediante una API REST, para conectar otras herramientas."
+    "manifest": {
+      "alt": "Manifiesto de un proyecto de ejemplo con cuatro modelos IFC, un conjunto de incidencias y un informe de validación, cada uno con ruta y GUID",
+      "kicker": "Manifiestos",
+      "title": "Registra qué va junto",
+      "desc": "Un manifiesto en la carpeta del proyecto registra qué modelos, conjuntos de incidencias e informes pertenecen al proyecto, cada uno con una clave fija. OpenAEC Docs muestra su contenido con claridad y otras herramientas pueden añadir elementos mediante la API."
     }
   },
-  "highlight": {
-    "title": "Autoalojado &amp; con la privacidad primero",
-    "desc": "OpenAEC Docs funciona en tu propio servidor mediante Docker. Control total sobre tus datos, sin dependencia de la nube. Ideal para organizaciones con requisitos estrictos de privacidad y cumplimiento."
+  "notice": {
+    "text": "Concepto: aún no hay ninguna versión para instalar o probar en línea, y el desarrollo está parado desde abril de 2026. Las capturas proceden de una instalación de prueba local con proyectos ficticios."
+  },
+  "subnav": {
+    "label": "En esta página",
+    "features": "Funciones",
+    "whatsnew": "Novedades",
+    "faq": "Preguntas"
+  },
+  "tabs": {
+    "highlights": "Destacados",
+    "projects": "Proyectos",
+    "files": "Carpetas y archivos",
+    "links": "Manifiestos y API",
+    "server": "Tu servidor",
+    "all": "Todas las funciones"
+  },
+  "f": {
+    "overview": {
+      "title": "Vista de proyectos",
+      "desc": "Todos los proyectos de tu organización como tarjetas, con descripción y carpeta."
+    },
+    "status": {
+      "title": "Activo, archivado o plantilla",
+      "desc": "Cada proyecto tiene un estado, para no mezclar trabajo en curso, expedientes cerrados y plantillas."
+    },
+    "projectapi": {
+      "title": "Crear y archivar proyectos",
+      "desc": "Un proyecto se vincula a una carpeta de Nextcloud. Crear, editar y archivar funciona de momento por la API, aún no en pantalla."
+    },
+    "fixed": {
+      "title": "Carpetas de proyecto fijas",
+      "desc": "Una estructura fija por proyecto en la barra lateral, como modelos, planos e informes, en un orden fijo."
+    },
+    "browse": {
+      "title": "Navegar con ruta",
+      "desc": "Recorre carpetas y subcarpetas, primero las carpetas, con el tamaño de cada archivo y un clic para volver."
+    },
+    "nextcloud": {
+      "title": "Directamente desde Nextcloud",
+      "desc": "Los archivos se quedan en Nextcloud. OpenAEC Docs solo guarda los datos del proyecto y la estructura de carpetas."
+    },
+    "folderset": {
+      "title": "Ajustes por carpeta",
+      "desc": "Para cada carpeta defines un nombre, un orden, un icono, solo lectura y los tipos de archivo que le corresponden."
+    },
+    "suggest": {
+      "title": "Proponer una estructura",
+      "desc": "OpenAEC Docs propone las carpetas fijas a partir de las que ya existen: 01_Modellen pasa a ser Modellen."
+    },
+    "fileapi": {
+      "title": "Subir, borrar, crear carpetas",
+      "desc": "Descargar, subir y borrar archivos y crear carpetas en la carpeta del proyecto, de momento por la API."
+    },
+    "manifests": {
+      "title": "Ver manifiestos",
+      "desc": "La cabecera y los elementos de un manifiesto, bien visibles: tipo, nombre, ruta y clave."
+    },
+    "multi": {
+      "title": "Varios manifiestos por proyecto",
+      "desc": "Por ejemplo uno para los modelos y otro para los informes, cada uno se abre desde la barra lateral."
+    },
+    "upsert": {
+      "title": "Añadir elementos",
+      "desc": "Otras herramientas añaden o actualizan un elemento de un manifiesto mediante la API, según su clave fija."
+    },
+    "api": {
+      "title": "Conecta tus propias herramientas",
+      "desc": "Proyectos, carpetas, archivos y manifiestos están disponibles a través de una sola API."
+    },
+    "selfhost": {
+      "title": "En tu propio servidor",
+      "desc": "Funciona en Docker en un servidor que gestionas tú. Tus datos de proyecto no van a una nube externa."
+    },
+    "sso": {
+      "title": "Inicio de sesión único",
+      "desc": "Entra con el servidor de inicio de sesión de tu organización, sin una contraseña aparte para OpenAEC Docs."
+    },
+    "tenants": {
+      "title": "Varias organizaciones",
+      "desc": "Una instalación para varias organizaciones, cada una con su propio Nextcloud y acceso solo a sus proyectos."
+    }
+  },
+  "features": {
+    "label": "Funciones",
+    "heading": "Lo que OpenAEC Docs hace ahora",
+    "sub": "Empieza por lo más destacado o elige un tema.",
+    "tabsLabel": "Funciones por tema"
+  },
+  "whatsnew": {
+    "items": {
+      "multi": {
+        "title": "Varios manifiestos",
+        "desc": "Cada archivo de manifiesto de la carpeta del proyecto aparece por separado en la barra lateral."
+      },
+      "viewer": {
+        "title": "Manifiesto en pantalla",
+        "desc": "La cabecera y los elementos de un manifiesto, con tipo, nombre, ruta y clave."
+      },
+      "upsert": {
+        "title": "Añadir por la API",
+        "desc": "Otras herramientas añaden o actualizan elementos; si el manifiesto aún no existe, se crea."
+      },
+      "shared": {
+        "title": "El mismo formato que otras herramientas",
+        "desc": "El manifiesto usa la biblioteca compartida de las herramientas en la nube de OpenAEC, para que también puedan leerlo."
+      }
+    },
+    "label": "Novedades de abril de 2026",
+    "title": "Manifiestos: <span>qué va con qué</span>",
+    "desc": "La última función nueva es de abril de 2026: un proyecto puede tener varios manifiestos, que ves en pantalla. Desde entonces el desarrollo está parado; aún no hay ninguna versión.",
+    "ctaCommits": "Todos los cambios"
+  },
+  "faq": {
+    "files": {
+      "q": "¿Qué archivos puedo abrir?",
+      "a": "OpenAEC Docs muestra todos los archivos de la carpeta del proyecto en Nextcloud, desde modelos IFC hasta planos PDF y DWG, con nombre y tamaño. Los manifiestos (.wefc) se leen en pantalla. Abrir un archivo o ver una vista previa aún no es posible en pantalla; con la API puedes descargar cualquier archivo."
+    },
+    "install": {
+      "q": "¿Tengo que instalar algo?",
+      "a": "Sí. OpenAEC Docs es una aplicación de servidor que instalas en Docker en tu propio servidor, junto con PostgreSQL, un Nextcloud para los archivos y un servidor de inicio de sesión. Después los usuarios trabajan en el navegador. Aún no hay una versión lista para usar ni una versión de prueba pública."
+    },
+    "price": {
+      "q": "¿Cuánto cuesta?",
+      "a": "Nada. OpenAEC Docs es de código abierto con licencia MIT. Solo pagas tu propio servidor."
+    },
+    "format": {
+      "q": "¿En qué formato se guarda mi trabajo?",
+      "a": "Tus archivos se quedan sin cambios en Nextcloud. Los datos del proyecto y la estructura de carpetas están en una base de datos PostgreSQL, y los manifiestos son archivos .wefc (JSON) en la carpeta del proyecto."
+    },
+    "systems": {
+      "q": "¿En qué sistemas funciona?",
+      "a": "El servidor funciona en Docker, en Linux. Los usuarios trabajan en un navegador moderno en Windows, macOS o Linux."
+    },
+    "practice": {
+      "q": "¿Se ajusta a la práctica de la construcción?",
+      "a": "Sigue la forma de trabajo habitual: una estructura de carpetas fija por proyecto, modelos IFC por disciplina y manifiestos que mantienen juntos modelos, conjuntos de incidencias (BCF) e informes. Los enlaces con el BIM Validator y la plataforma BCF están previstos, pero aún no funcionan."
+    },
+    "ai": {
+      "q": "¿Qué puede hacer un asistente de IA con él?",
+      "a": "Aún no hay un servidor MCP. Sin embargo, un asistente o un script puede usar la API REST para leer proyectos, carpetas, archivos y manifiestos y añadir elementos a un manifiesto."
+    },
+    "status": {
+      "q": "¿Ya puedo usarlo?",
+      "a": "Todavía no para trabajo real. OpenAEC Docs es un concepto: la base está, pero no hay versión, ni instalación pública, ni desarrollo nuevo desde abril de 2026. Si quieres ayudar, consulta el código fuente en GitHub."
+    },
+    "buttons": {
+      "q": "¿Puedo subir archivos y crear carpetas en pantalla?",
+      "a": "Todavía no. Los botones de subir, nueva carpeta, buscar y estado del documento ya están en la cinta, pero aún no hacen nada. Subir, borrar y crear carpetas sí funciona mediante la API."
+    },
+    "nextcloud": {
+      "q": "¿Necesito Nextcloud?",
+      "a": "Sí. OpenAEC Docs no tiene almacenamiento propio; trabaja con los archivos del Nextcloud de tu organización. Para cada organización indicas qué Nextcloud le corresponde."
+    },
+    "heading": "Preguntas frecuentes"
+  },
+  "tech": {
+    "rust": {
+      "desc": "Un servidor rápido y compacto en Rust con Axum, que transmite todas las peticiones a Nextcloud."
+    },
+    "react": {
+      "desc": "La interfaz web en React 19 y TypeScript, construida con Vite y con estilos Tailwind en el estilo OpenAEC."
+    },
+    "nextcloud": {
+      "desc": "Los archivos están en Nextcloud y se leen y escriben por WebDAV; OpenAEC Docs no guarda archivos."
+    },
+    "postgres": {
+      "desc": "Proyectos, estructura de carpetas, usuarios y roles en PostgreSQL, con SQLx y migraciones numeradas."
+    },
+    "oidc": {
+      "desc": "Inicio de sesión con OpenID Connect y PKCE (por ejemplo Authentik) y un token de sesión válido 24 horas."
+    },
+    "docker": {
+      "desc": "Una sola imagen con servidor e interfaz web, más archivos Docker Compose para desarrollo y producción."
+    },
+    "heading": "Tecnología",
+    "sub": "Para quien quiera saber cómo está hecho."
+  },
+  "releases": {
+    "commits": "Todos los cambios en GitHub"
   }
 }
