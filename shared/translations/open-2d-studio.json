@@ -1,61 +1,272 @@
 {
   "header": {
-    "label": "Open-source 2D CAD",
     "title": "Open <span class=\"accent\">2D</span> Studio",
-    "desc": "A free, open-source 2D CAD application for technical drawings, floor plans, and mechanical designs. Lightweight, fast alternative to commercial CAD software.",
-    "downloadBtn": "Download v0.31.0",
-    "sourceBtn": "View source"
+    "demoBtn": "Open in browser",
+    "featuresBtn": "See the features",
+    "proof1": "DXF in and out",
+    "proof2": "PDF · SVG · IFC4",
+    "proof3": "Works in the browser",
+    "proof4": "Free · no account",
+    "heroAlt": "Open 2D Studio with the floor plan of a fictitious garden office: hatched walls, window and door frames, furniture, dimensions and room names with floor areas",
+    "label": "2D drafting",
+    "tagline": "From the first line to a print-ready sheet, right in the browser",
+    "desc": "Draw floor plans, details and technical drawings with the tools you know from CAD: layers, snapping, dimensions and hatches. Place your drawing to scale on a sheet with a title block, then print it or save it as PDF or DXF.",
+    "contactBtn": "Contact us"
   },
-  "download": {
-    "title": "Download v0.31.0"
+  "meta": {
+    "description": "Free 2D drafting app in the browser: draw floor plans and details with layers, snapping, dimensions and hatches, place them on a sheet with a title block and export to PDF, DXF, SVG or IFC.",
+    "title": "Open 2D Studio — OpenAEC Foundation"
   },
-  "features": {
-    "heading": "Features",
-    "drawing": {
-      "title": "Drawing tools",
-      "desc": "Line, rectangle, circle, arc, polyline, ellipse, and text. CAD-style command input for precise control."
-    },
-    "snapping": {
-      "title": "Precision and snapping",
-      "desc": "Snap to grid and object snaps: endpoint, midpoint, center, intersection. Configurable grid system."
+  "hl": {
+    "edit": {
+      "alt": "Meeting table with four chairs selected in the floor plan, with grips on each circle and the properties colour, lineweight, line style and radius on the right",
+      "kicker": "Drawing",
+      "title": "Draw the way you are used to in CAD",
+      "desc": "Line, polyline, rectangle, circle, arc, ellipse and spline, with snapping to endpoint, midpoint, centre and intersection. Move, copy, rotate, mirror, trim or fillet, and adjust colour, lineweight and line style in the properties panel."
     },
     "layers": {
-      "title": "Layer management",
-      "desc": "Multiple layers with visibility, lock, and color controls. Organize drawings into logical groups."
+      "alt": "Layer list opened from the status bar with the layers Walls, Frames, Furniture, Dimensions and Text, each with its own colour and buttons for visibility and locking",
+      "kicker": "Layers",
+      "title": "Layers keep your drawing clear",
+      "desc": "Put walls, frames, furniture and dimensions each on their own layer with their own colour. Switch a layer off to work without it for a while, or lock it so you don't draw on it by accident."
+    },
+    "hatch": {
+      "alt": "Hatch pattern manager with the built-in patterns, with Concrete selected showing a preview and its description",
+      "kicker": "Hatches",
+      "title": "A hatch for every material",
+      "desc": "Choose from 47 built-in patterns, from diagonal and cross-hatching to concrete, or make your own pattern. Keep your favourites, and import and export patterns to share them with colleagues."
+    },
+    "sheet": {
+      "alt": "A3 sheet with the floor plan at 1:50 in a viewport and a filled-in title block with drawing title, number A-101, project and date",
+      "kicker": "Sheets",
+      "title": "From drawing to sheet with a title block",
+      "desc": "Place your drawing to scale on a sheet from A4 to A0, portrait or landscape. Fill in the title block with title, drawing number, project, scale and date, or start from a sheet template."
+    },
+    "print": {
+      "alt": "Print dialog with paper size, print range, margins and a preview of the floor plan, with the buttons Export PDF and Print",
+      "kicker": "Printing",
+      "title": "Print or save as PDF",
+      "desc": "Choose the paper size, portrait or landscape, the margins and what to print: the current view or a selection of sheets. You see a preview straight away, and save your settings as a preset for next time."
+    },
+    "ifc": {
+      "alt": "IFC Model panel below the floor plan with the IFC4 text that is built live from the drawing, with the buttons Copy and Export .ifc",
+      "kicker": "Exchange",
+      "title": "Works with other CAD and BIM software",
+      "desc": "Read and write DXF for AutoCAD, BricsCAD and other CAD programs, and export to SVG, JSON and IFC4. The IFC panel shows live how your drawing is written out as IFC."
+    }
+  },
+  "notice": {
+    "text": "The browser version works straight away. The desktop and Android apps are not yet available for public download, and the latest version (v0.35) dates from March 2026."
+  },
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "whatsnew": "What's new",
+    "faq": "FAQ"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "draw": "Drawing and editing",
+    "annotate": "Dimensions and hatching",
+    "sheets": "Sheets and printing",
+    "exchange": "Exchange",
+    "all": "All features"
+  },
+  "f": {
+    "lines": {
+      "title": "Lines, polylines and splines",
+      "desc": "Straight or smooth, open or closed."
+    },
+    "shapes": {
+      "title": "Rectangle, circle, arc and ellipse",
+      "desc": "The basic shapes for any floor plan or detail."
+    },
+    "modify": {
+      "title": "Move, copy and rotate",
+      "desc": "Also mirror, scale and array."
+    },
+    "edit": {
+      "title": "Trim, extend and fillet",
+      "desc": "Plus chamfer, offset and stretch."
+    },
+    "snap": {
+      "title": "Snapping and grid",
+      "desc": "Endpoint, midpoint, centre and intersection, and ortho mode with F8."
+    },
+    "layers": {
+      "title": "Layers",
+      "desc": "With colour, visibility and locking per layer."
+    },
+    "props": {
+      "title": "Properties",
+      "desc": "Colour, lineweight, line style and sizes of what you select."
+    },
+    "find": {
+      "title": "Find and replace",
+      "desc": "Find text in your drawing and change it in one go."
+    },
+    "dims": {
+      "title": "Dimensions",
+      "desc": "Aligned, linear, angular, radius and diameter."
+    },
+    "text": {
+      "title": "Text in an ISO typeface",
+      "desc": "Osifont to ISO 3098, with text heights in millimetres on paper."
+    },
+    "hatch": {
+      "title": "Hatches and filled regions",
+      "desc": "47 built-in patterns and your own."
+    },
+    "sheets": {
+      "title": "Several drawings and sheets",
+      "desc": "Keep plan, section and details together in one file."
+    },
+    "title": {
+      "title": "Title block",
+      "desc": "Title, number, project, scale and date; with your own SVG templates."
+    },
+    "print": {
+      "title": "Printing and PDF",
+      "desc": "With preview, margins and saved presets."
+    },
+    "units": {
+      "title": "Units and scale",
+      "desc": "Millimetres, centimetres, metres, inches or feet, and a drawing scale such as 1:100."
     },
     "dxf": {
-      "title": "DXF import/export",
-      "desc": "Read and write DXF files via the Rust dxf-rs backend for interoperability with AutoCAD, BricsCAD, and other CAD software."
+      "title": "Open and save DXF",
+      "desc": "Exchange drawings with AutoCAD, BricsCAD and other CAD programs."
     },
-    "properties": {
-      "title": "Properties and selection",
-      "desc": "Edit stroke color, width, and line style. Click, box select, or Shift+Click to build selections. Multi-select alignment and distribution."
+    "underlay": {
+      "title": "Underlay",
+      "desc": "A PDF or large DXF file as a background to draw over."
     },
-    "extensions": {
+    "image": {
+      "title": "Images",
+      "desc": "Insert a photo or scan into your drawing."
+    },
+    "export": {
+      "title": "SVG, JSON and IFC4",
+      "desc": "For the web, your own scripts or a BIM model."
+    },
+    "project": {
+      "title": "Own project file",
+      "desc": "All drawings, sheets and layers together in one .o2d file."
+    },
+    "ext": {
       "title": "Extensions",
-      "desc": "Extensible architecture for add-ins. See <a href=\"/ext-drawing-statistics\">Drawing Statistics</a> for an example extension."
+      "desc": "Browse, install and update extensions from the menu."
+    },
+    "themes": {
+      "title": "Seven colour themes",
+      "desc": "From light and dark to high contrast."
+    },
+    "keys": {
+      "title": "Keyboard shortcuts",
+      "desc": "Work fast with the keyboard, with an overview in the menu."
+    },
+    "feedback": {
+      "title": "Feedback from the app",
+      "desc": "Report a bug or idea with F1, without leaving the app."
     }
+  },
+  "features": {
+    "label": "Features",
+    "heading": "Draw, dimension and print",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "whatsnew": {
+    "ctaDemo": "Try it in the browser",
+    "items": {
+      "themes": {
+        "title": "Colour themes",
+        "desc": "Pick one of seven themes under View, including light and high contrast."
+      },
+      "ext": {
+        "title": "Manage extensions",
+        "desc": "Browse, install and update via File > Extensions."
+      },
+      "settings": {
+        "title": "Settings are kept",
+        "desc": "Your preferences are ready when you open the app again."
+      },
+      "feedback": {
+        "title": "Feedback with F1",
+        "desc": "Report a bug or idea straight from the app."
+      }
+    },
+    "label": "New in v0.35",
+    "title": "Your own colours and <span>extensions</span>",
+    "desc": "The latest releases, from v0.30 to v0.35 in March 2026, brought colour themes, a cleaner interface, extensions and feedback from within the app."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "Your own project files (.o2d) and DXF files from AutoCAD, BricsCAD or another CAD program. You can use a PDF or a large DXF file as an underlay, and insert images. Open 2D Studio does not open DWG files yet; save them as DXF in your CAD program first."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "No. The browser version works straight away, without an account. There are also versions for Windows, macOS, Linux and Android tablets, but they are not yet available for public download."
+    },
+    "price": {
+      "q": "What does Open 2D Studio cost?",
+      "a": "Nothing. You pay no licence fee and need no account or subscription."
+    },
+    "save": {
+      "q": "In what format is my work saved?",
+      "a": "As an .o2d project file, with all your drawings, sheets and layers. In the browser you download that file. You can also export to DXF, SVG, JSON and IFC4, and to PDF via the print dialog."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "In any modern browser on Windows, macOS and Linux. Desktop versions for Windows, macOS and Linux and an Android app for tablets exist, but are not public yet."
+    },
+    "practice": {
+      "q": "Does it fit construction practice?",
+      "a": "You work in millimetres at a scale such as 1:50 or 1:100, with paper sizes from A4 to A0, a title block, and text and dimensions in an ISO typeface. The interface is in English for now."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "Every draw, modify and layer command is described as a tool for AI assistants. In the desktop version you type a request in plain language in the terminal, such as \"draw a circle\", and Claude Code on your own computer carries it out. This does not work in the browser yet, and there is no MCP server to connect to yourself yet."
+    },
+    "cad": {
+      "q": "How is it different from Open CAD Studio?",
+      "a": "They are two separate programs by different makers. Open CAD Studio is built to open and update DWG and DXF files from others, in 2D and 3D. Open 2D Studio focuses on drawing in 2D yourself: layers, dimensions, hatches and sheets with a title block. If you mostly work with DWG files from others, take a look at Open CAD Studio."
+    },
+    "source": {
+      "q": "Is the source code public?",
+      "a": "Not yet. Open 2D Studio carries the LGPL-3.0 licence, but its GitHub repository is not public yet. That is why this page has no downloads yet."
+    },
+    "status": {
+      "q": "Is it still being worked on?",
+      "a": "The latest version, v0.35, dates from March 2026. The browser version went online in April; since then there have only been small maintenance changes. If you miss something, report it with F1 in the app."
+    },
+    "heading": "Frequently asked questions"
   },
   "tech": {
-    "heading": "Tech stack",
     "tauri": {
-      "title": "Tauri 2.0",
-      "desc": "~10 MB app size, ~30 MB RAM usage, native performance via Rust backend."
+      "desc": "A thin native shell in Rust for Windows, macOS, Linux and Android, with an installer of a few megabytes."
     },
     "react": {
-      "title": "React 18 + TypeScript",
-      "desc": "Component-based UI with type safety and Zustand state management."
+      "desc": "The interface in separate components with type checking; Zustand keeps track of the drawing state."
     },
     "canvas": {
-      "title": "Canvas 2D rendering",
-      "desc": "Fast rendering that handles 10k+ elements smoothly."
-    }
+      "desc": "Own drawing engine on the HTML canvas, with snapping, grips and selection."
+    },
+    "dxf": {
+      "desc": "Own DXF reader and writer in TypeScript, so exchange works in the browser too."
+    },
+    "pdf": {
+      "desc": "Vector PDF for printing, and reading PDF files as an underlay."
+    },
+    "osifont": {
+      "desc": "Open typeface to ISO 3098 for text and dimensions."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
   },
-  "cta": {
-    "demo": "Live demo",
-    "github": "GitHub &rarr;"
-  },
-  "footer": {
-    "slogan": "Build free. Build together."
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three"
   }
 }

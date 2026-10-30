@@ -1,61 +1,272 @@
 {
   "header": {
-    "label": "Açık kaynak 2D CAD",
     "title": "Open <span class=\"accent\">2D</span> Studio",
-    "desc": "Teknik çizimler, kat planları ve mekanik tasarımlar için ücretsiz, açık kaynak 2D CAD uygulaması. Ticari CAD yazılımlarına hafif, hızlı alternatif.",
-    "downloadBtn": "v0.35.0 indir",
-    "sourceBtn": "Kaynak kodu görüntüle"
+    "demoBtn": "Tarayıcıda aç",
+    "featuresBtn": "Özellikleri gör",
+    "proof1": "DXF içe ve dışa aktarma",
+    "proof2": "PDF · SVG · IFC4",
+    "proof3": "Tarayıcıda çalışır",
+    "proof4": "Ücretsiz · hesap gerekmez",
+    "heroAlt": "Kurgusal bir bahçe ofisinin kat planıyla Open 2D Studio: taralı duvarlar, doğramalar, mobilya, ölçüler ve alanlarıyla oda adları",
+    "label": "2D çizim",
+    "tagline": "İlk çizgiden baskıya hazır paftaya, doğrudan tarayıcıda",
+    "desc": "CAD'den bildiğiniz araçlarla kat planları, detaylar ve teknik çizimler çizin: katmanlar, yakalama, ölçülendirme ve taramalar. Çiziminizi ölçekli olarak antetli bir paftaya yerleştirin, yazdırın ya da PDF veya DXF olarak kaydedin.",
+    "contactBtn": "Bize ulaşın"
   },
-  "download": {
-    "title": "v0.35.0 indir"
+  "meta": {
+    "description": "Tarayıcıda ücretsiz 2D çizim uygulaması: katmanlar, yakalama, ölçülendirme ve taramalarla kat planları ve detaylar çizin, antetli bir paftaya yerleştirin ve PDF, DXF, SVG veya IFC olarak dışa aktarın.",
+    "title": "Open 2D Studio — OpenAEC Foundation"
   },
-  "features": {
-    "heading": "Özellikler",
-    "drawing": {
-      "title": "Çizim araçları",
-      "desc": "Çizgi, dikdörtgen, daire, yay, polyline, elips ve metin. Hassas kontrol için CAD tarzı komut girişi."
-    },
-    "snapping": {
-      "title": "Hassasiyet ve yapışma",
-      "desc": "Izgaraya ve nesnelere yapışma: uç nokta, orta nokta, merkez, kesişim. Yapılandırılabilir ızgara sistemi."
+  "hl": {
+    "edit": {
+      "alt": "Kat planında seçili dört sandalyeli toplantı masası; her dairede tutamaçlar ve sağda renk, çizgi kalınlığı, çizgi tipi ve yarıçap özellikleri",
+      "kicker": "Çizim",
+      "title": "CAD'de alıştığınız gibi çizin",
+      "desc": "Çizgi, çoklu çizgi, dikdörtgen, daire, yay, elips ve spline; uç nokta, orta nokta, merkez ve kesişim yakalamasıyla. Taşıyın, kopyalayın, döndürün, aynalayın, budayın veya yuvarlayın; renk, çizgi kalınlığı ve çizgi tipini özellikler panelinde ayarlayın."
     },
     "layers": {
-      "title": "Katman yönetimi",
-      "desc": "Görünürlük, kilit ve renk kontrolleri ile birden fazla katman. Çizimleri mantıksal gruplara organize edin."
+      "alt": "Durum çubuğundan açılan katman listesi: Duvarlar, Doğramalar, Mobilya, Ölçüler ve Metin katmanları, her biri kendi rengiyle ve görünürlük ile kilit düğmeleriyle",
+      "kicker": "Katmanlar",
+      "title": "Katmanlar çiziminizi düzenli tutar",
+      "desc": "Duvarları, doğramaları, mobilyayı ve ölçüleri kendi renkleriyle ayrı katmanlara koyun. Bir süre onsuz çalışmak için katmanı kapatın ya da yanlışlıkla üzerine çizmemek için kilitleyin."
+    },
+    "hatch": {
+      "alt": "Yerleşik desenleriyle tarama deseni yöneticisi; Beton seçili, önizlemesi ve açıklamasıyla",
+      "kicker": "Taramalar",
+      "title": "Her malzeme için bir tarama",
+      "desc": "Çaprazdan çift taramaya ve betona kadar 47 yerleşik desen arasından seçin ya da kendi deseninizi oluşturun. Favorilerinizi saklayın, desenleri meslektaşlarınızla paylaşmak için içe ve dışa aktarın."
+    },
+    "sheet": {
+      "alt": "Bir görünüm penceresinde 1:50 ölçekli kat planı ve çizim başlığı, A-101 numarası, proje ve tarihle doldurulmuş anteti olan A3 paftası",
+      "kicker": "Paftalar",
+      "title": "Çizimden antetli paftaya",
+      "desc": "Çiziminizi A4'ten A0'a kadar dikey veya yatay bir paftaya ölçekli olarak yerleştirin. Anteti başlık, çizim numarası, proje, ölçek ve tarihle doldurun ya da bir pafta şablonuyla başlayın."
+    },
+    "print": {
+      "alt": "Kâğıt boyutu, yazdırma aralığı, kenar boşlukları ve kat planı önizlemesiyle yazdırma penceresi; Export PDF ve Print düğmeleri",
+      "kicker": "Yazdırma",
+      "title": "Yazdırın veya PDF olarak kaydedin",
+      "desc": "Kâğıt boyutunu, dikey veya yatay yönü, kenar boşluklarını ve neyi yazdıracağınızı seçin: geçerli görünüm veya seçili paftalar. Önizlemeyi hemen görürsünüz ve ayarlarınızı bir sonraki sefer için ön ayar olarak kaydedersiniz."
+    },
+    "ifc": {
+      "alt": "Kat planının altında, çizimden canlı oluşturulan IFC4 metniyle IFC Model paneli; Copy ve Export .ifc düğmeleri",
+      "kicker": "Veri alışverişi",
+      "title": "Diğer CAD ve BIM yazılımlarıyla birlikte çalışır",
+      "desc": "AutoCAD, BricsCAD ve diğer CAD programları için DXF okuyun ve yazın; SVG, JSON ve IFC4 olarak dışa aktarın. IFC paneli çiziminizin IFC olarak nasıl yazıldığını canlı gösterir."
+    }
+  },
+  "notice": {
+    "text": "Tarayıcı sürümü hemen çalışır. Masaüstü ve Android uygulamaları henüz herkese açık olarak indirilemiyor; son sürüm (v0.35) Mart 2026 tarihli."
+  },
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "draw": "Çizim ve düzenleme",
+    "annotate": "Ölçülendirme ve tarama",
+    "sheets": "Paftalar ve yazdırma",
+    "exchange": "Veri alışverişi",
+    "all": "Tüm özellikler"
+  },
+  "f": {
+    "lines": {
+      "title": "Çizgiler, çoklu çizgiler ve spline'lar",
+      "desc": "Düz veya yumuşak, açık veya kapalı."
+    },
+    "shapes": {
+      "title": "Dikdörtgen, daire, yay ve elips",
+      "desc": "Her kat planı veya detay için temel şekiller."
+    },
+    "modify": {
+      "title": "Taşı, kopyala ve döndür",
+      "desc": "Ayrıca aynala, ölçekle ve dizi oluştur."
+    },
+    "edit": {
+      "title": "Buda, uzat ve yuvarla",
+      "desc": "Ayrıca pah, öteleme ve esnetme."
+    },
+    "snap": {
+      "title": "Yakalama ve ızgara",
+      "desc": "Uç nokta, orta nokta, merkez ve kesişim; F8 ile orto modu."
+    },
+    "layers": {
+      "title": "Katmanlar",
+      "desc": "Katman başına renk, görünürlük ve kilit."
+    },
+    "props": {
+      "title": "Özellikler",
+      "desc": "Seçtiğiniz öğenin rengi, çizgi kalınlığı, çizgi tipi ve ölçüleri."
+    },
+    "find": {
+      "title": "Bul ve değiştir",
+      "desc": "Çiziminizdeki metni bulun ve tek seferde değiştirin."
+    },
+    "dims": {
+      "title": "Ölçülendirme",
+      "desc": "Hizalı, doğrusal, açı, yarıçap ve çap."
+    },
+    "text": {
+      "title": "ISO yazı tipinde metin",
+      "desc": "ISO 3098'e uygun Osifont; metin yükseklikleri kâğıt üzerinde milimetre."
+    },
+    "hatch": {
+      "title": "Taramalar ve dolu alanlar",
+      "desc": "47 yerleşik desen ve kendi desenleriniz."
+    },
+    "sheets": {
+      "title": "Birden çok çizim ve pafta",
+      "desc": "Planı, kesiti ve detayları tek dosyada bir arada tutun."
+    },
+    "title": {
+      "title": "Antet",
+      "desc": "Başlık, numara, proje, ölçek ve tarih; kendi SVG şablonlarınızla."
+    },
+    "print": {
+      "title": "Yazdırma ve PDF",
+      "desc": "Önizleme, kenar boşlukları ve kayıtlı ön ayarlarla."
+    },
+    "units": {
+      "title": "Birimler ve ölçek",
+      "desc": "Milimetre, santimetre, metre, inç veya fit ve 1:100 gibi bir çizim ölçeği."
     },
     "dxf": {
-      "title": "DXF içe/dışa aktarma",
-      "desc": "AutoCAD, BricsCAD ve diğer CAD yazılımlarıyla birlikte çalışabilirlik için Rust dxf-rs backend'i aracılığıyla DXF dosyalarını okuyun ve yazın."
+      "title": "DXF aç ve kaydet",
+      "desc": "AutoCAD, BricsCAD ve diğer CAD programlarıyla çizim alışverişi yapın."
     },
-    "properties": {
-      "title": "Özellikler ve seçim",
-      "desc": "Çizgi rengi, kalınlığı ve stilini düzenleyin. Seçim oluşturmak için tıklayın, kutu seçimi yapın veya Shift+Tıklayın. Çoklu seçim hizalama ve dağıtma."
+    "underlay": {
+      "title": "Altlık",
+      "desc": "Üzerine çizmek için arka plan olarak bir PDF veya büyük DXF dosyası."
     },
-    "extensions": {
-      "title": "Eklentiler",
-      "desc": "Eklentiler için genişletilebilir mimari. Örnek eklenti için <a href=\"/ext-drawing-statistics\">Drawing Statistics</a>'a bakın."
+    "image": {
+      "title": "Görseller",
+      "desc": "Çiziminize bir fotoğraf veya tarama ekleyin."
+    },
+    "export": {
+      "title": "SVG, JSON ve IFC4",
+      "desc": "Web, kendi betikleriniz veya bir BIM modeli için."
+    },
+    "project": {
+      "title": "Kendi proje dosyası",
+      "desc": "Tüm çizimler, paftalar ve katmanlar tek bir .o2d dosyasında."
+    },
+    "ext": {
+      "title": "Uzantılar",
+      "desc": "Uzantıları menüden bulun, yükleyin ve güncelleyin."
+    },
+    "themes": {
+      "title": "Yedi renk teması",
+      "desc": "Açık ve koyudan yüksek kontrasta."
+    },
+    "keys": {
+      "title": "Klavye kısayolları",
+      "desc": "Klavyeyle hızlı çalışın; genel bakış menüde."
+    },
+    "feedback": {
+      "title": "Uygulamadan geri bildirim",
+      "desc": "Uygulamadan çıkmadan F1 ile bir hata veya fikir bildirin."
     }
+  },
+  "features": {
+    "label": "Özellikler",
+    "heading": "Çiz, ölçülendir ve yazdır",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "whatsnew": {
+    "ctaDemo": "Tarayıcıda deneyin",
+    "items": {
+      "themes": {
+        "title": "Renk temaları",
+        "desc": "View altında açık ve yüksek kontrast dahil yedi temadan birini seçin."
+      },
+      "ext": {
+        "title": "Uzantıları yönet",
+        "desc": "File > Extensions üzerinden bulun, yükleyin ve güncelleyin."
+      },
+      "settings": {
+        "title": "Ayarlar korunur",
+        "desc": "Uygulamayı yeniden açtığınızda tercihleriniz hazırdır."
+      },
+      "feedback": {
+        "title": "F1 ile geri bildirim",
+        "desc": "Bir hatayı veya fikri doğrudan uygulamadan bildirin."
+      }
+    },
+    "label": "v0.35 sürümünde yeni",
+    "title": "Kendi renkleriniz ve <span>uzantılar</span>",
+    "desc": "Mart 2026'daki v0.30 ile v0.35 arasındaki son sürümler renk temaları, sadeleştirilmiş bir arayüz, uzantılar ve uygulama içinden geri bildirim getirdi."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "Kendi proje dosyalarınızı (.o2d) ve AutoCAD, BricsCAD veya başka bir CAD programından DXF dosyalarını. Bir PDF'i veya büyük bir DXF dosyasını altlık olarak kullanabilir, görsel ekleyebilirsiniz. Open 2D Studio henüz DWG dosyalarını açmıyor; bunları önce CAD programınızda DXF olarak kaydedin."
+    },
+    "install": {
+      "q": "Bir şey yüklemem gerekiyor mu?",
+      "a": "Hayır. Tarayıcı sürümü hesap gerektirmeden hemen çalışır. Windows, macOS, Linux ve Android tabletler için sürümler de var, ancak henüz herkese açık olarak indirilemiyorlar."
+    },
+    "price": {
+      "q": "Open 2D Studio ne kadar?",
+      "a": "Hiçbir şey. Lisans ücreti ödemezsiniz; hesap veya abonelik gerekmez."
+    },
+    "save": {
+      "q": "Çalışmam hangi biçimde kaydedilir?",
+      "a": "Tüm çizimleriniz, paftalarınız ve katmanlarınızla bir .o2d proje dosyası olarak. Tarayıcıda bu dosyayı indirirsiniz. Ayrıca DXF, SVG, JSON ve IFC4'e, yazdırma penceresinden de PDF'e aktarabilirsiniz."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows, macOS ve Linux'ta her modern tarayıcıda. Windows, macOS ve Linux masaüstü sürümleri ile tabletler için Android uygulaması mevcut, ancak henüz herkese açık değil."
+    },
+    "practice": {
+      "q": "İnşaat pratiğine uygun mu?",
+      "a": "1:50 veya 1:100 gibi bir ölçekte milimetre ile, A4'ten A0'a kâğıt boyutları, bir antet ve ISO yazı tipinde metin ve ölçülerle çalışırsınız. Arayüz şimdilik İngilizce."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "Her çizim, değiştirme ve katman komutu yapay zekâ asistanları için bir araç olarak tanımlıdır. Masaüstü sürümünde terminale \"bir daire çiz\" gibi sade bir istek yazarsınız ve kendi bilgisayarınızdaki Claude Code bunu uygular. Bu henüz tarayıcıda çalışmıyor ve kendiniz bağlayabileceğiniz bir MCP sunucusu henüz yok."
+    },
+    "cad": {
+      "q": "Open CAD Studio'dan farkı nedir?",
+      "a": "Bunlar farklı geliştiricilerin iki ayrı programıdır. Open CAD Studio, başkalarının DWG ve DXF dosyalarını 2D ve 3D olarak açıp güncellemek için yapılmıştır. Open 2D Studio ise kendiniz 2D çizmeye odaklanır: katmanlar, ölçülendirme, taramalar ve antetli paftalar. Çoğunlukla başkalarının DWG dosyalarıyla çalışıyorsanız Open CAD Studio'ya göz atın."
+    },
+    "source": {
+      "q": "Kaynak kodu herkese açık mı?",
+      "a": "Henüz değil. Open 2D Studio LGPL-3.0 lisansını taşıyor, ancak GitHub deposu henüz herkese açık değil. Bu yüzden bu sayfada henüz indirme yok."
+    },
+    "status": {
+      "q": "Hâlâ üzerinde çalışılıyor mu?",
+      "a": "Son sürüm v0.35, Mart 2026 tarihli. Tarayıcı sürümü nisanda yayına alındı; o zamandan beri yalnızca küçük bakım değişiklikleri yapıldı. Eksik bir şey varsa uygulamada F1 ile bildirin."
+    },
+    "heading": "Sık sorulan sorular"
   },
   "tech": {
-    "heading": "Teknoloji stack'i",
     "tauri": {
-      "title": "Tauri 2.0",
-      "desc": "~10 MB uygulama boyutu, ~30 MB RAM kullanımı, Rust backend aracılığıyla yerel performans."
+      "desc": "Windows, macOS, Linux ve Android için Rust ile yazılmış ince bir yerel kabuk; yükleyicisi birkaç megabayt."
     },
     "react": {
-      "title": "React 18 + TypeScript",
-      "desc": "Tip güvenliği ve Zustand durum yönetimi ile bileşen tabanlı UI."
+      "desc": "Tür denetimli ayrı bileşenlerden oluşan arayüz; çizimin durumunu Zustand tutar."
     },
     "canvas": {
-      "title": "Canvas 2D render",
-      "desc": "10K+ elemanı akıcı şekilde işleyen hızlı render."
-    }
+      "desc": "HTML tuvali üzerinde kendi çizim motoru; yakalama, tutamaçlar ve seçimle."
+    },
+    "dxf": {
+      "desc": "TypeScript ile kendi DXF okuyucu ve yazıcısı; böylece alışveriş tarayıcıda da çalışır."
+    },
+    "pdf": {
+      "desc": "Yazdırma için vektörel PDF ve PDF dosyalarını altlık olarak okuma."
+    },
+    "osifont": {
+      "desc": "Metin ve ölçüler için ISO 3098'e uygun açık yazı tipi."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
   },
-  "cta": {
-    "demo": "Canlı demo",
-    "github": "GitHub &rarr;"
-  },
-  "footer": {
-    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster"
   }
 }

@@ -1,61 +1,272 @@
 {
   "header": {
-    "label": "CAD 2D de código abierto",
     "title": "Open <span class=\"accent\">2D</span> Studio",
-    "desc": "Una aplicación CAD 2D gratuita y de código abierto para planos técnicos, plantas de edificios y diseños mecánicos. Alternativa ligera y rápida al software CAD comercial.",
-    "downloadBtn": "Descargar v0.31.0",
-    "sourceBtn": "Ver código fuente"
+    "demoBtn": "Abrir en el navegador",
+    "featuresBtn": "Ver las funciones",
+    "proof1": "DXF de entrada y salida",
+    "proof2": "PDF · SVG · IFC4",
+    "proof3": "Funciona en el navegador",
+    "proof4": "Gratis · sin cuenta",
+    "heroAlt": "Open 2D Studio con la planta de una oficina de jardín ficticia: muros sombreados, carpinterías, mobiliario, cotas y nombres de estancias con su superficie",
+    "label": "Dibujo 2D",
+    "tagline": "De la primera línea a la hoja lista para imprimir, directamente en el navegador",
+    "desc": "Dibuja plantas, detalles y planos técnicos con las herramientas que conoces del CAD: capas, referencias, cotas y sombreados. Coloca tu dibujo a escala en una hoja con cajetín y imprímelo o guárdalo como PDF o DXF.",
+    "contactBtn": "Contáctanos"
   },
-  "download": {
-    "title": "Descargar v0.31.0"
+  "meta": {
+    "description": "Aplicación gratuita de dibujo 2D en el navegador: dibuja plantas y detalles con capas, referencias, cotas y sombreados, colócalos en una hoja con cajetín y exporta a PDF, DXF, SVG o IFC.",
+    "title": "Open 2D Studio — OpenAEC Foundation"
   },
-  "features": {
-    "heading": "Funciones",
-    "drawing": {
-      "title": "Herramientas de dibujo",
-      "desc": "Línea, rectángulo, círculo, arco, polilínea, elipse y texto. Entrada de comandos al estilo CAD para un control preciso."
-    },
-    "snapping": {
-      "title": "Precisión y referencias",
-      "desc": "Ajuste a rejilla y referencias a objetos: punto final, punto medio, centro, intersección. Sistema de rejilla configurable."
+  "hl": {
+    "edit": {
+      "alt": "Mesa de reuniones con cuatro sillas seleccionadas en la planta, con pinzamientos en cada círculo y a la derecha las propiedades color, grosor, tipo de línea y radio",
+      "kicker": "Dibujo",
+      "title": "Dibuja como estás acostumbrado en CAD",
+      "desc": "Línea, polilínea, rectángulo, círculo, arco, elipse y spline, con referencias a punto final, punto medio, centro e intersección. Mueve, copia, gira, refleja, recorta o empalma, y ajusta color, grosor y tipo de línea en el panel de propiedades."
     },
     "layers": {
-      "title": "Gestión de capas",
-      "desc": "Múltiples capas con controles de visibilidad, bloqueo y color. Organiza los dibujos en grupos lógicos."
+      "alt": "Lista de capas abierta desde la barra de estado con las capas Muros, Carpinterías, Mobiliario, Cotas y Texto, cada una con su color y botones de visibilidad y bloqueo",
+      "kicker": "Capas",
+      "title": "Las capas mantienen tu dibujo ordenado",
+      "desc": "Pon muros, carpinterías, mobiliario y cotas cada uno en su propia capa con su propio color. Apaga una capa para trabajar sin ella o bloquéala para no dibujar en ella por error."
+    },
+    "hatch": {
+      "alt": "Gestor de patrones de sombreado con los patrones incluidos, con Hormigón seleccionado mostrando una vista previa y su descripción",
+      "kicker": "Sombreados",
+      "title": "Un sombreado para cada material",
+      "desc": "Elige entre 47 patrones incluidos, desde el diagonal y el cruzado hasta el hormigón, o crea tu propio patrón. Guarda tus favoritos e importa y exporta patrones para compartirlos con tus colegas."
+    },
+    "sheet": {
+      "alt": "Hoja A3 con la planta a 1:50 en una ventana gráfica y un cajetín rellenado con título, número A-101, proyecto y fecha",
+      "kicker": "Hojas",
+      "title": "Del dibujo a la hoja con cajetín",
+      "desc": "Coloca tu dibujo a escala en una hoja de A4 a A0, en vertical u horizontal. Rellena el cajetín con título, número de plano, proyecto, escala y fecha, o empieza desde una plantilla de hoja."
+    },
+    "print": {
+      "alt": "Ventana de impresión con tamaño de papel, área de impresión, márgenes y una vista previa de la planta, con los botones Export PDF y Print",
+      "kicker": "Impresión",
+      "title": "Imprime o guarda como PDF",
+      "desc": "Elige el tamaño de papel, vertical u horizontal, los márgenes y qué imprimir: la vista actual o una selección de hojas. Ves una vista previa al instante y guardas tus ajustes como preajuste para la próxima vez."
+    },
+    "ifc": {
+      "alt": "Panel IFC Model bajo la planta con el texto IFC4 generado en directo a partir del dibujo, con los botones Copy y Export .ifc",
+      "kicker": "Intercambio",
+      "title": "Funciona con otros programas de CAD y BIM",
+      "desc": "Lee y escribe DXF para AutoCAD, BricsCAD y otros programas de CAD, y exporta a SVG, JSON e IFC4. El panel IFC muestra en directo cómo se escribe tu dibujo en IFC."
+    }
+  },
+  "notice": {
+    "text": "La versión de navegador funciona al instante. Las aplicaciones de escritorio y Android aún no se pueden descargar públicamente, y la última versión (v0.35) es de marzo de 2026."
+  },
+  "subnav": {
+    "label": "En esta página",
+    "features": "Funciones",
+    "whatsnew": "Novedades",
+    "faq": "Preguntas"
+  },
+  "tabs": {
+    "highlights": "Destacados",
+    "draw": "Dibujo y edición",
+    "annotate": "Cotas y sombreado",
+    "sheets": "Hojas e impresión",
+    "exchange": "Intercambio",
+    "all": "Todas las funciones"
+  },
+  "f": {
+    "lines": {
+      "title": "Líneas, polilíneas y splines",
+      "desc": "Rectas o suaves, abiertas o cerradas."
+    },
+    "shapes": {
+      "title": "Rectángulo, círculo, arco y elipse",
+      "desc": "Las formas básicas para cualquier planta o detalle."
+    },
+    "modify": {
+      "title": "Mover, copiar y girar",
+      "desc": "También reflejar, escalar y matriz."
+    },
+    "edit": {
+      "title": "Recortar, alargar y empalmar",
+      "desc": "Además chaflán, desfase y estirar."
+    },
+    "snap": {
+      "title": "Referencias y rejilla",
+      "desc": "Punto final, punto medio, centro e intersección, y modo orto con F8."
+    },
+    "layers": {
+      "title": "Capas",
+      "desc": "Con color, visibilidad y bloqueo por capa."
+    },
+    "props": {
+      "title": "Propiedades",
+      "desc": "Color, grosor, tipo de línea y medidas de lo que seleccionas."
+    },
+    "find": {
+      "title": "Buscar y reemplazar",
+      "desc": "Encuentra texto en tu dibujo y cámbialo de una vez."
+    },
+    "dims": {
+      "title": "Cotas",
+      "desc": "Alineada, lineal, angular, radio y diámetro."
+    },
+    "text": {
+      "title": "Texto en tipografía ISO",
+      "desc": "Osifont según ISO 3098, con alturas de texto en milímetros de papel."
+    },
+    "hatch": {
+      "title": "Sombreados y regiones rellenas",
+      "desc": "47 patrones incluidos y los tuyos propios."
+    },
+    "sheets": {
+      "title": "Varios dibujos y hojas",
+      "desc": "Mantén planta, sección y detalles juntos en un solo archivo."
+    },
+    "title": {
+      "title": "Cajetín",
+      "desc": "Título, número, proyecto, escala y fecha; con tus propias plantillas SVG."
+    },
+    "print": {
+      "title": "Impresión y PDF",
+      "desc": "Con vista previa, márgenes y preajustes guardados."
+    },
+    "units": {
+      "title": "Unidades y escala",
+      "desc": "Milímetros, centímetros, metros, pulgadas o pies, y una escala como 1:100."
     },
     "dxf": {
-      "title": "Importación/exportación DXF",
-      "desc": "Lee y escribe archivos DXF mediante el backend Rust dxf-rs para la interoperabilidad con AutoCAD, BricsCAD y otro software CAD."
+      "title": "Abrir y guardar DXF",
+      "desc": "Intercambia dibujos con AutoCAD, BricsCAD y otros programas de CAD."
     },
-    "properties": {
-      "title": "Propiedades y selección",
-      "desc": "Edita el color de trazo, el grosor y el estilo de línea. Haz clic, selecciona por recuadro o usa Mayús+clic para componer selecciones. Alineación y distribución de selecciones múltiples."
+    "underlay": {
+      "title": "Calco de fondo",
+      "desc": "Un PDF o un DXF grande como fondo sobre el que dibujar."
     },
-    "extensions": {
+    "image": {
+      "title": "Imágenes",
+      "desc": "Inserta una foto o un escaneo en tu dibujo."
+    },
+    "export": {
+      "title": "SVG, JSON e IFC4",
+      "desc": "Para la web, tus propios scripts o un modelo BIM."
+    },
+    "project": {
+      "title": "Archivo de proyecto propio",
+      "desc": "Todos los dibujos, hojas y capas en un solo archivo .o2d."
+    },
+    "ext": {
       "title": "Extensiones",
-      "desc": "Arquitectura extensible para complementos. Consulta <a href=\"/ext-drawing-statistics\">Drawing Statistics</a> como ejemplo de extensión."
+      "desc": "Busca, instala y actualiza extensiones desde el menú."
+    },
+    "themes": {
+      "title": "Siete temas de color",
+      "desc": "Desde claro y oscuro hasta alto contraste."
+    },
+    "keys": {
+      "title": "Atajos de teclado",
+      "desc": "Trabaja rápido con el teclado, con un resumen en el menú."
+    },
+    "feedback": {
+      "title": "Comentarios desde la aplicación",
+      "desc": "Informa de un error o una idea con F1, sin salir de la aplicación."
     }
+  },
+  "features": {
+    "label": "Funciones",
+    "heading": "Dibujar, acotar e imprimir",
+    "sub": "Empieza por lo más destacado o elige un tema.",
+    "tabsLabel": "Funciones por tema"
+  },
+  "whatsnew": {
+    "ctaDemo": "Pruébalo en el navegador",
+    "items": {
+      "themes": {
+        "title": "Temas de color",
+        "desc": "Elige uno de los siete temas en View, incluidos claro y alto contraste."
+      },
+      "ext": {
+        "title": "Gestionar extensiones",
+        "desc": "Buscar, instalar y actualizar en File > Extensions."
+      },
+      "settings": {
+        "title": "Los ajustes se guardan",
+        "desc": "Tus preferencias te esperan al volver a abrir la aplicación."
+      },
+      "feedback": {
+        "title": "Comentarios con F1",
+        "desc": "Informa de un error o una idea directamente desde la aplicación."
+      }
+    },
+    "label": "Novedades de la v0.35",
+    "title": "Tus colores y <span>extensiones</span>",
+    "desc": "Las últimas versiones, de la v0.30 a la v0.35 en marzo de 2026, trajeron temas de color, una interfaz más limpia, extensiones y comentarios desde la aplicación."
+  },
+  "faq": {
+    "files": {
+      "q": "¿Qué archivos puedo abrir?",
+      "a": "Tus propios archivos de proyecto (.o2d) y archivos DXF de AutoCAD, BricsCAD u otro programa de CAD. Puedes usar un PDF o un DXF grande como calco de fondo e insertar imágenes. Open 2D Studio aún no abre archivos DWG; guárdalos primero como DXF en tu programa de CAD."
+    },
+    "install": {
+      "q": "¿Tengo que instalar algo?",
+      "a": "No. La versión de navegador funciona al instante, sin cuenta. También hay versiones para Windows, macOS, Linux y tabletas Android, pero aún no se pueden descargar públicamente."
+    },
+    "price": {
+      "q": "¿Cuánto cuesta Open 2D Studio?",
+      "a": "Nada. No pagas licencia ni necesitas cuenta ni suscripción."
+    },
+    "save": {
+      "q": "¿En qué formato se guarda mi trabajo?",
+      "a": "Como archivo de proyecto .o2d, con todos tus dibujos, hojas y capas. En el navegador descargas ese archivo. También puedes exportar a DXF, SVG, JSON e IFC4, y a PDF desde la ventana de impresión."
+    },
+    "systems": {
+      "q": "¿En qué sistemas funciona?",
+      "a": "En cualquier navegador moderno en Windows, macOS y Linux. Existen versiones de escritorio para Windows, macOS y Linux y una aplicación Android para tabletas, pero aún no son públicas."
+    },
+    "practice": {
+      "q": "¿Se ajusta a la práctica de la construcción?",
+      "a": "Trabajas en milímetros a una escala como 1:50 o 1:100, con formatos de A4 a A0, un cajetín y textos y cotas en una tipografía ISO. Por ahora la interfaz está en inglés."
+    },
+    "ai": {
+      "q": "¿Qué puede hacer un asistente de IA con él?",
+      "a": "Cada orden de dibujo, modificación y capas está descrita como herramienta para asistentes de IA. En la versión de escritorio escribes una petición en lenguaje normal en el terminal, como «dibuja un círculo», y Claude Code en tu propio ordenador la ejecuta. Esto aún no funciona en el navegador, y todavía no hay un servidor MCP para conectarlo tú mismo."
+    },
+    "cad": {
+      "q": "¿En qué se diferencia de Open CAD Studio?",
+      "a": "Son dos programas distintos de creadores diferentes. Open CAD Studio está hecho para abrir y actualizar archivos DWG y DXF de otros, en 2D y 3D. Open 2D Studio se centra en dibujar tú mismo en 2D: capas, cotas, sombreados y hojas con cajetín. Si trabajas sobre todo con archivos DWG de otros, echa un vistazo a Open CAD Studio."
+    },
+    "source": {
+      "q": "¿Es público el código fuente?",
+      "a": "Todavía no. Open 2D Studio tiene la licencia LGPL-3.0, pero su repositorio en GitHub aún no es público. Por eso esta página todavía no ofrece descargas."
+    },
+    "status": {
+      "q": "¿Se sigue desarrollando?",
+      "a": "La última versión, v0.35, es de marzo de 2026. La versión de navegador se publicó en abril; desde entonces solo ha habido pequeños cambios de mantenimiento. Si echas algo en falta, avísanos con F1 en la aplicación."
+    },
+    "heading": "Preguntas frecuentes"
   },
   "tech": {
-    "heading": "Stack tecnológico",
     "tauri": {
-      "title": "Tauri 2.0",
-      "desc": "~10 MB de tamaño de aplicación, ~30 MB de uso de RAM, rendimiento nativo gracias al backend en Rust."
+      "desc": "Una capa nativa ligera en Rust para Windows, macOS, Linux y Android, con un instalador de pocos megabytes."
     },
     "react": {
-      "title": "React 18 + TypeScript",
-      "desc": "Interfaz basada en componentes con tipado seguro y gestión de estado con Zustand."
+      "desc": "La interfaz en componentes separados con comprobación de tipos; Zustand guarda el estado del dibujo."
     },
     "canvas": {
-      "title": "Renderizado Canvas 2D",
-      "desc": "Renderizado rápido que maneja con fluidez más de 10 000 elementos."
-    }
+      "desc": "Motor de dibujo propio sobre el canvas HTML, con referencias, pinzamientos y selección."
+    },
+    "dxf": {
+      "desc": "Lector y escritor DXF propios en TypeScript, para que el intercambio funcione también en el navegador."
+    },
+    "pdf": {
+      "desc": "PDF vectorial para imprimir y lectura de PDF como calco de fondo."
+    },
+    "osifont": {
+      "desc": "Tipografía abierta según ISO 3098 para textos y cotas."
+    },
+    "heading": "Tecnología",
+    "sub": "Para quien quiera saber cómo está hecho."
   },
-  "cta": {
-    "demo": "Demo en vivo",
-    "github": "GitHub &rarr;"
-  },
-  "footer": {
-    "slogan": "Build free. Build together."
+  "releases": {
+    "showAll": "Mostrar todas las versiones",
+    "showLess": "Mostrar solo las tres últimas"
   }
 }

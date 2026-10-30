@@ -1,61 +1,272 @@
 {
   "header": {
-    "label": "CAO 2D open source",
     "title": "Open <span class=\"accent\">2D</span> Studio",
-    "desc": "Application CAO 2D gratuite et open source pour dessins techniques, plans et conceptions mécaniques. Alternative légère et rapide aux logiciels de CAO commerciaux.",
-    "downloadBtn": "Télécharger v0.35.0",
-    "sourceBtn": "Voir le code source"
+    "demoBtn": "Ouvrir dans le navigateur",
+    "featuresBtn": "Voir les fonctions",
+    "proof1": "DXF en entrée et sortie",
+    "proof2": "PDF · SVG · IFC4",
+    "proof3": "Fonctionne dans le navigateur",
+    "proof4": "Gratuit · sans compte",
+    "heroAlt": "Open 2D Studio avec le plan d'un bureau de jardin fictif : murs hachurés, menuiseries, mobilier, cotes et noms des pièces avec leur surface",
+    "label": "Dessin 2D",
+    "tagline": "De la première ligne à la feuille prête à imprimer, directement dans le navigateur",
+    "desc": "Dessinez plans, détails et dessins techniques avec les outils que vous connaissez de la CAO : calques, accrochage, cotation et hachures. Placez votre dessin à l'échelle sur une feuille avec cartouche, puis imprimez-le ou enregistrez-le en PDF ou DXF.",
+    "contactBtn": "Nous contacter"
   },
-  "download": {
-    "title": "Télécharger v0.35.0"
+  "meta": {
+    "description": "Application gratuite de dessin 2D dans le navigateur : dessinez plans et détails avec calques, accrochage, cotation et hachures, placez-les sur une feuille avec cartouche et exportez en PDF, DXF, SVG ou IFC.",
+    "title": "Open 2D Studio — OpenAEC Foundation"
   },
-  "features": {
-    "heading": "Fonctionnalités",
-    "drawing": {
-      "title": "Outils de dessin",
-      "desc": "Ligne, rectangle, cercle, arc, polyligne, ellipse et texte. Saisie de commandes de style CAO pour un contrôle précis."
-    },
-    "snapping": {
-      "title": "Précision et accrochage",
-      "desc": "Accrochage à la grille et aux objets : extrémité, milieu, centre, intersection. Système de grille configurable."
+  "hl": {
+    "edit": {
+      "alt": "Table de réunion et quatre chaises sélectionnées dans le plan, avec des poignées sur chaque cercle et à droite les propriétés couleur, épaisseur, type de ligne et rayon",
+      "kicker": "Dessin",
+      "title": "Dessinez comme vous en avez l'habitude en CAO",
+      "desc": "Ligne, polyligne, rectangle, cercle, arc, ellipse et spline, avec accrochage aux extrémités, milieux, centres et intersections. Déplacez, copiez, faites pivoter, symétrisez, ajustez ou raccordez, et réglez couleur, épaisseur et type de ligne dans le panneau des propriétés."
     },
     "layers": {
-      "title": "Gestion des calques",
-      "desc": "Plusieurs calques avec contrôles de visibilité, verrouillage et couleur. Organisez les dessins en groupes logiques."
+      "alt": "Liste des calques ouverte depuis la barre d'état avec les calques Murs, Menuiseries, Mobilier, Cotation et Texte, chacun avec sa couleur et des boutons de visibilité et de verrouillage",
+      "kicker": "Calques",
+      "title": "Les calques gardent votre dessin lisible",
+      "desc": "Placez murs, menuiseries, mobilier et cotes chacun sur leur propre calque, avec leur propre couleur. Masquez un calque pour travailler sans lui, ou verrouillez-le pour ne pas dessiner dessus par erreur."
+    },
+    "hatch": {
+      "alt": "Gestionnaire de motifs de hachures avec les motifs intégrés, Béton sélectionné avec un aperçu et sa description",
+      "kicker": "Hachures",
+      "title": "Une hachure pour chaque matériau",
+      "desc": "Choisissez parmi 47 motifs intégrés, des hachures diagonales et croisées au béton, ou créez votre propre motif. Gardez vos favoris, et importez et exportez des motifs pour les partager avec vos collègues."
+    },
+    "sheet": {
+      "alt": "Feuille A3 avec le plan au 1:50 dans une fenêtre et un cartouche rempli avec titre, numéro A-101, projet et date",
+      "kicker": "Feuilles",
+      "title": "Du dessin à la feuille avec cartouche",
+      "desc": "Placez votre dessin à l'échelle sur une feuille de l'A4 à l'A0, en portrait ou en paysage. Remplissez le cartouche avec titre, numéro, projet, échelle et date, ou partez d'un modèle de feuille."
+    },
+    "print": {
+      "alt": "Fenêtre d'impression avec format, zone d'impression, marges et aperçu du plan, avec les boutons Export PDF et Print",
+      "kicker": "Impression",
+      "title": "Imprimer ou enregistrer en PDF",
+      "desc": "Choisissez le format, portrait ou paysage, les marges et ce que vous imprimez : la vue actuelle ou une sélection de feuilles. L'aperçu s'affiche aussitôt, et vous enregistrez vos réglages comme préréglage pour la prochaine fois."
+    },
+    "ifc": {
+      "alt": "Panneau IFC Model sous le plan avec le texte IFC4 généré en direct à partir du dessin, avec les boutons Copy et Export .ifc",
+      "kicker": "Échange",
+      "title": "Fonctionne avec d'autres logiciels de CAO et de BIM",
+      "desc": "Lisez et écrivez du DXF pour AutoCAD, BricsCAD et d'autres logiciels de CAO, et exportez en SVG, JSON et IFC4. Le panneau IFC montre en direct comment votre dessin est écrit en IFC."
+    }
+  },
+  "notice": {
+    "text": "La version navigateur fonctionne tout de suite. Les applications de bureau et Android ne sont pas encore téléchargeables publiquement, et la dernière version (v0.35) date de mars 2026."
+  },
+  "subnav": {
+    "label": "Sur cette page",
+    "features": "Fonctions",
+    "whatsnew": "Nouveautés",
+    "faq": "FAQ"
+  },
+  "tabs": {
+    "highlights": "Points forts",
+    "draw": "Dessin et modification",
+    "annotate": "Cotation et hachures",
+    "sheets": "Feuilles et impression",
+    "exchange": "Échange",
+    "all": "Toutes les fonctions"
+  },
+  "f": {
+    "lines": {
+      "title": "Lignes, polylignes et splines",
+      "desc": "Droites ou lisses, ouvertes ou fermées."
+    },
+    "shapes": {
+      "title": "Rectangle, cercle, arc et ellipse",
+      "desc": "Les formes de base pour tout plan ou détail."
+    },
+    "modify": {
+      "title": "Déplacer, copier et pivoter",
+      "desc": "Aussi symétrie, mise à l'échelle et réseau."
+    },
+    "edit": {
+      "title": "Ajuster, prolonger et raccorder",
+      "desc": "Plus chanfrein, décalage et étirement."
+    },
+    "snap": {
+      "title": "Accrochage et grille",
+      "desc": "Extrémité, milieu, centre et intersection, et mode ortho avec F8."
+    },
+    "layers": {
+      "title": "Calques",
+      "desc": "Avec couleur, visibilité et verrouillage par calque."
+    },
+    "props": {
+      "title": "Propriétés",
+      "desc": "Couleur, épaisseur, type de ligne et dimensions de la sélection."
+    },
+    "find": {
+      "title": "Rechercher et remplacer",
+      "desc": "Trouvez du texte dans votre dessin et modifiez-le d'un coup."
+    },
+    "dims": {
+      "title": "Cotation",
+      "desc": "Alignée, linéaire, angulaire, rayon et diamètre."
+    },
+    "text": {
+      "title": "Texte en police ISO",
+      "desc": "Osifont selon l'ISO 3098, avec des hauteurs en millimètres papier."
+    },
+    "hatch": {
+      "title": "Hachures et régions remplies",
+      "desc": "47 motifs intégrés et vos propres motifs."
+    },
+    "sheets": {
+      "title": "Plusieurs dessins et feuilles",
+      "desc": "Gardez plan, coupe et détails ensemble dans un seul fichier."
+    },
+    "title": {
+      "title": "Cartouche",
+      "desc": "Titre, numéro, projet, échelle et date ; avec vos propres modèles SVG."
+    },
+    "print": {
+      "title": "Impression et PDF",
+      "desc": "Avec aperçu, marges et préréglages enregistrés."
+    },
+    "units": {
+      "title": "Unités et échelle",
+      "desc": "Millimètres, centimètres, mètres, pouces ou pieds, et une échelle comme 1:100."
     },
     "dxf": {
-      "title": "Import/export DXF",
-      "desc": "Lecture et écriture de fichiers DXF via le backend Rust dxf-rs pour l'interopérabilité avec AutoCAD, BricsCAD et autres logiciels CAO."
+      "title": "Ouvrir et enregistrer du DXF",
+      "desc": "Échangez des dessins avec AutoCAD, BricsCAD et d'autres logiciels de CAO."
     },
-    "properties": {
-      "title": "Propriétés et sélection",
-      "desc": "Modifiez couleur de trait, épaisseur et style de ligne. Cliquez, sélectionnez par rectangle ou Shift+Clic pour construire des sélections. Alignement et distribution multi-sélection."
+    "underlay": {
+      "title": "Calque de fond",
+      "desc": "Un PDF ou un gros fichier DXF en fond pour dessiner par-dessus."
     },
-    "extensions": {
+    "image": {
+      "title": "Images",
+      "desc": "Insérez une photo ou un scan dans votre dessin."
+    },
+    "export": {
+      "title": "SVG, JSON et IFC4",
+      "desc": "Pour le web, vos propres scripts ou une maquette BIM."
+    },
+    "project": {
+      "title": "Fichier de projet propre",
+      "desc": "Tous les dessins, feuilles et calques dans un seul fichier .o2d."
+    },
+    "ext": {
       "title": "Extensions",
-      "desc": "Architecture extensible pour add-ins. Voir <a href=\"/ext-drawing-statistics\">Drawing Statistics</a> pour un exemple d'extension."
+      "desc": "Parcourez, installez et mettez à jour des extensions depuis le menu."
+    },
+    "themes": {
+      "title": "Sept thèmes de couleur",
+      "desc": "Du clair et du sombre au contraste élevé."
+    },
+    "keys": {
+      "title": "Raccourcis clavier",
+      "desc": "Travaillez vite au clavier, avec un aperçu dans le menu."
+    },
+    "feedback": {
+      "title": "Retour depuis l'application",
+      "desc": "Signalez un bug ou une idée avec F1, sans quitter l'application."
     }
+  },
+  "features": {
+    "label": "Fonctions",
+    "heading": "Dessiner, coter et imprimer",
+    "sub": "Commencez par les points forts ou choisissez un thème.",
+    "tabsLabel": "Fonctions par thème"
+  },
+  "whatsnew": {
+    "ctaDemo": "Essayer dans le navigateur",
+    "items": {
+      "themes": {
+        "title": "Thèmes de couleur",
+        "desc": "Choisissez l'un des sept thèmes sous View, dont clair et contraste élevé."
+      },
+      "ext": {
+        "title": "Gérer les extensions",
+        "desc": "Rechercher, installer et mettre à jour via File > Extensions."
+      },
+      "settings": {
+        "title": "Réglages conservés",
+        "desc": "Vos préférences sont là quand vous rouvrez l'application."
+      },
+      "feedback": {
+        "title": "Retour avec F1",
+        "desc": "Signalez un bug ou une idée directement depuis l'application."
+      }
+    },
+    "label": "Nouveau dans la v0.35",
+    "title": "Vos couleurs et des <span>extensions</span>",
+    "desc": "Les dernières versions, de la v0.30 à la v0.35 en mars 2026, ont apporté des thèmes de couleur, une interface épurée, des extensions et un retour depuis l'application."
+  },
+  "faq": {
+    "files": {
+      "q": "Quels fichiers puis-je ouvrir ?",
+      "a": "Vos propres fichiers de projet (.o2d) et les fichiers DXF d'AutoCAD, de BricsCAD ou d'un autre logiciel de CAO. Un PDF ou un gros fichier DXF peut servir de calque de fond, et vous pouvez insérer des images. Open 2D Studio n'ouvre pas encore les fichiers DWG ; enregistrez-les d'abord en DXF dans votre logiciel de CAO."
+    },
+    "install": {
+      "q": "Dois-je installer quelque chose ?",
+      "a": "Non. La version navigateur fonctionne tout de suite, sans compte. Il existe aussi des versions pour Windows, macOS, Linux et les tablettes Android, mais elles ne sont pas encore téléchargeables publiquement."
+    },
+    "price": {
+      "q": "Combien coûte Open 2D Studio ?",
+      "a": "Rien. Vous ne payez pas de licence et n'avez besoin ni de compte ni d'abonnement."
+    },
+    "save": {
+      "q": "Dans quel format mon travail est-il enregistré ?",
+      "a": "En fichier de projet .o2d, avec tous vos dessins, feuilles et calques. Dans le navigateur, vous téléchargez ce fichier. Vous pouvez aussi exporter en DXF, SVG, JSON et IFC4, et en PDF via la fenêtre d'impression."
+    },
+    "systems": {
+      "q": "Sur quels systèmes fonctionne-t-il ?",
+      "a": "Dans tout navigateur récent sous Windows, macOS et Linux. Des versions de bureau pour Windows, macOS et Linux et une application Android pour tablettes existent, mais ne sont pas encore publiques."
+    },
+    "practice": {
+      "q": "Est-il adapté à la pratique du bâtiment ?",
+      "a": "Vous travaillez en millimètres à une échelle comme 1:50 ou 1:100, avec des formats de l'A4 à l'A0, un cartouche, et textes et cotes dans une police ISO. L'interface est pour l'instant en anglais."
+    },
+    "ai": {
+      "q": "Que peut en faire un assistant IA ?",
+      "a": "Chaque commande de dessin, de modification et de calque est décrite comme un outil pour les assistants IA. Dans la version de bureau, vous tapez une demande en langage courant dans le terminal, comme « dessine un cercle », et Claude Code sur votre ordinateur l'exécute. Cela ne fonctionne pas encore dans le navigateur, et il n'existe pas encore de serveur MCP à connecter vous-même."
+    },
+    "cad": {
+      "q": "Quelle différence avec Open CAD Studio ?",
+      "a": "Ce sont deux logiciels distincts, de créateurs différents. Open CAD Studio est conçu pour ouvrir et mettre à jour des fichiers DWG et DXF d'autres personnes, en 2D et en 3D. Open 2D Studio se concentre sur le dessin 2D par vous-même : calques, cotation, hachures et feuilles avec cartouche. Si vous travaillez surtout avec des fichiers DWG d'autres personnes, regardez Open CAD Studio."
+    },
+    "source": {
+      "q": "Le code source est-il public ?",
+      "a": "Pas encore. Open 2D Studio est sous licence LGPL-3.0, mais son dépôt GitHub n'est pas encore public. C'est pourquoi cette page ne propose pas encore de téléchargements."
+    },
+    "status": {
+      "q": "Le développement continue-t-il ?",
+      "a": "La dernière version, v0.35, date de mars 2026. La version navigateur a été mise en ligne en avril ; depuis, il n'y a eu que de petites modifications de maintenance. S'il vous manque quelque chose, signalez-le avec F1 dans l'application."
+    },
+    "heading": "Questions fréquentes"
   },
   "tech": {
-    "heading": "Stack technique",
     "tauri": {
-      "title": "Tauri 2.0",
-      "desc": "Taille d'application ~10 Mo, utilisation RAM ~30 Mo, performances natives via backend Rust."
+      "desc": "Une fine couche native en Rust pour Windows, macOS, Linux et Android, avec un installateur de quelques mégaoctets."
     },
     "react": {
-      "title": "React 18 + TypeScript",
-      "desc": "Interface utilisateur basée sur composants avec typage statique et gestion d'état Zustand."
+      "desc": "L'interface en composants séparés avec vérification de types ; Zustand gère l'état du dessin."
     },
     "canvas": {
-      "title": "Rendu Canvas 2D",
-      "desc": "Rendu rapide gérant fluidement plus de 10 000 éléments."
-    }
+      "desc": "Moteur de dessin propre sur le canevas HTML, avec accrochage, poignées et sélection."
+    },
+    "dxf": {
+      "desc": "Lecteur et écrivain DXF propres en TypeScript, pour que l'échange fonctionne aussi dans le navigateur."
+    },
+    "pdf": {
+      "desc": "PDF vectoriel pour l'impression, et lecture de fichiers PDF comme calque de fond."
+    },
+    "osifont": {
+      "desc": "Police ouverte selon l'ISO 3098 pour les textes et les cotes."
+    },
+    "heading": "Technologie",
+    "sub": "Pour ceux qui veulent savoir comment c'est construit."
   },
-  "cta": {
-    "demo": "Démo en ligne",
-    "github": "GitHub &rarr;"
-  },
-  "footer": {
-    "slogan": "Construisez librement. Construisons ensemble."
+  "releases": {
+    "showAll": "Afficher toutes les versions",
+    "showLess": "Afficher seulement les trois dernières"
   }
 }
