@@ -1,44 +1,269 @@
 {
   "header": {
-    "label": "Construction safety",
     "title": "Open <span class=\"accent\">Safety</span> Studio",
-    "desc": "Open source software for safety plans in construction: health and safety plan, BLVC plan, risk matrix and safe maintenance, with the legal basis always alongside.",
-    "badge": "Beta"
+    "demoBtn": "Open in browser",
+    "featuresBtn": "See the features",
+    "proof1": "Dutch Working Conditions Decree · Building Decree",
+    "proof2": "10 templates · 20 risk modules",
+    "proof3": "Runs in the browser",
+    "proof4": "Dutch and English",
+    "proof5": "Free · no account",
+    "heroAlt": "Open Safety Studio: health and safety plan for new housing, with the fall-from-height risks and their source, technical, organisational and PPE measures, and the legal basis on the right",
+    "label": "Construction safety",
+    "tagline": "A health and safety plan in minutes instead of days",
+    "desc": "Pick a template for your type of project and you start with the risks and measures that come with it. Weigh risks in a matrix, fill in the BLVC plan and the safe-maintenance checklist, and always see which article of law applies.",
+    "contactBtn": "Contact us"
   },
-  "why": {
-    "title": "Why Open <span class=\"accent\">Safety</span> Studio?",
-    "desc": "Safety on the construction site is not a luxury but an obligation. A health and safety plan or a BLVC plan is often still put together in separate Word files and spreadsheets, again and again.",
-    "desc2": "Open Safety Studio lists the parts the law asks for, shows which article applies to each topic and turns it into a report. Free and open source."
+  "meta": {
+    "description": "Free browser app for construction safety plans: a health and safety plan from a template, a risk matrix, a BLVC plan and a safe-maintenance checklist, with the legal basis alongside and a printable report.",
+    "title": "Open Safety Studio — OpenAEC Foundation"
   },
-  "modules": {
-    "title": "Five modules",
-    "desc": "Each module is its own tab in the app, with the legal framework in the sidebar.",
-    "vg": "<strong>Health and safety plan</strong> Following Dutch Arbobesluit art. 2.28: project details, parties involved, phases, special risks from Annex II, asbestos, hazardous substances, emergency procedures and workplace layout.",
-    "blvc": "<strong>BLVC plan</strong> Accessibility, liveability, safety and communication around the site, with phasing, traffic measures and communication.",
-    "matrix": "<strong>Risk matrix</strong> Assess risks by likelihood and severity in a 5×5 matrix and see at once which have the highest priority.",
-    "maintenance": "<strong>Safe maintenance</strong> Building information, permanent provisions and a checklist following Bouwbesluit art. 6.53 and Arbobesluit art. 2.30.",
-    "ifc": "<strong>IFC</strong> Import and export IFC models, view their structure and statistics and validate the model."
-  },
-  "features": {
-    "title": "Features",
-    "templates": {
-      "title": "Templates",
-      "desc": "Start a plan from a template instead of a blank document."
+  "hl": {
+    "template": {
+      "alt": "Template for new housing with typical duration, number of people, points of attention and the selected risk modules",
+      "kicker": "Templates",
+      "title": "Don't start from a blank page",
+      "desc": "Choose from ten templates, from housing and high-rise to demolition, civil works and hydraulic engineering. Each template sets up the matching risk modules, with points of attention for that kind of work. Tick modules on or off before you start."
     },
-    "legal": {
-      "title": "Legal basis in view",
-      "desc": "Next to each part you see which article applies and when a plan is mandatory."
-    },
-    "hierarchy": {
-      "title": "Hierarchy of measures",
-      "desc": "Measures in the order the law sets: the source first, then shielding and restrictions, personal protective equipment last."
+    "matrix": {
+      "alt": "Five-by-five risk matrix with four risks, and on the right a risk with likelihood 4, severity 5 and three measures",
+      "kicker": "Risk matrix",
+      "title": "See straight away which risk comes first",
+      "desc": "Rate each risk on likelihood and severity. The matrix runs from green to dark red and puts the risk in its place. Record measures for each risk, with a person responsible and a date."
     },
     "report": {
-      "title": "Report",
-      "desc": "Turn the plan into a report to print or share."
+      "alt": "Report preview of the health and safety plan with a table of score, risk, likelihood and severity for each risk module",
+      "kicker": "Report",
+      "title": "A plan you can print and share",
+      "desc": "With one click your health and safety plan becomes a tidy report: cover page, special risks and, per module, the risks with their measures. Print it or save it as a PDF for the project file."
+    },
+    "blvc": {
+      "alt": "BLVC plan with tabs for accessibility, liveability, safety and communication, filled in for a fictional housing project",
+      "kicker": "BLVC plan",
+      "title": "Keep the neighbourhood accessible and informed",
+      "desc": "When you work in public space, describe for each letter what you arrange: traffic diversions and emergency services, noise and dust, fencing and signage, and how residents get information and a point of contact."
+    },
+    "maintenance": {
+      "alt": "Safe-maintenance checklist with ten items, five ticked with a note, and the legal basis on the right",
+      "kicker": "Safe maintenance",
+      "title": "A building that can be maintained safely later",
+      "desc": "Use a ten-point checklist to verify that the roof, facade, gutters, installations and lift can be reached safely. Keep a register of fixed provisions such as anchor points and guardrails, with inspection date and status."
     }
   },
-  "cta": {
-    "demo": "View live demo"
+  "notice": {
+    "text": "Test version: your input is not saved yet. Finish your plan in one go and print it or save it as a PDF."
+  },
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "whatsnew": "What's new",
+    "faq": "FAQ"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "vg": "Health and safety plan",
+    "risk": "Risks",
+    "blvc": "BLVC plan",
+    "maintenance": "Safe maintenance",
+    "all": "All features"
+  },
+  "f": {
+    "templates": {
+      "title": "Ten templates",
+      "desc": "Housing, renovation, commercial, high-rise, demolition, civil works, industrial, hydraulic, MEP and foundation work."
+    },
+    "modules": {
+      "title": "20 risk modules",
+      "desc": "From falls from height and excavation to asbestos, fire and confined spaces, with risks and measures filled in."
+    },
+    "hierarchy": {
+      "title": "Measures in the order of the law",
+      "desc": "Source first, then technical and organisational, personal protective equipment last."
+    },
+    "annex": {
+      "title": "Special risks",
+      "desc": "The ten risks from Annex II of the European construction sites directive, already ticked for you by the template."
+    },
+    "project": {
+      "title": "Project and parties",
+      "desc": "Project details, client, the health and safety coordinators for design and execution, and the contractors."
+    },
+    "phase": {
+      "title": "Design or execution phase",
+      "desc": "Make the plan for the phase you are in; the report takes over the phase."
+    },
+    "asbestos": {
+      "title": "Asbestos",
+      "desc": "State whether asbestos is present and refer to the asbestos survey."
+    },
+    "emergency": {
+      "title": "Emergency procedures",
+      "desc": "Emergency response team, first-aid post, escape route, emergency number and assembly point."
+    },
+    "worksite": {
+      "title": "Site layout",
+      "desc": "Site layout, material storage and waste management."
+    },
+    "law": {
+      "title": "Legal basis alongside",
+      "desc": "For each part you see which article applies and when a health and safety plan is required."
+    },
+    "report": {
+      "title": "Print the report or save as PDF",
+      "desc": "Preview with zoom, open in a new window and print."
+    },
+    "matrix": {
+      "title": "5 × 5 risk matrix",
+      "desc": "Likelihood times severity gives a score from 1 to 25, in five levels from very low to very high."
+    },
+    "categories": {
+      "title": "18 risk categories",
+      "desc": "From falling objects and electricity to vibration, drowning and weather conditions."
+    },
+    "measures": {
+      "title": "Measures for each risk",
+      "desc": "Type of measure, description, person responsible and date."
+    },
+    "access": {
+      "title": "Accessibility",
+      "desc": "Traffic diversion, access to homes and businesses, emergency services, public transport and parking."
+    },
+    "livability": {
+      "title": "Liveability",
+      "desc": "Noise, dust, vibration, working hours and the quality of the surroundings."
+    },
+    "public": {
+      "title": "Safety around the site",
+      "desc": "Risks to the public, traffic safety, barriers, signage and site fencing."
+    },
+    "comms": {
+      "title": "Communication",
+      "desc": "Information for residents, contact person, complaints procedure and newsletters."
+    },
+    "building": {
+      "title": "Building information",
+      "desc": "Building type, year of construction, number of storeys and roof type."
+    },
+    "checklist": {
+      "title": "Ten-point checklist",
+      "desc": "Fall protection, facade, gutters, roof lights, window cleaning, installations, lift, asbestos and load capacity, each with a note."
+    },
+    "facilities": {
+      "title": "Register of provisions",
+      "desc": "Anchor points, guardrails, roof-edge protection and facade installations, with location, inspection dates and status."
+    },
+    "browser": {
+      "title": "In the browser",
+      "desc": "No installation and no account: open the app and start."
+    },
+    "lang": {
+      "title": "Dutch and English",
+      "desc": "The interface in two languages, with a light and a dark theme."
+    }
+  },
+  "features": {
+    "label": "Features",
+    "heading": "All the safety plans for your project in one place",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "whatsnew": {
+    "ctaDemo": "Try it in the browser",
+    "items": {
+      "templates": {
+        "title": "Ten templates",
+        "desc": "One per type of project, with typical duration, number of people and points of attention."
+      },
+      "modules": {
+        "title": "20 risk modules",
+        "desc": "37 risks with likelihood, severity and measures, ready to use."
+      },
+      "report": {
+        "title": "Health and safety report",
+        "desc": "Cover page, special risks and a table per module, to print or save as PDF."
+      },
+      "annex": {
+        "title": "Special risks filled in",
+        "desc": "The template ticks the special risks that belong to the work."
+      },
+      "web": {
+        "title": "Try it online",
+        "desc": "The app runs in the browser, with no installation or account."
+      }
+    },
+    "label": "New in v0.1",
+    "title": "Templates and a <span>report</span>",
+    "desc": "The first version is online. You start a health and safety plan from a template and turn it into a printable report."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "None yet. You start a plan from a template or fill it in yourself. Opening files and reading an IFC model will come in a later version."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "No. Open Safety Studio runs in the browser, with no account. A desktop app for Windows, macOS and Linux is in preparation but cannot be downloaded yet."
+    },
+    "price": {
+      "q": "What does Open Safety Studio cost?",
+      "a": "Nothing. The app is free, with no account or subscription."
+    },
+    "save": {
+      "q": "In which format is my work saved?",
+      "a": "Not yet: in this test version your input only stays while the window is open. Finish the plan and save the report as a PDF via Print. Saving as a project file will come in a later version."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "In any modern browser on Windows, macOS and Linux. The app is made for a large screen."
+    },
+    "practice": {
+      "q": "Does it fit Dutch practice?",
+      "a": "Yes. The health and safety plan follows article 2.28 of the Dutch Working Conditions Decree, the special risks come from Annex II of the European construction sites directive and the safe-maintenance checklist refers to the Dutch Building Decree and article 2.30 of the Working Conditions Decree. Measures follow the occupational hygiene hierarchy."
+    },
+    "required": {
+      "q": "When is a health and safety plan required?",
+      "a": "For work with a special risk from Annex II, or when the work lasts more than 30 working days with more than 20 people at once, or takes more than 500 person-days. The app shows this next to the plan."
+    },
+    "coordinator": {
+      "q": "Does it replace the health and safety coordinator?",
+      "a": "No. The templates give a solid start, but the coordinator judges which risks and measures apply to this project and remains responsible for the plan."
+    },
+    "ifc": {
+      "q": "Does it work with IFC models?",
+      "a": "Not yet. There is an IFC tab, but importing, exporting and checking a model will come in a later version."
+    },
+    "heading": "Frequently asked questions"
+  },
+  "tech": {
+    "react": {
+      "title": "React 19 and TypeScript",
+      "desc": "The whole interface, including the forms, the matrix and the report."
+    },
+    "vite": {
+      "title": "Vite",
+      "desc": "Fast build for the web version at open-safety-studio.open-aec.com."
+    },
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "A thin native Rust shell for the desktop app in preparation."
+    },
+    "data": {
+      "title": "Templates as data",
+      "desc": "Templates and risk modules are typed data in the code, so they are easy to extend."
+    },
+    "print": {
+      "title": "HTML report",
+      "desc": "The report is a self-contained HTML document that the browser prints or saves as PDF."
+    },
+    "shell": {
+      "title": "OpenAEC shell",
+      "desc": "Ribbon, themes and translations (i18next) as in all OpenAEC apps."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three"
   }
 }

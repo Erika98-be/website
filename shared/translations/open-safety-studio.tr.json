@@ -1,44 +1,269 @@
 {
   "header": {
-    "label": "İnşaat güvenliği",
     "title": "Open <span class=\"accent\">Safety</span> Studio",
-    "desc": "İnşaatta güvenlik planları için açık kaynak yazılım: İSG planı, BLVC planı, risk matrisi ve güvenli bakım; yasal dayanak her zaman yanında.",
-    "badge": "Beta"
+    "demoBtn": "Tarayıcıda aç",
+    "featuresBtn": "Özellikleri gör",
+    "proof1": "Arbobesluit · Bouwbesluit (Hollanda)",
+    "proof2": "10 şablon · 20 risk modülü",
+    "proof3": "Tarayıcıda çalışır",
+    "proof4": "Felemenkçe ve İngilizce",
+    "proof5": "Ücretsiz · hesap gerekmez",
+    "heroAlt": "Open Safety Studio: yeni konut inşaatı için İSG planı; yüksekten düşme riskleri ve bunların kaynak, teknik, organizasyonel ve KKD önlemleri, sağda yasal dayanak",
+    "label": "İnşaatta güvenlik",
+    "tagline": "Günler yerine dakikalar içinde bir iş sağlığı ve güvenliği planı",
+    "desc": "Yapı türünüz için bir şablon seçin; ona ait riskler ve önlemlerle başlarsınız. Riskleri bir matriste değerlendirin, BLVC planını ve güvenli bakım kontrol listesini doldurun ve hangi kanun maddesinin geçerli olduğunu her zaman görün.",
+    "contactBtn": "Bize ulaşın"
   },
-  "why": {
-    "title": "Neden Open <span class=\"accent\">Safety</span> Studio?",
-    "desc": "Şantiyede güvenlik bir lüks değil, bir zorunluluktur. İSG planı veya BLVC planı hâlâ çoğu zaman ayrı Word dosyalarında ve tablolarda, her seferinde yeniden hazırlanıyor.",
-    "desc2": "Open Safety Studio yasanın istediği bölümleri sıralar, her konu için hangi maddenin geçerli olduğunu gösterir ve bunu bir rapora dönüştürür. Ücretsiz ve açık kaynak."
+  "meta": {
+    "description": "İnşaat güvenlik planları için tarayıcıda ücretsiz uygulama: şablondan iş sağlığı ve güvenliği planı, risk matrisi, BLVC planı ve güvenli bakım kontrol listesi; yanında yasal dayanak ve yazdırılabilir rapor.",
+    "title": "Open Safety Studio — OpenAEC Foundation"
   },
-  "modules": {
-    "title": "Beş modül",
-    "desc": "Her modül uygulamada ayrı bir sekmedir; yasal çerçeve kenar çubuğunda yer alır.",
-    "vg": "<strong>İSG planı</strong> Hollanda Arbobesluit md. 2.28’e göre: proje bilgileri, ilgili taraflar, aşamalar, Ek II’deki özel riskler, asbest, tehlikeli maddeler, acil durum prosedürleri ve çalışma yeri düzeni.",
-    "blvc": "<strong>BLVC planı</strong> Şantiye çevresinde erişilebilirlik, yaşanabilirlik, güvenlik ve iletişim; aşamalandırma, trafik önlemleri ve iletişimle birlikte.",
-    "matrix": "<strong>Risk matrisi</strong> Riskleri 5×5 bir matriste olasılık ve şiddete göre değerlendirin ve en yüksek önceliklileri hemen görün.",
-    "maintenance": "<strong>Güvenli bakım</strong> Bouwbesluit md. 6.53 ve Arbobesluit md. 2.30’a göre bina bilgileri, kalıcı donanımlar ve bir kontrol listesi.",
-    "ifc": "<strong>IFC</strong> IFC modellerini içe ve dışa aktarın, yapılarını ve istatistiklerini inceleyin ve modeli doğrulayın."
-  },
-  "features": {
-    "title": "Özellikler",
-    "templates": {
-      "title": "Şablonlar",
-      "desc": "Bir plana boş bir belge yerine şablondan başlayın."
+  "hl": {
+    "template": {
+      "alt": "Yeni konut şablonu: tipik süre, kişi sayısı, dikkat noktaları ve seçili risk modülleri",
+      "kicker": "Şablonlar",
+      "title": "Boş bir sayfayla başlamayın",
+      "desc": "Konut ve yüksek binadan yıkım, altyapı ve su yapılarına kadar on şablon arasından seçin. Her şablon uygun risk modüllerini, o iş türüne özgü dikkat noktalarıyla birlikte hazırlar. Başlamadan önce modülleri seçin veya kaldırın."
     },
-    "legal": {
-      "title": "Yasal dayanak görünür",
-      "desc": "Her bölümün yanında hangi maddenin geçerli olduğunu ve planın ne zaman zorunlu olduğunu görürsünüz."
-    },
-    "hierarchy": {
-      "title": "Önlemler hiyerarşisi",
-      "desc": "Önlemler yasanın belirlediği sırayla: önce kaynak, sonra koruma ve sınırlama, kişisel koruyucu donanım en son."
+    "matrix": {
+      "alt": "Dört riskli 5'e 5 risk matrisi ve sağda olasılığı 4, şiddeti 5 olan ve üç önlemi bulunan bir risk",
+      "kicker": "Risk matrisi",
+      "title": "Hangi riskin önce ele alınacağını hemen görün",
+      "desc": "Her riski olasılık ve şiddete göre değerlendirin. Matris yeşilden koyu kırmızıya renklenir ve riski yerine koyar. Her risk için sorumlusu ve tarihiyle önlemler kaydedin."
     },
     "report": {
-      "title": "Rapor",
-      "desc": "Planı yazdırmak veya paylaşmak için bir rapora dönüştürün."
+      "alt": "Her risk modülü için puan, risk, olasılık ve şiddet tablosuyla İSG planı rapor önizlemesi",
+      "kicker": "Rapor",
+      "title": "Yazdırıp paylaşabileceğiniz bir plan",
+      "desc": "Tek tıkla İSG planınız düzenli bir rapora dönüşür: kapak sayfası, özel riskler ve her modül için riskler ve önlemleri. Yazdırın veya proje dosyası için PDF olarak kaydedin."
+    },
+    "blvc": {
+      "alt": "Hayali bir konut projesi için doldurulmuş, erişilebilirlik, yaşanabilirlik, güvenlik ve iletişim sekmeli BLVC planı",
+      "kicker": "BLVC planı",
+      "title": "Çevreyi erişilebilir ve bilgilendirilmiş tutun",
+      "desc": "Kamusal alanda çalışıyorsanız her harf için ne düzenlediğinizi açıklayın: trafik yönlendirmesi ve acil servisler, gürültü ve toz, çit ve işaretler, komşuların nasıl bilgi ve irtibat kişisi alacağı."
+    },
+    "maintenance": {
+      "alt": "On maddelik güvenli bakım kontrol listesi, beşi açıklamayla işaretli, sağda yasal dayanak",
+      "kicker": "Güvenli bakım",
+      "title": "Daha sonra güvenle bakımı yapılabilecek bir bina",
+      "desc": "On maddelik bir kontrol listesiyle çatı, cephe, oluklar, tesisatlar ve asansöre güvenle ulaşılabildiğini kontrol edin. Ankraj noktaları ve korkuluklar gibi sabit donanımların muayene tarihi ve durumuyla kaydını tutun."
     }
   },
-  "cta": {
-    "demo": "Canlı demoyu görüntüle"
+  "notice": {
+    "text": "Test sürümü: girdiğiniz bilgiler henüz kaydedilmiyor. Planınızı tek seferde bitirin ve yazdırın ya da PDF olarak kaydedin."
+  },
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "vg": "İSG planı",
+    "risk": "Riskler",
+    "blvc": "BLVC planı",
+    "maintenance": "Güvenli bakım",
+    "all": "Tüm özellikler"
+  },
+  "f": {
+    "templates": {
+      "title": "On şablon",
+      "desc": "Konut, renovasyon, ticari yapı, yüksek bina, yıkım, altyapı, endüstriyel yapı, su yapıları, tesisat ve temel işleri."
+    },
+    "modules": {
+      "title": "20 risk modülü",
+      "desc": "Yüksekten düşme ve kazıdan asbest, yangın ve kapalı alanlara kadar, riskleri ve önlemleri doldurulmuş."
+    },
+    "hierarchy": {
+      "title": "Kanundaki sırayla önlemler",
+      "desc": "Önce kaynakta, sonra teknik ve organizasyonel, en son kişisel koruyucu donanım."
+    },
+    "annex": {
+      "title": "Özel riskler",
+      "desc": "Avrupa şantiye direktifinin II. ekindeki on risk, şablon tarafından sizin için önceden işaretlenir."
+    },
+    "project": {
+      "title": "Proje ve taraflar",
+      "desc": "Proje bilgileri, işveren, tasarım ve uygulama İSG koordinatörleri ve yükleniciler."
+    },
+    "phase": {
+      "title": "Tasarım veya uygulama aşaması",
+      "desc": "Planı içinde bulunduğunuz aşama için hazırlayın; rapor aşamayı devralır."
+    },
+    "asbestos": {
+      "title": "Asbest",
+      "desc": "Asbest olup olmadığını belirtin ve asbest envanterine atıf yapın."
+    },
+    "emergency": {
+      "title": "Acil durum prosedürleri",
+      "desc": "Acil müdahale ekibi, ilk yardım noktası, kaçış yolu, acil numara ve toplanma yeri."
+    },
+    "worksite": {
+      "title": "Şantiye düzeni",
+      "desc": "Şantiye düzeni, malzeme depolama ve atık yönetimi."
+    },
+    "law": {
+      "title": "Yanında yasal dayanak",
+      "desc": "Her bölümde hangi maddenin geçerli olduğunu ve İSG planının ne zaman zorunlu olduğunu görürsünüz."
+    },
+    "report": {
+      "title": "Raporu yazdırın veya PDF kaydedin",
+      "desc": "Yakınlaştırmalı önizleme, yeni pencerede açma ve yazdırma."
+    },
+    "matrix": {
+      "title": "5 × 5 risk matrisi",
+      "desc": "Olasılık çarpı şiddet, çok düşükten çok yükseğe beş seviyede 1 ile 25 arası bir puan verir."
+    },
+    "categories": {
+      "title": "18 risk kategorisi",
+      "desc": "Düşen nesneler ve elektrikten titreşim, boğulma ve hava koşullarına kadar."
+    },
+    "measures": {
+      "title": "Her risk için önlemler",
+      "desc": "Önlem türü, açıklama, sorumlu kişi ve tarih."
+    },
+    "access": {
+      "title": "Erişilebilirlik",
+      "desc": "Trafik yönlendirmesi, konut ve işyerlerine erişim, acil servisler, toplu taşıma ve otopark."
+    },
+    "livability": {
+      "title": "Yaşanabilirlik",
+      "desc": "Gürültü, toz, titreşim, çalışma saatleri ve çevre kalitesi."
+    },
+    "public": {
+      "title": "Çevre güvenliği",
+      "desc": "Halk için riskler, trafik güvenliği, bariyerler, işaretler ve şantiye çitleri."
+    },
+    "comms": {
+      "title": "İletişim",
+      "desc": "Komşular için bilgilendirme, irtibat kişisi, şikâyet prosedürü ve bültenler."
+    },
+    "building": {
+      "title": "Bina bilgileri",
+      "desc": "Bina türü, yapım yılı, kat sayısı ve çatı türü."
+    },
+    "checklist": {
+      "title": "On maddelik kontrol listesi",
+      "desc": "Düşme koruması, cephe, oluklar, çatı pencereleri, cam temizliği, tesisatlar, asansör, asbest ve taşıma kapasitesi, her biri açıklamalı."
+    },
+    "facilities": {
+      "title": "Donanım kaydı",
+      "desc": "Ankraj noktaları, korkuluklar, çatı kenarı koruması ve cephe tesisatları; konum, muayene tarihleri ve durumla."
+    },
+    "browser": {
+      "title": "Tarayıcıda",
+      "desc": "Kurulum ve hesap yok: uygulamayı açın ve başlayın."
+    },
+    "lang": {
+      "title": "Felemenkçe ve İngilizce",
+      "desc": "İki dilde arayüz, açık ve koyu tema ile."
+    }
+  },
+  "features": {
+    "label": "Özellikler",
+    "heading": "Projeniz için tüm güvenlik planları tek bir yerde",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "whatsnew": {
+    "ctaDemo": "Tarayıcıda deneyin",
+    "items": {
+      "templates": {
+        "title": "On şablon",
+        "desc": "Her yapı türü için; tipik süre, kişi sayısı ve dikkat noktalarıyla."
+      },
+      "modules": {
+        "title": "20 risk modülü",
+        "desc": "Olasılık, şiddet ve önlemleriyle kullanıma hazır 37 risk."
+      },
+      "report": {
+        "title": "İSG raporu",
+        "desc": "Kapak sayfası, özel riskler ve her modül için tablo; yazdırılabilir veya PDF."
+      },
+      "annex": {
+        "title": "Özel riskler önceden dolu",
+        "desc": "Şablon, işe ait özel riskleri işaretler."
+      },
+      "web": {
+        "title": "Çevrimiçi deneyin",
+        "desc": "Uygulama kurulum veya hesap olmadan tarayıcıda çalışır."
+      }
+    },
+    "label": "v0.1 sürümünde yeni",
+    "title": "Şablonlar ve bir <span>rapor</span>",
+    "desc": "İlk sürüm yayında. Bir İSG planına şablondan başlarsınız ve onu yazdırılabilir bir rapora dönüştürürsünüz."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "Henüz hiçbiri. Bir plana şablondan başlarsınız veya kendiniz doldurursunuz. Dosya açma ve IFC modeli okuma sonraki bir sürümde gelecek."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Hayır. Open Safety Studio hesap gerektirmeden tarayıcıda çalışır. Windows, macOS ve Linux için bir masaüstü uygulaması hazırlanıyor ancak henüz indirilemiyor."
+    },
+    "price": {
+      "q": "Open Safety Studio ne kadar?",
+      "a": "Hiçbir şey. Uygulama ücretsizdir; hesap veya abonelik gerekmez."
+    },
+    "save": {
+      "q": "Çalışmam hangi biçimde kaydedilir?",
+      "a": "Henüz değil: bu test sürümünde girdileriniz yalnızca pencere açık kaldığı sürece durur. Planı bitirin ve raporu Yazdır üzerinden PDF olarak kaydedin. Proje dosyası olarak kaydetme sonraki bir sürümde gelecek."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows, macOS ve Linux'ta her modern tarayıcıda. Uygulama büyük ekran için tasarlanmıştır."
+    },
+    "practice": {
+      "q": "Hollanda uygulamasına uygun mu?",
+      "a": "Evet. İSG planı Hollanda Arbobesluit'in 2.28. maddesini izler, özel riskler Avrupa şantiye direktifinin II. ekinden gelir ve güvenli bakım kontrol listesi Bouwbesluit'e ve Arbobesluit'in 2.30. maddesine atıf yapar. Önlemler önleme hiyerarşisine göre sıralanır."
+    },
+    "required": {
+      "q": "İSG planı ne zaman zorunludur?",
+      "a": "Ek II'deki özel bir risk içeren işlerde ya da iş aynı anda 20'den fazla kişiyle 30 iş gününden uzun sürüyorsa veya 500 adam-günü aşıyorsa. Uygulama bunu planın yanında gösterir."
+    },
+    "coordinator": {
+      "q": "İSG koordinatörünün yerini alır mı?",
+      "a": "Hayır. Şablonlar sağlam bir başlangıç sağlar, ancak bu proje için hangi risk ve önlemlerin geçerli olduğuna koordinatör karar verir ve plandan sorumlu olmaya devam eder."
+    },
+    "ifc": {
+      "q": "IFC modelleriyle çalışır mı?",
+      "a": "Henüz değil. Bir IFC sekmesi var, ancak model içe aktarma, dışa aktarma ve denetleme sonraki bir sürümde gelecek."
+    },
+    "heading": "Sık sorulan sorular"
+  },
+  "tech": {
+    "react": {
+      "title": "React 19 ve TypeScript",
+      "desc": "Formlar, matris ve rapor dahil tüm arayüz."
+    },
+    "vite": {
+      "title": "Vite",
+      "desc": "open-safety-studio.open-aec.com'daki web sürümü için hızlı derleme."
+    },
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "Hazırlanan masaüstü uygulaması için Rust ile ince yerel kabuk."
+    },
+    "data": {
+      "title": "Veri olarak şablonlar",
+      "desc": "Şablonlar ve risk modülleri kodda tipli veri olarak durur, kolayca genişletilir."
+    },
+    "print": {
+      "title": "HTML rapor",
+      "desc": "Rapor, tarayıcının yazdırdığı veya PDF olarak kaydettiği bağımsız bir HTML belgesidir."
+    },
+    "shell": {
+      "title": "OpenAEC kabuğu",
+      "desc": "Tüm OpenAEC uygulamalarındaki gibi şerit, temalar ve çeviriler (i18next)."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster"
   }
 }

@@ -1,44 +1,269 @@
 {
   "header": {
-    "label": "Seguridad en obra",
     "title": "Open <span class=\"accent\">Safety</span> Studio",
-    "desc": "Software de código abierto para planes de seguridad en la construcción: plan de seguridad y salud, plan BLVC, matriz de riesgos y mantenimiento seguro, siempre con la base legal al lado.",
-    "badge": "Beta"
+    "demoBtn": "Abrir en el navegador",
+    "featuresBtn": "Ver las funciones",
+    "proof1": "Arbobesluit · Bouwbesluit (Países Bajos)",
+    "proof2": "10 plantillas · 20 módulos de riesgo",
+    "proof3": "Funciona en el navegador",
+    "proof4": "Neerlandés e inglés",
+    "proof5": "Gratis · sin cuenta",
+    "heroAlt": "Open Safety Studio: plan de seguridad y salud para viviendas de obra nueva, con los riesgos de caída en altura y sus medidas en origen, técnicas, organizativas y EPI, y la base legal a la derecha",
+    "label": "Seguridad en obra",
+    "tagline": "Un plan de seguridad y salud en minutos en lugar de días",
+    "desc": "Elige una plantilla para tu tipo de obra y empiezas con los riesgos y medidas que le corresponden. Valora los riesgos en una matriz, rellena el plan BLVC y la lista de control de mantenimiento seguro, y ve siempre qué artículo de ley se aplica.",
+    "contactBtn": "Contáctanos"
   },
-  "why": {
-    "title": "¿Por qué Open <span class=\"accent\">Safety</span> Studio?",
-    "desc": "La seguridad en la obra no es un lujo, sino una obligación. Un plan de seguridad y salud o un plan BLVC todavía se prepara a menudo en archivos de Word y hojas de cálculo sueltos, una y otra vez.",
-    "desc2": "Open Safety Studio reúne las partes que exige la ley, muestra qué artículo se aplica a cada tema y lo convierte en un informe. Gratis y de código abierto."
+  "meta": {
+    "description": "Aplicación gratuita en el navegador para planes de seguridad en obra: plan de seguridad y salud a partir de una plantilla, matriz de riesgos, plan BLVC y lista de control de mantenimiento seguro, con la base legal al lado y un informe para imprimir.",
+    "title": "Open Safety Studio — OpenAEC Foundation"
   },
-  "modules": {
-    "title": "Cinco módulos",
-    "desc": "Cada módulo es una pestaña propia en la aplicación, con el marco legal en la barra lateral.",
-    "vg": "<strong>Plan de seguridad y salud</strong> Según el Arbobesluit neerlandés, art. 2.28: datos del proyecto, partes implicadas, fases, riesgos especiales del anexo II, amianto, sustancias peligrosas, procedimientos de emergencia y organización del puesto de trabajo.",
-    "blvc": "<strong>Plan BLVC</strong> Accesibilidad, habitabilidad, seguridad y comunicación alrededor de la obra, con fases, medidas de tráfico y comunicación.",
-    "matrix": "<strong>Matriz de riesgos</strong> Evalúa los riesgos por probabilidad y gravedad en una matriz 5×5 y ve al instante cuáles tienen mayor prioridad.",
-    "maintenance": "<strong>Mantenimiento seguro</strong> Información del edificio, instalaciones permanentes y una lista de comprobación según el Bouwbesluit, art. 6.53, y el Arbobesluit, art. 2.30.",
-    "ifc": "<strong>IFC</strong> Importa y exporta modelos IFC, consulta su estructura y estadísticas y valida el modelo."
-  },
-  "features": {
-    "title": "Funcionalidades",
-    "templates": {
-      "title": "Plantillas",
-      "desc": "Empieza un plan desde una plantilla en lugar de un documento en blanco."
+  "hl": {
+    "template": {
+      "alt": "Plantilla de vivienda de obra nueva con duración típica, número de personas, puntos de atención y módulos de riesgo marcados",
+      "kicker": "Plantillas",
+      "title": "No empieces con una página en blanco",
+      "desc": "Elige entre diez plantillas, desde vivienda y edificios en altura hasta demolición, obra civil y obras hidráulicas. Cada plantilla prepara los módulos de riesgo adecuados, con puntos de atención para ese tipo de trabajo. Marca o desmarca módulos antes de empezar."
     },
-    "legal": {
-      "title": "Base legal a la vista",
-      "desc": "Junto a cada parte ves qué artículo se aplica y cuándo es obligatorio un plan."
-    },
-    "hierarchy": {
-      "title": "Jerarquía de medidas",
-      "desc": "Las medidas en el orden que fija la ley: primero la fuente, luego protección y limitación, los equipos de protección individual al final."
+    "matrix": {
+      "alt": "Matriz de riesgos de 5 por 5 con cuatro riesgos y, a la derecha, un riesgo con probabilidad 4, gravedad 5 y tres medidas",
+      "kicker": "Matriz de riesgos",
+      "title": "Ve al instante qué riesgo requiere atención primero",
+      "desc": "Valora cada riesgo por probabilidad y gravedad. La matriz va del verde al rojo oscuro y coloca el riesgo en su sitio. Registra medidas para cada riesgo, con un responsable y una fecha."
     },
     "report": {
-      "title": "Informe",
-      "desc": "Convierte el plan en un informe para imprimir o compartir."
+      "alt": "Vista previa del informe del plan de seguridad y salud con una tabla de puntuación, riesgo, probabilidad y gravedad por módulo de riesgo",
+      "kicker": "Informe",
+      "title": "Un plan que puedes imprimir y compartir",
+      "desc": "Con un clic tu plan de seguridad y salud se convierte en un informe limpio: portada, riesgos especiales y, por módulo, los riesgos con sus medidas. Imprímelo o guárdalo como PDF para el expediente del proyecto."
+    },
+    "blvc": {
+      "alt": "Plan BLVC con las pestañas accesibilidad, habitabilidad, seguridad y comunicación, rellenado para un proyecto de viviendas ficticio",
+      "kicker": "Plan BLVC",
+      "title": "Mantén el barrio accesible e informado",
+      "desc": "Si trabajas en el espacio público, describe por cada letra lo que organizas: desvíos de tráfico y servicios de emergencia, ruido y polvo, vallado y señalización, y cómo reciben los vecinos información y una persona de contacto."
+    },
+    "maintenance": {
+      "alt": "Lista de control de mantenimiento seguro con diez puntos, cinco marcados con una nota, y la base legal a la derecha",
+      "kicker": "Mantenimiento seguro",
+      "title": "Un edificio que después se pueda mantener con seguridad",
+      "desc": "Comprueba con una lista de diez puntos que la cubierta, la fachada, los canalones, las instalaciones y el ascensor son accesibles con seguridad. Lleva un registro de los elementos fijos, como puntos de anclaje y barandillas, con fecha de inspección y estado."
     }
   },
-  "cta": {
-    "demo": "Ver demo en vivo"
+  "notice": {
+    "text": "Versión de prueba: lo que introduces aún no se guarda. Termina tu plan de una vez e imprímelo o guárdalo como PDF."
+  },
+  "subnav": {
+    "label": "En esta página",
+    "features": "Funciones",
+    "whatsnew": "Novedades",
+    "faq": "Preguntas"
+  },
+  "tabs": {
+    "highlights": "Destacados",
+    "vg": "Plan de seguridad y salud",
+    "risk": "Riesgos",
+    "blvc": "Plan BLVC",
+    "maintenance": "Mantenimiento seguro",
+    "all": "Todas las funciones"
+  },
+  "f": {
+    "templates": {
+      "title": "Diez plantillas",
+      "desc": "Vivienda, rehabilitación, terciario, edificios en altura, demolición, obra civil, industrial, obras hidráulicas, instalaciones y cimentaciones."
+    },
+    "modules": {
+      "title": "20 módulos de riesgo",
+      "desc": "De caídas en altura y excavaciones a amianto, incendio y espacios confinados, con riesgos y medidas ya rellenados."
+    },
+    "hierarchy": {
+      "title": "Medidas en el orden de la ley",
+      "desc": "Primero en origen, luego técnicas y organizativas, los equipos de protección individual en último lugar."
+    },
+    "annex": {
+      "title": "Riesgos especiales",
+      "desc": "Los diez riesgos del anexo II de la directiva europea de obras, ya marcados por la plantilla."
+    },
+    "project": {
+      "title": "Proyecto y partes",
+      "desc": "Datos del proyecto, promotor, coordinadores de seguridad y salud de diseño y ejecución, y contratistas."
+    },
+    "phase": {
+      "title": "Fase de diseño o de ejecución",
+      "desc": "Haz el plan para la fase en la que estás; el informe recoge la fase."
+    },
+    "asbestos": {
+      "title": "Amianto",
+      "desc": "Indica si hay amianto y remite al inventario de amianto."
+    },
+    "emergency": {
+      "title": "Procedimientos de emergencia",
+      "desc": "Equipo de emergencia, botiquín, ruta de evacuación, número de emergencia y punto de reunión."
+    },
+    "worksite": {
+      "title": "Organización de la obra",
+      "desc": "Organización de la obra, almacenamiento de materiales y gestión de residuos."
+    },
+    "law": {
+      "title": "Base legal al lado",
+      "desc": "En cada apartado ves qué artículo se aplica y cuándo es obligatorio un plan de seguridad y salud."
+    },
+    "report": {
+      "title": "Imprimir el informe o guardarlo en PDF",
+      "desc": "Vista previa con zoom, abrir en una ventana nueva e imprimir."
+    },
+    "matrix": {
+      "title": "Matriz de riesgos 5 × 5",
+      "desc": "Probabilidad por gravedad da una puntuación de 1 a 25, en cinco niveles de muy bajo a muy alto."
+    },
+    "categories": {
+      "title": "18 categorías de riesgo",
+      "desc": "De caída de objetos y electricidad a vibraciones, ahogamiento y condiciones meteorológicas."
+    },
+    "measures": {
+      "title": "Medidas por riesgo",
+      "desc": "Tipo de medida, descripción, responsable y fecha."
+    },
+    "access": {
+      "title": "Accesibilidad",
+      "desc": "Desvíos de tráfico, acceso a viviendas y empresas, servicios de emergencia, transporte público y aparcamiento."
+    },
+    "livability": {
+      "title": "Habitabilidad",
+      "desc": "Ruido, polvo, vibraciones, horario de trabajo y calidad del entorno."
+    },
+    "public": {
+      "title": "Seguridad en el entorno",
+      "desc": "Riesgos para el público, seguridad vial, vallas, señalización y cerramiento de obra."
+    },
+    "comms": {
+      "title": "Comunicación",
+      "desc": "Información para vecinos, persona de contacto, procedimiento de quejas y boletines."
+    },
+    "building": {
+      "title": "Información del edificio",
+      "desc": "Tipo de edificio, año de construcción, número de plantas y tipo de cubierta."
+    },
+    "checklist": {
+      "title": "Lista de control de diez puntos",
+      "desc": "Protección anticaídas, fachada, canalones, lucernarios, limpieza de cristales, instalaciones, ascensor, amianto y capacidad portante, cada uno con una nota."
+    },
+    "facilities": {
+      "title": "Registro de elementos",
+      "desc": "Puntos de anclaje, barandillas, protección de borde de cubierta e instalaciones de fachada, con ubicación, fechas de inspección y estado."
+    },
+    "browser": {
+      "title": "En el navegador",
+      "desc": "Sin instalación ni cuenta: abre la aplicación y empieza."
+    },
+    "lang": {
+      "title": "Neerlandés e inglés",
+      "desc": "La interfaz en dos idiomas, con un tema claro y uno oscuro."
+    }
+  },
+  "features": {
+    "label": "Funciones",
+    "heading": "Todos los planes de seguridad de tu obra en un solo lugar",
+    "sub": "Empieza por lo más destacado o elige un tema.",
+    "tabsLabel": "Funciones por tema"
+  },
+  "whatsnew": {
+    "ctaDemo": "Pruébalo en el navegador",
+    "items": {
+      "templates": {
+        "title": "Diez plantillas",
+        "desc": "Uno por tipo de obra, con duración típica, número de personas y puntos de atención."
+      },
+      "modules": {
+        "title": "20 módulos de riesgo",
+        "desc": "37 riesgos con probabilidad, gravedad y medidas, listos para usar."
+      },
+      "report": {
+        "title": "Informe de seguridad y salud",
+        "desc": "Portada, riesgos especiales y una tabla por módulo, para imprimir o en PDF."
+      },
+      "annex": {
+        "title": "Riesgos especiales ya marcados",
+        "desc": "La plantilla marca los riesgos especiales propios del trabajo."
+      },
+      "web": {
+        "title": "Pruébalo en línea",
+        "desc": "La aplicación funciona en el navegador, sin instalación ni cuenta."
+      }
+    },
+    "label": "Novedades de la v0.1",
+    "title": "Plantillas y un <span>informe</span>",
+    "desc": "La primera versión está en línea. Empiezas un plan de seguridad y salud desde una plantilla y lo conviertes en un informe para imprimir."
+  },
+  "faq": {
+    "files": {
+      "q": "¿Qué archivos puedo abrir?",
+      "a": "Ninguno por ahora. Empiezas un plan desde una plantilla o lo rellenas tú mismo. Abrir archivos y leer un modelo IFC llegarán en una versión posterior."
+    },
+    "install": {
+      "q": "¿Tengo que instalar algo?",
+      "a": "No. Open Safety Studio funciona en el navegador, sin cuenta. Hay una aplicación de escritorio para Windows, macOS y Linux en preparación, pero aún no se puede descargar."
+    },
+    "price": {
+      "q": "¿Cuánto cuesta Open Safety Studio?",
+      "a": "Nada. La aplicación es gratuita, sin cuenta ni suscripción."
+    },
+    "save": {
+      "q": "¿En qué formato se guarda mi trabajo?",
+      "a": "Todavía no: en esta versión de prueba lo que introduces solo se mantiene mientras la ventana está abierta. Termina el plan y guarda el informe como PDF con Imprimir. Guardar como archivo de proyecto llegará en una versión posterior."
+    },
+    "systems": {
+      "q": "¿En qué sistemas funciona?",
+      "a": "En cualquier navegador moderno en Windows, macOS y Linux. La aplicación está pensada para una pantalla grande."
+    },
+    "practice": {
+      "q": "¿Se ajusta a la práctica neerlandesa?",
+      "a": "Sí. El plan de seguridad y salud sigue el artículo 2.28 del Arbobesluit neerlandés, los riesgos especiales proceden del anexo II de la directiva europea de obras y la lista de mantenimiento seguro remite al Bouwbesluit y al artículo 2.30 del Arbobesluit. Las medidas siguen la jerarquía de prevención."
+    },
+    "required": {
+      "q": "¿Cuándo es obligatorio un plan de seguridad y salud?",
+      "a": "En trabajos con un riesgo especial del anexo II, o si la obra dura más de 30 días laborables con más de 20 personas a la vez, o supera las 500 jornadas. La aplicación lo muestra junto al plan."
+    },
+    "coordinator": {
+      "q": "¿Sustituye al coordinador de seguridad y salud?",
+      "a": "No. Las plantillas dan un buen punto de partida, pero el coordinador valora qué riesgos y medidas se aplican a este proyecto y sigue siendo responsable del plan."
+    },
+    "ifc": {
+      "q": "¿Funciona con modelos IFC?",
+      "a": "Todavía no. Hay una pestaña IFC, pero importar, exportar y comprobar un modelo llegarán en una versión posterior."
+    },
+    "heading": "Preguntas frecuentes"
+  },
+  "tech": {
+    "react": {
+      "title": "React 19 y TypeScript",
+      "desc": "Toda la interfaz, con los formularios, la matriz y el informe."
+    },
+    "vite": {
+      "title": "Vite",
+      "desc": "Compilación rápida para la versión web en open-safety-studio.open-aec.com."
+    },
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "Una capa nativa ligera en Rust para la aplicación de escritorio en preparación."
+    },
+    "data": {
+      "title": "Plantillas como datos",
+      "desc": "Las plantillas y los módulos de riesgo son datos tipados en el código, fáciles de ampliar."
+    },
+    "print": {
+      "title": "Informe en HTML",
+      "desc": "El informe es un documento HTML autónomo que el navegador imprime o guarda como PDF."
+    },
+    "shell": {
+      "title": "Interfaz OpenAEC",
+      "desc": "Cinta, temas y traducciones (i18next) como en todas las aplicaciones OpenAEC."
+    },
+    "heading": "Tecnología",
+    "sub": "Para quien quiera saber cómo está hecho."
+  },
+  "releases": {
+    "showAll": "Mostrar todas las versiones",
+    "showLess": "Mostrar solo las tres últimas"
   }
 }

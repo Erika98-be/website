@@ -1,44 +1,269 @@
 {
   "header": {
-    "label": "Sécurité sur chantier",
     "title": "Open <span class=\"accent\">Safety</span> Studio",
-    "desc": "Logiciel open source pour les plans de sécurité dans la construction : plan de sécurité et de santé, plan BLVC, matrice des risques et maintenance sûre, avec toujours la base légale à côté.",
-    "badge": "Bêta"
+    "demoBtn": "Ouvrir dans le navigateur",
+    "featuresBtn": "Voir les fonctions",
+    "proof1": "Arbobesluit · Bouwbesluit (Pays-Bas)",
+    "proof2": "10 modèles · 20 modules de risques",
+    "proof3": "Fonctionne dans le navigateur",
+    "proof4": "Néerlandais et anglais",
+    "proof5": "Gratuit · sans compte",
+    "heroAlt": "Open Safety Studio : plan de sécurité et de santé pour des logements neufs, avec les risques de chute de hauteur et leurs mesures à la source, techniques, organisationnelles et EPI, et la base légale à droite",
+    "label": "Sécurité sur les chantiers",
+    "tagline": "Un plan de sécurité et de santé en quelques minutes au lieu de plusieurs jours",
+    "desc": "Choisissez un modèle pour votre type d'ouvrage et vous partez des risques et des mesures qui l'accompagnent. Évaluez les risques dans une matrice, remplissez le plan BLVC et la liste de contrôle pour l'entretien en sécurité, et voyez toujours quel article de loi s'applique.",
+    "contactBtn": "Nous contacter"
   },
-  "why": {
-    "title": "Pourquoi Open <span class=\"accent\">Safety</span> Studio ?",
-    "desc": "La sécurité sur le chantier n’est pas un luxe mais une obligation. Un plan de sécurité et de santé ou un plan BLVC est encore souvent monté dans des fichiers Word et des tableurs séparés, à chaque fois.",
-    "desc2": "Open Safety Studio réunit les parties exigées par la loi, indique l’article applicable à chaque sujet et en fait un rapport. Gratuit et open source."
+  "meta": {
+    "description": "Application gratuite dans le navigateur pour les plans de sécurité de chantier : plan de sécurité et de santé à partir d'un modèle, matrice des risques, plan BLVC et liste de contrôle pour l'entretien en sécurité, avec la base légale à côté et un rapport à imprimer.",
+    "title": "Open Safety Studio — OpenAEC Foundation"
   },
-  "modules": {
-    "title": "Cinq modules",
-    "desc": "Chaque module est un onglet de l’application, avec le cadre légal dans la barre latérale.",
-    "vg": "<strong>Plan de sécurité et de santé</strong> Selon l’Arbobesluit néerlandais, art. 2.28 : données du projet, parties concernées, phases, risques particuliers de l’annexe II, amiante, substances dangereuses, procédures d’urgence et aménagement des postes de travail.",
-    "blvc": "<strong>Plan BLVC</strong> Accessibilité, qualité de vie, sécurité et communication autour du chantier, avec phasage, mesures de circulation et communication.",
-    "matrix": "<strong>Matrice des risques</strong> Évaluez les risques selon la probabilité et la gravité dans une matrice 5×5 et voyez aussitôt lesquels sont prioritaires.",
-    "maintenance": "<strong>Maintenance sûre</strong> Informations sur le bâtiment, équipements permanents et liste de contrôle selon le Bouwbesluit, art. 6.53, et l’Arbobesluit, art. 2.30.",
-    "ifc": "<strong>IFC</strong> Importez et exportez des modèles IFC, consultez leur structure et leurs statistiques et validez le modèle."
-  },
-  "features": {
-    "title": "Fonctionnalités",
-    "templates": {
-      "title": "Modèles",
-      "desc": "Commencez un plan à partir d’un modèle plutôt que d’un document vide."
+  "hl": {
+    "template": {
+      "alt": "Modèle Logements neufs avec durée type, nombre de personnes, points d'attention et modules de risques cochés",
+      "kicker": "Modèles",
+      "title": "Ne partez pas d'une page blanche",
+      "desc": "Choisissez parmi dix modèles, du logement et des immeubles de grande hauteur à la démolition, au génie civil et aux ouvrages hydrauliques. Chaque modèle prépare les modules de risques adaptés, avec les points d'attention propres à ce type de travaux. Cochez ou décochez des modules avant de commencer."
     },
-    "legal": {
-      "title": "Base légale visible",
-      "desc": "À côté de chaque partie, vous voyez l’article applicable et quand un plan est obligatoire."
-    },
-    "hierarchy": {
-      "title": "Hiérarchie des mesures",
-      "desc": "Les mesures dans l’ordre fixé par la loi : d’abord la source, puis la protection et la limitation, les équipements de protection individuelle en dernier."
+    "matrix": {
+      "alt": "Matrice des risques 5 × 5 avec quatre risques, et à droite un risque de probabilité 4, de gravité 5 avec trois mesures",
+      "kicker": "Matrice des risques",
+      "title": "Voyez tout de suite quel risque traiter en premier",
+      "desc": "Évaluez chaque risque selon sa probabilité et sa gravité. La matrice va du vert au rouge foncé et place le risque au bon endroit. Notez des mesures pour chaque risque, avec un responsable et une date."
     },
     "report": {
-      "title": "Rapport",
-      "desc": "Transformez le plan en rapport à imprimer ou à partager."
+      "alt": "Aperçu du rapport du plan de sécurité et de santé avec, pour chaque module de risques, un tableau score, risque, probabilité et gravité",
+      "kicker": "Rapport",
+      "title": "Un plan à imprimer et à partager",
+      "desc": "En un clic, votre plan de sécurité et de santé devient un rapport soigné : page de garde, risques particuliers et, par module, les risques avec leurs mesures. Imprimez-le ou enregistrez-le en PDF pour le dossier du projet."
+    },
+    "blvc": {
+      "alt": "Plan BLVC avec les onglets accessibilité, qualité de vie, sécurité et communication, rempli pour un projet de logements fictif",
+      "kicker": "Plan BLVC",
+      "title": "Gardez le quartier accessible et informé",
+      "desc": "Si vous travaillez sur l'espace public, décrivez pour chaque lettre ce que vous prévoyez : déviations et services de secours, bruit et poussière, clôtures et signalisation, et la façon dont les riverains reçoivent informations et interlocuteur."
+    },
+    "maintenance": {
+      "alt": "Liste de contrôle pour l'entretien en sécurité avec dix points, dont cinq cochés avec une remarque, et la base légale à droite",
+      "kicker": "Entretien en sécurité",
+      "title": "Un bâtiment qui pourra être entretenu en sécurité",
+      "desc": "Vérifiez avec une liste de dix points que la toiture, la façade, les gouttières, les installations et l'ascenseur sont accessibles en sécurité. Tenez un registre des équipements fixes comme les points d'ancrage et garde-corps, avec date d'inspection et état."
     }
   },
-  "cta": {
-    "demo": "Voir la démo en ligne"
+  "notice": {
+    "text": "Version de test : votre saisie n'est pas encore enregistrée. Terminez votre plan d'une traite et imprimez-le ou enregistrez-le en PDF."
+  },
+  "subnav": {
+    "label": "Sur cette page",
+    "features": "Fonctions",
+    "whatsnew": "Nouveautés",
+    "faq": "FAQ"
+  },
+  "tabs": {
+    "highlights": "Points forts",
+    "vg": "Plan de sécurité et de santé",
+    "risk": "Risques",
+    "blvc": "Plan BLVC",
+    "maintenance": "Entretien en sécurité",
+    "all": "Toutes les fonctions"
+  },
+  "f": {
+    "templates": {
+      "title": "Dix modèles",
+      "desc": "Logement, rénovation, tertiaire, grande hauteur, démolition, génie civil, industriel, ouvrages hydrauliques, installations techniques et fondations."
+    },
+    "modules": {
+      "title": "20 modules de risques",
+      "desc": "Des chutes de hauteur et terrassements à l'amiante, l'incendie et les espaces confinés, avec risques et mesures déjà remplis."
+    },
+    "hierarchy": {
+      "title": "Mesures dans l'ordre de la loi",
+      "desc": "D'abord à la source, puis techniques et organisationnelles, les équipements de protection individuelle en dernier."
+    },
+    "annex": {
+      "title": "Risques particuliers",
+      "desc": "Les dix risques de l'annexe II de la directive européenne chantiers, déjà cochés pour vous par le modèle."
+    },
+    "project": {
+      "title": "Projet et intervenants",
+      "desc": "Données du projet, maître d'ouvrage, coordinateurs sécurité et santé pour la conception et la réalisation, et entreprises."
+    },
+    "phase": {
+      "title": "Phase de conception ou de réalisation",
+      "desc": "Établissez le plan pour la phase en cours ; le rapport reprend la phase."
+    },
+    "asbestos": {
+      "title": "Amiante",
+      "desc": "Indiquez la présence d'amiante et renvoyez au repérage amiante."
+    },
+    "emergency": {
+      "title": "Procédures d'urgence",
+      "desc": "Équipe d'intervention, poste de secours, itinéraire d'évacuation, numéro d'urgence et point de rassemblement."
+    },
+    "worksite": {
+      "title": "Installation de chantier",
+      "desc": "Installation de chantier, stockage des matériaux et gestion des déchets."
+    },
+    "law": {
+      "title": "Base légale à côté",
+      "desc": "Pour chaque partie, vous voyez quel article s'applique et quand un plan de sécurité et de santé est obligatoire."
+    },
+    "report": {
+      "title": "Imprimer le rapport ou l'enregistrer en PDF",
+      "desc": "Aperçu avec zoom, ouverture dans une nouvelle fenêtre et impression."
+    },
+    "matrix": {
+      "title": "Matrice des risques 5 × 5",
+      "desc": "Probabilité fois gravité donne un score de 1 à 25, en cinq niveaux de très faible à très élevé."
+    },
+    "categories": {
+      "title": "18 catégories de risques",
+      "desc": "Des chutes d'objets et de l'électricité aux vibrations, à la noyade et aux conditions météo."
+    },
+    "measures": {
+      "title": "Mesures par risque",
+      "desc": "Type de mesure, description, responsable et date."
+    },
+    "access": {
+      "title": "Accessibilité",
+      "desc": "Déviations, accès aux logements et entreprises, services de secours, transports publics et stationnement."
+    },
+    "livability": {
+      "title": "Qualité de vie",
+      "desc": "Bruit, poussière, vibrations, horaires de travail et qualité de l'environnement."
+    },
+    "public": {
+      "title": "Sécurité aux abords",
+      "desc": "Risques pour le public, sécurité routière, barrières, signalisation et clôtures de chantier."
+    },
+    "comms": {
+      "title": "Communication",
+      "desc": "Information des riverains, personne de contact, procédure de réclamation et lettres d'information."
+    },
+    "building": {
+      "title": "Informations sur le bâtiment",
+      "desc": "Type de bâtiment, année de construction, nombre d'étages et type de toiture."
+    },
+    "checklist": {
+      "title": "Liste de contrôle en dix points",
+      "desc": "Protection antichute, façade, gouttières, lanterneaux, nettoyage des vitres, installations, ascenseur, amiante et portance, chacun avec une remarque."
+    },
+    "facilities": {
+      "title": "Registre des équipements",
+      "desc": "Points d'ancrage, garde-corps, protections de rive et installations de façade, avec emplacement, dates d'inspection et état."
+    },
+    "browser": {
+      "title": "Dans le navigateur",
+      "desc": "Ni installation ni compte : ouvrez l'application et commencez."
+    },
+    "lang": {
+      "title": "Néerlandais et anglais",
+      "desc": "L'interface en deux langues, avec un thème clair et un thème sombre."
+    }
+  },
+  "features": {
+    "label": "Fonctions",
+    "heading": "Tous les plans de sécurité de votre chantier au même endroit",
+    "sub": "Commencez par les points forts ou choisissez un thème.",
+    "tabsLabel": "Fonctions par thème"
+  },
+  "whatsnew": {
+    "ctaDemo": "Essayer dans le navigateur",
+    "items": {
+      "templates": {
+        "title": "Dix modèles",
+        "desc": "Un par type d'ouvrage, avec durée type, nombre de personnes et points d'attention."
+      },
+      "modules": {
+        "title": "20 modules de risques",
+        "desc": "37 risques avec probabilité, gravité et mesures, prêts à l'emploi."
+      },
+      "report": {
+        "title": "Rapport sécurité et santé",
+        "desc": "Page de garde, risques particuliers et un tableau par module, à imprimer ou en PDF."
+      },
+      "annex": {
+        "title": "Risques particuliers pré-remplis",
+        "desc": "Le modèle coche les risques particuliers liés aux travaux."
+      },
+      "web": {
+        "title": "À essayer en ligne",
+        "desc": "L'application fonctionne dans le navigateur, sans installation ni compte."
+      }
+    },
+    "label": "Nouveau dans la v0.1",
+    "title": "Des modèles et un <span>rapport</span>",
+    "desc": "La première version est en ligne. Vous commencez un plan de sécurité et de santé à partir d'un modèle et en faites un rapport à imprimer."
+  },
+  "faq": {
+    "files": {
+      "q": "Quels fichiers puis-je ouvrir ?",
+      "a": "Aucun pour l'instant. Vous commencez un plan à partir d'un modèle ou le remplissez vous-même. L'ouverture de fichiers et la lecture d'un modèle IFC arriveront dans une prochaine version."
+    },
+    "install": {
+      "q": "Dois-je installer quelque chose ?",
+      "a": "Non. Open Safety Studio fonctionne dans le navigateur, sans compte. Une application de bureau pour Windows, macOS et Linux est en préparation, mais pas encore téléchargeable."
+    },
+    "price": {
+      "q": "Combien coûte Open Safety Studio ?",
+      "a": "Rien. L'application est gratuite, sans compte ni abonnement."
+    },
+    "save": {
+      "q": "Dans quel format mon travail est-il enregistré ?",
+      "a": "Pas encore : dans cette version de test, votre saisie n'est conservée que tant que la fenêtre est ouverte. Terminez le plan et enregistrez le rapport en PDF via Imprimer. L'enregistrement en fichier de projet arrivera dans une prochaine version."
+    },
+    "systems": {
+      "q": "Sur quels systèmes fonctionne-t-il ?",
+      "a": "Dans tout navigateur récent sous Windows, macOS et Linux. L'application est conçue pour un grand écran."
+    },
+    "practice": {
+      "q": "Est-il adapté à la pratique néerlandaise ?",
+      "a": "Oui. Le plan de sécurité et de santé suit l'article 2.28 de l'Arbobesluit néerlandais, les risques particuliers proviennent de l'annexe II de la directive européenne chantiers et la liste pour l'entretien en sécurité renvoie au Bouwbesluit et à l'article 2.30 de l'Arbobesluit. Les mesures suivent la hiérarchie de prévention."
+    },
+    "required": {
+      "q": "Quand un plan de sécurité et de santé est-il obligatoire ?",
+      "a": "Pour des travaux présentant un risque particulier de l'annexe II, ou si les travaux durent plus de 30 jours ouvrables avec plus de 20 personnes en même temps, ou dépassent 500 hommes-jours. L'application l'affiche à côté du plan."
+    },
+    "coordinator": {
+      "q": "Remplace-t-il le coordinateur sécurité et santé ?",
+      "a": "Non. Les modèles offrent une base solide, mais le coordinateur juge quels risques et mesures s'appliquent à ce projet et reste responsable du plan."
+    },
+    "ifc": {
+      "q": "Fonctionne-t-il avec des modèles IFC ?",
+      "a": "Pas encore. Il existe un onglet IFC, mais l'import, l'export et la vérification d'un modèle arriveront dans une prochaine version."
+    },
+    "heading": "Questions fréquentes"
+  },
+  "tech": {
+    "react": {
+      "title": "React 19 et TypeScript",
+      "desc": "Toute l'interface, avec les formulaires, la matrice et le rapport."
+    },
+    "vite": {
+      "title": "Vite",
+      "desc": "Build rapide pour la version web sur open-safety-studio.open-aec.com."
+    },
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "Une fine enveloppe native en Rust pour l'application de bureau en préparation."
+    },
+    "data": {
+      "title": "Modèles sous forme de données",
+      "desc": "Les modèles et modules de risques sont des données typées dans le code, faciles à étendre."
+    },
+    "print": {
+      "title": "Rapport en HTML",
+      "desc": "Le rapport est un document HTML autonome que le navigateur imprime ou enregistre en PDF."
+    },
+    "shell": {
+      "title": "Interface OpenAEC",
+      "desc": "Ruban, thèmes et traductions (i18next) comme dans toutes les applications OpenAEC."
+    },
+    "heading": "Technologie",
+    "sub": "Pour ceux qui veulent savoir comment c'est construit."
+  },
+  "releases": {
+    "showAll": "Afficher toutes les versions",
+    "showLess": "Afficher seulement les trois dernières"
   }
 }
