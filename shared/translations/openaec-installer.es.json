@@ -1,70 +1,273 @@
 {
   "header": {
-    "label": "Todas las herramientas en un lugar",
     "title": "OpenAEC <span class=\"accent\">Installer</span>",
-    "desc": "El centro de las herramientas de construcción de código abierto de OpenAEC. Descubre, instala, actualiza e inicia todas las herramientas desde una sola aplicación, para Windows, macOS y Linux.",
-    "badge": "Beta"
+    "downloadBtn": "Descargar",
+    "featuresBtn": "Ver las funciones",
+    "sourceBtn": "Código fuente",
+    "proof2": "14 aplicaciones de escritorio · 5 herramientas web",
+    "proof3": "Neerlandés e inglés",
+    "proof4": "Gratis · CC BY-SA 4.0",
+    "heroAlt": "OpenAEC Installer: vista general con Actualizar todo, una actualización destacada de Open PDF Studio, filtros por estado y disciplina, y las tarjetas de las aplicaciones de escritorio",
+    "label": "Todas las herramientas en un solo lugar",
+    "tagline": "Instala, actualiza e inicia todas las aplicaciones de OpenAEC desde una sola aplicación",
+    "desc": "El Installer conoce todas las aplicaciones de la OpenAEC Foundation. Ve lo que hay en tu ordenador, instala la última versión con un clic y lo mantiene todo al día. Las herramientas web se abren en su propia pestaña."
   },
-  "download": {
-    "title": "Descargar",
-    "windows": "Instalador (.exe)",
-    "windowsMsi": "Paquete MSI (.msi)",
-    "macos": "Procesadores Apple e Intel (.dmg)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxAppimage": "Cualquier distribución (AppImage)"
+  "meta": {
+    "description": "Centro gratuito y de código abierto para todas las aplicaciones de OpenAEC: descubre, instala con un clic, actualiza con seguridad e inicia, con las herramientas web en pestañas. Para Windows, macOS y Linux.",
+    "title": "OpenAEC Installer — OpenAEC Foundation"
   },
-  "cta": {
-    "github": "Ver en GitHub"
+  "hl": {
+    "update": {
+      "alt": "Aplicaciones instaladas en el tema oscuro: Open Calc Studio y Open Planner Studio están al día, Open PDF Studio y Open Pointcloud Studio tienen una actualización, y Open Geotechniek Studio se está actualizando (64 %)",
+      "kicker": "Actualizaciones",
+      "title": "Siempre la última versión, sin buscar",
+      "desc": "Cada tarjeta muestra la versión que tienes y la que está lista. Un clic actualiza una aplicación, o todas a la vez. El Installer espera a que cierres la aplicación, para que no pierdas trabajo, y después la vuelve a iniciar."
+    },
+    "discover": {
+      "alt": "Catálogo en el tema Blueprint, filtrado por Engineering: tarjetas de Open PDF Studio, Open 2D Studio, Open CAD Studio, Open Calculations Studio, Open Geotechniek Studio y Open Speech Studio",
+      "kicker": "Descubrir",
+      "title": "Encuentra la aplicación que encaja con tu oficio",
+      "desc": "Todas las aplicaciones del ecosistema están en un solo catálogo, con una breve descripción y una imagen. Filtra por arquitectura, ingeniería, construcción o infraestructura, por lo que ya tienes o por actualizaciones, o busca por nombre."
+    },
+    "web": {
+      "alt": "OpenBooks abierto en una pestaña del Installer, junto a las pestañas del Catálogo, Open Planner Studio y Open PDF Studio",
+      "kicker": "Herramientas web",
+      "title": "Herramientas web en una pestaña, sin instalar nada",
+      "desc": "Las herramientas web y las versiones web de las aplicaciones de escritorio se abren en pestañas dentro del Installer. Cambia entre ellas sin perder tu sitio; tus pestañas vuelven a estar ahí la próxima vez. ¿Prefieres tu propio navegador? También se puede."
+    },
+    "look": {
+      "alt": "Ajustes en el tema oscuro, con la elección entre Claro, Oscuro, Blueprint, Alto contraste oscuro y Alto contraste claro, y el tamaño del texto",
+      "kicker": "Apariencia",
+      "title": "Con el estilo de todas las aplicaciones OpenAEC",
+      "desc": "Elige entre cinco temas, entre ellos Blueprint y dos de alto contraste, y entre tres tamaños de texto. El Installer habla neerlandés e inglés y sigue el idioma de tu ordenador."
+    }
   },
-  "why": {
-    "title": "¿Por qué OpenAEC <span class=\"accent\">Installer</span>?",
-    "desc": "El ecosistema OpenAEC tiene decenas de herramientas, cada una con su propio repositorio y sus propias versiones. Llevar tú mismo la cuenta de qué versión tienes y dónde está la más reciente lleva tiempo.",
-    "desc2": "El Installer lo hace por ti. Conoce todas las herramientas, ve lo que ya está en tu ordenador e instala con un clic la última versión oficial desde GitHub."
+  "subnav": {
+    "label": "En esta página",
+    "features": "Funciones",
+    "download": "Descargar",
+    "whatsnew": "Novedades",
+    "faq": "Preguntas",
+    "releases": "Versiones"
+  },
+  "tabs": {
+    "highlights": "Destacados",
+    "discover": "Descubrir",
+    "install": "Instalar e iniciar",
+    "update": "Actualizaciones",
+    "web": "Herramientas web",
+    "all": "Todas las funciones"
   },
   "features": {
-    "title": "Funcionalidades",
+    "learnMore": "Leer más",
+    "label": "Funciones",
+    "heading": "Todo el ecosistema OpenAEC, a mano",
+    "sub": "Empieza por lo más destacado o elige un tema.",
+    "tabsLabel": "Funciones por tema"
+  },
+  "f": {
     "catalog": {
-      "title": "Catálogo",
-      "desc": "Todas las herramientas de OpenAEC con descripción y categoría: aplicaciones de escritorio y herramientas web."
+      "title": "Un solo catálogo",
+      "desc": "Todas las aplicaciones de escritorio y herramientas web de OpenAEC, con descripción, imagen y fase (alfa, beta, en desarrollo)."
+    },
+    "filters": {
+      "title": "Filtrar por oficio y estado",
+      "desc": "Architecture, Engineering, Construction e Infraestructura, o solo lo que tienes o lo que tiene una actualización."
+    },
+    "search": {
+      "title": "Búsqueda",
+      "desc": "Busca por nombre, descripción o categoría."
+    },
+    "featured": {
+      "title": "Destacado",
+      "desc": "Arriba aparecen primero las aplicaciones con una versión nueva y después una selección fija del ecosistema."
+    },
+    "oneclick": {
+      "title": "Instalación con un clic",
+      "desc": "Descarga de GitHub el instalador oficial de la aplicación y lo inicia, en la versión adecuada para tu sistema."
     },
     "detect": {
-      "title": "Detección de instalaciones",
-      "desc": "Ve qué herramientas ya están instaladas y en qué versión. En Windows mediante el registro, en Linux mediante la carpeta AppImage gestionada."
-    },
-    "updates": {
-      "title": "Detección de actualizaciones",
-      "desc": "Compara la versión instalada con la última versión en GitHub y muestra dónde hay una actualización lista."
-    },
-    "install": {
-      "title": "Instalación con un clic",
-      "desc": "Descarga el instalador oficial desde GitHub Releases y lo ejecuta. Actualizar funciona igual."
+      "title": "Ve lo que tienes",
+      "desc": "Reconoce qué aplicaciones ya están instaladas y en qué versión, aunque las hayas instalado tú."
     },
     "launch": {
       "title": "Iniciar",
-      "desc": "Inicia las herramientas instaladas directamente desde el Installer."
+      "desc": "Inicia una aplicación instalada directamente desde su tarjeta."
     },
-    "webtabs": {
-      "title": "Herramientas web en pestañas",
-      "desc": "Las herramientas web y las versiones web de las aplicaciones de escritorio se abren en pestañas dentro del Installer. Las pestañas abiertas se recuerdan."
+    "linux": {
+      "title": "Linux sin permisos de administrador",
+      "desc": "En Linux, las aplicaciones van a tu propia carpeta como AppImage, con un acceso directo en el menú."
     },
-    "selfupdate": {
+    "versions": {
+      "title": "Versión junto a versión",
+      "desc": "Cada tarjeta muestra tu versión y la más reciente, por ejemplo v2026.43.2 → v2026.44.4."
+    },
+    "all": {
+      "title": "Actualizar todo",
+      "desc": "Actualiza de una vez todas las aplicaciones que tengan una actualización."
+    },
+    "silent": {
+      "title": "Actualizar sin perder trabajo",
+      "desc": "En Windows, el Installer descarga primero, espera a que cierres la aplicación, la actualiza en silencio y la vuelve a iniciar."
+    },
+    "sameSetup": {
+      "title": "El mismo tipo de instalación",
+      "desc": "Una aplicación instalada solo para ti o para todo el ordenador sigue así, de modo que nunca se instala dos veces."
+    },
+    "signed": {
+      "title": "Descargas verificadas",
+      "desc": "En las aplicaciones con firma digital, el Installer no inicia nada si la firma falta o no es correcta."
+    },
+    "appButton": {
+      "title": "Botón de actualizar en las aplicaciones",
+      "desc": "Las aplicaciones compatibles avisan ellas mismas de una versión nueva y dejan que el Installer haga la actualización."
+    },
+    "self": {
       "title": "Se actualiza solo",
-      "desc": "El Installer también comprueba su propia versión y se actualiza con un clic."
+      "desc": "En cada inicio, el Installer comprueba si hay una versión nueva de sí mismo; actualizar es un clic (Windows, y Linux con la AppImage)."
+    },
+    "feed": {
+      "title": "Rápido y sin límites",
+      "desc": "Las versiones de todas las aplicaciones llegan de una vez, sin chocar con el límite de GitHub."
+    },
+    "tabs": {
+      "title": "Herramientas web en pestañas",
+      "desc": "Open Energy Studio, OpenBooks y las demás herramientas web funcionan en una pestaña dentro del Installer."
+    },
+    "webDesktop": {
+      "title": "Versión web de las aplicaciones de escritorio",
+      "desc": "Si una aplicación de escritorio tiene versión web, pruébala primero en una pestaña."
+    },
+    "remember": {
+      "title": "Las pestañas siguen abiertas",
+      "desc": "Cambiar de pestaña conserva tu sitio, y tus pestañas vuelven en el siguiente inicio."
+    },
+    "browser": {
+      "title": "O en tu propio navegador",
+      "desc": "Cada herramienta web también se abre en tu navegador habitual, con un clic desde su tarjeta."
     },
     "themes": {
-      "title": "Cinco temas, dos idiomas",
-      "desc": "Con el estilo de OpenAEC y los temas claro, Forge, OpenAEC, Blueprint y alto contraste, en neerlandés e inglés."
+      "title": "Cinco temas",
+      "desc": "Claro, oscuro, Blueprint y dos de alto contraste, con el estilo de todas las aplicaciones OpenAEC."
+    },
+    "textSize": {
+      "title": "Tres tamaños de texto",
+      "desc": "Compacto, estándar o grande."
+    },
+    "lang": {
+      "title": "Neerlandés e inglés",
+      "desc": "Sigue el idioma de tu ordenador, o elige tú."
     }
   },
-  "tech": {
-    "title": "Tecnología",
-    "desc": "Hecho con Tauri 2: un backend en Rust que gestiona descargas, instalaciones y la comprobación de versiones, con una interfaz en React y TypeScript con el estilo de OpenAEC."
+  "download": {
+    "title": "Descargar v0.2.9",
+    "lead": "Gratis y sin cuenta. Para Windows, macOS y Linux.",
+    "forWindows": "Descargar para Windows",
+    "forMac": "Descargar para macOS",
+    "forLinux": "Descargar para Linux",
+    "metaWindows": "instalador .exe",
+    "metaMac": ".dmg universal, Intel y Apple Silicon",
+    "metaLinux": "AppImage, funciona en la mayoría de distribuciones",
+    "fileExe": "Instalador (.exe)",
+    "fileMsi": "Instalador (.msi)",
+    "fileDmg": ".dmg universal",
+    "fileDeb": ".deb",
+    "fileAppImage": "AppImage",
+    "fileSnap": "Snap",
+    "label": "Descargar",
+    "mobileNote": "OpenAEC Installer es una aplicación de escritorio. Descárgala en tu ordenador.",
+    "other": "Otras plataformas"
   },
-  "platforms": {
-    "title": "Por plataforma",
-    "desc": "El catálogo y las herramientas web funcionan en todas partes. Instalar y actualizar depende del sistema operativo.",
-    "win": "<strong>Windows</strong> Instala, actualiza e inicia mediante los instaladores oficiales de cada herramienta.",
-    "linux": "<strong>Linux</strong> Instalación mediante AppImage, sin permisos de administrador y con un acceso directo en el menú.",
-    "mac": "<strong>macOS</strong> El catálogo y las herramientas web funcionan; la instalación de aplicaciones de escritorio llegará más adelante."
+  "whatsnew": {
+    "ctaChangelog": "Todas las notas de versión",
+    "ctaDownload": "Descargar",
+    "items": {
+      "design": {
+        "title": "Nuevo diseño",
+        "desc": "El panel oscuro y los mosaicos de open-aec.com, con filtros por estado y oficio, una aplicación destacada y Actualizar todo."
+      },
+      "signed": {
+        "title": "Actualizaciones verificadas",
+        "desc": "Las aplicaciones con firma digital solo se actualizan si la firma es correcta."
+      },
+      "silent": {
+        "title": "Actualización silenciosa",
+        "desc": "En el mismo tipo de instalación, solo después de cerrar la aplicación, que luego vuelve a iniciarse. Ahora también para Open Pointcloud Studio."
+      },
+      "appButton": {
+        "title": "Botón de actualizar en las aplicaciones",
+        "desc": "El Installer indica a las aplicaciones qué versión está lista; su botón Actualizar deja que el Installer haga el trabajo."
+      },
+      "feed": {
+        "title": "Comprobación de versiones más rápida",
+        "desc": "Todas las versiones vienen de un solo resumen en lugar de GitHub aplicación por aplicación, así que ya no hay límite."
+      },
+      "calver": {
+        "title": "Comparación de versiones correcta",
+        "desc": "Una aplicación que registra su versión en Windows con un año corto ya no recibe una actualización falsa."
+      }
+    },
+    "label": "Novedades de la v0.2.9",
+    "title": "Nuevo aspecto, <span>actualizaciones más seguras</span>",
+    "desc": "El 29 y 30 de octubre salieron las versiones v0.2.5 a v0.2.9: un diseño nuevo, actualizaciones verificadas y silenciosas, un botón de actualizar en las aplicaciones y una comprobación de versiones más rápida."
+  },
+  "faq": {
+    "install": {
+      "q": "¿Tengo que instalar algo?",
+      "a": "Sí, el propio Installer: una pequeña aplicación de escritorio de unos 5 MB en Windows. Después instalas las demás aplicaciones desde el Installer. Las herramientas web no necesitan nada."
+    },
+    "price": {
+      "q": "¿Cuánto cuesta el OpenAEC Installer?",
+      "a": "Nada. El Installer es gratuito y de código abierto con la licencia CC BY-SA 4.0, sin cuenta ni suscripción. Las aplicaciones que instala también son gratuitas."
+    },
+    "systems": {
+      "q": "¿En qué sistemas funciona?",
+      "a": "Windows, macOS (Intel y Apple Silicon) y Linux (.deb, AppImage y Snap). Instalar, actualizar e iniciar aplicaciones funciona en Windows y Linux. En macOS funcionan el catálogo y las herramientas web; instalar aplicaciones todavía no es posible allí."
+    },
+    "apps": {
+      "q": "¿Qué aplicaciones puedo instalar con él?",
+      "a": "Catorce aplicaciones de escritorio, entre ellas Open PDF Studio, Open Planner Studio, Open Calc Studio, Open Geotechniek Studio, Open Pointcloud Studio y Monty IFC Viewer, y cinco herramientas web como Open Energy Studio y OpenBooks. Cuando se añade una aplicación, aparece en el catálogo tras una actualización del Installer."
+    },
+    "safe": {
+      "q": "¿De dónde vienen las descargas?",
+      "a": "Siempre de las versiones oficiales de la aplicación en GitHub. Si una aplicación incluye una firma digital, el Installer la comprueba durante la descarga y no inicia nada si falta o no es correcta."
+    },
+    "work": {
+      "q": "¿Pierdo trabajo cuando se actualiza una aplicación?",
+      "a": "No. Si la aplicación está abierta, el Installer te pide que la cierres y espera; nunca la cierra él mismo. Después de actualizar, la aplicación vuelve a iniciarse."
+    },
+    "admin": {
+      "q": "¿Necesito permisos de administrador?",
+      "a": "Normalmente no. El Installer se instala por usuario, y en Linux las aplicaciones van a tu propia carpeta. Solo una aplicación instalada para todo el ordenador pide permisos de administrador al actualizarse."
+    },
+    "heading": "Preguntas frecuentes"
+  },
+  "tech": {
+    "tauri": {
+      "desc": "Una pequeña aplicación nativa para Windows, macOS y Linux; Rust se encarga de las descargas, las comprobaciones y la instalación."
+    },
+    "react": {
+      "desc": "La interfaz, hecha con el paquete web del diseño OpenAEC 0.4: tokens, fuentes e iconos."
+    },
+    "releases": {
+      "desc": "Un solo feed de versiones para todas las aplicaciones, con la API de GitHub como respaldo y una caché de una hora."
+    },
+    "minisign": {
+      "title": "Firmas minisign",
+      "desc": "Un latest.json firmado por aplicación, en el mismo formato que el Tauri updater, con un kit de publicación para las aplicaciones."
+    },
+    "windows": {
+      "desc": "Detección mediante el registro, actualizaciones silenciosas en el mismo tipo de instalador, por usuario o para todo el ordenador."
+    },
+    "linux": {
+      "desc": "Una carpeta gestionada en ~/.local/share con entradas de menú según el estándar XDG, sin permisos de administrador."
+    },
+    "heading": "Tecnología",
+    "sub": "Para quien quiera saber cómo está hecho."
+  },
+  "releases": {
+    "showAll": "Mostrar todas las versiones",
+    "showLess": "Mostrar solo las tres últimas",
+    "github": "Todas las versiones en GitHub"
   }
 }

@@ -1,70 +1,273 @@
 {
   "header": {
-    "label": "Tüm araçlar tek yerde",
     "title": "OpenAEC <span class=\"accent\">Installer</span>",
-    "desc": "OpenAEC’in açık kaynak inşaat yazılımları için merkezi uygulama. Tüm araçları tek bir uygulamadan keşfedin, kurun, güncelleyin ve başlatın; Windows, macOS ve Linux için.",
-    "badge": "Beta"
+    "downloadBtn": "İndir",
+    "featuresBtn": "Özellikleri gör",
+    "sourceBtn": "Kaynak kodu",
+    "proof2": "14 masaüstü uygulaması · 5 web aracı",
+    "proof3": "Felemenkçe ve İngilizce",
+    "proof4": "Ücretsiz · CC BY-SA 4.0",
+    "heroAlt": "OpenAEC Installer: Tümünü güncelle, öne çıkan Open PDF Studio güncellemesi, durum ve disipline göre filtreler ve masaüstü uygulama kartlarıyla genel bakış",
+    "label": "Tüm araçlar tek yerde",
+    "tagline": "Tüm OpenAEC uygulamalarını tek bir uygulamadan kurun, güncelleyin ve başlatın",
+    "desc": "Installer, OpenAEC Foundation'ın tüm uygulamalarını tanır. Bilgisayarınızda neyin kurulu olduğunu görür, en yeni sürümü tek tıkla kurar ve her şeyi güncel tutar. Web araçları kendi sekmelerinde açılır."
   },
-  "download": {
-    "title": "İndir",
-    "windows": "Yükleyici (.exe)",
-    "windowsMsi": "MSI paketi (.msi)",
-    "macos": "Apple ve Intel işlemciler (.dmg)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxAppimage": "Her dağıtım (AppImage)"
+  "meta": {
+    "description": "Tüm OpenAEC uygulamaları için ücretsiz, açık kaynaklı merkez: keşfedin, tek tıkla kurun, güvenle güncelleyin ve başlatın; web araçları sekmelerde açılır. Windows, macOS ve Linux için.",
+    "title": "OpenAEC Installer — OpenAEC Foundation"
   },
-  "cta": {
-    "github": "GitHub’da görüntüle"
-  },
-  "why": {
-    "title": "Neden OpenAEC <span class=\"accent\">Installer</span>?",
-    "desc": "OpenAEC ekosistemi, her birinin kendi deposu ve kendi sürümleri olan onlarca araçtan oluşur. Hangi sürüme sahip olduğunuzu ve en yenisinin nerede olduğunu kendiniz takip etmek zaman alır.",
-    "desc2": "Installer bunu sizin için yapar. Tüm araçları tanır, bilgisayarınızda zaten neyin olduğunu görür ve GitHub’daki en yeni resmî sürümü tek tıkla kurar."
-  },
-  "features": {
-    "title": "Özellikler",
-    "catalog": {
-      "title": "Katalog",
-      "desc": "Açıklama ve kategoriyle tüm OpenAEC araçları: masaüstü uygulamaları ve web araçları."
+  "hl": {
+    "update": {
+      "alt": "Koyu temada kurulu uygulamalar: Open Calc Studio ve Open Planner Studio güncel, Open PDF Studio ve Open Pointcloud Studio için güncelleme var, Open Geotechniek Studio güncelleniyor (%64)",
+      "kicker": "Güncellemeler",
+      "title": "Aramadan, her zaman en yeni sürüm",
+      "desc": "Her kart sizdeki sürümü ve hazır bekleyeni gösterir. Tek tıkla bir uygulamayı ya da hepsini birden güncellersiniz. Installer, hiçbir çalışmanız kaybolmasın diye uygulamayı kapatmanızı bekler ve ardından yeniden başlatır."
     },
-    "detect": {
-      "title": "Kurulum algılama",
-      "desc": "Hangi araçların ve hangi sürümlerin kurulu olduğunu görür. Windows’ta kayıt defteri, Linux’ta yönetilen AppImage klasörü üzerinden."
+    "discover": {
+      "alt": "Blueprint temasında, Engineering'e göre filtrelenmiş katalog: Open PDF Studio, Open 2D Studio, Open CAD Studio, Open Calculations Studio, Open Geotechniek Studio ve Open Speech Studio kartları",
+      "kicker": "Keşfet",
+      "title": "İşinize uyan uygulamayı bulun",
+      "desc": "Ekosistemdeki tüm uygulamalar kısa bir açıklama ve görselle tek bir katalogda. Mimarlık, mühendislik, inşaat veya altyapıya, zaten sahip olduklarınıza ya da güncellemelere göre filtreleyin veya adla arayın."
     },
-    "updates": {
-      "title": "Güncelleme algılama",
-      "desc": "Kurulu sürümü GitHub’daki son sürümle karşılaştırır ve hangi araç için güncelleme hazır olduğunu gösterir."
+    "web": {
+      "alt": "Installer'ın bir sekmesinde açık OpenBooks; yanında Katalog, Open Planner Studio ve Open PDF Studio sekmeleri",
+      "kicker": "Web araçları",
+      "title": "Kurulum olmadan, bir sekmede web araçları",
+      "desc": "Web araçları ve masaüstü uygulamalarının web sürümleri Installer içindeki sekmelerde açılır. Yerinizi kaybetmeden aralarında geçiş yapın; sekmeleriniz bir sonraki açılışta yine hazırdır. Kendi tarayıcınızı mı tercih edersiniz? O da olur."
     },
-    "install": {
-      "title": "Tek tıkla kurulum",
-      "desc": "Resmî yükleyiciyi GitHub Releases’ten indirir ve başlatır. Güncelleme de aynı şekilde çalışır."
-    },
-    "launch": {
-      "title": "Başlatma",
-      "desc": "Kurulu araçları doğrudan Installer’dan başlatın."
-    },
-    "webtabs": {
-      "title": "Sekmelerde web araçları",
-      "desc": "Web araçları ve masaüstü uygulamalarının web sürümleri Installer içinde sekmelerde çalışır. Açık sekmeler hatırlanır."
-    },
-    "selfupdate": {
-      "title": "Kendini günceller",
-      "desc": "Installer kendi sürümünü de denetler ve kendini tek tıkla günceller."
-    },
-    "themes": {
-      "title": "Beş tema, iki dil",
-      "desc": "Açık, Forge, OpenAEC, Blueprint ve yüksek kontrast temalarıyla OpenAEC kurumsal stilinde; Felemenkçe ve İngilizce."
+    "look": {
+      "alt": "Koyu temada ayarlar: Açık, Koyu, Blueprint, Yüksek kontrast koyu ve Yüksek kontrast açık seçenekleri ile metin boyutu",
+      "kicker": "Görünüm",
+      "title": "Tüm OpenAEC uygulamalarının tarzında",
+      "desc": "Blueprint ve iki yüksek kontrastlı tema dahil beş tema ile üç metin boyutu arasından seçin. Installer Felemenkçe ve İngilizce konuşur ve bilgisayarınızın dilini izler."
     }
   },
-  "tech": {
-    "title": "Teknoloji",
-    "desc": "Tauri 2 ile geliştirildi: indirmeleri, kurulumları ve sürüm denetimini yöneten bir Rust arka ucu ve OpenAEC kurumsal stilinde bir React ve TypeScript arayüzü."
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "download": "İndir",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
   },
-  "platforms": {
-    "title": "Platforma göre",
-    "desc": "Katalog ve web araçları her yerde çalışır. Kurulum ve güncelleme işletim sistemine göre değişir.",
-    "win": "<strong>Windows</strong> Her aracın resmî yükleyicileriyle kurun, güncelleyin ve başlatın.",
-    "linux": "<strong>Linux</strong> AppImage ile kurulum; yönetici hakkı gerekmez, menüye kısayol eklenir.",
-    "mac": "<strong>macOS</strong> Katalog ve web araçları çalışır; masaüstü uygulamalarının kurulumu daha sonra gelecek."
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "discover": "Keşfet",
+    "install": "Kur ve başlat",
+    "update": "Güncellemeler",
+    "web": "Web araçları",
+    "all": "Tüm özellikler"
+  },
+  "features": {
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Tüm OpenAEC ekosistemi, elinizin altında",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "catalog": {
+      "title": "Tek katalog",
+      "desc": "Tüm OpenAEC masaüstü uygulamaları ve web araçları; açıklama, görsel ve aşama (alfa, beta, geliştirme aşamasında) ile."
+    },
+    "filters": {
+      "title": "Alana ve duruma göre filtrele",
+      "desc": "Architecture, Engineering, Construction ve Altyapı; ya da yalnızca sizde olanlar veya güncellemesi olanlar."
+    },
+    "search": {
+      "title": "Arama",
+      "desc": "Ada, açıklamaya veya kategoriye göre arayın."
+    },
+    "featured": {
+      "title": "Öne çıkan",
+      "desc": "En üstte önce yeni sürümü olan uygulamalar, ardından ekosistemden sabit bir seçki yer alır."
+    },
+    "oneclick": {
+      "title": "Tek tıkla kurulum",
+      "desc": "Uygulamanın resmi yükleyicisini GitHub'dan indirir ve sisteminize uygun sürümle başlatır."
+    },
+    "detect": {
+      "title": "Sizde ne olduğunu görür",
+      "desc": "Hangi uygulamaların zaten kurulu olduğunu ve sürümlerini tanır; onları kendiniz kurmuş olsanız bile."
+    },
+    "launch": {
+      "title": "Başlat",
+      "desc": "Kurulu bir uygulamayı doğrudan kartından başlatın."
+    },
+    "linux": {
+      "title": "Yönetici hakları olmadan Linux",
+      "desc": "Linux'ta uygulamalar AppImage olarak kendi klasörünüze, menüde bir kısayolla gelir."
+    },
+    "versions": {
+      "title": "Sürüm yan yana",
+      "desc": "Her kart sizin sürümünüzü ve en yenisini gösterir, örneğin v2026.43.2 → v2026.44.4."
+    },
+    "all": {
+      "title": "Tümünü güncelle",
+      "desc": "Güncellemesi olan tüm uygulamaları tek seferde güncelleyin."
+    },
+    "silent": {
+      "title": "Çalışma kaybetmeden güncelle",
+      "desc": "Windows'ta Installer önce indirir, uygulamayı kapatmanızı bekler, sessizce günceller ve yeniden başlatır."
+    },
+    "sameSetup": {
+      "title": "Aynı tür kurulum",
+      "desc": "Yalnızca sizin için veya tüm bilgisayar için kurulan bir uygulama öyle kalır; böylece asla iki kez kurulmaz."
+    },
+    "signed": {
+      "title": "Doğrulanmış indirmeler",
+      "desc": "Dijital imzalı uygulamalarda imza eksik veya hatalıysa Installer hiçbir şey başlatmaz."
+    },
+    "appButton": {
+      "title": "Uygulamalarda güncelleme düğmesi",
+      "desc": "Destekleyen uygulamalar yeni sürümü kendileri bildirir ve güncellemeyi Installer'a bırakır."
+    },
+    "self": {
+      "title": "Kendini günceller",
+      "desc": "Installer her açılışta kendisinin yeni sürümünü denetler; güncelleme tek tıktır (Windows ve AppImage ile Linux)."
+    },
+    "feed": {
+      "title": "Hızlı ve sınırsız",
+      "desc": "Tüm uygulamaların sürümleri GitHub sınırına takılmadan tek seferde gelir."
+    },
+    "tabs": {
+      "title": "Sekmelerde web araçları",
+      "desc": "Open Energy Studio, OpenBooks ve diğer web araçları Installer içindeki bir sekmede çalışır."
+    },
+    "webDesktop": {
+      "title": "Masaüstü uygulamalarının web sürümü",
+      "desc": "Bir masaüstü uygulamasının web sürümü varsa, önce onu bir sekmede deneyin."
+    },
+    "remember": {
+      "title": "Sekmeler açık kalır",
+      "desc": "Geçiş yapmak yerinizi korur; sekmeleriniz bir sonraki açılışta yine oradadır."
+    },
+    "browser": {
+      "title": "Ya da kendi tarayıcınızda",
+      "desc": "Her web aracı kartından tek tıkla normal tarayıcınızda da açılır."
+    },
+    "themes": {
+      "title": "Beş tema",
+      "desc": "Açık, koyu, Blueprint ve iki yüksek kontrastlı tema; tüm OpenAEC uygulamalarının tarzında."
+    },
+    "textSize": {
+      "title": "Üç metin boyutu",
+      "desc": "Kompakt, standart veya büyük."
+    },
+    "lang": {
+      "title": "Felemenkçe ve İngilizce",
+      "desc": "Bilgisayarınızın dilini izler ya da kendiniz seçin."
+    }
+  },
+  "download": {
+    "title": "v0.2.9 indir",
+    "lead": "Ücretsiz, hesap gerekmez. Windows, macOS ve Linux için.",
+    "forWindows": "Windows için indir",
+    "forMac": "macOS için indir",
+    "forLinux": "Linux için indir",
+    "metaWindows": ".exe yükleyici",
+    "metaMac": "evrensel .dmg, Intel ve Apple Silicon",
+    "metaLinux": "AppImage, çoğu dağıtımda çalışır",
+    "fileExe": "Yükleyici (.exe)",
+    "fileMsi": "Yükleyici (.msi)",
+    "fileDmg": "Evrensel .dmg",
+    "fileDeb": ".deb",
+    "fileAppImage": "AppImage",
+    "fileSnap": "Snap",
+    "label": "İndir",
+    "mobileNote": "OpenAEC Installer bir masaüstü uygulamasıdır. Bilgisayarınıza indirin.",
+    "other": "Diğer platformlar"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDownload": "İndir",
+    "items": {
+      "design": {
+        "title": "Yeni tasarım",
+        "desc": "open-aec.com'un koyu paneli ve kutucukları; duruma ve alana göre filtreler, öne çıkan bir uygulama ve Tümünü güncelle."
+      },
+      "signed": {
+        "title": "Doğrulanmış güncellemeler",
+        "desc": "Dijital imzalı uygulamalar yalnızca imza doğruysa güncellenir."
+      },
+      "silent": {
+        "title": "Sessiz güncelleme",
+        "desc": "Aynı tür kurulumda, ancak uygulamayı kapattıktan sonra; ardından uygulama yeniden başlar. Artık Open Pointcloud Studio için de."
+      },
+      "appButton": {
+        "title": "Uygulamalarda güncelleme düğmesi",
+        "desc": "Installer uygulamalara hangi sürümün hazır olduğunu söyler; onların Güncelle düğmesi işi Installer'a bırakır."
+      },
+      "feed": {
+        "title": "Daha hızlı sürüm denetimi",
+        "desc": "Tüm sürümler uygulama başına GitHub yerine tek bir listeden gelir; artık sınır yok."
+      },
+      "calver": {
+        "title": "Doğru sürüm karşılaştırması",
+        "desc": "Windows'ta sürümünü kısa yılla kaydeden bir uygulamaya artık yanlış güncelleme önerilmez."
+      }
+    },
+    "label": "v0.2.9 sürümünde yeni",
+    "title": "Yeni görünüm, <span>daha güvenli güncelleme</span>",
+    "desc": "29 ve 30 Ekim'de v0.2.5 ile v0.2.9 arası sürümler çıktı: yeni bir tasarım, doğrulanmış ve sessiz güncellemeler, uygulamalarda güncelleme düğmesi ve daha hızlı sürüm denetimi."
+  },
+  "faq": {
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Evet, Installer'ın kendisini: Windows'ta yaklaşık 5 MB'lık küçük bir masaüstü uygulaması. Ardından diğer uygulamaları Installer'dan kurarsınız. Web araçları için bir şey kurmanız gerekmez."
+    },
+    "price": {
+      "q": "OpenAEC Installer'ın ücreti nedir?",
+      "a": "Hiçbir şey. Installer, CC BY-SA 4.0 lisansıyla ücretsiz ve açık kaynaklıdır; hesap veya abonelik gerekmez. Kurduğu uygulamalar da ücretsizdir."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows, macOS (Intel ve Apple Silicon) ve Linux (.deb, AppImage ve Snap). Uygulama kurma, güncelleme ve başlatma Windows ve Linux'ta çalışır. macOS'ta katalog ve web araçları çalışır; uygulama kurmak orada henüz mümkün değil."
+    },
+    "apps": {
+      "q": "Onunla hangi uygulamaları kurabilirim?",
+      "a": "Open PDF Studio, Open Planner Studio, Open Calc Studio, Open Geotechniek Studio, Open Pointcloud Studio ve Monty IFC Viewer dahil on dört masaüstü uygulaması ve Open Energy Studio ile OpenBooks gibi beş web aracı. Yeni bir uygulama eklendiğinde, Installer güncellemesinden sonra katalogda görünür."
+    },
+    "safe": {
+      "q": "İndirmeler nereden geliyor?",
+      "a": "Her zaman uygulamanın GitHub'daki resmi sürümlerinden. Bir uygulama dijital imza sağlıyorsa Installer bunu indirme sırasında denetler; imza eksik veya hatalıysa hiçbir şey başlatmaz."
+    },
+    "work": {
+      "q": "Bir uygulama güncellenirken çalışmamı kaybeder miyim?",
+      "a": "Hayır. Uygulama açıksa Installer onu kapatmanızı ister ve bekler; asla kendisi kapatmaz. Güncellemeden sonra uygulama yeniden başlar."
+    },
+    "admin": {
+      "q": "Yönetici haklarına ihtiyacım var mı?",
+      "a": "Genellikle hayır. Installer kullanıcı başına kurulur; Linux'ta uygulamalar kendi klasörünüze gelir. Yalnızca tüm bilgisayar için kurulmuş bir uygulama güncellenirken yönetici hakları ister."
+    },
+    "heading": "Sık sorulan sorular"
+  },
+  "tech": {
+    "tauri": {
+      "desc": "Windows, macOS ve Linux için küçük bir yerel uygulama; indirmeleri, denetimleri ve kurulumu Rust yapar."
+    },
+    "react": {
+      "desc": "Arayüz, OpenAEC tasarım 0.4 web paketiyle yapıldı: token'lar, yazı tipleri ve simgeler."
+    },
+    "releases": {
+      "desc": "Tüm uygulamalar için tek bir sürüm akışı; yedek olarak GitHub API ve bir saatlik önbellek."
+    },
+    "minisign": {
+      "title": "Minisign imzaları",
+      "desc": "Uygulama başına imzalı bir latest.json, Tauri updater ile aynı biçimde; uygulamalar için bir sürüm kiti ile."
+    },
+    "windows": {
+      "desc": "Kayıt defteri üzerinden algılama, aynı tür kurulumla sessiz güncelleme; kullanıcı başına veya tüm bilgisayar için."
+    },
+    "linux": {
+      "desc": "XDG standardına uygun menü girdileriyle ~/.local/share içinde yönetilen bir klasör; yönetici hakkı gerekmez."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }

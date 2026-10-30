@@ -1,70 +1,273 @@
 {
   "header": {
-    "label": "Every tool in one place",
     "title": "OpenAEC <span class=\"accent\">Installer</span>",
-    "desc": "The central hub for OpenAEC’s open source construction software. Discover, install, update and launch every tool from one app, for Windows, macOS and Linux.",
-    "badge": "Beta"
+    "downloadBtn": "Download",
+    "featuresBtn": "See the features",
+    "sourceBtn": "Source code",
+    "proof2": "14 desktop apps · 5 web tools",
+    "proof3": "Dutch and English",
+    "proof4": "Free · CC BY-SA 4.0",
+    "heroAlt": "OpenAEC Installer: overview with Update all, a featured update of Open PDF Studio, filters by status and discipline, and the desktop app cards",
+    "label": "All tools in one place",
+    "tagline": "Install, update and launch every OpenAEC app from one place",
+    "desc": "The Installer knows every app of the OpenAEC Foundation. It sees what is on your computer, puts the latest version in place in one click and keeps everything up to date. The web tools open in their own tab."
   },
-  "download": {
-    "title": "Download",
-    "windows": "Installer (.exe)",
-    "windowsMsi": "MSI package (.msi)",
-    "macos": "Apple and Intel processors (.dmg)",
-    "linuxDeb": "Debian, Ubuntu (.deb)",
-    "linuxAppimage": "Any distribution (AppImage)"
+  "meta": {
+    "description": "Free, open-source hub for every OpenAEC app: discover, install in one click, update safely and launch, with the web tools in tabs. For Windows, macOS and Linux.",
+    "title": "OpenAEC Installer — OpenAEC Foundation"
   },
-  "cta": {
-    "github": "View on GitHub"
+  "hl": {
+    "update": {
+      "alt": "Installed apps in the dark theme: Open Calc Studio and Open Planner Studio are current, Open PDF Studio and Open Pointcloud Studio have an update, and Open Geotechniek Studio is updating (64%)",
+      "kicker": "Updates",
+      "title": "Always the latest version, without searching",
+      "desc": "Every card shows the version you have and the one that is ready. One click updates an app, or all of them at once. The Installer waits until you have closed the app, so you lose no work, and starts it again afterwards."
+    },
+    "discover": {
+      "alt": "Catalogue in the Blueprint theme, filtered on Engineering: cards of Open PDF Studio, Open 2D Studio, Open CAD Studio, Open Calculations Studio, Open Geotechniek Studio and Open Speech Studio",
+      "kicker": "Discover",
+      "title": "Find the app that fits your trade",
+      "desc": "Every app in the ecosystem is in one catalogue, with a short description and a picture. Filter by architecture, engineering, construction or infra, by what you already have or by updates, or search by name."
+    },
+    "web": {
+      "alt": "OpenBooks open in a tab of the Installer, next to tabs for the Catalogue, Open Planner Studio and Open PDF Studio",
+      "kicker": "Web tools",
+      "title": "Web tools in a tab, without installing",
+      "desc": "Web tools and the web versions of the desktop apps open in tabs inside the Installer. Switch between them without losing your place; your tabs are back the next time you start. Prefer your own browser? That works too."
+    },
+    "look": {
+      "alt": "Settings in the dark theme, with the choice of Light, Dark, Blueprint, High contrast dark and High contrast light, and the text size",
+      "kicker": "Appearance",
+      "title": "In the style of every OpenAEC app",
+      "desc": "Choose from five themes, including Blueprint and two with high contrast, and from three text sizes. The Installer speaks Dutch and English and follows the language of your computer."
+    }
   },
-  "why": {
-    "title": "Why the OpenAEC <span class=\"accent\">Installer</span>?",
-    "desc": "The OpenAEC ecosystem consists of dozens of tools, each with its own repository and its own releases. Keeping track of which version you have and where the newest one is takes time.",
-    "desc2": "The Installer does that for you. It knows every tool, sees what is already on your computer and puts the newest official version from GitHub in place with one click."
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "download": "Download",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "discover": "Discover",
+    "install": "Install and launch",
+    "update": "Updates",
+    "web": "Web tools",
+    "all": "All features"
   },
   "features": {
-    "title": "Features",
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "The whole OpenAEC ecosystem, at hand",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
     "catalog": {
-      "title": "Catalogue",
-      "desc": "Every OpenAEC tool with description and category: desktop apps and web tools."
+      "title": "One catalogue",
+      "desc": "Every OpenAEC desktop app and web tool, with description, picture and stage (alpha, beta, in development)."
+    },
+    "filters": {
+      "title": "Filter by trade and status",
+      "desc": "Architecture, Engineering, Construction and Infra, or only what you have or what has an update."
+    },
+    "search": {
+      "title": "Search",
+      "desc": "Search by name, description or category."
+    },
+    "featured": {
+      "title": "Featured",
+      "desc": "At the top come the apps with a new version first, then a fixed pick from the ecosystem."
+    },
+    "oneclick": {
+      "title": "One-click install",
+      "desc": "Fetches the app's official installer from GitHub and starts it, in the right version for your system."
     },
     "detect": {
-      "title": "Installation detection",
-      "desc": "Sees which tools are already installed and which version. On Windows through the registry, on Linux through the managed AppImage folder."
-    },
-    "updates": {
-      "title": "Update detection",
-      "desc": "Compares the installed version with the latest release on GitHub and shows where an update is ready."
-    },
-    "install": {
-      "title": "One-click install",
-      "desc": "Downloads the official installer from GitHub Releases and runs it. Updating works the same way."
+      "title": "Sees what you have",
+      "desc": "Recognises which apps are already installed and which version, even if you installed them yourself."
     },
     "launch": {
       "title": "Launch",
-      "desc": "Start installed tools straight from the Installer."
+      "desc": "Start an installed app straight from its card."
     },
-    "webtabs": {
-      "title": "Web tools in tabs",
-      "desc": "Web tools and the web versions of desktop apps run in tabs inside the Installer. Open tabs are remembered."
+    "linux": {
+      "title": "Linux without admin rights",
+      "desc": "On Linux, apps go into your own folder as an AppImage, with a shortcut in the menu."
     },
-    "selfupdate": {
+    "versions": {
+      "title": "Version next to version",
+      "desc": "Every card shows your version and the latest, such as v2026.43.2 → v2026.44.4."
+    },
+    "all": {
+      "title": "Update all",
+      "desc": "Update every app with an update in one go."
+    },
+    "silent": {
+      "title": "Update without losing work",
+      "desc": "On Windows the Installer downloads first, waits until you close the app, updates it silently and starts it again."
+    },
+    "sameSetup": {
+      "title": "The same kind of installation",
+      "desc": "An app installed for you only or for the whole computer stays that way, so it is never installed twice."
+    },
+    "signed": {
+      "title": "Verified downloads",
+      "desc": "For apps with a digital signature, the Installer starts nothing if the signature is missing or wrong."
+    },
+    "appButton": {
+      "title": "Update button in the apps",
+      "desc": "Apps that support it report a new version themselves and let the Installer do the update."
+    },
+    "self": {
       "title": "Updates itself",
-      "desc": "The Installer also checks its own version and updates itself with one click."
+      "desc": "At every start the Installer checks for a new version of itself; updating is one click (Windows, and Linux with the AppImage)."
+    },
+    "feed": {
+      "title": "Fast and without limits",
+      "desc": "The versions of all apps come in at once, without hitting GitHub's limit."
+    },
+    "tabs": {
+      "title": "Web tools in tabs",
+      "desc": "Open Energy Studio, OpenBooks and the other web tools run in a tab inside the Installer."
+    },
+    "webDesktop": {
+      "title": "Web version of desktop apps",
+      "desc": "If a desktop app has a web version, try it in a tab first."
+    },
+    "remember": {
+      "title": "Tabs stay open",
+      "desc": "Switching keeps your place, and your tabs are back at the next start."
+    },
+    "browser": {
+      "title": "Or in your own browser",
+      "desc": "Every web tool also opens in your usual browser, in one click from its card."
     },
     "themes": {
-      "title": "Five themes, two languages",
-      "desc": "In the OpenAEC house style with the themes light, Forge, OpenAEC, Blueprint and high contrast, in Dutch and English."
+      "title": "Five themes",
+      "desc": "Light, dark, Blueprint and two with high contrast, in the style of every OpenAEC app."
+    },
+    "textSize": {
+      "title": "Three text sizes",
+      "desc": "Compact, standard or large."
+    },
+    "lang": {
+      "title": "Dutch and English",
+      "desc": "Follows the language of your computer, or choose yourself."
     }
   },
-  "tech": {
-    "title": "Technology",
-    "desc": "Built with Tauri 2: a Rust backend that handles downloads, installations and version checks, with a React and TypeScript interface in the OpenAEC house style."
+  "download": {
+    "title": "Download v0.2.9",
+    "lead": "Free, no account needed. For Windows, macOS and Linux.",
+    "forWindows": "Download for Windows",
+    "forMac": "Download for macOS",
+    "forLinux": "Download for Linux",
+    "metaWindows": ".exe installer",
+    "metaMac": "universal .dmg, Intel and Apple Silicon",
+    "metaLinux": "AppImage, runs on most distributions",
+    "fileExe": "Installer (.exe)",
+    "fileMsi": "Installer (.msi)",
+    "fileDmg": "Universal .dmg",
+    "fileDeb": ".deb",
+    "fileAppImage": "AppImage",
+    "fileSnap": "Snap",
+    "label": "Download",
+    "mobileNote": "OpenAEC Installer is a desktop app. Download it on your computer.",
+    "other": "Other platforms"
   },
-  "platforms": {
-    "title": "Per platform",
-    "desc": "The catalogue and the web tools work everywhere. Installing and updating differ per operating system.",
-    "win": "<strong>Windows</strong> Install, update and launch through the official installers of each tool.",
-    "linux": "<strong>Linux</strong> Install through AppImages, without administrator rights and with a menu shortcut.",
-    "mac": "<strong>macOS</strong> The catalogue and the web tools work; installing desktop apps follows later."
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "ctaDownload": "Download",
+    "items": {
+      "design": {
+        "title": "New design",
+        "desc": "The dark panel and tiles of open-aec.com, with filters by status and trade, a featured app and Update all."
+      },
+      "signed": {
+        "title": "Verified updates",
+        "desc": "Apps with a digital signature are only updated if it is correct."
+      },
+      "silent": {
+        "title": "Silent updates",
+        "desc": "In the same kind of installation, only after you closed the app, which then starts again. Now also for Open Pointcloud Studio."
+      },
+      "appButton": {
+        "title": "Update button in the apps",
+        "desc": "The Installer tells the apps which version is ready; their Update button lets the Installer do the work."
+      },
+      "feed": {
+        "title": "Faster version checks",
+        "desc": "All versions come from one overview instead of from GitHub per app, so there is no limit any more."
+      },
+      "calver": {
+        "title": "Correct version comparison",
+        "desc": "An app that records its version on Windows with a short year no longer gets a false update."
+      }
+    },
+    "label": "New in v0.2.9",
+    "title": "New look, <span>safer updates</span>",
+    "desc": "On 29 and 30 October, v0.2.5 to v0.2.9 came out: a new design, verified and silent updates, an update button in the apps and faster version checks."
+  },
+  "faq": {
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "Yes, the Installer itself: a small desktop app of about 5 MB on Windows. Then you install the other apps from the Installer. The web tools need nothing."
+    },
+    "price": {
+      "q": "What does the OpenAEC Installer cost?",
+      "a": "Nothing. The Installer is free and open source under the CC BY-SA 4.0 licence, with no account or subscription. The apps it installs are free too."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "Windows, macOS (Intel and Apple Silicon) and Linux (.deb, AppImage and Snap). Installing, updating and launching apps works on Windows and Linux. On macOS the catalogue and the web tools work; installing apps is not possible there yet."
+    },
+    "apps": {
+      "q": "Which apps can I install with it?",
+      "a": "Fourteen desktop apps, including Open PDF Studio, Open Planner Studio, Open Calc Studio, Open Geotechniek Studio, Open Pointcloud Studio and Monty IFC Viewer, and five web tools such as Open Energy Studio and OpenBooks. When an app is added, it appears in the catalogue after an Installer update."
+    },
+    "safe": {
+      "q": "Where do the downloads come from?",
+      "a": "Always from the app's official releases on GitHub. If an app ships a digital signature, the Installer checks it while downloading and starts nothing if it is missing or wrong."
+    },
+    "work": {
+      "q": "Do I lose work when an app is updated?",
+      "a": "No. If the app is open, the Installer asks you to close it and waits; it never closes it itself. After the update the app starts again."
+    },
+    "admin": {
+      "q": "Do I need admin rights?",
+      "a": "Usually not. The Installer installs per user, and on Linux apps go into your own folder. Only an app installed for the whole computer asks for admin rights when it is updated."
+    },
+    "heading": "Frequently asked questions"
+  },
+  "tech": {
+    "tauri": {
+      "desc": "A small native app for Windows, macOS and Linux; Rust handles the downloads, the checks and the installation."
+    },
+    "react": {
+      "desc": "The interface, built with the web package of the OpenAEC design 0.4: tokens, fonts and icons."
+    },
+    "releases": {
+      "desc": "One release feed for all apps, with the GitHub API as a fallback and a one-hour cache."
+    },
+    "minisign": {
+      "title": "Minisign signatures",
+      "desc": "A signed latest.json per app, in the same format as the Tauri updater, with a release kit for the apps."
+    },
+    "windows": {
+      "desc": "Detection through the registry, silent updates in the same kind of setup, per user or for the whole computer."
+    },
+    "linux": {
+      "desc": "A managed folder in ~/.local/share with menu entries following the XDG standard, without admin rights."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }
