@@ -1,176 +1,281 @@
 {
   "header": {
-    "label": "OpenAEC ekosistemi",
     "title": "Open <span class=\"accent\">Speech</span> Studio",
-    "desc": "Whisper AI ile ücretsiz yerel ses tanıma. <strong>CTRL+Win</strong>'e basın ve herhangi bir uygulamaya dikte edin — sohbet, e-posta, terminal, IDE. Bulut yok, abonelik yok, sınır yok. v0.10.3 stable, 1 yükleyici, 30 saniyede hazır.",
-    "badge": "v0.10.3 STABLE",
-    "meta": "v0.10.3 &middot; 80 commit &middot; Whisper AI &middot; Tauri 2 &middot; Rust",
-    "cta": {
-      "download": "Yükleyiciyi indir (.exe)",
-      "github": "GitHub'da görüntüle"
-    }
+    "downloadBtn": "İndir",
+    "featuresBtn": "Özellikleri gör",
+    "sourceBtn": "Kaynak kodu",
+    "proof1": "Whisper · 99 dil",
+    "proof2": "Yerel, bulutsuz",
+    "proof4": "25 dilde uygulama",
+    "proof5": "Ücretsiz · Apache-2.0",
+    "heroAlt": "Open Speech Studio: tiny'den large-v3-turbo'ya konuşma modelleri; her model için hız, doğruluk ve bellek kullanımı",
+    "label": "Konuşma tanıma",
+    "tagline": "Yazmak yerine konuşun; her uygulamada, bulut olmadan",
+    "desc": "Bir kısayola basılı tutun, konuşun ve bırakın: metniniz imlecin olduğu yerde belirir. Toplantıları ve kayıtları da yazıya dökün. Tanıma kendi bilgisayarınızda çalışır; ücretsiz ve abonelik olmadan."
   },
-  "usecases": {
-    "heading": "<span class=\"accent\">AEC profesyonelleri</span> için kullanım senaryoları",
-    "intro": "İster şantiyede inceleme yapın, ister proje toplantısında not alın, ister görevler arasında bir e-posta dikte edin — Open Speech Studio her yerde çalışır, çevrimdışı bile.",
-    "inspection": {
-      "tag": "ŞANTİYE",
-      "title": "Şantiyede incelemeler",
-      "desc": "Fotoğraf çekerken bulgularınızı doğrudan Open Field Studio'ya dikte edin. Eldiven çıkarmak yok, küçük ekranda yazmak yok. Sadece konuşun — tamam."
-    },
-    "meetings": {
-      "tag": "TOPLANTILAR",
-      "title": "Toplantı tutanakları",
-      "desc": "Yerinde proje toplantılarının gerçek zamanlı transkripsiyonu. Tamamen yerel işlenir — müşteri isimleri, fiyatlar veya gizli proje verileri için gizlilik kaygısı yok."
-    },
-    "email": {
-      "tag": "İLETİŞİM",
-      "title": "Şantiyede hızlı e-postalar",
-      "desc": "Görevler arasında Outlook veya Gmail'e dikte edin. Elleriniz kirliyken, güvenlik eldivenleri taktığınızda veya merdiven tutarken eller serbest."
-    },
-    "ai": {
-      "tag": "AI WORKFLOW",
-      "title": "AI prompt'ları yazmak",
-      "desc": "Claude veya ChatGPT için bir prompt'u yazmaktan çok daha hızlı dikte edin. Konuşmak ~3x daha hızlıdır ve genellikle daha doğal ifade edersiniz — uzun, detaylı prompt'lar için idealdir."
-    },
-    "code": {
-      "tag": "GELİŞTİRİCİLER",
-      "title": "Kod yorumları ve commit'ler",
-      "desc": "Kod açıklamalarını, docstring'leri ve commit mesajlarını doğrudan IDE veya terminalinize dikte edin. VS Code, Cursor, Neovim'de sorunsuz çalışır — metin girebileceğiniz her yerde."
-    },
-    "accessibility": {
-      "tag": "ERİŞİLEBİLİRLİK",
-      "title": "Erişilebilirlik",
-      "desc": "RSI hastaları, motor bozukluğu olan kişiler veya geçici yaralanmalar için. Bilgisayarınızı tamamen klavyesiz kullanın — KVKK güvenli ve aboneliksiz."
-    }
+  "meta": {
+    "description": "Kendi bilgisayarınızda ücretsiz, açık kaynaklı konuşma tanıma: bir kısayolla her uygulamaya dikte edin, toplantıları ve ses ya da video dosyalarını yazıya dökün, metinleri sesli okutun. Whisper, 99 dil. Windows, macOS ve Linux için.",
+    "title": "Open Speech Studio — OpenAEC Foundation"
   },
-  "why": {
-    "heading": "Neden yerel?",
-    "intro": "Bulut ses tanıma sesinizi üçüncü taraf sunuculara gönderir. Open Speech Studio her şeyi kendi PC'nizde yapar — daha hızlı, daha güvenli ve aylık ücret olmadan.",
-    "privacy": {
-      "title": "Gizlilik",
-      "desc": "Sesiniz bilgisayarınızdan asla ayrılmaz. Otomatik olarak KVKK güvenli — harici sağlayıcılarla DPA gerekmiyor, veri ihlali riski yok."
-    },
-    "cost": {
-      "title": "Abonelik yok",
-      "desc": "Otter.ai aylık ~20 € ücret alır. Dragon NaturallySpeaking ~500 € bir kez. Open Speech Studio sonsuza dek ücretsiz — açık kaynak LGPL-3.0.",
-      "callout": "Sonsuza dek 0 €"
-    },
-    "limits": {
-      "title": "Hız sınırı yok",
-      "desc": "İsterseniz günde 10 saat dikte edin. API kotaları yok, 'Fair Use Policy' yok, sürpriz faturalar yok. Tek sınırınız donanımınız."
-    }
-  },
-  "compare": {
-    "feature": "Özellik",
-    "us": "Open Speech Studio",
-    "dragon": "Dragon NaturallySpeaking",
-    "otter": "Otter.ai",
-    "price": "Fiyat",
-    "local": "%100 yerel",
-    "gdpr": "DPA olmadan KVKK güvenli",
-    "langs": "Diller",
-    "gpu": "GPU hızlandırma (CUDA)",
-    "opensource": "Açık kaynak",
-    "yes": "Evet",
-    "yes2": "Evet",
-    "yes3": "Evet",
-    "yes4": "Evet",
-    "yes5": "Evet",
-    "no": "Hayır (bulut)",
-    "no2": "Hayır",
-    "no3": "Hayır",
-    "no4": "Hayır",
-    "no5": "Hayır",
-    "na": "Yok (bulut)",
-    "priceUs": "0 € (açık kaynak)",
-    "priceDragon": "~500 € bir kez",
-    "priceOtter": "~20 €/ay",
-    "langsUs": "99 dil (Whisper)",
-    "langsDragon": "~6 dil",
-    "langsOtter": "~10 dil",
-    "opensourceUs": "Evet (LGPL-3.0)"
-  },
-  "features": {
-    "heading": "Özellikler — <span class=\"accent\">bu</span> ne yapabilir?",
-    "intro": "Open Speech Studio bir dikte aracından daha fazlasıdır. Ses dosyası transkripsiyonu, toplantı kayıtları, birden fazla Whisper modeli ve standart altyazı formatlarına dışa aktarma içeren eksiksiz bir konuşma-metin paketidir.",
+  "hl": {
     "dictate": {
-      "title": "Her yerde dikte edin",
-      "desc": "Sistem genelinde bir overlay aracılığıyla doğrudan herhangi bir uygulamaya metin dikte edin. Outlook, Word, Chrome, VS Code, Slack, Teams'te çalışır — OS'nizde tam anlamıyla her yerde."
+      "alt": "Uygulamanın hazır olduğunu ve dikte kısayolunu gösteren başlangıç ekranı",
+      "kicker": "Dikte",
+      "title": "Metninizi her uygulamaya sesle yazın",
+      "desc": "Ctrl+Win'e basılı tutun, cümlenizi söyleyin ve bırakın: metin imlecin olduğu yerde belirir; e-postada, raporda, sohbette ya da kod düzenleyicide. Başlatmak ve durdurmak için birer kez basmayı mı tercih edersiniz? O da olur; kısayolu siz seçersiniz."
     },
-    "transcribe": {
-      "title": "Ses dosyası transkripsiyonu",
-      "desc": "Paralel işleme ile ses dosyalarını (.mp3, .wav, .m4a, .ogg) transkribe edin. Aynı anda birden fazla dosya, hızlı ve doğru."
+    "meeting": {
+      "alt": "Dil, aralık, kayıt düğmesi ve mikrofon göstergesiyle Kaydet ve yazıya dök ekranı",
+      "kicker": "Toplantılar",
+      "title": "Toplantınızın tutanağı, bulut olmadan",
+      "desc": "Bir şantiye toplantısını ya da görüşmeyi kaydedin; uygulama birkaç dakikalık bölümler halinde yazıya döker. Çevrimiçi toplantıda bilgisayarın sesini de kaydeder; böylece Teams, Zoom veya Meet katılımcıları da metne girer (Windows). .txt, Markdown veya .odt olarak dışa aktarın."
     },
-    "meetings": {
-      "title": "Gerçek zamanlı toplantı transkripsiyonu",
-      "desc": "Proje toplantılarını kaydedin ve transkripsiyonun gerçek zamanlı görünmesini izleyin. Şantiyede çevrimdışı bile otomatik tutanak."
+    "files": {
+      "alt": "Ses ve video dosyaları için bırakma alanı olan Dosyaları yazıya dök ekranı",
+      "kicker": "Dosyalar",
+      "title": "Kayıtları ve videoları yazıya dökün",
+      "desc": "WAV ve MP3'ten MP4 ve MOV'a kadar ses veya video dosyalarını uygulamaya sürükleyin. Birden çok dosya aynı anda işlenir. Metni kopyalayın, .txt olarak kaydedin ya da her dökümü otomatik olarak bir klasöre kaydettirin."
+    },
+    "tts": {
+      "alt": "Ses seçimi, hız ve duraklama kaydırıcıları ve ses kitaplığıyla Metinden konuşmaya ekranı",
+      "kicker": "Sesli okuma",
+      "title": "Metinleri doğal bir sesle okutun",
+      "desc": "Felemenkçe, Flamanca veya İngilizce bir ses seçin; hızı, ifadeyi ve duraklamaları ayarlayın ve metni okutun. Bir ses yaklaşık 60 MB'tır ve kendi işlemcinizde çalışır. Sesli okuma şimdilik Windows'ta çalışır."
     },
     "gpu": {
-      "title": "CUDA GPU hızlandırma",
-      "desc": "Daha hızlı sonuçlar için CUDA GPU hızlandırma. Modern bir GPU'da Whisper Large neredeyse gerçek zamanlı çalışır — donanımınızın optimal kullanımı."
+      "alt": "Dil, etkin bir NVIDIA ekran kartı, otomatik yapıştırma ve ses efektleriyle konuşma ayarları",
+      "kicker": "Hız",
+      "title": "Sıradan bir dizüstünde hızlı, ekran kartıyla daha da hızlı",
+      "desc": "Bilgisayarınıza uygun bir model seçin: küçük modeller işlemcide akıcı çalışır, büyükler daha doğrudur. Windows'ta bir NVIDIA ekran kartı otomatik olarak kullanılır; hangi kartın etkin olduğunu ve belleğini görürsünüz."
+    }
+  },
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "download": "İndir",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "dictate": "Dikte",
+    "meeting": "Toplantılar",
+    "files": "Dosyalar",
+    "models": "Modeller ve diller",
+    "all": "Tüm özellikler"
+  },
+  "features": {
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Dikte, toplantı kaydı ve yazıya dökme tek uygulamada",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "hotkey": {
+      "title": "Her uygulamada kısayol",
+      "desc": "Ctrl+Win veya Ctrl+Shift+Boşluk ya da iki veya üç tuştan oluşan kendi kombinasyonunuz."
     },
-    "shortcuts": {
-      "title": "Klavye kısayolları",
-      "desc": "Overlay için CTRL+Win, alternatif olarak CTRL+SHIFT+Space. Fare tıklaması gerekmez, menü aramak yok — dikte &lt;100ms'de başlar."
+    "mode": {
+      "title": "Basılı tut veya aç/kapat",
+      "desc": "Konuşurken tuşu basılı tutun ya da başlatmak için bir, durdurmak için bir kez daha basın."
+    },
+    "paste": {
+      "title": "Metin imlecinizde",
+      "desc": "Metin imlecin olduğu yere yazılır. Tek bir onay kutusuyla ardından Enter gelir; sohbet ve yapay zekâ istemleri için kullanışlı."
+    },
+    "sounds": {
+      "title": "Başlarken ve dururken ses",
+      "desc": "Kaydın ne zaman başladığını ve bittiğini duyun; iki ses seti ve ayarlanabilir ses düzeyiyle."
+    },
+    "mictest": {
+      "title": "Mikrofon testi",
+      "desc": "Mikrofonunuzu seçin, seviyeyi görün ve bir deneme cümlesiyle tanımanın doğru çalıştığını kontrol edin."
+    },
+    "online": {
+      "title": "Çevrimiçi toplantılar",
+      "desc": "Mikrofon ve bilgisayar sesi birlikte; böylece Teams, Zoom veya Meet katılımcıları da metne girer. Windows'ta."
+    },
+    "segments": {
+      "title": "Bölümler halinde döküm",
+      "desc": "Birkaç dakikada bir otomatik olarak ya da arada Bölümü kaydet ile; kaydı durdurmadan."
+    },
+    "meters": {
+      "title": "Mikrofon ve bilgisayar seviyeleri",
+      "desc": "Kayıt sırasında sesin gelip gelmediğini tepe, ortalama ve kırpılma değerleriyle görün."
+    },
+    "meetexport": {
+      "title": ".txt, .md veya .odt tutanak",
+      "desc": "Tümünü kopyalayın veya dışa aktarın; dosya hemen düzenleyicinizde açılır. Sabit bir klasöre otomatik kayıt da mümkün."
+    },
+    "formats": {
+      "title": "Ses ve video",
+      "desc": "WAV, MP3, FLAC, OGG, M4A, MP4, MKV, AVI, MOV ve daha fazlası. Uygulamaya sürükleyin veya göz atın."
+    },
+    "parallel": {
+      "title": "Aynı anda birden çok dosya",
+      "desc": "Dosyalar yan yana işlenir; aynı anda kaç tane olacağını siz seçersiniz."
+    },
+    "txt": {
+      "title": "Metin olarak kaydet",
+      "desc": "Metni kopyalayın, .txt olarak dışa aktarın ya da her dökümü otomatik olarak bir klasöre kaydettirin."
     },
     "models": {
-      "title": "Whisper AI modelleri",
-      "desc": "5 model: tiny, base, small, medium, large. Hız (tiny) veya doğruluk (large) arasında seçim yapın. Modele bağlı olarak 1-10 GB bellek kullanımı."
+      "title": "Sekiz konuşma modeli",
+      "desc": "tiny'den (75 MB) large-v3'e (3,1 GB) kadar. Her model için hız, doğruluk ve bellek kullanımını görürsünüz."
     },
     "languages": {
       "title": "99 dil",
-      "desc": "Whisper 99 dili destekler: Hollandaca, İngilizce, Almanca, Fransızca, İspanyolca, Lehçe, Arapça, Türkçe, Mandarin ve daha fazlası. Otomatik dil algılama."
+      "desc": "Sabit bir dil seçin ya da konuşulan dili uygulamanın algılamasına izin verin."
     },
-    "overlay": {
-      "title": "Spotify tarzı overlay",
-      "desc": "Canlı dalga formu görselleştirmesi olan zarif, minimalist overlay UI. Yoldan çekilir, eklendikten sonra otomatik kaybolur."
+    "dictionary": {
+      "title": "Kendi sözlüğünüz",
+      "desc": "Uygulamaya adları, kısaltmaları ve teknik terimleri öğretin; isterseniz bir değiştirmeyle."
     },
-    "history": {
-      "title": "Geçmiş",
-      "desc": "Transkripsiyonların tam geçmişi — aranabilir, yeniden kullanılabilir. Her şey yerel olarak saklanır, kontrol sizde."
-    },
-    "export": {
-      "title": "TXT, SRT, VTT dışa aktarma",
-      "desc": "Transkripsiyonları düz metin (.txt) veya zaman damgalarıyla video içeriği için altyazı (.srt, .vtt) olarak dışa aktarın."
-    },
-    "clipboard": {
-      "title": "Pano entegrasyonu",
-      "desc": "Otomatik pano entegrasyonu — dikte edin ve doğrudan yapıştırın veya metnin imleç konumuna otomatik olarak eklenmesine izin verin."
+    "gpu": {
+      "title": "Ekran kartı veya işlemci",
+      "desc": "Windows'ta bir NVIDIA ekran kartı hesaplamaya yardım eder; kart yoksa her şey işlemcide çalışır."
     },
     "local": {
-      "title": "%100 yerel",
-      "desc": "Her şey kendi bilgisayarınızda yerel olarak çalışır. Verileriniz PC'nizden asla ayrılmaz. Bulut yok, abonelik yok, sınır yok. KVKK güvenli, kutudan çıkar çıkmaz."
+      "title": "Her şey kendi bilgisayarınızda",
+      "desc": "Sesiniz ve metniniz bilgisayarınızdan çıkmaz. Hesap yok, abonelik yok, sınır yok."
     },
-    "tech": {
-      "title": "Whisper AI + Tauri + Rust",
-      "desc": "Ses tanıma için OpenAI Whisper AI, masaüstü uygulaması için Tauri ve backend için Rust ile inşa edilmiştir. Açık kaynak."
+    "tts": {
+      "title": "Sesli okuma",
+      "desc": "Felemenkçe, Flamanca ve İngilizce dokuz ses; hız, ifade ve duraklamalarla. Windows'ta."
     },
-    "showAll": "Tüm özellikleri göster",
-    "showLess": "Daha az göster"
+    "ui": {
+      "title": "25 dilde uygulama",
+      "desc": "Felemenkçe ve İngilizceden Türkçe, Lehçe ve Japoncaya kadar."
+    },
+    "tray": {
+      "title": "Her zaman el altında",
+      "desc": "Uygulama sistem tepsisinde bekler ve kısayola bastığınız anda hazırdır."
+    }
   },
-  "shortcuts": {
-    "title": "Klavye kısayolları",
-    "desc": "İşletim sisteminizde her yerde konuşma tanımayı başlatın:",
-    "or": "veya",
-    "note": "Ayarlarda yapılandırılabilir — başka yazılımlarla çakışırsa kendi kısayolunuzu seçin."
+  "download": {
+    "title": "v0.12.2 indir",
+    "lead": "Ücretsiz, hesap gerekmez. Windows, macOS ve Linux için.",
+    "forWindows": "Windows için indir",
+    "forMac": "macOS için indir",
+    "forLinux": "Linux için indir",
+    "metaWindows": ".exe yükleyici",
+    "metaMacArm": "Apple Silicon için .dmg",
+    "metaLinux": "AppImage, çoğu dağıtımda çalışır",
+    "fileExe": "Yükleyici (.exe)",
+    "fileMsi": "Yükleyici (.msi)",
+    "fileDmgArm": ".dmg (Apple Silicon)",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "label": "İndir",
+    "mobileNote": "Open Speech Studio bir masaüstü uygulamasıdır. Bilgisayarınıza indirin.",
+    "other": "Diğer platformlar"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDownload": "İndir",
+    "items": {
+      "online": {
+        "title": "Çevrimiçi toplantılar",
+        "desc": "Mikrofonu ve bilgisayar sesini birlikte kaydedin; Teams, Zoom veya Meet'teki herkes metne girsin (Windows)."
+      },
+      "macos": {
+        "title": "Yeniden macOS'ta",
+        "desc": "Apple Silicon ve Intel için; dikte için Ctrl+Shift+Boşluk. Sesli okuma ve bilgisayar sesi daha sonra gelecek."
+      },
+      "linux": {
+        "title": "Linux kullanıma hazır",
+        "desc": "Konuşma motoru ve model dahil AppImage, .deb ve .rpm. Ctrl+Win artık Linux'ta da çalışıyor (X11)."
+      },
+      "models": {
+        "title": "İki yeni model",
+        "desc": "large-v3-turbo'nun kompakt sürümleri (574 ve 874 MB): small'dan daha doğru, medium'dan daha küçük."
+      },
+      "export": {
+        "title": "Tutanak hemen açılır",
+        "desc": ".txt, .md veya .odt olarak kaydedilen toplantı tutanağı hemen düzenleyicinizde açılır."
+      },
+      "signed": {
+        "title": "İmzalı indirmeler",
+        "desc": "Windows yükleyicileri imzalıdır; Linux paketlerinin doğrulayabileceğiniz bir imzası (.asc) vardır."
+      }
+    },
+    "label": "v0.12 sürümünde yeni",
+    "title": "Çevrimiçi toplantılar, <span>artık macOS ve Linux'ta da</span>",
+    "desc": "0.12 sürümü çevrimiçi toplantılarda bilgisayar sesini de kaydeder, macOS ve Linux için yükleyiciler getirir ve iki orta boy konuşma modeli ekler."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları yazıya dökebilirim?",
+      "a": "Ses ve video: WAV, MP3, FLAC, OGG, M4A, MP4, MKV, AVI, MOV ve daha fazlası. Dikte ve toplantılar doğrudan mikrofonunuzdan geçer."
+    },
+    "install": {
+      "q": "Bir şey yüklemem gerekiyor mu?",
+      "a": "Evet. Open Speech Studio bir masaüstü uygulamasıdır; web sürümü yoktur. Kurulumdan sonra uygulamada istediğiniz konuşma modelini indirirsiniz. macOS ve Linux paketlerinde zaten bir tane bulunur."
+    },
+    "price": {
+      "q": "Open Speech Studio ne kadar?",
+      "a": "Hiçbir şey. Uygulama Apache-2.0 lisansıyla ücretsiz ve açık kaynaklıdır; hesap, abonelik veya dakika sınırı yoktur."
+    },
+    "save": {
+      "q": "Çalışmam hangi dosya biçiminde kaydedilir?",
+      "a": "Dikte edilen metin doğrudan imlecin bulunduğu uygulamaya gider. Dosya dökümleri .txt, toplantı tutanakları .txt, Markdown veya .odt olarak kaydedilir. Her ikisi de seçtiğiniz bir klasöre otomatik olarak da kaydedilebilir."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows, macOS (Apple Silicon ve Intel) ve Linux (AppImage, .deb ve .rpm). macOS'ta uygulama henüz bir Apple Developer ID ile imzalı değildir: ilk seferde sağ tıklayıp Aç ile açın. Sesli okuma ve bilgisayar sesi kaydı orada henüz çalışmıyor. Intel için .dmg GitHub'daki sürümlerde bulunur."
+    },
+    "privacy": {
+      "q": "Sesim internete gidiyor mu?",
+      "a": "Hayır. Tanıma, Whisper ile kendi bilgisayarınızda çalışır. İnternete yalnızca modelleri ve sesleri indirmek için ihtiyacınız olur."
+    },
+    "hardware": {
+      "q": "Güçlü bir bilgisayar gerekir mi?",
+      "a": "Hayır. Küçük modeller 1-2 GB bellekle sıradan bir işlemcide akıcı çalışır. En büyük modeller için en az 6 GB video belleğine sahip bir NVIDIA ekran kartı önerilir."
+    },
+    "languages": {
+      "q": "Hangi dilleri tanır?",
+      "a": "Felemenkçe, İngilizce, Fransızca, Almanca, Türkçe ve İspanyolca dahil 99 dil. Sabit bir dil seçin ya da uygulamanın algılamasına izin verin. Uygulamanın kendisi 25 dilde kullanılabilir."
+    },
+    "jargon": {
+      "q": "Teknik terimleri ve adları tanır mı?",
+      "a": "Adları, kısaltmaları ve teknik terimleri sözlüğe ekleyin; isterseniz bir değiştirmeyle. small modelinden itibaren teknik dil ve aksanlar belirgin biçimde daha iyi tanınır."
+    },
+    "heading": "Sık sorulan sorular"
   },
   "tech": {
-    "heading": "Teknoloji <span class=\"accent\">stack'i</span>",
-    "desc": "Open Speech Studio modern, performanslı bir stack üzerine inşa edilmiştir. <strong>OpenAI Whisper</strong> state-of-the-art ses tanıma için. <strong>Rust</strong> hafif, hızlı bir backend için (Python runtime gerekmez). <strong>Tauri 2</strong> masaüstü uygulaması için — Electron'dan çok daha hafif (~10 MB, 200 MB yerine). UI için <strong>TypeScript + Svelte</strong>. LGPL-3.0 altında tamamen açık kaynak."
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "Windows, macOS ve Linux için Rust ile yazılmış ince bir yerel kabuk."
+    },
+    "whisper": {
+      "title": "whisper.cpp",
+      "desc": "OpenAI'nin Whisper modelleri yerel olarak çalışır; Windows'ta CUDA, Apple Silicon'da Metal ile."
+    },
+    "solid": {
+      "title": "SolidJS ve Vite",
+      "desc": "25 dil ve OpenAEC kurumsal stiliyle hızlı bir TypeScript arayüzü."
+    },
+    "cpal": {
+      "title": "cpal",
+      "desc": "Mikrofondan ses ve Windows'ta WASAPI loopback üzerinden bilgisayar sesi."
+    },
+    "piper": {
+      "title": "Piper",
+      "desc": "Felemenkçe, Flamanca ve İngilizce seslerle yerel metinden konuşmaya."
+    },
+    "release": {
+      "title": "GitHub Actions",
+      "desc": "Her sürüm platform başına otomatik olarak derlenir ve denetlenir; Windows ve Linux paketleri imzalıdır."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
   },
-  "finalcta": {
-    "heading": "Şimdi indirin <span class=\"accent\">— 30 saniye kurulum</span>",
-    "desc": "1 yükleyici dosyası (.exe), kayıt yok, hesap yok, kredi kartı yok. &lt;1 dakikada dikteye hazır. Windows 10 ve Windows 11'de çalışır.",
-    "download": "Yükleyiciyi indir (.exe)",
-    "github": "GitHub'da kaynağı görüntüle",
-    "meta": "v0.10.3 stable &middot; LGPL-3.0 &middot; Windows 10/11 &middot; ~40 MB indirme"
-  },
-  "cta": {
-    "download": "Yükleyiciyi indir",
-    "github": "GitHub"
-  },
-  "meta": {
-    "title": "Open Speech Studio — AEC için yerel konuşmadan metne | OpenAEC Foundation"
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }

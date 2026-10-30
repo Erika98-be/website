@@ -1,176 +1,281 @@
 {
   "header": {
-    "label": "OpenAEC Ecosystem",
     "title": "Open <span class=\"accent\">Speech</span> Studio",
-    "desc": "Free local speech recognition with Whisper AI. Press <strong>CTRL+Win</strong> and dictate into any application - chat, email, terminal, IDE. No cloud, no subscription, no limits. v0.10.3 stable, 1 installer, ready in 30 seconds.",
-    "badge": "v0.10.3 STABLE",
-    "meta": "v0.10.3 &middot; 80 commits &middot; Whisper AI &middot; Tauri 2 &middot; Rust",
-    "cta": {
-      "download": "Download installer (.exe)",
-      "github": "View on GitHub"
-    }
+    "downloadBtn": "Download",
+    "featuresBtn": "See the features",
+    "sourceBtn": "Source code",
+    "proof1": "Whisper · 99 languages",
+    "proof2": "Local, no cloud",
+    "proof4": "App in 25 languages",
+    "proof5": "Free · Apache-2.0",
+    "heroAlt": "Open Speech Studio: the speech models from tiny to large-v3-turbo, with speed, accuracy and memory use per model",
+    "label": "Speech recognition",
+    "tagline": "Talk instead of type, in any app and without the cloud",
+    "desc": "Hold a hotkey, speak and let go: your text appears where your cursor was. Transcribe meetings and recordings too. Recognition runs on your own computer, free and without a subscription."
   },
-  "usecases": {
-    "heading": "Use cases for <span class=\"accent\">AEC professionals</span>",
-    "intro": "Whether you're inspecting on-site, taking minutes in a project meeting, or dictating an email between tasks - Open Speech Studio works everywhere, even offline.",
-    "inspection": {
-      "tag": "JOB SITE",
-      "title": "On-site inspections",
-      "desc": "Dictate findings directly into Open Field Studio while taking photos. No taking off gloves, no typing on a tiny screen. Just talk - done."
-    },
-    "meetings": {
-      "tag": "MEETINGS",
-      "title": "Meeting minutes",
-      "desc": "Real-time transcription of project meetings on location. Fully processed locally - no privacy concerns about client names, prices, or confidential project data in the cloud."
-    },
-    "email": {
-      "tag": "COMMUNICATION",
-      "title": "Quick emails on-site",
-      "desc": "Dictate into Outlook or Gmail between tasks. Hands-free when your hands are dirty, you're wearing safety gloves, or holding a ladder."
-    },
-    "ai": {
-      "tag": "AI WORKFLOW",
-      "title": "Writing AI prompts",
-      "desc": "Dictate a prompt for Claude or ChatGPT much faster than typing. Speaking is ~3x faster and you often phrase more naturally - ideal for long, detailed prompts."
-    },
-    "code": {
-      "tag": "DEVELOPERS",
-      "title": "Code comments and commits",
-      "desc": "Dictate code explanations, docstrings, and commit messages directly into your IDE or terminal. Works seamlessly in VS Code, Cursor, Neovim - anywhere you can enter text."
-    },
-    "accessibility": {
-      "tag": "ACCESSIBILITY",
-      "title": "Accessibility",
-      "desc": "For RSI patients, people with motor impairments, or temporary injuries. Work your entire computer completely keyboard-free - GDPR-safe and subscription-free."
-    }
+  "meta": {
+    "description": "Free, open-source speech recognition on your own computer: dictate into any app with a hotkey, transcribe meetings and audio or video files, and have text read aloud. Whisper, 99 languages. For Windows, macOS and Linux.",
+    "title": "Open Speech Studio — OpenAEC Foundation"
   },
-  "why": {
-    "heading": "Why local?",
-    "intro": "Cloud speech recognition sends your voice to third-party servers. Open Speech Studio does everything on your own PC - faster, safer, and without monthly costs.",
-    "privacy": {
-      "title": "Privacy",
-      "desc": "Your voice never leaves your computer. GDPR-safe automatically - no DPA needed with external providers, no risk of data breaches."
-    },
-    "cost": {
-      "title": "No subscription",
-      "desc": "Otter.ai charges ~&euro;20/month. Dragon NaturallySpeaking ~&euro;500 one-time. Open Speech Studio is free forever - open source LGPL-3.0.",
-      "callout": "&euro;0 forever"
-    },
-    "limits": {
-      "title": "No rate limits",
-      "desc": "Dictate 10 hours a day if you want. No API quotas, no 'Fair Use Policy', no surprise invoices. Your hardware is the only limit."
-    }
-  },
-  "compare": {
-    "feature": "Feature",
-    "us": "Open Speech Studio",
-    "dragon": "Dragon NaturallySpeaking",
-    "otter": "Otter.ai",
-    "price": "Price",
-    "local": "100% local",
-    "gdpr": "GDPR-safe without DPA",
-    "langs": "Languages",
-    "gpu": "GPU acceleration (CUDA)",
-    "opensource": "Open source",
-    "yes": "Yes",
-    "yes2": "Yes",
-    "yes3": "Yes",
-    "yes4": "Yes",
-    "yes5": "Yes",
-    "no": "No (cloud)",
-    "no2": "No",
-    "no3": "No",
-    "no4": "No",
-    "no5": "No",
-    "na": "N/A (cloud)",
-    "priceUs": "&euro;0 (open source)",
-    "priceDragon": "~&euro;500 one-time",
-    "priceOtter": "~&euro;20/month",
-    "langsUs": "99 languages (Whisper)",
-    "langsDragon": "~6 languages",
-    "langsOtter": "~10 languages",
-    "opensourceUs": "Yes (LGPL-3.0)"
-  },
-  "features": {
-    "heading": "Features - what can <span class=\"accent\">it</span> do?",
-    "intro": "Open Speech Studio is more than a dictation tool. It's a complete speech-to-text suite with audio file transcription, meeting recordings, multiple Whisper models, and export to standard subtitle formats.",
+  "hl": {
     "dictate": {
-      "title": "Dictate anywhere",
-      "desc": "Dictate text directly into any application via a system-wide overlay. Works in Outlook, Word, Chrome, VS Code, Slack, Teams - literally anywhere in your OS."
+      "alt": "Start screen saying the app is ready, with the hotkey to start dictating",
+      "kicker": "Dictation",
+      "title": "Speak your text into any app",
+      "desc": "Hold Ctrl+Win, say your sentence and let go: the text appears where your cursor is, in your email, report, chat or code editor. Prefer to press once to start and once to stop? That works too, and you choose the hotkey."
     },
-    "transcribe": {
-      "title": "Audio file transcription",
-      "desc": "Transcribe audio files (.mp3, .wav, .m4a, .ogg) with parallel processing. Multiple files at once, fast and accurate."
+    "meeting": {
+      "alt": "Record and transcribe screen with language, interval, record button and the microphone meter",
+      "kicker": "Meetings",
+      "title": "Minutes of your meeting, without the cloud",
+      "desc": "Record a site meeting or conversation; the app transcribes along in segments of a few minutes. In an online meeting it also records your PC audio, so participants in Teams, Zoom or Meet end up in the transcript (Windows). Export to .txt, Markdown or .odt."
     },
-    "meetings": {
-      "title": "Real-time meeting transcription",
-      "desc": "Record project meetings and watch the transcription appear in real time. Automatic minutes, even offline on the job site."
+    "files": {
+      "alt": "Transcribe files screen with a drop zone for audio and video files",
+      "kicker": "Files",
+      "title": "Transcribe recordings and videos",
+      "desc": "Drop audio or video files into the app, from WAV and MP3 to MP4 and MOV. Several files are processed at once. Copy the text, save it as .txt or have every transcript saved to a folder automatically."
+    },
+    "tts": {
+      "alt": "Text to speech screen with voice selection, sliders for speed and pauses, and the voice library",
+      "kicker": "Read aloud",
+      "title": "Have text read aloud in a natural voice",
+      "desc": "Pick a Dutch, Flemish or English voice, set speed, expressiveness and pauses, and have a text read aloud. A voice is about 60 MB and runs on your own processor. Read aloud works on Windows for now."
     },
     "gpu": {
-      "title": "CUDA GPU acceleration",
-      "desc": "CUDA GPU acceleration for faster results. On a modern GPU, Whisper Large runs nearly real-time - optimal use of your hardware."
+      "alt": "Speech settings with language, an active NVIDIA graphics card, auto paste and sound effects",
+      "kicker": "Speed",
+      "title": "Quick on an ordinary laptop, faster with a graphics card",
+      "desc": "Choose a model that suits your computer: the small models run smoothly on the processor, the large ones are more accurate. On Windows an NVIDIA graphics card is used automatically, and you see which card is active and how much memory it has."
+    }
+  },
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "download": "Download",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "dictate": "Dictation",
+    "meeting": "Meetings",
+    "files": "Files",
+    "models": "Models and languages",
+    "all": "All features"
+  },
+  "features": {
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "Dictate, record meetings and transcribe in one app",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
+    "hotkey": {
+      "title": "Hotkey in any app",
+      "desc": "Ctrl+Win or Ctrl+Shift+Space, or your own combination of two or three keys."
     },
-    "shortcuts": {
-      "title": "Keyboard shortcuts",
-      "desc": "CTRL+Win for the overlay, CTRL+SHIFT+Space as alternative. No mouse click needed, no menu hunting - dictation starts in &lt;100ms."
+    "mode": {
+      "title": "Hold or toggle",
+      "desc": "Hold the key while you speak, or press once to start and again to stop."
+    },
+    "paste": {
+      "title": "Text at your cursor",
+      "desc": "The text is typed where your cursor is. One checkbox adds an Enter, handy for chat and AI prompts."
+    },
+    "sounds": {
+      "title": "Sound at start and stop",
+      "desc": "Hear when recording starts and finishes, with two sound sets and your own volume."
+    },
+    "mictest": {
+      "title": "Microphone test",
+      "desc": "Pick your microphone, see the level and check with a test sentence that recognition works."
+    },
+    "online": {
+      "title": "Online meetings",
+      "desc": "Microphone and PC audio together, so participants in Teams, Zoom or Meet end up in the transcript. On Windows."
+    },
+    "segments": {
+      "title": "Transcribes in segments",
+      "desc": "Automatically every few minutes, or in between with Save segment, without stopping the recording."
+    },
+    "meters": {
+      "title": "Microphone and PC levels",
+      "desc": "See during the recording whether audio is coming in, with peak, average and clipping."
+    },
+    "meetexport": {
+      "title": "Minutes as .txt, .md or .odt",
+      "desc": "Copy everything or export; the file opens straight in your editor. Saving automatically to a fixed folder works too."
+    },
+    "formats": {
+      "title": "Audio and video",
+      "desc": "WAV, MP3, FLAC, OGG, M4A, MP4, MKV, AVI, MOV and more. Drop them into the app or browse."
+    },
+    "parallel": {
+      "title": "Several files at once",
+      "desc": "Files are processed side by side; you choose how many at a time."
+    },
+    "txt": {
+      "title": "Save as text",
+      "desc": "Copy the text, export as .txt or have every transcript saved to a folder automatically."
     },
     "models": {
-      "title": "Whisper AI models",
-      "desc": "5 models: tiny, base, small, medium, large. Choose between speed (tiny) or accuracy (large). Memory usage 1-10GB depending on model."
+      "title": "Eight speech models",
+      "desc": "From tiny (75 MB) to large-v3 (3.1 GB). For each model you see speed, accuracy and memory use."
     },
     "languages": {
       "title": "99 languages",
-      "desc": "Whisper supports 99 languages: Dutch, English, German, French, Spanish, Polish, Arabic, Mandarin and many more. Automatic language detection."
+      "desc": "Choose a fixed language or let the app detect the spoken language."
     },
-    "overlay": {
-      "title": "Spotify-style overlay",
-      "desc": "Sleek, minimalist overlay UI with live waveform visualization. Stays out of the way, disappears automatically after inserting."
+    "dictionary": {
+      "title": "Your own dictionary",
+      "desc": "Teach the app names, abbreviations and jargon, with a replacement if you like."
     },
-    "history": {
-      "title": "History",
-      "desc": "Full history of transcriptions - searchable, reusable. Everything stored locally, you stay in control."
-    },
-    "export": {
-      "title": "Export TXT, SRT, VTT",
-      "desc": "Export transcriptions as plain text (.txt) or as subtitles (.srt, .vtt) for video content with timestamps."
-    },
-    "clipboard": {
-      "title": "Clipboard integration",
-      "desc": "Automatic clipboard integration - dictate and paste directly, or let text auto-insert at the cursor position."
+    "gpu": {
+      "title": "Graphics card or processor",
+      "desc": "On Windows an NVIDIA graphics card helps out; without one, everything runs on the processor."
     },
     "local": {
-      "title": "100% local",
-      "desc": "Everything runs locally on your own computer. Your data never leaves your PC. No cloud, no subscription, no limits. GDPR-safe out of the box."
+      "title": "Everything on your own PC",
+      "desc": "Your voice and your text never leave your computer. No account, no subscription, no limit."
     },
-    "tech": {
-      "title": "Whisper AI + Tauri + Rust",
-      "desc": "Built with OpenAI Whisper AI for speech recognition, Tauri for the desktop app and Rust for the backend. Open source."
+    "tts": {
+      "title": "Read aloud",
+      "desc": "Nine voices in Dutch, Flemish and English, with speed, expressiveness and pauses. On Windows."
     },
-    "showAll": "Show all features",
-    "showLess": "Show less"
+    "ui": {
+      "title": "App in 25 languages",
+      "desc": "From Dutch and English to Turkish, Polish and Japanese."
+    },
+    "tray": {
+      "title": "Always at hand",
+      "desc": "The app waits in the system tray and is ready as soon as you press the hotkey."
+    }
   },
-  "shortcuts": {
-    "title": "Keyboard shortcuts",
-    "desc": "Start speech-to-text anywhere in your operating system:",
-    "or": "or",
-    "note": "Configurable in settings - choose your own shortcut if it conflicts with other software."
+  "download": {
+    "title": "Download v0.12.2",
+    "lead": "Free, no account needed. For Windows, macOS and Linux.",
+    "forWindows": "Download for Windows",
+    "forMac": "Download for macOS",
+    "forLinux": "Download for Linux",
+    "metaWindows": ".exe installer",
+    "metaMacArm": ".dmg for Apple Silicon",
+    "metaLinux": "AppImage, runs on most distributions",
+    "fileExe": "Installer (.exe)",
+    "fileMsi": "Installer (.msi)",
+    "fileDmgArm": ".dmg (Apple Silicon)",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "label": "Download",
+    "mobileNote": "Open Speech Studio is a desktop app. Download it on your computer.",
+    "other": "Other platforms"
+  },
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "ctaDownload": "Download",
+    "items": {
+      "online": {
+        "title": "Online meetings",
+        "desc": "Record microphone and PC audio together, so everyone in Teams, Zoom or Meet ends up in the transcript (Windows)."
+      },
+      "macos": {
+        "title": "Back on macOS",
+        "desc": "For Apple Silicon and Intel, with Ctrl+Shift+Space to dictate. Read aloud and PC audio will follow later."
+      },
+      "linux": {
+        "title": "Linux ready to go",
+        "desc": "AppImage, .deb and .rpm with the speech engine and a model included. Ctrl+Win now works on Linux too (X11)."
+      },
+      "models": {
+        "title": "Two new models",
+        "desc": "Compact versions of large-v3-turbo (574 and 874 MB): more accurate than small, smaller than medium."
+      },
+      "export": {
+        "title": "Minutes open right away",
+        "desc": "Saved meeting minutes in .txt, .md or .odt open straight in your editor."
+      },
+      "signed": {
+        "title": "Signed downloads",
+        "desc": "The Windows installers are signed; the Linux packages come with a signature (.asc) you can verify."
+      }
+    },
+    "label": "New in v0.12",
+    "title": "Online meetings, <span>now on macOS and Linux too</span>",
+    "desc": "Version 0.12 also records PC audio in online meetings, brings installers for macOS and Linux and adds two mid-size speech models."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I transcribe?",
+      "a": "Audio and video: WAV, MP3, FLAC, OGG, M4A, MP4, MKV, AVI, MOV and more. Dictation and meetings go straight through your microphone."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "Yes. Open Speech Studio is a desktop app; there is no web version. After installing, you download a speech model of your choice in the app. The macOS and Linux packages already include one."
+    },
+    "price": {
+      "q": "What does Open Speech Studio cost?",
+      "a": "Nothing. The app is free and open source under the Apache-2.0 licence, with no account, subscription or limit on minutes."
+    },
+    "save": {
+      "q": "In which file format is my work saved?",
+      "a": "Dictated text goes straight into the app where your cursor is. File transcripts are saved as .txt, meeting minutes as .txt, Markdown or .odt. Both can also be saved automatically to a folder you choose."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "Windows, macOS (Apple Silicon and Intel) and Linux (AppImage, .deb and .rpm). On macOS the app is not yet signed with an Apple Developer ID: open it the first time with right-click and Open. Read aloud and recording PC audio do not work there yet. The .dmg for Intel is on the GitHub releases page."
+    },
+    "privacy": {
+      "q": "Does my voice go to the internet?",
+      "a": "No. Recognition runs with Whisper on your own computer. You only need internet to download models and voices."
+    },
+    "hardware": {
+      "q": "Do I need a powerful computer?",
+      "a": "No. The small models run smoothly on an ordinary processor with 1 to 2 GB of memory. For the largest models, an NVIDIA graphics card with at least 6 GB of video memory is recommended."
+    },
+    "languages": {
+      "q": "Which languages does it recognise?",
+      "a": "99 languages, including Dutch, English, French, German, Turkish and Spanish. Choose a fixed language or let the app detect it. The app itself is available in 25 languages."
+    },
+    "jargon": {
+      "q": "Does it recognise jargon and names?",
+      "a": "Add names, abbreviations and jargon to the dictionary, with a replacement if you like. From the small model upwards, jargon and accents are recognised noticeably better."
+    },
+    "heading": "Frequently asked questions"
   },
   "tech": {
-    "heading": "Tech <span class=\"accent\">stack</span>",
-    "desc": "Open Speech Studio is built on a modern, performant stack. <strong>OpenAI Whisper</strong> for state-of-the-art speech recognition. <strong>Rust</strong> for a lightweight, fast backend (no Python runtime needed). <strong>Tauri 2</strong> for the desktop app - much lighter than Electron (~10MB instead of 200MB). <strong>TypeScript + Svelte</strong> for the UI. Fully open source under LGPL-3.0."
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "A thin native shell in Rust for Windows, macOS and Linux."
+    },
+    "whisper": {
+      "title": "whisper.cpp",
+      "desc": "OpenAI's Whisper models, run locally, with CUDA on Windows and Metal on Apple Silicon."
+    },
+    "solid": {
+      "title": "SolidJS and Vite",
+      "desc": "A fast TypeScript interface, with 25 languages and the OpenAEC house style."
+    },
+    "cpal": {
+      "title": "cpal",
+      "desc": "Audio from the microphone and, on Windows, PC audio through WASAPI loopback."
+    },
+    "piper": {
+      "title": "Piper",
+      "desc": "Local text-to-speech with Dutch, Flemish and English voices."
+    },
+    "release": {
+      "title": "GitHub Actions",
+      "desc": "Every release is built and checked automatically per platform; the Windows and Linux packages are signed."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
   },
-  "finalcta": {
-    "heading": "Download now <span class=\"accent\">- 30 second setup</span>",
-    "desc": "1 installer file (.exe), no registration, no account, no credit card. Ready to dictate in &lt;1 minute. Works on Windows 10 and Windows 11.",
-    "download": "Download installer (.exe)",
-    "github": "View source on GitHub",
-    "meta": "v0.10.3 stable &middot; LGPL-3.0 &middot; Windows 10/11 &middot; ~40MB download"
-  },
-  "cta": {
-    "download": "Download installer",
-    "github": "GitHub"
-  },
-  "meta": {
-    "title": "Open Speech Studio — Local speech-to-text for AEC | OpenAEC Foundation"
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }

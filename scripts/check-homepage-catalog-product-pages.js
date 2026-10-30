@@ -87,11 +87,14 @@ for (const text of [
 }
 
 const expectedSpeechScreenshots = [
-  '/shared/assets/screenshots/open-speech-studio-tts.png',
-  '/shared/assets/screenshots/open-speech-studio-models.png',
-  '/shared/assets/screenshots/open-speech-studio-settings.png',
+  '/shared/assets/screenshots/open-speech-studio-hero.png',
+  '/shared/assets/screenshots/open-speech-studio-feat-dicteren.png',
+  '/shared/assets/screenshots/open-speech-studio-feat-vergadering.png',
+  '/shared/assets/screenshots/open-speech-studio-feat-bestanden.png',
+  '/shared/assets/screenshots/open-speech-studio-feat-voorlezen.png',
+  '/shared/assets/screenshots/open-speech-studio-feat-gpu.png',
 ];
-const speechScreenshotPaths = [...speech.matchAll(/<div class="slider-slide"><img src="([^"]*open-speech-studio[^"]*)"/g)]
+const speechScreenshotPaths = [...speech.matchAll(/<div class="slider-slide"><img [^>]*?src="([^"]*open-speech-studio[^"]*)"/g)]
   .map((match) => match[1]);
 assert.deepEqual(speechScreenshotPaths, expectedSpeechScreenshots, 'Speech Studio galerij is niet actueel');
 assert.ok(
