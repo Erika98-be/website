@@ -301,6 +301,22 @@ test('the Open Pointcloud Studio page offers every package of one release, in ev
     const start = html.indexOf('id="download"');
     assert.ok(start >= 0, `${label}: download block missing`);
     const block = html.slice(start, html.indexOf('</section>', start));
+    // A page on the product-page standard offers the installer, the disk image,
+    // the .deb and the AppImage through shared/productpagina.js (data-pp-dl).
+    if (html.includes('data-pp-repo="OpenAEC-Foundation/open-pointcloud-studio"')) {
+      const pp = [...block.matchAll(/<a\s[^>]*data-pp-item="([^"]+)"[^>]*>/g)].map(m => ({
+        platform: m[1], href: m[0].match(/href="([^"]+)"/)[1] }));
+      assert.deepEqual(pp.map(link => link.platform).sort(), ['linux-appimage', 'linux-deb', 'macos', 'windows'],
+        `${label}: the download block needs the installer, the disk image, the .deb and the AppImage`);
+      for (const link of pp) {
+        assert.ok(link.href.startsWith(`https://github.com/${pointcloudRepo}/releases/download/`),
+          `${label}: ${link.platform} must link to the file itself`);
+        assert.equal(downloads.platformFor(link.href.split('/').pop()), link.platform, `${label}: ${link.href}`);
+      }
+      assert.equal(new Set(pp.map(link => link.href.split('/').at(-2))).size, 1,
+        `${label}: all links must point at the same release`);
+      continue;
+    }
     const hero = html.slice(html.indexOf('class="hero-downloads"'), start);
 
     assert.deepEqual(linksIn(block).map(link => link.platform).sort(), Object.keys(pointcloudFiles).sort(),

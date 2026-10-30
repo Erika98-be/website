@@ -1,208 +1,308 @@
 {
-  "meta": {
-    "title": "Open Pointcloud Studio — OpenAEC Foundation",
-    "description": "Application de bureau pour nuages de points (LAS, LAZ, E57) : visualiser, mesurer, convertir, coupes en DXF et DWG, maillages. Windows, macOS, Linux."
-  },
   "header": {
-    "label": "Visualiser, mesurer et modifier des nuages de points",
     "title": "Open <span class=\"accent\">Pointcloud</span> Studio",
-    "desc": "Une application de bureau pour visualiser, mesurer, modifier et convertir des scans laser et d'autres nuages de points. À partir d'un scan, elle produit un dessin de coupe en DXF ou en DWG, un maillage fermé, et les faces planes et les cylindres d'une pièce. Elle fonctionne sous Windows, macOS et Linux, est écrite en Rust et n'a besoin ni de navigateur ni de webview.",
-    "badge": "Beta",
-    "dlWindows": "Installateur Windows",
-    "dlMac": "macOS (.dmg)",
-    "allFiles": "Tous les fichiers, les sommes de contrôle et les notes d'installation",
-    "dlLinux": "Linux (AppImage)",
-    "direct": "Téléchargement direct :"
+    "downloadBtn": "Télécharger",
+    "featuresBtn": "Voir les fonctions",
+    "sourceBtn": "Code source",
+    "proof4": "MCP pour assistants IA",
+    "proof5": "Gratuit · GPL-3.0",
+    "heroAlt": "Open Pointcloud Studio avec le nuage de points d'une maison et de son jardin, à gauche le navigateur de projet avec scans, classes et vues, à droite les propriétés",
+    "label": "Nuages de points",
+    "tagline": "Du scan laser à la cote, au plan et au maillage, dans une seule application gratuite",
+    "desc": "Ouvrez un scan de plusieurs millions de points et explorez-le aussitôt. Mesurez ce dont vous avez besoin, découpez un plan ou une coupe dans le nuage et emportez-le dans votre logiciel de CAO en DXF ou DWG, ou faites-en un maillage ou les faces d'une pièce."
   },
-  "slides": {
-    "one": "Open Pointcloud Studio en vue isométrique : un scan de 455 millions de points d'un bâtiment avec son jardin et ses arbres en fleurs, le panneau de projet à gauche et le panneau Propriétés à droite",
-    "two": "Le même scan avec la boîte de coupe réglée à 11 % de la hauteur, ce qui montre les pièces vues du dessus, et une mesure de distance de 26,774 mètres entre deux points",
-    "three": "La boîte de coupe réduite à une tranche comprise entre 4 % et 31 % de la hauteur, qui dégage la façade et ses fenêtres ; à droite, la vue enregistrée et les curseurs de la boîte de coupe",
-    "four": "Dessin de coupe de deux pièces d'essai générées : le plan vu d'en haut, avec l'aperçu de la coupe remplie (le mur entre les pièces, dont la baie de porte reste ouverte, et un poteau rond, sous forme de zones remplies) et, à droite, le bloc Section drawing (Snedetekening dans l'interface néerlandaise) du panneau des propriétés",
-    "five": "Maillage fermé des mêmes pièces d'essai générées : la surface des deux pièces, avec une baie de porte laissée ouverte dans un mur extérieur, et, à droite, le bloc Closed mesh (Gesloten mesh dans l'interface néerlandaise) avec son résultat : 15 868 sommets, 30 563 triangles et un écart moyen de 1,6 mm",
-    "six": "Faces détectées des mêmes pièces d'essai générées, chaque type dans sa couleur (plafonds en bleu, murs couleur sable), et, à droite, le bloc Detect faces (Vlakken herkennen dans l'interface néerlandaise) avec ses décomptes : 2 sols, 2 plafonds, 10 murs et 1 poteau",
-    "prev": "Image précédente",
-    "next": "Image suivante"
+  "meta": {
+    "description": "Application de bureau gratuite et open source pour les scans laser et nuages de points (LAS, LAZ, E57, PLY) : visualiser, mesurer et nettoyer, plans et coupes en DXF ou DWG, maillages et faces détectées, aussi vers IFC. Pour Windows, macOS et Linux.",
+    "title": "Open Pointcloud Studio — OpenAEC Foundation"
   },
-  "download": {
-    "title": "Télécharger la v0.8.0",
-    "intro": "Chaque bouton lance le téléchargement immédiatement. Aucun compte n'est nécessaire et il n'y a pas de page intermédiaire.",
-    "win": {
-      "req": "Windows 10 et 11, 64 bits",
-      "primary": "Installateur (.exe)",
-      "zip": "Zip sans installateur"
-    },
-    "mac": {
-      "req": "macOS 11 et versions ultérieures, processeurs Apple et Intel",
-      "primary": "Image disque (.dmg)",
-      "tar": "Le programme seul (.tar.gz)"
-    },
-    "linux": {
-      "req": "x86-64 ; Ubuntu 22.04, Debian 12, Fedora 36 ou plus récent",
-      "primary": "AppImage (toute distribution)",
-      "deb": ".deb (Debian, Ubuntu)",
-      "tar": "Le programme seul (.tar.gz)"
-    },
-    "arm": {
-      "tag": "expérimental",
-      "label": "Linux sur ARM 64 bits :"
-    },
-    "note": {
-      "win": "<strong>Windows :</strong> l'installateur installe l'application pour l'utilisateur courant, sans droits d'administrateur, ou pour tous les utilisateurs. Si la version ne porte pas de signature de code, Windows peut signaler un éditeur inconnu : choisissez <em>Informations complémentaires</em>, puis <em>Exécuter quand même</em>. Si vous préférez ne rien installer, décompressez le zip et lancez le programme depuis ce dossier.",
-      "mac": "<strong>macOS :</strong> ouvrez l'image disque et faites glisser l'application dans Applications. L'application n'est pas notarisée, macOS refuse donc le premier lancement. Autorisez-le une fois : sous macOS 15 et versions ultérieures, lancez l'application, fermez le message et choisissez <em>Ouvrir quand même</em> sous <em>Confidentialité et sécurité</em> dans les Réglages Système ; sous macOS 11 à 14, cliquez sur l'application en maintenant la touche Contrôle enfoncée et choisissez <em>Ouvrir</em>.",
-      "linux": "<strong>Linux :</strong> rendez l'AppImage exécutable une fois avec <code>chmod +x</code>, puis lancez-la. L'AppImage se monte elle-même par FUSE (<code>fusermount3</code> ou <code>fusermount</code>) ; sans FUSE, lancez-la avec <code>--appimage-extract-and-run</code> après le nom du fichier. Le paquet .deb s'installe avec <code>sudo apt install ./open-pointcloud-studio_*_amd64.deb</code>, à exécuter dans le dossier du téléchargement. Linux doit disposer d'une bibliothèque C en version 2.35 ou plus récente (Ubuntu 22.04, Debian 12, Fedora 36 ou plus récent), de X11 ou de Wayland, et d'un pilote Vulkan ou d'OpenGL ES 3. Les boîtes de dialogue de fichiers utilisent le portail de bureau, ou <code>zenity</code> là où il n'y en a pas.",
-      "arm": "<strong>Linux sur ARM 64 bits :</strong> expérimental. Ces paquets ne sont construits et testés que sur des machines de compilation avec un rendu logiciel, pas encore sur de vraies cartes ARM ni de vrais ordinateurs portables ARM.",
-      "sha": "Dans la version publiée, chaque fichier est accompagné d'un fichier <code>.sha256</code> du même nom qui contient sa somme de contrôle : ajoutez <code>.sha256</code> à la fin de l'adresse d'un téléchargement pour l'obtenir. Le README explique <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio#checking-a-download\" target=\"_blank\" rel=\"noopener\">comment vérifier un téléchargement avec ce fichier</a> (en anglais)."
-    }
-  },
-  "features": {
-    "title": "Ce que vous pouvez faire",
-    "open": {
-      "title": "Ouvrir des scans",
-      "desc": "Nuages de points aux formats LAS, LAZ, E57, PLY, PCD, PTX, PTS et texte, et maillages OBJ, PLY, OFF et STL. Déposez des fichiers sur la fenêtre et ouvrez-en plusieurs à la fois : chaque fichier est un calque que l'on masque, affiche ou ferme."
-    },
-    "project": {
-      "title": "Tout un projet de scan en une fois",
-      "desc": "Ouvrez un dossier de scans, ou le fichier de projet de scan (.rcp) d'un projet : les scans qu'il énumère et qui se trouvent à côté de lui s'ouvrent ensemble. On peut aussi déposer un dossier ou un fichier de projet sur la fenêtre."
-    },
-    "large": {
-      "title": "Gros fichiers",
-      "desc": "Les fichiers LAS et LAZ s'ouvrent aussitôt à partir de leur en-tête. Un fichier E57 de 512 Mio ou plus montre d'abord un échantillon réparti dans tout le fichier, lorsque sa structure le permet ; les autres fichiers de cette taille affichent toutes les quelques secondes les points déjà lus. Une barre au-dessus de la scène indique la progression et le temps restant, avec un bouton pour annuler."
-    },
-    "lod": {
-      "title": "Le détail là où vous regardez",
-      "desc": "Pour les nuages d'un million de points ou plus, l'application construit d'elle-même un index sur disque, un octree. Il fournit le détail qui correspond à la position de la caméra, jusqu'au budget de points que vous fixez : dix millions de points au plus. Pendant que la caméra bouge, les points affichés restent à l'écran ; le détail de la nouvelle vue les remplace une fois lu. L'index est conservé et resservira à la prochaine ouverture du fichier."
-    },
-    "display": {
-      "title": "Affichage",
-      "desc": "Quatre modes de couleur (couleur enregistrée, altitude, intensité et classification), l'éclairage eye-dome et une taille de point réglable. Les classes présentes dans les nuages s'affichent ou se masquent une à une. Un cube de vue et sept directions de caméra orientent la vue."
-    },
-    "section": {
-      "title": "Boîte de coupe",
-      "desc": "Une boîte dont on fait glisser les six faces limite ce qui est affiché, sélectionné, maillé et parcouru à la recherche de faces. C'est ainsi que l'on tire un plan d'étage ou une coupe d'un scan ; le contenu de la boîte s'exporte séparément ou se dessine en 2D. La boîte suit les axes X, Y et Z du scan et ne peut pas pivoter."
+  "hl": {
+    "view": {
+      "alt": "Nuage de points d'une maison coloré selon l'altitude, avec le panneau Affichage ouvert sous le cube de vue",
+      "kicker": "Visualiser",
+      "title": "Même un scan de cent millions de points reste fluide",
+      "desc": "L'application crée un index sur disque et charge le détail là où vous regardez, jusqu'à dix millions de points à l'écran. Colorez les points selon RVB, altitude, intensité ou classe, et masquez une à une les classes comme la végétation ou le sol."
     },
     "measure": {
-      "title": "Mesurer",
-      "desc": "<em>Distance</em> mesure une ligne passant par deux points ou plus : chaque segment, la longueur totale, la longueur horizontale et la différence de hauteur. <em>Area</em> mesure un polygone fermé dans son propre plan, de sorte qu'un mur ou un toit en pente est mesuré en vraie grandeur, avec sa surface vue d'en haut et son périmètre. Les points sont choisis parmi tous les points du scan actif, pas seulement parmi ceux qui sont à l'écran."
+      "alt": "Hauteur mesurée de 5,600 m le long de la façade d'une maison, avec la sélection en orange sur le toit et les valeurs dans les propriétés",
+      "kicker": "Mesurer",
+      "title": "Mesurez dans le scan plutôt que sur place",
+      "desc": "Cliquez deux points et lisez la longueur, la distance horizontale et la différence de hauteur. Les surfaces se mesurent dans leur propre plan : un mur ou un toit en pente est donc juste aussi. Sélectionnez, supprimez ou éclaircissez des points ; votre fichier source reste intact."
+    },
+    "box": {
+      "alt": "Boîte de coupe à six faces déplaçables autour d'une maison dans le nuage de points",
+      "kicker": "Boîte de coupe",
+      "title": "Découpez exactement la partie dont vous avez besoin",
+      "desc": "Une boîte à six faces déplaçables limite ce que vous voyez, mesurez, exportez et dessinez. Si un bâtiment est de biais dans le scan, Aligner sur les murs fait pivoter la boîte le long de ses murs."
+    },
+    "drawing": {
+      "alt": "Coupe A d'une maison en plan 2D dans son propre onglet, avec à droite les calques et le bouton Exporter DXF/DWG",
+      "kicker": "Plans",
+      "title": "Du scan au plan et à la coupe en DWG",
+      "desc": "Créez un plan, une élévation ou une coupe à l'échelle 1:1, avec murs et planchers remplis et des lignes CAO droites et modifiables sur leur propre calque. Enregistrez-le en DXF ou DWG, ou placez-le sur une feuille de A4 à A0 et exportez en PDF."
+    },
+    "mesh": {
+      "alt": "La fenêtre Mailler le nuage de points avec ses quatre méthodes : maillage fermé, maillage de terrain, surface 3D et faces planes",
+      "kicker": "Maillage et faces",
+      "title": "Un maillage fermé ou les faces d'une pièce",
+      "desc": "Choisissez parmi quatre méthodes : un maillage fermé d'une pièce avec l'écart mesuré, un maillage de terrain, une surface 3D rapide, ou les sols, murs et colonnes en faces séparées avec leur surface. Exportez en OBJ, PLY, STL, DXF, DWG ou IFC4."
+    },
+    "photos": {
+      "alt": "Photo panoramique d'une station de scan dans son propre onglet, avec un curseur pour la photo et le bouton Comparer avec la 3D",
+      "kicker": "Photos",
+      "title": "Placez-vous là où était le scanner",
+      "desc": "Cliquez sur une station de scan et regardez autour de vous dans sa photo panoramique, posée sur les points pour que vous puissiez y mesurer aussi. Placez la photo à côté du modèle 3D, côte à côte ou l'une sous l'autre, ou donnez à un scan sans couleurs celles de ses photos."
+    }
+  },
+  "subnav": {
+    "label": "Sur cette page",
+    "features": "Fonctions",
+    "download": "Télécharger",
+    "whatsnew": "Nouveautés",
+    "faq": "FAQ",
+    "releases": "Versions"
+  },
+  "tabs": {
+    "highlights": "Points forts",
+    "view": "Ouvrir et visualiser",
+    "measure": "Mesurer et modifier",
+    "drawing": "Plans",
+    "mesh": "Maillage et faces",
+    "connect": "Export et intégrations",
+    "all": "Toutes les fonctions"
+  },
+  "features": {
+    "learnMore": "En savoir plus",
+    "label": "Fonctions",
+    "heading": "Tout pour vos scans laser, dans une seule application",
+    "sub": "Commencez par les points forts ou choisissez un thème.",
+    "tabsLabel": "Fonctions par thème"
+  },
+  "f": {
+    "formats": {
+      "title": "Tous les formats de scan courants",
+      "desc": "LAS, LAZ, E57, PLY, PCD, PTX, PTS et fichiers texte, plus les maillages OBJ, PLY, OFF et STL. Glissez-les simplement dans la fenêtre."
+    },
+    "project": {
+      "title": "Tout un projet de scan d'un coup",
+      "desc": "Ouvrez un dossier de scans ou un fichier de projet de scan (.rcp) : tous les scans s'ouvrent ensemble, chacun comme un calque à afficher ou masquer."
+    },
+    "large": {
+      "title": "Grands scans sans attendre",
+      "desc": "Vous voyez les points pendant la lecture du fichier. L'index sur disque est réutilisé : la fois suivante, le scan s'ouvre en un clin d'œil."
+    },
+    "colour": {
+      "title": "Quatre modes de couleur et classes",
+      "desc": "RVB, altitude, intensité ou classe, avec éclairage eye-dome et taille de point réglable. Activez ou masquez chaque classe séparément."
+    },
+    "stations": {
+      "title": "Stations, photos et déplacement",
+      "desc": "Les stations de scan E57, PCD et PTX sont affichées. Placez-vous dans un panorama, parcourez les photos et marchez dans le scan avec W, A, S et D."
+    },
+    "tabs": {
+      "title": "Tout en onglets",
+      "desc": "Le modèle 3D, les vues, plans, coupes, feuilles et photos s'affichent en onglets côte à côte et reviennent au prochain démarrage."
+    },
+    "measuretool": {
+      "title": "Distance et surface",
+      "desc": "Longueur, longueur horizontale et dénivelé ; surface dans son propre plan et vue de dessus, avec le périmètre. Les points proviennent de tout le scan, pas seulement de l'écran."
+    },
+    "select": {
+      "title": "Sélectionner et nettoyer",
+      "desc": "Sélectionnez par rectangle, supprimez avec annulation, éclaircissez à un pourcentage exact, ou déplacez et mettez à l'échelle un nuage. L'export écrit le résultat."
     },
     "views": {
       "title": "Vues, notes et BCF",
-      "desc": "Une vue enregistrée conserve la caméra, la boîte de coupe, le mode de couleur et les annotations : une note sur un point choisi ou une flèche entre deux points. Toutes les vues d'un scan s'exportent en un seul fichier BCF 2.1, chacune avec ses notes, sa caméra, ses plans de coupe et une image de la scène."
+      "desc": "Enregistrez caméra, boîte de coupe et couleur comme vue, ajoutez notes et flèches, et envoyez le tout en BCF 2.1 vers votre logiciel BIM."
     },
-    "stations": {
-      "title": "Photos de station et déplacement à pied",
-      "desc": "Les stations de scan des fichiers E57, PCD et PTX apparaissent comme des repères dans la scène. Une station qui a des photos est représentée par une boule : cliquez dessus pour vous placer à cette station et regarder autour de vous. Parcourez le scan avec W, A, S et D, descendez et montez avec Q et E, allez plus vite avec Maj."
+    "rotatebox": {
+      "title": "Boîte de coupe orientable",
+      "desc": "Saisissez les limites en coordonnées, ajustez la boîte à une sélection ou alignez-la sur les murs. Là où elle coupe un maillage, la coupe paraît pleine."
     },
-    "edit": {
-      "title": "Sélectionner et modifier",
-      "desc": "Sélectionnez tous les points source contenus dans un rectangle, ou choisissez un seul point pour lire ses coordonnées et ses attributs. Supprimez la sélection, avec annulation jusqu'à huit suppressions, réduisez un nuage à un pourcentage exact de ses points, ou déplacez-le et changez son échelle. Le fichier source n'est jamais modifié : un export écrit le résultat des modifications."
+    "section": {
+      "title": "Plan, élévation et coupe",
+      "desc": "Un plan 2D à l'échelle 1:1 en DXF ou DWG (R2004 à R2018), avec coupe remplie, baies de portes et fenêtres ouvertes et lignes CAO droites."
+    },
+    "drawview": {
+      "title": "Voir le plan tout de suite",
+      "desc": "Chaque plan s'ouvre dans l'application même, avec calques, échelle graphique et coordonnées. Open CAD Studio est fourni pour visualiser DXF et DWG."
+    },
+    "sheets": {
+      "title": "Feuilles de A4 à A0",
+      "desc": "Placez vues et plans à l'échelle sur une feuille avec cartouche, ajoutez cotes, textes et repères, et exportez en PDF."
+    },
+    "closedmesh": {
+      "title": "Maillage fermé d'une pièce",
+      "desc": "Une surface sans chevauchement, avec les baies de portes et fenêtres ouvertes. Vous voyez l'écart moyen, à 95 % et maximal entre points et maillage."
+    },
+    "terrain": {
+      "title": "Maillage de terrain et surface 3D",
+      "desc": "Un terrain à partir des points les plus bas, ou un aperçu rapide de tout un scan avec murs et porte-à-faux."
+    },
+    "faces": {
+      "title": "Détecter faces et colonnes",
+      "desc": "Sols, plafonds, murs et plans inclinés avec leur contour et leurs ouvertures, et colonnes et conduites rondes, chacun avec sa surface et son résidu."
+    },
+    "texture": {
+      "title": "Maillage avec couleur et texture",
+      "desc": "Écrivez un maillage coloré en OBJ avec une texture PNG. Les couleurs des photos E57 passent dans les nouveaux maillages."
+    },
+    "cadbim": {
+      "title": "Vers la CAO et le BIM",
+      "desc": "Maillages et faces détectées en OBJ, PLY, STL, en géométrie 3D DXF ou DWG, ou en éléments IFC4 avec leurs valeurs mesurées."
     },
     "export": {
       "title": "Exporter et fusionner",
-      "desc": "Exportez le nuage entier, la sélection, tout sauf la sélection, le contenu de la boîte de coupe ou un point sur N en LAS, LAZ, E57, PLY, XYZ, PTS ou CSV. Les exports LAS et LAZ conservent les enregistrements de points d'origine avec leurs attributs. Les scans LAS et LAZ visibles peuvent être fusionnés en un seul fichier. Chaque export relit la source complète : aucun point n'est perdu parce qu'il n'était pas à l'écran."
-    },
-    "mesh": {
-      "title": "Maillages",
-      "desc": "<em>Terrain mesh</em> construit une surface 2,5D à partir des points les plus bas d'une grille. <em>3D surface</em> suit aussi les murs et les surplombs ; le résultat a des trous et n'est pas étanche. <em>Export mesh…</em> enregistre tout maillage, qu'il ait été créé ici, ouvert depuis un fichier ou téléchargé depuis 3D BAG, en OBJ, en PLY binaire ou en STL binaire. Le panneau des propriétés indique les sommets, les triangles, les arêtes ouvertes et le nombre de parties connexes."
-    },
-    "drawing": {
-      "title": "Dessin de coupe",
-      "desc": "<em>Section drawing</em> produit un dessin 2D à l'échelle 1:1 de ce que coupe la boîte de coupe et l'enregistre en DXF ou en DWG : un plan tiré de la tranche située sous la face supérieure de la boîte, ou une coupe verticale tirée de la tranche située derrière l'un de ses quatre côtés. Le dessin contient les points de cette tranche pour tous les scans visibles, réduits à un point tous les 5 mm. <em>Filled cut</em> dessine les murs, les poteaux et les planchers que traverse la tranche sous forme de zones remplies avec leur contour et laisse ouvertes les baies de portes et de fenêtres. <em>Preview</em> affiche ces zones par-dessus les points avant l'enregistrement d'un fichier."
-    },
-    "closedMesh": {
-      "title": "Maillage fermé",
-      "desc": "<em>Closed mesh</em> construit, à partir de tous les points contenus dans la boîte de coupe ou du scan entier, une surface sans recouvrement : fermée partout où le scan a des points ou un trou plus étroit que la limite fixée (0,25 m au départ), les baies de portes et de fenêtres restant ouvertes. Placez la boîte autour d'une pièce et choisissez <em>Start</em> ; le bloc du panneau des propriétés indique à l'avance la taille de la zone et le nombre approximatif de triangles, et prévient lorsque ce nombre dépasse ce qu'un maillage peut contenir. À la fin, il donne la distance moyenne, la distance à 95 % et la plus grande distance entre les points et le maillage, les arêtes ouvertes et les parties connexes. Un maillage compte au plus quatre millions de sommets et huit millions de triangles et s'enregistre en OBJ, PLY ou STL."
-    },
-    "faces": {
-      "title": "Faces détectées",
-      "desc": "<em>Detect faces</em> trouve, dans la boîte de coupe ou dans le scan entier, les faces planes (sols, plafonds, murs et plans inclinés) ainsi que les poteaux ronds et les tuyaux. Une face plane est un plan avec son contour, dans lequel une fenêtre est un trou et une porte une encoche ; un poteau ou un tuyau est un cylindre avec son axe, son rayon et sa longueur scannée, sans contour. Ce n'est pas un maillage de la surface. La liste donne pour chaque face son type, sa superficie et le résidu de ses points (RMS) ; un clic met la face en évidence dans la scène. <em>Export faces…</em> les enregistre en JSON, avec les paramètres de chaque plan et de chaque cylindre, ou en OBJ, avec un groupe par face."
+      "desc": "Le nuage entier, la sélection, la boîte de coupe ou un point sur N en LAS, LAZ, E57, PLY, XYZ, PTS ou CSV, avec tous les points de la source. Fusionnez des scans LAS et LAZ."
     },
     "bag": {
       "title": "Bâtiments 3D BAG",
-      "desc": "<em>3D BAG buildings…</em>, dans la vue File, télécharge des modèles de bâtiments des Pays-Bas depuis le registre public 3D BAG pour une zone en coordonnées RD New et les affiche avec un scan. Un téléchargement couvre au plus 2 km sur 2 km et environ 5 000 bâtiments et demande une connexion internet. C'est une extension intégrée que l'on peut désactiver sur la page Extensions."
+      "desc": "Récupérez des modèles de bâtiments des Pays-Bas depuis la 3D BAG pour une zone jusqu'à 2 km sur 2 et affichez-les avec votre scan."
     },
-    "language": {
-      "title": "Néerlandais et anglais",
-      "desc": "L'interface suit la langue du système, néerlandais ou anglais, et se change dans les réglages (Settings). Il n'y a pas d'interface en français. Les messages de la barre d'état et la plupart des textes qui contiennent un nombre n'existent qu'en anglais. Cinq thèmes de couleurs sont proposés."
+    "mcp": {
+      "title": "Serveur MCP et API de commandes",
+      "desc": "Un assistant IA ou votre script ouvre des scans, mesure, dessine des coupes, crée des maillages et demande une image de la vue 3D."
     },
-    "showAll": "Afficher toutes les fonctions",
-    "showLess": "Afficher moins"
-  },
-  "formats": {
-    "title": "Formats de fichier",
-    "th": {
-      "format": "Format",
-      "read": "Lecture",
-      "write": "Écriture",
-      "notes": "Remarques"
+    "cli": {
+      "title": "Ligne de commande sans fenêtre",
+      "desc": "Convertir, découper, fusionner, indexer, dessiner des coupes, mailler et détecter des faces dans vos propres scripts."
     },
-    "yes": "oui",
-    "no": "non",
-    "asDrawing": "oui, comme dessin",
-    "las": "S'ouvre à partir de l'en-tête ; les exports conservent les enregistrements de points d'origine",
-    "e57": "Les positions du scanner et les photos de station sont lues ; les photos sphériques et cylindriques ne sont pas affichées",
-    "ply": "Lit l'ASCII et le binaire little-endian ; écrit les deux",
-    "pcd": "ASCII, binaire et binaire compressé",
-    "ptx": "Avec la position du scanner de chaque scan",
-    "text": "Texte, un point par ligne",
-    "obj": "Maillage avec couleurs et normales ; les couleurs de matériau sont lues, pas les images de texture. Les faces détectées s'écrivent aussi en OBJ, avec un groupe par face",
-    "plyMeshName": "PLY (maillage)",
-    "plyMesh": "Affiché sous forme de faces. Écrit en PLY binaire avec des coordonnées en double précision, et avec les couleurs et les normales lorsque le maillage en a",
-    "stl": "Affiché sous forme de faces. Écrit en STL binaire : uniquement des triangles, sans couleurs. Un maillage situé à plus de 2 048 m de zéro est écrit par rapport à une origine en mètres entiers, indiquée dans l'en-tête du fichier",
-    "off": "Affiché sous forme de faces ; peut être enregistré en OBJ, PLY ou STL",
-    "dxf": "Lecture : DXF ASCII uniquement. Les entités POINT s'ouvrent comme des points, les entités 3DFACE comme des faces que l'on peut enregistrer en OBJ, PLY ou STL ; les autres entités sont ignorées. Écriture : le dessin 2D d'une boîte de coupe, avec des points, des zones remplies, des contours et une ligne de texte ; ce n'est pas un format des exports de points",
-    "dwg": "Le dessin 2D d'une boîte de coupe, comme pour le DXF, en version R2004, R2010, R2013 ou R2018. Les fichiers DWG ne s'ouvrent pas",
-    "facesName": "Faces en JSON (.json)",
-    "faces": "Les faces détectées d'un scan : chaque plan avec ses paramètres, son contour et les résidus de ses points, chaque cylindre avec son axe, son rayon et ses résidus, ainsi que les arêtes entre les faces planes. Le <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/docs/guide.md#the-json-file\" target=\"_blank\" rel=\"noopener\">guide de l'utilisateur</a> décrit chaque champ (en anglais)",
-    "rcpName": "Fichier de projet de scan (.rcp)",
-    "rcp": "Seule la liste des scans est lue. Les copies indexées des scans (.rcs) d'un projet sont dans un format fermé et ne sont pas lues",
-    "bcf": "Vues enregistrées avec leurs notes et leurs images",
-    "png": "Image de la vue 3D, par l'API de commandes"
+    "sdk": {
+      "title": "Bibliothèque C et API cloud",
+      "desc": "Le noyau de nuage de points en bibliothèque C pour vos logiciels, et en service HTTP et MCP dans un conteneur."
+    },
+    "extensions": {
+      "title": "Extensions",
+      "desc": "Ajoutez vos propres tâches avec un script dans n'importe quel langage, comme Python ou PowerShell, qui pilote la fenêtre via l'API de commandes."
+    },
+    "themes": {
+      "title": "Néerlandais et anglais, cinq thèmes",
+      "desc": "L'interface suit la langue de votre système. Clair, Forge, OpenAEC, Blueprint et contraste élevé, dans le style de toutes les applications OpenAEC."
+    }
   },
-  "automation": {
-    "title": "API de commandes et serveur MCP",
-    "api": "Chaque fenêtre lance un serveur de commandes sur <code>127.0.0.1</code>. Les commandes ouvrent et ferment des scans, règlent la caméra, la boîte de coupe et l'affichage, sélectionnent, suppriment, mesurent, enregistrent des vues, exportent, dessinent des coupes, créent des maillages, détectent des faces, téléchargent des bâtiments 3D BAG et prennent des images de la vue 3D. Le serveur n'écoute que sur l'adresse de bouclage et refuse toute commande sans le jeton.",
-    "mcp": "<code>open-pointcloud-studio --mcp</code> lance un serveur Model Context Protocol. Il propose un outil pour chaque commande de l'API, des outils qui attendent la fin des tâches longues, un outil qui renvoie la vue 3D sous forme d'image et des outils pour lister, choisir et démarrer des fenêtres.",
-    "cli": "En ligne de commande, l'application fonctionne aussi sans fenêtre : conversion vers un autre format, export des points contenus dans une boîte, fusion de scans, construction d'un index, dessin d'une coupe en DXF ou en DWG, création de maillages et détection de faces.",
-    "linkApi": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/native/API.md\" target=\"_blank\" rel=\"noopener\">API.md</a> : toutes les commandes (en anglais)",
-    "linkMcp": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/native/MCP.md\" target=\"_blank\" rel=\"noopener\">MCP.md</a> : tous les outils et la configuration d'un programme client (en anglais)",
-    "linkCli": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio#command-line\" target=\"_blank\" rel=\"noopener\">README</a> : les modes de la ligne de commande (en anglais)"
+  "download": {
+    "title": "Télécharger v2026.44.1",
+    "lead": "Gratuit, sans compte. Pour Windows, macOS et Linux.",
+    "forWindows": "Télécharger pour Windows",
+    "forMac": "Télécharger pour macOS",
+    "forLinux": "Télécharger pour Linux",
+    "metaWindows": "programme d'installation .exe",
+    "metaMac": ".dmg universel, Intel et Apple Silicon",
+    "metaLinux": "AppImage, fonctionne sur la plupart des distributions",
+    "fileExe": "Programme d'installation (.exe)",
+    "fileDmg": ".dmg universel",
+    "fileDeb": ".deb",
+    "fileAppImage": "AppImage",
+    "label": "Télécharger",
+    "mobileNote": "Open Pointcloud Studio est une application de bureau. Téléchargez-la sur votre ordinateur.",
+    "other": "Autres plateformes"
   },
-  "limits": {
-    "title": "Bon à savoir",
-    "box": "La boîte de coupe ne peut pas pivoter. Un bâtiment placé de biais par rapport aux axes du scan est coupé selon cet angle.",
-    "units": "Les longueurs et les surfaces sont en mètres. Les coordonnées d'un scan sont lues comme des mètres et ne sont pas converties.",
-    "measure": "Une mesure n'est pas enregistrée avec le scan.",
-    "surface": "Une surface créée avec 3D surface a des trous et n'est pas étanche.",
-    "meshSize": "Un maillage compte au plus quatre millions de sommets et huit millions de triangles, qu'il vienne d'un fichier ou qu'il soit créé dans l'application.",
-    "session": "Un maillage fermé et les faces détectées n'existent que pendant la session en cours : exportez-les pour les conserver. Un scan ne contient qu'un maillage ; un nouveau maillage remplace le précédent.",
-    "drawingPoints": "La limite de points d'un dessin de coupe est de 150 000 points par défaut et de 400 000 au plus ; s'il reste davantage de points après la réduction à 5 mm, l'espacement des points double jusqu'à ce qu'ils tiennent.",
-    "fill": "La coupe remplie d'un dessin de coupe est tracée à partir des points : un mur scanné d'un seul côté est dessiné comme une bande mince, les ouvertures de moins d'un demi-mètre environ sont fermées, et le mobilier présent dans la tranche est dessiné, sauf si ses points sont d'abord supprimés.",
-    "closedMesh": "Un maillage fermé arrondit les angles d'environ un quart de voxel, fait fusionner ou troue les objets plus minces que deux ou trois voxels et laisse ouverts certains trous situés près d'une autre surface. Sans stations de scan, une surface que le centre de la zone voit exactement par la tranche peut ressortir déchirée.",
-    "faces": "Detect faces ne signale pas les bandes de moins de 0,15 m de large, comme les tableaux de porte. Une zone trop grande pour le budget de travail est parcourue avec des voxels plus grands, les scans peu denses donnent moins de faces, voire aucune, les poteaux ronds de plus de 0,7 m de large environ ressortent comme des bandes de mur et, sans stations de scan, le côté vers lequel une face regarde est une estimation.",
-    "drawingCheck": "Les fichiers DXF et DWG n'ont pas encore été vérifiés avec un éventail de logiciels de dessin. Si un logiciel refuse un fichier DWG, essayez le DXF ou une autre version de fichier.",
-    "generated": "La coupe remplie, Closed mesh et Detect faces ont été mesurés sur des pièces générées, pas encore sur le scan d'un bâtiment réel. Le guide de l'utilisateur énumère les limites de <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/docs/guide.md#the-filled-cut-and-its-limits\" target=\"_blank\" rel=\"noopener\">la coupe remplie</a>, de <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/docs/guide.md#limits-of-a-closed-mesh\" target=\"_blank\" rel=\"noopener\">Closed mesh</a> et de <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/docs/guide.md#limits-of-detected-faces\" target=\"_blank\" rel=\"noopener\">Detect faces</a> (en anglais).",
-    "index": "Pour un grand relevé, un index peut occuper plusieurs gigaoctets sur le disque.",
-    "showAll": "Afficher tous les points",
-    "showLess": "Afficher moins"
+  "whatsnew": {
+    "ctaChangelog": "Toutes les notes de version",
+    "ctaDownload": "Télécharger",
+    "items": {
+      "style": {
+        "title": "Le style de toutes les applications OpenAEC",
+        "desc": "Barre de titre, ruban, onglets, panneaux, menu Fichier et paramètres partagent l'apparence des autres applications de bureau OpenAEC, avec une seule barre en haut."
+      },
+      "lines": {
+        "title": "Lignes CAO droites",
+        "desc": "Plans et coupes reçoivent des polylignes fermées et modifiables le long de la coupe, aussi dans une boîte orientée, sur leur propre calque."
+      },
+      "compare": {
+        "title": "Photo à côté du modèle 3D",
+        "desc": "Une photo E57 s'ouvre dans son propre onglet, à côté ou au-dessus d'un panneau 3D avec sa propre caméra et un séparateur déplaçable."
+      },
+      "texture": {
+        "title": "Maillage avec texture",
+        "desc": "Texturer la surface écrit un maillage coloré en OBJ avec coordonnées UV et texture PNG, avec progression et annulation."
+      },
+      "signed": {
+        "title": "Installateurs signés",
+        "desc": "L'installateur et l'application Windows ont une signature valide, et l'application macOS est notariée par Apple et s'ouvre normalement."
+      },
+      "api": {
+        "title": "API cloud et bibliothèque C",
+        "desc": "Le noyau existe désormais aussi en service HTTP et MCP dans un conteneur, et en bibliothèque C pour Windows, macOS et Linux."
+      }
+    },
+    "label": "Nouveau dans la v2026.44",
+    "title": "Nouveau style, <span>lignes CAO droites</span>",
+    "desc": "La version 2026.44 donne à la fenêtre le style de toutes les applications OpenAEC, trace des lignes droites dans vos coupes et place une photo à côté du modèle 3D. Les installateurs sont signés, et les versions suivent désormais l'année et la semaine."
   },
-  "docs": {
-    "title": "Guide, changements et code source",
-    "guide": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/docs/guide.md\" target=\"_blank\" rel=\"noopener\">Guide de l'utilisateur</a> : chaque outil en détail (en anglais).",
-    "readme": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio#readme\" target=\"_blank\" rel=\"noopener\">README</a> : l'installation selon le système, les cinq premières minutes, les vitesses mesurées et les limites (en anglais).",
-    "changelog": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/CHANGELOG.md\" target=\"_blank\" rel=\"noopener\">Journal des modifications</a> : ce qui a changé dans chaque version (en anglais).",
-    "source": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio\" target=\"_blank\" rel=\"noopener\">Code source sur GitHub</a>, avec les <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/issues\" target=\"_blank\" rel=\"noopener\">tickets</a> pour signaler un problème ou faire une demande."
+  "faq": {
+    "files": {
+      "q": "Quels fichiers puis-je ouvrir ?",
+      "a": "Les nuages de points en LAS, LAZ, E57, PLY, PCD, PTX, PTS et texte (XYZ, ASC, TXT, CSV) : les formats ouverts qu'exportent les scanners laser et logiciels de scan. Aussi les maillages OBJ, PLY, OFF et STL, les points et faces d'un DXF ASCII, et la liste des scans d'un fichier de projet (.rcp). Il n'ouvre pas les copies fermées (.rcs) ni les fichiers DWG."
+    },
+    "install": {
+      "q": "Dois-je installer quelque chose ?",
+      "a": "Oui, c'est une application de bureau ; il n'y a pas de version web. L'installateur Windows fonctionne sans droits d'administrateur, et l'AppImage Linux démarre sans installation. Open CAD Studio, pour visualiser les plans, est déjà inclus."
+    },
+    "price": {
+      "q": "Combien coûte Open Pointcloud Studio ?",
+      "a": "Rien. L'application est gratuite et open source sous GPL-3.0, le noyau de nuage de points sous LGPL-3.0, sans compte ni abonnement."
+    },
+    "save": {
+      "q": "Dans quel format mon travail est-il enregistré ?",
+      "a": "Dans des formats ouverts, et votre scan ne change jamais. Vous exportez vos résultats en LAS, LAZ, E57, PLY, XYZ, PTS ou CSV, les plans en DXF, DWG ou PDF, maillages et faces en OBJ, PLY, STL, JSON ou IFC4, et les vues en BCF. L'application garde vues et notes par scan ; il n'y a pas de fichier de projet propre."
+    },
+    "systems": {
+      "q": "Sur quels systèmes fonctionne-t-il ?",
+      "a": "Windows 10 et 11 (64 bits), macOS 11 et plus récent (Apple et Intel) et Linux x86-64 (.deb et AppImage), avec un pilote Vulkan ou OpenGL ES 3. La page des versions propose aussi un zip sans installateur et des paquets expérimentaux pour Linux sur ARM 64 bits."
+    },
+    "practice": {
+      "q": "Est-ce adapté à la pratique du bâtiment ?",
+      "a": "Oui. Les plans vont vers votre logiciel de CAO en DXF ou DWG, faces et maillages vers le BIM en IFC4, et les remarques en BCF 2.1. Les bâtiments de la 3D BAG sont récupérés en coordonnées RD néerlandaises. Les mesures sont en mètres ; les coordonnées d'un scan ne sont pas converties."
+    },
+    "ai": {
+      "q": "Que peut en faire un assistant IA ?",
+      "a": "open-pointcloud-studio --mcp démarre un serveur MCP (Model Context Protocol). Un assistant comme Claude peut ainsi ouvrir des scans, régler la caméra et la boîte de coupe, mesurer, exporter, dessiner des coupes, créer des maillages, détecter des faces et recevoir une image de la vue 3D. Chaque fenêtre a aussi une API de commandes locale pour vos scripts."
+    },
+    "size": {
+      "q": "Quelle taille peut avoir un scan ?",
+      "a": "Grande. Un PLY de 3,2 Gio avec 114 millions de points s'ouvre avec son index en une fraction de seconde, et une sélection dans une boîte de 100 × 100 × 100 m prend environ une demi-seconde. Un index peut occuper plusieurs gigaoctets sur disque pour un grand relevé."
+    },
+    "accuracy": {
+      "q": "Quelle est la fiabilité de la coupe remplie, du maillage fermé et des faces ?",
+      "a": "Ils sont dérivés des points et mesurés jusqu'ici sur des pièces générées, pas encore sur le scan d'un vrai bâtiment. Un mur scanné d'un seul côté devient une bande fine, et les bandes étroites comme les tableaux de porte ne deviennent pas une face. C'est pourquoi l'application affiche l'écart mesuré de chaque maillage ; vérifiez le résultat avant de l'utiliser."
+    },
+    "bim": {
+      "q": "Crée-t-il automatiquement un plan complet ou une maquette BIM ?",
+      "a": "Pas encore. Vous créez vous-même plans et coupes avec la boîte de coupe, et les faces détectées partent en éléments IFC4 séparés. L'assistant Nuage de points vers plan trouve aujourd'hui les niveaux d'un bâtiment ; les étapes pour les murs, les ouvertures et la maquette IFC sont encore en construction."
+    },
+    "heading": "Questions fréquentes"
   },
   "tech": {
-    "title": "Technique et licence",
-    "desc": "L'application de bureau est sous licence GPL-3.0-only, la bibliothèque de nuages de points sous LGPL-3.0-or-later. Chaque paquet contient les textes des licences."
+    "rust": {
+      "title": "Rust",
+      "desc": "Un seul programme natif sans navigateur ni webview, pour Windows, macOS et Linux, avec de petits paquets signés."
+    },
+    "ui": {
+      "title": "iced et openaec-ui",
+      "desc": "L'interface en iced, avec la crate Rust partagée openaec-ui pour la barre de titre, le ruban, les onglets, les panneaux et les thèmes, comme les autres applications de bureau OpenAEC."
+    },
+    "wgpu": {
+      "title": "wgpu",
+      "desc": "Dessine des millions de points et de maillages sur la carte graphique via Vulkan, Metal, DirectX ou OpenGL ES."
+    },
+    "octree": {
+      "title": "Index octree sur disque",
+      "desc": "Fournit le détail du point de vue actuel dans un budget de points et est conservé pour la fois suivante."
+    },
+    "cad": {
+      "title": "Open CAD Studio",
+      "desc": "L'application de CAO open source de Hakan Seven et ses contributeurs est incluse dans chaque paquet et affiche les plans DXF et DWG exportés."
+    },
+    "api": {
+      "title": "MCP, API, CLI et C",
+      "desc": "Un serveur MCP, une API de commandes locale, une ligne de commande, une API cloud en conteneur et une bibliothèque C (ABI 1.0) sous LGPL."
+    },
+    "heading": "Technologie",
+    "sub": "Pour ceux qui veulent savoir comment c'est construit."
   },
-  "cta": {
-    "download": "Télécharger",
-    "guide": "Guide",
-    "github": "GitHub"
-  },
-  "footer": {
-    "slogan": "Construisez librement. Construisons ensemble."
+  "releases": {
+    "showAll": "Afficher toutes les versions",
+    "showLess": "Afficher seulement les trois dernières",
+    "github": "Toutes les versions sur GitHub"
   }
 }

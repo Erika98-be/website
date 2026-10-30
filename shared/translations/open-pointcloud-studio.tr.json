@@ -1,208 +1,308 @@
 {
-  "meta": {
-    "title": "Open Pointcloud Studio — OpenAEC Foundation",
-    "description": "Nokta bulutları (LAS, LAZ, E57) için masaüstü uygulaması: görüntüleme, ölçüm, dönüştürme, DXF ve DWG kesit çizimleri, mesh üretimi. Windows, macOS, Linux."
-  },
   "header": {
-    "label": "Nokta bulutlarını görüntüleyin, ölçün ve düzenleyin",
     "title": "Open <span class=\"accent\">Pointcloud</span> Studio",
-    "desc": "Lazer taramalarını ve diğer nokta bulutlarını görüntülemek, ölçmek, düzenlemek ve dönüştürmek için bir masaüstü uygulaması. Bir taramadan DXF ya da DWG kesit çizimi, kapalı mesh ve bir odanın düzlemleri ile silindirlerini çıkarır. Windows, macOS ve Linux'ta çalışır, Rust ile yazılmıştır; web tarayıcısına ya da webview'e ihtiyaç duymaz.",
-    "badge": "Beta",
-    "dlWindows": "Windows kurulum dosyası",
-    "dlMac": "macOS (.dmg)",
-    "allFiles": "Tüm dosyalar, sağlama toplamları ve kurulum notları",
-    "dlLinux": "Linux (AppImage)",
-    "direct": "Doğrudan indir:"
+    "downloadBtn": "İndir",
+    "featuresBtn": "Özellikleri gör",
+    "sourceBtn": "Kaynak kodu",
+    "proof4": "Yapay zekâ asistanları için MCP",
+    "proof5": "Ücretsiz · GPL-3.0",
+    "heroAlt": "Bahçeli bir evin nokta bulutuyla Open Pointcloud Studio; solda taramalar, sınıflar ve görünümlerle proje tarayıcısı, sağda özellikler",
+    "label": "Nokta bulutları",
+    "tagline": "Lazer taramasından ölçüye, çizime ve ağa, tek bir ücretsiz uygulamada",
+    "desc": "Milyonlarca noktalık bir taramayı açın ve hemen içinde dolaşın. İhtiyacınız olanı ölçün, buluttan bir plan veya kesit çıkarın ve DXF ya da DWG olarak CAD programınıza aktarın ya da ondan bir ağ veya bir odanın yüzeylerini oluşturun."
   },
-  "slides": {
-    "one": "Open Pointcloud Studio izometrik genel görünümde: bir binanın bahçesi ve çiçek açmış ağaçlarıyla birlikte 455 milyon noktalık taraması; solda proje paneli, sağda Özellikler paneli",
-    "two": "Aynı tarama, kesit kutusu yüksekliğin %11'ine ayarlanmış durumda: odalar yukarıdan görünüyor ve iki nokta arasında 26,774 metrelik bir uzaklık ölçümü var",
-    "three": "Kesit kutusu, yüksekliğin %4 ile %31'i arasındaki bir dilime daraltılmış; böylece pencereleriyle birlikte cephe ortaya çıkıyor. Sağda kaydedilmiş görünüm ve kesit kutusunun sürgüleri yer alıyor",
-    "four": "Yapay olarak üretilmiş iki deneme odasının kesit çizimi: üstten görünen plan ve dolu kesitin önizlemesi (kapı boşluğu açık bırakılmış ara duvar ile yuvarlak bir kolon, dolu bölgeler olarak); sağda Özellikler panelindeki Section drawing bloğu (Felemenkçe arayüzde Snedetekening)",
-    "five": "Aynı yapay deneme odalarının kapalı mesh'i: iki odanın yüzeyi, dış duvarlardan birinde açık bırakılmış bir kapı boşluğuyla; sağda Closed mesh bloğu (Felemenkçe arayüzde Gesloten mesh) ve sonucu: 15.868 köşe noktası, 30.563 üçgen ve 1,6 mm ortalama sapma",
-    "six": "Aynı yapay deneme odalarının algılanan yüzeyleri, her tür kendi renginde (tavanlar mavi, duvarlar kum rengi); sağda Detect faces bloğu (Felemenkçe arayüzde Vlakken herkennen) ve sayıları: 2 zemin, 2 tavan, 10 duvar ve 1 kolon",
-    "prev": "Önceki görsel",
-    "next": "Sonraki görsel"
+  "meta": {
+    "description": "Lazer taramaları ve nokta bulutları (LAS, LAZ, E57, PLY) için ücretsiz, açık kaynaklı masaüstü uygulaması: görüntüleme, ölçme ve temizleme, DXF veya DWG olarak planlar ve kesitler, ağlar ve algılanan yüzeyler, IFC'ye de. Windows, macOS ve Linux için.",
+    "title": "Open Pointcloud Studio — OpenAEC Foundation"
   },
-  "download": {
-    "title": "v0.8.0 sürümünü indir",
-    "intro": "Her düğme indirmeyi hemen başlatır. Hesap açmanız gerekmez ve araya bir sayfa girmez.",
-    "win": {
-      "req": "Windows 10 ve 11, 64 bit",
-      "primary": "Kurulum dosyası (.exe)",
-      "zip": "Kurulumsuz zip"
+  "hl": {
+    "view": {
+      "alt": "Yüksekliğe göre renklendirilmiş bir evin nokta bulutu; görünüm küpünün altında Görünüm paneli açık",
+      "kicker": "Görüntüleme",
+      "title": "Yüz milyon noktalık bir tarama bile akıcı kalır",
+      "desc": "Uygulama diskte bir dizin oluşturur ve baktığınız yerin ayrıntısını yükler; ekranda aynı anda on milyona kadar nokta. Noktaları RGB, yükseklik, yoğunluk veya sınıfa göre renklendirin; bitki örtüsü ya da zemin gibi sınıfları tek tek kapatın."
     },
-    "mac": {
-      "req": "macOS 11 ve sonrası, Apple ve Intel işlemciler",
-      "primary": "Disk görüntüsü (.dmg)",
-      "tar": "Yalnızca program (.tar.gz)"
+    "measure": {
+      "alt": "Bir evin cephesi boyunca ölçülen 5,600 m yükseklik; seçim çatıda turuncu, ölçülen değerler özelliklerde",
+      "kicker": "Ölçme",
+      "title": "Sahada değil, taramada ölçün",
+      "desc": "İki noktaya tıklayın; uzunluğu, yatay mesafeyi ve yükseklik farkını okuyun. Alanlar kendi düzlemlerinde ölçülür, böylece bir duvar ya da eğimli çatı da doğru çıkar. Noktaları seçin, silin veya seyreltin; kaynak dosyanıza asla dokunulmaz."
     },
-    "linux": {
-      "req": "x86-64; Ubuntu 22.04, Debian 12, Fedora 36 veya daha yenisi",
-      "primary": "AppImage (her dağıtım)",
-      "deb": ".deb (Debian, Ubuntu)",
-      "tar": "Yalnızca program (.tar.gz)"
+    "box": {
+      "alt": "Nokta bulutundaki bir evin çevresinde altı sürüklenebilir yüzlü kesit kutusu",
+      "kicker": "Kesit kutusu",
+      "title": "Tam olarak ihtiyacınız olan parçayı kesin",
+      "desc": "Altı sürüklenebilir yüzlü bir kutu, gördüğünüzü, ölçtüğünüzü, dışa aktardığınızı ve çizdiğinizi sınırlar. Bina taramada eğik duruyorsa, Duvarlara hizala kutuyu duvarlar boyunca döndürür."
     },
-    "arm": {
-      "tag": "deneysel",
-      "label": "64 bit ARM üzerinde Linux:"
+    "drawing": {
+      "alt": "Bir evin A kesiti kendi sekmesinde 2D çizim olarak; sağda çizim katmanları ve DXF/DWG dışa aktar düğmesi",
+      "kicker": "Çizimler",
+      "title": "Taramadan DWG plan ve kesite",
+      "desc": "Dolgulu duvar ve döşemeler ile kendi katmanında düz, düzenlenebilir CAD çizgileriyle 1:1 ölçekte plan, görünüş veya kesit oluşturun. DXF ya da DWG olarak kaydedin veya A4'ten A0'a bir paftaya yerleştirip PDF olarak dışa aktarın."
     },
-    "note": {
-      "win": "<strong>Windows:</strong> kurulum dosyası uygulamayı yönetici hakları gerekmeden geçerli kullanıcı için ya da tüm kullanıcılar için kurar. Sürüm kod imzası taşımıyorsa Windows bilinmeyen yayımcı uyarısı gösterebilir: önce <em>Ek bilgi</em>'yi, sonra <em>Yine de çalıştır</em>'ı seçin. Hiçbir şey kurmak istemiyorsanız zip dosyasını açıp programı oradan başlatın.",
-      "mac": "<strong>macOS:</strong> disk görüntüsünü açın ve uygulamayı Uygulamalar klasörüne sürükleyin. Uygulama notarize edilmediği için macOS ilk açılışı engeller. Buna bir kez izin verin: macOS 15 ve sonrasında uygulamayı başlatın, iletiyi kapatın ve Sistem Ayarları'nda <em>Gizlilik ve Güvenlik</em> altında <em>Yine de Aç</em>'ı seçin; macOS 11 ile 14 arasında uygulamaya Control tuşuna basarak tıklayın ve <em>Aç</em>'ı seçin.",
-      "linux": "<strong>Linux:</strong> AppImage dosyasını bir kez <code>chmod +x</code> ile çalıştırılabilir yapın, sonra başlatın. AppImage kendini FUSE (<code>fusermount3</code> ya da <code>fusermount</code>) ile bağlar; FUSE yoksa dosya adının ardına <code>--appimage-extract-and-run</code> yazarak başlatın. .deb paketini, indirdiğiniz dosyanın bulunduğu klasörde <code>sudo apt install ./open-pointcloud-studio_*_amd64.deb</code> komutuyla kurun. Linux'ta 2.35 veya daha yeni sürümde bir C kitaplığı (Ubuntu 22.04, Debian 12, Fedora 36 veya daha yenisi), X11 ya da Wayland ve bir Vulkan sürücüsü ya da OpenGL ES 3 gerekir. Dosya seçme pencereleri masaüstü portalını, portal yoksa <code>zenity</code> aracını kullanır.",
-      "arm": "<strong>64 bit ARM üzerinde Linux:</strong> deneysel. Bu paketler yalnızca yazılımsal görüntü oluşturma kullanan derleme makinelerinde derlenip sınandı; gerçek ARM kartlarında ve dizüstü bilgisayarlarda henüz denenmedi.",
-      "sha": "Sürümde her dosyanın yanında, aynı adı taşıyan ve sağlama toplamını içeren bir <code>.sha256</code> dosyası bulunur: bu dosyayı almak için indirme adresinin sonuna <code>.sha256</code> ekleyin. README, <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio#checking-a-download\" target=\"_blank\" rel=\"noopener\">bir indirmenin bu dosyayla nasıl doğrulanacağını</a> anlatır (İngilizce)."
+    "mesh": {
+      "alt": "Dört yöntemiyle Nokta bulutunu ağla penceresi: kapalı ağ, arazi ağı, 3D yüzey ve düz yüzeyler",
+      "kicker": "Ağ ve yüzeyler",
+      "title": "Kapalı bir ağ ya da bir odanın yüzeyleri",
+      "desc": "Dört yöntem arasından seçin: ölçülen sapmasıyla bir odanın kapalı ağı, arazi ağı, hızlı bir 3D yüzey ya da alanlarıyla ayrı yüzeyler olarak döşemeler, duvarlar ve kolonlar. OBJ, PLY, STL, DXF, DWG veya IFC4'e aktarın."
+    },
+    "photos": {
+      "alt": "Kendi sekmesinde bir tarama istasyonunun panorama fotoğrafı; fotoğraf kaydırıcısı ve 3D ile karşılaştır düğmesi",
+      "kicker": "Fotoğraflar",
+      "title": "Tarayıcının durduğu yerde durun",
+      "desc": "Bir tarama istasyonuna tıklayın ve noktaların üzerine yerleşen panorama fotoğrafında etrafa bakın; orada da ölçüm yapabilirsiniz. Fotoğrafı 3D modelin yanına, yan yana ya da alt alta koyun veya renksiz bir taramaya fotoğraflarının renklerini verin."
     }
   },
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "download": "İndir",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "view": "Açma ve görüntüleme",
+    "measure": "Ölçme ve düzenleme",
+    "drawing": "Çizimler",
+    "mesh": "Ağ ve yüzeyler",
+    "connect": "Dışa aktarma ve entegrasyonlar",
+    "all": "Tüm özellikler"
+  },
   "features": {
-    "title": "Neler yapabilirsiniz",
-    "open": {
-      "title": "Taramaları açma",
-      "desc": "LAS, LAZ, E57, PLY, PCD, PTX, PTS ve metin biçimlerindeki nokta bulutları ile OBJ, PLY, OFF ve STL biçimindeki mesh'ler açılır. Dosyaları pencereye sürükleyip bırakın, birkaçını birlikte açın: her dosya gizleyebileceğiniz, gösterebileceğiniz veya kapatabileceğiniz bir katmandır."
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Lazer taramalarınız için her şey, tek uygulamada",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "formats": {
+      "title": "Tüm yaygın tarama biçimleri",
+      "desc": "LAS, LAZ, E57, PLY, PCD, PTX, PTS ve metin dosyaları ile OBJ, PLY, OFF ve STL ağları. Pencereye sürükleyip bırakmanız yeterli."
     },
     "project": {
       "title": "Bütün bir tarama projesi tek seferde",
-      "desc": "Bir tarama klasörünü ya da projenin tarama projesi dosyasını (.rcp) açın: dosyanın listelediği ve yanında duran taramalar birlikte açılır. Klasörü ya da proje dosyasını pencereye sürükleyip bırakmak da olur."
+      "desc": "Bir tarama klasörünü veya tarama proje dosyasını (.rcp) açın: tüm taramalar birlikte açılır, her biri gösterip gizleyebileceğiniz bir katman olarak."
     },
     "large": {
-      "title": "Büyük dosyalar",
-      "desc": "LAS ve LAZ dosyaları başlık bilgisinden hemen açılır. 512 MiB veya daha büyük bir E57 dosyası, yapısı elverişliyse, önce dosyanın geneline yayılmış bir örneklem gösterir; bu boyuttaki diğer dosyalar o ana kadar okunan noktaları birkaç saniyede bir gösterir. Sahnenin üstündeki bir şerit ilerlemeyi ve kalan süreyi gösterir; iptal düğmesi de oradadır."
+      "title": "Büyük taramalar beklemeden",
+      "desc": "Dosya okunurken noktaları görürsünüz. Diskteki dizin yeniden kullanılır, böylece tarama bir sonraki sefer göz açıp kapayıncaya kadar açılır."
     },
-    "lod": {
-      "title": "Baktığınız yerde ayrıntı",
-      "desc": "Bir milyon ve daha fazla noktalı bulutlar için uygulama diskte kendiliğinden bir dizin (octree) oluşturur. Bu dizin, belirlediğiniz nokta bütçesine kadar (en çok on milyon nokta) kameranın o anki konumuna uygun ayrıntıyı sağlar. Kamera hareket ederken ekrandaki noktalar yerinde kalır; yeni görünümün ayrıntısı okununca onların yerini alır. Dizin saklanır ve dosyayı sonra yeniden açtığınızda tekrar kullanılır."
+    "colour": {
+      "title": "Dört renk modu ve sınıflar",
+      "desc": "RGB, yükseklik, yoğunluk veya sınıf; eye-dome aydınlatma ve ayarlanabilir nokta boyutuyla. Her sınıfı ayrı ayrı açıp kapatın."
     },
-    "display": {
-      "title": "Görüntüleme",
-      "desc": "Dört renk modu (kayıtlı renk, yükseklik, yoğunluk ve sınıflandırma), eye-dome aydınlatma ve ayarlanabilir nokta boyutu. Bulutlarda bulunan sınıflar tek tek gösterilip gizlenebilir. Görünüm küpü ve yedi kamera yönü görünümü çevirir."
+    "stations": {
+      "title": "İstasyonlar, fotoğraflar ve yürüme",
+      "desc": "E57, PCD ve PTX tarama istasyonları gösterilir. Bir panoramada durun, fotoğraflar arasında gezinin ve W, A, S, D ile taramada yürüyün."
     },
-    "section": {
-      "title": "Kesit kutusu",
-      "desc": "Altı yüzü sürüklenebilen bir kutu, neyin gösterileceğini, seçileceğini, mesh'e dönüştürüleceğini ve yüzey aramasına gireceğini sınırlar. Bir taramadan kat planı ya da kesit böyle çıkarılır; kutunun içeriği ayrıca dışa aktarılabilir ya da 2B çizim olarak çizilebilir. Kutu taramanın X, Y ve Z eksenlerini izler ve döndürülemez."
+    "tabs": {
+      "title": "Her şey sekmelerde",
+      "desc": "3D model, görünümler, planlar, kesitler, paftalar ve fotoğraflar sekmeler halinde yan yanadır ve bir sonraki açılışta geri gelir."
     },
-    "measure": {
-      "title": "Ölçüm",
-      "desc": "<em>Distance</em> seçilen iki veya daha fazla noktadan geçen bir çizgiyi ölçer: her parça, toplam uzunluk, yatay uzunluk ve yükseklik farkı. <em>Area</em> kapalı bir çokgeni kendi düzleminde ölçer; böylece bir duvar ya da eğimli bir çatı gerçek alanıyla ölçülür, üstten görünen alanı ve çevresi de verilir. Noktalar yalnızca ekrandakilerden değil, etkin taramanın bütün noktaları arasından seçilir."
+    "measuretool": {
+      "title": "Mesafe ve alan",
+      "desc": "Uzunluk, yatay uzunluk ve yükseklik farkı; kendi düzleminde ve üstten görülen alan, çevresiyle. Noktalar yalnızca ekrandakinden değil, tüm taramadan alınır."
+    },
+    "select": {
+      "title": "Seçme ve temizleme",
+      "desc": "Dikdörtgenle seçin, geri alarak silin, tam bir yüzdeye seyreltin veya bir bulutu taşıyıp ölçekleyin. Sonucu dışa aktarma yazar."
     },
     "views": {
       "title": "Görünümler, notlar ve BCF",
-      "desc": "Kaydedilen bir görünüm kamerayı, kesit kutusunu, renk modunu ve açıklamaları saklar: seçilen bir noktaya not ya da iki nokta arasına ok. Bir taramanın bütün görünümleri tek bir BCF 2.1 dosyası olarak dışa aktarılır; her görünümün notları, kamerası, kesme düzlemleri ve bir sahne görüntüsü dosyada yer alır."
+      "desc": "Kamerayı, kesit kutusunu ve rengi görünüm olarak kaydedin, not ve ok ekleyin ve hepsini BCF 2.1 olarak BIM programınıza gönderin."
     },
-    "stations": {
-      "title": "İstasyon fotoğrafları ve yürüme",
-      "desc": "E57, PCD ve PTX taramalarının tarama istasyonları sahnede işaretlerle gösterilir. Fotoğrafı olan istasyon bir küre olarak çizilir: tıklayınca o istasyonda durup çevrenize bakarsınız. Taramanın içinde W, A, S ve D ile yürüyün; Q ve E ile aşağı ve yukarı gidin, Shift ile hızlanın."
+    "rotatebox": {
+      "title": "Döndürülebilir kesit kutusu",
+      "desc": "Sınırları koordinat olarak yazın, kutuyu bir seçime uydurun veya duvarlara hizalayın. Bir ağı kestiği yerde kesit dolu görünür."
     },
-    "edit": {
-      "title": "Seçme ve düzenleme",
-      "desc": "Bir dikdörtgenin içindeki bütün kaynak noktaları seçin ya da tek bir nokta seçip koordinatlarını ve özniteliklerini okuyun. Seçimi silin (sekiz silmeye kadar geri alınabilir), bulutu noktalarının tam bir yüzdesine seyreltin ya da taşıyıp ölçekleyin. Kaynak dosya hiçbir zaman değişmez: dışa aktarma düzenlenmiş sonucu yazar."
+    "section": {
+      "title": "Plan, görünüş ve kesit",
+      "desc": "Dolgulu kesit, açık kapı ve pencere boşlukları ve düz CAD çizgileriyle DXF veya DWG (R2004–R2018) olarak 1:1 ölçekli 2D çizim."
+    },
+    "drawview": {
+      "title": "Çizimi hemen görün",
+      "desc": "Her çizim katmanlar, ölçek çubuğu ve koordinatlarla uygulamanın içinde açılır. DXF ve DWG görüntülemek için Open CAD Studio da birlikte gelir."
+    },
+    "sheets": {
+      "title": "A4'ten A0'a paftalar",
+      "desc": "Görünümleri ve çizimleri antetli bir paftaya ölçekli yerleştirin, ölçü, metin ve işaret ekleyin ve PDF'ye aktarın."
+    },
+    "closedmesh": {
+      "title": "Bir odanın kapalı ağı",
+      "desc": "Kapı ve pencere boşlukları açık bırakılmış, örtüşmesiz bir yüzey. Noktalar ile ağ arasındaki ortalama, %95 ve en büyük mesafeyi görürsünüz."
+    },
+    "terrain": {
+      "title": "Arazi ağı ve 3D yüzey",
+      "desc": "En alçak noktalardan bir zemin yüzeyi ya da duvarlar ve çıkmalarla bütün bir taramanın hızlı bir izlenimi."
+    },
+    "faces": {
+      "title": "Yüzeyleri ve kolonları algılayın",
+      "desc": "Çevreleri ve boşluklarıyla döşemeler, tavanlar, duvarlar ve eğimli yüzeyler ile yuvarlak kolonlar ve borular; her biri alanı ve artık hatasıyla."
+    },
+    "texture": {
+      "title": "Renkli ve dokulu ağ",
+      "desc": "Renkli bir ağı PNG dokulu OBJ olarak yazın. E57 fotoğraflarındaki renkler yeni ağlara aktarılır."
+    },
+    "cadbim": {
+      "title": "CAD ve BIM'e",
+      "desc": "Ağlar ve algılanan yüzeyler OBJ, PLY, STL olarak, DXF ya da DWG'de 3D geometri olarak veya ölçülen değerleriyle IFC4 öğeleri olarak."
     },
     "export": {
       "title": "Dışa aktarma ve birleştirme",
-      "desc": "Bulutun tamamını, seçimi, seçim dışındaki her şeyi, kesit kutusunun içeriğini ya da her N'inci noktayı LAS, LAZ, E57, PLY, XYZ, PTS veya CSV olarak dışa aktarın. LAS ve LAZ dışa aktarımları özgün nokta kayıtlarını öznitelikleriyle korur. Görünür LAS ve LAZ taramaları tek dosyada birleştirilebilir. Her dışa aktarma kaynağın tamamını okur; ekranda görünmeyen noktalar da yazılır."
-    },
-    "mesh": {
-      "title": "Mesh'ler",
-      "desc": "<em>Terrain mesh</em>, bir ızgaradaki en alçak noktalardan 2,5B bir yüzey oluşturur. <em>3D surface</em> duvarları ve çıkıntıları da izler; sonuçta delikler kalır ve yüzey su geçirmez (kapalı) değildir. <em>Export mesh…</em>, ister burada üretilmiş, ister bir dosyadan açılmış, ister 3D BAG'den indirilmiş olsun her mesh'i OBJ, ikili PLY veya ikili STL olarak kaydeder. Özellikler paneli köşe noktalarını, üçgenleri, açık kenarları ve bağlantılı parça sayısını gösterir."
-    },
-    "drawing": {
-      "title": "Kesit çizimi",
-      "desc": "<em>Section drawing</em>, kesit kutusunun kestiği yerin 1:1 ölçekli 2B çizimini oluşturur ve DXF ya da DWG olarak kaydeder: kutunun üst yüzünün altındaki dilimden bir plan ya da dört yan yüzünden birinin arkasındaki dilimden düşey bir kesit. Çizim, görünür bütün taramalardan o dilime düşen noktaları, 5 mm'de bir noktaya seyreltilmiş olarak içerir. <em>Filled cut</em>, dilimin içinden geçtiği duvarları, kolonları ve döşemeleri dış çizgili dolu bölgeler olarak çizer; kapı ve pencere boşluklarını açık bırakır. <em>Preview</em>, dosya kaydedilmeden önce bu bölgeleri noktaların üzerinde gösterir."
-    },
-    "closedMesh": {
-      "title": "Kapalı mesh",
-      "desc": "<em>Closed mesh</em>, kesit kutusunun içindeki ya da taramanın tamamındaki bütün noktalardan örtüşmesiz bir yüzey oluşturur: taramada nokta bulunan ya da belirlenen sınırdan (başlangıçta 0,25 m) dar bir boşluk olan her yerde yüzey kapalıdır; kapı ve pencere boşlukları açık kalır. Kutuyu bir odanın çevresine yerleştirin ve <em>Start</em>'ı seçin; Özellikler panelindeki blok, bölgenin ne kadar büyük olduğunu ve yaklaşık kaç üçgen çıkacağını önceden söyler, bu sayı bir mesh'in alabileceğinden fazlaysa uyarır. İş bitince noktalar ile mesh arasındaki ortalama, %95 ve en büyük mesafeyi, açık kenarları ve bağlantılı parçaları verir. Bir mesh en çok dört milyon köşe noktası ve sekiz milyon üçgen içerir; OBJ, PLY veya STL olarak kaydedilebilir."
-    },
-    "faces": {
-      "title": "Yüzey algılama",
-      "desc": "<em>Detect faces</em>, kesit kutusunun içindeki ya da taramanın tamamındaki düz yüzeyleri (zeminler, tavanlar, duvarlar ve eğimli düzlemler) ve yuvarlak kolonlarla boruları bulur. Düz bir yüzey, dış çizgisiyle birlikte tek bir düzlemdir; bu çizgide pencere bir delik, kapı bir çentiktir. Bir kolon ya da boru ise ekseni, yarıçapı ve taranan uzunluğuyla tek bir silindirdir; dış çizgisi yoktur. Sonuç, taranan yüzeyin bir mesh'i değildir. Liste her yüzeyin türünü, alanını ve noktalarının artık hatasını (RMS) verir; bir satıra tıklamak o yüzeyi sahnede vurgular. <em>Export faces…</em> bunları her düzlemin ve silindirin parametreleriyle JSON olarak ya da her yüzey için bir grup içeren OBJ olarak kaydeder."
+      "desc": "Bütün bulut, seçim, kesit kutusu veya her N'inci nokta; kaynağın tüm noktalarıyla LAS, LAZ, E57, PLY, XYZ, PTS ya da CSV olarak. LAS ve LAZ taramalarını birleştirin."
     },
     "bag": {
       "title": "3D BAG binaları",
-      "desc": "File görünümündeki <em>3D BAG buildings…</em>, Hollanda'nın bina modellerini RD New koordinatlarıyla verilen bir alan için açık 3D BAG kaydından indirir ve bir taramayla birlikte gösterir. Tek indirme en çok 2 x 2 km'lik bir alanı ve yaklaşık 5.000 binayı kapsar ve internet bağlantısı gerektirir. Extensions sayfasından kapatılabilen yerleşik bir uzantıdır."
+      "desc": "2 x 2 km'ye kadar bir alan için 3D BAG'den Hollanda bina modellerini alın ve taramanızla birlikte gösterin."
     },
-    "language": {
-      "title": "Felemenkçe ve İngilizce",
-      "desc": "Arayüz sistemin dilini izler: Felemenkçe ya da İngilizce. Dil, ayarlardan (Settings) değiştirilebilir. Türkçe arayüz yoktur. Durum çubuğundaki iletiler ve içinde sayı geçen metinlerin çoğu yalnızca İngilizcedir. Beş renk teması vardır."
+    "mcp": {
+      "title": "MCP sunucusu ve komut API'si",
+      "desc": "Bir yapay zekâ asistanı veya kendi betiğiniz taramaları açar, ölçer, kesit çizer, ağ oluşturur ve 3D görünümün bir görüntüsünü ister."
     },
-    "showAll": "Tüm özellikleri göster",
-    "showLess": "Daha az göster"
-  },
-  "formats": {
-    "title": "Dosya biçimleri",
-    "th": {
-      "format": "Biçim",
-      "read": "Okuma",
-      "write": "Yazma",
-      "notes": "Notlar"
+    "cli": {
+      "title": "Pencere olmadan komut satırı",
+      "desc": "Kendi betiklerinizde dönüştürün, kırpın, birleştirin, dizinleyin, kesit çizin, ağ oluşturun ve yüzey algılayın."
     },
-    "yes": "evet",
-    "no": "hayır",
-    "asDrawing": "evet, çizim olarak",
-    "las": "Başlık bilgisinden açılır; dışa aktarımlar özgün nokta kayıtlarını korur",
-    "e57": "Lazer tarayıcının konumları ve istasyon fotoğrafları okunur; küresel ve silindirik fotoğraflar gösterilmez",
-    "ply": "ASCII ve little-endian ikili biçimi okur; ikisini de yazar",
-    "pcd": "ASCII, ikili ve sıkıştırılmış ikili",
-    "ptx": "Her taramanın lazer tarayıcı konumuyla birlikte",
-    "text": "Her satırda bir nokta bulunan metin",
-    "obj": "Renkli ve normalli mesh; malzeme renkleri okunur, doku görselleri okunmaz. Algılanan yüzeyler de her yüzey için bir grupla OBJ olarak yazılır",
-    "plyMeshName": "Mesh olarak PLY",
-    "plyMesh": "Yüzler olarak gösterilir. Çift duyarlıklı koordinatlarla, mesh'te varsa renk ve normallerle birlikte ikili PLY olarak yazılır",
-    "stl": "Yüzler olarak gösterilir. İkili STL olarak yazılır: yalnızca üçgenler, renk yok. Sıfırdan 2.048 m'den uzakta duran bir mesh, dosya başlığında belirtilen tam metrelik bir başlangıç noktasına göre yazılır",
-    "off": "Yüzler olarak gösterilir; OBJ, PLY veya STL olarak kaydedilebilir",
-    "dxf": "Okuma: yalnızca ASCII DXF. POINT öğeleri nokta olarak, 3DFACE öğeleri OBJ, PLY veya STL olarak kaydedilebilen yüzler olarak açılır; diğer öğeler atlanır. Yazma: bir kesit kutusunun noktalar, dolu bölgeler, dış çizgiler ve bir satır metin içeren 2B çizimi; nokta dışa aktarımlarının biçimlerinden biri değildir",
-    "dwg": "DXF'te olduğu gibi bir kesit kutusunun 2B çizimi; R2004, R2010, R2013 veya R2018 sürümünde. DWG dosyaları açılmaz",
-    "facesName": "JSON olarak yüzeyler (.json)",
-    "faces": "Bir taramanın algılanan yüzeyleri: her düzlem parametreleri, dış çizgisi ve noktalarının artık hatalarıyla; her silindir ekseni, yarıçapı ve artık hatalarıyla; ayrıca düz yüzeyler arasındaki kenarlar. Her alanı <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/docs/guide.md#the-json-file\" target=\"_blank\" rel=\"noopener\">kullanıcı kılavuzu</a> açıklar (İngilizce)",
-    "rcpName": "Tarama projesi dosyası (.rcp)",
-    "rcp": "Yalnızca tarama listesi okunur. Bir projenin dizinlenmiş tarama kopyaları (.rcs) kapalı bir biçimdedir ve okunmaz",
-    "bcf": "Notları ve görselleriyle kayıtlı görünümler",
-    "png": "3B görünümün görseli, komut API'si üzerinden"
+    "sdk": {
+      "title": "C kütüphanesi ve bulut API'si",
+      "desc": "Nokta bulutu çekirdeği kendi yazılımınız için bir C kütüphanesi olarak ve bir konteynerde HTTP ve MCP üzerinden hizmet olarak."
+    },
+    "extensions": {
+      "title": "Uzantılar",
+      "desc": "Pencereyi komut API'si üzerinden yöneten, Python veya PowerShell gibi herhangi bir dilde bir betikle kendi görevlerinizi ekleyin."
+    },
+    "themes": {
+      "title": "Felemenkçe ve İngilizce, beş tema",
+      "desc": "Arayüz sisteminizin dilini izler. Açık, Forge, OpenAEC, Blueprint ve yüksek kontrast; tüm OpenAEC uygulamalarının tarzında."
+    }
   },
-  "automation": {
-    "title": "Komut API'si ve MCP sunucusu",
-    "api": "Her pencere <code>127.0.0.1</code> üzerinde bir komut sunucusu çalıştırır. Komutlar taramaları açıp kapatır, kamerayı, kesit kutusunu ve görüntülemeyi ayarlar, seçer, siler, ölçer, görünüm kaydeder, dışa aktarır, kesit çizer, mesh oluşturur, yüzey algılar, 3D BAG binalarını indirir ve 3B görünümün görselini alır. Sunucu yalnızca geri döngü (loopback) adresini dinler ve belirteç (token) olmadan gelen komutu reddeder.",
-    "mcp": "<code>open-pointcloud-studio --mcp</code> bir Model Context Protocol sunucusu çalıştırır. API'nin her komutu için bir araç, uzun işlerin bitmesini bekleyen araçlar, 3B görünümü görsel olarak döndüren bir araç ve pencereleri listeleyen, seçen ve başlatan araçlar sunar.",
-    "cli": "Uygulama komut satırından pencere açmadan da çalışır: başka bir biçime dönüştürme, bir kutunun içindeki noktaları dışa aktarma, taramaları birleştirme, dizin oluşturma, bir kesiti DXF ya da DWG olarak çizme, mesh üretme ve yüzey algılama.",
-    "linkApi": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/native/API.md\" target=\"_blank\" rel=\"noopener\">API.md</a>: bütün komutlar (İngilizce)",
-    "linkMcp": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/native/MCP.md\" target=\"_blank\" rel=\"noopener\">MCP.md</a>: bütün araçlar ve bir istemci program için yapılandırma (İngilizce)",
-    "linkCli": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio#command-line\" target=\"_blank\" rel=\"noopener\">README</a>: komut satırı modları (İngilizce)"
+  "download": {
+    "title": "v2026.44.1 indir",
+    "lead": "Ücretsiz, hesap gerekmez. Windows, macOS ve Linux için.",
+    "forWindows": "Windows için indir",
+    "forMac": "macOS için indir",
+    "forLinux": "Linux için indir",
+    "metaWindows": ".exe yükleyici",
+    "metaMac": "evrensel .dmg, Intel ve Apple Silicon",
+    "metaLinux": "AppImage, çoğu dağıtımda çalışır",
+    "fileExe": "Yükleyici (.exe)",
+    "fileDmg": "Evrensel .dmg",
+    "fileDeb": ".deb",
+    "fileAppImage": "AppImage",
+    "label": "İndir",
+    "mobileNote": "Open Pointcloud Studio bir masaüstü uygulamasıdır. Bilgisayarınıza indirin.",
+    "other": "Diğer platformlar"
   },
-  "limits": {
-    "title": "Bilmeniz gerekenler",
-    "box": "Kesit kutusu döndürülemez. Taramanın eksenlerine açılı duran bir bina o açıyla kesilir.",
-    "units": "Uzunluklar ve alanlar metre cinsindendir. Taramanın koordinatları metre olarak kabul edilir, dönüştürülmez.",
-    "measure": "Ölçüm taramayla birlikte kaydedilmez.",
-    "surface": "3D surface ile üretilen yüzeyde delikler kalır; yüzey su geçirmez değildir.",
-    "meshSize": "Bir mesh, ister dosyadan gelsin ister uygulamada üretilsin, en çok dört milyon köşe noktası ve sekiz milyon üçgen içerir.",
-    "session": "Kapalı mesh ve algılanan yüzeyler yalnızca açık oturum boyunca vardır: saklamak için dışa aktarın. Bir taramada tek bir mesh bulunur; yeni bir mesh öncekinin yerini alır.",
-    "drawingPoints": "Bir kesit çiziminin nokta sınırı varsayılan olarak 150.000, en çok 400.000 noktadır; 5 mm'ye seyreltmeden sonra daha fazla nokta kalırsa nokta aralığı, noktalar sığana kadar ikiye katlanır.",
-    "fill": "Kesit çizimindeki dolu kesit noktalardan çıkarılır: tek tarafından taranmış bir duvar ince bir şerit olarak çizilir, yaklaşık yarım metreden dar boşluklar kapatılır ve dilimdeki mobilyalar, noktaları önce silinmedikçe çizilir.",
-    "closedMesh": "Kapalı mesh köşeleri yaklaşık çeyrek voksel kadar yuvarlar; iki ya da üç vokselden ince nesneler birleşir ya da delinir, başka bir yüzeyin yanındaki bazı boşluklar açık kalır. Tarayıcı istasyonları bilinmiyorsa, bölgenin merkezinden tam kenarından görünen bir yüzey yırtık çıkabilir.",
-    "faces": "Detect faces, kapı boşluğunun yan yüzleri gibi 0,15 m'den dar şeritleri bildirmez. Çalışma bütçesine sığmayan büyük bir bölge daha büyük voksellerle aranır, seyrek taramalar daha az yüzey verir ya da hiç vermez, yaklaşık 0,7 m'den geniş yuvarlak kolonlar duvar şeritleri olarak çıkar ve tarayıcı istasyonları bilinmiyorsa bir yüzeyin baktığı taraf bir tahmindir.",
-    "drawingCheck": "DXF ve DWG dosyaları henüz çeşitli çizim programlarıyla denenmedi. Bir program DWG dosyasını açmazsa DXF'i ya da başka bir dosya sürümünü deneyin.",
-    "generated": "Dolu kesit, Closed mesh ve Detect faces yapay olarak üretilmiş odalarda ölçüldü; gerçek bir binanın taramasında henüz ölçülmedi. Kullanıcı kılavuzu <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/docs/guide.md#the-filled-cut-and-its-limits\" target=\"_blank\" rel=\"noopener\">dolu kesitin</a>, <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/docs/guide.md#limits-of-a-closed-mesh\" target=\"_blank\" rel=\"noopener\">Closed mesh</a> ve <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/docs/guide.md#limits-of-detected-faces\" target=\"_blank\" rel=\"noopener\">Detect faces</a> araçlarının sınırlarını sıralar (İngilizce).",
-    "index": "Büyük bir ölçümde dizin diskte birkaç gigabayt yer tutabilir.",
-    "showAll": "Tüm maddeleri göster",
-    "showLess": "Daha az göster"
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDownload": "İndir",
+    "items": {
+      "style": {
+        "title": "Tüm OpenAEC uygulamalarının tarzı",
+        "desc": "Başlık şeridi, şerit menü, sekmeler, paneller, Dosya menüsü ve ayarlar diğer OpenAEC masaüstü uygulamalarıyla aynı görünümü paylaşır; üstte tek bir çubuk."
+      },
+      "lines": {
+        "title": "Düz CAD çizgileri",
+        "desc": "Planlar ve kesitler, döndürülmüş bir kesit kutusunda da, kesit boyunca kendi katmanında kapalı, düzenlenebilir çoklu çizgiler alır."
+      },
+      "compare": {
+        "title": "3D modelin yanında fotoğraf",
+        "desc": "Bir E57 fotoğrafı kendi sekmesinde açılır ve kendi kamerası ve sürüklenebilir ayırıcısı olan bir 3D panelin yanında ya da üstünde durur."
+      },
+      "texture": {
+        "title": "Dokulu ağ",
+        "desc": "Yüzeyi dokula, renkli bir ağı UV koordinatları ve PNG dokusuyla OBJ olarak yazar; ilerleme ve iptal ile."
+      },
+      "signed": {
+        "title": "İmzalı yükleyiciler",
+        "desc": "Windows yükleyicisi ve uygulaması geçerli bir imzaya sahiptir; macOS uygulaması Apple tarafından onaylanmıştır ve doğrudan açılır."
+      },
+      "api": {
+        "title": "Bulut API'si ve C kütüphanesi",
+        "desc": "Çekirdek artık bir konteynerde HTTP ve MCP üzerinden bir hizmet olarak ve Windows, macOS ve Linux için bir C kütüphanesi olarak da sunuluyor."
+      }
+    },
+    "label": "v2026.44 sürümünde yeni",
+    "title": "Yeni görünüm, <span>düz CAD çizgileri</span>",
+    "desc": "2026.44 sürümü pencereye tüm OpenAEC uygulamalarının tarzını verir, kesitlerinize düz çizgiler çizer ve 3D modelin yanına bir fotoğraf koyar. Yükleyiciler imzalıdır ve sürümler artık yılı ve haftayı izler."
   },
-  "docs": {
-    "title": "Kılavuz, değişiklikler ve kaynak kod",
-    "guide": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/docs/guide.md\" target=\"_blank\" rel=\"noopener\">Kullanıcı kılavuzu</a>: her araç ayrıntılı olarak (İngilizce).",
-    "readme": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio#readme\" target=\"_blank\" rel=\"noopener\">README</a>: sisteme göre kurulum, ilk beş dakika, ölçülmüş hızlar ve sınırlar (İngilizce).",
-    "changelog": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/CHANGELOG.md\" target=\"_blank\" rel=\"noopener\">Değişiklik günlüğü</a>: her sürümde neyin değiştiği (İngilizce).",
-    "source": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio\" target=\"_blank\" rel=\"noopener\">GitHub'daki kaynak kod</a>; sorun bildirmek ya da istekte bulunmak için <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/issues\" target=\"_blank\" rel=\"noopener\">issues</a> sayfası."
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "LAS, LAZ, E57, PLY, PCD, PTX, PTS ve metin (XYZ, ASC, TXT, CSV) nokta bulutları: lazer tarayıcıların ve tarama yazılımlarının dışa aktardığı açık biçimler. Ayrıca OBJ, PLY, OFF ve STL ağları, ASCII DXF'deki noktalar ve yüzeyler ile bir tarama proje dosyasının (.rcp) tarama listesi. Kapalı tarama kopyalarını (.rcs) ve DWG dosyalarını açmaz."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Evet, bu bir masaüstü uygulamasıdır; web sürümü yoktur. Windows yükleyicisi yönetici hakları olmadan çalışır, Linux AppImage kurulum olmadan başlar. Çizimleri görüntülemek için Open CAD Studio zaten dahildir."
+    },
+    "price": {
+      "q": "Open Pointcloud Studio ne kadar?",
+      "a": "Hiçbir şey. Uygulama GPL-3.0, nokta bulutu çekirdeği LGPL-3.0 lisansıyla ücretsiz ve açık kaynaklıdır; hesap veya abonelik yoktur."
+    },
+    "save": {
+      "q": "Çalışmam hangi biçimde kaydedilir?",
+      "a": "Açık biçimlerde; taramanızın kendisi asla değişmez. Ürettiklerinizi LAS, LAZ, E57, PLY, XYZ, PTS veya CSV, çizimleri DXF, DWG veya PDF, ağları ve yüzeyleri OBJ, PLY, STL, JSON veya IFC4, görünümleri BCF olarak dışa aktarırsınız. Uygulama görünümleri ve notları tarama başına saklar; kendine ait bir proje dosyası yoktur."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows 10 ve 11 (64 bit), macOS 11 ve üzeri (Apple ve Intel) ve Linux x86-64 (.deb ve AppImage); Vulkan sürücüsü veya OpenGL ES 3 ile. Sürüm sayfasında ayrıca yükleyicisiz bir zip ve 64 bit ARM üzerinde Linux için deneysel paketler bulunur."
+    },
+    "practice": {
+      "q": "Yapı uygulamasına uyuyor mu?",
+      "a": "Evet. Çizimler DXF veya DWG olarak CAD programınıza, yüzeyler ve ağlar IFC4 olarak BIM'e, açıklamalar BCF 2.1 olarak gider. 3D BAG binaları Hollanda RD koordinatlarında alınır. Ölçüler metre cinsindendir; bir taramanın koordinatları dönüştürülmez."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "open-pointcloud-studio --mcp bir MCP sunucusu (Model Context Protocol) başlatır. Claude gibi bir asistan bununla taramaları açabilir, kamerayı ve kesit kutusunu ayarlayabilir, ölçebilir, dışa aktarabilir, kesit çizebilir, ağ oluşturabilir, yüzey algılayabilir ve 3D görünümün bir görüntüsünü geri alabilir. Her pencerede kendi betikleriniz için yerel bir komut API'si de vardır."
+    },
+    "size": {
+      "q": "Bir tarama ne kadar büyük olabilir?",
+      "a": "Büyük. 114 milyon noktalı 3,2 GiB'lık bir PLY, diziniyle saniyenin çok küçük bir bölümünde açılır ve 100 x 100 x 100 m'lik bir kutuda seçim yaklaşık yarım saniye sürer. Büyük bir ölçüm için dizin diskte birkaç gigabayt yer kaplayabilir."
+    },
+    "accuracy": {
+      "q": "Dolgulu kesit, kapalı ağ ve yüzeyler ne kadar güvenilir?",
+      "a": "Bunlar noktalardan türetilir ve şimdiye kadar gerçek bir binanın taramasında değil, üretilmiş odalarda ölçülmüştür. Tek taraftan taranan bir duvar ince bir şerit olur, kapı söveleri gibi dar şeritler yüzey olmaz. Bu yüzden uygulama her ağda ölçülen sapmayı gösterir; sonucu kullanmadan önce kontrol edin."
+    },
+    "bim": {
+      "q": "Otomatik olarak eksiksiz bir kat planı veya BIM modeli oluşturur mu?",
+      "a": "Henüz değil. Planları ve kesitleri kesit kutusuyla kendiniz oluşturursunuz; algılanan yüzeyler ayrı IFC4 öğeleri olarak aktarılır. Nokta bulutundan çizime sihirbazı şimdilik bir binanın katlarını bulur; duvarlar, boşluklar ve IFC modeli adımları hâlâ geliştiriliyor."
+    },
+    "heading": "Sık sorulan sorular"
   },
   "tech": {
-    "title": "Teknik ve lisans",
-    "desc": "Masaüstü uygulaması GPL-3.0-only, nokta bulutu kütüphanesi LGPL-3.0-or-later lisanslıdır. Her paket lisans metinlerini içerir."
+    "rust": {
+      "title": "Rust",
+      "desc": "Tarayıcı veya web görünümü olmadan Windows, macOS ve Linux için küçük, imzalı paketlerle tek bir yerel program."
+    },
+    "ui": {
+      "title": "iced ve openaec-ui",
+      "desc": "Diğer OpenAEC masaüstü uygulamalarında olduğu gibi, başlık şeridi, şerit menü, sekmeler, paneller ve temalar için ortak Rust crate'i openaec-ui ile iced'de arayüz."
+    },
+    "wgpu": {
+      "title": "wgpu",
+      "desc": "Milyonlarca noktayı ve ağı Vulkan, Metal, DirectX veya OpenGL ES üzerinden ekran kartında çizer."
+    },
+    "octree": {
+      "title": "Diskte octree dizini",
+      "desc": "Bir nokta bütçesi içinde mevcut bakış açısının ayrıntısını sağlar ve bir sonraki sefer için saklanır."
+    },
+    "cad": {
+      "title": "Open CAD Studio",
+      "desc": "Hakan Seven ve katkıcılarının açık kaynaklı CAD uygulaması her pakette bulunur ve dışa aktarılan DXF ve DWG çizimlerini gösterir."
+    },
+    "api": {
+      "title": "MCP, API, CLI ve C",
+      "desc": "Bir MCP sunucusu, yerel komut API'si, komut satırı, konteynerde bulut API'si ve LGPL altında bir C kütüphanesi (ABI 1.0)."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
   },
-  "cta": {
-    "download": "İndir",
-    "guide": "Kılavuz",
-    "github": "GitHub"
-  },
-  "footer": {
-    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }

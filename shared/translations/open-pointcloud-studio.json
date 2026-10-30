@@ -1,208 +1,308 @@
 {
-  "meta": {
-    "title": "Open Pointcloud Studio — OpenAEC Foundation",
-    "description": "Desktop application for laser scans and point clouds (LAS, LAZ, E57): view, measure, convert, DXF and DWG section drawings, meshes. Windows, macOS, Linux."
-  },
   "header": {
-    "label": "View, measure and edit point clouds",
     "title": "Open <span class=\"accent\">Pointcloud</span> Studio",
-    "desc": "A desktop application for viewing, measuring, editing and converting laser scans and other point clouds. From a scan it makes a section drawing in DXF or DWG, a closed mesh, and the planes and cylinders of a room. It runs on Windows, macOS and Linux, is written in Rust and needs no browser or web view.",
-    "badge": "Beta",
-    "dlWindows": "Windows installer",
-    "dlMac": "macOS (.dmg)",
-    "allFiles": "All files, checksums and install notes",
-    "dlLinux": "Linux (AppImage)",
-    "direct": "Direct download:"
+    "downloadBtn": "Download",
+    "featuresBtn": "See the features",
+    "sourceBtn": "Source code",
+    "proof4": "MCP for AI assistants",
+    "proof5": "Free · GPL-3.0",
+    "heroAlt": "Open Pointcloud Studio with a point cloud of a house and garden, the project browser with scans, classes and views on the left and the properties on the right",
+    "label": "Point clouds",
+    "tagline": "From laser scan to measurement, drawing and mesh, in one free app",
+    "desc": "Open a scan of millions of points and look around in it straight away. Measure what you need, cut a plan or section from the cloud and take it to your CAD program as DXF or DWG, or turn it into a mesh or the faces of a room."
   },
-  "slides": {
-    "one": "Open Pointcloud Studio in an isometric overview: a scan of 455 million points of a building with its garden and blossoming trees, the project panel on the left and the Properties panel on the right",
-    "two": "The same scan with the section box set to 11% of the height, so the rooms are seen from above, and a distance measurement of 26.774 metres between two points",
-    "three": "The section box narrowed to a slab between 4% and 31% of the height, which frees the facade with its windows; on the right the saved view and the sliders of the section box",
-    "four": "Section drawing of two generated test rooms: the plan seen from above, with the preview of the filled cut (the wall between the rooms with its door opening left open, and a round column, as filled regions) and on the right the Section drawing block (Snedetekening in the Dutch interface) in Properties",
-    "five": "Closed mesh of the same generated test rooms: the surface of the two rooms with a door opening left open in an outer wall, and on the right the Closed mesh block (Gesloten mesh in the Dutch interface) with its result: 15,868 vertices, 30,563 triangles and a mean deviation of 1.6 mm",
-    "six": "Detected faces of the same generated test rooms, each type in a colour of its own (ceilings blue, walls sand), and on the right the Detect faces block (Vlakken herkennen in the Dutch interface) with its counts: 2 floors, 2 ceilings, 10 walls and 1 column",
-    "prev": "Previous picture",
-    "next": "Next picture"
+  "meta": {
+    "description": "Free, open-source desktop app for laser scans and point clouds (LAS, LAZ, E57, PLY): view, measure and clean up, plans and sections in DXF or DWG, meshes and detected faces, also to IFC. For Windows, macOS and Linux.",
+    "title": "Open Pointcloud Studio — OpenAEC Foundation"
   },
-  "download": {
-    "title": "Download v0.8.0",
-    "intro": "Each button starts the download right away. You need no account and there is no page in between.",
-    "win": {
-      "req": "Windows 10 and 11, 64-bit",
-      "primary": "Installer (.exe)",
-      "zip": "Zip without an installer"
+  "hl": {
+    "view": {
+      "alt": "Point cloud of a house coloured by elevation, with the Display panel open beneath the view cube",
+      "kicker": "View",
+      "title": "Even a scan of a hundred million points stays smooth",
+      "desc": "The app builds an index on disk and loads the detail where you look, up to ten million points in view at once. Colour the points by RGB, elevation, intensity or class, and switch classes such as vegetation or ground off one by one."
     },
-    "mac": {
-      "req": "macOS 11 and later, Apple and Intel processors",
-      "primary": "Disk image (.dmg)",
-      "tar": "The program only (.tar.gz)"
+    "measure": {
+      "alt": "Measured height of 5.600 m along the facade of a house, with the selection in orange on the roof and the measured values in the properties",
+      "kicker": "Measure",
+      "title": "Measure in the scan instead of on site",
+      "desc": "Click two points and read the length, the horizontal distance and the height difference. Areas are measured in their own plane, so a wall or a sloped roof is right too. Select, delete or thin points; your source file is never touched."
     },
-    "linux": {
-      "req": "x86-64; Ubuntu 22.04, Debian 12, Fedora 36 or later",
-      "primary": "AppImage (any distribution)",
-      "deb": ".deb (Debian, Ubuntu)",
-      "tar": "The program only (.tar.gz)"
+    "box": {
+      "alt": "Section box with six draggable faces around a house in the point cloud",
+      "kicker": "Section box",
+      "title": "Cut out exactly the part you need",
+      "desc": "A box with six draggable faces limits what you see, measure, export and draw. If a building stands at an angle in the scan, Align to walls turns the box along its walls."
     },
-    "arm": {
-      "tag": "experimental",
-      "label": "Linux on 64-bit ARM:"
+    "drawing": {
+      "alt": "Section A of a house as a 2D drawing in its own tab, with the drawing layers and the Export DXF/DWG button on the right",
+      "kicker": "Drawings",
+      "title": "From scan to plan and section in DWG",
+      "desc": "Make a plan, elevation or section at 1:1, with filled walls and floors and straight, editable CAD lines on a layer of their own. Save it as DXF or DWG, or place it on a sheet from A4 to A0 and export to PDF."
     },
-    "note": {
-      "win": "<strong>Windows:</strong> the installer installs for the current user, without administrator rights, or for all users. If the release carries no code signature, Windows may warn about an unknown publisher: choose <em>More info</em> and then <em>Run anyway</em>. If you would rather not install anything, unpack the zip and start the program from there.",
-      "mac": "<strong>macOS:</strong> open the disk image and drag the application onto Applications. The application is not notarised, so macOS refuses the first start. Allow it once: on macOS 15 and later, start the application, close the message and choose <em>Open Anyway</em> under <em>Privacy &amp; Security</em> in System Settings; on macOS 11 to 14, Control-click the application and choose <em>Open</em>.",
-      "linux": "<strong>Linux:</strong> make the AppImage executable once with <code>chmod +x</code> and then start it. The AppImage mounts itself through FUSE (<code>fusermount3</code> or <code>fusermount</code>); without FUSE, start it with <code>--appimage-extract-and-run</code> after the file name. Install the .deb package with <code>sudo apt install ./open-pointcloud-studio_*_amd64.deb</code>, run in the folder that holds the download. Linux needs a C library of version 2.35 or newer (Ubuntu 22.04, Debian 12, Fedora 36 or later), X11 or Wayland, and a Vulkan driver or OpenGL ES 3. File dialogs use the desktop portal, or <code>zenity</code> where there is none.",
-      "arm": "<strong>Linux on 64-bit ARM:</strong> experimental. These packages are built and tested only on build machines with software rendering, not yet on real ARM boards or laptops.",
-      "sha": "In the release every file has a <code>.sha256</code> file of the same name beside it, holding its checksum: put <code>.sha256</code> after the address of a download to fetch it. The README describes <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio#checking-a-download\" target=\"_blank\" rel=\"noopener\">how to check a download with it</a>."
+    "mesh": {
+      "alt": "The Mesh Pointcloud window with its four methods: closed mesh, terrain mesh, 3D surface and flat faces",
+      "kicker": "Mesh and faces",
+      "title": "A closed mesh or the faces of a room",
+      "desc": "Choose from four methods: a closed mesh of a room with its measured deviation, a terrain mesh, a quick 3D surface, or the floors, walls and columns as separate faces with their areas. Export to OBJ, PLY, STL, DXF, DWG or IFC4."
+    },
+    "photos": {
+      "alt": "Panorama photo of a scan station in its own tab, with a slider for the photo and the Compare with 3D button",
+      "kicker": "Photos",
+      "title": "Stand where the scanner stood",
+      "desc": "Click a scan station and look around in its panorama photo, which lies over the points so you can measure there too. Put the photo beside the 3D model, side by side or stacked, or give a scan without colours the colours of its photos."
     }
   },
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "download": "Download",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "view": "Open and view",
+    "measure": "Measure and edit",
+    "drawing": "Drawings",
+    "mesh": "Mesh and faces",
+    "connect": "Export and integrations",
+    "all": "All features"
+  },
   "features": {
-    "title": "What you can do with it",
-    "open": {
-      "title": "Opening scans",
-      "desc": "Point clouds in LAS, LAZ, E57, PLY, PCD, PTX, PTS and text formats, and meshes in OBJ, PLY, OFF and STL. Drop files on the window and open several at once: each file is a layer that you can hide, show or close."
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "Everything for your laser scans, in one app",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
+    "formats": {
+      "title": "All common scan formats",
+      "desc": "LAS, LAZ, E57, PLY, PCD, PTX, PTS and text files, plus meshes in OBJ, PLY, OFF and STL. Just drag them onto the window."
     },
     "project": {
       "title": "A whole scan project at once",
-      "desc": "Open a folder of scans, or the scan project file (.rcp) of a project: the scans that the file lists and that lie beside it are opened together. Dropping a folder or a project file on the window works too."
+      "desc": "Open a folder of scans or a scan project file (.rcp): all scans open together, each as a layer you show or hide."
     },
     "large": {
-      "title": "Large files",
-      "desc": "LAS and LAZ files open immediately from their header. An E57 file of 512 MiB or more first shows a sample spread through the file, when its layout allows that; other files of that size show the points read so far every few seconds. A strip above the scene shows the progress and the time left, with a button to cancel."
+      "title": "Large scans without waiting",
+      "desc": "You see the points while the file is still being read. The index on disk is reused, so a scan opens in a blink the next time."
     },
-    "lod": {
-      "title": "Detail where you look",
-      "desc": "For clouds of one million points or more the application automatically builds an index on disk, an octree. It supplies the detail for the current camera position, up to the point budget you set: at most ten million points. The points on screen stay while the camera moves; the detail of the new view takes their place once it has been read. The index is kept and used again when you open the file later."
+    "colour": {
+      "title": "Four colour modes and classes",
+      "desc": "RGB, elevation, intensity or class, with eye-dome lighting and an adjustable point size. Switch each class on or off on its own."
     },
-    "display": {
-      "title": "Display",
-      "desc": "Four colour modes (stored colour, elevation, intensity and classification), eye-dome lighting and an adjustable point size. The classes that occur in the clouds can be shown or hidden one by one. A view cube and seven camera directions turn the view."
+    "stations": {
+      "title": "Stations, photos and walking",
+      "desc": "Scan stations from E57, PCD and PTX are shown. Stand in a panorama, step through the photos and walk through the scan with W, A, S and D."
     },
-    "section": {
-      "title": "Section box",
-      "desc": "A box with six draggable faces limits what is shown, selected, meshed and searched for faces. This is how you cut a floor plan or a section out of a scan; the content of the box can be exported on its own or drawn as a 2D drawing. The box follows the X, Y and Z axes of the scan and cannot be rotated."
+    "tabs": {
+      "title": "Everything in tabs",
+      "desc": "The 3D model, views, plans, sections, sheets and photos sit side by side as tabs and come back at the next start."
     },
-    "measure": {
-      "title": "Measuring",
-      "desc": "<em>Distance</em> measures a line through two or more picked points: each segment, the total length, the horizontal length and the height difference. <em>Area</em> measures a closed polygon in its own plane, so a wall or a sloped roof gets its real area, and also gives the area seen from above and the perimeter. Points are picked from all points of the active scan, not only from those on screen."
+    "measuretool": {
+      "title": "Distance and area",
+      "desc": "Length, horizontal length and height difference; area in its own plane and seen from above, with the perimeter. Points come from the whole scan, not only from what is on screen."
+    },
+    "select": {
+      "title": "Select and clean up",
+      "desc": "Select with a rectangle, delete with undo, thin to an exact percentage, or move and scale a cloud. An export writes the result."
     },
     "views": {
       "title": "Views, notes and BCF",
-      "desc": "A saved view keeps the camera, the section box, the colour mode and its annotations: a note on a picked point or an arrow between two points. All views of a scan export as one BCF 2.1 file, each with its notes, camera, clipping planes and a picture of the scene."
+      "desc": "Save the camera, section box and colour as a view, add notes and arrows, and send it all as BCF 2.1 to your BIM program."
     },
-    "stations": {
-      "title": "Station photos and walking",
-      "desc": "Scanner stations of E57, PCD and PTX scans are shown as markers in the scene. A station with photos is drawn as a ball: click it to stand in that station and look around. Walk through the scan with W, A, S and D, go down and up with Q and E, and faster with Shift."
+    "rotatebox": {
+      "title": "Rotatable section box",
+      "desc": "Type the limits as coordinates, fit the box to a selection or let it align to the walls. Where it cuts a mesh, the cut looks solid."
     },
-    "edit": {
-      "title": "Selecting and editing",
-      "desc": "Select every source point inside a rectangle, or pick one point and read its coordinates and attributes. Delete the selection, with undo for up to eight deletions, thin a cloud to an exact percentage of its points, or move and scale it. The source file is never changed: an export writes the edited result."
+    "section": {
+      "title": "Plan, elevation and section",
+      "desc": "A 2D drawing at 1:1 as DXF or DWG (R2004 to R2018), with a filled cut, open door and window openings and straight CAD lines."
     },
-    "export": {
-      "title": "Exporting and merging",
-      "desc": "Export the whole cloud, the selection, everything but the selection, the content of the section box or every Nth point as LAS, LAZ, E57, PLY, XYZ, PTS or CSV. LAS and LAZ exports keep the original point records with their attributes. Visible LAS and LAZ scans can be merged into one file. Every export reads the full source, so points that are not on screen are written too."
+    "drawview": {
+      "title": "View the drawing right away",
+      "desc": "Every drawing opens in the app itself, with layers, scale bar and coordinates. Open CAD Studio comes with it to view DXF and DWG."
     },
-    "mesh": {
-      "title": "Meshes",
-      "desc": "<em>Terrain mesh</em> builds a 2.5D surface from the lowest points of a grid. <em>3D surface</em> also follows walls and overhangs; it leaves holes and is not watertight. <em>Export mesh…</em> saves any mesh, whether made here, opened from a file or downloaded from the 3D BAG, as OBJ, binary PLY or binary STL. Properties shows the vertices, the triangles, the open edges and the number of connected parts."
+    "sheets": {
+      "title": "Sheets from A4 to A0",
+      "desc": "Place views and drawings to scale on a sheet with a title block, add dimensions, text and leaders, and export to PDF."
     },
-    "drawing": {
-      "title": "Section drawing",
-      "desc": "<em>Section drawing</em> makes a 2D drawing at scale 1:1 of what the section box cuts and saves it as DXF or DWG: a plan from the slab under the top face of the box, or a vertical section from the slab behind one of its four sides. The drawing holds the points of that slab from every visible scan, thinned to one point per 5 mm. <em>Filled cut</em> draws the walls, columns and floors that the slab goes through as filled regions with outlines and leaves door and window openings open. <em>Preview</em> shows these regions over the points before a file is saved."
+    "closedmesh": {
+      "title": "Closed mesh of a room",
+      "desc": "A surface without overlaps, with door and window openings left open. You see the mean, the 95% and the largest distance between points and mesh."
     },
-    "closedMesh": {
-      "title": "Closed mesh",
-      "desc": "<em>Closed mesh</em> builds a surface without overlaps from every point inside the section box, or of the whole scan: closed wherever the scan has points or a gap narrower than the hole limit (0.25 m at the start), with door and window openings left open. Put the box around a room and choose <em>Start</em>; the block in Properties says beforehand how large the region is and about how many triangles it gives, and warns when that is more than a mesh may hold. Afterwards it gives the mean, the 95% and the largest distance between the points and the mesh, the open edges and the connected parts. A mesh holds at most four million vertices and eight million triangles and can be saved as OBJ, PLY or STL."
+    "terrain": {
+      "title": "Terrain mesh and 3D surface",
+      "desc": "A ground surface from the lowest points, or a quick impression of a whole scan with walls and overhangs."
     },
     "faces": {
-      "title": "Detected faces",
-      "desc": "<em>Detect faces</em> finds, inside the section box or in the whole scan, the flat faces (floors, ceilings, walls and sloped planes) and the round columns and pipes. A flat face is one plane with its outline, in which a window is a hole and a door a notch; a column or pipe is one cylinder with its axis, radius and scanned length, without an outline. It is not a mesh of the surface. The list gives the type, the area and the residual of the points (RMS) of every face; a click highlights the face in the scene. <em>Export faces…</em> saves them as JSON with the parameters of every plane and cylinder, or as OBJ with a group per face."
+      "title": "Detect faces and columns",
+      "desc": "Floors, ceilings, walls and sloped faces with their outlines and openings, and round columns and pipes, each with its area and residual."
+    },
+    "texture": {
+      "title": "Mesh with colour and texture",
+      "desc": "Write a coloured mesh as OBJ with a PNG texture. Colours from E57 photos are carried into new meshes."
+    },
+    "cadbim": {
+      "title": "To CAD and BIM",
+      "desc": "Meshes and detected faces as OBJ, PLY, STL, as 3D geometry in DXF or DWG, or as IFC4 elements with their measured values."
+    },
+    "export": {
+      "title": "Export and merge",
+      "desc": "The whole cloud, the selection, the section box or every Nth point as LAS, LAZ, E57, PLY, XYZ, PTS or CSV, with every point of the source. Merge LAS and LAZ scans."
     },
     "bag": {
       "title": "3D BAG buildings",
-      "desc": "<em>3D BAG buildings…</em> in the File view downloads building models of the Netherlands from the public 3D BAG register for an area in RD New coordinates and shows them with a scan. One download covers at most 2 by 2 km and about 5,000 buildings and needs an internet connection. It is a built-in extension that can be switched off on the Extensions page."
+      "desc": "Fetch building models of the Netherlands from the 3D BAG for an area up to 2 by 2 km and show them with your scan."
     },
-    "language": {
-      "title": "Dutch and English",
-      "desc": "The interface follows the language of the system, Dutch or English, and can be changed in Settings. The messages in the status bar and most texts with a count in them are in English only. There are five colour themes."
+    "mcp": {
+      "title": "MCP server and command API",
+      "desc": "An AI assistant or your own script opens scans, measures, draws sections, makes meshes and asks for a picture of the 3D view."
     },
-    "showAll": "Show all features",
-    "showLess": "Show less"
-  },
-  "formats": {
-    "title": "File formats",
-    "th": {
-      "format": "Format",
-      "read": "Read",
-      "write": "Write",
-      "notes": "Notes"
+    "cli": {
+      "title": "Command line without a window",
+      "desc": "Convert, crop, merge, index, draw sections, mesh and detect faces in your own scripts."
     },
-    "yes": "yes",
-    "no": "no",
-    "asDrawing": "yes, as a drawing",
-    "las": "Opens from the header; exports keep the original point records",
-    "e57": "Scanner positions and station photos are read; spherical and cylindrical photos are not shown",
-    "ply": "Reads ASCII and little-endian binary; writes either",
-    "pcd": "ASCII, binary and compressed binary",
-    "ptx": "With the scanner position of each scan",
-    "text": "Text with one point per line",
-    "obj": "Mesh with colours and normals; material colours are read, texture images are not. Detected faces are written as OBJ too, with one group per face",
-    "plyMeshName": "PLY as mesh",
-    "plyMesh": "Shown as faces. Written as binary PLY with double-precision coordinates, and with colours and normals where the mesh has them",
-    "stl": "Shown as faces. Written as binary STL: triangles only, without colours. A mesh more than 2,048 m from zero is written relative to a whole-metre origin that the file header names",
-    "off": "Shown as faces; can be saved as OBJ, PLY or STL",
-    "dxf": "Read: ASCII DXF only. POINT entities open as points, 3DFACE entities as faces that can be saved as OBJ, PLY or STL; other entities are skipped. Written: the 2D drawing of a section box, with points, filled regions, outlines and a line of text; not a format of the point exports",
-    "dwg": "The 2D drawing of a section box, as for DXF, in file version R2004, R2010, R2013 or R2018. DWG files are not opened",
-    "facesName": "Faces as JSON (.json)",
-    "faces": "The detected faces of a scan: every plane with its parameters, its outline and the residuals of its points, every cylinder with its axis, its radius and its residuals, and the edges between flat faces. The <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/docs/guide.md#the-json-file\" target=\"_blank\" rel=\"noopener\">user guide</a> describes every field",
-    "rcpName": "Scan project file (.rcp)",
-    "rcp": "Only the list of scans is read. The indexed scan copies (.rcs) of a project are a closed format and are not read",
-    "bcf": "Saved views with notes and pictures",
-    "png": "Picture of the 3D view, through the command API"
+    "sdk": {
+      "title": "C library and cloud API",
+      "desc": "The point-cloud core as a C library for your own software, and as a service over HTTP and MCP in a container."
+    },
+    "extensions": {
+      "title": "Extensions",
+      "desc": "Add tasks of your own with a script in any language, such as Python or PowerShell, that drives the window through the command API."
+    },
+    "themes": {
+      "title": "Dutch and English, five themes",
+      "desc": "The interface follows the language of your system. Light, Forge, OpenAEC, Blueprint and high contrast, in the style of all OpenAEC apps."
+    }
   },
-  "automation": {
-    "title": "Command API and MCP server",
-    "api": "Every window runs a command server on <code>127.0.0.1</code>. The commands open and close scans, set the camera, the section box and the display, select, delete, measure, save views, export, draw sections, mesh, detect faces, download 3D BAG buildings and take pictures of the 3D view. The server listens on the loopback address only and refuses a command without the token.",
-    "mcp": "<code>open-pointcloud-studio --mcp</code> runs a Model Context Protocol server. It offers a tool for every command of the API, tools that wait for long tasks, a tool that returns the 3D view as an image, and tools to list, choose and start windows.",
-    "cli": "From the command line the application also works without a window: converting to another format, exporting the points inside a box, merging scans, building an index, drawing a section as DXF or DWG, making meshes and detecting faces.",
-    "linkApi": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/native/API.md\" target=\"_blank\" rel=\"noopener\">API.md</a>: every command",
-    "linkMcp": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/native/MCP.md\" target=\"_blank\" rel=\"noopener\">MCP.md</a>: every tool and the configuration for a client program",
-    "linkCli": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio#command-line\" target=\"_blank\" rel=\"noopener\">README</a>: the command-line modes"
+  "download": {
+    "title": "Download v2026.44.1",
+    "lead": "Free, no account needed. For Windows, macOS and Linux.",
+    "forWindows": "Download for Windows",
+    "forMac": "Download for macOS",
+    "forLinux": "Download for Linux",
+    "metaWindows": ".exe installer",
+    "metaMac": "universal .dmg, Intel and Apple Silicon",
+    "metaLinux": "AppImage, runs on most distributions",
+    "fileExe": "Installer (.exe)",
+    "fileDmg": "Universal .dmg",
+    "fileDeb": ".deb",
+    "fileAppImage": "AppImage",
+    "label": "Download",
+    "mobileNote": "Open Pointcloud Studio is a desktop app. Download it on your computer.",
+    "other": "Other platforms"
   },
-  "limits": {
-    "title": "Good to know",
-    "box": "The section box cannot be rotated. A building that stands at an angle to the axes of the scan is cut at that angle.",
-    "units": "Lengths and areas are in metres. The coordinates of a scan are taken as metres and are not converted.",
-    "measure": "A measurement is not saved with the scan.",
-    "surface": "A 3D surface leaves holes and is not watertight.",
-    "meshSize": "A mesh holds at most four million vertices and eight million triangles, whether it comes from a file or from a mesh job.",
-    "session": "A closed mesh and detected faces exist in the running session only: export them to keep them. A scan holds one mesh; a new mesh takes the place of the previous one.",
-    "drawingPoints": "The point limit of a section drawing is 150,000 points by default and at most 400,000; when thinning to 5 mm leaves more points, the point spacing doubles until they fit.",
-    "fill": "The filled cut of a section drawing is traced from the points: a wall scanned from one side is drawn as a thin strip, gaps under about half a metre are closed, and furniture in the slab is drawn unless its points are deleted first.",
-    "closedMesh": "A closed mesh rounds corners by about a quarter of a voxel, lets objects thinner than two or three voxels merge or get holes, and leaves some gaps beside another surface open. Without scanner stations, a surface that the centre of the region sees edge on can come out torn.",
-    "faces": "Detect faces reports no strips narrower than 0.15 m, such as door reveals. A region too large for the working budget is searched with larger voxels, thin scans give fewer faces or none, round columns wider than about 0.7 m come out as strips of wall, and without scanner stations the side a face looks at is a guess.",
-    "drawingCheck": "The DXF and DWG files have not yet been checked with a range of drawing programs. If a program refuses a DWG file, try DXF or another file version.",
-    "generated": "The filled cut, Closed mesh and Detect faces were measured on generated rooms, not yet on a scan of a real building. The user guide lists the limits of <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/docs/guide.md#the-filled-cut-and-its-limits\" target=\"_blank\" rel=\"noopener\">the filled cut</a>, <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/docs/guide.md#limits-of-a-closed-mesh\" target=\"_blank\" rel=\"noopener\">Closed mesh</a> and <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/docs/guide.md#limits-of-detected-faces\" target=\"_blank\" rel=\"noopener\">Detect faces</a>.",
-    "index": "An index can take several gigabytes on disk for a large survey.",
-    "showAll": "Show all points",
-    "showLess": "Show less"
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "ctaDownload": "Download",
+    "items": {
+      "style": {
+        "title": "The style of all OpenAEC apps",
+        "desc": "Title strip, ribbon, tabs, panels, the File menu and the settings share their look with the other OpenAEC desktop apps, with one bar at the top."
+      },
+      "lines": {
+        "title": "Straight CAD lines",
+        "desc": "Plans and sections get closed, editable polylines along the cut, also in a turned section box, on a layer of their own."
+      },
+      "compare": {
+        "title": "Photo beside the 3D model",
+        "desc": "An E57 photo opens in a tab of its own and sits beside or above a 3D pane with its own camera and a draggable divider."
+      },
+      "texture": {
+        "title": "Mesh with texture",
+        "desc": "Texture surface writes a coloured mesh as OBJ with UV coordinates and a PNG texture, with progress and cancel."
+      },
+      "signed": {
+        "title": "Signed installers",
+        "desc": "The Windows installer and app carry a valid signature, and the macOS app is notarized by Apple and simply opens."
+      },
+      "api": {
+        "title": "Cloud API and C library",
+        "desc": "The core now also comes as a service over HTTP and MCP in a container, and as a C library for Windows, macOS and Linux."
+      }
+    },
+    "label": "New in v2026.44",
+    "title": "New look, <span>straight CAD lines</span>",
+    "desc": "Version 2026.44 gives the window the style of all OpenAEC apps, draws straight lines in your sections and puts a photo beside the 3D model. The installers are signed, and versions now follow the year and week."
   },
-  "docs": {
-    "title": "Guide, changes and source",
-    "guide": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/docs/guide.md\" target=\"_blank\" rel=\"noopener\">User guide</a>: every tool in detail.",
-    "readme": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio#readme\" target=\"_blank\" rel=\"noopener\">README</a>: installing per system, the first five minutes, and measured speed and limits.",
-    "changelog": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/blob/main/CHANGELOG.md\" target=\"_blank\" rel=\"noopener\">Changelog</a>: what changed in each release.",
-    "source": "<a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio\" target=\"_blank\" rel=\"noopener\">Source code on GitHub</a>, with the <a href=\"https://github.com/OpenAEC-Foundation/open-pointcloud-studio/issues\" target=\"_blank\" rel=\"noopener\">issues</a> for a problem or a request."
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "Point clouds in LAS, LAZ, E57, PLY, PCD, PTX, PTS and text (XYZ, ASC, TXT, CSV): the open formats that laser scanners and scan software export. Also meshes in OBJ, PLY, OFF and STL, points and faces from an ASCII DXF, and the scan list of a scan project file (.rcp). It does not open the closed scan copies (.rcs) or DWG files."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "Yes, it is a desktop app; there is no web version. The Windows installer works without administrator rights, and the Linux AppImage starts without installing. Open CAD Studio, to view drawings, is already included."
+    },
+    "price": {
+      "q": "What does Open Pointcloud Studio cost?",
+      "a": "Nothing. The app is free and open source under the GPL-3.0 and the point-cloud core under the LGPL-3.0, with no account or subscription."
+    },
+    "save": {
+      "q": "In which format is my work saved?",
+      "a": "In open formats, and your scan itself never changes. You export what you make as LAS, LAZ, E57, PLY, XYZ, PTS or CSV, drawings as DXF, DWG or PDF, meshes and faces as OBJ, PLY, STL, JSON or IFC4, and views as BCF. The app keeps views and notes per scan; there is no project file of its own."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "Windows 10 and 11 (64-bit), macOS 11 and later (Apple and Intel) and Linux x86-64 (.deb and AppImage), with a Vulkan driver or OpenGL ES 3. The release page also has a zip without an installer and experimental packages for Linux on 64-bit ARM."
+    },
+    "practice": {
+      "q": "Does it fit building practice?",
+      "a": "Yes. Drawings go to your CAD program as DXF or DWG, faces and meshes to BIM as IFC4, and remarks as BCF 2.1. Buildings from the 3D BAG are fetched in Dutch RD coordinates. Measurements are in metres; the coordinates of a scan are not converted."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "open-pointcloud-studio --mcp starts an MCP server (Model Context Protocol). With it, an assistant such as Claude can open scans, set the camera and the section box, measure, export, draw sections, make meshes and detect faces, and get a picture of the 3D view back. Every window also has a local command API for your own scripts."
+    },
+    "size": {
+      "q": "How large can a scan be?",
+      "a": "Large. A 3.2 GiB PLY with 114 million points opens with its index in a fraction of a second, and selecting in a box of 100 by 100 by 100 m takes about half a second. An index can take several gigabytes on disk for a large survey."
+    },
+    "accuracy": {
+      "q": "How reliable are the filled cut, the closed mesh and the faces?",
+      "a": "They are derived from the points and so far measured on generated rooms, not yet on a scan of a real building. A wall scanned from one side becomes a thin strip, and narrow strips such as door reveals do not become a face. That is why the app shows the measured deviation with every mesh; check the result before you use it."
+    },
+    "bim": {
+      "q": "Does it make a complete floor plan or a BIM model automatically?",
+      "a": "Not yet. You make plans and sections yourself with the section box, and detected faces go along as separate IFC4 elements. The Pointcloud to Drawing wizard now finds the levels of a building; the steps for walls, openings and the IFC model are still being built."
+    },
+    "heading": "Frequently asked questions"
   },
   "tech": {
-    "title": "Technology and licence",
-    "desc": "The desktop application is licensed under GPL-3.0-only, the point-cloud library under LGPL-3.0-or-later. Every package carries the licence texts."
+    "rust": {
+      "title": "Rust",
+      "desc": "One native program without a browser or web view, for Windows, macOS and Linux, with small, signed packages."
+    },
+    "ui": {
+      "title": "iced and openaec-ui",
+      "desc": "The interface in iced, with the shared Rust crate openaec-ui for the title strip, ribbon, tabs, panels and themes, as in the other OpenAEC desktop apps."
+    },
+    "wgpu": {
+      "title": "wgpu",
+      "desc": "Draws millions of points and meshes on the graphics card through Vulkan, Metal, DirectX or OpenGL ES."
+    },
+    "octree": {
+      "title": "Octree index on disk",
+      "desc": "Supplies the detail for the current viewpoint within a point budget and is kept for the next time."
+    },
+    "cad": {
+      "title": "Open CAD Studio",
+      "desc": "The open-source CAD app by Hakan Seven and contributors comes in every package and shows exported DXF and DWG drawings."
+    },
+    "api": {
+      "title": "MCP, API, CLI and C",
+      "desc": "An MCP server, a local command API, a command line, a cloud API in a container and a C library (ABI 1.0) under the LGPL."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
   },
-  "cta": {
-    "download": "Download",
-    "guide": "User guide",
-    "github": "GitHub"
-  },
-  "footer": {
-    "slogan": "Build free. Build together."
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }
