@@ -55,28 +55,23 @@ assert.ok(
 );
 assert.match(
   validator,
-  /<a href="https:\/\/github\.com\/OpenAEC-Foundation\/OpenAEC-BIM-validator" target="_blank" rel="noopener" class="btn btn-glow[^"]*"[^>]*>/,
+  /<a href="https:\/\/github\.com\/OpenAEC-Foundation\/OpenAEC-BIM-validator" target="_blank" rel="noopener" class="btn btn-(glow|glass)[^"]*"[^>]*>/,
   'BIM Validator GitHub-link mist veilige attributen of de huisstijlknop',
 );
-assert.ok(validator.includes('id="recent-developments"'), 'BIM Validator mist recente ontwikkelingen');
+// Sinds 2026-10-30 volgt de pagina de productpagina-standaard: kleuren en kaarten komen uit de gedeelde stijl.
+assert.ok(
+  validator.includes('<link rel="stylesheet" href="/shared/productpagina.css'),
+  'BIM Validator laadt de gedeelde productpagina-stijl niet',
+);
+assert.ok(validator.includes('id="whats-new"'), 'BIM Validator mist het blok met recente ontwikkelingen');
 assert.ok(
   validator.includes('data-release-notes="OpenAEC-BIM-validator"'),
   'BIM Validator mist release-notescomponent',
 );
-assert.ok(
-  validator.includes('<script src="/shared/release-notes.js?v=20261022"></script>'),
+assert.match(
+  validator,
+  /<script src="\/shared\/release-notes\.js\?v=\w+"><\/script>/,
   'BIM Validator laadt het release-notesscript niet',
-);
-// Datums en links staan op het donkere paneel: warm goud (#F59E0B) haalt daar ruim AA.
-assert.match(
-  validator,
-  /\.dev-card time\s*\{[^}]*color:\s*var\(--warm-gold\)/s,
-  'BIM Validator-datums missen voldoende contrast',
-);
-assert.match(
-  validator,
-  /\.dev-card a\s*\{[^}]*color:\s*var\(--warm-gold\)/s,
-  'BIM Validator-links missen voldoende contrast',
 );
 for (const text of [
   'Project data separated per organization',

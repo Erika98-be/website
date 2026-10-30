@@ -1,167 +1,253 @@
 {
   "header": {
-    "label": "OpenAEC ekosistemi",
-    "desc": "Açık kaynak IFC doğrulama aracı. Modelleri IDS spesifikasyonlarına, Hollanda standartlarına ve proje gereksinimlerine karşı doğrulayın — tarayıcıda, CLI veya API aracılığıyla.",
-    "github": "GitHub'da kaynağı görüntüle"
+    "title": "BIM <span class=\"accent\">Validator</span>",
+    "featuresBtn": "Özellikleri gör",
+    "faqBtn": "Sık sorulan sorular",
+    "sourceBtn": "Kaynak kodu",
+    "proof4": "Tarayıcı, kendi sunucunuz",
+    "proof5": "Açık kaynak, MIT",
+    "heroAlt": "3B ofis modeliyle BIM Validator: U değeri olmayan dış duvar vurgulanmış, sağda NL-BIM Basis ILS'in gereksinim başına sonucu",
+    "label": "BIM denetimi",
+    "tagline": "Teslimden önce IFC modelinizin gereksinimleri karşılayıp karşılamadığını bilin",
+    "desc": "Tarayıcıya bir IFC modeli ekleyin, NL-BIM Basis ILS'i, RVB BIM Norm'u ya da kendi IDS dosyanızı seçin ve Doğrula'ya tıklayın. Her gereksinim için neyin geçip neyin kaldığını görürsünüz; hatalı her öğe 3B'de vurgulanır."
   },
-  "stats": {
-    "ids": "Doğrulama standardı",
-    "nlbim": "NL BIM Basis ILS spesifikasyonları",
-    "rvb": "RVB BIM Norm spesifikasyonları",
-    "maxsize": "Maksimum dosya boyutu"
+  "meta": {
+    "description": "IFC modellerinin IDS gereksinimlerine göre ücretsiz, açık kaynaklı denetimi; Hollanda'nın NL-BIM Basis ILS ve RVB BIM Norm standartları yerleşik. Her hatayı 3B'de görün ve BCF kaydı olarak iletin. Kendi sunucunuzda, tarayıcıda çalışır.",
+    "title": "BIM Validator — OpenAEC Foundation"
   },
-  "validation": {
-    "title": "Doğrulama",
-    "ids": {
-      "feature": "IDS doğrulama",
-      "desc": "IFC modellerini Information Delivery Specification (IDS) dosyalarına karşı doğrulayın. Her spesifikasyon, eleman bazında geçti/kaldı olarak ayrıntılı hata mesajlarıyla kontrol edilir."
+  "hl": {
+    "deur": {
+      "alt": "Standart dışı ada sahip bir kapı 3B'de vurgulanmış; sağda kapı adlandırma gereksinimi, hatalı öğe ve ayrıntıları",
+      "kicker": "3B'de hatalar",
+      "title": "Hangi öğenin hatalı olduğunu hemen görün",
+      "desc": "Sonuçlarda bir hataya tıklayın; uygulama öğeye yakınlaşır ve modelin geri kalanı saydamlaşır. Yanında gereksinim, tür, GlobalId ve ad yer alır; böylece öğeyi kendi BIM yazılımınızda hızla bulursunuz."
     },
-    "nlbim": {
-      "feature": "NL BIM Basis ILS v2",
-      "desc": "12 spesifikasyona sahip yerleşik Hollanda BIM temel standardı: kat isimlendirmesi, NL/SfB sınıflandırması, mekan özellikleri, taşıyıcı yapı, dış yüzeyler, yangın dayanımı, U-değeri, malzemeler ve renovasyon durumu."
+    "standaarden": {
+      "alt": "RVB BIM Norm sonucu: 26 gereksinimden onu karşılanmış, 3B ofis modeliyle",
+      "kicker": "Standartlar",
+      "title": "Hollanda gereksinimleri yerleşik",
+      "desc": "Tek tıkla NL-BIM Basis ILS'i (12 gereksinim) ya da Hollanda Devlet Gayrimenkul Ajansı'nın RVB BIM Norm'unu (26 gereksinim) seçin: adlandırma, NL/SfB kodları, malzemeler, yangın dayanımı, U değerleri ve daha fazlası. İşverenin kendi gereksinimleri mi var? IDS dosyasını yükleyin."
     },
-    "rvb": {
-      "feature": "RVB BIM Norm v1.1",
-      "desc": "Devlet inşaat projeleri için 27 spesifikasyona sahip yerleşik Rijksvastgoedbedrijf (Hollanda hükümet gayrimenkul kurumu) standardı: proje bilgileri, saha koordinatları, eleman tipine göre NL-SfB, taşıyıcı yapı &amp; yangın güvenliği özellikleri ve bölge bilgileri."
+    "eigenschappen": {
+      "alt": "3B modelde seçili bir pencere; solda kat, malzeme ve NL/SfB koduyla özellikleri",
+      "kicker": "Modeli görüntüleme",
+      "title": "Bir öğeye tıklayın, içinde ne olduğunu görün",
+      "desc": "Hiçbir şey kurmadan modeli döndürün, yakınlaştırın ve içinde gezinin. Her öğe için kat, malzeme, sınıflandırma, özellik setleri ve miktarlar görünür. Kesit düzlemleriyle binanın içine bakarsınız."
     },
-    "customids": {
-      "feature": "Özel IDS yükleme",
-      "desc": "Projeye veya kuruma özel gereksinimlere karşı doğrulamak için kendi IDS spesifikasyon dosyanızı (maksimum 10MB) yükleyin."
-    },
-    "multischema": {
-      "feature": "Çoklu şema",
-      "desc": "Hem IFC2X3 hem de IFC4 şemalarını destekler — Revit, ArchiCAD, Tekla ve diğer BIM yazılımlarından yapılan dışa aktarımlarla uyumludur."
-    },
-    "elementreport": {
-      "feature": "Eleman düzeyinde raporlama",
-      "desc": "Başarısız olan her eleman için GlobalId, IFC sınıfı, eleman adı ve ayrıntılı bir hata mesajı gösterilir."
+    "bcf": {
+      "alt": "Karşılanmayan gereksinimlerden oluşturulmuş, küçük resimli altı BCF kaydı ve bunları BCF zip olarak indirme düğmesi",
+      "kicker": "BCF kayıtları",
+      "title": "Hataları modelleyiciye iletin",
+      "desc": "Tek tıkla tüm hataları kendi önekiniz, önceliğiniz, atanan kişi ve son tarihle BCF kayıtlarına dönüştürün. Her kayıt bir bakış açısı ve küçük resim alır. Revit, ArchiCAD, Solibri veya BIMcollab için BCF zip olarak indirin ya da OpenAEC BCF platformuna gönderin."
     }
   },
-  "viewer": {
-    "title": "3D Görüntüleyici",
-    "webgl": {
-      "feature": "WebGL 3D görüntüleyici",
-      "desc": "That Open Engine (Three.js) aracılığıyla tarayıcıda IFC modelinin etkileşimli 3D görünümü. Kurulum veya eklenti gerekmez."
-    },
-    "selection": {
-      "feature": "Eleman seçimi",
-      "desc": "Özelliklerini görüntülemek için 3D görüntüleyicide bir elemana tıklayın, ya da elemanı 3D'de vurgulamak için sonuç listesindeki bir hataya tıklayın."
-    },
-    "navigation": {
-      "feature": "Kamera navigasyonu",
-      "desc": "Model içinde döndürme, kaydırma ve yakınlaştırma. Tüm modeli görünüme getirmek için tümünü sığdır düğmesi."
-    },
-    "panels": {
-      "feature": "Yeniden boyutlandırılabilir paneller",
-      "desc": "Sürüklenebilir üçlü bölünme: navigasyon paneli (sol), 3D görüntüleyici (orta) ve detay paneli (sağ). Her panel daraltılabilir."
-    }
+  "notice": {
+    "text": "Henüz bir sürüm ve herkese açık web sürümü yok: Docker ile kendi sunucunuza kendiniz kurarsınız. Ekran görüntüleri, hayali bir modelle kurulmuş yerel bir test ortamından alınmıştır."
   },
-  "bcf": {
-    "title": "BCF Dışa Aktarma",
-    "zip": {
-      "feature": "BCF 2.1 ZIP dışa aktarma",
-      "desc": "Tüm doğrulama hatalarını bir BCF 2.1 ZIP dosyası olarak dışa aktarın. Başarısız olan her eleman, Revit, Solibri, BIMcollab veya Navisworks'e doğrudan aktarılabilen bir görünüm noktasına sahip bir BCF konusu haline gelir."
-    },
-    "platform": {
-      "feature": "BCF Platform entegrasyonu",
-      "desc": "Sorunları doğrudan merkezi bir proje panosuna göndermek için OpenAEC BCF Platform'a bağlanın. OIDC kimlik doğrulama ve proje seçimini içerir."
-    },
-    "queue": {
-      "feature": "Sorun kuyruğu",
-      "desc": "Platforma dışa aktarmadan veya göndermeden önce, oluşturulan BCF sorunlarının küçük resimler ve genişletilebilir detaylarla yerel görünümü."
-    }
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
   },
-  "interfaces": {
-    "title": "Arayüzler",
-    "web": {
-      "feature": "Web uygulaması",
-      "desc": "Sürükle-bırak yükleme, standart seçimi, ilerleme çubuğu, sonuç görünümü ve 3D görüntüleyici ile tamamen tarayıcı tabanlı arayüz."
-    },
-    "cli": {
-      "feature": "CLI",
-      "desc": "<code>ifc-validate model.ifc --ids nl-bim</code> — toplu işleme, CI/CD hatları ve betikleme için uygun. Konsol, JSON veya HTML olarak çıktı."
-    },
-    "restapi": {
-      "feature": "REST API",
-      "desc": "Asenkron doğrulama uç noktalarına sahip FastAPI arka ucu. Kendi iş akışlarınıza, panolarınıza veya üçüncü taraf araçlarınıza entegre edilebilir."
-    }
-  },
-  "reporting": {
-    "title": "Raporlama &amp; çıktı",
-    "dashboard": {
-      "feature": "Sonuç panosu",
-      "desc": "Toplam geçti/kaldı, yüzde, doğrulanan eleman sayısı ve zaman damgasını içeren genel bakış kartı."
-    },
-    "breakdown": {
-      "feature": "Spesifikasyon dökümü",
-      "desc": "Spesifikasyon başına, geçti/kaldı durumu, yüzde ve başarısız elemanların sayfalanmış listesiyle genişletilebilir liste."
-    },
-    "jsonexport": {
-      "feature": "JSON dışa aktarma",
-      "desc": "Daha fazla analiz veya arşivleme için eksiksiz doğrulama sonuçlarını yapılandırılmış bir JSON dosyası olarak indirin."
-    },
-    "htmlreport": {
-      "feature": "HTML raporu",
-      "desc": "Proje ekibiyle veya müşteriyle paylaşmak için bağımsız bir HTML raporu oluşturun."
-    }
-  },
-  "fileprocessing": {
-    "title": "Dosya işleme",
-    "dragdrop": {
-      "feature": "Sürükle &amp; bırak ile yükleme",
-      "desc": "IFC, IFCXML veya IFCZIP dosyalarını tarayıcıya sürükleyin. Dosya başına maksimum 500MB."
-    },
-    "memory": {
-      "feature": "Bellek yönetimi",
-      "desc": "Yeterli RAM olup olmadığının otomatik kontrolü (IFC dosyaları bellekte dosya boyutlarının ~10 katını kullanır). Geçici dosyalar hemen temizlenir."
-    },
-    "largefiles": {
-      "feature": "Büyük dosyalar",
-      "desc": "1GB ve üzeri IFC modelleri için optimize edilmiştir. İşleme sırasında ilerleme göstergesi."
-    }
-  },
-  "deployment": {
-    "title": "Dağıtım &amp; entegrasyon",
-    "docker": {
-      "feature": "Docker ile dağıtım",
-      "desc": "Arka uç, ön uç, nginx, PostgreSQL ve Redis ile eksiksiz Docker Compose kurulumu. Her şeyi başlatmak için tek komut."
-    },
-    "onpremises": {
-      "feature": "Yerinde (on-premises) kurulum",
-      "desc": "Veri ve gizlilik üzerinde maksimum kontrol için doğrulayıcıyı kendi sunucunuzda çalıştırın. Buluta bağımlılık yoktur."
-    },
-    "multitenant": {
-      "feature": "Çok kiracılı (multi-tenant)",
-      "desc": "Kuruluş başına dosya yönetimi için isteğe bağlı NextCloud entegrasyonuna sahip proje depolama."
-    },
-    "sso": {
-      "feature": "SSO kimlik doğrulama",
-      "desc": "Kurumsal ortamlar için OIDC tabanlı tek oturum açma."
-    }
-  },
-  "developments": {
-    "label": "Proje geliştirme",
-    "title": "Son gelişmeler",
-    "intro": "Doğrulayıcı aktif olarak geliştirilmeye devam ediyor. Bunlar, herkese açık depodaki en dikkat çekici son iyileştirmelerdir.",
-    "item1": {
-      "title": "Kuruluş başına kapsamlandırılmış projeler",
-      "desc": "Proje, dosya ve bulut rotaları artık veriler açılmadan veya değiştirilmeden önce kuruluş bağlamını kontrol ediyor."
-    },
-    "item2": {
-      "title": "Bağımlılıklar güvenli hale getirildi",
-      "desc": "Ön uç araçları ve veri ayrıştırıcısı güncellendi; bağımlılık kontrolünde bildirilen güvenlik sorunları giderildi."
-    },
-    "item3": {
-      "title": "Projeleri yerel olarak ve bulutta açma ve kaydetme",
-      "desc": "Proje iş akışı artık yerel proje dosyalarını, yeni bir proje olarak kaydetmeyi ve bağlantılı proje deposundan açmayı veya güncellemeyi destekliyor."
-    },
-    "item4": {
-      "title": "Etkileşimli kesit düzlemleri",
-      "desc": "Kesit düzlemleri, hedefli model incelemesi için doğrudan 3D görünümde seçilebilir ve sürüklenebilir."
-    },
-    "link": "Değişikliği görüntüle"
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "check": "Denetim",
+    "view": "Modeli görüntüleme",
+    "issues": "Kayıtlar ve raporlar",
+    "server": "Projeler ve sunucu",
+    "all": "Tüm özellikler"
   },
   "features": {
-    "title": "Özellikler"
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "IFC modelinden düzeltebileceğiniz bir hata listesine",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "ids": {
+      "title": "IDS'ye göre denetim",
+      "desc": "Her öğe gereksinim başına sınanır; geçti ya da kaldı bilgisi ve nedeniyle."
+    },
+    "nlbim": {
+      "title": "NL-BIM Basis ILS",
+      "desc": "Kat adlarından yenileme durumuna, BIM basis ILS'ten on iki gereksinim."
+    },
+    "rvb": {
+      "title": "RVB BIM Norm",
+      "desc": "Kamu binaları için 26 gereksinim: proje ve arsa verileri, öğe türüne göre NL/SfB, mekânlar."
+    },
+    "custom": {
+      "title": "Kendi IDS dosyanız",
+      "desc": "İşvereninizin ya da kendi kurumunuzun gereksinimlerini IDS dosyası olarak yükleyin."
+    },
+    "schema": {
+      "title": "IFC2X3 ve IFC4",
+      "desc": "Revit, ArchiCAD, Tekla ve diğer BIM yazılımlarından dışa aktarımlar için."
+    },
+    "tree": {
+      "title": "Gereksinim başına sonuç",
+      "desc": "Gereksinimden kurala ve öğeye açılabilir bir ağaç, hata sayaçlarıyla."
+    },
+    "highlight": {
+      "title": "Hataları 3B'de vurgulama",
+      "desc": "Tüm hatalı öğeleri tek seferde vurgulayın ya da tek bir öğeye yakınlaşın."
+    },
+    "viewer": {
+      "title": "Tarayıcıda 3B görüntüleyici",
+      "desc": "Döndürme, kaydırma ve yakınlaştırma; görünümü hızla değiştirmek için bir küp."
+    },
+    "props": {
+      "title": "Öğe başına özellikler",
+      "desc": "Kat, malzeme, sınıflandırma, özellik setleri, miktarlar ve tür."
+    },
+    "section": {
+      "title": "Kesit düzlemleri",
+      "desc": "Modeli X, Y veya Z yönünde kesin ve içeri bakmak için düzlemi sürükleyin."
+    },
+    "models": {
+      "title": "Birden çok model",
+      "desc": "Mimari, taşıyıcı sistem ve tesisatı yan yana koyun, gerekmeyeni gizleyin."
+    },
+    "bcfmake": {
+      "title": "Hatalardan BCF kayıtları",
+      "desc": "Gereksinim, kural veya öğe başına; öncelik, etiket, kilometre taşı ve son tarihle."
+    },
+    "bcfzip": {
+      "title": "BCF 2.1 zip",
+      "desc": "Tüm kayıtları bakış açısı ve küçük resimle kendi BIM yazılımınız için indirin."
+    },
+    "platform": {
+      "title": "OpenAEC BCF platformu",
+      "desc": "Oturum açın ve kayıtları doğrudan paylaşılan bir proje görünümüne gönderin."
+    },
+    "json": {
+      "title": "JSON olarak sonuçlar",
+      "desc": "Tam sonuçları arşiv veya kendi analizleriniz için indirin."
+    },
+    "cli": {
+      "title": "Komut satırı",
+      "desc": "Modelleri bir betikte ya da derleme hattında denetleyin; çıktı ekrana, JSON'a veya HTML'e."
+    },
+    "projects": {
+      "title": "Projeleri kaydetme ve açma",
+      "desc": "Modelleri, sonuçları ve kayıtları yerelde ya da proje deposunda bir proje olarak birlikte saklayın."
+    },
+    "nextcloud": {
+      "title": "Nextcloud bağlantısı",
+      "desc": "IFC dosyalarını proje klasöründen açın ve sonuçları oraya geri kaydedin."
+    },
+    "tenant": {
+      "title": "Kuruma göre ayrılmış",
+      "desc": "Projeler ve dosyalar yalnızca kendi kurumuna görünür."
+    },
+    "docker": {
+      "title": "Kendi sunucunuzda",
+      "desc": "Tek bir Docker kurulumu; modelleriniz kendi ağınızdan çıkmaz."
+    },
+    "api": {
+      "title": "REST API",
+      "desc": "Denetimleri kendi yazılımınızdan başlatın ve sonuçları alın."
+    },
+    "lang": {
+      "title": "Felemenkçe ve İngilizce",
+      "desc": "Arayüz Felemenkçe ve İngilizce olarak sunulur."
+    }
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "items": {
+      "tenant": {
+        "title": "Kuruma göre ayrılmış",
+        "desc": "Projeler, dosyalar ve bulut depolama için her istek önce hangi kuruma ait olduğunuzu denetler."
+      },
+      "save": {
+        "title": "Açma ve kaydetme",
+        "desc": "Projeleri yerelde ya da proje deposunda açmak ve kaydetmek için yeni bir pencere; Ctrl+S ve Ctrl+O ile de."
+      },
+      "wefc": {
+        "title": "Her şey tek projede",
+        "desc": "Modeller, sonuçlar ve BCF kayıtları birlikte saklanır; neyin neye ait olduğunu tutan bir proje dosyasıyla."
+      },
+      "section": {
+        "title": "Kesit düzlemleri",
+        "desc": "Modeli X, Y veya Z yönünde kesin ve binanın içine bakmak için düzlemi fareyle sürükleyin."
+      },
+      "deps": {
+        "title": "Daha güvenli bileşenler",
+        "desc": "Kullanılan bileşenlerde bildirilen yedi güvenlik sorununun tamamı giderildi."
+      }
+    },
+    "label": "Nisan 2026'da yeni",
+    "title": "Projeler, <span>kaydetme ve kesit düzlemleri</span>",
+    "desc": "Son yeni özellikler Nisan 2026 tarihli. Henüz bir sürüm yok; değişiklikler GitHub'daki kaynak kodundadır."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "Revit, ArchiCAD, Tekla veya başka bir BIM yazılımından dışa aktarılan IFC2X3 ve IFC4 IFC modelleri, dosya başına 500 MB'a kadar. Gereksinimler IDS dosyası olarak yüklenir (5 MB'a kadar)."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Kullanıcıların gerekmez: tarayıcıda çalışırlar. Ancak birinin doğrulayıcıyı bir kez Docker ile bir sunucuya kurması gerekir. Henüz hazır bir sürüm ve herkese açık bir deneme sürümü yok."
+    },
+    "price": {
+      "q": "Ücreti ne kadar?",
+      "a": "Hiçbir şey. BIM Validator MIT lisansıyla açık kaynaktır. Yalnızca kendi sunucunuz için ödeme yaparsınız."
+    },
+    "save": {
+      "q": "Çalışmam hangi dosya biçiminde kaydedilir?",
+      "a": "Bir proje IFC modellerinizi, sonuçları ve kayıtları, neyin neye ait olduğunu tutan bir proje dosyasıyla (.wefc) birlikte saklar. Kayıtlar BCF 2.1 zip, sonuçlar JSON olarak indirilir; komut satırından HTML rapor olarak da."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Kullanıcıların Windows, macOS veya Linux üzerinde WebGL destekli modern bir tarayıcıya ihtiyacı vardır. Sunucu Linux'ta Docker içinde çalışır. Masaüstü uygulaması yoktur."
+    },
+    "practice": {
+      "q": "Yapı pratiğine uygun mu?",
+      "a": "Evet. Hollanda'nın NL-BIM Basis ILS ve RVB BIM Norm v1.1 standartları NL/SfB sınıflandırmasıyla yerleşiktir. Gereksinimler buildingSMART IDS standardını, kayıtlar Revit, ArchiCAD, Solibri ve BIMcollab'ın okuduğu BCF 2.1 standardını izler."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "REST API üzerinden bir asistan veya betik bir modeli denetletip sonuçları JSON olarak alabilir; komut satırı da çalışır. Henüz bir MCP sunucusu yok."
+    },
+    "privacy": {
+      "q": "Modellerim kurumumun içinde kalır mı?",
+      "a": "Evet. Doğrulayıcıyı kendi sunucunuzda çalıştırırsınız; modeller harici bir hizmete gitmez. Tek sunucuda birden çok kurum varsa her kurum yalnızca kendi projelerini görür."
+    },
+    "clash": {
+      "q": "Modeller arasındaki çakışmaları da bulabilir mi?",
+      "a": "Henüz değil. Clashes sekmesi var ama çakışma denetimi henüz yapılmadı. Yine de birden çok modeli birlikte görüntüleyebilirsiniz."
+    },
+    "heading": "Sık sorulan sorular"
+  },
+  "tech": {
+    "ifcos": {
+      "desc": "Denetimin kendisi: IfcTester modeli IDS gereksinimlerine göre sınar, IfcOpenShell IFC dosyasını okur."
+    },
+    "fastapi": {
+      "desc": "REST API, arka plan denetimleri ve ifc-validate komut satırıyla sunucu."
+    },
+    "thatopen": {
+      "desc": "Büyük modellerin hızlı gösterimi için fragmanlarla tarayıcıdaki 3B görüntüleyici."
+    },
+    "react": {
+      "desc": "Şerit, paneller ve temalarla Felemenkçe ve İngilizce arayüz."
+    },
+    "storage": {
+      "desc": "Projeler PostgreSQL'de (yerel test için SQLite), dosyalar WebDAV üzerinden Nextcloud'da."
+    },
+    "docker": {
+      "desc": "OpenID Connect ile isteğe bağlı oturum açmalı tek bir Docker Compose kurulumu."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }

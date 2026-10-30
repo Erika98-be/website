@@ -1,167 +1,253 @@
 {
   "header": {
-    "label": "OpenAEC Ecosystem",
-    "desc": "Open source IFC validation tool. Validate models against IDS specifications, Dutch standards and project requirements — in the browser, via CLI or API.",
-    "github": "View source on GitHub"
+    "title": "BIM <span class=\"accent\">Validator</span>",
+    "featuresBtn": "See the features",
+    "faqBtn": "Frequently asked questions",
+    "sourceBtn": "Source code",
+    "proof4": "Browser, own server",
+    "proof5": "Open source, MIT",
+    "heroAlt": "BIM Validator with an office model in 3D: the external wall without a U-value is highlighted, on the right the result per requirement of the NL-BIM Basis ILS",
+    "label": "BIM checking",
+    "tagline": "Know before handover whether your IFC model meets the requirements",
+    "desc": "Add an IFC model in the browser, choose the NL-BIM Basis ILS, the RVB BIM Norm or your own IDS file and click Validate. You see per requirement what passes and fails, and every failing element lights up in 3D."
   },
-  "stats": {
-    "ids": "Validation standard",
-    "nlbim": "NL BIM Basis ILS specs",
-    "rvb": "RVB BIM Norm specs",
-    "maxsize": "Max file size"
+  "meta": {
+    "description": "Free, open-source checking of IFC models against IDS requirements, with the Dutch NL-BIM Basis ILS and RVB BIM Norm built in. See every error in 3D and pass it on as a BCF issue. Runs in the browser on your own server.",
+    "title": "BIM Validator — OpenAEC Foundation"
   },
-  "validation": {
-    "title": "Validation",
-    "ids": {
-      "feature": "IDS validation",
-      "desc": "Validate IFC models against Information Delivery Specification (IDS) files. Every specification is checked per element for pass/fail with detailed error messages."
+  "hl": {
+    "deur": {
+      "alt": "A door with a non-standard name highlighted in 3D; on the right the door naming requirement with the failing element and its details",
+      "kicker": "Errors in 3D",
+      "title": "See straight away which element is wrong",
+      "desc": "Click an error in the results and the app zooms to the element while the rest of the model turns transparent. Next to it you see the requirement, type, GlobalId and name, so you can find it quickly in your own BIM software."
     },
-    "nlbim": {
-      "feature": "NL BIM Basis ILS v2",
-      "desc": "Built-in Dutch BIM baseline standard with 12 specifications: storey naming, NL/SfB classification, space attributes, load-bearing structure, exterior surfaces, fire resistance, U-value, materials and renovation status."
+    "standaarden": {
+      "alt": "Result of the RVB BIM Norm: 26 requirements, ten of them met, with the office model in 3D",
+      "kicker": "Standards",
+      "title": "The Dutch requirements are built in",
+      "desc": "Choose the NL-BIM Basis ILS (12 requirements) or the RVB BIM Norm of the Dutch Government Real Estate Agency (26 requirements) with one click: naming, NL/SfB codes, materials, fire resistance, U-values and more. Does your client have their own requirements? Load their IDS file."
     },
-    "rvb": {
-      "feature": "RVB BIM Norm v1.1",
-      "desc": "Built-in Rijksvastgoedbedrijf (Dutch government real estate agency) standard with 27 specifications for government construction projects: project info, site coordinates, NL-SfB per element type, structural &amp; fire-safety properties and zone information."
+    "eigenschappen": {
+      "alt": "A window selected in the 3D model; on the left its properties with storey, material and NL/SfB code",
+      "kicker": "Viewing the model",
+      "title": "Click an element and see what is in it",
+      "desc": "Orbit, zoom and click through the model without installing anything. For each element you see the storey, material, classification, property sets and quantities. Section planes let you look inside the building."
     },
-    "customids": {
-      "feature": "Custom IDS upload",
-      "desc": "Upload your own IDS specification file (max 10MB) to validate against project-specific or organisation-specific requirements."
-    },
-    "multischema": {
-      "feature": "Multi-schema",
-      "desc": "Supports both IFC2X3 and IFC4 schemas — compatible with exports from Revit, ArchiCAD, Tekla and other BIM software."
-    },
-    "elementreport": {
-      "feature": "Element-level reporting",
-      "desc": "For every failed element, the GlobalId, IFC class, element name and a detailed error message are shown."
+    "bcf": {
+      "alt": "Six BCF issues with thumbnails, created from the failed requirements, and the button to download them as a BCF zip",
+      "kicker": "BCF issues",
+      "title": "Pass the errors on to the modeller",
+      "desc": "Turn all errors into BCF issues with one click, with your own prefix, priority, assignee and deadline. Each issue gets a viewpoint and a thumbnail. Download them as a BCF zip for Revit, ArchiCAD, Solibri or BIMcollab, or push them to the OpenAEC BCF platform."
     }
   },
-  "viewer": {
-    "title": "3D Viewer",
-    "webgl": {
-      "feature": "WebGL 3D viewer",
-      "desc": "Interactive 3D view of the IFC model in the browser via That Open Engine (Three.js). No installation or plugin needed."
-    },
-    "selection": {
-      "feature": "Element selection",
-      "desc": "Click an element in the 3D viewer to view its properties, or click an error in the results list to highlight the element in 3D."
-    },
-    "navigation": {
-      "feature": "Camera navigation",
-      "desc": "Orbit, pan and zoom through the model. Fit-all button to bring the entire model into view."
-    },
-    "panels": {
-      "feature": "Resizable panels",
-      "desc": "Draggable three-way split: navigation panel (left), 3D viewer (centre) and detail panel (right). Every panel is collapsible."
-    }
+  "notice": {
+    "text": "No release and no public web version yet: you set it up on a server yourself with Docker. The screenshots come from a local test setup with a fictitious model."
   },
-  "bcf": {
-    "title": "BCF Export",
-    "zip": {
-      "feature": "BCF 2.1 ZIP export",
-      "desc": "Export all validation errors as a BCF 2.1 ZIP file. Every failed element becomes a BCF topic with a viewpoint, directly importable into Revit, Solibri, BIMcollab or Navisworks."
-    },
-    "platform": {
-      "feature": "BCF Platform integration",
-      "desc": "Connect to the OpenAEC BCF Platform to push issues straight to a central project dashboard. Includes OIDC authentication and project selection."
-    },
-    "queue": {
-      "feature": "Issue queue",
-      "desc": "Local overview of generated BCF issues with thumbnails and expandable detail, before you export or push to the platform."
-    }
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
   },
-  "interfaces": {
-    "title": "Interfaces",
-    "web": {
-      "feature": "Web application",
-      "desc": "Fully browser-based interface with drag-and-drop upload, standard selection, progress bar, results view and 3D viewer."
-    },
-    "cli": {
-      "feature": "CLI",
-      "desc": "<code>ifc-validate model.ifc --ids nl-bim</code> — suited for batch processing, CI/CD pipelines and scripting. Output as console, JSON or HTML."
-    },
-    "restapi": {
-      "feature": "REST API",
-      "desc": "FastAPI backend with async validation endpoints. Integrable into your own workflows, dashboards or third-party tools."
-    }
-  },
-  "reporting": {
-    "title": "Reporting &amp; output",
-    "dashboard": {
-      "feature": "Results dashboard",
-      "desc": "Overview card with total pass/fail, percentage, number of validated elements and timestamp."
-    },
-    "breakdown": {
-      "feature": "Specification breakdown",
-      "desc": "Expandable list per specification with pass/fail status, percentage and a paginated list of failed elements."
-    },
-    "jsonexport": {
-      "feature": "JSON export",
-      "desc": "Download complete validation results as a structured JSON file for further analysis or archiving."
-    },
-    "htmlreport": {
-      "feature": "HTML report",
-      "desc": "Generate a standalone HTML report for sharing with the project team or client."
-    }
-  },
-  "fileprocessing": {
-    "title": "File processing",
-    "dragdrop": {
-      "feature": "Drag &amp; drop upload",
-      "desc": "Drag IFC, IFCXML or IFCZIP files into the browser. Maximum 500MB per file."
-    },
-    "memory": {
-      "feature": "Memory management",
-      "desc": "Automatic check whether enough RAM is available (IFC files use ~10x their file size in memory). Temporary files are cleaned up immediately."
-    },
-    "largefiles": {
-      "feature": "Large files",
-      "desc": "Optimised for IFC models up to 1GB+. Progress indicator during processing."
-    }
-  },
-  "deployment": {
-    "title": "Deployment &amp; integration",
-    "docker": {
-      "feature": "Docker deployment",
-      "desc": "Full Docker Compose setup with backend, frontend, nginx, PostgreSQL and Redis. One command to start everything."
-    },
-    "onpremises": {
-      "feature": "On-premises",
-      "desc": "Run the validator on your own server for maximum control over data and privacy. No cloud dependency."
-    },
-    "multitenant": {
-      "feature": "Multi-tenant",
-      "desc": "Project storage with optional NextCloud integration for file management per organisation."
-    },
-    "sso": {
-      "feature": "SSO authentication",
-      "desc": "OIDC-based single sign-on for enterprise environments."
-    }
-  },
-  "developments": {
-    "label": "Project development",
-    "title": "Recent developments",
-    "intro": "The validator is under active development. These are the most notable recent improvements from the public repository.",
-    "item1": {
-      "title": "Projects scoped per organisation",
-      "desc": "Project, file and cloud routes now check the organisation context before data is opened or changed."
-    },
-    "item2": {
-      "title": "Dependencies secured",
-      "desc": "The frontend tooling and data parser have been updated and the reported security issues in the dependency check have been resolved."
-    },
-    "item3": {
-      "title": "Open and save projects locally and in the cloud",
-      "desc": "The project workflow now supports local project files, saving as a new project, and opening or updating from linked project storage."
-    },
-    "item4": {
-      "title": "Interactive section planes",
-      "desc": "Section planes can be selected and dragged directly in the 3D view for targeted model inspection."
-    },
-    "link": "View change"
+  "tabs": {
+    "highlights": "Highlights",
+    "check": "Checking",
+    "view": "Viewing the model",
+    "issues": "Issues and reports",
+    "server": "Projects and server",
+    "all": "All features"
   },
   "features": {
-    "title": "Features"
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "From IFC model to a list of errors you can fix",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
+    "ids": {
+      "title": "Checking against IDS",
+      "desc": "Each element is tested per requirement, with pass or fail and the reason."
+    },
+    "nlbim": {
+      "title": "NL-BIM Basis ILS",
+      "desc": "Twelve requirements from the BIM basis ILS, from storey names to renovation status."
+    },
+    "rvb": {
+      "title": "RVB BIM Norm",
+      "desc": "26 requirements for government buildings: project and site data, NL/SfB per element type, spaces."
+    },
+    "custom": {
+      "title": "Your own IDS file",
+      "desc": "Load the requirements of your client or your own organisation as an IDS file."
+    },
+    "schema": {
+      "title": "IFC2X3 and IFC4",
+      "desc": "For exports from Revit, ArchiCAD, Tekla and other BIM software."
+    },
+    "tree": {
+      "title": "Results per requirement",
+      "desc": "An expandable tree from requirement to rule to element, with error counters."
+    },
+    "highlight": {
+      "title": "Highlight errors in 3D",
+      "desc": "Highlight all failing elements at once, or zoom to a single element."
+    },
+    "viewer": {
+      "title": "3D viewer in the browser",
+      "desc": "Orbit, pan and zoom, with a view cube to switch views quickly."
+    },
+    "props": {
+      "title": "Properties per element",
+      "desc": "Storey, material, classification, property sets, quantities and type."
+    },
+    "section": {
+      "title": "Section planes",
+      "desc": "Cut the model in X, Y or Z and drag the plane to look inside."
+    },
+    "models": {
+      "title": "Several models",
+      "desc": "Put architecture, structure and MEP side by side and hide what you don't need."
+    },
+    "bcfmake": {
+      "title": "BCF issues from errors",
+      "desc": "Per requirement, rule or element, with priority, label, milestone and deadline."
+    },
+    "bcfzip": {
+      "title": "BCF 2.1 zip",
+      "desc": "Download all issues with viewpoint and thumbnail for your own BIM software."
+    },
+    "platform": {
+      "title": "OpenAEC BCF platform",
+      "desc": "Sign in and push issues straight into a shared project overview."
+    },
+    "json": {
+      "title": "Results as JSON",
+      "desc": "Download the full results for your archive or your own analyses."
+    },
+    "cli": {
+      "title": "Command line",
+      "desc": "Check models in a script or build pipeline, with output to screen, JSON or HTML."
+    },
+    "projects": {
+      "title": "Save and open projects",
+      "desc": "Keep models, results and issues together as a project, locally or in project storage."
+    },
+    "nextcloud": {
+      "title": "Nextcloud connection",
+      "desc": "Open IFC files from the project folder and save the results back there."
+    },
+    "tenant": {
+      "title": "Separated per organisation",
+      "desc": "Projects and files are only visible to their own organisation."
+    },
+    "docker": {
+      "title": "On your own server",
+      "desc": "A single Docker setup; your models never leave your own network."
+    },
+    "api": {
+      "title": "REST API",
+      "desc": "Start checks from your own software and fetch the results."
+    },
+    "lang": {
+      "title": "Dutch and English",
+      "desc": "The interface is available in Dutch and English."
+    }
+  },
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "items": {
+      "tenant": {
+        "title": "Separated per organisation",
+        "desc": "Every request for projects, files and cloud storage first checks which organisation you belong to."
+      },
+      "save": {
+        "title": "Open and save",
+        "desc": "A new window to open and save projects locally or in project storage, also with Ctrl+S and Ctrl+O."
+      },
+      "wefc": {
+        "title": "Everything together in one project",
+        "desc": "Models, results and BCF issues are kept together, with a project file that records what belongs with what."
+      },
+      "section": {
+        "title": "Section planes",
+        "desc": "Cut the model in X, Y or Z and drag the plane with the mouse to look inside the building."
+      },
+      "deps": {
+        "title": "Safer components",
+        "desc": "All seven reported security issues in third-party components have been fixed."
+      }
+    },
+    "label": "New in April 2026",
+    "title": "Projects, <span>saving and section planes</span>",
+    "desc": "The latest new features date from April 2026. There is no release yet; the changes are in the source code on GitHub."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "IFC models in IFC2X3 and IFC4, as exported from Revit, ArchiCAD, Tekla or other BIM software, up to 500 MB per file. Requirements are loaded as an IDS file (up to 5 MB)."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "Users don't: they work in the browser. Someone does need to set up the validator once on a server with Docker. There is no ready-made release and no public trial version yet."
+    },
+    "price": {
+      "q": "What does it cost?",
+      "a": "Nothing. BIM Validator is open source under the MIT licence. You only pay for your own server."
+    },
+    "save": {
+      "q": "In which file format is my work saved?",
+      "a": "A project keeps your IFC models, the results and the issues together, with a project file (.wefc) that records what belongs with what. Issues download as a BCF 2.1 zip, results as JSON; from the command line also as an HTML report."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "Users need a modern browser with WebGL, on Windows, macOS or Linux. The server runs in Docker on Linux. There is no desktop app."
+    },
+    "practice": {
+      "q": "Does it fit building practice?",
+      "a": "Yes. The Dutch NL-BIM Basis ILS and RVB BIM Norm v1.1 are built in, with NL/SfB classification. Requirements follow the buildingSMART IDS standard, issues the BCF 2.1 standard that Revit, ArchiCAD, Solibri and BIMcollab read."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "Through the REST API an assistant or script can have a model checked and fetch the results as JSON; the command line works too. There is no MCP server yet."
+    },
+    "privacy": {
+      "q": "Do my models stay inside my organisation?",
+      "a": "Yes. You run the validator on your own server, so models don't go to an external service. With several organisations on one server, each organisation only sees its own projects."
+    },
+    "clash": {
+      "q": "Can it also find clashes between models?",
+      "a": "Not yet. The Clashes tab is already there, but clash detection has not been built yet. You can view several models together."
+    },
+    "heading": "Frequently asked questions"
+  },
+  "tech": {
+    "ifcos": {
+      "desc": "The check itself: IfcTester tests the model against the IDS requirements, IfcOpenShell reads the IFC file."
+    },
+    "fastapi": {
+      "desc": "The server with the REST API, background checks and the ifc-validate command line."
+    },
+    "thatopen": {
+      "desc": "The 3D viewer in the browser, with fragments for fast display of large models."
+    },
+    "react": {
+      "desc": "The interface with ribbon, panels and themes, in Dutch and English."
+    },
+    "storage": {
+      "desc": "Projects in PostgreSQL (SQLite for local testing) and files in Nextcloud via WebDAV."
+    },
+    "docker": {
+      "desc": "A single Docker Compose setup with optional sign-in via OpenID Connect."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }
