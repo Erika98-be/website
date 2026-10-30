@@ -1,131 +1,278 @@
 {
   "header": {
-    "label": "OpenAEC Ecosystem",
     "title": "Open <span class=\"accent\">Heatloss</span> Studio",
-    "desc": "Open source heat loss calculation for buildings conforming to NEN 12831.",
-    "badge": "Beta"
+    "demoBtn": "Open in browser",
+    "featuresBtn": "See the features",
+    "sourceBtn": "Source code",
+    "proof3": "Dutch and English",
+    "proof4": "Browser · Windows (test)",
+    "proof5": "Free · MIT",
+    "heroAlt": "Open Heatloss Studio: results for an apartment with the required heating capacity, the losses per room and the building total",
+    "label": "Heat loss",
+    "tagline": "Room-by-room heat loss following ISSO 51, without licence fees",
+    "desc": "Enter the temperature, ventilation and boundary surfaces per room and calculate the required heating capacity. Build up constructions with the Rc calculator, check ventilation and the cooling demand in July, and keep everything in an open IFCX file."
   },
-  "why": {
-    "title": "Why Open <span class=\"accent\">Heatloss</span> Studio?",
-    "desc": "Heat loss calculations are essential for the design of heating systems and building energy performance. Open Heatloss Studio offers an accessible, open source alternative to expensive commercial software, fully conforming to NEN 12831.",
-    "desc2": "Built on a Rust calculation core for maximum speed and accuracy — thousands of rooms are calculated in seconds. Everything runs locally, no cloud dependency, your project data stays yours."
+  "meta": {
+    "description": "Free, open-source heat loss calculation following ISSO 51:2023: enter rooms, Rc values and vapour pressure, ventilation balance, TO-juli and an open IFCX project file. Works in the browser, with a test build for Windows.",
+    "title": "Open Heatloss Studio — OpenAEC Foundation"
+  },
+  "hl": {
+    "rooms": {
+      "alt": "Room table of an apartment with the living room expanded: twelve boundary surfaces with area, U value and boundary type",
+      "kicker": "Rooms",
+      "title": "All rooms in one overview",
+      "desc": "For each room the function, design temperature, area and height, and below it every boundary surface: external wall, window, floor or neighbouring dwelling, with area and U value. Ventilation and heating are set in the same row."
+    },
+    "results": {
+      "alt": "Enlarged chart of the heat losses per room, split into transmission, ventilation, infiltration and reheat allowance",
+      "kicker": "Results",
+      "title": "See straight away where the heat escapes",
+      "desc": "One click on Calculate gives the required heating capacity, the split between transmission, ventilation and reheat allowance, and a chart per room. Click a chart to view it full size."
+    },
+    "rc": {
+      "alt": "Rc calculator with a five-layer cavity wall and the Glaser vapour pressure diagram",
+      "kicker": "Constructions",
+      "title": "Work out a construction layer by layer",
+      "desc": "Build up a wall, floor or roof from over 150 materials and see the Rc and U value straight away following ISO 6946, with a correction for fasteners. The Glaser diagram shows whether interstitial condensation is a risk."
+    },
+    "vent": {
+      "alt": "Ventilation balance with system C selected, the building balance and the requirement and status per room",
+      "kicker": "Ventilation",
+      "title": "Ventilation requirements checked per room",
+      "desc": "Choose ventilation system A to D and see, per room, the requirement from the Dutch Building Decree (Bbl) next to what is provided. Assign heat recovery or extract units and check whether their capacity is sufficient."
+    },
+    "summer": {
+      "alt": "TO-juli check with the input for a dwelling and a result of 1.71 kW minimum cooling capacity",
+      "kicker": "Summer",
+      "title": "Cooling demand in July, checked quickly",
+      "desc": "The TO-juli check for dwellings following NTA 8800 Annex AA takes the data from your project and gives the minimum cooling capacity and the governing cooling demand. For other buildings there is the full calculation from chapter 10."
+    },
+    "ifc": {
+      "alt": "IFC tab with the IFC4X3 file of the dwelling on the left and the IFCX structure on the right",
+      "kicker": "Open files",
+      "title": "Your project as open IFC",
+      "desc": "Your project is saved as .ifcenergy, an IFCX file. On the IFC tab you also see it live as IFC4X3, with rooms, walls, floors and roofs, ready to copy or download."
+    }
+  },
+  "notice": {
+    "link": "Report an issue",
+    "text": "Public test version (alpha): check the results and report what you run into."
+  },
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "heatloss": "Heat loss",
+    "build": "Constructions",
+    "climate": "Ventilation and summer",
+    "connect": "Files and integrations",
+    "all": "All features"
   },
   "features": {
-    "title": "Features",
-    "nen12831": {
-      "title": "NEN 12831 calculations",
-      "desc": "Full heat loss calculations conforming to NEN 12831. Accurate results for heating system design."
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "From room to required heating capacity, in one app",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
+    "isso51": {
+      "title": "Calculation following ISSO 51:2023",
+      "desc": "Transmission, ventilation, infiltration, reheat allowance and system losses per room, including the 2023 erratum."
     },
-    "transmission": {
-      "title": "Transmission losses per room",
-      "desc": "Detailed calculation of transmission losses per room, including correction factors for ground-coupled constructions."
+    "boundaries": {
+      "title": "Every kind of boundary",
+      "desc": "Outside air, ground, unheated space, another room, a neighbouring dwelling and even water, for houseboats."
     },
-    "ventilation": {
-      "title": "Ventilation losses",
-      "desc": "Calculation of ventilation losses based on ventilation system, air volume flow and infiltration."
+    "results": {
+      "title": "Results per room",
+      "desc": "Required capacity, breakdown and charts per room and for the whole building."
     },
-    "ifcx": {
-      "title": "IFCX integration",
-      "desc": "Import building geometry and construction properties directly from IFCX models for faster input."
-    },
-    "reports": {
-      "title": "Report generation",
-      "desc": "Generate clear reports with heat loss per room, total overviews and graphical representations."
-    },
-    "library": {
-      "title": "Building physics library",
-      "desc": "Extensive library with material properties, construction build-ups and standard U-values."
-    },
-    "uvalue": {
-      "title": "U-value calculator",
-      "desc": "Calculate U-values of constructions layer by layer. Material library with λ-values conforming to NEN-EN 12524 and NTA 8800."
-    },
-    "constructions": {
-      "title": "Construction build-ups",
-      "desc": "Predefined construction build-ups (façades, roofs, floors) with automatic U-value. Create and reuse your own build-ups."
-    },
-    "thermal": {
-      "title": "Thermal bridges",
-      "desc": "Linear thermal bridges (Ψ) according to NEN-EN ISO 14683. Default values or detail-based calculation per junction."
-    },
-    "ground": {
-      "title": "Ground-coupled constructions",
-      "desc": "Correction factors for floors on grade, basement walls, crawl spaces and adjacent unheated rooms (b-factors)."
-    },
-    "climate": {
-      "title": "KNMI climate data",
-      "desc": "Design indoor and outdoor temperatures per location. KNMI climate zones selected automatically from the postcode."
+    "settings": {
+      "title": "Building settings",
+      "desc": "Building type, night setback and warm-up time, heating system and airtightness (qv10)."
     },
     "zones": {
-      "title": "Zoning",
-      "desc": "Group rooms by heating zone, controller or plant location. Different setpoints per zone are possible."
+      "title": "Zones",
+      "desc": "Group rooms into zones and manage them from the project."
     },
-    "heatup": {
-      "title": "Heat-up allowance",
-      "desc": "Calculation of the extra capacity needed to heat up after a night setback — in line with the tables in NEN 12831 Annex F."
+    "report": {
+      "title": "PDF report",
+      "desc": "Cover, starting points, construction build-ups, results per room and charts; each section on or off, on A4 or A3."
     },
-    "radiator": {
-      "title": "Radiator sizing",
-      "desc": "Determine radiator output per room from heat loss, water temperature and exponent. Selection from a manufacturer library."
+    "rc": {
+      "title": "Rc calculator",
+      "desc": "Rc and U following ISO 6946, with a correction for fasteners (Annex F)."
     },
-    "floor": {
-      "title": "Underfloor heating",
-      "desc": "Underfloor heating output per room, with system temperature, pipe spacing and flow temperature."
+    "glaser": {
+      "title": "Vapour pressure and moisture balance",
+      "desc": "Glaser diagram and an annual moisture balance following NEN-EN-ISO 13788, with climate years from Dutch weather stations."
     },
-    "heatpump": {
-      "title": "Heat pump sizing",
-      "desc": "Preliminary heat pump sizing based on total heat loss at design temperature. SCOP indication per type."
+    "library": {
+      "title": "Library of build-ups",
+      "desc": "Ready-made cavity walls, timber-frame walls, floors and roofs, with over 150 materials. Add your own build-ups."
     },
-    "boiler": {
-      "title": "Boiler capacity",
-      "desc": "Boiler capacity including domestic hot water, simultaneity factors and buffer volumes."
+    "uw": {
+      "title": "U value of a window",
+      "desc": "Combined Uw of glazing, frame and edge seal following NEN-EN-ISO 10077-1."
     },
-    "dashboard": {
-      "title": "Dashboard",
-      "desc": "Real-time overview: total heat loss, loss per zone, top 10 rooms with the highest loss, energy indicators."
+    "ventbal": {
+      "title": "Ventilation balance to the Bbl",
+      "desc": "Requirement per room and building balance for systems A to D, in dm³/s and m³/h."
     },
-    "compare": {
-      "title": "Variant study",
-      "desc": "Compare several design variants side by side. What-if analyses for insulation, ventilation and solar orientation."
+    "units": {
+      "title": "Heat recovery and extract units",
+      "desc": "Pick a unit from the catalogue or add your own; the app checks the capacity."
     },
-    "export": {
-      "title": "Exports",
-      "desc": "Export to Excel (XLSX) for further analysis, IFCX for BIM integration, and JSON for automation and API links."
+    "doorgap": {
+      "title": "Door gap calculator",
+      "desc": "The gap under an internal door for transferring ventilation air, following NEN 1087."
     },
-    "cli": {
-      "title": "CLI & batch",
-      "desc": "Command-line interface for batch calculations. Integrate into CI pipelines or automate across portfolios."
+    "tojuli": {
+      "title": "TO-juli following NTA 8800",
+      "desc": "Quick check for dwellings (Annex AA) and the full calculation from chapter 10."
     },
-    "local": {
-      "title": "100% local",
-      "desc": "All calculations run locally on your own machine. No cloud, no tracking. Your project data stays yours."
+    "beng": {
+      "title": "BENG 1, 2 and 3",
+      "desc": "Energy performance following NTA 8800 with heating, hot water, ventilation, cooling and solar panels; compare with a Uniec 3 file."
     },
-    "crossplatform": {
-      "title": "Cross-platform",
-      "desc": "Available for Windows, macOS, Linux and as a web application. Tauri 2 + Rust for maximum performance."
+    "ifcenergy": {
+      "title": "Open project file",
+      "desc": ".ifcenergy based on IFCX. Older .isso51.json files open too."
     },
-    "isso51": {
-      "title": "ISSO 51:2023",
-      "desc": "Specific methodology for heat loss calculation of dwellings and residential buildings according to ISSO publication 51 (2023)."
+    "ifcexport": {
+      "title": "IFC4X3 and JSON",
+      "desc": "Download your model as IFC4X3 with rooms and constructions, or the results as JSON."
     },
-    "showAll": "Show all features",
-    "showLess": "Show less"
+    "ifcrecon": {
+      "title": "IFC reconstruction (beta)",
+      "desc": "Load an IFC model and get the areas per room and boundary, with a 3D view and CSV export."
+    },
+    "revit": {
+      "title": "Import from Revit",
+      "desc": "Take over rooms and boundaries from a Revit model through the pyRevit export and an import wizard."
+    },
+    "mcp": {
+      "title": "MCP server and REST API",
+      "desc": "Let an AI assistant or your own script calculate a project, read files and create a PDF report."
+    },
+    "tabs": {
+      "title": "Projects in tabs",
+      "desc": "Work on several projects at once, each with its own undo and redo."
+    },
+    "tools": {
+      "title": "Extra calculators",
+      "desc": "Rainwater drainage per roof surface, car park ramps (NEN 2443), angles and slopes, and material expansion."
+    }
   },
-  "cta": {
-    "demo": "View live demo",
-    "github": "View on GitHub"
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "ctaDemo": "Try it in the browser",
+    "items": {
+      "complete": {
+        "title": "ISSO 51 complete",
+        "desc": "Every part of the heat loss calculation for dwellings is in, tested against reference projects."
+      },
+      "totals": {
+        "title": "Building totals",
+        "desc": "The total ventilation rate and the building envelope area appear with the results and in the report."
+      },
+      "units": {
+        "title": "Units checked",
+        "desc": "Heat recovery units with too little capacity for the building are greyed out."
+      },
+      "transfer": {
+        "title": "Air from another room",
+        "desc": "Choose per room whether the ventilation air comes from outside or transfers from a neighbouring room."
+      },
+      "dualunit": {
+        "title": "dm³/s and m³/h",
+        "desc": "Enter flow rates in either unit, and qv10 as a total or per m²."
+      },
+      "decimal": {
+        "title": "Comma or point",
+        "desc": "Type numbers with a comma or a point; decimals no longer jump."
+      }
+    },
+    "label": "New in v0.2",
+    "title": "ISSO 51 complete, <span>more control over ventilation</span>",
+    "desc": "With version 0.2 the heat loss calculation following ISSO 51 is complete for now. Ventilation gained more options and entering numbers works better. Work on ISSO 53 for non-residential buildings continues."
   },
-  "norm": {
-    "title": "Which standards are supported?",
-    "desc": "Open Heatloss Studio implements the official Dutch and European standards for heat loss calculations. Fully in line with the applicable methodologies for heating design and energy performance.",
-    "list1": "<strong>NEN-EN 12831-1:2017</strong> Energy performance of buildings, method for calculating the design heat load",
-    "list2": "<strong>NEN 12831-1+NEN 1:2019/A1:2021</strong> Dutch national annex",
-    "list3": "<strong>ISSO 51:2023</strong> Heat loss calculation for dwellings and residential buildings",
-    "list4": "<strong>ISSO 53/57</strong> Methodologies for non-residential and complex buildings",
-    "list5": "<strong>NTA 8800</strong> Integrated energy performance (BENG)"
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "Projects in .ifcenergy (IFCX) and older .isso51.json files. You can also read a thermal export from Revit (via pyRevit), an IFC model for the IFC reconstruction and a Uniec 3 file for BENG."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "No, the app runs in the browser. For Windows there is a test build (alpha) among the releases on GitHub. It is not signed yet, so Windows shows a warning first."
+    },
+    "price": {
+      "q": "What does Open Heatloss Studio cost?",
+      "a": "Nothing. The app is free and open source under the MIT licence. You need no account or subscription to calculate."
+    },
+    "save": {
+      "q": "In which format is my work saved?",
+      "a": "In .ifcenergy, an open IFCX file (IFC5 alpha) with your rooms, constructions and results. You can also export IFC4X3 and JSON."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "In any modern browser, and as a test build on Windows. There is no downloadable version for macOS and Linux yet."
+    },
+    "practice": {
+      "q": "Does it fit Dutch practice?",
+      "a": "Yes. The calculation follows ISSO 51:2023 with its erratum, the ventilation requirements come from the Dutch Building Decree (Bbl) and the cooling demand from NTA 8800. The calculation core is tested against three reference projects, including the worked example from ISSO 51. The app is still in testing: check the results before you use them."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "There is an MCP server (Model Context Protocol) for Claude Desktop and Claude Code. With it, an assistant can calculate a project, read an .ifcenergy file, look up constructions and create a PDF report. For your own scripts there is a REST API."
+    },
+    "utility": {
+      "q": "Can I calculate non-residential buildings too?",
+      "a": "Not fully yet. In the settings you can switch to ISSO 53 for non-residential buildings, but that calculation is still under development."
+    },
+    "draw": {
+      "q": "Can I draw the floor plan?",
+      "a": "Not yet. The Modeller currently only shows the rooms in 2D and 3D; drawing comes in a later version. You enter rooms in the table or take them over from Revit or IFC."
+    },
+    "heading": "Frequently asked questions"
   },
   "tech": {
-    "title": "Technology",
-    "desc": "A Rust calculation core for the standards-compliant calculations, a TypeScript/SolidJS front-end for the interface, and Tauri 2 for cross-platform distribution. The same stack as the rest of the OpenAEC ecosystem, for seamless integration."
+    "rust": {
+      "title": "Calculation core in Rust",
+      "desc": "ISSO 51, ISSO 53 and NTA 8800 in pure Rust, with regression tests on reference projects."
+    },
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "A thin native shell for the desktop app, which calculates and creates PDFs locally."
+    },
+    "react": {
+      "title": "React and TypeScript",
+      "desc": "The same interface in the browser and on the desktop, with ribbon, tabs and charts."
+    },
+    "ifcx": {
+      "title": "IFCX and IFC4X3",
+      "desc": "The project file is IFCX (IFC5 alpha); the IFC4X3 export needs no Python."
+    },
+    "reports": {
+      "title": "openaec-layout",
+      "desc": "Reports as PDF through the shared OpenAEC report engine, with embedded fonts."
+    },
+    "mcp": {
+      "title": "MCP and REST API",
+      "desc": "An MCP server in TypeScript and a REST API in Rust (Axum) for integrations."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }

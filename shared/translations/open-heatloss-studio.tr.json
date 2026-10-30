@@ -1,131 +1,278 @@
 {
   "header": {
-    "label": "OpenAEC ekosistemi",
     "title": "Open <span class=\"accent\">Heatloss</span> Studio",
-    "desc": "Binalar için açık kaynak ısı kaybı hesaplaması, NEN 12831 standardına uygundur.",
-    "badge": "Beta"
+    "demoBtn": "Tarayıcıda aç",
+    "featuresBtn": "Özellikleri gör",
+    "sourceBtn": "Kaynak kodu",
+    "proof3": "Felemenkçe ve İngilizce",
+    "proof4": "Tarayıcı · Windows (test)",
+    "proof5": "Ücretsiz · MIT",
+    "heroAlt": "Open Heatloss Studio: bir dairenin sonuçları; gereken ısıtma kapasitesi, oda başına kayıplar ve bina toplamı",
+    "label": "Isı kaybı",
+    "tagline": "ISSO 51'e göre oda oda ısı kaybı, lisans ücreti olmadan",
+    "desc": "Her oda için sıcaklığı, havalandırmayı ve sınır yüzeylerini girin ve gereken ısıtma kapasitesini hesaplayın. Rc hesaplayıcısıyla yapı elemanlarını oluşturun, havalandırmayı ve temmuz ayındaki soğutma ihtiyacını kontrol edin ve her şeyi açık bir IFCX dosyasında saklayın."
   },
-  "why": {
-    "title": "Neden Open <span class=\"accent\">Heatloss</span> Studio?",
-    "desc": "Isı kaybı hesaplamaları, ısıtma sistemlerinin tasarımı ve bina enerji performansı için esastır. Open Heatloss Studio, pahalı ticari yazılımlara erişilebilir, açık kaynak bir alternatif sunar — NEN 12831 ile tam uyumludur.",
-    "desc2": "Azami hız ve doğruluk için Rust hesap çekirdeği üzerine kurulu — binlerce hacim saniyeler içinde hesaplanır. Her şey yerel çalışır, bulut bağımlılığı yoktur; proje verileriniz sizde kalır."
+  "meta": {
+    "description": "ISSO 51:2023'e göre ücretsiz ve açık kaynaklı ısı kaybı hesabı: oda girişi, Rc değerleri ve buhar basıncı, havalandırma dengesi, TO-juli ve açık bir IFCX proje dosyası. Tarayıcıda çalışır; Windows için bir test sürümü vardır.",
+    "title": "Open Heatloss Studio — OpenAEC Foundation"
+  },
+  "hl": {
+    "rooms": {
+      "alt": "Salon açılmış hâlde bir dairenin oda tablosu: alan, U değeri ve sınır türüyle on iki sınır yüzeyi",
+      "kicker": "Odalar",
+      "title": "Tüm odalar tek bir görünümde",
+      "desc": "Her oda için kullanım, tasarım sıcaklığı, alan ve yükseklik; altında da her sınır yüzeyi: dış duvar, pencere, döşeme veya komşu konut, alanı ve U değeriyle. Havalandırma ve ısıtma aynı satırda ayarlanır."
+    },
+    "results": {
+      "alt": "Oda başına ısı kayıplarının iletim, havalandırma, sızıntı ve yeniden ısıtma payına ayrıldığı büyütülmüş grafik",
+      "kicker": "Sonuçlar",
+      "title": "Isının nereden kaçtığını hemen görün",
+      "desc": "Hesapla'ya tek tıklama; gereken ısıtma kapasitesini, iletim, havalandırma ve yeniden ısıtma payı dağılımını ve oda başına bir grafiği verir. Büyük görmek için bir grafiğe tıklayın."
+    },
+    "rc": {
+      "alt": "Beş katmanlı boşluklu duvar ve Glaser buhar basıncı diyagramıyla Rc hesaplayıcısı",
+      "kicker": "Yapı elemanları",
+      "title": "Bir yapı elemanını katman katman hesaplayın",
+      "desc": "150'den fazla malzemeden bir duvar, döşeme veya çatı oluşturun ve ISO 6946'ya göre Rc ve U değerini, bağlantı elemanları düzeltmesiyle birlikte hemen görün. Glaser diyagramı iç yoğuşma riski olup olmadığını gösterir."
+    },
+    "vent": {
+      "alt": "C sistemi seçili havalandırma dengesi; bina dengesi ve oda başına gereksinim ve durum",
+      "kicker": "Havalandırma",
+      "title": "Havalandırma gereksinimleri oda oda kontrol edilir",
+      "desc": "A'dan D'ye havalandırma sistemini seçin ve her oda için Hollanda Yapı Yönetmeliği'nin (Bbl) gereksinimini mevcut olanla yan yana görün. Isı geri kazanımlı veya egzoz üniteleri atayın ve kapasitelerinin yeterli olup olmadığını kontrol edin."
+    },
+    "summer": {
+      "alt": "Bir konutun girdileriyle TO-juli kontrolü; sonuç olarak 1,71 kW minimum soğutma kapasitesi",
+      "kicker": "Yaz",
+      "title": "Temmuz ayı soğutma ihtiyacı, hızlıca kontrol edilir",
+      "desc": "Konutlar için NTA 8800 Ek AA'ya göre TO-juli kontrolü projenizdeki verileri kullanır ve minimum soğutma kapasitesini ve belirleyici soğutma ihtiyacını verir. Diğer binalar için 10. bölümdeki tam hesap vardır."
+    },
+    "ifc": {
+      "alt": "Solda konutun IFC4X3 dosyası, sağda IFCX yapısıyla IFC sekmesi",
+      "kicker": "Açık dosyalar",
+      "title": "Projeniz açık IFC olarak",
+      "desc": "Projeniz bir IFCX dosyası olan .ifcenergy olarak kaydedilir. IFC sekmesinde onu odalar, duvarlar, döşemeler ve çatılarla canlı olarak IFC4X3 biçiminde de görürsünüz; kopyalamaya veya indirmeye hazır."
+    }
+  },
+  "notice": {
+    "link": "Sorun bildirin",
+    "text": "Herkese açık test sürümü (alfa): sonuçları kontrol edin ve karşılaştığınız sorunları bildirin."
+  },
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "heatloss": "Isı kaybı",
+    "build": "Yapı elemanları",
+    "climate": "Havalandırma ve yaz",
+    "connect": "Dosyalar ve entegrasyonlar",
+    "all": "Tüm özellikler"
   },
   "features": {
-    "title": "Özellikler",
-    "nen12831": {
-      "title": "NEN 12831 hesaplamaları",
-      "desc": "NEN 12831'e uygun tam ısı kaybı hesaplamaları. Isıtma sistemi tasarımı için doğru sonuçlar."
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Odadan gereken ısıtma kapasitesine, tek uygulamada",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "isso51": {
+      "title": "ISSO 51:2023'e göre hesap",
+      "desc": "Oda başına iletim, havalandırma, sızıntı, yeniden ısıtma payı ve sistem kayıpları; 2023 düzeltmesi dahil."
     },
-    "transmission": {
-      "title": "Oda başına iletim kayıpları",
-      "desc": "Zemine bağlı yapılar için düzeltme faktörleri dahil olmak üzere oda başına iletim kayıplarının ayrıntılı hesaplanması."
+    "boundaries": {
+      "title": "Her tür sınır yüzeyi",
+      "desc": "Dış hava, zemin, ısıtılmayan alan, başka bir oda, komşu konut ve hatta su (yüzer evler için)."
     },
-    "ventilation": {
-      "title": "Havalandırma kayıpları",
-      "desc": "Havalandırma sistemine, hava debisine ve infiltrasyona dayalı havalandırma kayıplarının hesaplanması."
+    "results": {
+      "title": "Oda başına sonuçlar",
+      "desc": "Oda başına ve tüm bina için gereken kapasite, dağılım ve grafikler."
     },
-    "ifcx": {
-      "title": "IFCX entegrasyonu",
-      "desc": "Daha hızlı giriş için bina geometrisini ve yapı özelliklerini doğrudan IFCX modellerinden içe aktarın."
-    },
-    "reports": {
-      "title": "Rapor oluşturma",
-      "desc": "Oda başına ısı kaybı, genel özetler ve grafik gösterimlerle net raporlar oluşturun."
-    },
-    "library": {
-      "title": "Yapı fiziği kütüphanesi",
-      "desc": "Malzeme özellikleri, yapı kompozisyonları ve standart U değerleri içeren kapsamlı kütüphane."
-    },
-    "uvalue": {
-      "title": "U-değeri hesaplayıcı",
-      "desc": "Yapı bileşenlerinin U-değerlerini katman katman hesaplayın. NEN-EN 12524 ve NTA 8800'e uygun λ değerleriyle malzeme kütüphanesi."
-    },
-    "constructions": {
-      "title": "Yapı bileşeni kurguları",
-      "desc": "Otomatik U-değeriyle önceden tanımlı kurgular (cepheler, çatılar, döşemeler). Kendi kurgularınızı oluşturun ve yeniden kullanın."
-    },
-    "thermal": {
-      "title": "Isı köprüleri",
-      "desc": "NEN-EN ISO 14683'e göre doğrusal ısı köprüleri (Ψ). Varsayılan değerler ya da düğüm bazında detaya dayalı hesap."
-    },
-    "ground": {
-      "title": "Zeminle temas eden bileşenler",
-      "desc": "Zemine oturan döşeme, bodrum duvarı, sürünme boşluğu ve bitişik ısıtılmayan hacimler için düzeltme katsayıları (b katsayıları)."
-    },
-    "climate": {
-      "title": "KNMI iklim verileri",
-      "desc": "Konuma göre tasarım iç ve dış sıcaklıkları. KNMI iklim bölgeleri posta koduna göre otomatik seçilir."
+    "settings": {
+      "title": "Bina ayarları",
+      "desc": "Bina tipi, gece düşüşü ve ısınma süresi, ısıtma sistemi ve hava sızdırmazlığı (qv10)."
     },
     "zones": {
-      "title": "Bölgeleme",
-      "desc": "Hacimleri ısıtma bölgesine, kontrol cihazına veya tesisat konumuna göre gruplayın. Bölge başına farklı ayar değerleri mümkündür."
+      "title": "Bölgeler",
+      "desc": "Odaları bölgelerde gruplayın ve projeden yönetin."
     },
-    "heatup": {
-      "title": "Isıtma ilavesi",
-      "desc": "Gece düşürmesi sonrası ısıtma için gereken ek kapasitenin hesabı — NEN 12831 Ek F tablolarına uygun."
+    "report": {
+      "title": "PDF raporu",
+      "desc": "Kapak, varsayımlar, yapı katmanları, oda başına sonuçlar ve grafikler; her bölüm açılıp kapatılabilir, A4 veya A3."
     },
-    "radiator": {
-      "title": "Radyatör hesabı",
-      "desc": "Isı kaybı, su sıcaklığı ve üstelden hareketle hacim başına radyatör kapasitesini belirleyin. Üretici kütüphanesinden seçim."
+    "rc": {
+      "title": "Rc hesaplayıcısı",
+      "desc": "ISO 6946'ya göre Rc ve U; bağlantı elemanları düzeltmesiyle (Ek F)."
     },
-    "floor": {
-      "title": "Yerden ısıtma",
-      "desc": "Hacim başına yerden ısıtma kapasitesi; sistem sıcaklığı, boru aralığı ve gidiş sıcaklığı ile."
+    "glaser": {
+      "title": "Buhar basıncı ve nem dengesi",
+      "desc": "Glaser diyagramı ve Hollanda meteoroloji istasyonlarının iklim yıllarıyla NEN-EN-ISO 13788'e göre yıllık nem dengesi."
     },
-    "heatpump": {
-      "title": "Isı pompası boyutlandırma",
-      "desc": "Tasarım sıcaklığındaki toplam ısı kaybına göre ön ısı pompası boyutlandırması. Tipe göre SCOP göstergesi."
+    "library": {
+      "title": "Katman yapıları kütüphanesi",
+      "desc": "Hazır boşluklu duvarlar, ahşap karkas duvarlar, döşemeler ve çatılar; 150'den fazla malzeme. Kendi yapılarınızı ekleyin."
     },
-    "boiler": {
-      "title": "Kazan kapasitesi",
-      "desc": "Kullanım sıcak suyu, eşzamanlılık katsayıları ve tampon hacimleri dâhil kazan kapasitesi."
+    "uw": {
+      "title": "Pencerenin U değeri",
+      "desc": "NEN-EN-ISO 10077-1'e göre cam, çerçeve ve kenar bağlantısından birleşik Uw."
     },
-    "dashboard": {
-      "title": "Gösterge paneli",
-      "desc": "Gerçek zamanlı genel bakış: toplam ısı kaybı, bölge başına kayıp, en yüksek kayıplı ilk 10 hacim, enerji göstergeleri."
+    "ventbal": {
+      "title": "Bbl'ye göre havalandırma dengesi",
+      "desc": "A'dan D'ye sistemler için oda başına gereksinim ve bina dengesi, dm³/s ve m³/h cinsinden."
     },
-    "compare": {
-      "title": "Varyant çalışması",
-      "desc": "Birden çok tasarım varyantını yan yana karşılaştırın. Yalıtım, havalandırma ve güneş yönlenmesi için what-if analizleri."
+    "units": {
+      "title": "Isı geri kazanım ve egzoz üniteleri",
+      "desc": "Katalogdan bir ünite seçin veya kendinizinkini ekleyin; uygulama kapasiteyi kontrol eder."
     },
-    "export": {
-      "title": "Dışa aktarımlar",
-      "desc": "Daha ileri analiz için Excel (XLSX), BIM entegrasyonu için IFCX, otomasyon ve API bağlantıları için JSON."
+    "doorgap": {
+      "title": "Kapı aralığı hesaplayıcısı",
+      "desc": "Havalandırma havasının geçişi için iç kapının altındaki aralık, NEN 1087'ye göre."
     },
-    "cli": {
-      "title": "CLI ve toplu işlem",
-      "desc": "Toplu hesaplar için komut satırı arayüzü. CI hatlarına entegre edin veya portföyler genelinde otomatikleştirin."
+    "tojuli": {
+      "title": "NTA 8800'e göre TO-juli",
+      "desc": "Konutlar için hızlı kontrol (Ek AA) ve 10. bölümdeki tam hesap."
     },
-    "local": {
-      "title": "%100 yerel",
-      "desc": "Tüm hesaplar kendi makinenizde yerel olarak çalışır. Bulut yok, izleme yok. Proje verileriniz sizde kalır."
+    "beng": {
+      "title": "BENG 1, 2 ve 3",
+      "desc": "Isıtma, sıcak su, havalandırma, soğutma ve güneş panelleriyle NTA 8800'e göre enerji performansı; bir Uniec 3 dosyasıyla karşılaştırın."
     },
-    "crossplatform": {
-      "title": "Çoklu platform",
-      "desc": "Windows, macOS, Linux ve web uygulaması olarak mevcut. Azami performans için Tauri 2 + Rust."
+    "ifcenergy": {
+      "title": "Açık proje dosyası",
+      "desc": "IFCX tabanlı .ifcenergy. Eski .isso51.json dosyaları da açılır."
     },
-    "isso51": {
-      "title": "ISSO 51:2023",
-      "desc": "ISSO 51 yayınına (2023) göre konutlar ve konut binaları için ısı kaybı hesabına özgü metodoloji."
+    "ifcexport": {
+      "title": "IFC4X3 ve JSON",
+      "desc": "Modelinizi odalar ve yapı elemanlarıyla IFC4X3 olarak veya sonuçları JSON olarak indirin."
     },
-    "showAll": "Tüm özellikleri göster",
-    "showLess": "Daha az göster"
+    "ifcrecon": {
+      "title": "IFC yeniden oluşturma (beta)",
+      "desc": "Bir IFC modeli yükleyin; oda ve sınır yüzeyi başına alanları 3B görünüm ve CSV dışa aktarımıyla alın."
+    },
+    "revit": {
+      "title": "Revit'ten aktarma",
+      "desc": "pyRevit dışa aktarımı ve bir içe aktarma sihirbazıyla Revit modelinden odaları ve sınır yüzeylerini alın."
+    },
+    "mcp": {
+      "title": "MCP sunucusu ve REST API",
+      "desc": "Bir yapay zekâ asistanının veya kendi betiğinizin bir projeyi hesaplamasına, dosyaları okumasına ve PDF raporu oluşturmasına izin verin."
+    },
+    "tabs": {
+      "title": "Sekmelerde projeler",
+      "desc": "Her biri kendi geri al ve yinele özelliğine sahip birden fazla proje üzerinde aynı anda çalışın."
+    },
+    "tools": {
+      "title": "Ek hesaplayıcılar",
+      "desc": "Çatı yüzeyi başına yağmur suyu tahliyesi, otopark rampaları (NEN 2443), açılar ve eğimler ile malzeme genleşmesi."
+    }
   },
-  "cta": {
-    "demo": "Canlı demoyu görüntüle",
-    "github": "GitHub'da görüntüle"
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDemo": "Tarayıcıda deneyin",
+    "items": {
+      "complete": {
+        "title": "ISSO 51 tamamlandı",
+        "desc": "Konutlar için ısı kaybı hesabının tüm bölümleri mevcut ve referans projelerle test edildi."
+      },
+      "totals": {
+        "title": "Bina toplamları",
+        "desc": "Toplam havalandırma debisi ve bina kabuğu alanı sonuçlarda ve raporda yer alır."
+      },
+      "units": {
+        "title": "Üniteler kontrol edilir",
+        "desc": "Bina için kapasitesi yetersiz ısı geri kazanım üniteleri gri gösterilir."
+      },
+      "transfer": {
+        "title": "Başka bir odadan hava",
+        "desc": "Her oda için havalandırma havasının dışarıdan mı yoksa komşu bir odadan mı geldiğini seçin."
+      },
+      "dualunit": {
+        "title": "dm³/s ve m³/h",
+        "desc": "Debileri iki birimde de girin; qv10'u toplam veya m² başına."
+      },
+      "decimal": {
+        "title": "Virgül veya nokta",
+        "desc": "Sayıları virgül veya noktayla yazın; ondalıklar artık kaymıyor."
+      }
+    },
+    "label": "v0.2 sürümünde yeni",
+    "title": "ISSO 51 tamamlandı, <span>havalandırmada daha fazla kontrol</span>",
+    "desc": "0.2 sürümüyle ISSO 51'e göre ısı kaybı hesabı şimdilik tamamlandı. Havalandırma daha fazla seçenek kazandı ve sayı girişi daha iyi çalışıyor. Konut dışı binalar için ISSO 53 üzerinde çalışma sürüyor."
   },
-  "norm": {
-    "title": "Hangi standartlar destekleniyor?",
-    "desc": "Open Heatloss Studio, ısı kaybı hesapları için resmî Hollanda ve Avrupa standartlarını uygular. Isıtma tasarımı ve enerji performansına ilişkin yürürlükteki metodolojilere tam uyumlu.",
-    "list1": "<strong>NEN-EN 12831-1:2017</strong> Binalarda enerji performansı, tasarım ısı yükü hesap yöntemi",
-    "list2": "<strong>NEN 12831-1+NEN 1:2019/A1:2021</strong> Hollanda ulusal eki",
-    "list3": "<strong>ISSO 51:2023</strong> Konutlar ve konut binaları için ısı kaybı hesabı",
-    "list4": "<strong>ISSO 53/57</strong> Ticari ve karmaşık binalar için metodolojiler",
-    "list5": "<strong>NTA 8800</strong> Bütünleşik enerji performansı (BENG)"
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": ".ifcenergy (IFCX) projeleri ve eski .isso51.json dosyaları. Ayrıca Revit'ten (pyRevit ile) bir termal dışa aktarımı, IFC yeniden oluşturma için bir IFC modelini ve BENG için bir Uniec 3 dosyasını okuyabilirsiniz."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Hayır, uygulama tarayıcıda çalışır. Windows için GitHub'daki sürümler arasında bir test sürümü (alfa) var. Henüz imzalı olmadığından Windows önce bir uyarı gösterir."
+    },
+    "price": {
+      "q": "Open Heatloss Studio ne kadar?",
+      "a": "Hiçbir şey. Uygulama MIT lisansıyla ücretsiz ve açık kaynaklıdır. Hesap yapmak için hesap veya abonelik gerekmez."
+    },
+    "save": {
+      "q": "Çalışmam hangi biçimde kaydedilir?",
+      "a": "Odalarınızı, yapı elemanlarınızı ve sonuçlarınızı içeren açık bir IFCX dosyası (IFC5 alpha) olan .ifcenergy biçiminde. IFC4X3 ve JSON olarak da dışa aktarabilirsiniz."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Her modern tarayıcıda ve Windows'ta test sürümü olarak. macOS ve Linux için henüz indirilebilir bir sürüm yok."
+    },
+    "practice": {
+      "q": "Hollanda uygulamasına uyuyor mu?",
+      "a": "Evet. Hesap, düzeltmesiyle birlikte ISSO 51:2023'ü izler; havalandırma gereksinimleri Bbl'den, soğutma ihtiyacı NTA 8800'den gelir. Hesap çekirdeği, ISSO 51'deki örnek dahil üç referans projeyle test edilmiştir. Uygulama hâlâ test aşamasında: sonuçları kullanmadan önce kontrol edin."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "Claude Desktop ve Claude Code için bir MCP sunucusu (Model Context Protocol) vardır. Bir asistan bununla bir projeyi hesaplayabilir, bir .ifcenergy dosyasını okuyabilir, yapı elemanlarını sorgulayabilir ve PDF raporu oluşturabilir. Kendi betikleriniz için bir REST API vardır."
+    },
+    "utility": {
+      "q": "Konut dışı binaları da hesaplayabilir miyim?",
+      "a": "Henüz tam olarak değil. Ayarlarda konut dışı binalar için ISSO 53'e geçebilirsiniz, ancak bu hesap hâlâ geliştirilmektedir."
+    },
+    "draw": {
+      "q": "Kat planını çizebilir miyim?",
+      "a": "Henüz değil. Modeller şu anda odaları yalnızca 2B ve 3B olarak gösteriyor; çizim sonraki bir sürümde gelecek. Odaları tabloya girersiniz ya da Revit veya IFC'den alırsınız."
+    },
+    "heading": "Sık sorulan sorular"
   },
   "tech": {
-    "title": "Teknoloji",
-    "desc": "Standartlara uygun hesaplar için Rust tabanlı bir hesap çekirdeği, arayüz için TypeScript/SolidJS ön yüzü ve çoklu platform dağıtımı için Tauri 2. Sorunsuz entegrasyon için OpenAEC ekosisteminin geri kalanıyla aynı yığın."
+    "rust": {
+      "title": "Rust ile hesap çekirdeği",
+      "desc": "Referans projelerde regresyon testleriyle saf Rust ile ISSO 51, ISSO 53 ve NTA 8800."
+    },
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "Masaüstü uygulaması için yerel olarak hesap yapan ve PDF oluşturan ince bir yerel kabuk."
+    },
+    "react": {
+      "title": "React ve TypeScript",
+      "desc": "Tarayıcıda ve masaüstünde şerit, sekmeler ve grafiklerle aynı arayüz."
+    },
+    "ifcx": {
+      "title": "IFCX ve IFC4X3",
+      "desc": "Proje dosyası IFCX'tir (IFC5 alpha); IFC4X3 dışa aktarımı Python gerektirmez."
+    },
+    "reports": {
+      "title": "openaec-layout",
+      "desc": "Gömülü yazı tipleriyle ortak OpenAEC rapor motoru üzerinden PDF raporlar."
+    },
+    "mcp": {
+      "title": "MCP ve REST API",
+      "desc": "Entegrasyonlar için TypeScript ile bir MCP sunucusu ve Rust (Axum) ile bir REST API."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }

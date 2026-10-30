@@ -1,131 +1,278 @@
 {
   "header": {
-    "label": "Ecosistema OpenAEC",
     "title": "Open <span class=\"accent\">Heatloss</span> Studio",
-    "desc": "Cálculo de pérdidas de calor de edificios de código abierto conforme a NEN 12831.",
-    "badge": "Beta"
+    "demoBtn": "Abrir en el navegador",
+    "featuresBtn": "Ver las funciones",
+    "sourceBtn": "Código fuente",
+    "proof3": "Neerlandés e inglés",
+    "proof4": "Navegador · Windows (prueba)",
+    "proof5": "Gratis · MIT",
+    "heroAlt": "Open Heatloss Studio: resultados de una vivienda con la potencia necesaria, las pérdidas por estancia y el total del edificio",
+    "label": "Pérdidas de calor",
+    "tagline": "Pérdidas de calor por estancia según ISSO 51, sin coste de licencia",
+    "desc": "Introduce por estancia la temperatura, la ventilación y los cerramientos, y calcula la potencia necesaria. Compón cerramientos con la calculadora Rc, comprueba la ventilación y la demanda de refrigeración en julio, y guárdalo todo en un archivo IFCX abierto."
   },
-  "why": {
-    "title": "¿Por qué Open <span class=\"accent\">Heatloss</span> Studio?",
-    "desc": "Los cálculos de pérdidas de calor son esenciales para el diseño de sistemas de calefacción y el rendimiento energético de los edificios. Open Heatloss Studio ofrece una alternativa accesible y de código abierto al costoso software comercial, totalmente conforme a NEN 12831.",
-    "desc2": "Construido sobre un núcleo de cálculo en Rust para máxima velocidad y precisión: miles de habitaciones se calculan en segundos. Todo se ejecuta localmente, sin dependencia de la nube, los datos de tu proyecto siguen siendo tuyos."
+  "meta": {
+    "description": "Cálculo gratuito y de código abierto de pérdidas de calor según ISSO 51:2023: introducción de estancias, valores Rc y presión de vapor, balance de ventilación, TO-juli y un archivo de proyecto IFCX abierto. Funciona en el navegador, con una versión de prueba para Windows.",
+    "title": "Open Heatloss Studio — OpenAEC Foundation"
+  },
+  "hl": {
+    "rooms": {
+      "alt": "Tabla de estancias de una vivienda con el salón desplegado: doce cerramientos con superficie, valor U y tipo de límite",
+      "kicker": "Estancias",
+      "title": "Todas las estancias en una sola vista",
+      "desc": "Para cada estancia la función, la temperatura de diseño, la superficie y la altura, y debajo cada cerramiento: muro exterior, ventana, suelo o vivienda vecina, con superficie y valor U. La ventilación y la calefacción se ajustan en la misma fila."
+    },
+    "results": {
+      "alt": "Gráfico ampliado de las pérdidas por estancia, divididas en transmisión, ventilación, infiltración y suplemento de recalentamiento",
+      "kicker": "Resultados",
+      "title": "Ve al instante por dónde se escapa el calor",
+      "desc": "Un clic en Calcular da la potencia necesaria, el reparto entre transmisión, ventilación y recalentamiento, y un gráfico por estancia. Haz clic en un gráfico para verlo en grande."
+    },
+    "rc": {
+      "alt": "Calculadora Rc con un muro de cámara de cinco capas y el diagrama de presión de vapor de Glaser",
+      "kicker": "Cerramientos",
+      "title": "Calcula un cerramiento capa a capa",
+      "desc": "Compón un muro, suelo o cubierta con más de 150 materiales y ve al momento el valor Rc y U según ISO 6946, con corrección por fijaciones. El diagrama de Glaser muestra si hay riesgo de condensación intersticial."
+    },
+    "vent": {
+      "alt": "Balance de ventilación con el sistema C elegido, el balance del edificio y, por estancia, la exigencia y el estado",
+      "kicker": "Ventilación",
+      "title": "Exigencias de ventilación comprobadas por estancia",
+      "desc": "Elige el sistema de ventilación A a D y ve, por estancia, la exigencia del decreto neerlandés de edificación (Bbl) junto a lo previsto. Asigna unidades con recuperación de calor o de extracción y comprueba si su capacidad es suficiente."
+    },
+    "summer": {
+      "alt": "Comprobación TO-juli con los datos de una vivienda y un resultado de 1,71 kW de capacidad mínima de refrigeración",
+      "kicker": "Verano",
+      "title": "Demanda de refrigeración en julio, comprobada en poco tiempo",
+      "desc": "La comprobación TO-juli para viviendas según el anejo AA de la NTA 8800 toma los datos de tu proyecto y da la capacidad mínima de refrigeración y la demanda determinante. Para otros edificios está el cálculo completo del capítulo 10."
+    },
+    "ifc": {
+      "alt": "Pestaña IFC con el archivo IFC4X3 de la vivienda a la izquierda y la estructura IFCX a la derecha",
+      "kicker": "Archivos abiertos",
+      "title": "Tu proyecto como IFC abierto",
+      "desc": "Tu proyecto se guarda como .ifcenergy, un archivo IFCX. En la pestaña IFC también lo ves en directo como IFC4X3, con estancias, muros, suelos y cubiertas, listo para copiar o descargar."
+    }
+  },
+  "notice": {
+    "link": "Informar de un problema",
+    "text": "Versión de prueba pública (alfa): comprueba los resultados e informa de lo que encuentres."
+  },
+  "subnav": {
+    "label": "En esta página",
+    "features": "Funciones",
+    "whatsnew": "Novedades",
+    "faq": "Preguntas",
+    "releases": "Versiones"
+  },
+  "tabs": {
+    "highlights": "Destacados",
+    "heatloss": "Pérdidas de calor",
+    "build": "Cerramientos",
+    "climate": "Ventilación y verano",
+    "connect": "Archivos e integraciones",
+    "all": "Todas las funciones"
   },
   "features": {
-    "title": "Funciones",
-    "nen12831": {
-      "title": "Cálculos según NEN 12831",
-      "desc": "Cálculos completos de pérdidas de calor conforme a NEN 12831. Resultados precisos para el diseño de sistemas de calefacción."
+    "learnMore": "Leer más",
+    "label": "Funciones",
+    "heading": "De la estancia a la potencia necesaria, en una sola aplicación",
+    "sub": "Empieza por lo más destacado o elige un tema.",
+    "tabsLabel": "Funciones por tema"
+  },
+  "f": {
+    "isso51": {
+      "title": "Cálculo según ISSO 51:2023",
+      "desc": "Transmisión, ventilación, infiltración, recalentamiento y pérdidas del sistema por estancia, incluida la fe de erratas de 2023."
     },
-    "transmission": {
-      "title": "Pérdidas por transmisión por habitación",
-      "desc": "Cálculo detallado de las pérdidas por transmisión por habitación, incluidos los factores de corrección para construcciones en contacto con el terreno."
+    "boundaries": {
+      "title": "Todo tipo de cerramiento",
+      "desc": "Aire exterior, terreno, espacio no calefactado, otra estancia, vivienda vecina e incluso agua, para casas flotantes."
     },
-    "ventilation": {
-      "title": "Pérdidas por ventilación",
-      "desc": "Cálculo de las pérdidas por ventilación en función del sistema de ventilación, el caudal de aire y la infiltración."
+    "results": {
+      "title": "Resultados por estancia",
+      "desc": "Potencia necesaria, reparto y gráficos por estancia y para todo el edificio."
     },
-    "ifcx": {
-      "title": "Integración IFCX",
-      "desc": "Importa la geometría del edificio y las propiedades constructivas directamente desde modelos IFCX para una introducción de datos más rápida."
-    },
-    "reports": {
-      "title": "Generación de informes",
-      "desc": "Genera informes claros con las pérdidas de calor por habitación, resúmenes totales y representaciones gráficas."
-    },
-    "library": {
-      "title": "Biblioteca de física de la edificación",
-      "desc": "Amplia biblioteca con propiedades de materiales, composiciones constructivas y valores U estándar."
-    },
-    "uvalue": {
-      "title": "Calculadora de valores U",
-      "desc": "Calcula los valores U de las construcciones capa por capa. Biblioteca de materiales con valores λ conforme a NEN-EN 12524 y NTA 8800."
-    },
-    "constructions": {
-      "title": "Composiciones constructivas",
-      "desc": "Composiciones constructivas predefinidas (fachadas, cubiertas, suelos) con valor U automático. Crea y reutiliza tus propias composiciones."
-    },
-    "thermal": {
-      "title": "Puentes térmicos",
-      "desc": "Puentes térmicos lineales (Ψ) según NEN-EN ISO 14683. Valores por defecto o cálculo basado en detalles por encuentro."
-    },
-    "ground": {
-      "title": "Construcciones en contacto con el terreno",
-      "desc": "Factores de corrección para soleras sobre el terreno, muros de sótano, cámaras sanitarias y locales adyacentes no calefactados (factores b)."
-    },
-    "climate": {
-      "title": "Datos climáticos del KNMI",
-      "desc": "Temperaturas interiores y exteriores de diseño por ubicación. Las zonas climáticas del KNMI se seleccionan automáticamente a partir del código postal."
+    "settings": {
+      "title": "Ajustes del edificio",
+      "desc": "Tipo de edificio, reducción nocturna y tiempo de recalentamiento, sistema de calefacción y estanqueidad (qv10)."
     },
     "zones": {
-      "title": "Zonificación",
-      "desc": "Agrupa las habitaciones por zona de calefacción, regulador o ubicación de la instalación. Es posible definir distintas consignas por zona."
+      "title": "Zonas",
+      "desc": "Agrupa las estancias en zonas y gestiónalas desde el proyecto."
     },
-    "heatup": {
-      "title": "Suplemento por puesta en régimen",
-      "desc": "Cálculo de la capacidad adicional necesaria para calentar tras una reducción nocturna, conforme a las tablas del anexo F de NEN 12831."
+    "report": {
+      "title": "Informe PDF",
+      "desc": "Portada, datos de partida, composiciones, resultados por estancia y gráficos; cada sección activable, en A4 o A3."
     },
-    "radiator": {
-      "title": "Dimensionamiento de radiadores",
-      "desc": "Determina la potencia del radiador por habitación a partir de la pérdida de calor, la temperatura del agua y el exponente. Selección desde una biblioteca de fabricantes."
+    "rc": {
+      "title": "Calculadora Rc",
+      "desc": "Rc y U según ISO 6946, con corrección por fijaciones (anexo F)."
     },
-    "floor": {
-      "title": "Suelo radiante",
-      "desc": "Potencia de suelo radiante por habitación, con temperatura del sistema, separación entre tubos y temperatura de impulsión."
+    "glaser": {
+      "title": "Presión de vapor y balance de humedad",
+      "desc": "Diagrama de Glaser y balance anual de humedad según NEN-EN-ISO 13788, con años climáticos de estaciones neerlandesas."
     },
-    "heatpump": {
-      "title": "Dimensionamiento de bombas de calor",
-      "desc": "Dimensionamiento preliminar de la bomba de calor a partir de la pérdida de calor total a la temperatura de diseño. Indicación de SCOP por tipo."
+    "library": {
+      "title": "Biblioteca de composiciones",
+      "desc": "Muros de cámara, entramados de madera, suelos y cubiertas listos, con más de 150 materiales. Añade tus propias composiciones."
     },
-    "boiler": {
-      "title": "Potencia de caldera",
-      "desc": "Potencia de caldera incluyendo agua caliente sanitaria, factores de simultaneidad y volúmenes de acumulación."
+    "uw": {
+      "title": "Valor U de una ventana",
+      "desc": "Uw combinado de vidrio, marco y separador según NEN-EN-ISO 10077-1."
     },
-    "dashboard": {
-      "title": "Panel de control",
-      "desc": "Resumen en tiempo real: pérdida de calor total, pérdida por zona, las 10 habitaciones con mayores pérdidas, indicadores energéticos."
+    "ventbal": {
+      "title": "Balance de ventilación según el Bbl",
+      "desc": "Exigencia por estancia y balance del edificio para los sistemas A a D, en dm³/s y m³/h."
     },
-    "compare": {
-      "title": "Estudio de variantes",
-      "desc": "Compara varias variantes de diseño lado a lado. Análisis de hipótesis para aislamiento, ventilación y orientación solar."
+    "units": {
+      "title": "Unidades de recuperación y extracción",
+      "desc": "Elige una unidad del catálogo o añade la tuya; la aplicación comprueba la capacidad."
     },
-    "export": {
-      "title": "Exportaciones",
-      "desc": "Exporta a Excel (XLSX) para análisis posteriores, a IFCX para la integración BIM y a JSON para automatización y conexiones API."
+    "doorgap": {
+      "title": "Calculadora de holgura de puerta",
+      "desc": "La holgura bajo una puerta interior para el paso del aire de ventilación, según NEN 1087."
     },
-    "cli": {
-      "title": "CLI y procesos por lotes",
-      "desc": "Interfaz de línea de comandos para cálculos por lotes. Intégrala en pipelines de CI o automatiza carteras completas de proyectos."
+    "tojuli": {
+      "title": "TO-juli según NTA 8800",
+      "desc": "Comprobación rápida para viviendas (anejo AA) y cálculo completo del capítulo 10."
     },
-    "local": {
-      "title": "100 % local",
-      "desc": "Todos los cálculos se ejecutan localmente en tu propio equipo. Sin nube, sin rastreo. Los datos de tu proyecto siguen siendo tuyos."
+    "beng": {
+      "title": "BENG 1, 2 y 3",
+      "desc": "Eficiencia energética según NTA 8800 con calefacción, agua caliente, ventilación, refrigeración y paneles solares; compárala con un archivo Uniec 3."
     },
-    "crossplatform": {
-      "title": "Multiplataforma",
-      "desc": "Disponible para Windows, macOS, Linux y como aplicación web. Tauri 2 + Rust para el máximo rendimiento."
+    "ifcenergy": {
+      "title": "Archivo de proyecto abierto",
+      "desc": ".ifcenergy basado en IFCX. También se abren los archivos .isso51.json antiguos."
     },
-    "isso51": {
-      "title": "ISSO 51:2023",
-      "desc": "Metodología específica para el cálculo de pérdidas de calor de viviendas y edificios residenciales según la publicación ISSO 51 (2023)."
+    "ifcexport": {
+      "title": "IFC4X3 y JSON",
+      "desc": "Descarga tu modelo como IFC4X3 con estancias y cerramientos, o los resultados como JSON."
     },
-    "showAll": "Mostrar todas las funciones",
-    "showLess": "Mostrar menos"
+    "ifcrecon": {
+      "title": "Reconstrucción IFC (beta)",
+      "desc": "Carga un modelo IFC y obtén las superficies por estancia y cerramiento, con vista 3D y exportación CSV."
+    },
+    "revit": {
+      "title": "Importar desde Revit",
+      "desc": "Toma estancias y cerramientos de un modelo de Revit mediante la exportación de pyRevit y un asistente de importación."
+    },
+    "mcp": {
+      "title": "Servidor MCP y API REST",
+      "desc": "Deja que un asistente de IA o tu propio script calcule un proyecto, lea archivos y cree un informe PDF."
+    },
+    "tabs": {
+      "title": "Proyectos en pestañas",
+      "desc": "Trabaja en varios proyectos a la vez, cada uno con su propio deshacer y rehacer."
+    },
+    "tools": {
+      "title": "Calculadoras adicionales",
+      "desc": "Desagüe pluvial por faldón, rampas de aparcamiento (NEN 2443), ángulos y pendientes, y dilatación de materiales."
+    }
   },
-  "cta": {
-    "demo": "Ver demo en vivo",
-    "github": "Ver en GitHub"
+  "whatsnew": {
+    "ctaChangelog": "Todas las notas de versión",
+    "ctaDemo": "Pruébalo en el navegador",
+    "items": {
+      "complete": {
+        "title": "ISSO 51 completo",
+        "desc": "Están todas las partes del cálculo de pérdidas para viviendas, probadas con proyectos de referencia."
+      },
+      "totals": {
+        "title": "Totales del edificio",
+        "desc": "El caudal total de ventilación y la superficie de la envolvente aparecen con los resultados y en el informe."
+      },
+      "units": {
+        "title": "Unidades comprobadas",
+        "desc": "Las unidades de recuperación con capacidad insuficiente para el edificio aparecen en gris."
+      },
+      "transfer": {
+        "title": "Aire de otra estancia",
+        "desc": "Elige por estancia si el aire viene del exterior o pasa desde una estancia vecina."
+      },
+      "dualunit": {
+        "title": "dm³/s y m³/h",
+        "desc": "Introduce los caudales en cualquiera de las dos unidades, y el qv10 como total o por m²."
+      },
+      "decimal": {
+        "title": "Coma o punto",
+        "desc": "Escribe los números con coma o punto; los decimales ya no saltan."
+      }
+    },
+    "label": "Novedades de la v0.2",
+    "title": "ISSO 51 completo, <span>más control de la ventilación</span>",
+    "desc": "Con la versión 0.2 el cálculo de pérdidas según ISSO 51 queda completo por ahora. La ventilación ganó opciones y la introducción de números funciona mejor. El trabajo en ISSO 53 para edificios no residenciales continúa."
   },
-  "norm": {
-    "title": "¿Qué normas son compatibles?",
-    "desc": "Open Heatloss Studio implementa las normas oficiales neerlandesas y europeas para el cálculo de pérdidas de calor. Totalmente en línea con las metodologías vigentes para el diseño de calefacción y el rendimiento energético.",
-    "list1": "<strong>NEN-EN 12831-1:2017</strong> Rendimiento energético de los edificios, método de cálculo de la carga térmica de diseño",
-    "list2": "<strong>NEN 12831-1+NEN 1:2019/A1:2021</strong> Anexo nacional neerlandés",
-    "list3": "<strong>ISSO 51:2023</strong> Cálculo de pérdidas de calor para viviendas y edificios residenciales",
-    "list4": "<strong>ISSO 53/57</strong> Metodologías para edificios no residenciales y complejos",
-    "list5": "<strong>NTA 8800</strong> Rendimiento energético integrado (BENG)"
+  "faq": {
+    "files": {
+      "q": "¿Qué archivos puedo abrir?",
+      "a": "Proyectos en .ifcenergy (IFCX) y archivos .isso51.json antiguos. También puedes leer una exportación térmica de Revit (con pyRevit), un modelo IFC para la reconstrucción IFC y un archivo Uniec 3 para BENG."
+    },
+    "install": {
+      "q": "¿Tengo que instalar algo?",
+      "a": "No, la aplicación funciona en el navegador. Para Windows hay una versión de prueba (alfa) entre las versiones de GitHub. Aún no está firmada, así que Windows muestra primero un aviso."
+    },
+    "price": {
+      "q": "¿Cuánto cuesta Open Heatloss Studio?",
+      "a": "Nada. La aplicación es gratuita y de código abierto con licencia MIT. No necesitas cuenta ni suscripción para calcular."
+    },
+    "save": {
+      "q": "¿En qué formato se guarda mi trabajo?",
+      "a": "En .ifcenergy, un archivo IFCX abierto (IFC5 alpha) con tus estancias, cerramientos y resultados. También puedes exportar IFC4X3 y JSON."
+    },
+    "systems": {
+      "q": "¿En qué sistemas funciona?",
+      "a": "En cualquier navegador moderno y, como versión de prueba, en Windows. Todavía no hay versión descargable para macOS y Linux."
+    },
+    "practice": {
+      "q": "¿Se ajusta a la práctica neerlandesa?",
+      "a": "Sí. El cálculo sigue ISSO 51:2023 con su fe de erratas, las exigencias de ventilación vienen del Bbl y la demanda de refrigeración de la NTA 8800. El núcleo de cálculo está probado con tres proyectos de referencia, entre ellos el ejemplo de ISSO 51. La aplicación sigue en pruebas: comprueba los resultados antes de usarlos."
+    },
+    "ai": {
+      "q": "¿Qué puede hacer un asistente de IA con ello?",
+      "a": "Hay un servidor MCP (Model Context Protocol) para Claude Desktop y Claude Code. Con él, un asistente puede calcular un proyecto, leer un archivo .ifcenergy, consultar cerramientos y crear un informe PDF. Para tus scripts hay una API REST."
+    },
+    "utility": {
+      "q": "¿Puedo calcular también edificios no residenciales?",
+      "a": "Todavía no del todo. En los ajustes puedes cambiar a ISSO 53 para edificios no residenciales, pero ese cálculo sigue en desarrollo."
+    },
+    "draw": {
+      "q": "¿Puedo dibujar la planta?",
+      "a": "Todavía no. El Modeller solo muestra ahora las estancias en 2D y 3D; el dibujo llegará en una versión posterior. Introduces las estancias en la tabla o las tomas de Revit o IFC."
+    },
+    "heading": "Preguntas frecuentes"
   },
   "tech": {
-    "title": "Tecnología",
-    "desc": "Un núcleo de cálculo en Rust para los cálculos conformes a la normativa, un front-end en TypeScript/SolidJS para la interfaz y Tauri 2 para la distribución multiplataforma. El mismo stack que el resto del ecosistema OpenAEC, para una integración fluida."
+    "rust": {
+      "title": "Núcleo de cálculo en Rust",
+      "desc": "ISSO 51, ISSO 53 y NTA 8800 en Rust puro, con pruebas de regresión sobre proyectos de referencia."
+    },
+    "tauri": {
+      "title": "Tauri 2",
+      "desc": "Una capa nativa ligera para la aplicación de escritorio, que calcula y crea los PDF en local."
+    },
+    "react": {
+      "title": "React y TypeScript",
+      "desc": "La misma interfaz en el navegador y en el escritorio, con cinta, pestañas y gráficos."
+    },
+    "ifcx": {
+      "title": "IFCX e IFC4X3",
+      "desc": "El archivo de proyecto es IFCX (IFC5 alpha); la exportación IFC4X3 no necesita Python."
+    },
+    "reports": {
+      "title": "openaec-layout",
+      "desc": "Informes PDF mediante el motor de informes compartido de OpenAEC, con fuentes incrustadas."
+    },
+    "mcp": {
+      "title": "MCP y API REST",
+      "desc": "Un servidor MCP en TypeScript y una API REST en Rust (Axum) para integraciones."
+    },
+    "heading": "Tecnología",
+    "sub": "Para quien quiera saber cómo está hecho."
+  },
+  "releases": {
+    "showAll": "Mostrar todas las versiones",
+    "showLess": "Mostrar solo las tres últimas",
+    "github": "Todas las versiones en GitHub"
   }
 }
