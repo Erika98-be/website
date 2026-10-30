@@ -1,344 +1,260 @@
 {
   "header": {
-    "label": "OpenAEC ekosistemi",
-    "desc": "İşletmeniz için Everything-app — e-posta, ERP, faturalar, mesai, projeler, iletişim ve daha fazlası tek bir araçta. <strong>Multi-tenant: bir hesap, birden fazla ERPNext örneği.</strong>",
-    "badge": "Beta",
-    "category": "Everything-app"
-  },
-  "explainer1": {
-    "title": "Y-app nedir?",
-    "intro": "Y-app bir sohbet aracı ya da bağımsız bir ERP arayüzü değil. Tüm iş yığınınızı tek bir web uygulamasında birleştiren, çok kiracılı (multi-tenant) bir ERPNext çalışma alanı olan bir <strong>\"Everything-app\"</strong>. E-posta (IMAP/SMTP + Office 365), ERP (ERPNext), dosyalar (NextCloud), sohbet (Teams, NextCloud Talk, Telegram), takvim, bir AI asistanı (Claude) ve düzinelerce iş modülü — hepsi tek bir tarayıcı sekmesinden erişilebilir.",
-    "li1": "<strong>Multi-tenant</strong> Tek bir Y-app hesabına birden fazla ERPNext örneği bağlayın",
-    "li2": "<strong>Şifrelenmiş kasa</strong> Sunucu taraflı SQLite veritabanında AES-256-GCM ve PBKDF2-SHA256 (210 bin iterasyon) ile korunan kimlik bilgileri",
-    "li3": "<strong>Tarayıcı sekmesine gerek yok</strong> Uygulama içi sekmelerle örnekler arasında geçiş yapın, her biri kendi yönlendirmesi ve oturumuyla",
-    "li4": "<strong>İşveren veya çalışan modu</strong> Bir açılır menü üzerinden örnek başına modülleri kısıtlayın",
-    "li5": "<strong>Tam NL/EN i18n</strong> 1190+ çeviri, çalışma zamanında değiştirilebilir"
-  },
-  "howitworks": {
-    "title": "Nasıl <span class=\"accent\">çalışır</span>",
-    "intro": "Y-app kendi sunucunuzda (veya impertio.app üzerinden) çalışır. Kendi kendine kayıt, örnek yönetimi ve mod değiştirme hepsi uygulama içinde gerçekleşir — IT talebine gerek yok.",
-    "step1": {
-      "title": "Bir Y-app hesabı oluşturun",
-      "desc": "E-posta ve şifreyle kendi kendine kayıt. 12 turlu Bcrypt, HttpOnly oturum çerezleri, oturum kapsamlı kimlik bilgisi önbelleği."
-    },
-    "step2": {
-      "title": "ERPNext örnekleri ekleyin",
-      "desc": "Her şirket veya müşteri için: URL, ad, renk ve kimlik bilgileri. Hemen sunucu taraflı kasada şifrelenir."
-    },
-    "step3": {
-      "title": "Uygulama içi sekmelerle geçiş yapın",
-      "desc": "Tarayıcı sekmesi yok: Y-app içinde örnekler arasında geçiş yapın. Her sekme kendi yönlendirme durumunu, ERPNext oturumunu ve önbelleğini korur."
-    },
-    "step4": {
-      "title": "İşveren veya Çalışan modu",
-      "desc": "Örnek başına, tam modül setiyle (İşveren) ya da personel için kısıtlı bir setle (Çalışan) arasında geçiş yapın."
-    }
-  },
-  "explainer2": {
-    "title": "Multi-tenant ve şifrelenmiş — barındırıcı bile kimlik bilgilerinizi okuyamaz",
-    "intro": "Y-app, ERPNext kimlik bilgileriniz için sıfır bilgi (zero-knowledge) ilkesiyle çalışır. Her e-posta, ERPNext anahtarı ve OAuth2 belirteci kombinasyonu, <strong>yalnızca Y-app şifrenizle çözülebilen</strong> bir ana anahtarla sunucu taraflı SQLite kasasında şifrelenir.",
-    "li1": "<strong>AES-256-GCM</strong> Her kimlik bilgisi için kimlik doğrulamalı şifreleme",
-    "li2": "<strong>PBKDF2-SHA256, 210.000 iterasyon</strong> Anahtar türetme için güncel OWASP tavsiyesi",
-    "li3": "<strong>600 izinli ana anahtar dosyası</strong> Yalnızca Y-app süreci tarafından okunabilir",
-    "li4": "<strong>İstek başına AsyncLocalStorage</strong> Kimlik bilgileri aynı Node sürecindeki kullanıcılar arasında asla paylaşılmaz",
-    "li5": "<strong>Barındırıcı bile verilerinizi göremez</strong> Girişiniz olmadan kasa rastgele baytlardan oluşan bir yığındır",
-    "li6": "<strong>Bir hesap, birden fazla şirket</strong> Muhasebeciler, danışmanlar, holdingler ve franchise kuruluşları için ideal"
-  },
-  "modules": {
-    "title": "İçinde ne var? — <span class=\"accent\">modüller</span>",
-    "intro": "Y-app, yedi alanda düzinelerce modülü bir araya getirir. Her modül doğrudan aktif ERPNext örneğine bağlıdır — ayrı giriş yok, ayrı URL yok.",
-    "communicatie": {
-      "title": "İletişim ve İşbirliği",
-      "webmail": {
-        "title": "Webmail",
-        "desc": "Önbellekleme, klasör yönetimi, ekler, zengin metin düzenleyici, şablonlar ve imzalarla tam donanımlı IMAP/SMTP istemcisi. Şifre kimlik doğrulaması veya Office 365 OAuth2."
-      },
-      "messenger": {
-        "title": "Messenger",
-        "desc": "Çok platformlu sohbet: NextCloud Talk, MS Teams (Graph API), Telegram (Bot API). Her konuşma için tek bir genel bakış."
-      },
-      "contacten": {
-        "title": "Kişiler",
-        "desc": "ERPNext ve e-posta geçmişinden birleştirilmiş kişi veritabanı. Müşteriler, tedarikçiler ve meslektaşlar için tek kaynak."
-      },
-      "brieven": {
-        "title": "Mektuplar",
-        "desc": "Şablonlarla belge oluşturma: standart mektup, teklif, sipariş onayı, ödeme hatırlatması."
-      },
-      "vergadernotulen": {
-        "title": "Toplantı notları",
-        "desc": "Gündem, aksiyon maddeleri, son tarihler ve projeler ile görevlere bağlantılarla yerel depolama."
-      }
-    },
-    "projecten": {
-      "title": "Projeler ve Görevler",
-      "kaartweergave": {
-        "title": "Harita görünümlü projeler",
-        "desc": "Proje konumları, durum takibi ve proje başına görev sayaçlarıyla Leaflet haritası."
-      },
-      "taken": {
-        "title": "Görevler",
-        "desc": "Durum, öncelik, sıralama, filtreleme ve personele atama ile tam CRUD."
-      },
-      "subtaken": {
-        "title": "Alt görevler",
-        "desc": "Daha karmaşık iş paketlerini parçalara ayırmak için iç içe görev yapısı."
-      },
-      "planning": {
-        "title": "Planlama (Gantt)",
-        "desc": "Sürükle-bırak, personel filtresi, öncelik renkleri ve tatil entegrasyonuyla haftalık veya çok haftalık görünüm."
-      },
-      "offertes": {
-        "title": "Teklifler",
-        "desc": "Doğrudan ERPNext Quotation'a bağlı, filtreler ve ayrıntı görünümüyle teklif genel bakışı."
-      },
-      "verkooporders": {
-        "title": "Satış siparişleri",
-        "desc": "Sipariş onayları ve durum takibi — tekliften teslimat fişine kadar."
-      },
-      "leveringsnotas": {
-        "title": "Teslimat fişleri",
-        "desc": "Nakliye ve lojistik planlaması için teslimat durumu ve müşteri bağlantısı."
-      },
-      "leads": {
-        "title": "Potansiyel müşteriler (Leads)",
-        "desc": "Takip aksiyonları ve fırsata dönüştürme ile potansiyel müşteri yönetimi ve niteleme."
-      },
-      "todo": {
-        "title": "Yapılacaklar",
-        "desc": "Kullanıcı başına kişisel görev listesi — proje görevlerinden ayrı."
-      }
-    },
-    "hr": {
-      "title": "İK ve Personel",
-      "medewerkers": {
-        "title": "Çalışanlar",
-        "desc": "Fotoğraf, iletişim bilgileri, sözleşmeler ve izin tahsisleriyle tam personel genel bakışı."
-      },
-      "vakantieplanning": {
-        "title": "İzin planlaması",
-        "desc": "Fazla mesai kaydıyla birlikte takvim görünümünde izin talepleri ve tahsisleri."
-      },
-      "declaraties": {
-        "title": "Masraf beyanları",
-        "desc": "Ekler dahil masraf beyanlarını gönderin, onaylayın ve ödeyin."
-      },
-      "tijdregistratie": {
-        "title": "Zaman kaydı",
-        "desc": "Proje bağlantısı, faturalanabilir/faturalanamaz ayrımı, bir \"Şimdi\" düğmesi ve onay iş akışıyla saat kaydı."
-      },
-      "loonadministratie": {
-        "title": "Bordro",
-        "desc": "Dönem başına bordro vergisi ve maaş raporları."
-      }
-    },
-    "financieel": {
-      "title": "Finans ve Muhasebe",
-      "dashboard": {
-        "title": "Finansal gösterge paneli",
-        "desc": "Proje veya çalışan başına gelir grafikleri, faturalanabilir %, en iyi müşteriler ve aylık trendler."
-      },
-      "omzet": {
-        "title": "Ciro",
-        "desc": "Yıldan yıla karşılaştırmalı aylık ciro trendleri."
-      },
-      "verkoopfacturen": {
-        "title": "Satış faturaları",
-        "desc": "Yaşlandırma analiziyle (0-30, 31-60, 61-90, 90+ gün) ve e-posta hatırlatmalarıyla ödenmemiş faturalar."
-      },
-      "inkoopfacturen": {
-        "title": "Alış faturaları",
-        "desc": "Tedarikçi faturalarını kaydedin, onaylayın ve ödeyin."
-      },
-      "openstaand": {
-        "title": "Açık kalemler",
-        "desc": "Ödeme koşulları ve hatırlatma durumuyla alacak hesapları analizi."
-      },
-      "kostinzicht": {
-        "title": "Maliyet görünürlüğü",
-        "desc": "Maliyet merkezi veya proje başına maliyet analizi ve trend takibi."
-      },
-      "grootboek": {
-        "title": "Genel muhasebe defteri",
-        "desc": "Hesap planı ve yevmiye kayıtları — gezilebilir hesap planı."
-      },
-      "banktransacties": {
-        "title": "Banka işlemleri",
-        "desc": "Açık kalemlere göre banka ekstreleri ve mutabakat."
-      },
-      "boekprogramma": {
-        "title": "Muhasebe programı",
-        "desc": "Yevmiye kayıtlarını ve mahsup fişlerini doğrudan girin."
-      },
-      "btw": {
-        "title": "KDV beyannamesi",
-        "desc": "Vergi hesaplarına dayalı üç aylık KDV hesaplaması."
-      },
-      "jaarrekening": {
-        "title": "Yıllık hesaplar",
-        "desc": "Yıl sonu kapanışı, bilanço ve kâr-zarar tablosu."
-      },
-      "rentabiliteit": {
-        "title": "Kârlılık",
-        "desc": "Proje ve müşteri başına kârlılık analizi."
-      },
-      "liquiditeit": {
-        "title": "Likidite",
-        "desc": "Açık kalemlere ve beklenen ödemelere dayalı nakit akışı tahmini."
-      }
-    },
-    "bestanden": {
-      "title": "Dosyalar ve Bilgi",
-      "nextcloudfiles": {
-        "title": "NextCloud Dosyaları",
-        "desc": "Klasör gezinme, önizleme, yükleme/indirme ve paylaşım bağlantılarıyla WebDAV dosya tarayıcısı."
-      },
-      "wiki": {
-        "title": "Wiki",
-        "desc": "Arama, yayınlama/yayından kaldırma ve zengin görüntülemeyle Markdown bilgi tabanı."
-      }
-    },
-    "agenda": {
-      "title": "Takvim",
-      "multisource": {
-        "title": "Çoklu kaynak takvim",
-        "desc": "ERPNext etkinlikleri, görevler, izinler ve zaman çizelgeleri artı iCalendar (ICS) beslemeleri ve Office 365 OAuth2 — hepsi tek bir takvimde."
-      },
-      "view": {
-        "title": "Ay, hafta veya gün görünümü",
-        "desc": "Genel bakışlar arasında geçiş yapın, kaynağa göre filtreleyin ve tek tıkla toplantı planlayın."
-      },
-      "jitsimeeting": {
-        "title": "Jitsi video toplantıları",
-        "desc": "Davette doğrudan bir Jitsi Meet bağlantısı oluşturun — ekstra hesaba gerek yok."
-      }
-    },
-    "systeem": {
-      "title": "Sistem ve DevOps",
-      "aiagent": {
-        "title": "AI Ajanı (Claude)",
-        "desc": "ERPNext verileriniz hakkında bağlama sahip Claude AI asistanı. SSE akışı, dosya bağlamı ve çok turlu konuşmalar."
-      },
-      "terminal": {
-        "title": "Terminal",
-        "desc": "Aktif örnek başına WebSocket kabuğu (PowerShell veya bash) — yöneticiler ve geliştiriciler için kullanışlı."
-      },
-      "health": {
-        "title": "Sağlık kontrolü",
-        "desc": "Örnek başına durum izleme, IMAP ve OAuth2 belirteç doğrulaması."
-      },
-      "search": {
-        "title": "Genel arama (Ctrl+K)",
-        "desc": "Aktif örneğin tüm ERPNext kayıtlarında arama yapın — herhangi bir ekrandan."
-      },
-      "instance": {
-        "title": "Örnek yönetimi",
-        "desc": "Örnekleri kendiniz ekleyin, düzenleyin veya kaldırın. IT talebine gerek yok."
-      },
-      "i18n": {
-        "title": "NL / EN i18n",
-        "desc": "react-i18next ile çalışma zamanında dil değiştirme, 1190+ çeviriyle eksiksiz çevrilmiş."
-      }
-    }
-  },
-  "modetable": {
-    "title": "İşveren ve Çalışan <span class=\"accent\">modu</span>",
-    "intro": "Örnek başına, açılır bir menüden kullanıcının işveren erişimi mi (tüm modüller) yoksa çalışan erişimi mi (kendi görevlerine odaklı, kısıtlı bir set) alacağını seçersiniz.",
-    "th": {
-      "module": "Modül",
-      "employer": "İşveren",
-      "employee": "Çalışan"
-    },
-    "row1": {
-      "module": "Webmail, Messenger, Kişiler",
-      "employer": "Evet",
-      "employee": "Evet"
-    },
-    "row2": {
-      "module": "Projeler, Görevler ve Planlama",
-      "employer": "Evet",
-      "employee": "Evet"
-    },
-    "row3": {
-      "module": "Zaman kaydı ve Masraf beyanları",
-      "employer": "Evet",
-      "employee": "Evet"
-    },
-    "row4": {
-      "module": "Takvim ve Toplantı notları",
-      "employer": "Evet",
-      "employee": "Evet"
-    },
-    "row5": {
-      "module": "NextCloud Dosyaları ve Wiki",
-      "employer": "Evet",
-      "employee": "Evet"
-    },
-    "row6": {
-      "module": "Teklifler, Satış siparişleri, Teslimatlar, Potansiyel müşteriler",
-      "employer": "Evet",
-      "employee": "Sınırlı"
-    },
-    "row7": {
-      "module": "Çalışanlar, İzin planlaması, Bordro",
-      "employer": "Evet",
-      "employee": "Hayır"
-    },
-    "row8": {
-      "module": "Finansal gösterge paneli, Satış/Alış faturaları, Açık kalemler",
-      "employer": "Evet",
-      "employee": "Hayır"
-    },
-    "row9": {
-      "module": "Genel muhasebe defteri, Banka işlemleri, KDV, Yıllık hesaplar",
-      "employer": "Evet",
-      "employee": "Hayır"
-    },
-    "row10": {
-      "module": "Kârlılık ve Likidite",
-      "employer": "Evet",
-      "employee": "Hayır"
-    },
-    "row11": {
-      "module": "Terminal ve AI Ajanı",
-      "employer": "Evet",
-      "employee": "Hayır"
-    }
-  },
-  "integrations": {
-    "title": "Entegrasyonlar",
-    "intro": "Y-app, muhtemelen zaten kullandığınız araçlarla konuşur — kilitlenme yok, geçiş derdi yok.",
-    "erpnext": {
-      "desc": "REST API ve oturum köprüsü — her DocType kullanılabilir."
-    },
-    "office365": {
-      "desc": "Posta ve takvim için OAuth2 + Microsoft Graph API."
-    },
-    "nextcloud": {
-      "desc": "Dosyalar, talk ve paylaşım bağlantıları için WebDAV + OCS API."
-    },
-    "telegram": {
-      "desc": "İş sohbeti ve bildirimler için Bot API."
-    },
-    "jitsi": {
-      "desc": "Video toplantıları için URL oluşturma, hesaba gerek yok."
-    },
-    "claudeai": {
-      "desc": "ERPNext bağlamıyla CLI başlatma + SSE akışı."
-    },
-    "ical": {
-      "desc": "Harici beslemeleri Y-app takvimine okuyun."
-    }
-  },
-  "techstack": {
-    "title": "Teknoloji",
-    "summary": "Ön yüzde React 19 + TypeScript + Vite 7 + TailwindCSS 4, arka yüzde Node.js 20 + Express 4 + WebSocket. Kimlik doğrulama bcryptjs (12 tur), HttpOnly çerezler ve istek başına kimlik bilgisi kapsamı için AsyncLocalStorage ile yapılır. AES-256-GCM ve PBKDF2-SHA256 (210 bin iterasyon) ile şifreleme, veriler SQLite veritabanında (WAL modu). Üretim, PM2 altında, TLS sonlandırma, WebSocket yükseltmesi ve statik dist sunumu yapan bir nginx ters proxy'nin arkasında çalışır. Geliştirme tsx --watch ile yapılır."
-  },
-  "cta": {
-    "demo": "Canlı demo",
-    "github": "GitHub deposu"
+    "title": "Y-<span class=\"accent\">app</span>",
+    "featuresBtn": "Özellikleri gör",
+    "faqBtn": "Sık sorulan sorular",
+    "sourceBtn": "Kaynak kodu",
+    "proof2": "Felemenkçe, İngilizce, Almanca",
+    "proof3": "Kendi sunucunuzda",
+    "proof4": "Açık kaynak (MIT)",
+    "heroAlt": "Y-app panosu: saat girişi, son kayıtlar, ilerlemesiyle devam eden projeler, görevlerim ve yapılacaklar",
+    "label": "İşletme yönetimi",
+    "tagline": "Tüm iş gününüz tek ekranda: projeler, saatler, e-posta ve takvim",
+    "desc": "Y-app, ERPNext üzerinde sade bir çalışma alanıdır. Kendi ERPNext sitenize kurar ve mevcut hesabınızla giriş yaparsınız; verileriniz olduğu yerde kalır."
   },
   "meta": {
-    "title": "Y-app — İşletmeniz için her şey uygulaması — OpenAEC Foundation"
+    "description": "ERPNext için ücretsiz, açık kaynaklı çalışma alanı: projeler, planlama, saatler, e-posta, takvim ve faturalar tek bakışta, kendi ERPNext sitenizde.",
+    "title": "Y-app — OpenAEC Foundation"
+  },
+  "hl": {
+    "mail": {
+      "alt": "Projelere bağlı iletilerle Y-app gelen kutusu ve projesine bağlantısını gösteren açık bir e-posta",
+      "kicker": "E-posta",
+      "title": "Bir projeye ait e-posta, projenin yanında durur",
+      "desc": "E-postanız ERPNext'e gelir ve Y-app onu projeye, müşteriye, teklife veya faturaya göre düzenler. Siz yokken bile bir meslektaşınız tüm yazışmayı bulur."
+    },
+    "planning": {
+      "alt": "Y-app planlama panosu: bu haftanın görevleri çalışan başına çubuklar halinde",
+      "kicker": "Planlama",
+      "title": "Kimin neyle uğraştığını bir bakışta görün",
+      "desc": "Planlama panosu her çalışanın görevlerini haftalık veya birkaç haftalık bir zaman çizelgesine yerleştirir. Şirkete veya departmana göre filtreleyin ya da kanban panosuna geçin."
+    },
+    "projecten": {
+      "alt": "Açık bir projeyle Y-app proje listesi: müşteri, proje yöneticisi, ilerleme, bağlantılar ve görevler",
+      "kicker": "Projeler",
+      "title": "Bir projeyle ilgili her şey tek sayfada",
+      "desc": "Müşteri, proje yöneticisi, ilerleme ve süre en üstte; altında görevler, saatler, faturalar ve planlama. Artık ERPNext'te ayrı listelerde aramanıza gerek yok."
+    },
+    "uren": {
+      "alt": "Y-app saat kaydı: giriş formu ve bu haftanın gün ve proje bazında saatleri",
+      "kicker": "Saatler",
+      "title": "Saatlerinizi saniyeler içinde girin",
+      "desc": "Projeyi ve görevi seçin, Şimdi'ye basın, kaydınız girildi. Haftanız sağda görünür, böylece unutulan bir gün hemen fark edilir. İşveren olarak zaman çizelgelerini aynı yerde onaylarsınız."
+    },
+    "agenda": {
+      "alt": "Y-app haftalık takvimi: toplantılar, görevler ve açıp kapatabileceğiniz kaynaklar ve meslektaşlar",
+      "kicker": "Takvim",
+      "title": "Toplantılar, görevler ve izinler tek takvimde",
+      "desc": "Takvim, toplantılarınızı görevlerinizin, izin taleplerinizin ve isterseniz saatlerinizin yanında gösterir. Ortak bir zaman bulmak için bir meslektaşınızın takvimini ekleyin."
+    }
+  },
+  "notice": {
+    "text": "Alfa sürümü: birçok modül hâlâ geliştiriliyor. Önce bir test sitesinde deneyin."
+  },
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "werk": "Projeler ve planlama",
+    "uren": "Saatler ve personel",
+    "contact": "E-posta ve takvim",
+    "geld": "Finans",
+    "all": "Tüm özellikler"
+  },
+  "features": {
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Her gün ihtiyacınız olan her şey, tek yerde",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "dashboard": {
+      "title": "İstediğiniz gibi pano",
+      "desc": "Saatler, kilometreler, projeler, görevler, yapılacaklar ve doğum günleri; hangi blokları göreceğinizi siz seçersiniz."
+    },
+    "projects": {
+      "title": "Proje görünümü",
+      "desc": "Her proje için müşteri, ilerleme, görevler, saatler, faturalar ve planlama."
+    },
+    "tasks": {
+      "title": "Görevler ve alt görevler",
+      "desc": "Durum, öncelik, son tarih ve sorumluyla; arama ve filtreleme."
+    },
+    "board": {
+      "title": "Planlama panosu",
+      "desc": "Çalışan başına görevler zaman çizelgesinde veya kanban olarak, haftalık ya da birkaç haftalık."
+    },
+    "todo": {
+      "title": "Kişisel yapılacaklar",
+      "desc": "Proje görevlerinin yanında öncelik ve tarihli kişisel bir liste."
+    },
+    "notes": {
+      "title": "Notlar ve toplantı notları",
+      "desc": "Kararları ve aksiyon maddelerini işinizin yanında kaydedin."
+    },
+    "hours": {
+      "title": "Saat girişi",
+      "desc": "Proje ve göreve, başlangıç ve bitiş için Şimdi düğmesiyle."
+    },
+    "approve": {
+      "title": "Zaman çizelgelerini onaylama",
+      "desc": "İşveren olarak ekibinizin saatlerini onaylar ve raporları görürsünüz."
+    },
+    "km": {
+      "title": "Kilometre kaydı",
+      "desc": "Başlangıç, varış ve projeyle yolculuklar, tek yön veya gidiş-dönüş."
+    },
+    "leave": {
+      "title": "İzin ve fazla mesai",
+      "desc": "İzin talep etme ve değerlendirme; sitenizde HRMS olduğunda çalışır."
+    },
+    "expenses": {
+      "title": "Masraf talepleri",
+      "desc": "Masraf taleplerini gönderin ve izleyin, HRMS ile."
+    },
+    "mail": {
+      "title": "Proje ve müşteriye göre e-posta",
+      "desc": "Okuma, yazma, taslaklar ve ekler; proje, müşteri, teklif ve faturaya göre düzenli."
+    },
+    "signature": {
+      "title": "Kurumsal e-posta imzası",
+      "desc": "Şirketinizin logosu, adresi ve kurumsal stili her e-postanın altında, ERPNext'ten."
+    },
+    "calendar": {
+      "title": "Ortak takvim",
+      "desc": "Toplantılar, görevler, izinler ve meslektaş takvimleri; ay, hafta veya gün."
+    },
+    "mailserver": {
+      "title": "Posta sunucunuzla bağlantı",
+      "desc": "JMAP ve CalDAV ile takvimler, davetler, işyeri dışı yanıtları ve iCal paylaşım bağlantıları."
+    },
+    "messages": {
+      "title": "Meslektaşlarla mesajlaşma",
+      "desc": "Kendi ERPNext sitenizde mevcut kullanıcılarla sohbet edin."
+    },
+    "contacts": {
+      "title": "Kişiler",
+      "desc": "Müşteriler, tedarikçiler ve meslektaşlar tek listede."
+    },
+    "sales": {
+      "title": "Potansiyel müşteriler, teklifler ve siparişler",
+      "desc": "İlk temastan teklife ve sipariş onayına kadar."
+    },
+    "invoices": {
+      "title": "Faturalar ve alacaklar",
+      "desc": "Satış ve alış faturaları, kendi sitenizin yazdırma biçimleriyle."
+    },
+    "stats": {
+      "title": "Finans panosu",
+      "desc": "Aylık ciro, ödenmemiş faturalar ve saatler grafiklerde."
+    },
+    "roles": {
+      "title": "İşveren ve çalışan",
+      "desc": "Her çalışan ERPNext rolüne uygun olanı görür; yetkiler belirleyici kalır."
+    },
+    "wiki": {
+      "title": "Bilgi bankası",
+      "desc": "Sitenizde Wiki olduğunda ofisinizin çalışma yöntemleri ve kuralları."
+    },
+    "search": {
+      "title": "Her yerde arama",
+      "desc": "Kenar çubuğundan bir fatura, teklif veya proje bulun."
+    }
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "items": {
+      "install": {
+        "title": "Kendiniz kurun",
+        "desc": "Bench'inizde iki komut ve Y-app sitenizde, /y-next altında."
+      },
+      "only": {
+        "title": "Yalnızca ERPNext gerekir",
+        "desc": "Sitenizde HRMS veya Wiki varsa izin, masraf talepleri ve bilgi bankası kendiliğinden açılır."
+      },
+      "mailserver": {
+        "title": "Posta sunucunuzla bağlantı",
+        "desc": "Posta sunucusundaki takvimler, davetler, işyeri dışı yanıtları ve iCal paylaşım bağlantıları."
+      },
+      "signature": {
+        "title": "ERPNext'ten imza",
+        "desc": "Kendi bilgileriniz ile şirketinizin logosu, web sitesi, adresi ve kurumsal stili her e-postanın altında."
+      },
+      "yours": {
+        "title": "Şirketinize göre ayarlı",
+        "desc": "Yazdırma biçimleri, paylaşılan posta kutuları ve kurumsal stil kendi sitenizden gelir."
+      }
+    },
+    "label": "v0.40.0 sürümünde yeni",
+    "title": "Y-app, <span>kendi sitenizde</span> bir uygulama olarak",
+    "desc": "ERPNext'e kendiniz kurduğunuz ilk sürüm. Y-app artık verilerinizle aynı sitede, mevcut girişiniz ve yetkilerinizle çalışır."
+  },
+  "faq": {
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Evet, sunucuda: Y-app mevcut bir ERPNext 16 sitesi için bir uygulamadır. Yöneticiniz onu <code>bench get-app</code> ve <code>install-app</code> ile kurar (README'ye bakın). Ardından tarayıcıda /y-next altında açar ve ERPNext hesabınızla giriş yaparsınız. Henüz herkese açık bir demo yok."
+    },
+    "price": {
+      "q": "Ücreti ne kadar?",
+      "a": "Hiçbir şey. Y-app MIT lisansıyla açık kaynaktır. Kendiniz yapmıyorsanız yalnızca ERPNext barındırması için ödersiniz."
+    },
+    "save": {
+      "q": "Çalışmalarım nerede saklanır?",
+      "a": "Doğrudan ERPNext veritabanınızda. Y-app, ERPNext'in standart API'si üzerinden okur ve yazar; ayrı bir veritabanı, ayrı bir hesap veya harici sunucu yoktur."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Tablet ve telefon dahil her modern tarayıcıda. Sunucunun yalnızca Frappe 16 ve ERPNext 16'ya ihtiyacı vardır."
+    },
+    "erpnext": {
+      "q": "ERPNext'e ihtiyacım var mı?",
+      "a": "Evet. Y-app, ERPNext için farklı ve daha sade bir arayüzdür. Tüm projeleriniz, saatleriniz ve faturalarınız ERPNext'tedir; Y-app onları kullanmayı kolaylaştırır."
+    },
+    "roles": {
+      "q": "Her çalışan her şeyi görür mü?",
+      "a": "Hayır. Y-app, ERPNext rollerini ve yetkilerini izler. Bir çalışan kendi görevlerini, saatlerini ve izinlerini görür; işveren ayrıca finansı, onayları ve personeli de görür."
+    },
+    "office": {
+      "q": "Word ve Excel dosyalarını düzenleyebilir miyim?",
+      "a": "0.40.0 sürümünde henüz yok. Geliştirme sürümünde .xlsx ve .docx için Calc ve Writer ile Open CAD Studio, Open Planner Studio ve bir IFC görüntüleyici zaten var; sonraki bir sürümde gelecekler."
+    },
+    "hosted": {
+      "q": "Barındırılan bir sürüm var mı?",
+      "a": "Y-app, birden çok ERPNext ortamını bağladığınız barındırılan bir hizmet olarak başladı. O sürüm herkese açık dağıtılmıyor. Bu sayfadaki açık sürümü kendi ERPNext sitenize kurarsınız; kurulumda yardım isterseniz <a href=\"/#contact\">bize ulaşın</a>."
+    },
+    "heading": "Sık sorulan sorular"
+  },
+  "tech": {
+    "frappe": {
+      "desc": "Kendi doctype'ları, alanları ve yetkileriyle Frappe 16 ve ERPNext 16 için kurulabilir bir uygulama."
+    },
+    "react": {
+      "desc": "Arayüz React, TypeScript ve Vite ile yapılır ve hazır derlenmiş gelir; sunucuda Node gerekmez."
+    },
+    "tailwind": {
+      "desc": "Tailwind ile stil; arayüz masaüstü, tablet ve telefona uyum sağlar."
+    },
+    "api": {
+      "desc": "Giriş yapan kullanıcının oturumuyla okur ve yazar; ERPNext yetkileri belirleyici kalır."
+    },
+    "jmap": {
+      "desc": "Takvimler, davetler ve işyeri dışı yanıtları için Stalwart gibi bir posta sunucusuyla isteğe bağlı bağlantı."
+    },
+    "mit": {
+      "desc": "MIT lisansıyla açık kaynak. Geliştirme Y-app-ERPNext'te yapılır, sürümler y_next'tedir."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }
