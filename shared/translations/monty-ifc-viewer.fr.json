@@ -1,53 +1,278 @@
 {
   "header": {
-    "label": "Visualiseur BIM / IFC",
     "title": "Monty <span class=\"accent\">IFC</span> Viewer",
-    "desc": "Visualiseur IFC basé sur le web avec visualisation de la séquence de construction. Chargez des fichiers IFC, animez la séquence de construction étape par étape et inspectez les propriétés des éléments.",
-    "downloadBtn": "Télécharger v1.0.1",
-    "demoBtn": "Démo en ligne"
+    "demoBtn": "Ouvrir dans le navigateur",
+    "downloadBtn": "Télécharger",
+    "sourceBtn": "Code source",
+    "proof2": "Navigateur, tablette et téléphone",
+    "proof3": "Bureau : Windows · macOS · Linux",
+    "proof4": "Gratuit, sans compte",
+    "heroAlt": "Monty IFC Viewer : une maison en bois à mi-parcours de la séquence de construction ; parties construites en couleur, phase suivante en orange et le reste transparent, avec le lecteur en bas",
+    "label": "Visionneuse BIM et IFC",
+    "tagline": "Montrez la séquence de construction à votre client, avec un seul lien",
+    "desc": "Ouvrez un modèle partagé dans le navigateur, sur ordinateur, tablette ou téléphone. Rejouez l'ordre de montage phase par phase, filtrez par repère ou par type et regardez à l'intérieur du bâtiment avec une boîte de coupe."
   },
-  "download": {
-    "title": "Télécharger v1.0.1"
+  "meta": {
+    "description": "Visionneuse IFC gratuite dans le navigateur qui rejoue la séquence de construction. Partagez un lien vers votre modèle et montrez à votre client, phase par phase, comment le bâtiment s'élève, avec filtres, boîte de coupe et vue éclatée. Aussi en application de bureau pour Windows, macOS et Linux.",
+    "title": "Monty IFC Viewer — OpenAEC Foundation"
   },
-  "features": {
-    "heading": "Fonctionnalités",
-    "loading": {
-      "title": "Chargement de fichiers IFC",
-      "desc": "Glissez-déposez les fichiers IFC dans le visualiseur ou utilisez le sélecteur de fichiers. Analysés avec la bibliothèque web-ifc."
-    },
-    "visualization": {
-      "title": "Visualisation 3D",
-      "desc": "Rendu 3D interactif des modèles BIM avec Three.js. Zoom, panoramique et rotation autour du modèle."
-    },
+  "hl": {
     "sequence": {
-      "title": "Animation de la séquence de construction",
-      "desc": "Visualisez la séquence de construction étape par étape avec les contrôles play, pause, précédent et suivant. Choisissez le paramètre IFC qui pilote l'ordre de la séquence."
+      "alt": "Séquence de construction en mode nuit : parties posées en gris, l'élément de repère 303 en orange et le reste du bâtiment transparent",
+      "kicker": "Séquence de construction",
+      "title": "Montrez comment le bâtiment s'élève",
+      "desc": "Lancez le montage ou avancez phase par phase dans le modèle avec le curseur. Ce qui est déjà posé garde sa couleur, la phase en cours s'allume en orange et ce qui reste à venir est transparent. L'ordre provient du repère (Mark) de chaque élément."
     },
-    "properties": {
-      "title": "Propriétés des éléments",
-      "desc": "Cliquez sur n'importe quel élément pour le sélectionner et le mettre en évidence. Consultez toutes les propriétés IFC de l'élément sélectionné."
+    "filter": {
+      "alt": "Panneau de filtres avec les plages de repères 100–199 et 300–399 cochées ; seuls ces éléments sont en couleur, le reste est transparent",
+      "kicker": "Filtrage",
+      "title": "Ne voyez que ce dont vous avez besoin",
+      "desc": "Recherchez un élément par repère, ou cochez des plages de repères et des types d'éléments. Le reste du modèle devient transparent pour voir où se trouvent ces pièces."
+    },
+    "section": {
+      "alt": "Boîte de coupe autour du modèle, abaissée jusqu'au plancher avec les murs coupés",
+      "kicker": "Coupe",
+      "title": "Regardez à l'intérieur du bâtiment",
+      "desc": "Placez une boîte de coupe autour du modèle et déplacez ses faces avec les flèches. Retirez un étage et voyez l'aménagement et les murs en dessous."
+    },
+    "explode": {
+      "alt": "Vue éclatée : les éléments de mur et de plancher de la maison légèrement écartés, avec le curseur en bas",
+      "kicker": "Vue éclatée",
+      "title": "Écartez le modèle",
+      "desc": "La vue éclatée écarte tous les éléments, aussi loin que vous le souhaitez. Idéal pour montrer de quelles pièces se compose un projet préfabriqué ou en bois."
+    },
+    "select": {
+      "alt": "Une poutre sous la maison est sélectionnée et apparaît en bleu clair ; à droite, le panneau avec son nom, le repère 147 et les boutons Isoler, Masquer et Réinitialiser",
+      "kicker": "Sélection",
+      "title": "Cliquez sur une pièce et isolez-la",
+      "desc": "Touchez un élément pour voir son nom et son repère. Isolez-le ou masquez-le d'un bouton, ou sélectionnez-en plusieurs à la fois, aussi d'un geste sur tablette."
     }
   },
+  "subnav": {
+    "label": "Sur cette page",
+    "features": "Fonctions",
+    "download": "Télécharger",
+    "whatsnew": "Nouveautés",
+    "faq": "FAQ",
+    "releases": "Versions"
+  },
+  "tabs": {
+    "highlights": "Points forts",
+    "seq": "Séquence de construction",
+    "view": "Visualiser et mesurer",
+    "select": "Sélectionner et filtrer",
+    "share": "Partage",
+    "desktop": "Application de bureau",
+    "all": "Toutes les fonctions"
+  },
+  "f": {
+    "player": {
+      "title": "Lecture pas à pas",
+      "desc": "Lecture, pause, phase précédente et suivante, ou accès direct à une phase avec le curseur."
+    },
+    "speed": {
+      "title": "À votre rythme",
+      "desc": "Choisissez de deux secondes à un quart de seconde par phase."
+    },
+    "ghost": {
+      "title": "Fait, en cours, à faire",
+      "desc": "Pièces posées dans leur couleur, phase en cours en orange, le reste transparent."
+    },
+    "mark": {
+      "title": "Ordre issu du repère",
+      "desc": "Lit le repère dans les propriétés IFC ou dans Revit, y compris les repères CLT des éléments bois."
+    },
+    "section": {
+      "title": "Boîte de coupe",
+      "desc": "Coupez le modèle sur six côtés et déplacez ou faites pivoter la boîte."
+    },
+    "explode": {
+      "title": "Vue éclatée",
+      "desc": "Écartez les éléments avec un curseur."
+    },
+    "measure": {
+      "title": "Mesure",
+      "desc": "Distance, distance perpendiculaire et surface, aussi sur tablette."
+    },
+    "theme": {
+      "title": "Jour et nuit",
+      "desc": "Un affichage clair ou sombre, d'un seul bouton."
+    },
+    "zoom": {
+      "title": "Zoom et réinitialisation",
+      "desc": "Zoomez sur tout le modèle ou réinitialisez coupe, mesures et vue éclatée d'un coup."
+    },
+    "click": {
+      "title": "Cliquer un élément",
+      "desc": "Voyez son nom et son repère, et isolez ou masquez l'élément."
+    },
+    "multi": {
+      "title": "Plusieurs éléments à la fois",
+      "desc": "Avec Ctrl ou Maj, ou avec le bouton de sélection multiple sur tablette."
+    },
+    "menu": {
+      "title": "Menu contextuel",
+      "desc": "Isoler, masquer et réinitialiser depuis un menu."
+    },
+    "filters": {
+      "title": "Filtrer par repère et type",
+      "desc": "Recherchez un repère, ou choisissez des plages de cent repères et des types d'éléments."
+    },
+    "link": {
+      "title": "Un lien par projet",
+      "desc": "Votre client ouvre le modèle sans rien installer ni téléverser."
+    },
+    "overview": {
+      "title": "Vue d'ensemble des projets",
+      "desc": "Une page d'accueil par client avec aperçu, phase et lieu par projet, recherche et filtre par type."
+    },
+    "models": {
+      "title": "Plusieurs modèles par projet",
+      "desc": "Activez ou désactivez des modèles, ou isolez et masquez-en un."
+    },
+    "mobile": {
+      "title": "Tablette et téléphone",
+      "desc": "Fonctionne au toucher sur le chantier et chez le client."
+    },
+    "server": {
+      "title": "Sur notre propre serveur",
+      "desc": "Les modèles sont stockés sur le serveur Speckle d'OpenAEC, pas chez un service externe."
+    },
+    "local": {
+      "title": "Vos propres fichiers IFC",
+      "desc": "L'application de bureau ouvre les fichiers IFC de votre ordinateur."
+    },
+    "tabs": {
+      "title": "Plusieurs fichiers en onglets",
+      "desc": "Ouvrez plusieurs modèles et passez de l'un à l'autre par onglets."
+    },
+    "color": {
+      "title": "Couleurs par paramètre",
+      "desc": "Colorez les éléments selon un paramètre IFC et rejouez la séquence de construction selon le paramètre de votre choix."
+    }
+  },
+  "features": {
+    "label": "Fonctions",
+    "heading": "Du modèle à l'ordre de montage, lisible par tous",
+    "sub": "Commencez par les points forts ou choisissez un thème.",
+    "tabsLabel": "Fonctions par thème"
+  },
+  "download": {
+    "title": "Télécharger v1.0.1",
+    "lead": "Gratuit, sans compte. Pour Windows, macOS et Linux.",
+    "forWindows": "Télécharger pour Windows",
+    "forMac": "Télécharger pour macOS",
+    "forLinux": "Télécharger pour Linux",
+    "metaWindows": "programme d'installation .exe",
+    "metaMacArm": ".dmg pour Apple Silicon",
+    "metaLinux": "AppImage, fonctionne sur la plupart des distributions",
+    "browserBtn": "Ouvrir dans le navigateur",
+    "fileExe": "Programme d'installation (.exe)",
+    "fileMsi": "Programme d'installation (.msi)",
+    "fileDmgArm": ".dmg (Apple Silicon)",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "browserNote": "Vous préférez ne rien installer ? L'application <a href=\"https://monty-ifc-viewer.open-aec.com/\" target=\"_blank\" rel=\"noopener\">fonctionne aussi dans le navigateur</a>.",
+    "label": "Télécharger",
+    "mobileNote": "Monty IFC Viewer est conçu pour un grand écran. Ouvrez-le sur votre ordinateur, ou essayez-le ici dans le navigateur.",
+    "other": "Autres plateformes"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Toutes les notes de version",
+    "ctaDemo": "Essayer dans le navigateur",
+    "items": {
+      "ifc": {
+        "title": "IFC en 3D",
+        "desc": "Ouvrez un fichier IFC et tournez, zoomez et déplacez-vous autour du modèle."
+      },
+      "sequence": {
+        "title": "Séquence de construction",
+        "desc": "Rejouez la séquence pas à pas selon un paramètre IFC de votre choix."
+      },
+      "color": {
+        "title": "Couleurs par paramètre",
+        "desc": "Les éléments reçoivent une couleur par valeur d'un paramètre."
+      },
+      "tabs": {
+        "title": "Plusieurs fichiers",
+        "desc": "Plusieurs modèles ouverts à la fois, chacun dans son onglet."
+      }
+    },
+    "label": "Nouveau dans la v1.0.1",
+    "title": "La visionneuse <span>sur votre ordinateur</span>",
+    "desc": "La version 1.0 est l'application de bureau pour Windows, macOS et Linux. Ouvrez des fichiers IFC de votre ordinateur sans les partager d'abord."
+  },
+  "faq": {
+    "files": {
+      "q": "Quels fichiers puis-je ouvrir ?",
+      "a": "Des modèles IFC issus de tout logiciel BIM, comme Revit, Archicad ou Tekla. La version web affiche les modèles stockés sur le serveur Speckle : fichier IFC téléversé ou envoyé directement depuis Revit avec le connecteur Speckle. L'application de bureau ouvre les fichiers IFC de votre ordinateur."
+    },
+    "install": {
+      "q": "Dois-je installer quelque chose ?",
+      "a": "Non. Quiconque reçoit un lien ouvre le modèle directement dans le navigateur, aussi sur tablette ou téléphone. Pour ouvrir vos propres fichiers IFC sans les partager, installez l'application de bureau."
+    },
+    "price": {
+      "q": "Combien coûte Monty IFC Viewer ?",
+      "a": "Rien. La consultation est gratuite et sans compte, et le code source est public sur GitHub."
+    },
+    "systems": {
+      "q": "Sur quels systèmes fonctionne-t-il ?",
+      "a": "La version web fonctionne dans tout navigateur moderne, sur ordinateur, tablette et téléphone. L'application de bureau existe pour Windows (.exe et .msi), macOS sur Apple Silicon (.dmg) et Linux (.deb, .rpm et AppImage)."
+    },
+    "practice": {
+      "q": "Est-ce adapté à la pratique du bâtiment ?",
+      "a": "Oui. Il utilise l'IFC, le standard ouvert du BIM, et tire l'ordre du repère (Mark) que vous renseignez déjà dans Revit ou dans les propriétés IFC. Pour la construction bois, il lit aussi les repères des éléments CLT."
+    },
+    "own": {
+      "q": "Comment mettre mon propre modèle dans la version web ?",
+      "a": "Le modèle est placé sur le serveur Speckle d'OpenAEC, par téléversement IFC ou depuis Revit. Le projet reçoit ensuite son propre lien et une place sur la page projets de votre client. Contactez-nous pour le mettre en place."
+    },
+    "drop": {
+      "q": "Puis-je ouvrir un fichier IFC directement dans la version web ?",
+      "a": "Pas encore. La version web affiche les modèles partagés du serveur. Pour un fichier de votre ordinateur, utilisez l'application de bureau."
+    },
+    "props": {
+      "q": "Puis-je voir toutes les propriétés d'un élément ?",
+      "a": "Pas encore pour les modèles IFC dans la version web : le panneau y affiche le nom et le repère. Pour les modèles envoyés directement depuis Revit, vous voyez aussi les paramètres par groupe."
+    },
+    "difference": {
+      "q": "Quelle différence entre la version web et l'application de bureau ?",
+      "a": "La version web est conçue pour le partage : un lien, une vue d'ensemble des projets, mesures, coupe et filtres, et elle fonctionne sur tablette. L'application de bureau (version 1.0) ouvre des fichiers IFC de votre ordinateur et colore les éléments selon un paramètre."
+    },
+    "heading": "Questions fréquentes"
+  },
   "tech": {
-    "heading": "Stack technique",
-    "threejs": {
-      "title": "Three.js",
-      "desc": "Moteur de rendu 3D pour la visualisation interactive de modèles."
+    "speckle": {
+      "title": "Speckle Viewer",
+      "desc": "La visionneuse 3D open source de Speckle pour l'affichage, les filtres, les mesures, la coupe et la vue éclatée, utilisée via son API publique."
     },
-    "webifc": {
-      "title": "web-ifc",
-      "desc": "Bibliothèque de parsing IFC par IFCjs pour lire les fichiers Industry Foundation Classes."
+    "server": {
+      "title": "Serveur Speckle propre",
+      "desc": "Modèles et versions sont hébergés sur speckle.open-aec.com, avec import IFC et connecteur Revit."
     },
-    "vanilla": {
-      "title": "JavaScript Vanilla",
-      "desc": "Aucune dépendance de framework. Léger et rapide."
+    "three": {
+      "title": "Three.js et WebGL",
+      "desc": "Une 3D fluide dans le navigateur, sans plug-in."
     },
-    "author": "Créé par Piet Mol"
+    "ts": {
+      "title": "TypeScript et Vite",
+      "desc": "Code strict et modulaire sans framework, compilé en site statique."
+    },
+    "touch": {
+      "title": "Conçu pour le tactile",
+      "desc": "Boutons, sélection et mesures fonctionnent aussi au doigt sur tablette et téléphone."
+    },
+    "desktop": {
+      "title": "Bureau avec web-ifc",
+      "desc": "L'application de bureau lit les fichiers IFC localement avec web-ifc, avec des téléchargements signés."
+    },
+    "heading": "Technologie",
+    "sub": "Pour ceux qui veulent savoir comment c'est construit."
   },
-  "cta": {
-    "github": "GitHub &rarr;"
-  },
-  "footer": {
-    "slogan": "Construisez librement. Construisons ensemble."
+  "releases": {
+    "showAll": "Afficher toutes les versions",
+    "showLess": "Afficher seulement les trois dernières",
+    "github": "Toutes les versions sur GitHub"
   }
 }

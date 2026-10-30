@@ -1,53 +1,278 @@
 {
   "header": {
-    "label": "BIM / IFC viewer",
     "title": "Monty <span class=\"accent\">IFC</span> Viewer",
-    "desc": "Web-based IFC viewer with build sequence visualization. Load IFC files, animate the construction sequence step by step, and inspect element properties.",
-    "downloadBtn": "Download v1.0.1",
-    "demoBtn": "Live demo"
+    "demoBtn": "Open in browser",
+    "downloadBtn": "Download",
+    "sourceBtn": "Source code",
+    "proof2": "Browser, tablet and phone",
+    "proof3": "Desktop: Windows · macOS · Linux",
+    "proof4": "Free, no account",
+    "heroAlt": "Monty IFC Viewer: a timber house halfway through the construction sequence; built parts in colour, the next phase in orange and the rest transparent, with the player at the bottom",
+    "label": "BIM and IFC viewer",
+    "tagline": "Show your client the construction sequence, with a single link",
+    "desc": "Open a shared model in the browser, on your computer, tablet or phone. Play back the assembly order phase by phase, filter by mark or type, and look inside the building with a section box."
   },
-  "download": {
-    "title": "Download v1.0.1"
+  "meta": {
+    "description": "Free IFC viewer in the browser that plays back the construction sequence. Share a link to your model and show your client, phase by phase, how the building goes up, with filters, a section box and an exploded view. Also as a desktop app for Windows, macOS and Linux.",
+    "title": "Monty IFC Viewer — OpenAEC Foundation"
   },
-  "features": {
-    "heading": "Features",
-    "loading": {
-      "title": "IFC file loading",
-      "desc": "Drag and drop IFC files into the viewer or use the file picker. Parsed with the web-ifc library."
-    },
-    "visualization": {
-      "title": "3D visualization",
-      "desc": "Interactive 3D rendering of BIM models with Three.js. Zoom, pan, and rotate around the model."
-    },
+  "hl": {
     "sequence": {
-      "title": "Build sequence animation",
-      "desc": "Visualize the construction sequence step by step with play, pause, previous, and next controls. Choose which IFC parameter drives the sequence order."
+      "alt": "Construction sequence in night mode: placed parts grey, the element with mark 303 orange and the rest of the building transparent",
+      "kicker": "Construction sequence",
+      "title": "Show how the building goes up",
+      "desc": "Play back the assembly, or step through the model phase by phase with the slider. What is already in place keeps its colour, the current phase lights up orange and what is still to come is transparent. The order comes from each element's mark number."
     },
-    "properties": {
-      "title": "Element properties",
-      "desc": "Click on any element to select and highlight it. View all IFC properties of the selected element."
+    "filter": {
+      "alt": "Filter panel with mark ranges 100–199 and 300–399 ticked; only those elements are shown in colour, the rest is transparent",
+      "kicker": "Filtering",
+      "title": "See only what you need",
+      "desc": "Look up an element by mark number, or tick mark ranges and element types. The rest of the model turns transparent, so you can see where those parts are."
+    },
+    "section": {
+      "alt": "Section box around the model, moved down to the floor level with the walls cut through",
+      "kicker": "Section",
+      "title": "Look inside the building",
+      "desc": "Put a section box around the model and move its faces with the arrows. Take off a storey and see the layout and the walls underneath."
+    },
+    "explode": {
+      "alt": "Exploded view: the wall and floor elements of the house pulled slightly apart, with the slider at the bottom",
+      "kicker": "Explode",
+      "title": "Pull the model apart",
+      "desc": "The exploded view moves all elements apart, as far as you choose. Ideal for showing which parts make up a prefab or timber project."
+    },
+    "select": {
+      "alt": "A beam under the house is clicked and shown in light blue; on the right the panel with its name, mark 147 and the Isolate, Hide and Reset buttons",
+      "kicker": "Selecting",
+      "title": "Click a part and set it apart",
+      "desc": "Tap an element to see its name and mark number. Isolate or hide it with one button, or select several at once, also with a tap on a tablet."
     }
   },
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "download": "Download",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "seq": "Construction sequence",
+    "view": "View and measure",
+    "select": "Select and filter",
+    "share": "Sharing",
+    "desktop": "Desktop app",
+    "all": "All features"
+  },
+  "f": {
+    "player": {
+      "title": "Play and step",
+      "desc": "Play, pause, previous and next phase, or jump to a phase with the slider."
+    },
+    "speed": {
+      "title": "Your own pace",
+      "desc": "Choose two seconds down to a quarter of a second per phase."
+    },
+    "ghost": {
+      "title": "Done, in progress, to do",
+      "desc": "Placed parts in their own colour, the current phase orange, the rest transparent."
+    },
+    "mark": {
+      "title": "Order from the mark number",
+      "desc": "Reads the mark from the IFC properties or from Revit, including the CLT marks of timber elements."
+    },
+    "section": {
+      "title": "Section box",
+      "desc": "Cut the model on six sides and move or rotate the box."
+    },
+    "explode": {
+      "title": "Exploded view",
+      "desc": "Pull the elements apart with a slider."
+    },
+    "measure": {
+      "title": "Measuring",
+      "desc": "Distance, perpendicular distance and area, also on a tablet."
+    },
+    "theme": {
+      "title": "Day and night",
+      "desc": "A light or dark view, with one button."
+    },
+    "zoom": {
+      "title": "Zoom and reset",
+      "desc": "Zoom to the whole model, or reset section, measurements and explode in one go."
+    },
+    "click": {
+      "title": "Click an element",
+      "desc": "See its name and mark number, and isolate or hide the element."
+    },
+    "multi": {
+      "title": "Several elements at once",
+      "desc": "With Ctrl or Shift, or with the multi-select button on a tablet."
+    },
+    "menu": {
+      "title": "Right-click menu",
+      "desc": "Isolate, hide and reset from a menu."
+    },
+    "filters": {
+      "title": "Filter by mark and type",
+      "desc": "Search for a mark number, or choose mark ranges per hundred and element types."
+    },
+    "link": {
+      "title": "One link per project",
+      "desc": "Your client opens the model without installing or uploading anything."
+    },
+    "overview": {
+      "title": "Project overview",
+      "desc": "A start page per client with a preview, phase and location per project, search and filtering by type."
+    },
+    "models": {
+      "title": "Several models per project",
+      "desc": "Switch models on or off, or isolate and hide one."
+    },
+    "mobile": {
+      "title": "Tablet and phone",
+      "desc": "Works with touch on site and at the client's home."
+    },
+    "server": {
+      "title": "On our own server",
+      "desc": "The models are stored on OpenAEC's own Speckle server, not with an outside service."
+    },
+    "local": {
+      "title": "Your own IFC files",
+      "desc": "The desktop app opens IFC files from your own computer."
+    },
+    "tabs": {
+      "title": "Several files in tabs",
+      "desc": "Open several models and switch with tabs."
+    },
+    "color": {
+      "title": "Colour by parameter",
+      "desc": "Colour elements by an IFC parameter, and play the construction sequence on a parameter of your choice."
+    }
+  },
+  "features": {
+    "label": "Features",
+    "heading": "From model to assembly order, readable for everyone",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "download": {
+    "title": "Download v1.0.1",
+    "lead": "Free, no account needed. For Windows, macOS and Linux.",
+    "forWindows": "Download for Windows",
+    "forMac": "Download for macOS",
+    "forLinux": "Download for Linux",
+    "metaWindows": ".exe installer",
+    "metaMacArm": ".dmg for Apple Silicon",
+    "metaLinux": "AppImage, runs on most distributions",
+    "browserBtn": "Open in browser",
+    "fileExe": "Installer (.exe)",
+    "fileMsi": "Installer (.msi)",
+    "fileDmgArm": ".dmg (Apple Silicon)",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "browserNote": "Rather not install anything? The app also <a href=\"https://monty-ifc-viewer.open-aec.com/\" target=\"_blank\" rel=\"noopener\">runs in the browser</a>.",
+    "label": "Download",
+    "mobileNote": "Monty IFC Viewer is made for a large screen. Open it on your computer, or try it here in the browser.",
+    "other": "Other platforms"
+  },
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "ctaDemo": "Try it in the browser",
+    "items": {
+      "ifc": {
+        "title": "IFC in 3D",
+        "desc": "Open an IFC file and orbit, zoom and pan around the model."
+      },
+      "sequence": {
+        "title": "Construction sequence",
+        "desc": "Play the sequence step by step on an IFC parameter you choose."
+      },
+      "color": {
+        "title": "Colour by parameter",
+        "desc": "Elements get a colour per value of a parameter."
+      },
+      "tabs": {
+        "title": "Several files",
+        "desc": "Several models open at once, each in its own tab."
+      }
+    },
+    "label": "New in v1.0.1",
+    "title": "The viewer <span>on your own computer</span>",
+    "desc": "Version 1.0 is the desktop app for Windows, macOS and Linux. Open IFC files from your own computer without sharing them first."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "IFC models from any BIM program, such as Revit, Archicad or Tekla. The web version shows models stored on the Speckle server: as an uploaded IFC file or sent straight from Revit with the Speckle connector. The desktop app opens IFC files from your own computer."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "No. Anyone with a link opens the model straight in the browser, also on a tablet or phone. To open your own IFC files without sharing them, install the desktop app."
+    },
+    "price": {
+      "q": "What does Monty IFC Viewer cost?",
+      "a": "Nothing. Viewing is free and needs no account, and the source code is public on GitHub."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "The web version runs in any modern browser, on computer, tablet and phone. The desktop app is available for Windows (.exe and .msi), macOS on Apple Silicon (.dmg) and Linux (.deb, .rpm and AppImage)."
+    },
+    "practice": {
+      "q": "Does it fit building practice?",
+      "a": "Yes. It works with IFC, the open standard for BIM, and takes the order from the mark number you already fill in in Revit or in the IFC properties. For timber construction it also reads the marks of CLT elements."
+    },
+    "own": {
+      "q": "How do I put my own model in the web version?",
+      "a": "The model goes onto OpenAEC's Speckle server, as an IFC upload or from Revit. The project then gets its own link and a place on your client's project page. Contact us to set this up."
+    },
+    "drop": {
+      "q": "Can I open an IFC file straight in the web version?",
+      "a": "Not yet. The web version shows shared models from the server. For a single file from your own computer, use the desktop app."
+    },
+    "props": {
+      "q": "Can I see all properties of an element?",
+      "a": "Not yet for IFC models in the web version: there the panel shows the name and the mark number. For models sent straight from Revit you also see the parameters per group."
+    },
+    "difference": {
+      "q": "What is the difference between the web version and the desktop app?",
+      "a": "The web version is made for sharing: a link, a project overview, measuring, section box and filters, and it works on a tablet. The desktop app (version 1.0) opens single IFC files from your own computer and colours elements by a parameter."
+    },
+    "heading": "Frequently asked questions"
+  },
   "tech": {
-    "heading": "Tech stack",
-    "threejs": {
-      "title": "Three.js",
-      "desc": "3D rendering engine for interactive model visualization."
+    "speckle": {
+      "title": "Speckle Viewer",
+      "desc": "Speckle's open-source 3D viewer for display, filters, measurements, section and explode, used through its public API."
     },
-    "webifc": {
-      "title": "web-ifc",
-      "desc": "IFC parsing library by IFCjs for reading Industry Foundation Classes files."
+    "server": {
+      "title": "Own Speckle server",
+      "desc": "Models and versions live on speckle.open-aec.com, with IFC import and the Revit connector."
     },
-    "vanilla": {
-      "title": "Vanilla JavaScript",
-      "desc": "No framework dependencies. Lightweight and fast."
+    "three": {
+      "title": "Three.js and WebGL",
+      "desc": "Smooth 3D in the browser, without a plug-in."
     },
-    "author": "Created by Piet Mol"
+    "ts": {
+      "title": "TypeScript and Vite",
+      "desc": "Strict, modular code without a framework, built into a static site."
+    },
+    "touch": {
+      "title": "Built for touch",
+      "desc": "Buttons, selection and measuring also work with a finger on tablet and phone."
+    },
+    "desktop": {
+      "title": "Desktop with web-ifc",
+      "desc": "The desktop app reads IFC files locally with web-ifc, with signed downloads."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
   },
-  "cta": {
-    "github": "GitHub"
-  },
-  "footer": {
-    "slogan": "Build free. Build together."
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }

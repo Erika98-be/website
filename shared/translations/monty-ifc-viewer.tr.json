@@ -1,53 +1,278 @@
 {
   "header": {
-    "label": "BIM / IFC görüntüleyici",
     "title": "Monty <span class=\"accent\">IFC</span> Viewer",
-    "desc": "İnşaat sırası görselleştirmesi ile web tabanlı IFC görüntüleyici. IFC dosyalarını yükleyin, inşaat sırasını adım adım canlandırın ve eleman özelliklerini inceleyin.",
-    "downloadBtn": "v1.0.1 indir",
-    "demoBtn": "Canlı demo"
+    "demoBtn": "Tarayıcıda aç",
+    "downloadBtn": "İndir",
+    "sourceBtn": "Kaynak kodu",
+    "proof2": "Tarayıcı, tablet ve telefon",
+    "proof3": "Masaüstü: Windows · macOS · Linux",
+    "proof4": "Ücretsiz, hesap gerekmez",
+    "heroAlt": "Monty IFC Viewer: inşaat sırasının yarısındaki ahşap bir ev; inşa edilen kısımlar renkli, sonraki aşama turuncu, geri kalanı saydam, altta oynatıcı",
+    "label": "BIM ve IFC görüntüleyici",
+    "tagline": "İnşaat sırasını işvereninize tek bir bağlantıyla gösterin",
+    "desc": "Paylaşılan bir modeli bilgisayarınızda, tabletinizde veya telefonunuzda tarayıcıda açın. Montaj sırasını aşama aşama oynatın, işarete veya türe göre filtreleyin ve kesit kutusuyla binanın içine bakın."
   },
-  "download": {
-    "title": "v1.0.1 indir"
+  "meta": {
+    "description": "İnşaat sırasını oynatan, tarayıcıda çalışan ücretsiz IFC görüntüleyici. Modelinizin bağlantısını paylaşın ve işvereninize binanın aşama aşama nasıl yükseldiğini filtreler, kesit kutusu ve patlatılmış görünümle gösterin. Windows, macOS ve Linux için masaüstü uygulaması olarak da mevcut.",
+    "title": "Monty IFC Viewer — OpenAEC Foundation"
   },
-  "features": {
-    "heading": "Özellikler",
-    "loading": {
-      "title": "IFC dosya yükleme",
-      "desc": "IFC dosyalarını görüntüleyiciye sürükleyip bırakın veya dosya seçiciyi kullanın. web-ifc kütüphanesi ile ayrıştırılır."
-    },
-    "visualization": {
-      "title": "3D görselleştirme",
-      "desc": "Three.js ile BIM modellerinin etkileşimli 3D render'ı. Modelin etrafında yakınlaştırın, kaydırın ve döndürün."
-    },
+  "hl": {
     "sequence": {
-      "title": "İnşaat sırası animasyonu",
-      "desc": "Oynat, duraklat, önceki ve sonraki kontrolleri ile inşaat sırasını adım adım görselleştirin. Sırayı hangi IFC parametresinin yönlendireceğini seçin."
+      "alt": "Gece modunda inşaat sırası: yerleştirilen parçalar gri, 303 işaretli eleman turuncu, binanın geri kalanı saydam",
+      "kicker": "İnşaat sırası",
+      "title": "Binanın nasıl yükseldiğini gösterin",
+      "desc": "Montajı oynatın veya kaydırıcıyla modelde aşama aşama ilerleyin. Yerine konmuş olanlar rengini korur, mevcut aşama turuncu yanar, gelecek olanlar saydamdır. Sıra, her elemanın işaret numarasından (Mark) gelir."
     },
-    "properties": {
-      "title": "Eleman özellikleri",
-      "desc": "Seçmek ve vurgulamak için herhangi bir elemana tıklayın. Seçilen elemanın tüm IFC özelliklerini görüntüleyin."
+    "filter": {
+      "alt": "100–199 ve 300–399 işaret aralıkları işaretli filtre paneli; yalnızca bu elemanlar renkli, geri kalanı saydam",
+      "kicker": "Filtreleme",
+      "title": "Yalnızca ihtiyacınız olanı görün",
+      "desc": "Bir elemanı işaret numarasıyla arayın veya işaret aralıklarını ve eleman türlerini işaretleyin. Modelin geri kalanı saydamlaşır, böylece bu parçaların nerede olduğunu görürsünüz."
+    },
+    "section": {
+      "alt": "Model etrafında kesit kutusu, duvarlar kesilmiş halde kat döşemesine kadar indirilmiş",
+      "kicker": "Kesit",
+      "title": "Binanın içine bakın",
+      "desc": "Modelin etrafına bir kesit kutusu koyun ve yüzeylerini oklarla kaydırın. Bir katı kaldırın ve altındaki yerleşimi ve duvarları görün."
+    },
+    "explode": {
+      "alt": "Patlatılmış görünüm: evin duvar ve döşeme elemanları biraz ayrılmış, altta kaydırıcı",
+      "kicker": "Patlatma",
+      "title": "Modeli parçalarına ayırın",
+      "desc": "Patlatılmış görünüm tüm elemanları seçtiğiniz kadar birbirinden uzaklaştırır. Prefabrik veya ahşap bir projenin hangi parçalardan oluştuğunu göstermek için ideal."
+    },
+    "select": {
+      "alt": "Evin altındaki bir kiriş tıklanmış ve açık mavi; sağda adı, 147 işareti ve Yalıt, Gizle ve Sıfırla düğmeleriyle panel",
+      "kicker": "Seçim",
+      "title": "Bir parçaya tıklayın ve ayırın",
+      "desc": "Bir elemana dokunun, adını ve işaret numarasını görün. Tek düğmeyle yalıtın veya gizleyin ya da aynı anda birden fazlasını seçin; tablette dokunarak da."
     }
   },
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "download": "İndir",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "seq": "İnşaat sırası",
+    "view": "Görüntüleme ve ölçüm",
+    "select": "Seçme ve filtreleme",
+    "share": "Paylaşım",
+    "desktop": "Masaüstü uygulaması",
+    "all": "Tüm özellikler"
+  },
+  "f": {
+    "player": {
+      "title": "Oynatma ve adım adım",
+      "desc": "Oynat, duraklat, önceki ve sonraki aşama veya kaydırıcıyla doğrudan bir aşamaya git."
+    },
+    "speed": {
+      "title": "Kendi hızınızda",
+      "desc": "Aşama başına iki saniyeden çeyrek saniyeye kadar seçin."
+    },
+    "ghost": {
+      "title": "Bitti, sürüyor, yapılacak",
+      "desc": "Yerleştirilen parçalar kendi renginde, mevcut aşama turuncu, geri kalanı saydam."
+    },
+    "mark": {
+      "title": "İşaret numarasından sıra",
+      "desc": "İşareti IFC özelliklerinden veya Revit'ten okur; ahşap elemanların CLT işaretleri dahil."
+    },
+    "section": {
+      "title": "Kesit kutusu",
+      "desc": "Modeli altı yandan kesin, kutuyu kaydırın veya döndürün."
+    },
+    "explode": {
+      "title": "Patlatılmış görünüm",
+      "desc": "Elemanları bir kaydırıcıyla ayırın."
+    },
+    "measure": {
+      "title": "Ölçüm",
+      "desc": "Mesafe, dik mesafe ve alan; tablette de."
+    },
+    "theme": {
+      "title": "Gündüz ve gece",
+      "desc": "Tek düğmeyle açık veya koyu görünüm."
+    },
+    "zoom": {
+      "title": "Yakınlaştırma ve sıfırlama",
+      "desc": "Tüm modele yakınlaşın veya kesit, ölçüm ve patlatmayı tek seferde sıfırlayın."
+    },
+    "click": {
+      "title": "Elemana tıklama",
+      "desc": "Adını ve işaret numarasını görün, elemanı yalıtın veya gizleyin."
+    },
+    "multi": {
+      "title": "Aynı anda birden çok eleman",
+      "desc": "Ctrl veya Shift ile ya da tablette çoklu seçim düğmesiyle."
+    },
+    "menu": {
+      "title": "Sağ tık menüsü",
+      "desc": "Bir menüden yalıtma, gizleme ve sıfırlama."
+    },
+    "filters": {
+      "title": "İşarete ve türe göre filtreleme",
+      "desc": "Bir işaret numarası arayın veya yüzerli işaret aralıklarını ve eleman türlerini seçin."
+    },
+    "link": {
+      "title": "Proje başına bir bağlantı",
+      "desc": "İşvereniniz hiçbir şey yüklemeden modeli açar."
+    },
+    "overview": {
+      "title": "Proje genel görünümü",
+      "desc": "Her işveren için proje başına önizleme, aşama ve konum içeren, arama ve türe göre filtrelemeli bir başlangıç sayfası."
+    },
+    "models": {
+      "title": "Proje başına birden çok model",
+      "desc": "Modelleri açıp kapatın veya birini yalıtın ve gizleyin."
+    },
+    "mobile": {
+      "title": "Tablet ve telefon",
+      "desc": "Şantiyede ve işverenin evinde dokunmatik olarak çalışır."
+    },
+    "server": {
+      "title": "Kendi sunucumuzda",
+      "desc": "Modeller harici bir hizmette değil, OpenAEC'in Speckle sunucusunda saklanır."
+    },
+    "local": {
+      "title": "Kendi IFC dosyalarınız",
+      "desc": "Masaüstü uygulaması kendi bilgisayarınızdaki IFC dosyalarını açar."
+    },
+    "tabs": {
+      "title": "Sekmelerde birden çok dosya",
+      "desc": "Birden çok model açın ve sekmelerle geçiş yapın."
+    },
+    "color": {
+      "title": "Parametreye göre renklendirme",
+      "desc": "Elemanları bir IFC parametresine göre renklendirin ve inşaat sırasını seçtiğiniz bir parametreye göre oynatın."
+    }
+  },
+  "features": {
+    "label": "Özellikler",
+    "heading": "Modelden montaj sırasına, herkesin anlayabileceği şekilde",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "download": {
+    "title": "v1.0.1 indir",
+    "lead": "Ücretsiz, hesap gerekmez. Windows, macOS ve Linux için.",
+    "forWindows": "Windows için indir",
+    "forMac": "macOS için indir",
+    "forLinux": "Linux için indir",
+    "metaWindows": ".exe yükleyici",
+    "metaMacArm": "Apple Silicon için .dmg",
+    "metaLinux": "AppImage, çoğu dağıtımda çalışır",
+    "browserBtn": "Tarayıcıda aç",
+    "fileExe": "Yükleyici (.exe)",
+    "fileMsi": "Yükleyici (.msi)",
+    "fileDmgArm": ".dmg (Apple Silicon)",
+    "fileDeb": ".deb",
+    "fileRpm": ".rpm",
+    "fileAppImage": "AppImage",
+    "browserNote": "Hiçbir şey kurmak istemiyor musunuz? Uygulama <a href=\"https://monty-ifc-viewer.open-aec.com/\" target=\"_blank\" rel=\"noopener\">tarayıcıda da çalışır</a>.",
+    "label": "İndir",
+    "mobileNote": "Monty IFC Viewer büyük ekran için yapılmıştır. Bilgisayarınızda açın veya burada tarayıcıda deneyin.",
+    "other": "Diğer platformlar"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDemo": "Tarayıcıda deneyin",
+    "items": {
+      "ifc": {
+        "title": "3B'de IFC",
+        "desc": "Bir IFC dosyası açın, modelin etrafında döndürün, yakınlaştırın ve kaydırın."
+      },
+      "sequence": {
+        "title": "İnşaat sırası",
+        "desc": "Sırayı seçtiğiniz bir IFC parametresine göre adım adım oynatın."
+      },
+      "color": {
+        "title": "Parametreye göre renk",
+        "desc": "Elemanlar bir parametrenin her değeri için bir renk alır."
+      },
+      "tabs": {
+        "title": "Birden çok dosya",
+        "desc": "Aynı anda birden çok model açık, her biri kendi sekmesinde."
+      }
+    },
+    "label": "v1.0.1 sürümünde yeni",
+    "title": "Görüntüleyici <span>kendi bilgisayarınızda</span>",
+    "desc": "Sürüm 1.0, Windows, macOS ve Linux için masaüstü uygulamasıdır. Kendi bilgisayarınızdaki IFC dosyalarını önce paylaşmadan açın."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "Revit, Archicad veya Tekla gibi herhangi bir BIM programından IFC modelleri. Web sürümü Speckle sunucusundaki modelleri gösterir: yüklenmiş bir IFC dosyası olarak veya Speckle bağlayıcısıyla doğrudan Revit'ten. Masaüstü uygulaması kendi bilgisayarınızdaki IFC dosyalarını açar."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Hayır. Bağlantıyı alan herkes modeli doğrudan tarayıcıda açar; tablette veya telefonda da. Kendi IFC dosyalarınızı paylaşmadan açmak için masaüstü uygulamasını kurun."
+    },
+    "price": {
+      "q": "Monty IFC Viewer ne kadar?",
+      "a": "Hiçbir şey. Görüntüleme ücretsizdir ve hesap gerektirmez; kaynak kodu GitHub'da herkese açıktır."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Web sürümü bilgisayar, tablet ve telefonda her modern tarayıcıda çalışır. Masaüstü uygulaması Windows (.exe ve .msi), Apple Silicon'lu macOS (.dmg) ve Linux (.deb, .rpm ve AppImage) için mevcuttur."
+    },
+    "practice": {
+      "q": "İnşaat pratiğine uygun mu?",
+      "a": "Evet. BIM için açık standart olan IFC ile çalışır ve sırayı Revit'te veya IFC özelliklerinde zaten doldurduğunuz işaret numarasından (Mark) alır. Ahşap yapılar için CLT elemanlarının işaretlerini de okur."
+    },
+    "own": {
+      "q": "Kendi modelimi web sürümüne nasıl koyarım?",
+      "a": "Model, IFC yüklemesi olarak veya Revit'ten OpenAEC'in Speckle sunucusuna konur. Ardından proje kendi bağlantısını ve işvereninizin proje sayfasında bir yer alır. Bunu kurmak için bize ulaşın."
+    },
+    "drop": {
+      "q": "Bir IFC dosyasını doğrudan web sürümünde açabilir miyim?",
+      "a": "Henüz değil. Web sürümü sunucudaki paylaşılan modelleri gösterir. Kendi bilgisayarınızdaki tek bir dosya için masaüstü uygulamasını kullanın."
+    },
+    "props": {
+      "q": "Bir elemanın tüm özelliklerini görebilir miyim?",
+      "a": "Web sürümündeki IFC modelleri için henüz değil: orada panel adı ve işaret numarasını gösterir. Doğrudan Revit'ten gelen modellerde parametreleri gruplar halinde de görürsünüz."
+    },
+    "difference": {
+      "q": "Web sürümü ile masaüstü uygulaması arasındaki fark nedir?",
+      "a": "Web sürümü paylaşım için yapılmıştır: bir bağlantı, proje genel görünümü, ölçüm, kesit ve filtreler; tablette de çalışır. Masaüstü uygulaması (sürüm 1.0) kendi bilgisayarınızdaki IFC dosyalarını açar ve elemanları bir parametreye göre renklendirir."
+    },
+    "heading": "Sık sorulan sorular"
+  },
   "tech": {
-    "heading": "Teknoloji stack'i",
-    "threejs": {
-      "title": "Three.js",
-      "desc": "Etkileşimli model görselleştirme için 3D render motoru."
+    "speckle": {
+      "title": "Speckle Viewer",
+      "desc": "Görüntüleme, filtreler, ölçümler, kesit ve patlatma için Speckle'ın açık kaynaklı 3B görüntüleyicisi; genel API'si üzerinden kullanılır."
     },
-    "webifc": {
-      "title": "web-ifc",
-      "desc": "Industry Foundation Classes dosyalarını okumak için IFCjs tarafından sunulan IFC ayrıştırma kütüphanesi."
+    "server": {
+      "title": "Kendi Speckle sunucusu",
+      "desc": "Modeller ve sürümler, IFC içe aktarma ve Revit bağlayıcısıyla speckle.open-aec.com üzerinde durur."
     },
-    "vanilla": {
-      "title": "Vanilla JavaScript",
-      "desc": "Framework bağımlılığı yok. Hafif ve hızlı."
+    "three": {
+      "title": "Three.js ve WebGL",
+      "desc": "Tarayıcıda eklentisiz akıcı 3B."
     },
-    "author": "Piet Mol tarafından oluşturuldu"
+    "ts": {
+      "title": "TypeScript ve Vite",
+      "desc": "Çerçevesiz, katı ve modüler kod; statik bir siteye derlenir."
+    },
+    "touch": {
+      "title": "Dokunmatik için tasarlandı",
+      "desc": "Düğmeler, seçim ve ölçüm tablet ve telefonda parmakla da çalışır."
+    },
+    "desktop": {
+      "title": "web-ifc ile masaüstü",
+      "desc": "Masaüstü uygulaması IFC dosyalarını web-ifc ile yerel olarak okur; indirmeler imzalıdır."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
   },
-  "cta": {
-    "github": "GitHub &rarr;"
-  },
-  "footer": {
-    "slogan": "Özgürce inşa edin. Birlikte inşa edelim."
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }
