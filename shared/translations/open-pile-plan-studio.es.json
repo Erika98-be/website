@@ -1,102 +1,276 @@
 {
   "header": {
-    "label": "Ecosistema OpenAEC",
     "title": "Open <span class=\"accent\">Pile Plan</span> Studio",
-    "desc": "Herramienta de ingeniería de código abierto para planos de pilotes. Reúne puntos de carga, CPT, informes de cimentación, opciones de pilote, aprovechamiento y costes estimados en un único plano de pilotes interactivo.",
-    "badge": "Alpha",
-    "gww": "Obra civil / Geotecnia",
-    "caution": "Los resultados de ingeniería son un apoyo a la decisión y deben ser verificados siempre por un profesional cualificado."
+    "demoBtn": "Abrir en el navegador",
+    "downloadBtn": "Descargar",
+    "sourceBtn": "Código fuente",
+    "proof2": "Neerlandés e inglés",
+    "proof3": "Navegador · Windows",
+    "proof4": "Gratis · LGPL-3.0",
+    "heroAlt": "Open Pile Plan Studio: plano de pilotes de un centro de distribución de ejemplo con zonas de color por cota de punta y, a la derecha, las opciones de pilotes del pilar seleccionado",
+    "label": "Cimentaciones",
+    "tagline": "De cargas y ensayos CPT a un plano de pilotes bien fundamentado",
+    "desc": "Importa los puntos de carga, los ensayos CPT y el informe de cimentación y ve para cada punto qué pilote encaja, cuánto cuesta y cuánto trabaja. Asigna opciones, deja que la aplicación busque la variante coherente más económica y exporta el plano a Excel."
   },
-  "cta": {
-    "liveDemo": "Abrir la demo en el navegador",
-    "releases": "Descargar",
-    "github": "GitHub"
+  "meta": {
+    "description": "Aplicación gratuita y de código abierto para planos de pilotes: puntos de carga, ensayos CPT e informe de cimentación en un solo plano, con opciones de pilotes, aprovechamiento, costes y optimización. En el navegador y para Windows.",
+    "title": "Open Pile Plan Studio — OpenAEC Foundation"
   },
-  "download": {
-    "title": "Descargar",
-    "action": "Descargar"
+  "hl": {
+    "cpt": {
+      "alt": "Pilar seleccionado con líneas a cuatro ensayos en el dibujo y, a la derecha, una tabla con cuadrante, ensayo, distancia y capacidad portante",
+      "kicker": "Ensayos CPT",
+      "title": "Mira qué ensayos CPT determinan un pilote",
+      "desc": "Para cada punto de carga, la aplicación elige los ensayos por cuadrante o dentro de un ángulo máximo, con la distancia y la capacidad portante. Unas líneas en el dibujo muestran qué ensayos cuentan; cambia la elección si lo prefieres."
+    },
+    "optim": {
+      "alt": "Panel de optimización con el resultado: diferencias ponderadas entre vecinos, coste real y número de puntos optimizados, junto al nuevo plano de pilotes",
+      "kicker": "Optimización",
+      "title": "Deja que la aplicación busque el plano coherente más económico",
+      "desc": "La optimización busca el coste más bajo dentro de tus límites de secciones y cotas de punta. Después hace el plano más homogéneo: menos diferencias entre vecinos, dentro de un pequeño presupuesto adicional. Ves si el resultado está demostrado como óptimo."
+    },
+    "cap": {
+      "alt": "Propuesta de encepado de cuatro pilotes bajo un pilar del núcleo de ascensor, con las opciones de pilotes y el coste total",
+      "kicker": "Encepados",
+      "title": "Prueba más pilotes bajo un encepado",
+      "desc": "Propón un encepado de 1 a 20 pilotes para un punto o grupo y ve al instante qué opciones encajan y cuánto cuestan. La propuesta se guarda con el plano; un resumen recoge todos los cambios."
+    },
+    "export": {
+      "alt": "Pantalla de exportación con los ajustes de columnas del plano y una vista previa con punto, coordenadas, carga, sección, cota de punta y ensayos",
+      "kicker": "Exportar",
+      "title": "Una tabla de pilotes como tú la quieres",
+      "desc": "Elige qué plano de pilotes exportar, qué columnas lleva, en qué orden y cómo se llaman. Ves la tabla al instante en una vista previa y la guardas como Excel o CSV. Una tabla de cambios la compara con una versión anterior."
+    },
+    "data": {
+      "alt": "Tabla de puntos de carga: ID, X, Y y FEd por punto, con las opciones de pilotes del punto seleccionado a la derecha",
+      "kicker": "Datos de entrada",
+      "title": "Tus propias tablas como punto de partida",
+      "desc": "Importa puntos de carga, ensayos CPT e informe de cimentación desde CSV o Excel, también directamente desde una exportación de RFEM. Cada fuente queda como tabla en el proyecto. Si cambia el modelo, actualiza la fuente: las elecciones vinculadas pasan a los nuevos puntos."
+    }
   },
-  "what": {
-    "title": "¿Qué es Open Pile Plan Studio?",
-    "desc": "Open Pile Plan Studio es una herramienta de ingeniería de código abierto para revisar opciones de pilote y componer variantes prácticas. Reúne cargas estructurales, CPT cercanos y configuraciones disponibles en el navegador y la aplicación de Windows, con el mismo núcleo de cálculo en Rust.",
-    "list1": "Importa puntos de carga, CPT e informes de cimentación desde CSV/XLSX (incl. exportaciones de RFEM)",
-    "list2": "Opciones de pilote válidas, insuficientes y ausentes por punto de carga",
-    "list3": "Selección de CPT por cuadrante o ángulo máximo, con anulación manual",
-    "list4": "Compara aprovechamiento, resistencia determinante y coste estimado",
-    "list5": "Optimización de costes con HiGHS, límites de configuración y reducción opcional de diferencias entre vecinos",
-    "list6": "Guarda el proyecto completo como archivo IFCPP y vuelve a abrirlo más tarde"
+  "notice": {
+    "link": "Informar de un problema",
+    "text": "Versión alfa pública: los resultados apoyan tu diseño, pero haz que siempre los revise un profesional cualificado."
   },
-  "why": {
-    "title": "¿Por qué <span class=\"accent\">Open Pile Plan</span> Studio?",
-    "desc1": "Componer un plano de pilotes suele ser un trabajo manual repartido entre hojas de cálculo, informes de cimentación y planos. Open Pile Plan Studio reúne esa información en un único espacio de trabajo interactivo: selecciona puntos de carga, consulta las configuraciones válidas y registra las decisiones de forma trazable.",
-    "desc2": "Gratuito y de código abierto, para ingenieros estructurales, consultores geotécnicos y especialistas en cimentaciones. La demo en el navegador se abre con un proyecto de ejemplo completo, así que puedes explorar el flujo de trabajo sin ninguna preparación."
+  "subnav": {
+    "label": "En esta página",
+    "features": "Funciones",
+    "download": "Descargar",
+    "whatsnew": "Novedades",
+    "faq": "Preguntas",
+    "releases": "Versiones"
+  },
+  "tabs": {
+    "highlights": "Destacados",
+    "options": "Opciones de pilotes",
+    "cpt": "Ensayos CPT",
+    "optim": "Optimización",
+    "data": "Importar y exportar",
+    "all": "Todas las funciones"
   },
   "features": {
-    "title": "Funciones",
-    "import": {
-      "title": "Importación de proyecto orientada",
-      "desc": "Importa puntos de carga, coordenadas de CPT e informes de cimentación desde archivos CSV o XLSX y asigna los tres roles de origen antes de la importación. Las exportaciones de RFEM se detectan automáticamente."
-    },
-    "selection": {
-      "title": "Selección de CPT",
-      "desc": "Selecciona CPT automáticamente mediante reglas de cuadrante o de ángulo máximo y anula la elección manualmente para puntos de carga individuales."
-    },
+    "learnMore": "Leer más",
+    "label": "Funciones",
+    "heading": "Todo para el plano de pilotes, en un solo dibujo",
+    "sub": "Empieza por lo más destacado o elige un tema.",
+    "tabsLabel": "Funciones por tema"
+  },
+  "f": {
     "options": {
-      "title": "Comparación de opciones de pilote",
-      "desc": "Revisa las opciones de pilote válidas, insuficientes y ausentes por ubicación con tamaño, cota de punta y CPT determinante."
-    },
-    "assign": {
-      "title": "Asignar a uno o a varios",
-      "desc": "Asigna una configuración a un punto de carga o a una selección múltiple con opciones comunes."
+      "title": "Opciones de pilotes por punto",
+      "desc": "Para cada punto, todas las combinaciones de sección y cota de punta: válida, insuficiente o sin informe, con el ensayo determinante."
     },
     "compare": {
       "title": "Aprovechamiento y coste",
-      "desc": "Compara el aprovechamiento, el CPT determinante y el coste estimado antes de registrar una configuración."
+      "desc": "Compara aprovechamiento, capacidad portante y coste estimado antes de elegir un pilote. Ordena y filtra cada columna."
     },
-    "optimize": {
-      "title": "Optimización del plano",
-      "desc": "Usa HiGHS para reducir costes con límites de configuración y, opcionalmente, las diferencias entre ubicaciones vecinas dentro de un presupuesto. La mejora rápida ofrece una alternativa local."
+    "multi": {
+      "title": "Una elección para muchos puntos",
+      "desc": "Selecciona con clic, con Mayús o con un lazo; la tabla muestra entonces las opciones comunes a todos los puntos."
     },
-    "interact": {
-      "title": "Selección interactiva",
-      "desc": "Selecciona ubicaciones con clic, selección múltiple o lazo y filtra por tamaño de pilote y cota de punta en la leyenda."
+    "groups": {
+      "title": "Grupos",
+      "desc": "Agrupa puntos para que reciban el mismo pilote. Los grupos con elecciones contradictorias se marcan en rojo."
     },
-    "project": {
-      "title": "Archivo de proyecto IFCPP",
-      "desc": "Mantén juntos los datos importados, la configuración, las elecciones de pilote y las selecciones manuales de CPT, y vuelve a abrir el proyecto completo más tarde."
+    "cap": {
+      "title": "Propuestas de encepado",
+      "desc": "Prueba de 1 a 20 pilotes bajo un encepado, con opciones y costes orientativos. Restablecerlo todo es un solo paso."
+    },
+    "lock": {
+      "title": "Bloquear elecciones",
+      "desc": "Bloquea elecciones fijas por plano de pilotes; la optimización las respeta."
+    },
+    "legend": {
+      "title": "Leyenda y visualización",
+      "desc": "Filtra por sección y cota de punta, ajusta símbolos y colores y elige qué columnas ves."
+    },
+    "cptauto": {
+      "title": "Selección automática de ensayos",
+      "desc": "Por cuadrante o dentro de un ángulo máximo, con una distancia límite."
+    },
+    "cptmanual": {
+      "title": "Cambiar a mano",
+      "desc": "Cambia los ensayos de un punto o de toda una selección a la vez y vuelve a la elección automática cuando quieras."
+    },
+    "advice": {
+      "title": "Combinar informes de cimentación",
+      "desc": "Varios archivos y hojas de informe en un proyecto, también como tabla con una columna por sección. Se señalan los valores contradictorios."
+    },
+    "optim": {
+      "title": "Coste mínimo",
+      "desc": "La optimización encuentra la asignación más económica dentro de límites de secciones, cotas de punta y configuraciones."
+    },
+    "coherence": {
+      "title": "Un plano más homogéneo",
+      "desc": "Menos diferencias de cota de punta y sección entre vecinos, dentro de un presupuesto (5 % extra por defecto)."
+    },
+    "quick": {
+      "title": "Mejora rápida",
+      "desc": "Una mejora local rápida como alternativa al cálculo completo. Siempre ves si un resultado está demostrado como óptimo."
+    },
+    "variants": {
+      "title": "Varios planos de pilotes",
+      "desc": "Guarda variantes en paralelo en un proyecto, con el coste total de cada plano."
+    },
+    "import": {
+      "title": "CSV, Excel y RFEM",
+      "desc": "Asigna un papel a cada archivo antes de importar. Se reconoce una exportación de RFEM; primero ves una vista previa con los posibles errores."
+    },
+    "refresh": {
+      "title": "Actualizar fuentes",
+      "desc": "¿Cargas nuevas del modelo? Vincula puntos antiguos y nuevos en un dibujo grande; elecciones y bloqueos se trasladan."
+    },
+    "importplan": {
+      "title": "Importar un plano existente",
+      "desc": "Una tabla de Excel o CSV se convierte en un nuevo plano, vinculado por ID o coordenada, con una comprobación previa."
     },
     "export": {
-      "title": "Exportación a Excel/CSV",
-      "desc": "Exporta las asignaciones de pilotes actuales y los CPT seleccionados a Excel o CSV para informes y coordinación."
+      "title": "Tabla de pilotes a Excel o CSV",
+      "desc": "Tus columnas, orden y encabezados, numeración y unidades, con vista previa en directo."
     },
-    "pileImport": {
-      "title": "Importación de un plano de pilotes existente",
-      "desc": "Actualiza un proyecto activo desde una tabla Excel/CSV, incluidos archivos heredados, con validación de ID y coordenadas y una vista previa antes de la importación."
+    "change": {
+      "title": "Tabla de cambios",
+      "desc": "Compara con una tabla anterior: movido, otra sección, otra cota, añadido o eliminado, con códigos que eliges tú."
     },
-    "webdesktop": {
-      "title": "Navegador y escritorio",
-      "desc": "El mismo núcleo de cálculo en Rust se ejecuta mediante WebAssembly en el navegador y de forma nativa en la aplicación de escritorio para Windows (Tauri 2). La aplicación de Windows también ofrece acceso MCP local para asistentes de IA como ChatGPT Desktop y Claude Desktop, con controles separados para la lectura y la edición."
+    "ifcpp": {
+      "title": "Todo en un archivo de proyecto",
+      "desc": "Fuentes, ajustes, elecciones y variantes en un archivo IFCPP, con deshacer y recuperación tras un fallo del navegador."
     },
-    "sample": {
-      "title": "Explora de inmediato",
-      "desc": "La demo en el navegador se abre con un proyecto de ejemplo completo, así que puedes investigar el flujo de trabajo sin preparación."
-    },
-    "showAll": "Mostrar todas las funciones",
-    "showLess": "Mostrar menos"
+    "mcp": {
+      "title": "Asistente de IA (Windows)",
+      "desc": "Conecta ChatGPT Desktop o Claude Desktop al proyecto abierto. La lectura y la edición se activan por separado."
+    }
   },
-  "workflow": {
-    "title": "Flujo de trabajo: tres pasos hacia un proyecto trazable",
-    "step1": "<strong>Combina las fuentes</strong>: importa puntos de carga, CPT e informes de cimentación y verifica su rol.",
-    "step2": "<strong>Evalúa las opciones</strong>: inspecciona la planta, la selección de CPT, la capacidad portante, el aprovechamiento y el coste.",
-    "step3": "<strong>Registra las decisiones</strong>: asigna configuraciones, revisa el plano completo y guárdalo todo como proyecto IFCPP."
+  "download": {
+    "title": "Descargar v2026.44.3",
+    "lead": "Gratis y sin cuenta. Para Windows.",
+    "forWindows": "Descargar para Windows",
+    "metaWindows": "instalador .exe",
+    "browserBtn": "Abrir en el navegador",
+    "fileExe": "Instalador (.exe)",
+    "browserNote": "¿Prefieres no instalar nada? La aplicación también <a href=\"https://pile-plan-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">funciona en el navegador</a>.",
+    "label": "Descargar",
+    "mobileNote": "Open Pile Plan Studio está hecho para una pantalla grande. Ábrelo en tu ordenador o pruébalo aquí en el navegador.",
+    "other": "Otras plataformas"
   },
-  "limits": {
-    "title": "Apoyo a la decisión, no responsabilidad de diseño automatizada",
-    "desc1": "Open Pile Plan Studio es actualmente una alfa pública. La selección configurable de CPT es una aproximación práctica. Los resultados indican si la optimalidad quedó demostrada; la mejora rápida es un método local.",
-    "desc2": "Haz que un profesional cualificado verifique siempre dentro del proyecto los datos de entrada, las hipótesis y los resultados de ingeniería. La herramienta apoya las decisiones de ingeniería, pero no sustituye la responsabilidad sobre el diseño de la cimentación."
+  "whatsnew": {
+    "ctaChangelog": "Todas las notas de versión",
+    "ctaDemo": "Pruébalo en el navegador",
+    "items": {
+      "columns": {
+        "title": "Columnas a elección",
+        "desc": "Elige, arrastra y renombra las columnas, y escoge qué plano exportar sin cambiar el plano activo."
+      },
+      "marks": {
+        "title": "Numeración de pilotes",
+        "desc": "Numera los pilotes según su posición y da a las cotas de punta un código de letras o números, de mayor a menor o al revés."
+      },
+      "change": {
+        "title": "Tabla de cambios",
+        "desc": "Compara una tabla anterior en CSV o Excel con el nuevo plano; se conservan los números existentes."
+      },
+      "codes": {
+        "title": "Códigos de cambio",
+        "desc": "Una columna con M, S, L, A y R para movido, sección, cota, añadido y eliminado; tú defines los códigos y el umbral."
+      },
+      "review": {
+        "title": "Vincular puntos en un dibujo grande",
+        "desc": "Empieza por los casos abiertos, elige la pareja antigua en el dibujo y pasa solo al siguiente; el resto de una vez por distancia."
+      }
+    },
+    "label": "Novedades de la v2026.44.3",
+    "title": "Tablas de pilotes a medida y <span>tablas de cambios</span>",
+    "desc": "Esta versión hace configurable la exportación, añade tablas de cambios y da a la vinculación de puntos antiguos y nuevos su propio espacio de trabajo amplio."
+  },
+  "faq": {
+    "files": {
+      "q": "¿Qué archivos puedo abrir?",
+      "a": "Puntos de carga, ensayos CPT e informe de cimentación en CSV o Excel (XLSX); las cargas también como exportación de Excel de RFEM. Además proyectos IFCPP y tablas de pilotes existentes en Excel o CSV."
+    },
+    "install": {
+      "q": "¿Tengo que instalar algo?",
+      "a": "No. La versión web se abre directamente con un proyecto de ejemplo. Solo necesitas la aplicación de Windows para el asistente de IA y para abrir archivos IFCPP desde el Explorador."
+    },
+    "cost": {
+      "q": "¿Cuánto cuesta?",
+      "a": "Nada. Open Pile Plan Studio es gratuito y de código abierto con licencia LGPL-3.0, sin cuenta."
+    },
+    "format": {
+      "q": "¿En qué formato se guarda mi trabajo?",
+      "a": "En un archivo IFCPP: un formato de proyecto abierto y legible con todas las fuentes, ajustes, elecciones y variantes. Las tablas de pilotes se exportan a Excel o CSV."
+    },
+    "systems": {
+      "q": "¿En qué sistemas funciona?",
+      "a": "En cualquier navegador moderno, así que también en macOS y Linux, y como aplicación para Windows (64 bits). Aún no hay instaladores para macOS y Linux."
+    },
+    "practice": {
+      "q": "¿Encaja con la práctica habitual?",
+      "a": "Sí. Trabajas con los valores de cálculo que ya tienes: FEd del modelo y Rc;net;d por ensayo, sección y cota de punta del informe de cimentación. El coste de los pilotes por m³ se ajusta por proyecto."
+    },
+    "ai": {
+      "q": "¿Qué puede hacer un asistente de IA con ello?",
+      "a": "La aplicación de Windows puede compartir el proyecto abierto por MCP con, por ejemplo, ChatGPT Desktop o Claude Desktop. El asistente puede consultar datos, comparar planos y lanzar la optimización; la edición se activa por separado. La versión web no tiene MCP."
+    },
+    "capacity": {
+      "q": "¿Calcula la aplicación la capacidad portante por sí misma?",
+      "a": "No, todavía no. La capacidad portante por ensayo procede del informe del geotécnico; la aplicación elige, compara y optimiza a partir de ella."
+    },
+    "optimal": {
+      "q": "¿El resultado de la optimización es siempre el mejor?",
+      "a": "No siempre, y lo ves. El resultado indica si el óptimo está demostrado; con la mejora rápida o un cálculo interrumpido obtienes la mejor solución encontrada."
+    },
+    "try": {
+      "q": "¿Puedo probarlo antes sin mis propios datos?",
+      "a": "Sí. La versión web se abre con un proyecto de ejemplo completo para que explores el flujo de trabajo enseguida."
+    },
+    "heading": "Preguntas frecuentes"
   },
   "tech": {
-    "title": "Tecnología",
-    "desc": "La lógica de ingeniería para importación, opciones de pilote, costes, selección de CPT y optimización reside en el núcleo de cálculo en Rust. Ese mismo núcleo se ejecuta mediante WebAssembly en el navegador y de forma nativa en la aplicación de escritorio Tauri: un único modelo de cálculo, dos plataformas."
+    "rust": {
+      "desc": "El núcleo de cálculo para importación, opciones de pilotes, selección de ensayos, costes y optimización."
+    },
+    "wasm": {
+      "desc": "El mismo núcleo de Rust funciona en el navegador, sin un servidor que calcule."
+    },
+    "react": {
+      "title": "React y TypeScript",
+      "desc": "La interfaz con dibujo, tablas y cinta, igual en el navegador y en el escritorio."
+    },
+    "tauri": {
+      "desc": "Una aplicación de Windows pequeña y firmada, con el núcleo nativo en Rust."
+    },
+    "highs": {
+      "desc": "Solucionador de código abierto para la optimización entera, en el navegador y en el escritorio."
+    },
+    "mcp": {
+      "desc": "Conexión local para asistentes de IA en la aplicación de Windows; los cambios pasan por los mismos controles e historial."
+    },
+    "heading": "Tecnología",
+    "sub": "Para quien quiera saber cómo está hecho."
+  },
+  "releases": {
+    "showAll": "Mostrar todas las versiones",
+    "showLess": "Mostrar solo las tres últimas",
+    "github": "Todas las versiones en GitHub"
   }
 }

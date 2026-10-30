@@ -1,102 +1,276 @@
 {
   "header": {
-    "label": "Écosystème OpenAEC",
     "title": "Open <span class=\"accent\">Pile Plan</span> Studio",
-    "desc": "Outil d'ingénierie open source pour les plans de pieux. Réunissez points de charge, sondages CPT, avis de fondation, options de pieux, taux d'utilisation et coûts estimés dans un plan de pieux interactif.",
-    "badge": "Alpha",
-    "gww": "Génie civil / Géotechnique",
-    "caution": "Les résultats techniques sont une aide à la décision et doivent toujours être vérifiés par un professionnel qualifié."
+    "demoBtn": "Ouvrir dans le navigateur",
+    "downloadBtn": "Télécharger",
+    "sourceBtn": "Code source",
+    "proof2": "Néerlandais et anglais",
+    "proof3": "Navigateur · Windows",
+    "proof4": "Gratuit · LGPL-3.0",
+    "heroAlt": "Open Pile Plan Studio : plan de pieux d'un centre de distribution fictif avec des zones colorées par niveau de pointe et, à droite, les options de pieux du poteau sélectionné",
+    "label": "Fondations",
+    "tagline": "Des charges et des essais au pénétromètre à un plan de pieux étayé",
+    "desc": "Importez les points de charge, les essais et l'avis de fondation, et voyez pour chaque point quel pieu convient, ce qu'il coûte et à quel taux il travaille. Attribuez vos choix, laissez l'application chercher la variante cohérente la moins chère et exportez le plan vers Excel."
   },
-  "cta": {
-    "liveDemo": "Ouvrir la démo navigateur",
-    "releases": "Télécharger",
-    "github": "GitHub"
+  "meta": {
+    "description": "Application gratuite et open source pour les plans de pieux : points de charge, essais au pénétromètre et avis de fondation réunis dans un seul plan, avec options de pieux, taux de travail, coûts et optimisation. Dans le navigateur et pour Windows.",
+    "title": "Open Pile Plan Studio — OpenAEC Foundation"
   },
-  "download": {
-    "title": "Télécharger",
-    "action": "Télécharger"
-  },
-  "what": {
-    "title": "Qu'est-ce qu’Open Pile Plan Studio ?",
-    "desc": "Open Pile Plan Studio est un outil d'ingénierie open source pour évaluer les options de pieux et composer des variantes de plans pragmatiques. Il réunit les charges structurelles, les CPT voisins et les configurations disponibles dans le navigateur et l’application Windows, avec le même cœur de calcul Rust.",
-    "list1": "Import des points de charge, CPT et avis de fondation depuis CSV/XLSX (y compris exports RFEM)",
-    "list2": "Options de pieux valides, insuffisantes et manquantes par point de charge",
-    "list3": "Sélection des CPT par quadrant ou angle maximal, avec surcharge manuelle",
-    "list4": "Comparaison du taux d'utilisation, de la résistance déterminante et du coût estimé",
-    "list5": "Optimisation des coûts avec HiGHS, limites de configuration et réduction facultative des différences entre voisins",
-    "list6": "Enregistrement du projet complet en fichier IFCPP, réouvrable ultérieurement"
-  },
-  "why": {
-    "title": "Pourquoi <span class=\"accent\">Open Pile Plan</span> Studio ?",
-    "desc1": "L'élaboration d'un plan de pieux est souvent un travail manuel dispersé entre tableurs, rapports d'avis de fondation et plans. Open Pile Plan Studio réunit ces informations dans un seul espace de travail interactif : sélectionnez des points de charge, voyez immédiatement quelles configurations sont valides et consignez vos choix de manière traçable.",
-    "desc2": "Gratuit et open source, pour les ingénieurs structure, les consultants géotechniques et les spécialistes des fondations. La démo navigateur s'ouvre avec un projet d'exemple complet, pour explorer la méthode de travail sans aucune préparation."
-  },
-  "features": {
-    "title": "Fonctionnalités",
-    "import": {
-      "title": "Import de projet ciblé",
-      "desc": "Importez points de charge, coordonnées CPT et avis de fondation depuis des fichiers CSV ou XLSX et attribuez les trois rôles sources avant l'import. Les exports RFEM sont détectés automatiquement."
+  "hl": {
+    "cpt": {
+      "alt": "Poteau sélectionné relié à quatre essais sur le dessin et, à droite, un tableau avec quadrant, essai, distance et capacité portante",
+      "kicker": "Essais au pénétromètre",
+      "title": "Voyez quels essais déterminent un pieu",
+      "desc": "Pour chaque point de charge, l'application choisit les essais par quadrant ou dans un angle maximal, avec la distance et la capacité portante. Des lignes sur le dessin montrent les essais retenus ; modifiez le choix si vous le souhaitez."
     },
-    "selection": {
-      "title": "Sélectionner les CPT",
-      "desc": "Sélectionnez les CPT automatiquement par quadrant ou par angle maximal et remplacez la sélection manuellement pour des points de charge individuels."
+    "optim": {
+      "alt": "Panneau Optimisation avec le résultat : écarts pondérés entre voisins, coût réel et nombre de points optimisés, à côté du nouveau plan de pieux",
+      "kicker": "Optimisation",
+      "title": "Laissez l'application chercher le plan cohérent le moins cher",
+      "desc": "L'optimisation cherche le coût le plus bas dans vos limites de sections et de niveaux de pointe. Elle rend ensuite le plan plus homogène : moins d'écarts entre voisins, dans un petit budget supplémentaire. Vous voyez si le résultat est prouvé optimal."
     },
-    "options": {
-      "title": "Comparer les options de pieux",
-      "desc": "Consultez par emplacement les options de pieux valides, insuffisantes et manquantes avec dimension, niveau de pointe et CPT déterminant."
-    },
-    "assign": {
-      "title": "Attribution simple ou en masse",
-      "desc": "Attribuez une configuration à un point de charge ou à une sélection multiple disposant d'options communes."
-    },
-    "compare": {
-      "title": "Utilisation et coûts",
-      "desc": "Comparez le taux d'utilisation, le CPT déterminant et le coût estimé avant de valider une configuration."
-    },
-    "optimize": {
-      "title": "Optimiser le plan",
-      "desc": "Utilisez HiGHS pour réduire les coûts avec des limites de configuration et, en option, les différences entre voisins dans un budget donné. L’amélioration rapide offre une alternative locale."
-    },
-    "interact": {
-      "title": "Sélection interactive",
-      "desc": "Sélectionnez des emplacements par clic, sélection multiple ou lasso et filtrez par dimension de pieu et niveau de pointe dans la légende."
-    },
-    "project": {
-      "title": "Fichier projet IFCPP",
-      "desc": "Conservez ensemble les données importées, les réglages, les choix de pieux et les sélections manuelles de CPT, et rouvrez le projet complet plus tard."
+    "cap": {
+      "alt": "Proposition de semelle à quatre pieux sous un poteau du noyau d'ascenseur, avec les options de pieux et le coût total",
+      "kicker": "Semelles",
+      "title": "Essayez plus de pieux sous une semelle",
+      "desc": "Proposez une semelle de 1 à 20 pieux pour un point ou un groupe et voyez aussitôt quelles options conviennent et ce qu'elles coûtent. La proposition est enregistrée avec le plan ; une vue d'ensemble liste toutes les modifications."
     },
     "export": {
-      "title": "Export vers Excel/CSV",
-      "desc": "Exportez les attributions de pieux actuelles et les CPT sélectionnés vers Excel ou CSV pour le reporting et la coordination."
+      "alt": "Écran d'export avec les réglages de colonnes du plan et un aperçu du tableau : point, coordonnées, charge, section, niveau de pointe et essais",
+      "kicker": "Export",
+      "title": "Un tableau de pieux comme vous le voulez",
+      "desc": "Choisissez le plan de pieux à exporter, ses colonnes, leur ordre et leur nom. Vous voyez aussitôt le tableau en aperçu et l'enregistrez en Excel ou CSV. Un tableau des modifications le compare à une version antérieure."
     },
-    "pileImport": {
-      "title": "Importer un plan de pieux existant",
-      "desc": "Mettez à jour un projet actif depuis un tableau Excel/CSV, y compris des fichiers hérités — avec validation des ID et coordonnées et un aperçu avant import."
-    },
-    "webdesktop": {
-      "title": "Navigateur et bureau",
-      "desc": "Le même cœur de calcul Rust fonctionne via WebAssembly dans le navigateur et nativement dans l'application de bureau Windows (Tauri 2). L’application Windows propose également un accès MCP local aux assistants IA comme ChatGPT Desktop et Claude Desktop, avec des commandes distinctes pour la lecture et la modification."
-    },
-    "sample": {
-      "title": "Explorer immédiatement",
-      "desc": "La démo navigateur s'ouvre avec un projet d'exemple complet, pour étudier la méthode de travail sans préparation."
-    },
-    "showAll": "Afficher toutes les fonctions",
-    "showLess": "Afficher moins"
+    "data": {
+      "alt": "Tableau des points de charge : ID, X, Y et FEd par point, avec à droite les options de pieux du point sélectionné",
+      "kicker": "Données d'entrée",
+      "title": "Vos propres tableaux comme point de départ",
+      "desc": "Importez points de charge, essais et avis de fondation depuis CSV ou Excel, y compris directement depuis un export RFEM. Chaque source reste un tableau dans le projet. Si le modèle change, actualisez la source : les choix liés suivent les nouveaux points."
+    }
   },
-  "workflow": {
-    "title": "Méthode : trois étapes vers un projet traçable",
-    "step1": "<strong>Combiner les sources</strong> Importez points de charge, CPT et avis de fondation et vérifiez leur rôle.",
-    "step2": "<strong>Évaluer les options</strong> Inspectez la vue en plan, la sélection CPT, la portance, l'utilisation et les coûts.",
-    "step3": "<strong>Consigner les choix</strong> Attribuez les configurations, contrôlez l'ensemble et enregistrez tout en projet IFCPP."
+  "notice": {
+    "link": "Signaler un problème",
+    "text": "Version alpha publique : les résultats appuient votre conception, mais faites-les toujours vérifier par un professionnel qualifié."
   },
-  "limits": {
-    "title": "Aide à la décision, pas de responsabilité de conception automatisée",
-    "desc1": "Open Pile Plan Studio est actuellement une alpha publique. La sélection configurable des CPT est une approximation pratique. Les résultats indiquent si l’optimalité est prouvée ; l’amélioration rapide reste une méthode locale.",
-    "desc2": "Faites toujours vérifier les données d'entrée, les hypothèses et les résultats techniques au sein du projet par un professionnel qualifié. L'outil soutient les décisions d'ingénierie mais ne remplace pas la responsabilité de la conception des fondations."
+  "subnav": {
+    "label": "Sur cette page",
+    "features": "Fonctions",
+    "download": "Télécharger",
+    "whatsnew": "Nouveautés",
+    "faq": "FAQ",
+    "releases": "Versions"
+  },
+  "tabs": {
+    "highlights": "Points forts",
+    "options": "Options de pieux",
+    "cpt": "Essais au pénétromètre",
+    "optim": "Optimisation",
+    "data": "Import et export",
+    "all": "Toutes les fonctions"
+  },
+  "features": {
+    "learnMore": "En savoir plus",
+    "label": "Fonctions",
+    "heading": "Tout pour le plan de pieux, sur un seul dessin",
+    "sub": "Commencez par les points forts ou choisissez un thème.",
+    "tabsLabel": "Fonctions par thème"
+  },
+  "f": {
+    "options": {
+      "title": "Options de pieux par point",
+      "desc": "Pour chaque point, toutes les combinaisons de section et de niveau de pointe : valable, insuffisante ou sans avis, avec l'essai déterminant."
+    },
+    "compare": {
+      "title": "Taux de travail et coût",
+      "desc": "Comparez taux de travail, capacité portante et coût estimé avant de choisir un pieu. Triez et filtrez chaque colonne."
+    },
+    "multi": {
+      "title": "Un choix pour plusieurs points",
+      "desc": "Sélectionnez par clic, avec Maj ou au lasso ; le tableau affiche alors les options communes à tous les points."
+    },
+    "groups": {
+      "title": "Groupes",
+      "desc": "Regroupez des points pour qu'ils reçoivent le même pieu. Les groupes aux choix contradictoires passent au rouge."
+    },
+    "cap": {
+      "title": "Propositions de semelles",
+      "desc": "Essayez 1 à 20 pieux sous une semelle, avec options et coûts indicatifs. Tout réinitialiser se fait en une étape."
+    },
+    "lock": {
+      "title": "Verrouiller des choix",
+      "desc": "Verrouillez des choix par plan de pieux ; l'optimisation les laisse tels quels."
+    },
+    "legend": {
+      "title": "Légende et affichage",
+      "desc": "Filtrez par section et niveau de pointe, ajustez symboles et couleurs, et choisissez les colonnes affichées."
+    },
+    "cptauto": {
+      "title": "Choix automatique des essais",
+      "desc": "Par quadrant ou dans un angle maximal, avec une distance limite."
+    },
+    "cptmanual": {
+      "title": "Modifier à la main",
+      "desc": "Modifiez les essais d'un point ou de toute une sélection, et revenez au choix automatique quand vous voulez."
+    },
+    "advice": {
+      "title": "Combiner des avis de fondation",
+      "desc": "Plusieurs fichiers et feuilles d'avis dans un projet, aussi sous forme de tableau avec une colonne par section. Les valeurs contradictoires sont signalées."
+    },
+    "optim": {
+      "title": "Coût le plus bas",
+      "desc": "L'optimisation trouve l'attribution la moins chère dans des limites de sections, de niveaux de pointe et de configurations."
+    },
+    "coherence": {
+      "title": "Un plan plus homogène",
+      "desc": "Moins d'écarts de niveau de pointe et de section entre voisins, dans un budget (5 % de plus par défaut)."
+    },
+    "quick": {
+      "title": "Amélioration rapide",
+      "desc": "Une amélioration locale rapide en alternative au calcul complet. Vous voyez toujours si un résultat est prouvé optimal."
+    },
+    "variants": {
+      "title": "Plusieurs plans de pieux",
+      "desc": "Gardez des variantes côte à côte dans un projet, avec le coût total de chaque plan."
+    },
+    "import": {
+      "title": "CSV, Excel et RFEM",
+      "desc": "Attribuez un rôle à chaque fichier avant l'import. Un export RFEM est reconnu ; un aperçu montre d'abord les éventuelles erreurs."
+    },
+    "refresh": {
+      "title": "Actualiser les sources",
+      "desc": "De nouvelles charges du modèle ? Reliez anciens et nouveaux points sur un grand dessin ; choix et verrouillages suivent."
+    },
+    "importplan": {
+      "title": "Importer un plan existant",
+      "desc": "Un tableau Excel ou CSV devient un nouveau plan de pieux, rapproché par ID ou coordonnée, avec un contrôle préalable."
+    },
+    "export": {
+      "title": "Tableau de pieux vers Excel ou CSV",
+      "desc": "Vos colonnes, ordre et en-têtes, numérotation et unités, avec un aperçu en direct."
+    },
+    "change": {
+      "title": "Tableau des modifications",
+      "desc": "Comparez avec un tableau antérieur : déplacé, autre section, autre niveau, ajouté ou supprimé, avec vos propres codes."
+    },
+    "ifcpp": {
+      "title": "Tout dans un fichier de projet",
+      "desc": "Sources, réglages, choix et variantes dans un fichier IFCPP, avec annulation et récupération après un plantage du navigateur."
+    },
+    "mcp": {
+      "title": "Assistant IA (Windows)",
+      "desc": "Reliez ChatGPT Desktop ou Claude Desktop au projet ouvert. Lecture et modification s'activent séparément."
+    }
+  },
+  "download": {
+    "title": "Télécharger v2026.44.3",
+    "lead": "Gratuit, sans compte. Pour Windows.",
+    "forWindows": "Télécharger pour Windows",
+    "metaWindows": "programme d'installation .exe",
+    "browserBtn": "Ouvrir dans le navigateur",
+    "fileExe": "Programme d'installation (.exe)",
+    "browserNote": "Vous préférez ne rien installer ? L'application <a href=\"https://pile-plan-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">fonctionne aussi dans le navigateur</a>.",
+    "label": "Télécharger",
+    "mobileNote": "Open Pile Plan Studio est conçu pour un grand écran. Ouvrez-le sur votre ordinateur, ou essayez-le ici dans le navigateur.",
+    "other": "Autres plateformes"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Toutes les notes de version",
+    "ctaDemo": "Essayer dans le navigateur",
+    "items": {
+      "columns": {
+        "title": "Colonnes au choix",
+        "desc": "Choisissez, déplacez et renommez les colonnes, et sélectionnez le plan à exporter sans changer de plan actif."
+      },
+      "marks": {
+        "title": "Numérotation des pieux",
+        "desc": "Numérotez les pieux dans l'espace et codez les niveaux de pointe en lettres ou en chiffres, dans un sens ou dans l'autre."
+      },
+      "change": {
+        "title": "Tableau des modifications",
+        "desc": "Comparez un tableau antérieur en CSV ou Excel avec le nouveau plan ; les numéros existants sont conservés."
+      },
+      "codes": {
+        "title": "Codes de modification",
+        "desc": "Une colonne M, S, L, A et R pour déplacé, section, niveau, ajouté et supprimé ; codes et seuil réglables."
+      },
+      "review": {
+        "title": "Relier les points sur un grand dessin",
+        "desc": "Commencez par les cas ouverts, choisissez l'ancien partenaire sur le dessin et passez automatiquement au suivant ; le reste d'un coup par distance."
+      }
+    },
+    "label": "Nouveau dans la v2026.44.3",
+    "title": "Tableaux de pieux sur mesure et <span>tableaux des modifications</span>",
+    "desc": "Cette version rend l'export paramétrable, ajoute les tableaux des modifications et offre un grand espace dédié pour relier anciens et nouveaux points."
+  },
+  "faq": {
+    "files": {
+      "q": "Quels fichiers puis-je ouvrir ?",
+      "a": "Points de charge, essais et avis de fondation en CSV ou Excel (XLSX), les charges aussi en export Excel de RFEM. Ainsi que des projets IFCPP et des tableaux de pieux existants en Excel ou CSV."
+    },
+    "install": {
+      "q": "Dois-je installer quelque chose ?",
+      "a": "Non. La version web s'ouvre directement avec un projet d'exemple. L'application Windows n'est utile que pour l'assistant IA et pour ouvrir les fichiers IFCPP depuis l'Explorateur."
+    },
+    "cost": {
+      "q": "Combien ça coûte ?",
+      "a": "Rien. Open Pile Plan Studio est gratuit et open source sous licence LGPL-3.0, sans compte."
+    },
+    "format": {
+      "q": "Dans quel format mon travail est-il enregistré ?",
+      "a": "Dans un fichier IFCPP : un format de projet ouvert et lisible avec toutes les sources, réglages, choix et variantes. Les tableaux de pieux s'exportent en Excel ou CSV."
+    },
+    "systems": {
+      "q": "Sur quels systèmes fonctionne-t-il ?",
+      "a": "Dans tout navigateur récent, donc aussi sous macOS et Linux, et comme application pour Windows (64 bits). Il n'y a pas encore d'installateurs pour macOS et Linux."
+    },
+    "practice": {
+      "q": "Est-ce adapté à la pratique du métier ?",
+      "a": "Oui. Vous travaillez avec les valeurs de calcul dont vous disposez : FEd issu du modèle et Rc;net;d par essai, section et niveau de pointe issu de l'avis de fondation. Le coût des pieux au m³ se règle par projet."
+    },
+    "ai": {
+      "q": "Que peut en faire un assistant IA ?",
+      "a": "L'application Windows peut partager le projet ouvert via MCP avec, par exemple, ChatGPT Desktop ou Claude Desktop. L'assistant peut consulter les données, comparer des plans et lancer l'optimisation ; la modification s'active séparément. La version web n'a pas de MCP."
+    },
+    "capacity": {
+      "q": "L'application calcule-t-elle elle-même la capacité portante ?",
+      "a": "Non, pas encore. La capacité portante par essai provient de l'avis du géotechnicien ; l'application choisit, compare et optimise sur cette base."
+    },
+    "optimal": {
+      "q": "Le résultat de l'optimisation est-il toujours le meilleur ?",
+      "a": "Pas toujours, et vous le voyez. Le résultat indique si l'optimum est prouvé ; avec l'amélioration rapide ou un calcul interrompu, vous obtenez la meilleure solution trouvée."
+    },
+    "try": {
+      "q": "Puis-je l'essayer sans mes propres données ?",
+      "a": "Oui. La version web s'ouvre avec un projet d'exemple complet pour découvrir tout de suite la démarche."
+    },
+    "heading": "Questions fréquentes"
   },
   "tech": {
-    "title": "Technologie",
-    "desc": "La logique d'ingénierie pour l'import, les options de pieux, les coûts, la sélection des CPT et l'optimisation réside dans le cœur de calcul Rust. Ce même cœur fonctionne via WebAssembly dans le navigateur et nativement dans l'application de bureau Tauri — un seul modèle de calcul, deux plateformes."
+    "rust": {
+      "desc": "Le noyau de calcul pour l'import, les options de pieux, le choix des essais, les coûts et l'optimisation."
+    },
+    "wasm": {
+      "desc": "Le même noyau Rust tourne dans le navigateur, sans serveur de calcul."
+    },
+    "react": {
+      "title": "React et TypeScript",
+      "desc": "L'interface avec dessin, tableaux et ruban, identique dans le navigateur et sur le bureau."
+    },
+    "tauri": {
+      "desc": "Une petite application Windows signée, avec le noyau natif en Rust."
+    },
+    "highs": {
+      "desc": "Solveur open source pour l'optimisation en nombres entiers, dans le navigateur et sur le bureau."
+    },
+    "mcp": {
+      "desc": "Connexion locale pour assistants IA dans l'application Windows ; les modifications passent par les mêmes contrôles et l'historique."
+    },
+    "heading": "Technologie",
+    "sub": "Pour ceux qui veulent savoir comment c'est construit."
+  },
+  "releases": {
+    "showAll": "Afficher toutes les versions",
+    "showLess": "Afficher seulement les trois dernières",
+    "github": "Toutes les versions sur GitHub"
   }
 }

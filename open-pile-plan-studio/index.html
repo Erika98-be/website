@@ -8,7 +8,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Open Pile Plan Studio — OpenAEC Foundation</title>
-  <meta name="description" content="Open Pile Plan Studio: open-source engineeringtool voor het beoordelen, toewijzen en optimaliseren van paalconfiguraties in praktische paalplanvarianten.">
+  <meta name="description" content="Gratis, open-source programma voor paalplannen: belastinglocaties, sonderingen en funderingsadvies samen in één plan, met paalopties, benutting, kosten en optimalisatie. In de browser en voor Windows.">
   <link rel="canonical" href="https://open-aec.com/open-pile-plan-studio/">
   <!-- hreflang:start -->
   <link rel="alternate" hreflang="nl" href="https://open-aec.com/open-pile-plan-studio/">
@@ -19,25 +19,21 @@
   <link rel="alternate" hreflang="x-default" href="https://open-aec.com/open-pile-plan-studio/">
   <!-- hreflang:end -->
 
-
-
-
-
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="OpenAEC Foundation">
   <meta property="og:title" content="Open Pile Plan Studio">
-  <meta property="og:description" content="Open-source engineeringtool voor het beoordelen, toewijzen en optimaliseren van paalconfiguraties.">
+  <meta property="og:description" content="Gratis, open-source programma voor paalplannen: belastinglocaties, sonderingen en funderingsadvies samen in één plan, met paalopties, benutting, kosten en optimalisatie. In de browser en voor Windows.">
   <meta property="og:url" content="https://open-aec.com/open-pile-plan-studio/">
-  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-pile-plan-studio.png">
+  <meta property="og:image" content="https://open-aec.com/shared/assets/screenshots/open-pile-plan-studio-hero.png">
   <meta property="og:locale" content="nl_NL">
   <meta property="og:locale:alternate" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Open Pile Plan Studio">
-  <meta name="twitter:description" content="Open-source engineeringtool voor het beoordelen, toewijzen en optimaliseren van paalconfiguraties.">
-  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-pile-plan-studio.png">
+  <meta name="twitter:description" content="Gratis, open-source programma voor paalplannen: belastinglocaties, sonderingen en funderingsadvies samen in één plan, met paalopties, benutting, kosten en optimalisatie. In de browser en voor Windows.">
+  <meta name="twitter:image" content="https://open-aec.com/shared/assets/screenshots/open-pile-plan-studio-hero.png">
 
   <!-- AI / LLM discoverability -->
   <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-friendly site overview">
@@ -47,45 +43,151 @@
   <link rel="icon" type="image/svg+xml" href="/shared/assets/logo/openaec-symbol-v2-transparent.svg">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/shared/style.css?v=20261015">
-
-  <!-- Schema.org -->
+  <link rel="stylesheet" href="/shared/productpagina.css?v=20261029c">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Open Pile Plan Studio",
     "applicationCategory": "EngineeringApplication",
-    "operatingSystem": "Web, Windows",
+    "applicationSubCategory": "Funderingen / Paalplan",
+    "operatingSystem": "Windows, Web",
     "softwareVersion": "2026.44.3",
-    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
     "url": "https://open-aec.com/open-pile-plan-studio/",
-    "sameAs": "https://github.com/OpenAEC-Foundation/pile-plan-studio",
-    "description": "Open-source engineering tool for exploring and assigning pile configurations to structural load points, with CPT selection, utilization, estimated costs and IFCPP project files.",
-    "publisher": { "@type": "Organization", "name": "OpenAEC Foundation", "url": "https://open-aec.com" }
+    "downloadUrl": "https://github.com/OpenAEC-Foundation/pile-plan-studio/releases",
+    "license": "https://www.gnu.org/licenses/lgpl-3.0.html",
+    "description": "Free, open-source engineering application for pile plans. Imports load points (CSV, XLSX, RFEM export), CPTs and foundation advice; shows valid, insufficient and missing pile options per load point with utilisation and estimated cost; automatic or manual CPT selection; groups, locks and pile-cap proposals; cost optimisation with HiGHS and neighbour coherence; multiple pile-plan variants; IFCPP project files; configurable Excel/CSV export and change tables; local MCP connection in the Windows app. Rust core via WebAssembly in the browser and Tauri on Windows.",
+    "featureList": [
+      "Paalopties per locatie",
+      "Benutting en kosten",
+      "Eén keuze voor veel locaties",
+      "Groepen",
+      "Poervoorstellen",
+      "Keuzes vergrendelen",
+      "Legenda en weergave",
+      "Sonderingen automatisch kiezen",
+      "Zelf overschrijven",
+      "Funderingsadvies samenvoegen",
+      "Laagste kosten",
+      "Rustiger plan",
+      "Snel verbeteren",
+      "Meerdere palenplannen",
+      "CSV, Excel en RFEM",
+      "Bronnen verversen",
+      "Bestaand paalplan inlezen",
+      "Paalstaat naar Excel of CSV",
+      "Wijzigingstabel",
+      "Alles in één projectbestand",
+      "AI-assistent (Windows)"
+    ],
+    "screenshot": "https://open-aec.com/shared/assets/screenshots/open-pile-plan-studio-hero.png",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR",
+      "availability": "https://schema.org/InStock"
+    },
+    "isAccessibleForFree": true,
+    "keywords": "paalplan, pile plan, funderingsadvies, foundation advice, sondering, CPT, palen, piles, RFEM, HiGHS, optimalisatie, IFCPP, paalstaat, MCP",
+    "sameAs": [
+      "https://github.com/OpenAEC-Foundation/pile-plan-studio",
+      "https://pile-plan-studio.open-aec.com/"
+    ],
+    "publisher": {
+      "@type": "Organization",
+      "name": "OpenAEC Foundation",
+      "url": "https://open-aec.com"
+    }
   }
   </script>
-
-  <style>
-    .hero-note { color: var(--text-on-dark); font-size: 0.9rem; line-height: 1.5; margin: var(--sp-5) auto 0; max-width: 620px; opacity: 0.85; }
-    /* Downloads: het script toont alleen de pakketten van de nieuwste release; het raster blijft gecentreerd */
-    #download .download-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
-    #download .download-item { flex: 0 1 260px; }
-    #download .download-item[hidden] { display: none; }
-    /* Licht "Wat is"-blok direct onder de screenshots */
-    .note-cards .split-card { background: linear-gradient(180deg, #FFFFFF, var(--blueprint-white)); border-color: rgba(42,42,50,0.07); box-shadow: 0 1px 0 #FFFFFF inset, var(--shadow-float); color: var(--text-on-light); }
-    .note-cards .split-card p { color: var(--text-on-light); }
-    .note-cards .icon-tile { background: linear-gradient(145deg, rgba(217,119,6,0.18), rgba(217,119,6,0.05)); border-color: rgba(217,119,6,0.22); }
-    .limits-card { max-width: 900px; margin: 0 auto; display: flex; gap: var(--sp-5); align-items: flex-start; background: linear-gradient(180deg, #FFFFFF, var(--blueprint-white)); border: 1px solid rgba(217,119,6,0.35); border-left: 4px solid var(--amber); border-radius: var(--radius-lg); box-shadow: var(--shadow-float); padding: var(--sp-6) var(--sp-8); }
-    .limits-card .icon-tile { flex-shrink: 0; }
-    .limits-card h2 { font-size: 1.35rem; color: var(--deep-forge); margin: 0 0 var(--sp-3); }
-    .limits-card p { color: var(--text-on-light); font-size: 1rem; line-height: 1.7; margin: 0 0 var(--sp-3); max-width: none; }
-    .limits-card p:last-child { margin-bottom: 0; }
-    .split-card .step-num { font-family: var(--font-heading); font-weight: 700; font-size: 1.05rem; color: var(--warm-gold); }
-    .tech-chips { margin-bottom: var(--sp-6); }
-    .tech-desc { color: var(--text-on-light); font-size: 1.02rem; line-height: 1.7; max-width: 760px; margin: 0 auto; text-align: center; }
-    @media (max-width: 640px) { .limits-card { flex-direction: column; padding: var(--sp-5); } }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welke bestanden kan ik openen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Belastinglocaties, sonderingen en funderingsadvies als CSV of Excel (XLSX), belastingen ook als Excel-export uit RFEM. Verder projecten in IFCPP en bestaande paalstaten uit Excel of CSV."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Moet ik iets installeren?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee. De webversie opent direct met een voorbeeldproject. De Windows-app heb je alleen nodig voor de koppeling met een AI-assistent en om IFCPP-bestanden vanuit de Verkenner te openen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kost het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niets. Open Pile Plan Studio is gratis en open source onder de LGPL-3.0-licentie, zonder account."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welk bestandsformaat wordt mijn werk opgeslagen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In een IFCPP-bestand: een open, leesbaar projectformaat met alle bronnen, instellingen, keuzes en varianten. Paalstaten exporteer je naar Excel of CSV."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Op welke systemen draait het?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In elke moderne browser, dus ook op macOS en Linux, en als app voor Windows (64-bit). Installers voor macOS en Linux zijn er nog niet."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Sluit het aan op de bouwpraktijk?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Je werkt met de rekenwaarden die je al hebt: FEd uit het rekenmodel en Rc;net;d per sondering, paalmaat en puntniveau uit het funderingsadvies. Paalkosten per m³ stel je per project in."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat kan een AI-assistent ermee?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "De Windows-app kan het open project via MCP delen met bijvoorbeeld ChatGPT Desktop of Claude Desktop. Die kan gegevens bekijken, plannen vergelijken en de optimalisatie starten; bewerken zet je apart aan. De webversie heeft geen MCP."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Rekent het programma zelf het draagvermogen uit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nee, nog niet. Het draagvermogen per sondering komt uit het funderingsadvies van de geotechnisch adviseur; het programma kiest, vergelijkt en optimaliseert op basis daarvan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is de uitkomst van de optimalisatie altijd de beste?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Niet altijd, en dat zie je ook. Het resultaat meldt of het optimum bewezen is; bij Snel verbeteren of een afgebroken berekening krijg je de beste gevonden oplossing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kan ik het eerst uitproberen zonder eigen gegevens?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. De webversie opent met een compleet voorbeeldproject, zodat je de werkwijze direct kunt verkennen."
+        }
+      }
+    ]
+  }
+  </script>
 
   <!-- schema:start -->
   <script type="application/ld+json">
@@ -149,7 +251,7 @@
   <!-- schema:end -->
 </head>
 <body class="page-panels">
-  <div id="shared-nav"><!-- nav:start -->
+    <div id="shared-nav"><!-- nav:start -->
 <nav class="navbar">
   <div class="nav-container">
     <a href="/" class="nav-brand" aria-label="OpenAEC — home"><img class="nav-logo" src="/shared/assets/logo/openaec-symbol-v2-transparent.svg" alt="" width="28" height="32"><span class="nav-word">Open<span class="accent">AEC</span></span></a>
@@ -179,225 +281,268 @@
   </div>
 </nav>
 <!-- nav:end --></div>
-  <script src="/shared/nav.js?v=20261015"></script>
-  <script src="/shared/feedback.js?v=20261022" defer></script>
+<script src="/shared/nav.js?v=20261015"></script>
+<script src="/shared/feedback.js?v=20261022" defer></script>
 
   <main id="main">
 
-  <header class="product-head surface-spot">
+  <header class="product-head surface-spot" id="top">
     <div class="product-head-inner">
-      <p class="pill-label" data-i18n="header.label">OpenAEC Ecosysteem</p>
+      <p class="pill-label" data-i18n="header.label">Funderingen</p>
       <h1 data-i18n="header.title">Open <span class="accent">Pile Plan</span> Studio</h1>
-      <p class="lead" data-i18n="header.desc">Open-source engineeringtool voor paalplannen. Breng belastinglocaties, sonderingen, funderingsadvies, paalopties, benutting en geraamde kosten samen in één interactief paalplan.</p>
+      <p class="pp-tagline" data-i18n="header.tagline">Van belastingen en sonderingen naar een onderbouwd paalplan</p>
+      <p class="lead" data-i18n="header.desc">Lees de belastinglocaties, sonderingen en het funderingsadvies in en zie per locatie welke paal past, wat hij kost en hoe zwaar hij belast wordt. Wijs keuzes toe, laat de goedkoopste samenhangende variant zoeken en exporteer het plan naar Excel.</p>
       <div class="btn-group">
-        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="cta.releases">Download</span></a>
-        <a href="https://pile-plan-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.liveDemo">Open de browserdemo</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/pile-plan-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="cta.github">GitHub</span></a>
+        <a href="https://pile-plan-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Open in de browser</span></a>
+        <a href="#download" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Download</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/pile-plan-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Broncode</span></a>
       </div>
-      <div class="chip-row">
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg><span data-i18n="header.badge">Alpha</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg><span data-i18n="header.gww">GWW / Geotechniek</span></span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg><span data-pile-download-version>v2026.44.3</span> · Rust · WebAssembly</span>
-        <span class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg>€ 0</span>
-      </div>
-      <p class="hero-note" data-i18n="header.caution">Technische resultaten zijn beslisondersteuning en moeten altijd door een gekwalificeerde professional worden gecontroleerd.</p>
+      <ul class="chip-row pp-proof">
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span>CSV · XLSX · RFEM · IFCPP</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg><span data-i18n="header.proof2">Nederlands en Engels</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg><span data-i18n="header.proof3">Browser · Windows</span></li>
+        <li class="chip"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-shield"/></svg><span data-i18n="header.proof4">Gratis · LGPL-3.0</span></li>
+      </ul>
     </div>
-    <div class="shot-overlap"><div class="media-slider">
+    <div class="media-slider shot-overlap" data-pp-slider>
       <div class="slider-container">
-        <div class="slider-track" id="sliderTrack">
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-pile-plan-studio.png" alt="Open Pile Plan Studio — interactief paalplan met opties voor een geselecteerde belastinglocatie"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-pile-plan-studio-import.png" alt="Open Pile Plan Studio — projectdata importeren met aparte bronrollen"></div>
-          <div class="slider-slide"><img src="/shared/assets/screenshots/open-pile-plan-studio-optimization.png" alt="Open Pile Plan Studio — optimalisatieresultaat en configuratie-instellingen"></div>
+        <div class="slider-track">
+          <div class="slider-slide"><img src="/shared/assets/screenshots/open-pile-plan-studio-hero.png" width="1920" height="1200" alt="Open Pile Plan Studio: paalplan van een voorbeeld-distributiecentrum met kleurvlakken per puntniveau en rechts de paalopties van de geselecteerde kolom" data-i18n="header.heroAlt" data-i18n-attr="alt" fetchpriority="high"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-pile-plan-studio-feat-sonderingen.png" width="1200" height="750" decoding="async" alt="Geselecteerde kolom met lijnen naar vier sonderingen op de tekening en rechts een tabel met kwadrant, sondering, afstand en draagvermogen" data-i18n="hl.cpt.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-pile-plan-studio-feat-optimalisatie.png" width="1200" height="750" decoding="async" alt="Paneel Optimalisatie met het resultaat: gewogen buurverschillen, werkelijke kosten en het aantal geoptimaliseerde locaties, naast het nieuwe palenplan" data-i18n="hl.optim.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-pile-plan-studio-feat-poer.png" width="1200" height="750" decoding="async" alt="Poervoorstel van vier palen onder een kolom van de liftkern, met de paalopties en totale kosten per voorstel" data-i18n="hl.cap.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-pile-plan-studio-feat-export.png" width="1200" height="750" decoding="async" alt="Exportscherm met de kolominstellingen van het palenplan en een tabelvoorbeeld met locatie, coördinaten, belasting, paalmaat, puntniveau en sonderingen" data-i18n="hl.export.alt" data-i18n-attr="alt"></div>
+          <div class="slider-slide"><img loading="lazy" src="/shared/assets/screenshots/open-pile-plan-studio-feat-bronnen.png" width="1200" height="750" decoding="async" alt="Tabel met belastinglocaties: ID, X, Y en FEd per locatie, met rechts de paalopties van de geselecteerde locatie" data-i18n="hl.data.alt" data-i18n-attr="alt"></div>
         </div>
-        <button class="slider-btn slider-prev" onclick="slideMove(-1)" aria-label="Vorige">&lsaquo;</button>
-        <button class="slider-btn slider-next" onclick="slideMove(1)" aria-label="Volgende">&rsaquo;</button>
+        <button type="button" class="slider-btn slider-prev" aria-label="Vorige afbeelding">&lsaquo;</button>
+        <button type="button" class="slider-btn slider-next" aria-label="Volgende afbeelding">&rsaquo;</button>
       </div>
-      <div class="slider-dots" id="sliderDots"></div>
-    </div></div>
+      <div class="slider-dots"></div>
+    </div>
   </header>
 
-  <section class="section after-overlap"><div class="container">
-    <div class="explainer"><div class="panel-split on-light">
-      <div class="panel-split-text">
-        <h2 data-i18n="what.title">Wat is Open Pile Plan Studio?</h2>
-        <p data-i18n="what.desc">Open Pile Plan Studio is een open-source engineeringtool voor het beoordelen van paalopties en het samenstellen van praktische paalplanvarianten. Constructieve belastingen, sonderingen en beschikbare configuraties komen samen in de browser en Windows-app, met dezelfde Rust-rekenkern.</p>
-      </div>
-      <ul class="split-cards note-cards">
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><p data-i18n="what.list1">Belastinglocaties, sonderingen en funderingsadvies importeren uit CSV/XLSX (incl. RFEM-export)</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div><div><p data-i18n="what.list2">Geldige, onvoldoende en ontbrekende paalopties per belastinglocatie</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><p data-i18n="what.list3">Sonderingsselectie per kwadrant of maximale hoek, handmatig te overschrijven</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-ruler"/></svg></div><div><p data-i18n="what.list4">Benutting, maatgevend draagvermogen en geraamde kosten vergelijken</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><p data-i18n="what.list5">Kostenoptimalisatie met HiGHS, configuratielimieten en optionele vermindering van buurverschillen</p></div></li>
-        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><p data-i18n="what.list6">Volledig project opslaan als IFCPP-bestand en later heropenen</p></div></li>
-      </ul>
-    </div></div>
-  </div></section>
-
-  <section class="section"><div class="container">
-  <div class="download-section" id="download">
-    <h3><span data-i18n="download.title">Download</span> <span data-pile-download-version>v2026.44.3</span></h3>
-    <div class="download-grid">
-      <div class="download-item" data-pile-download="windows">
-        <div class="os">Windows</div><div class="size" data-download-size>7.7 MB</div>
-        <a href="https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/download/v2026.44.3/Open.Pile.Plan.Studio_2026.44.3_x64-setup.exe" data-download-link class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="download.action">Download</span> .exe</a>
-      </div>
-      <div class="download-item" data-pile-download="macos" hidden>
-        <div class="os">macOS</div><div class="size" data-download-size></div>
-        <a data-download-link class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="download.action">Download</span> .dmg</a>
-      </div>
-      <div class="download-item" data-pile-download="linux-deb" hidden>
-        <div class="os">Linux (deb)</div><div class="size" data-download-size></div>
-        <a data-download-link class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="download.action">Download</span> .deb</a>
-      </div>
-      <div class="download-item" data-pile-download="linux-appimage" hidden>
-        <div class="os">Linux (AppImage)</div><div class="size" data-download-size></div>
-        <a data-download-link class="btn btn-primary btn-sm"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="download.action">Download</span> AppImage</a>
-      </div>
-    </div>
+  <div class="after-overlap pp-notice-wrap">
+    <p class="pp-notice"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg><span data-i18n="notice.text">Publieke alfaversie: de uitkomsten ondersteunen je ontwerp, maar laat ze altijd controleren door een deskundige.</span> <a href="https://github.com/OpenAEC-Foundation/pile-plan-studio/issues" target="_blank" rel="noopener"><span data-i18n="notice.link">Meld een probleem</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a></p>
   </div>
+
+  <nav class="pp-subnav" aria-label="Op deze pagina" data-i18n="subnav.label" data-i18n-attr="aria-label">
+    <div class="pp-subnav-inner">
+      <a href="#features" data-i18n="subnav.features">Functies</a>
+      <a href="#download" data-i18n="subnav.download">Download</a>
+      <a href="#whats-new" data-i18n="subnav.whatsnew">Nieuw</a>
+      <a href="#faq" data-i18n="subnav.faq">Vragen</a>
+      <a href="#releases" data-i18n="subnav.releases">Releases</a>
+    </div>
+  </nav>
+
+  <section class="section pp-anchor" id="features"><div class="container">
+    <div class="section-head"><p class="pill-label" data-i18n="features.label">Functies</p><h2 data-i18n="features.heading">Alles voor het paalplan, op één tekening</h2><p data-i18n="features.sub">Begin bij de hoogtepunten of kies een onderwerp.</p></div>
+    <div class="pp-tabs" role="tablist" aria-label="Functies per onderwerp" data-i18n="features.tabsLabel" data-i18n-attr="aria-label" hidden>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-highlights" data-tab="highlights" aria-controls="pp-feature-panel" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="tabs.highlights">Hoogtepunten</span> <span class="pp-tab-count" data-count="highlights"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-options" data-tab="options" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.options">Paalopties</span> <span class="pp-tab-count" data-count="options"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-cpt" data-tab="cpt" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg><span data-i18n="tabs.cpt">Sonderingen</span> <span class="pp-tab-count" data-count="cpt"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-optim" data-tab="optim" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg><span data-i18n="tabs.optim">Optimaliseren</span> <span class="pp-tab-count" data-count="optim"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-data" data-tab="data" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg><span data-i18n="tabs.data">Import en export</span> <span class="pp-tab-count" data-count="data"></span></button>
+      <button type="button" class="pp-tab" role="tab" id="pp-tab-all" data-tab="all" aria-controls="pp-feature-panel" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg><span data-i18n="tabs.all">Alle functies</span> <span class="pp-tab-count" data-count="all"></span></button>
+    </div>
+    <div id="pp-feature-panel" role="tabpanel" aria-labelledby="pp-tab-highlights">
+      <div class="pp-hl" data-panel="highlights">
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-pile-plan-studio-feat-sonderingen.png" width="1200" height="750" loading="lazy" decoding="async" alt="Geselecteerde kolom met lijnen naar vier sonderingen op de tekening en rechts een tabel met kwadrant, sondering, afstand en draagvermogen" data-i18n="hl.cpt.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">01</span> <span data-i18n="hl.cpt.kicker">Sonderingen</span></p>
+            <h3 data-i18n="hl.cpt.title">Zie welke sonderingen een paal dragen</h3>
+            <p data-i18n="hl.cpt.desc">Per belastinglocatie kiest het programma de sonderingen per kwadrant of binnen een maximale hoek, met de afstand en het draagvermogen erbij. Lijnen op de tekening laten zien welke sonderingen meetellen; overschrijf de keuze als je het anders wilt.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/pile-plan-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Meer lezen</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-pile-plan-studio-feat-optimalisatie.png" width="1200" height="750" loading="lazy" decoding="async" alt="Paneel Optimalisatie met het resultaat: gewogen buurverschillen, werkelijke kosten en het aantal geoptimaliseerde locaties, naast het nieuwe palenplan" data-i18n="hl.optim.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">02</span> <span data-i18n="hl.optim.kicker">Optimaliseren</span></p>
+            <h3 data-i18n="hl.optim.title">Laat het goedkoopste samenhangende plan zoeken</h3>
+            <p data-i18n="hl.optim.desc">De optimalisatie zoekt de laagste kosten binnen jouw grenzen voor het aantal paalmaten en puntniveaus. Daarna maakt hij het plan rustiger: minder verschillen tussen buren, binnen een klein kostenbudget. Je ziet of de uitkomst bewezen optimaal is.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/pile-plan-studio/blob/main/docs/architecture.md" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Meer lezen</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-pile-plan-studio-feat-poer.png" width="1200" height="750" loading="lazy" decoding="async" alt="Poervoorstel van vier palen onder een kolom van de liftkern, met de paalopties en totale kosten per voorstel" data-i18n="hl.cap.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">03</span> <span data-i18n="hl.cap.kicker">Poeren</span></p>
+            <h3 data-i18n="hl.cap.title">Probeer meer palen onder één poer</h3>
+            <p data-i18n="hl.cap.desc">Zet bij een locatie of groep een poervoorstel van 1 tot 20 palen en zie meteen welke paalopties dan passen en wat ze kosten. Het voorstel blijft bij het palenplan bewaard; een overzicht toont alle wijzigingen van het plan.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/pile-plan-studio/blob/main/docs/known-limitations.md#pile-cap-proposals" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Meer lezen</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-pile-plan-studio-feat-export.png" width="1200" height="750" loading="lazy" decoding="async" alt="Exportscherm met de kolominstellingen van het palenplan en een tabelvoorbeeld met locatie, coördinaten, belasting, paalmaat, puntniveau en sonderingen" data-i18n="hl.export.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">04</span> <span data-i18n="hl.export.kicker">Exporteren</span></p>
+            <h3 data-i18n="hl.export.title">Een paalstaat zoals jij hem wilt</h3>
+            <p data-i18n="hl.export.desc">Kies welk palenplan je exporteert, welke kolommen erin staan en in welke volgorde, en hoe ze heten. Je ziet de tabel meteen in een voorbeeld en slaat hem op als Excel of CSV. Een wijzigingstabel vergelijkt het met een eerdere versie.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/pile-plan-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Meer lezen</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+        <article class="pp-hl-row">
+          <figure class="pp-shot"><img src="/shared/assets/screenshots/open-pile-plan-studio-feat-bronnen.png" width="1200" height="750" loading="lazy" decoding="async" alt="Tabel met belastinglocaties: ID, X, Y en FEd per locatie, met rechts de paalopties van de geselecteerde locatie" data-i18n="hl.data.alt" data-i18n-attr="alt"></figure>
+          <div class="pp-hl-text">
+            <p class="pp-kicker"><span class="pp-num">05</span> <span data-i18n="hl.data.kicker">Invoer</span></p>
+            <h3 data-i18n="hl.data.title">Je eigen tabellen als vertrekpunt</h3>
+            <p data-i18n="hl.data.desc">Lees belastinglocaties, sonderingen en funderingsadvies in uit CSV of Excel, ook rechtstreeks uit een RFEM-export. Elke bron staat als tabel in het project. Verandert het rekenmodel, ververs dan de bron: gekoppelde keuzes gaan mee naar de nieuwe locaties.</p>
+            <a class="pp-more" href="https://github.com/OpenAEC-Foundation/pile-plan-studio#readme" target="_blank" rel="noopener"><span data-i18n="features.learnMore">Meer lezen</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+      </div>
+      <ul class="pp-tiles">
+        <li class="pp-tile" data-cats="options"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-grid"/></svg></div><div><h3 data-i18n="f.options.title">Paalopties per locatie</h3><p data-i18n="f.options.desc">Per locatie alle combinaties van paalmaat en puntniveau: geldig, onvoldoende of zonder advies, met de maatgevende sondering.</p></div></div></li>
+        <li class="pp-tile" data-cats="options optim"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg></div><div><h3 data-i18n="f.compare.title">Benutting en kosten</h3><p data-i18n="f.compare.desc">Vergelijk benutting, draagvermogen en geraamde kosten voordat je een paal kiest. Sorteer en filter elke kolom.</p></div></div></li>
+        <li class="pp-tile" data-cats="options"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-move"/></svg></div><div><h3 data-i18n="f.multi.title">Eén keuze voor veel locaties</h3><p data-i18n="f.multi.desc">Selecteer met klikken, Shift of een lasso; de tabel toont dan de opties die voor alle locaties gelden.</p></div></div></li>
+        <li class="pp-tile" data-cats="options"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h3 data-i18n="f.groups.title">Groepen</h3><p data-i18n="f.groups.desc">Bundel locaties tot een groep met dezelfde paal. Groepen met tegenstrijdige keuzes kleuren rood.</p></div></div></li>
+        <li class="pp-tile" data-cats="options"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-cube"/></svg></div><div><h3 data-i18n="f.cap.title">Poervoorstellen</h3><p data-i18n="f.cap.desc">Probeer 1 tot 20 palen onder een poer, met indicatieve opties en kosten. Alles terugzetten kan in één stap.</p></div></div></li>
+        <li class="pp-tile" data-cats="options optim"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-lock"/></svg></div><div><h3 data-i18n="f.lock.title">Keuzes vergrendelen</h3><p data-i18n="f.lock.desc">Zet vaste keuzes op slot per palenplan; de optimalisatie laat ze dan staan.</p></div></div></li>
+        <li class="pp-tile" data-cats="options"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h3 data-i18n="f.legend.title">Legenda en weergave</h3><p data-i18n="f.legend.desc">Filter op paalmaat en puntniveau, pas symbolen en kleuren aan en kies welke kolommen je ziet.</p></div></div></li>
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-strata"/></svg></div><div><h3 data-i18n="f.cptauto.title">Sonderingen automatisch kiezen</h3><p data-i18n="f.cptauto.desc">Per kwadrant of binnen een maximale hoek, met een grens voor de afstand.</p></div></div></li>
+        <li class="pp-tile" data-cats="cpt"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg></div><div><h3 data-i18n="f.cptmanual.title">Zelf overschrijven</h3><p data-i18n="f.cptmanual.desc">Wijzig de sonderingen voor één locatie of een hele selectie tegelijk, en zet de automatische keuze terug wanneer je wilt.</p></div></div></li>
+        <li class="pp-tile" data-cats="cpt data"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.advice.title">Funderingsadvies samenvoegen</h3><p data-i18n="f.advice.desc">Meerdere adviesbestanden en werkbladen in één project, ook als tabel met een kolom per paalmaat. Tegenstrijdige waarden worden gemeld.</p></div></div></li>
+        <li class="pp-tile" data-cats="optim"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h3 data-i18n="f.optim.title">Laagste kosten</h3><p data-i18n="f.optim.desc">De optimalisatie zoekt de goedkoopste toewijzing binnen grenzen voor het aantal paalmaten, puntniveaus en configuraties.</p></div></div></li>
+        <li class="pp-tile" data-cats="optim"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-route"/></svg></div><div><h3 data-i18n="f.coherence.title">Rustiger plan</h3><p data-i18n="f.coherence.desc">Minder verschillen in puntniveau en paalmaat tussen buren, binnen een kostenbudget (standaard 5% extra).</p></div></div></li>
+        <li class="pp-tile" data-cats="optim"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-rocket"/></svg></div><div><h3 data-i18n="f.quick.title">Snel verbeteren</h3><p data-i18n="f.quick.desc">Een snelle lokale verbetering als alternatief voor de volledige berekening. Je ziet altijd of een uitkomst bewezen optimaal is.</p></div></div></li>
+        <li class="pp-tile" data-cats="optim"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-history"/></svg></div><div><h3 data-i18n="f.variants.title">Meerdere palenplannen</h3><p data-i18n="f.variants.desc">Bewaar varianten naast elkaar in één project, met de totale kosten per plan.</p></div></div></li>
+        <li class="pp-tile" data-cats="data"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div><div><h3 data-i18n="f.import.title">CSV, Excel en RFEM</h3><p data-i18n="f.import.desc">Wijs elk bestand vóór het inlezen een rol toe. Een RFEM-export wordt herkend; je ziet eerst een voorbeeld met eventuele fouten.</p></div></div></li>
+        <li class="pp-tile" data-cats="data"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-link"/></svg></div><div><h3 data-i18n="f.refresh.title">Bronnen verversen</h3><p data-i18n="f.refresh.desc">Nieuwe belastingen uit het rekenmodel? Koppel oude en nieuwe locaties op een grote tekening; keuzes en vergrendelingen gaan mee.</p></div></div></li>
+        <li class="pp-tile" data-cats="data"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div><div><h3 data-i18n="f.importplan.title">Bestaand paalplan inlezen</h3><p data-i18n="f.importplan.desc">Een Excel- of CSV-tabel wordt een nieuw palenplan, gekoppeld op ID of coördinaat, met een controle vooraf.</p></div></div></li>
+        <li class="pp-tile" data-cats="data"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-printer"/></svg></div><div><h3 data-i18n="f.export.title">Paalstaat naar Excel of CSV</h3><p data-i18n="f.export.desc">Eigen kolommen, volgorde en kopteksten, paalnummering en eenheden, met een live voorbeeld.</p></div></div></li>
+        <li class="pp-tile" data-cats="data"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h3 data-i18n="f.change.title">Wijzigingstabel</h3><p data-i18n="f.change.desc">Vergelijk met een eerdere paalstaat: verplaatst, andere maat, ander niveau, toegevoegd of vervallen, met codes die je zelf kiest.</p></div></div></li>
+        <li class="pp-tile" data-cats="data"><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div><div><h3 data-i18n="f.ifcpp.title">Alles in één projectbestand</h3><p data-i18n="f.ifcpp.desc">Bronnen, instellingen, keuzes en varianten in één IFCPP-bestand, met ongedaan maken en herstel na een crash in de browser.</p></div></div></li>
+        <li class="pp-tile" data-cats=""><div class="pp-tile-body"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h3 data-i18n="f.mcp.title">AI-assistent (Windows)</h3><p data-i18n="f.mcp.desc">Koppel ChatGPT Desktop of Claude Desktop aan het open project. Lezen en bewerken zet je apart aan.</p></div></div></li>
+      </ul>
+    </div>
   </div></section>
 
-  <section class="section surface-dark panel">
-    <div class="panel-split">
-      <div class="panel-split-text">
-        <p class="pill-label">GWW · Geotechniek</p>
-        <h2 data-i18n="why.title">Waarom <span class="accent">Open Pile Plan</span> Studio?</h2>
+  <section class="section surface-dark panel pp-anchor" id="download" data-pp-repo="OpenAEC-Foundation/pile-plan-studio">
+    <div class="pp-dl">
+      <p class="pill-label" data-i18n="download.label">Download</p>
+      <h2 data-i18n="download.title" data-pp-ver>Download v2026.44.3</h2>
+      <p class="pp-dl-lead" data-i18n="download.lead">Gratis en zonder account. Voor Windows.</p>
+      <div class="pp-dl-main" data-pp-main>
+        <a href="https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/download/v2026.44.3/Open.Pile.Plan.Studio_2026.44.3_x64-setup.exe" class="btn btn-glow btn-lg" data-pp-dl="windows" data-pp-primary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-os="windows" data-i18n="download.forWindows">Download voor Windows</span></a>
+        <a href="https://pile-plan-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="download.browserBtn">Open in de browser</span></a>
       </div>
-      <div class="panel-split-body">
-        <p data-i18n="why.desc1">Het opstellen van een paalplan is vaak handwerk verspreid over spreadsheets, funderingsadviezen en tekeningen. Open Pile Plan Studio brengt die informatie samen in één interactieve werkruimte: selecteer belastinglocaties, zie direct welke paalconfiguraties geldig zijn en leg keuzes navolgbaar vast.</p>
-        <p data-i18n="why.desc2">Gratis en open source, voor constructeurs, geotechnisch adviseurs en funderingsspecialisten. De browserdemo opent met een compleet voorbeeldproject, zodat je de werkwijze zonder voorbereiding kunt verkennen.</p>
-      </div>
+      <p class="pp-dl-meta"><span data-os="windows" data-i18n="download.metaWindows">.exe-installer</span> · <span data-pp-primary-size>7.7 MB</span></p>
+      <p class="pp-dl-mobile" data-pp-mobile hidden data-i18n="download.mobileNote">Open Pile Plan Studio is gemaakt voor een groot scherm. Open hem op je computer, of probeer hem hier in de browser.</p>
+      <details class="pp-dl-other" data-pp-other>
+        <summary><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg><span data-i18n="download.other">Andere platforms</span></summary>
+        <div class="pp-files">
+          <div class="pp-files-col"><h3>Windows</h3><ul>
+            <li><a href="https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/download/v2026.44.3/Open.Pile.Plan.Studio_2026.44.3_x64-setup.exe" data-pp-dl="windows" data-pp-item="windows"><span class="pp-file"><span data-i18n="download.fileExe">Installer (.exe)</span><span class="pp-file-size"> · <span data-pp-size="windows">7.7 MB</span></span></span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></a></li>
+          </ul></div>
+        </div>
+      </details>
+      <p class="pp-dl-note" data-i18n="download.browserNote">Liever niets installeren? De app draait ook <a href="https://pile-plan-studio.open-aec.com/" target="_blank" rel="noopener">in de browser</a>.</p>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <h2 data-i18n="features.title">Functionaliteiten</h2>
-    <div class="features" id="opp-features" data-fold="6">
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg></div>
-        <h4 data-i18n="features.import.title">Gerichte projectimport</h4>
-        <p data-i18n="features.import.desc">Importeer belastinglocaties, sonderingscoördinaten en funderingsadvies uit CSV- of XLSX-bestanden en wijs de drie bronrollen vóór import toe. RFEM-exports worden automatisch herkend.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div>
-        <h4 data-i18n="features.selection.title">Sonderingen selecteren</h4>
-        <p data-i18n="features.selection.desc">Selecteer sonderingen automatisch per kwadrant of maximale hoek en overschrijf de keuze handmatig voor afzonderlijke belastinglocaties.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div>
-        <h4 data-i18n="features.options.title">Paalopties vergelijken</h4>
-        <p data-i18n="features.options.desc">Bekijk per locatie geldige, onvoldoende en ontbrekende paalopties met afmeting, puntniveau en maatgevende sondering.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-check"/></svg></div>
-        <h4 data-i18n="features.assign.title">Enkelvoudig of in bulk toewijzen</h4>
-        <p data-i18n="features.assign.desc">Wijs een configuratie toe aan één belastinglocatie of aan een meervoudige selectie met gemeenschappelijke opties.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-euro"/></svg></div>
-        <h4 data-i18n="features.compare.title">Benutting en kosten</h4>
-        <p data-i18n="features.compare.desc">Vergelijk benutting, maatgevende sondering en geraamde kosten voordat je een configuratie vastlegt.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div>
-        <h4 data-i18n="features.optimize.title">Plan optimaliseren</h4>
-        <p data-i18n="features.optimize.desc">Gebruik HiGHS om kosten te verlagen binnen configuratielimieten en verminder optioneel buurverschillen binnen een kostenbudget. Snel verbeteren biedt een lokale variant.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pen"/></svg></div>
-        <h4 data-i18n="features.interact.title">Interactieve selectie</h4>
-        <p data-i18n="features.interact.desc">Selecteer locaties met klikken, multiselectie of lasso en filter via paalafmeting en puntniveau in de legenda.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-folder"/></svg></div>
-        <h4 data-i18n="features.project.title">IFCPP-projectbestand</h4>
-        <p data-i18n="features.project.desc">Bewaar geïmporteerde data, instellingen, paalkeuzes en handmatige sonderingsselecties samen en open het volledige project later opnieuw.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg></div>
-        <h4 data-i18n="features.export.title">Export naar Excel/CSV</h4>
-        <p data-i18n="features.export.desc">Exporteer de actuele paaltoewijzingen en geselecteerde sonderingen naar Excel of CSV voor rapportage en afstemming.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div>
-        <h4 data-i18n="features.pileImport.title">Bestaand paalplan importeren</h4>
-        <p data-i18n="features.pileImport.desc">Werk een actief project bij vanuit een Excel/CSV-tabel, inclusief legacy-bestanden — met validatie op ID's en coördinaten en een voorbeeldweergave vóór import.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div>
-        <h4 data-i18n="features.webdesktop.title">Browser én desktop</h4>
-        <p data-i18n="features.webdesktop.desc">Dezelfde Rust-rekenkern draait via WebAssembly in de browser en native in de Windows-desktopapp (Tauri 2). De Windows-app biedt ook lokale MCP-toegang voor AI-assistenten zoals ChatGPT Desktop en Claude Desktop. Lezen en bewerken worden apart ingeschakeld.</p>
-      </div>
-      <div class="feature">
-        <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg></div>
-        <h4 data-i18n="features.sample.title">Direct verkennen</h4>
-        <p data-i18n="features.sample.desc">De browserdemo opent met een compleet voorbeeldproject, zodat je de werkwijze zonder voorbereiding kunt onderzoeken.</p>
-      </div>
-    </div>
-    <p class="more-row" data-fold-for="opp-features" hidden>
-      <button type="button" class="btn btn-secondary btn-lg more-btn" aria-expanded="false" aria-controls="opp-features">
-        <span data-fold-show class="more-label"><span data-i18n="features.showAll">Toon alle functies</span> <span class="more-count" data-fold-count></span></span>
-        <span data-fold-hide hidden data-i18n="features.showLess">Toon minder</span>
-        <svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg>
-      </button>
-    </p>
-  </div></section>
-
-  <section class="section surface-dark panel">
+  <section class="section surface-dark panel pp-anchor" id="whats-new">
     <div class="panel-split">
       <div class="panel-split-text">
-        <p class="pill-label">IFCPP</p>
-        <h2 data-i18n="workflow.title">Werkwijze: drie stappen naar een navolgbaar project</h2>
+        <p class="pill-label" data-i18n="whatsnew.label">Nieuw in v2026.44.3</p>
+        <h2 data-i18n="whatsnew.title">Paalstaat op maat en <span>wijzigingstabellen</span></h2>
+        <p data-i18n="whatsnew.desc">Deze release maakt de export instelbaar, voegt wijzigingstabellen toe en geeft het koppelen van oude en nieuwe locaties een eigen, grote werkplek.</p>
+        <div class="btn-group">
+          <a href="https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v2026.44.3" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-document"/></svg><span data-i18n="whatsnew.ctaChangelog">Alle release notes</span></a>
+          <a href="https://pile-plan-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="whatsnew.ctaDemo">Probeer het in de browser</span></a>
+        </div>
       </div>
-      <ul class="split-cards">
-        <li class="split-card"><div class="icon-tile step-num">1</div><div><p data-i18n="workflow.step1"><strong>Bronnen combineren</strong> Importeer belastinglocaties, sonderingen en funderingsadvies en controleer hun rol.</p></div></li>
-        <li class="split-card"><div class="icon-tile step-num">2</div><div><p data-i18n="workflow.step2"><strong>Opties beoordelen</strong> Inspecteer de planweergave, sonderingskeuze, draagvermogen, benutting en kosten.</p></div></li>
-        <li class="split-card"><div class="icon-tile step-num">3</div><div><p data-i18n="workflow.step3"><strong>Keuzes vastleggen</strong> Wijs configuraties toe, controleer het geheel en bewaar alles als IFCPP-project.</p></div></li>
+      <ul class="split-cards split-cards-2">
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-sliders"/></svg></div><div><h4 data-i18n="whatsnew.items.columns.title">Kolommen naar keuze</h4><p data-i18n="whatsnew.items.columns.desc">Kies, sleep en hernoem de kolommen van de export, en kies welk plan je exporteert zonder het actieve plan te wisselen.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-pin"/></svg></div><div><h4 data-i18n="whatsnew.items.marks.title">Paalnummering</h4><p data-i18n="whatsnew.items.marks.desc">Nummer palen ruimtelijk en geef puntniveaus een letter- of cijfercode, van hoog naar laag of andersom.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-clipboard"/></svg></div><div><h4 data-i18n="whatsnew.items.change.title">Wijzigingstabel</h4><p data-i18n="whatsnew.items.change.desc">Vergelijk een eerdere paalstaat uit CSV of Excel met het nieuwe plan; bestaande paalnummers blijven behouden.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-text"/></svg></div><div><h4 data-i18n="whatsnew.items.codes.title">Wijzigingscodes</h4><p data-i18n="whatsnew.items.codes.desc">Een kolom met M, S, L, A en R voor verplaatst, maat, niveau, toegevoegd en vervallen; codes en drempel stel je zelf in.</p></div></li>
+        <li class="split-card"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="whatsnew.items.review.title">Locaties koppelen op een grote tekening</h4><p data-i18n="whatsnew.items.review.desc">Begin bij de open gevallen, kies de oude partner op de tekening en ga vanzelf door naar de volgende; de rest in één keer op afstand.</p></div></li>
       </ul>
     </div>
   </section>
 
-  <section class="section"><div class="container">
-    <div class="limits-card">
-      <div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-warning"/></svg></div>
-      <div>
-        <h2 data-i18n="limits.title">Beslisondersteuning, geen automatische ontwerpverantwoordelijkheid</h2>
-        <p data-i18n="limits.desc1">Open Pile Plan Studio is momenteel een publieke alpha. De instelbare sonderingsselectie is een praktische benadering. Het optimalisatieresultaat meldt of optimaliteit is bewezen; Snel verbeteren is een lokale verbetermethode.</p>
-        <p data-i18n="limits.desc2">Controleer invoer, aannames en technische resultaten altijd binnen het project door een gekwalificeerde professional. De tool ondersteunt engineeringbeslissingen maar vervangt de verantwoordelijkheid voor het funderingsontwerp niet.</p>
-      </div>
+  <section class="section pp-anchor" id="faq"><div class="container">
+    <h2 data-i18n="faq.heading">Veelgestelde vragen</h2>
+    <div class="pp-faq-list">
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.files.q">Welke bestanden kan ik openen?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.files.a">Belastinglocaties, sonderingen en funderingsadvies als CSV of Excel (XLSX), belastingen ook als Excel-export uit RFEM. Verder projecten in IFCPP en bestaande paalstaten uit Excel of CSV.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.install.q">Moet ik iets installeren?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.install.a">Nee. De webversie opent direct met een voorbeeldproject. De Windows-app heb je alleen nodig voor de koppeling met een AI-assistent en om IFCPP-bestanden vanuit de Verkenner te openen.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.cost.q">Wat kost het?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.cost.a">Niets. Open Pile Plan Studio is gratis en open source onder de LGPL-3.0-licentie, zonder account.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.format.q">In welk bestandsformaat wordt mijn werk opgeslagen?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.format.a">In een IFCPP-bestand: een open, leesbaar projectformaat met alle bronnen, instellingen, keuzes en varianten. Paalstaten exporteer je naar Excel of CSV.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.systems.q">Op welke systemen draait het?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.systems.a">In elke moderne browser, dus ook op macOS en Linux, en als app voor Windows (64-bit). Installers voor macOS en Linux zijn er nog niet.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.practice.q">Sluit het aan op de bouwpraktijk?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.practice.a">Ja. Je werkt met de rekenwaarden die je al hebt: FEd uit het rekenmodel en Rc;net;d per sondering, paalmaat en puntniveau uit het funderingsadvies. Paalkosten per m³ stel je per project in.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.ai.q">Wat kan een AI-assistent ermee?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.ai.a">De Windows-app kan het open project via MCP delen met bijvoorbeeld ChatGPT Desktop of Claude Desktop. Die kan gegevens bekijken, plannen vergelijken en de optimalisatie starten; bewerken zet je apart aan. De webversie heeft geen MCP.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.capacity.q">Rekent het programma zelf het draagvermogen uit?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.capacity.a">Nee, nog niet. Het draagvermogen per sondering komt uit het funderingsadvies van de geotechnisch adviseur; het programma kiest, vergelijkt en optimaliseert op basis daarvan.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.optimal.q">Is de uitkomst van de optimalisatie altijd de beste?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.optimal.a">Niet altijd, en dat zie je ook. Het resultaat meldt of het optimum bewezen is; bij Snel verbeteren of een afgebroken berekening krijg je de beste gevonden oplossing.</p></div>
+      </details>
+      <details class="pp-faq-item">
+        <summary><span data-i18n="faq.try.q">Kan ik het eerst uitproberen zonder eigen gegevens?</span><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chevron-down"/></svg></summary>
+        <div class="pp-faq-a"><p data-i18n="faq.try.a">Ja. De webversie opent met een compleet voorbeeldproject, zodat je de werkwijze direct kunt verkennen.</p></div>
+      </details>
     </div>
   </div></section>
 
-  <section class="section"><div class="container">
-    <div class="section-head">
-      <h2 data-i18n="tech.title">Technologie</h2>
+  <section class="section" id="technology"><div class="container">
+    <div class="section-head"><h2 data-i18n="tech.heading">Technologie</h2><p data-i18n="tech.sub">Voor wie wil weten hoe het gebouwd is.</p></div>
+    <div class="features features-compact">
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chip"/></svg></div><div><h4 data-i18n="tech.rust.title">Rust</h4><p data-i18n="tech.rust.desc">De rekenkern voor import, paalopties, sonderingskeuze, kosten en optimalisatie.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-globe"/></svg></div><div><h4 data-i18n="tech.wasm.title">WebAssembly</h4><p data-i18n="tech.wasm.desc">Dezelfde Rust-kern draait in de browser, zonder server die meerekent.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-layers"/></svg></div><div><h4 data-i18n="tech.react.title">React en TypeScript</h4><p data-i18n="tech.react.desc">De interface met tekening, tabellen en lint, gelijk in browser en desktop.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-viewport"/></svg></div><div><h4 data-i18n="tech.tauri.title">Tauri 2</h4><p data-i18n="tech.tauri.desc">Een kleine, ondertekende Windows-app met de kern native in Rust.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-bolt"/></svg></div><div><h4 data-i18n="tech.highs.title">HiGHS</h4><p data-i18n="tech.highs.desc">Open-source solver voor de geheeltallige optimalisatie, in browser en desktop.</p></div></div>
+      <div class="feature"><div class="icon-tile"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-chat"/></svg></div><div><h4 data-i18n="tech.mcp.title">MCP</h4><p data-i18n="tech.mcp.desc">Lokale koppeling voor AI-assistenten in de Windows-app; wijzigingen lopen via dezelfde controles en geschiedenis.</p></div></div>
     </div>
-    <div class="chip-row chip-row-light tech-chips">
-      <span class="chip">Rust</span>
-      <span class="chip">WebAssembly</span>
-      <span class="chip">React</span>
-      <span class="chip">TypeScript</span>
-      <span class="chip">Tauri 2</span>
-      <span class="chip">IFCPP</span>
-    </div>
-    <p class="tech-desc" data-i18n="tech.desc">De engineeringlogica voor import, paalopties, kosten, sonderingsselectie en optimalisatie leeft in de Rust-rekenkern. Diezelfde kern draait via WebAssembly in de browser en native in de Tauri-desktopapp — één rekenmodel, twee platforms.</p>
   </div></section>
+
 
   <!-- Release Notes (shared component) -->
+  <section id="releases" class="pp-releases">
   <div data-release-notes="pile-plan-studio"></div>
+  <p class="pp-rel-more">
+    <button type="button" class="btn btn-secondary" data-rel-toggle aria-expanded="false" hidden><span data-rel-show data-i18n="releases.showAll">Toon alle releases</span><span data-rel-hide hidden data-i18n="releases.showLess">Toon alleen de laatste drie</span></button>
+    <a href="https://github.com/OpenAEC-Foundation/pile-plan-studio/releases" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="releases.github">Alle releases op GitHub</span></a>
+  </p>
+  </section>
   <script src="/shared/release-notes.js?v=20261022"></script>
+  <script src="/shared/productpagina.js?v=20261029c"></script>
 
   <section class="section surface-spot panel">
     <div class="panel-center">
       <h2 data-i18n="header.title">Open <span class="accent">Pile Plan</span> Studio</h2>
       <div class="btn-group">
-        <a href="#download" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="cta.releases">Download</span></a>
-        <a href="https://pile-plan-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="cta.liveDemo">Open de browserdemo</span></a>
-        <a href="https://github.com/OpenAEC-Foundation/pile-plan-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-star"/></svg><span data-i18n="cta.github">GitHub</span></a>
+        <a href="https://pile-plan-studio.open-aec.com/" target="_blank" rel="noopener" class="btn btn-glow btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-play"/></svg><span data-i18n="header.demoBtn">Open in de browser</span></a>
+        <a href="#download" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-download"/></svg><span data-i18n="header.downloadBtn">Download</span></a>
+        <a href="https://github.com/OpenAEC-Foundation/pile-plan-studio" target="_blank" rel="noopener" class="btn btn-glass btn-lg"><svg class="ico" aria-hidden="true"><use href="/shared/icons.svg?v=20261016#i-external"/></svg><span data-i18n="header.sourceBtn">Broncode</span></a>
       </div>
     </div>
   </section>
-
   </main>
 
   <div id="shared-footer"><!-- footer:start -->
@@ -451,52 +596,6 @@
   </div>
 </footer>
 <!-- footer:end --></div>
-
-  <script>
-    (function(){
-      const track = document.getElementById('sliderTrack');
-      const dots = document.getElementById('sliderDots');
-      if (!track || !dots) return;
-      const slides = track.children.length;
-      let current = 0;
-      for(let i=0;i<slides;i++){
-        const d = document.createElement('button');
-        d.className = 'slider-dot' + (i===0?' active':'');
-        d.onclick = ()=>slideTo(i);
-        dots.appendChild(d);
-      }
-      window.slideMove = function(dir){slideTo(current+dir);};
-      window.slideTo = function(i){
-        current = (i+slides)%slides;
-        track.style.transform = 'translateX(-'+current*100+'%)';
-        dots.querySelectorAll('.slider-dot').forEach((d,idx)=>d.classList.toggle('active',idx===current));
-      };
-    })();
-    // Lange lijsten: de eerste paar zichtbaar, de rest achter de vaste "Toon alles"-knop. Zonder JavaScript staat alles open.
-    document.querySelectorAll('[data-fold]').forEach(function (grid) {
-      var n = +grid.getAttribute('data-fold');
-      var items = Array.prototype.slice.call(grid.children);
-      var row = document.querySelector('[data-fold-for="' + grid.id + '"]');
-      if (!row || items.length <= n) return;
-      var btn = row.querySelector('.more-btn');
-      var show = btn.querySelector('[data-fold-show]');
-      var hide = btn.querySelector('[data-fold-hide]');
-      btn.querySelector('[data-fold-count]').textContent = '(' + items.length + ')';
-      function zet(open) {
-        items.forEach(function (c, i) { c.style.display = (!open && i >= n) ? 'none' : ''; });
-        show.hidden = open; hide.hidden = !open;
-        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      }
-      zet(false);
-      row.hidden = false;
-      btn.addEventListener('click', function () {
-        var open = btn.getAttribute('aria-expanded') !== 'true';
-        zet(open);
-        if (!open) grid.scrollIntoView({ block: 'start' });
-      });
-    });
-  </script>
   <script src="/shared/i18n.js?v=20261015"></script>
-  <script src="/shared/pile-plan-downloads.js?v=20261015"></script>
 </body>
 </html>

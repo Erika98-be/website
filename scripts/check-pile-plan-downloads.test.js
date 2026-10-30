@@ -48,28 +48,27 @@ test('offers only actual installer assets and their direct download URLs', () =>
 });
 
 test('every language page works without JavaScript and links to the installer, not a release page', () => {
-  const installer = assetUrl('v2026.43.2', 'Open.Pile.Plan.Studio_2026.43.2_x64-setup.exe');
+  const installer = /href="https:\/\/github\.com\/OpenAEC-Foundation\/pile-plan-studio\/releases\/download\/v[0-9][^"\/]*\/Open\.Pile\.Plan\.Studio_[0-9.]+_x64-setup\.exe"/;
   for (const language of ['', 'en/', 'fr/', 'tr/', 'es/']) {
     const html = fs.readFileSync(path.join(root, language, 'open-pile-plan-studio', 'index.html'), 'utf8');
     assert.ok(html.includes('id="download"'), `${language || 'nl/'}: download block missing`);
-    assert.ok(html.includes(`href="${installer}"`), `${language || 'nl/'}: installer fallback missing`);
+    assert.match(html, installer, `${language || 'nl/'}: installer fallback missing`);
     assert.ok(html.includes('href="#download"'), `${language || 'nl/'}: download navigation missing`);
   }
 });
 
-test('download block follows the screenshots and full introduction in every language', () => {
+test('download block follows the screenshots and features in every language', () => {
   for (const language of ['', 'en/', 'fr/', 'tr/', 'es/']) {
     const html = fs.readFileSync(path.join(root, language, 'open-pile-plan-studio', 'index.html'), 'utf8');
-    const screenshots = html.indexOf('class="media-slider"');
-    const introduction = html.indexOf('class="explainer"');
-    const introductionEnd = html.indexOf('</div>', introduction);
+    const screenshots = html.indexOf('data-pp-slider');
+    const features = html.indexOf('id="features"');
     const download = html.indexOf('id="download"');
-    const why = html.indexOf('data-i18n="why.title"');
+    const whatsNew = html.indexOf('id="whats-new"');
 
-    assert.ok(screenshots >= 0 && introduction >= 0 && introductionEnd >= 0 &&
-      download >= 0 && why >= 0, `${language || 'nl/'}: required page section missing`);
-    assert.ok(screenshots < introduction && introductionEnd < download && download < why,
-      `${language || 'nl/'}: download should follow the introduction and precede Why`);
+    assert.ok(screenshots >= 0 && features >= 0 && download >= 0 && whatsNew >= 0,
+      `${language || 'nl/'}: required page section missing`);
+    assert.ok(screenshots < features && features < download && download < whatsNew,
+      `${language || 'nl/'}: download should follow the features and precede What's new`);
   }
 });
 

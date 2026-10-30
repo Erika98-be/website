@@ -1,102 +1,276 @@
 {
   "header": {
-    "label": "OpenAEC Ekosistemi",
     "title": "Open <span class=\"accent\">Pile Plan</span> Studio",
-    "desc": "Kazık planları için açık kaynak mühendislik aracı. Yük noktalarını, CPT'leri, temel tavsiyelerini, kazık seçeneklerini, kullanım oranlarını ve tahmini maliyetleri tek bir etkileşimli kazık planında birleştirin.",
-    "badge": "Alpha",
-    "gww": "İnşaat / Geoteknik",
-    "caution": "Teknik sonuçlar karar desteğidir ve her zaman nitelikli bir uzman tarafından kontrol edilmelidir."
+    "demoBtn": "Tarayıcıda aç",
+    "downloadBtn": "İndir",
+    "sourceBtn": "Kaynak kodu",
+    "proof2": "Felemenkçe ve İngilizce",
+    "proof3": "Tarayıcı · Windows",
+    "proof4": "Ücretsiz · LGPL-3.0",
+    "heroAlt": "Open Pile Plan Studio: örnek bir dağıtım merkezinin kazık planı; uç seviyesine göre renkli alanlar ve sağda seçili kolonun kazık seçenekleri",
+    "label": "Temeller",
+    "tagline": "Yüklerden ve CPT'lerden gerekçeli bir kazık planına",
+    "desc": "Yük noktalarını, CPT'leri ve temel raporunu içe aktarın; her konum için hangi kazığın uyduğunu, maliyetini ve ne kadar yüklendiğini görün. Seçimleri atayın, en ucuz tutarlı varyantı uygulamaya buldurun ve planı Excel'e aktarın."
   },
-  "cta": {
-    "liveDemo": "Tarayıcı demosunu aç",
-    "releases": "İndir",
-    "github": "GitHub"
+  "meta": {
+    "description": "Kazık planları için ücretsiz, açık kaynaklı uygulama: yük noktaları, CPT'ler ve temel raporu tek bir planda; kazık seçenekleri, kullanım oranı, maliyet ve optimizasyon ile. Tarayıcıda ve Windows için.",
+    "title": "Open Pile Plan Studio — OpenAEC Foundation"
   },
-  "download": {
-    "title": "İndir",
-    "action": "İndir"
-  },
-  "what": {
-    "title": "Open Pile Plan Studio nedir?",
-    "desc": "Open Pile Plan Studio, kazık seçeneklerini değerlendirmek ve pratik kazık planı varyantları oluşturmak için açık kaynaklı bir mühendislik aracıdır. Yapısal yükleri, yakındaki CPT'leri ve mevcut konfigürasyonları tarayıcı ve Windows uygulamasında aynı Rust hesaplama çekirdeğiyle bir araya getirir.",
-    "list1": "Yük noktalarını, CPT'leri ve temel tavsiyelerini CSV/XLSX'ten içe aktarma (RFEM dışa aktarımları dahil)",
-    "list2": "Yük noktası başına geçerli, yetersiz ve eksik kazık seçenekleri",
-    "list3": "Çeyrek bölge veya maksimum açıya göre CPT seçimi, manuel geçersiz kılma ile",
-    "list4": "Kullanım oranı, belirleyici taşıma kapasitesi ve tahmini maliyet karşılaştırması",
-    "list5": "HiGHS ile maliyet optimizasyonu, konfigürasyon sınırları ve isteğe bağlı komşu farkı azaltma",
-    "list6": "Projenin tamamını IFCPP dosyası olarak kaydetme ve daha sonra yeniden açma"
-  },
-  "why": {
-    "title": "Neden <span class=\"accent\">Open Pile Plan</span> Studio?",
-    "desc1": "Bir kazık planı hazırlamak çoğu zaman elektronik tablolara, temel tavsiye raporlarına ve çizimlere dağılmış el işidir. Open Pile Plan Studio bu bilgileri tek bir etkileşimli çalışma alanında birleştirir: yük noktalarını seçin, geçerli konfigürasyonları anında görün ve seçimleri izlenebilir şekilde kaydedin.",
-    "desc2": "Ücretsiz ve açık kaynak; yapı mühendisleri, geoteknik danışmanlar ve temel uzmanları için. Tarayıcı demosu eksiksiz bir örnek projeyle açılır, böylece hiçbir hazırlık yapmadan çalışma yöntemini keşfedebilirsiniz."
-  },
-  "features": {
-    "title": "Özellikler",
-    "import": {
-      "title": "Hedefe yönelik proje içe aktarma",
-      "desc": "Yük noktalarını, CPT koordinatlarını ve temel tavsiyelerini CSV veya XLSX dosyalarından içe aktarın ve üç kaynak rolünü içe aktarmadan önce atayın. RFEM dışa aktarımları otomatik algılanır."
+  "hl": {
+    "cpt": {
+      "alt": "Çizimde dört CPT'ye çizgilerle bağlı seçili kolon ve sağda çeyrek, CPT, mesafe ve taşıma gücü tablosu",
+      "kicker": "CPT'ler",
+      "title": "Bir kazığı hangi CPT'lerin belirlediğini görün",
+      "desc": "Uygulama her yük noktası için CPT'leri çeyrek bölgeye göre veya azami bir açı içinde, mesafe ve taşıma gücüyle birlikte seçer. Çizimdeki çizgiler hangi CPT'lerin sayıldığını gösterir; isterseniz seçimi değiştirin."
     },
-    "selection": {
-      "title": "CPT seçimi",
-      "desc": "CPT'leri çeyrek bölge veya maksimum açı kurallarına göre otomatik seçin ve tekil yük noktaları için seçimi manuel olarak geçersiz kılın."
+    "optim": {
+      "alt": "Sonucu gösteren Optimizasyon paneli: ağırlıklı komşu farkları, gerçek maliyet ve optimize edilen konum sayısı, yeni kazık planının yanında",
+      "kicker": "Optimizasyon",
+      "title": "En ucuz tutarlı planı uygulamaya buldurun",
+      "desc": "Optimizasyon, kazık boyutu ve uç seviyesi sayısı için koyduğunuz sınırlar içinde en düşük maliyeti arar. Ardından planı sadeleştirir: küçük bir maliyet bütçesi içinde komşular arasında daha az fark. Sonucun kanıtlanmış en iyi olup olmadığını görürsünüz."
     },
-    "options": {
-      "title": "Kazık seçeneklerini karşılaştırma",
-      "desc": "Konum başına geçerli, yetersiz ve eksik kazık seçeneklerini boyut, uç seviyesi ve belirleyici CPT ile inceleyin."
-    },
-    "assign": {
-      "title": "Tekli veya toplu atama",
-      "desc": "Bir konfigürasyonu tek bir yük noktasına veya ortak seçeneklere sahip çoklu bir seçime atayın."
-    },
-    "compare": {
-      "title": "Kullanım ve maliyet",
-      "desc": "Bir konfigürasyonu kaydetmeden önce kullanım oranını, belirleyici CPT'yi ve tahmini maliyeti karşılaştırın."
-    },
-    "optimize": {
-      "title": "Planı optimize etme",
-      "desc": "HiGHS ile konfigürasyon sınırları içinde maliyeti azaltın ve isteğe bağlı olarak maliyet bütçesi dahilinde komşu farklarını azaltın. Hızlı iyileştirme yerel bir alternatiftir."
-    },
-    "interact": {
-      "title": "Etkileşimli seçim",
-      "desc": "Konumları tıklama, çoklu seçim veya kement ile seçin ve gösterge panelinde kazık boyutu ile uç seviyesine göre filtreleyin."
-    },
-    "project": {
-      "title": "IFCPP proje dosyası",
-      "desc": "İçe aktarılan verileri, ayarları, kazık seçimlerini ve manuel CPT seçimlerini bir arada tutun ve projenin tamamını daha sonra yeniden açın."
+    "cap": {
+      "alt": "Asansör çekirdeğindeki bir kolonun altında dört kazıklı başlık önerisi; kazık seçenekleri ve toplam maliyetle",
+      "kicker": "Kazık başlıkları",
+      "title": "Bir başlık altında daha fazla kazık deneyin",
+      "desc": "Bir konum veya grup için 1 ile 20 kazık arasında bir başlık önerisi girin ve hangi kazık seçeneklerinin uyduğunu ve maliyetini hemen görün. Öneri kazık planıyla birlikte saklanır; bir genel bakış plandaki tüm değişiklikleri listeler."
     },
     "export": {
-      "title": "Excel/CSV'ye dışa aktarma",
-      "desc": "Güncel kazık atamalarını ve seçili CPT'leri raporlama ve koordinasyon için Excel veya CSV'ye aktarın."
+      "alt": "Kazık planının sütun ayarlarını ve konum, koordinatlar, yük, kazık boyutu, uç seviyesi ve CPT'leri içeren tablo önizlemesini gösteren dışa aktarma ekranı",
+      "kicker": "Dışa aktarma",
+      "title": "İstediğiniz gibi bir kazık çizelgesi",
+      "desc": "Hangi kazık planını dışa aktaracağınızı, hangi sütunları hangi sırayla ve hangi adla içereceğini seçin. Tabloyu hemen önizlemede görür, Excel veya CSV olarak kaydedersiniz. Bir değişiklik tablosu önceki bir sürümle karşılaştırır."
     },
-    "pileImport": {
-      "title": "Mevcut kazık planını içe aktarma",
-      "desc": "Aktif bir projeyi Excel/CSV tablosundan güncelleyin, eski dosyalar dahil — kimlik ve koordinat doğrulaması ve içe aktarma öncesi önizleme ile."
-    },
-    "webdesktop": {
-      "title": "Tarayıcı ve masaüstü",
-      "desc": "Aynı Rust hesaplama çekirdeği tarayıcıda WebAssembly üzerinden, Windows masaüstü uygulamasında (Tauri 2) yerel olarak çalışır. Windows uygulaması ayrıca ChatGPT Desktop ve Claude Desktop gibi yapay zekâ asistanları için yerel MCP erişimi sunar; okuma ve düzenleme ayrı ayrı etkinleştirilir."
-    },
-    "sample": {
-      "title": "Hemen keşfedin",
-      "desc": "Tarayıcı demosu eksiksiz bir örnek projeyle açılır, böylece çalışma yöntemini hazırlıksız inceleyebilirsiniz."
-    },
-    "showAll": "Tüm özellikleri göster",
-    "showLess": "Daha az göster"
+    "data": {
+      "alt": "Yük noktası tablosu: konum başına ID, X, Y ve FEd; sağda seçili konumun kazık seçenekleri",
+      "kicker": "Girdi",
+      "title": "Başlangıç noktası olarak kendi tablolarınız",
+      "desc": "Yük noktalarını, CPT'leri ve temel raporunu CSV veya Excel'den, doğrudan bir RFEM dışa aktarımından da içe aktarın. Her kaynak projede bir tablo olarak durur. Model değişirse kaynağı yenileyin: bağlı seçimler yeni konumlara taşınır."
+    }
   },
-  "workflow": {
-    "title": "Çalışma yöntemi: izlenebilir bir projeye üç adım",
-    "step1": "<strong>Kaynakları birleştirin</strong> Yük noktalarını, CPT'leri ve temel tavsiyelerini içe aktarın ve rollerini kontrol edin.",
-    "step2": "<strong>Seçenekleri değerlendirin</strong> Plan görünümünü, CPT seçimini, taşıma kapasitesini, kullanımı ve maliyetleri inceleyin.",
-    "step3": "<strong>Seçimleri kaydedin</strong> Konfigürasyonları atayın, bütünü kontrol edin ve her şeyi IFCPP projesi olarak kaydedin."
+  "notice": {
+    "link": "Sorun bildirin",
+    "text": "Herkese açık alfa sürümü: sonuçlar tasarımınızı destekler, ancak her zaman yetkin bir uzmana kontrol ettirin."
   },
-  "limits": {
-    "title": "Karar desteği, otomatik tasarım sorumluluğu değil",
-    "desc1": "Open Pile Plan Studio şu anda herkese açık bir alpha sürümüdür. Yapılandırılabilir CPT seçimi pratik bir yaklaşımdır. Optimizasyon sonucu, optimalitenin kanıtlanıp kanıtlanmadığını bildirir; hızlı iyileştirme yerel bir yöntemdir.",
-    "desc2": "Girdileri, varsayımları ve teknik sonuçları her zaman proje içinde nitelikli bir uzmana kontrol ettirin. Araç mühendislik kararlarını destekler ancak temel tasarımının sorumluluğunun yerine geçmez."
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "download": "İndir",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "options": "Kazık seçenekleri",
+    "cpt": "CPT'ler",
+    "optim": "Optimizasyon",
+    "data": "İçe ve dışa aktarma",
+    "all": "Tüm özellikler"
+  },
+  "features": {
+    "learnMore": "Devamını oku",
+    "label": "Özellikler",
+    "heading": "Kazık planı için her şey, tek bir çizimde",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "f": {
+    "options": {
+      "title": "Konum başına kazık seçenekleri",
+      "desc": "Her konum için tüm kazık boyutu ve uç seviyesi kombinasyonları: geçerli, yetersiz veya rapor yok; belirleyici CPT ile."
+    },
+    "compare": {
+      "title": "Kullanım oranı ve maliyet",
+      "desc": "Bir kazık seçmeden önce kullanım oranını, taşıma gücünü ve tahmini maliyeti karşılaştırın. Her sütunu sıralayın ve filtreleyin."
+    },
+    "multi": {
+      "title": "Birçok konum için tek seçim",
+      "desc": "Tıklayarak, Shift ile veya kementle seçin; tablo tüm konumlar için geçerli seçenekleri gösterir."
+    },
+    "groups": {
+      "title": "Gruplar",
+      "desc": "Konumları aynı kazığı alan bir grupta toplayın. Çelişkili seçimleri olan gruplar kırmızı olur."
+    },
+    "cap": {
+      "title": "Başlık önerileri",
+      "desc": "Bir başlık altında 1 ile 20 kazık deneyin; gösterge niteliğinde seçenekler ve maliyetlerle. Hepsini sıfırlamak tek adımdır."
+    },
+    "lock": {
+      "title": "Seçimleri kilitleyin",
+      "desc": "Sabit seçimleri kazık planı başına kilitleyin; optimizasyon onlara dokunmaz."
+    },
+    "legend": {
+      "title": "Gösterge ve görünüm",
+      "desc": "Kazık boyutuna ve uç seviyesine göre filtreleyin, sembolleri ve renkleri ayarlayın, görünen sütunları seçin."
+    },
+    "cptauto": {
+      "title": "CPT'leri otomatik seçin",
+      "desc": "Çeyrek bölgeye göre veya azami açı içinde, mesafe sınırıyla."
+    },
+    "cptmanual": {
+      "title": "Elle değiştirin",
+      "desc": "Bir konumun veya tüm seçimin CPT'lerini tek seferde değiştirin, istediğinizde otomatik seçime dönün."
+    },
+    "advice": {
+      "title": "Temel raporlarını birleştirin",
+      "desc": "Bir projede birden çok rapor dosyası ve çalışma sayfası; kazık boyutu başına bir sütunlu tablo olarak da. Çelişkili değerler bildirilir."
+    },
+    "optim": {
+      "title": "En düşük maliyet",
+      "desc": "Optimizasyon, kazık boyutu, uç seviyesi ve yapılandırma sayısı sınırları içinde en ucuz atamayı bulur."
+    },
+    "coherence": {
+      "title": "Daha sade bir plan",
+      "desc": "Komşular arasında uç seviyesi ve kazık boyutunda daha az fark, bir maliyet bütçesi içinde (varsayılan %5 ek)."
+    },
+    "quick": {
+      "title": "Hızlı iyileştirme",
+      "desc": "Tam hesaplamaya alternatif olarak hızlı yerel bir iyileştirme. Bir sonucun kanıtlanmış en iyi olup olmadığını her zaman görürsünüz."
+    },
+    "variants": {
+      "title": "Birden çok kazık planı",
+      "desc": "Varyantları tek projede yan yana saklayın; plan başına toplam maliyetle."
+    },
+    "import": {
+      "title": "CSV, Excel ve RFEM",
+      "desc": "İçe aktarmadan önce her dosyaya bir rol verin. RFEM dışa aktarımı tanınır; önce olası hataları gösteren bir önizleme görürsünüz."
+    },
+    "refresh": {
+      "title": "Kaynakları yenileyin",
+      "desc": "Modelden yeni yükler mi geldi? Eski ve yeni konumları büyük bir çizimde eşleyin; seçimler ve kilitler de taşınır."
+    },
+    "importplan": {
+      "title": "Mevcut bir kazık planını içe aktarın",
+      "desc": "Bir Excel veya CSV tablosu, ID'ye veya koordinata göre eşlenen ve önceden kontrol edilen yeni bir kazık planı olur."
+    },
+    "export": {
+      "title": "Kazık çizelgesi Excel veya CSV'ye",
+      "desc": "Kendi sütunlarınız, sıranız ve başlıklarınız, kazık numaralandırma ve birimler; canlı önizlemeyle."
+    },
+    "change": {
+      "title": "Değişiklik tablosu",
+      "desc": "Önceki bir kazık çizelgesiyle karşılaştırın: taşındı, boyut değişti, seviye değişti, eklendi veya kaldırıldı; kodları siz seçersiniz."
+    },
+    "ifcpp": {
+      "title": "Her şey tek bir proje dosyasında",
+      "desc": "Kaynaklar, ayarlar, seçimler ve varyantlar tek bir IFCPP dosyasında; geri alma ve tarayıcı çökmesinden sonra kurtarma ile."
+    },
+    "mcp": {
+      "title": "Yapay zekâ asistanı (Windows)",
+      "desc": "ChatGPT Desktop veya Claude Desktop'u açık projeye bağlayın. Okuma ve düzenleme ayrı ayrı açılır."
+    }
+  },
+  "download": {
+    "title": "v2026.44.3 indir",
+    "lead": "Ücretsiz, hesap gerekmez. Windows için.",
+    "forWindows": "Windows için indir",
+    "metaWindows": ".exe yükleyici",
+    "browserBtn": "Tarayıcıda aç",
+    "fileExe": "Yükleyici (.exe)",
+    "browserNote": "Hiçbir şey kurmak istemiyor musunuz? Uygulama <a href=\"https://pile-plan-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">tarayıcıda da çalışır</a>.",
+    "label": "İndir",
+    "mobileNote": "Open Pile Plan Studio büyük ekran için yapılmıştır. Bilgisayarınızda açın veya burada tarayıcıda deneyin.",
+    "other": "Diğer platformlar"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "ctaDemo": "Tarayıcıda deneyin",
+    "items": {
+      "columns": {
+        "title": "İstediğiniz sütunlar",
+        "desc": "Dışa aktarma sütunlarını seçin, sürükleyin ve yeniden adlandırın; etkin planı değiştirmeden hangi planı aktaracağınızı seçin."
+      },
+      "marks": {
+        "title": "Kazık numaralandırma",
+        "desc": "Kazıkları konuma göre numaralandırın ve uç seviyelerine yüksekten alçağa veya tersine harf ya da rakam kodu verin."
+      },
+      "change": {
+        "title": "Değişiklik tablosu",
+        "desc": "CSV veya Excel'deki önceki bir kazık çizelgesini yeni planla karşılaştırın; mevcut kazık numaraları korunur."
+      },
+      "codes": {
+        "title": "Değişiklik kodları",
+        "desc": "Taşındı, boyut, seviye, eklendi ve kaldırıldı için M, S, L, A ve R içeren bir sütun; kodları ve eşiği siz ayarlarsınız."
+      },
+      "review": {
+        "title": "Konumları büyük bir çizimde eşleyin",
+        "desc": "Açık durumlarla başlayın, çizimde eski eşi seçin ve otomatik olarak sonrakine geçin; kalanları tek seferde mesafeye göre."
+      }
+    },
+    "label": "v2026.44.3 sürümünde yeni",
+    "title": "Özel kazık çizelgeleri ve <span>değişiklik tabloları</span>",
+    "desc": "Bu sürüm dışa aktarmayı ayarlanabilir yapar, değişiklik tabloları ekler ve eski ile yeni konumları eşlemek için büyük, ayrı bir çalışma alanı sunar."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "CSV veya Excel (XLSX) olarak yük noktaları, CPT'ler ve temel raporu; yükler ayrıca RFEM'den Excel dışa aktarımı olarak. Ayrıca IFCPP projeleri ve Excel veya CSV'deki mevcut kazık çizelgeleri."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Hayır. Web sürümü doğrudan örnek bir projeyle açılır. Windows uygulamasına yalnızca yapay zekâ asistanı bağlantısı ve IFCPP dosyalarını Gezgin'den açmak için ihtiyacınız var."
+    },
+    "cost": {
+      "q": "Ücreti nedir?",
+      "a": "Hiçbir şey. Open Pile Plan Studio, LGPL-3.0 lisansıyla ücretsiz ve açık kaynaklıdır; hesap gerekmez."
+    },
+    "format": {
+      "q": "Çalışmam hangi dosya biçiminde kaydedilir?",
+      "a": "Bir IFCPP dosyasında: tüm kaynakları, ayarları, seçimleri ve varyantları içeren açık, okunabilir bir proje biçimi. Kazık çizelgelerini Excel veya CSV'ye aktarırsınız."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Her modern tarayıcıda, dolayısıyla macOS ve Linux'ta da, ayrıca Windows (64 bit) uygulaması olarak. macOS ve Linux için yükleyiciler henüz yok."
+    },
+    "practice": {
+      "q": "Mühendislik pratiğine uyuyor mu?",
+      "a": "Evet. Elinizdeki tasarım değerleriyle çalışırsınız: modelden FEd ve temel raporundan CPT, kazık boyutu ve uç seviyesi başına Rc;net;d. m³ başına kazık maliyeti proje bazında ayarlanır."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "Windows uygulaması açık projeyi MCP üzerinden örneğin ChatGPT Desktop veya Claude Desktop ile paylaşabilir. Asistan verileri inceleyebilir, planları karşılaştırabilir ve optimizasyonu başlatabilir; düzenleme ayrıca açılır. Web sürümünde MCP yoktur."
+    },
+    "capacity": {
+      "q": "Uygulama taşıma gücünü kendisi mi hesaplıyor?",
+      "a": "Hayır, henüz değil. CPT başına taşıma gücü geoteknik danışmanın temel raporundan gelir; uygulama buna göre seçer, karşılaştırır ve optimize eder."
+    },
+    "optimal": {
+      "q": "Optimizasyon sonucu her zaman en iyisi mi?",
+      "a": "Her zaman değil ve bunu görürsünüz. Sonuç, en iyinin kanıtlanıp kanıtlanmadığını bildirir; hızlı iyileştirmede veya yarıda kesilen bir hesaplamada bulunan en iyi çözümü alırsınız."
+    },
+    "try": {
+      "q": "Kendi verilerim olmadan önce deneyebilir miyim?",
+      "a": "Evet. Web sürümü eksiksiz bir örnek projeyle açılır; iş akışını hemen keşfedebilirsiniz."
+    },
+    "heading": "Sık sorulan sorular"
   },
   "tech": {
-    "title": "Teknoloji",
-    "desc": "İçe aktarma, kazık seçenekleri, maliyetler, CPT seçimi ve optimizasyon için mühendislik mantığı Rust hesaplama çekirdeğinde yaşar. Aynı çekirdek tarayıcıda WebAssembly üzerinden, Tauri masaüstü uygulamasında yerel olarak çalışır — tek hesaplama modeli, iki platform."
+    "rust": {
+      "desc": "İçe aktarma, kazık seçenekleri, CPT seçimi, maliyet ve optimizasyon için hesaplama çekirdeği."
+    },
+    "wasm": {
+      "desc": "Aynı Rust çekirdeği, hesap yapan bir sunucu olmadan tarayıcıda çalışır."
+    },
+    "react": {
+      "title": "React ve TypeScript",
+      "desc": "Çizim, tablolar ve şeritle arayüz; tarayıcıda ve masaüstünde aynı."
+    },
+    "tauri": {
+      "desc": "Çekirdeği Rust'ta yerel olarak çalışan küçük, imzalı bir Windows uygulaması."
+    },
+    "highs": {
+      "desc": "Tamsayılı optimizasyon için açık kaynaklı çözücü; tarayıcıda ve masaüstünde."
+    },
+    "mcp": {
+      "desc": "Windows uygulamasında yapay zekâ asistanları için yerel bağlantı; değişiklikler aynı kontrollerden ve geçmişten geçer."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }

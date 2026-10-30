@@ -1,102 +1,276 @@
 {
   "header": {
-    "label": "OpenAEC Ecosystem",
     "title": "Open <span class=\"accent\">Pile Plan</span> Studio",
-    "desc": "Open-source engineering tool for pile plans. Bring load points, CPTs, foundation advice, pile options, utilization and estimated costs together in one interactive pile plan.",
-    "badge": "Alpha",
-    "gww": "Civil / Geotechnical",
-    "caution": "Engineering results are decision support and must always be checked by a qualified professional."
+    "demoBtn": "Open in browser",
+    "downloadBtn": "Download",
+    "sourceBtn": "Source code",
+    "proof2": "Dutch and English",
+    "proof3": "Browser · Windows",
+    "proof4": "Free · LGPL-3.0",
+    "heroAlt": "Open Pile Plan Studio: pile plan of an example distribution centre with coloured areas per tip level and, on the right, the pile options of the selected column",
+    "label": "Foundations",
+    "tagline": "From loads and CPTs to a well-founded pile plan",
+    "desc": "Import the load points, CPTs and foundation advice and see for each location which pile fits, what it costs and how heavily it is loaded. Assign choices, let the app find the cheapest coherent variant and export the plan to Excel."
   },
-  "cta": {
-    "liveDemo": "Open the browser demo",
-    "releases": "Download",
-    "github": "GitHub"
+  "meta": {
+    "description": "Free, open-source app for pile plans: load points, CPTs and foundation advice together in one plan, with pile options, utilisation, costs and optimisation. In the browser and for Windows.",
+    "title": "Open Pile Plan Studio — OpenAEC Foundation"
   },
-  "download": {
-    "title": "Download",
-    "action": "Download"
-  },
-  "what": {
-    "title": "What is Open Pile Plan Studio?",
-    "desc": "Open Pile Plan Studio is an open-source engineering tool for reviewing pile options and assembling practical pile-plan variants. It brings structural loads, nearby CPTs and available pile configurations together in the browser and Windows desktop app, powered by the same Rust calculation core.",
-    "list1": "Import load points, CPTs and foundation advice from CSV/XLSX (incl. RFEM exports)",
-    "list2": "Valid, insufficient and missing pile options per load point",
-    "list3": "CPT selection by quadrant or maximum angle, with manual override",
-    "list4": "Compare utilization, governing resistance and estimated cost",
-    "list5": "HiGHS cost optimization with configuration limits and optional reduction of differences between neighbours",
-    "list6": "Save the complete project as an IFCPP file and reopen it later"
-  },
-  "why": {
-    "title": "Why <span class=\"accent\">Open Pile Plan</span> Studio?",
-    "desc1": "Assembling a pile plan is often manual work spread across spreadsheets, foundation advice reports and drawings. Open Pile Plan Studio brings that information together in one interactive workspace: select load points, instantly see which pile configurations are valid, and record choices traceably.",
-    "desc2": "Free and open source, for structural engineers, geotechnical consultants and foundation specialists. The browser demo opens with a complete sample project, so you can explore the workflow without any preparation."
-  },
-  "features": {
-    "title": "Features",
-    "import": {
-      "title": "Purposeful project import",
-      "desc": "Import load points, CPT coordinates and foundation advice from CSV or XLSX files and assign the three source roles before import. RFEM exports are detected automatically."
+  "hl": {
+    "cpt": {
+      "alt": "Selected column with lines to four CPTs on the drawing and, on the right, a table with quadrant, CPT, distance and bearing capacity",
+      "kicker": "CPTs",
+      "title": "See which CPTs govern a pile",
+      "desc": "For each load point the app selects the CPTs per quadrant or within a maximum angle, with the distance and bearing capacity alongside. Lines on the drawing show which CPTs count; override the choice when you want something else."
     },
-    "selection": {
-      "title": "Select CPTs",
-      "desc": "Select CPTs automatically by quadrant or maximum-angle rules and override the choice manually for individual load points."
+    "optim": {
+      "alt": "Optimisation panel with the result: weighted neighbour differences, actual cost and the number of optimised locations, next to the new pile plan",
+      "kicker": "Optimisation",
+      "title": "Let the app find the cheapest coherent plan",
+      "desc": "The optimiser looks for the lowest cost within your limits on the number of pile sizes and tip levels. It then makes the plan calmer: fewer differences between neighbours, within a small cost budget. You can see whether the result is proven optimal."
     },
-    "options": {
-      "title": "Compare pile options",
-      "desc": "Review valid, insufficient and missing pile options per location with size, tip level and governing CPT."
-    },
-    "assign": {
-      "title": "Assign one or many",
-      "desc": "Assign a configuration to one load point or to a multiple selection with common options."
-    },
-    "compare": {
-      "title": "Utilization and cost",
-      "desc": "Compare utilization, governing CPT and estimated cost before recording a configuration."
-    },
-    "optimize": {
-      "title": "Optimize the plan",
-      "desc": "Use the HiGHS solver to reduce cost within configuration limits, optionally reducing differences between neighbouring locations within a cost budget. Quick improve provides a fast local alternative."
-    },
-    "interact": {
-      "title": "Interactive selection",
-      "desc": "Select locations by click, multi-selection or lasso and filter through pile size and tip level in the legend."
-    },
-    "project": {
-      "title": "IFCPP project file",
-      "desc": "Keep imported data, settings, pile choices and manual CPT selections together and reopen the complete project later."
+    "cap": {
+      "alt": "Pile-cap proposal of four piles under a column of the lift core, with the pile options and total cost per proposal",
+      "kicker": "Pile caps",
+      "title": "Try more piles under one cap",
+      "desc": "Set a pile-cap proposal of 1 to 20 piles for a location or group and immediately see which pile options fit and what they cost. The proposal is stored with the pile plan; an overview lists all changes in the plan."
     },
     "export": {
-      "title": "Export to Excel/CSV",
-      "desc": "Export the current pile assignments and selected CPTs to Excel or CSV for reporting and coordination."
+      "alt": "Export screen with the pile plan's column settings and a table preview with location, coordinates, load, pile size, tip level and CPTs",
+      "kicker": "Export",
+      "title": "A pile schedule the way you want it",
+      "desc": "Choose which pile plan to export, which columns it contains, in what order and what they are called. You see the table straight away in a preview and save it as Excel or CSV. A change table compares it with an earlier version."
     },
-    "pileImport": {
+    "data": {
+      "alt": "Load point table: ID, X, Y and FEd per location, with the pile options of the selected location on the right",
+      "kicker": "Input",
+      "title": "Your own tables as the starting point",
+      "desc": "Import load points, CPTs and foundation advice from CSV or Excel, also directly from an RFEM export. Each source is kept as a table in the project. When the structural model changes, refresh the source: linked choices move to the new locations."
+    }
+  },
+  "notice": {
+    "link": "Report an issue",
+    "text": "Public alpha: the results support your design, but always have them checked by a qualified professional."
+  },
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "download": "Download",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "options": "Pile options",
+    "cpt": "CPTs",
+    "optim": "Optimisation",
+    "data": "Import and export",
+    "all": "All features"
+  },
+  "features": {
+    "learnMore": "Learn more",
+    "label": "Features",
+    "heading": "Everything for the pile plan, on one drawing",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "f": {
+    "options": {
+      "title": "Pile options per location",
+      "desc": "For each location every combination of pile size and tip level: valid, insufficient or without advice, with the governing CPT."
+    },
+    "compare": {
+      "title": "Utilisation and cost",
+      "desc": "Compare utilisation, bearing capacity and estimated cost before you choose a pile. Sort and filter every column."
+    },
+    "multi": {
+      "title": "One choice for many locations",
+      "desc": "Select by clicking, with Shift or with a lasso; the table then shows the options that apply to all locations."
+    },
+    "groups": {
+      "title": "Groups",
+      "desc": "Bundle locations into a group with the same pile. Groups with conflicting choices turn red."
+    },
+    "cap": {
+      "title": "Pile-cap proposals",
+      "desc": "Try 1 to 20 piles under a cap, with indicative options and costs. Resetting everything takes one step."
+    },
+    "lock": {
+      "title": "Lock choices",
+      "desc": "Lock fixed choices per pile plan; the optimiser then leaves them as they are."
+    },
+    "legend": {
+      "title": "Legend and display",
+      "desc": "Filter by pile size and tip level, adjust symbols and colours and choose which columns you see."
+    },
+    "cptauto": {
+      "title": "Select CPTs automatically",
+      "desc": "Per quadrant or within a maximum angle, with a distance limit."
+    },
+    "cptmanual": {
+      "title": "Override manually",
+      "desc": "Change the CPTs for one location or a whole selection at once, and restore the automatic choice whenever you like."
+    },
+    "advice": {
+      "title": "Combine foundation advice",
+      "desc": "Several advice files and worksheets in one project, also as a table with one column per pile size. Conflicting values are reported."
+    },
+    "optim": {
+      "title": "Lowest cost",
+      "desc": "The optimiser finds the cheapest assignment within limits on the number of pile sizes, tip levels and configurations."
+    },
+    "coherence": {
+      "title": "A calmer plan",
+      "desc": "Fewer differences in tip level and pile size between neighbours, within a cost budget (5% extra by default)."
+    },
+    "quick": {
+      "title": "Quick improve",
+      "desc": "A quick local improvement as an alternative to the full calculation. You always see whether a result is proven optimal."
+    },
+    "variants": {
+      "title": "Several pile plans",
+      "desc": "Keep variants side by side in one project, with the total cost per plan."
+    },
+    "import": {
+      "title": "CSV, Excel and RFEM",
+      "desc": "Give each file a role before importing. An RFEM export is recognised; you first see a preview with any errors."
+    },
+    "refresh": {
+      "title": "Refresh sources",
+      "desc": "New loads from the structural model? Link old and new locations on a large drawing; choices and locks move along."
+    },
+    "importplan": {
       "title": "Import an existing pile plan",
-      "desc": "Update an active project from an Excel/CSV table, including legacy files — with ID and coordinate validation and a preview before import."
+      "desc": "An Excel or CSV table becomes a new pile plan, matched by ID or coordinate, with a check beforehand."
     },
-    "webdesktop": {
-      "title": "Browser and desktop",
-      "desc": "The same Rust calculation core runs through WebAssembly in the browser and natively in the Windows desktop app (Tauri 2). The Windows app also offers local MCP access for AI assistants such as ChatGPT Desktop and Claude Desktop, with separate controls for reading and editing."
+    "export": {
+      "title": "Pile schedule to Excel or CSV",
+      "desc": "Your own columns, order and headers, pile numbering and units, with a live preview."
     },
-    "sample": {
-      "title": "Explore immediately",
-      "desc": "The browser demo opens with a complete sample project, so you can investigate the workflow without preparation."
+    "change": {
+      "title": "Change table",
+      "desc": "Compare with an earlier pile schedule: moved, other size, other level, added or removed, with codes you choose yourself."
     },
-    "showAll": "Show all features",
-    "showLess": "Show less"
+    "ifcpp": {
+      "title": "Everything in one project file",
+      "desc": "Sources, settings, choices and variants in one IFCPP file, with undo and recovery after a browser crash."
+    },
+    "mcp": {
+      "title": "AI assistant (Windows)",
+      "desc": "Connect ChatGPT Desktop or Claude Desktop to the open project. Reading and editing are switched on separately."
+    }
   },
-  "workflow": {
-    "title": "Workflow: three steps to a traceable project",
-    "step1": "<strong>Combine sources</strong> Import load points, CPTs and foundation advice and verify their role.",
-    "step2": "<strong>Assess options</strong> Inspect the plan view, CPT selection, bearing capacity, utilization and cost.",
-    "step3": "<strong>Record choices</strong> Assign configurations, review the whole plan and save everything as an IFCPP project."
+  "download": {
+    "title": "Download v2026.44.3",
+    "lead": "Free, no account needed. For Windows.",
+    "forWindows": "Download for Windows",
+    "metaWindows": ".exe installer",
+    "browserBtn": "Open in browser",
+    "fileExe": "Installer (.exe)",
+    "browserNote": "Rather not install anything? The app also <a href=\"https://pile-plan-studio.open-aec.com/\" target=\"_blank\" rel=\"noopener\">runs in the browser</a>.",
+    "label": "Download",
+    "mobileNote": "Open Pile Plan Studio is made for a large screen. Open it on your computer, or try it here in the browser.",
+    "other": "Other platforms"
   },
-  "limits": {
-    "title": "Decision support, not automated design responsibility",
-    "desc1": "Open Pile Plan Studio is currently a public alpha. The configurable CPT selection is a practical approximation. Optimizer results report whether optimality was proven; Quick improve is a local improvement method.",
-    "desc2": "Always have input, assumptions and engineering results checked within the project by a qualified professional. The tool supports engineering decisions but does not replace responsibility for the foundation design."
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "ctaDemo": "Try it in the browser",
+    "items": {
+      "columns": {
+        "title": "Columns of your choice",
+        "desc": "Choose, drag and rename the export columns, and pick which plan to export without switching the active plan."
+      },
+      "marks": {
+        "title": "Pile numbering",
+        "desc": "Number piles spatially and give tip levels a letter or number code, from high to low or the other way round."
+      },
+      "change": {
+        "title": "Change table",
+        "desc": "Compare an earlier pile schedule from CSV or Excel with the new plan; existing pile numbers are kept."
+      },
+      "codes": {
+        "title": "Change codes",
+        "desc": "A column with M, S, L, A and R for moved, size, level, added and removed; you set the codes and threshold yourself."
+      },
+      "review": {
+        "title": "Link locations on a large drawing",
+        "desc": "Start with the open cases, pick the old partner on the drawing and move on to the next automatically; the rest in one go by distance."
+      }
+    },
+    "label": "New in v2026.44.3",
+    "title": "Custom pile schedules and <span>change tables</span>",
+    "desc": "This release makes the export configurable, adds change tables and gives linking old and new locations its own large workspace."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "Load points, CPTs and foundation advice as CSV or Excel (XLSX), loads also as an Excel export from RFEM. Also projects in IFCPP and existing pile schedules from Excel or CSV."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "No. The web version opens straight away with a sample project. You only need the Windows app for the AI assistant connection and to open IFCPP files from Explorer."
+    },
+    "cost": {
+      "q": "What does it cost?",
+      "a": "Nothing. Open Pile Plan Studio is free and open source under the LGPL-3.0 licence, without an account."
+    },
+    "format": {
+      "q": "In which file format is my work saved?",
+      "a": "In an IFCPP file: an open, readable project format with all sources, settings, choices and variants. You export pile schedules to Excel or CSV."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "In any modern browser, so also on macOS and Linux, and as an app for Windows (64-bit). Installers for macOS and Linux are not available yet."
+    },
+    "practice": {
+      "q": "Does it fit everyday engineering practice?",
+      "a": "Yes. You work with the design values you already have: FEd from the structural model and Rc;net;d per CPT, pile size and tip level from the foundation advice. Pile costs per m³ are set per project."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "The Windows app can share the open project over MCP with, for example, ChatGPT Desktop or Claude Desktop. The assistant can inspect data, compare plans and run the optimiser; editing is switched on separately. The web version has no MCP."
+    },
+    "capacity": {
+      "q": "Does the app calculate the bearing capacity itself?",
+      "a": "No, not yet. The bearing capacity per CPT comes from the geotechnical consultant's foundation advice; the app selects, compares and optimises on that basis."
+    },
+    "optimal": {
+      "q": "Is the optimiser's result always the best?",
+      "a": "Not always, and you can see that. The result reports whether the optimum is proven; with Quick improve or an interrupted run you get the best solution found."
+    },
+    "try": {
+      "q": "Can I try it first without my own data?",
+      "a": "Yes. The web version opens with a complete sample project, so you can explore the workflow straight away."
+    },
+    "heading": "Frequently asked questions"
   },
   "tech": {
-    "title": "Technology",
-    "desc": "The engineering logic for import, pile options, costs, CPT selection and optimization lives in the Rust calculation core. That same core runs through WebAssembly in the browser and natively in the Tauri desktop app — one calculation model, two platforms."
+    "rust": {
+      "desc": "The calculation core for import, pile options, CPT selection, costs and optimisation."
+    },
+    "wasm": {
+      "desc": "The same Rust core runs in the browser, without a server doing the calculations."
+    },
+    "react": {
+      "title": "React and TypeScript",
+      "desc": "The interface with drawing, tables and ribbon, the same in browser and desktop."
+    },
+    "tauri": {
+      "desc": "A small, signed Windows app with the core running natively in Rust."
+    },
+    "highs": {
+      "desc": "Open-source solver for the integer optimisation, in browser and desktop."
+    },
+    "mcp": {
+      "desc": "Local connection for AI assistants in the Windows app; changes go through the same checks and history."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }

@@ -19,11 +19,13 @@ assert.equal((homepage.match(/openPilePlan:\s*\{/g) || []).length, 5, 'homepage 
 
 assert.ok(exists('open-pile-plan-studio/index.html'), 'productpagina ontbreekt');
 includes('open-pile-plan-studio/index.html', '<title>Open Pile Plan Studio — OpenAEC Foundation</title>');
-includes('open-pile-plan-studio/index.html', 'v2026.43.2');
-includes('open-pile-plan-studio/index.html', 'https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/download/v2026.43.2/');
+// Directe link naar de Windows-installer van een release, niet naar een releasepagina.
+const INSTALLER = /href="https:\/\/github\.com\/OpenAEC-Foundation\/pile-plan-studio\/releases\/download\/v[0-9][^"\/]*\/Open\.Pile\.Plan\.Studio_[0-9.]+_x64-setup\.exe"/;
+assert.match(read('open-pile-plan-studio/index.html'), INSTALLER, 'productpagina mist de directe installerlink');
+includes('open-pile-plan-studio/index.html', 'data-pp-repo="OpenAEC-Foundation/pile-plan-studio"');
 includes('open-pile-plan-studio/index.html', 'content="open-pile-plan-studio"');
-includes('open-pile-plan-studio/index.html', 'MCP-toegang');
-includes('en/open-pile-plan-studio/index.html', 'MCP access');
+includes('open-pile-plan-studio/index.html', 'MCP');
+includes('en/open-pile-plan-studio/index.html', 'MCP');
 includes('open-pile-plan-studio/index.html', 'data-release-notes="pile-plan-studio"');
 includes(
   'open-pile-plan-studio/index.html',
@@ -50,12 +52,11 @@ for (const file of [
   );
 }
 
-for (const asset of [
-  'shared/assets/screenshots/open-pile-plan-studio.png',
-  'shared/assets/screenshots/open-pile-plan-studio-import.png',
-  'shared/assets/screenshots/open-pile-plan-studio-optimization.png',
-]) {
-  assert.ok(exists(asset), `${asset} ontbreekt`);
+// Elk beeld in de slider en bij de hoogtepunten bestaat.
+const shots = [...read('open-pile-plan-studio/index.html').matchAll(/src="\/shared\/assets\/screenshots\/(open-pile-plan-studio[^"]*\.png)"/g)].map((m) => m[1]);
+assert.ok(shots.includes('open-pile-plan-studio-hero.png'), 'productpagina mist het openingsbeeld');
+for (const shot of new Set(shots)) {
+  assert.ok(exists(`shared/assets/screenshots/${shot}`), `shared/assets/screenshots/${shot} ontbreekt`);
 }
 
 const productPage = read('open-pile-plan-studio/index.html');
