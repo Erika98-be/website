@@ -1,13 +1,20 @@
 // Shared i18n for all OpenAEC subpages
+//
+// Elke vertaalde pagina bestaat per taal op een eigen adres (Engels in de root,
+// /nl/, /fr/, /tr/, /es/ — zie scripts/build-i18n-pages.js) en draagt
+// <meta name="i18n-static">. Daar doet dit script alleen de taalknoppen: een
+// klik onthoudt de keuze, de link doet het navigeren. Het vertalen in de
+// browser hieronder is er nog voor de pagina's zonder taalversies (404.html,
+// de nieuwsartikelen): hun HTML is Nederlands en alleen de nav wisselt mee.
 (function() {
   const STORAGE_KEY = 'openaec-lang';
   // De titel in de HTML is de Nederlandse. Vastleggen bij het laden, zodat we
   // hem kunnen terugzetten als de bezoeker naar Nederlands schakelt.
   const ORIGINAL_TITLE = document.title;
 
-  // Statisch vertaalde pagina's (en/, fr/, tr/, es/ — zie scripts/build-i18n-pages.js)
-  // dragen hun taal in de URL en in de HTML. Daar mag JavaScript niets meer
-  // omzetten: de taal hoort bij het adres, niet bij een voorkeur in localStorage.
+  // Statisch vertaalde pagina's dragen hun taal in de URL en in de HTML. Daar
+  // mag JavaScript niets meer omzetten: de taal hoort bij het adres, niet bij
+  // een voorkeur in localStorage.
   const STATIC_LANG = (document.querySelector('meta[name="i18n-static"]') || {}).content || null;
 
   // The server lets a browser keep a translation file for a week without
@@ -178,9 +185,9 @@
   document.addEventListener('click', (e) => {
     const btn = e.target.closest && e.target.closest('.lang-btn');
     if (!btn) return;
-    // De keuze altijd onthouden, ook als de knop een link is: de Nederlandse
-    // pagina's passen bij het laden de opgeslagen taal toe, dus zonder dit
-    // brengt NL je vanaf /tr/ terug op een pagina die zich weer Turks maakt.
+    // De keuze altijd onthouden, ook als de knop een link is: de Engelse
+    // pagina's in de root sturen je bij het laden naar de opgeslagen taal, dus
+    // zonder dit brengt EN je vanaf /nl/ meteen weer terug naar /nl/.
     try { localStorage.setItem(STORAGE_KEY, btn.getAttribute('data-lang')); } catch (err) {}
     // Op statische pagina's is de schakelaar een gewone link naar de andere
     // taalversie; die laten we het werk doen.

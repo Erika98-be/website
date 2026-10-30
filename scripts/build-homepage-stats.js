@@ -1,13 +1,16 @@
 // scripts/build-homepage-stats.js
-// Reads data/stats.json and updates index.html tool cards with current stats.
+// Reads data/stats.json and updates the homepage tool cards with current stats.
 // This makes the stats STATIC in the HTML (instant load, no fetch).
+//
+// Every language version of the homepage is updated, not only the Dutch
+// source in nl/: the daily workflow does not rebuild the language pages, and
+// the English homepage in the root is the one most visitors see.
 const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const stats = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'stats.json'), 'utf8'));
-const indexPath = path.join(ROOT, 'index.html');
-let html = fs.readFileSync(indexPath, 'utf8');
+const PAGES = ['nl/index.html', 'index.html', 'fr/index.html', 'tr/index.html', 'es/index.html'];
 
 // Build repo lookup
 const repoMap = {};
@@ -44,10 +47,17 @@ function formatDate(iso, months) {
 }
 
 // "33760" -> "33.760" (NL) / "33,760" (EN); bilingual via the .lang-nl/.lang-en spans
+// The chip titles are translated per language page (data-i18n-attr). Keep the
+// title a page already has, so a rebuilt chip does not fall back to Dutch.
+let titles = {};
+function chipTitle(key, fallback) {
+  return titles[key] || fallback;
+}
+
 function downloadsChip(count) {
   const nl = count.toLocaleString('nl-NL');
   const en = count.toLocaleString('en-US');
-  return `<span class="tool-stat" data-stat="downloads" title="Downloads" data-i18n="tools.downloadsTitle" data-i18n-attr="title">` +
+  return `<span class="tool-stat" data-stat="downloads" title="${chipTitle('tools.downloadsTitle', 'Downloads')}" data-i18n="tools.downloadsTitle" data-i18n-attr="title">` +
     `${ICON_DOWNLOAD} <span class="lang-nl">${nl}</span><span class="lang-en">${en}</span> downloads</span>`;
 }
 
@@ -70,7 +80,7 @@ function buildStatsHtml(repo, downloads) {
     // Bilingual date spans toggled by CSS based on `html[lang]` attribute.
     // Title attr is i18n'd via data-i18n-attr so it switches with the language.
     parts.push(
-      `<span class="tool-stat" title="Laatst gewijzigd op GitHub" data-i18n="tools.lastModified" data-i18n-attr="title">` +
+      `<span class="tool-stat" title="${chipTitle('tools.lastModified', 'Laatst gewijzigd op GitHub')}" data-i18n="tools.lastModified" data-i18n-attr="title">` +
       `${ICON_DATE} <span class="lang-nl">${updatedNl}</span><span class="lang-en">${updatedEn}</span>` +
       `</span>`
     );
@@ -81,76 +91,93 @@ function buildStatsHtml(repo, downloads) {
 }
 
 let updates = 0;
-
-// Find each <article class="tool-card" data-repo="..."> and inject/replace tool-stats
-// We use a regex that matches the entire article block from <article ...> to </article>
-const articleRegex = /<article class="tool-card"([^>]*?)data-repo="([^"]+)"([^>]*)>([\s\S]*?)<\/article>/g;
-
-html = html.replace(articleRegex, (match, before, repoName, after, inner) => {
-  // Open CAD Studio is an external repo whose card updates itself live in the
-  // browser (data-ocs-* + fetch). Leave it untouched so we don't wipe those.
-  const repo = repoMap[repoName.toLowerCase()];
-  if (!repo) return match;
-
-  const newStatsHtml = buildStatsHtml(repo, downloadMap[repoName.toLowerCase()] || 0);
-
-  // Remove any existing <div class="tool-stats">...</div> block within this article
-  let newInner = inner.replace(/<div class="tool-stats">[\s\S]*?<\/div>\s*/g, '');
-
-  if (newStatsHtml) {
-    // Insert the new stats block right after the description <p ...>...</p>
-    const pMatch = newInner.match(/(<p[^>]*data-i18n="tools\.items\.[^"]+\.desc"[^>]*>[\s\S]*?<\/p>)/);
-    if (pMatch) {
-      newInner = newInner.replace(pMatch[1], pMatch[1] + '\n            ' + newStatsHtml);
-      updates++;
-    } else {
-      // Fallback: insert before the closing </div> of the inner content wrapper
-      const lastDivMatch = newInner.match(/(<\/p>)([^<]*<div class="tool-links">)/);
-      if (lastDivMatch) {
-        newInner = newInner.replace(lastDivMatch[0], lastDivMatch[1] + '\n            ' + newStatsHtml + '\n          </div>\n          ' + lastDivMatch[2].trim());
-      }
-    }
-  }
-
-  return `<article class="tool-card"${before}data-repo="${repoName}"${after}>${newInner}</article>`;
-});
-
-// Open CAD Studio (class "tool-card tool-card-featured", so not matched above)
-// updates its own chips live in the browser; only its downloads chip is
-// maintained here.
-html = html.replace(/(<article class="tool-card[^"]*"[^>]*data-repo="OpenCADStudio"[^>]*>)([\s\S]*?)(<\/article>)/, (match, open, inner, close) => {
-  const count = downloadMap['opencadstudio'];
-  if (!count) return match;
-  const cleaned = inner.replace(/\s*<span class="tool-stat" data-stat="downloads"[\s\S]*?<\/span> downloads<\/span>/, '');
-  updates++;
-  return open + cleaned.replace(/(<div class="tool-stats">)/, `$1
-              ${downloadsChip(count)}`) + close;
-});
-
-// ─── Foundation-wide totals (e.g. CTA "⭐ 416 stars across 52 repos") ────
-// Update any <... data-gh-stars>NNN</...> and <... data-gh-repos>NNN</...>
-// elements with the current totals from stats.summary.
+let totalsUpdates = 0;
 const totalStars = stats.summary?.totalStars;
 const publicRepos = stats.summary?.publicRepos;
-let totalsUpdates = 0;
-if (totalStars != null) {
-  // Replace the inner text of any tag that carries `data-gh-stars` (single line, no nested tags expected)
-  html = html.replace(/(<([a-z]+)([^>]*\sdata-gh-stars\b[^>]*)>)([^<]*)(<\/\2>)/gi, (m, open, tag, attrs, inner, close) => {
-    if (inner.trim() === String(totalStars)) return m;
-    totalsUpdates++;
-    return `${open}${totalStars}${close}`;
+
+function updatePage(html) {
+  // Find each <article class="tool-card" data-repo="..."> and inject/replace tool-stats
+  // We use a regex that matches the entire article block from <article ...> to </article>
+  const articleRegex = /<article class="tool-card"([^>]*?)data-repo="([^"]+)"([^>]*)>([\s\S]*?)<\/article>/g;
+
+  html = html.replace(articleRegex, (match, before, repoName, after, inner) => {
+    // Open CAD Studio is an external repo whose card updates itself live in the
+    // browser (data-ocs-* + fetch). Leave it untouched so we don't wipe those.
+    const repo = repoMap[repoName.toLowerCase()];
+    if (!repo) return match;
+
+    const newStatsHtml = buildStatsHtml(repo, downloadMap[repoName.toLowerCase()] || 0);
+
+    // Remove any existing <div class="tool-stats">...</div> block within this article
+    let newInner = inner.replace(/<div class="tool-stats">[\s\S]*?<\/div>\s*/g, '');
+
+    if (newStatsHtml) {
+      // Insert the new stats block right after the description <p ...>...</p>
+      const pMatch = newInner.match(/(<p[^>]*data-i18n="tools\.items\.[^"]+\.desc"[^>]*>[\s\S]*?<\/p>)/);
+      if (pMatch) {
+        newInner = newInner.replace(pMatch[1], pMatch[1] + '\n            ' + newStatsHtml);
+        updates++;
+      } else {
+        // Fallback: insert before the closing </div> of the inner content wrapper
+        const lastDivMatch = newInner.match(/(<\/p>)([^<]*<div class="tool-links">)/);
+        if (lastDivMatch) {
+          newInner = newInner.replace(lastDivMatch[0], lastDivMatch[1] + '\n            ' + newStatsHtml + '\n          </div>\n          ' + lastDivMatch[2].trim());
+        }
+      }
+    }
+
+    return `<article class="tool-card"${before}data-repo="${repoName}"${after}>${newInner}</article>`;
   });
-}
-if (publicRepos != null) {
-  html = html.replace(/(<([a-z]+)([^>]*\sdata-gh-repos\b[^>]*)>)([^<]*)(<\/\2>)/gi, (m, open, tag, attrs, inner, close) => {
-    if (inner.trim() === String(publicRepos)) return m;
-    totalsUpdates++;
-    return `${open}${publicRepos}${close}`;
+
+  // Open CAD Studio (class "tool-card tool-card-featured", so not matched above)
+  // updates its own chips live in the browser; only its downloads chip is
+  // maintained here.
+  html = html.replace(/(<article class="tool-card[^"]*"[^>]*data-repo="OpenCADStudio"[^>]*>)([\s\S]*?)(<\/article>)/, (match, open, inner, close) => {
+    const count = downloadMap['opencadstudio'];
+    if (!count) return match;
+    const cleaned = inner.replace(/\s*<span class="tool-stat" data-stat="downloads"[\s\S]*?<\/span> downloads<\/span>/, '');
+    updates++;
+    return open + cleaned.replace(/(<div class="tool-stats">)/, `$1
+                ${downloadsChip(count)}`) + close;
   });
+
+  // ─── Foundation-wide totals (e.g. CTA "⭐ 416 stars across 52 repos") ────
+  // Update any <... data-gh-stars>NNN</...> and <... data-gh-repos>NNN</...>
+  // elements with the current totals from stats.summary.
+  if (totalStars != null) {
+    // Replace the inner text of any tag that carries `data-gh-stars` (single line, no nested tags expected)
+    html = html.replace(/(<([a-z]+)([^>]*\sdata-gh-stars\b[^>]*)>)([^<]*)(<\/\2>)/gi, (m, open, tag, attrs, inner, close) => {
+      if (inner.trim() === String(totalStars)) return m;
+      totalsUpdates++;
+      return `${open}${totalStars}${close}`;
+    });
+  }
+  if (publicRepos != null) {
+    html = html.replace(/(<([a-z]+)([^>]*\sdata-gh-repos\b[^>]*)>)([^<]*)(<\/\2>)/gi, (m, open, tag, attrs, inner, close) => {
+      if (inner.trim() === String(publicRepos)) return m;
+      totalsUpdates++;
+      return `${open}${publicRepos}${close}`;
+    });
+  }
+
+  return html;
 }
 
-fs.writeFileSync(indexPath, html);
-console.log(`Updated ${updates} tool cards with current GitHub stats`);
+for (const page of PAGES) {
+  const file = path.join(ROOT, page);
+  if (!fs.existsSync(file)) {
+    console.warn(`  skipped (missing): ${page}`);
+    continue;
+  }
+  const html = fs.readFileSync(file, 'utf8');
+  titles = {};
+  for (const m of html.matchAll(/<span class="tool-stat"[^>]*\btitle="([^"]*)" data-i18n="(tools\.[a-zA-Z]+)" data-i18n-attr="title"/g)) {
+    if (!titles[m[2]]) titles[m[2]] = m[1];
+  }
+  const next = updatePage(html);
+  if (next !== html) fs.writeFileSync(file, next);
+}
+console.log(`Updated ${updates} tool cards with current GitHub stats (${PAGES.length} language pages)`);
 if (totalsUpdates > 0) {
   console.log(`Updated ${totalsUpdates} foundation-wide totals (stars=${totalStars}, repos=${publicRepos})`);
 }

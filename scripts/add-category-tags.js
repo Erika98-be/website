@@ -6,7 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const file = path.join(__dirname, '..', 'index.html');
+const file = path.join(__dirname, '..', 'nl', 'index.html');
 let html = fs.readFileSync(file, 'utf8');
 
 // Category mapping per data-repo key (lowercased).

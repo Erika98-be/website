@@ -45,9 +45,9 @@ const STEPS = [
   // ze bakken de uitkomst daarvan in de HTML en in llms.txt.
   { name: 'Refresh the generated key facts in llms.txt',                  cmd: 'node scripts/build-llms-txt.js' },
   { name: 'Write the shared nav statically into every page',              cmd: 'node scripts/build-nav-static.js' },
-  { name: 'Generate /en/, /fr/, /tr/ pages + hreflang + sitemap entries',  cmd: 'node scripts/build-i18n-pages.js' },
+  { name: 'Generate English root + /fr/, /tr/, /es/ from nl/ + hreflang',   cmd: 'node scripts/build-i18n-pages.js' },
   // Nogmaals, nu de taalversies bestaan: build-i18n-pages kopieert de
-  // Nederlandse pagina en vertaalt alleen data-i18n-elementen, dus het
+  // Nederlandse bron (nl/) en vertaalt alleen data-i18n-elementen, dus het
   // gegenereerde release-blok zou anders in elke taal Nederlands blijven.
   // Het script leest <meta name="i18n-static"> en schrijft per pagina in de
   // eigen taal; een tweede run is idempotent.
@@ -92,7 +92,7 @@ if (noCommit) {
 // Stage & commit changes (if any)
 const today = new Date().toISOString().slice(0, 10);
 try {
-  execSync('git add data/ index.html api/ md/ 2>nul || git add data/ index.html api/ md/', { cwd: ROOT, stdio: 'inherit', shell: true });
+  execSync('git add data/ index.html nl/index.html fr/index.html tr/index.html es/index.html api/ md/', { cwd: ROOT, stdio: 'inherit', shell: true });
   const diff = execSync('git diff --staged --name-only', { cwd: ROOT, encoding: 'utf8' });
   if (!diff.trim()) {
     console.log('\nNo data changes — nothing to commit.');

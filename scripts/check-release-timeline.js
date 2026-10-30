@@ -14,8 +14,8 @@ const readJson = (p) => JSON.parse(read(p));
 
 const REPO = 'open-planner-studio';
 const PAGES = [
+  `nl/${REPO}/index.html`,
   `${REPO}/index.html`,
-  `en/${REPO}/index.html`,
   `fr/${REPO}/index.html`,
   `tr/${REPO}/index.html`,
   `es/${REPO}/index.html`,
@@ -87,7 +87,7 @@ for (const cls of ['.rn-tl-plain', '.rn-tl-plain-list']) {
   assert.ok(plainTags.length, 'geen enkele release zonder hoogtepunten — check 7 test niets');
 
   const slug = (s) => String(s).replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-|-$/g, '');
-  const html = read(`${REPO}/index.html`);
+  const html = read(`nl/${REPO}/index.html`);
   const pre = html.slice(html.indexOf('<!-- rn:start'), html.indexOf('<!-- rn:end -->'));
   assert.ok(pre.includes('<ul class="rn-tl-plain-list">'), 'pre-render mist de platte puntenlijst');
 

@@ -72,11 +72,11 @@ test('a Dutch visitor and a page in its own language request no translation file
 });
 
 test('the Open Pointcloud Studio page loads its scripts under a version', () => {
-  for (const language of ['', 'en/', 'fr/', 'tr/', 'es/']) {
+  for (const language of ['nl/', '', 'fr/', 'tr/', 'es/']) {
     const html = fs.readFileSync(path.join(root, language, 'open-pointcloud-studio', 'index.html'), 'utf8');
     for (const script of ['i18n.js', 'downloads.js']) {
       assert.match(html, new RegExp(`<script src="/shared/${script.replace('.', '\\.')}\\?v=\\d{8}"></script>`),
-        `${language || 'nl/'}: ${script}`);
+        `${language || 'en (root)'}: ${script}`);
     }
   }
 });

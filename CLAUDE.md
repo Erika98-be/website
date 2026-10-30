@@ -32,9 +32,9 @@ There is no test runner. These four checker scripts are the test suite; the rele
 node scripts/check-open-pile-plan-studio.js && node scripts/check-homepage-catalog-product-pages.js && node scripts/check-release-timeline.js && node scripts/check-release-notes-generator.js
 ```
 
-They use `node:assert/strict` and fail with a Dutch message. `check-open-pile-plan-studio.js` doubles as the executable checklist for adding a new tool (see below). `check-homepage-catalog-product-pages.js` pins several literal CSS colour values in `bim-validator/index.html` and the exact screenshot order in Open Speech Studio — those assertions are deliberate, not accidental. `check-release-timeline.js` guards the release timeline on the Open Planner Studio page: the placeholder mode, the static pre-render, the highlights contract and the join with `data/release-notes/`. `check-release-notes-generator.js` covers release bodies with Windows line endings and the `RELEASE_NOTES.md` fallback.
+They use `node:assert/strict` and fail with a Dutch message. `check-open-pile-plan-studio.js` doubles as the executable checklist for adding a new tool (see below). `check-homepage-catalog-product-pages.js` pins several literal CSS colour values in `nl/bim-validator/index.html` and the exact screenshot order in Open Speech Studio — those assertions are deliberate, not accidental. `check-release-timeline.js` guards the release timeline on the Open Planner Studio page: the placeholder mode, the static pre-render, the highlights contract and the join with `data/release-notes/`. `check-release-notes-generator.js` covers release bodies with Windows line endings and the `RELEASE_NOTES.md` fallback.
 
-Product pages follow one standard of 9 blocks (head, sticky in-page nav, features, download, what's new, FAQ, technology, release notes, closing panel), described in the OpenAEC-Blueprint repo (`templates/productpagina-standaard.md`, template `templates/productpagina.html`); `open-planner-studio/index.html` is the reference. The shared parts are `shared/productpagina.css` and `shared/productpagina.js` (prefix `pp-`). `node scripts/check-product-pages.js` prints which blocks each app page has and fails when a page that loads `productpagina.css` (i.e. one that has been converted) misses a required block or has them out of order. Convert pages one at a time; do not build page-local variants of these parts.
+Product pages follow one standard of 9 blocks (head, sticky in-page nav, features, download, what's new, FAQ, technology, release notes, closing panel), described in the OpenAEC-Blueprint repo (`templates/productpagina-standaard.md`, template `templates/productpagina.html`); `nl/open-planner-studio/index.html` is the reference. The shared parts are `shared/productpagina.css` and `shared/productpagina.js` (prefix `pp-`). `node scripts/check-product-pages.js` prints which blocks each app page (in `nl/`) has and fails when a page that loads `productpagina.css` (i.e. one that has been converted) misses a required block or has them out of order. Convert pages one at a time; do not build page-local variants of these parts.
 
 Download buttons must start the download, never open a GitHub release page. Use `<a href="<direct installer URL>" data-gh-download="owner/repo">` (optionally `data-platform="windows"` etc.) and load `/shared/downloads.js`: the baked-in href is the no-JS fallback, the script swaps in the newest release and the file for the visitor's OS. `node --test scripts/check-direct-downloads.test.js` guards this site-wide (plus the older `check-pile-plan-downloads.test.js` for Pile Plan Studio's own script).
 
@@ -44,21 +44,36 @@ Download buttons must start the download, never open a GitHub release page. Use 
 
 Every tool has a **page slug** and a **GitHub repo name**, and they usually differ (`open-pile-plan-studio` vs `pile-plan-studio`). Slug is used for the directory, `meta[name=i18n-page]`, `shared/translations/*`, `md/*.md`, and the `id` in `api/tools.json`. Repo name is used for `data-repo`, `data-release-notes`, `data/release-notes/*.json`, and the repo lists inside the generator scripts. `build-homepage-stats.js` lowercases repo names when matching; everything else preserves casing.
 
-### i18n — two separate engines
+### i18n — English is the default, Dutch is the source
 
-IFCCAD has static NL/EN/FR/TR/ES pages. Run `node scripts/check-ifccad-languages.js` as an additional check after changing IFCCAD content or translations. It checks dictionary completeness, rendered content, language links, canonical/hreflang, sitemap entries and the localized IFCX cross-links. Keep `shared/translations/ifccad*.json` synchronized with `ifccad/index.html`; generate language pages with `build-i18n-pages.js`, followed by `build-schema.js`.
+Five languages, each on its own URL. **English is the default and lives in the root**; the other languages live under `/nl/`, `/fr/`, `/tr/` and `/es/`. Everything without JavaScript (link previews on GitHub, LinkedIn, WhatsApp and Slack, Google, AI crawlers) gets English.
 
-Four languages: **nl (default, the literal HTML text), en, fr, tr**. Preference in `localStorage` under `openaec-lang`. Language is client-side only — there are no per-language URLs and no `hreflang` anywhere.
+| Path | Language | Kind |
+|---|---|---|
+| `nl/<page>` | Dutch | **the source — edit here** |
+| `<page>` (root) | English | generated |
+| `fr/`, `tr/`, `es/` | French, Turkish, Spanish | generated |
+| `en/<page>` | — | generated redirect to the root (old `/en/` links, until Oct 2026 English lived there) |
 
-- **Subpages** use `shared/i18n.js`. A page declares `<meta name="i18n-page" content="<slug>">`; translations load from `/shared/translations/<slug>.json` (EN) and `<slug>.fr.json` / `<slug>.tr.json` (with EN fallback). Nodes carry `data-i18n="dotted.key"`, attributes use `data-i18n-attr`. NL originals are cached into `data-i18n-nl` on first switch. Without the meta tag only inline-attribute translation runs.
-- **The homepage does not use it.** `index.html` has a self-contained inline `const translations = { nl, en, fr, tr }` (~line 1686) plus its own `detectLang()`/`i18n` object. Adding a tool means adding `tools.items.<camelKey>` to **all four** objects — the pile-plan checker asserts exactly 4 occurrences of the key.
-- Nav links use inline `data-i18n-en` / `-fr` / `-tr` attributes in `shared/nav.html`, not JSON.
+- **Write pages in Dutch in `nl/`.** Never edit a translatable page in the root, `fr/`, `tr/`, `es/` or `en/`: `node scripts/build-i18n-pages.js` overwrites them from `nl/` plus `shared/translations/<slug>*.json`. It refuses to overwrite a root file that it did not generate, and warns about a translatable page still sitting in the root. Assets (screenshots, PDFs) stay in the root page directories (`/open-pdf-studio/…`); reference them with absolute paths.
+- Internal links in the source may be written as `/<page>/` or `/nl/<page>/`; the build turns them into `/nl/<page>/` in the source and into the matching language everywhere else.
+- Every language version gets static text, `<html lang>`, translated `<title>`, description, `og:*`/`twitter:*`, a self canonical, `og:locale` (root `en_US`) with the other languages as `og:locale:alternate`, `hreflang` for all five plus `x-default` → root, a language switcher of real `<a href>` links, and `<meta name="i18n-static" content="xx">`. The sitemap gets `/nl/`, `/fr/`, `/tr/`, `/es/` entries for every root URL listed by hand.
+- **First visit.** Only the English root pages carry the lang-boot snippet (top of `<head>`, between `<!-- lang-boot:start/end -->`): stored choice (`localStorage` `openaec-lang`) first, then the browser languages, then English. If that is nl/fr/tr/es it does `location.replace('/<lang>' + path)`. A stored choice always wins, also when it is English. Language-prefixed URLs never redirect.
+- **Language buttons** are links to the other version; `shared/i18n.js` stores the click as the choice. On a page with `i18n-static` it does nothing else.
+- `shared/i18n.js` still translates in the browser on pages without language versions (`404.html`, the news articles under `nieuws/<slug>/`): their HTML is Dutch and only the nav follows the language. Translations come from `/shared/translations/<slug>.json` (EN) and `<slug>.fr.json` / `.tr.json` / `.es.json` (merged over EN). Nodes carry `data-i18n="dotted.key"`, attributes use `data-i18n-attr`.
+- **The homepage** (`nl/index.html`) carries its translations inline: `const translations = { nl, en, fr, tr, es }` plus its own `detectLang()`/`i18n` object. Adding a tool means adding `tools.items.<camelKey>` to **all five** objects — the pile-plan checker asserts exactly 5 occurrences of the key.
+- Nav links use inline `data-i18n-en` / `-fr` / `-tr` / `-es` attributes in `shared/nav.html`, not JSON.
+- `supercloud/` is outside the language system: no `i18n.js`, no `nav.js`, no lang-boot, no language copies. Keep it that way.
+
+IFCCAD: run `node scripts/check-ifccad-languages.js` after changing IFCCAD content or translations. It checks dictionary completeness, rendered content, language links, canonical/hreflang, sitemap entries and the localized IFCX cross-links. Keep `shared/translations/ifccad*.json` synchronized with `nl/ifccad/index.html`.
+
+After changing a page in `nl/`, a translation or `shared/nav.html`, run in this order: `build-nav-static.js` → `build-i18n-pages.js` → `build-release-notes-static.js` → `build-schema.js`. Then review the diff and revert what does not belong to the change (e.g. `dateModified`, a `softwareVersion` from stale data, `supercloud/`).
 
 `shared/nav.js` fetches and injects `shared/nav.html` into `#shared-nav` (auto-creating the placeholder if absent), then dispatches a `nav:loaded` CustomEvent; `shared/i18n.js` listens for it to translate the late-injected nav. There is no MutationObserver — deliberately.
 
 ### Product page skeleton
 
-`<tool-slug>/index.html`, `<html lang="nl">`, head order: charset → viewport → title → description → `meta name="i18n-page"` → favicon → `/shared/style.css` → inline `SoftwareApplication` JSON-LD → page-local `<style>` block. Body: `#shared-nav` + `nav.js` → `<main id="main">` → `.page-header` → `.section` blocks → `<div data-release-notes="<repo-name>">` + `release-notes.js` → `</main>` → `.footer.page-footer` → page scripts → **`shared/i18n.js` last**. `node --test scripts/check-seo-basics.test.js` guards one title, a description, a canonical, one H1 and one `<main>` per page, and that every sitemap URL is a committed page. `build-i18n-pages.js` only lists a language URL in the sitemap when the Dutch page is in it, so a page that is not published yet stays out.
+`nl/<tool-slug>/index.html`, `<html lang="nl">`, head order: charset → viewport → title → description → `meta name="i18n-page"` → favicon → `/shared/style.css` → inline `SoftwareApplication` JSON-LD → page-local `<style>` block. Body: `#shared-nav` + `nav.js` → `<main id="main">` → `.page-header` → `.section` blocks → `<div data-release-notes="<repo-name>">` + `release-notes.js` → `</main>` → `.footer.page-footer` → page scripts → **`shared/i18n.js` last**. `node --test scripts/check-seo-basics.test.js` guards one title, a description, a canonical, one H1 and one `<main>` per page, and that every sitemap URL is a committed page. `build-i18n-pages.js` only lists a language URL in the sitemap when the root page is in it, so a page that is not published yet stays out.
 
 Shared scripts are loaded with a uniform cache-bust query `?v=20260603` across all pages. Bump it everywhere or nowhere.
 
@@ -66,21 +81,19 @@ Shared scripts are loaded with a uniform cache-bust query `?v=20260603` across a
 
 Note the apex/www duplication is only half-fixed in this repo: both hosts still serve HTTP 200 from the same nginx. The 301 from `www` to apex lives in the server config, outside this repo.
 
-There is still no `hreflang` anywhere — language is a client-side toggle with no per-language URLs, so only the Dutch text is crawlable.
-
 ### Homepage tool cards
 
 Cards tagged `NL` are normally shown only under Nederlandse normen. A general-purpose tool that also supports Dutch standards can use `data-catalog="general"` to remain listed under All and its A/E/C/I categories as well as NL. Pile Plan Studio uses this exception. Run `node --test scripts/check-ecosystem-filters.test.js` after changing category filtering or these card attributes.
 
-`<article class="tool-card" data-repo="…" data-categories="A|E|C|I">` in `index.html`. The `<div class="tool-stats">` chips are **generated** — `build-homepage-stats.js` regex-matches each card and re-inserts the block immediately after the `<p data-i18n="tools.items.*.desc">`, so that `<p>` and its exact attribute must survive any edit. Never hand-edit `tool-stats`. `data-repo="OpenCADStudio"` is deliberately skipped (that card self-updates in the browser). Stat chips are bilingual via CSS (`.lang-nl` / `.lang-en`), not JS.
+`<article class="tool-card" data-repo="…" data-categories="A|E|C|I">` in `nl/index.html`. The `<div class="tool-stats">` chips are **generated** — `build-homepage-stats.js` regex-matches each card in all five homepage versions and re-inserts the block immediately after the `<p data-i18n="tools.items.*.desc">`, so that `<p>` and its exact attribute must survive any edit. Never hand-edit `tool-stats`. `data-repo="OpenCADStudio"` is deliberately skipped (that card self-updates in the browser). Stat chips are bilingual via CSS (`.lang-nl` / `.lang-en`), not JS.
 
-**The card order is generated too.** `build-ecosystem-order.js` sorts the cards in the `tools-grid` by a maturity (66%) + activity (34%) score — downloads alone are 30%, GitHub stars 10% — computed from `data/stats.json`, `data/downloads.json` and `data/release-notes/*.json`, and writes the same order into `index.html` and all four `<lang>/index.html` copies. Cards are keyed by `data-i18n="tools.items.<key>.title"`, so every card needs that attribute. Fixed positions live in `PINNED`: IFCX at 1 (it is the data format, not an application, and carries the amber border), IFCCAD at 2 (its CAD profile) and Y-app at 6 (a private repo, so too little public data for a fair score); the other cards fill the remaining slots by score, and cards with no measurable data land at the bottom. Scores are computed against the timestamp inside the data files, not the wall clock, so re-running without fresh data is a no-op. Hand-editing the order is pointless — the next pipeline run undoes it. Change `PINNED`, `WEIGHTS` or `SKIP_DOWNLOADS` in the script instead. `SKIP_DOWNLOADS` holds Y-app: it is a private repo, so its download count only reflects people with repo access and the daily workflow cannot read it at all (404). While Y-app is pinned this only affects its printed score, not its position. Missing data drops out of the weighting rather than scoring zero, so a card whose repo is absent from `TOOL_REPOS` in `generate-downloads.js` is shielded from the download weight and floats up — keep that list complete for every homepage card.
+**The card order is generated too.** `build-ecosystem-order.js` sorts the cards in the `tools-grid` by a maturity (66%) + activity (34%) score — downloads alone are 30%, GitHub stars 10% — computed from `data/stats.json`, `data/downloads.json` and `data/release-notes/*.json`, and writes the same order into `nl/index.html`, the English `index.html` and `fr/`, `tr/`, `es/index.html`. Cards are keyed by `data-i18n="tools.items.<key>.title"`, so every card needs that attribute. Fixed positions live in `PINNED`: IFCX at 1 (it is the data format, not an application, and carries the amber border), IFCCAD at 2 (its CAD profile) and Y-app at 6 (a private repo, so too little public data for a fair score); the other cards fill the remaining slots by score, and cards with no measurable data land at the bottom. Scores are computed against the timestamp inside the data files, not the wall clock, so re-running without fresh data is a no-op. Hand-editing the order is pointless — the next pipeline run undoes it. Change `PINNED`, `WEIGHTS` or `SKIP_DOWNLOADS` in the script instead. `SKIP_DOWNLOADS` holds Y-app: it is a private repo, so its download count only reflects people with repo access and the daily workflow cannot read it at all (404). While Y-app is pinned this only affects its printed score, not its position. Missing data drops out of the weighting rather than scoring zero, so a card whose repo is absent from `TOOL_REPOS` in `generate-downloads.js` is shielded from the download weight and floats up — keep that list complete for every homepage card.
 
 ### Generated vs hand-written
 
-Generated (committed, never hand-edit): `data/stats.json`, `data/news.json`, `data/downloads.json`, `data/download-trends.json`, `data/release-notes/*`, `data/release-highlights/*`, `data/history*/`, `api/tools.json`, `md/*`, and the `tool-stats` chips **plus the card order** inside `index.html`.
+Generated (committed, never hand-edit): every translatable page outside `nl/` (the English root pages, `fr/`, `tr/`, `es/`, the redirects in `en/`), `data/stats.json`, `data/news.json`, `data/downloads.json`, `data/download-trends.json`, `data/release-notes/*`, `data/release-highlights/*`, `data/history*/`, `api/tools.json`, `md/*`, and the `tool-stats` chips **plus the card order** inside the homepages.
 
-Hand-written: `llms.txt` (an *input* to `build-markdown-mirrors.js`), `robots.txt`, `sitemap.xml` (adding a page means adding a `<url>` entry manually — the checker enforces it), `data/manual-news.json`, and the `TOOLS` array in `build-tools-api.js`.
+Hand-written: the Dutch pages in `nl/`, `llms.txt` (an *input* to `build-markdown-mirrors.js`), `robots.txt`, `sitemap.xml` (adding a page means adding a `<url>` entry for its root URL manually — the checker enforces it; the language entries between `<!-- i18n:start/end -->` are generated), `data/manual-news.json`, and the `TOOLS` array in `build-tools-api.js`.
 
 News feed: `nieuws/index.html` merges `manual-news.json` (editorial, NL fields plus `_en`/`_fr`/`_tr` suffixed variants) ahead of the generated `news.json`, and filters out anything matching `/nightly/i`. Long-form articles live at `nieuws/<slug>/index.html` with `NewsArticle` JSON-LD; nothing links them into the feed automatically — add a `manual-news.json` entry pointing at the path.
 
@@ -92,9 +105,9 @@ News feed: `nieuws/index.html` merges `manual-news.json` (editorial, NL fields p
 
 `scripts/check-open-pile-plan-studio.js` is the definitive checklist. All of these must be touched:
 
-1. `<tool-slug>/index.html` product page
-2. `index.html`: tool card with `data-repo`, product-page link, live-demo link, Schema.org `name`, and the `tools.items.<key>` entry in **all four** language objects
-3. `shared/translations/<slug>.json` + `.fr.json` + `.tr.json` (all must parse)
+1. `nl/<tool-slug>/index.html` product page (Dutch), then `build-i18n-pages.js` for the English root page and the other languages
+2. `nl/index.html`: tool card with `data-repo`, product-page link, live-demo link, Schema.org `name`, and the `tools.items.<key>` entry in **all five** language objects
+3. `shared/translations/<slug>.json` + `.fr.json` + `.tr.json` + `.es.json` (all must parse)
 4. `sitemap.xml` entry
 5. Repo name added to `scripts/generate-downloads.js` and `scripts/generate-release-notes.js`
 6. `data/release-notes/<repo>.json` (may be empty)
@@ -104,9 +117,9 @@ News feed: `nieuws/index.html` merges `manual-news.json` (editorial, NL fields p
 
 Where you drop the new card in the grid does not matter — `build-ecosystem-order.js` sorts it into place on the next run. It does need a `data-i18n="tools.items.<key>.title"` attribute, or the script throws.
 
-When changing a tool description, update **all four** locations: the `<p data-i18n>` in the HTML body, the NL translation object, the EN translation object, and the Schema.org JSON-LD.
+When changing a tool description, update **all four** locations in `nl/index.html`: the `<p data-i18n>` in the HTML body, the NL translation object, the EN translation object, and the Schema.org JSON-LD.
 
-Removing a tool from the homepage ≠ deleting it. `open-energy-studio`, `open-2d-studio`, `openaec-cloud`, `openaec-docs` are retired from the catalog but keep their product pages and `api/tools.json` entries — the checker enforces exactly that.
+Removing a tool from the homepage ≠ deleting it. `open-energy-studio`, `open-2d-studio`, `openaec-cloud`, `openaec-docs` are retired from the catalog but keep their product pages in `nl/` and `api/tools.json` entries — the checker enforces exactly that.
 
 ## Notes
 

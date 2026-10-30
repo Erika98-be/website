@@ -25,10 +25,12 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-// en/, fr/, tr/ en es/ zijn gegenereerde uitvoer van build-i18n-pages.js en
-// dragen een vertaalde nav. Die hier overschrijven met de Nederlandse zou het
-// werk van dat script ongedaan maken.
+// fr/, tr/ en es/ en de Engelse pagina's in de root zijn gegenereerde uitvoer
+// van build-i18n-pages.js en dragen een vertaalde nav. Die hier overschrijven
+// met de Nederlandse zou het werk van dat script ongedaan maken. De bron in nl/
+// krijgt de nav wel; en/ bevat alleen doorverwijzingen.
 const SKIP_DIRS = new Set(['old', 'presentation foundation', '.git', '.claude', 'node_modules', 'nijmegen', 'en', 'fr', 'tr', 'es']);
+const GENERATED = /<meta name="i18n-static" content="(?!nl")[a-z]{2}">/;
 
 function htmlFiles(dir, out = []) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -62,6 +64,7 @@ let unchanged = 0;
 for (const file of htmlFiles(ROOT)) {
   const html = fs.readFileSync(file, 'utf8');
   if (!html.includes('id="shared-nav"')) continue;
+  if (GENERATED.test(html)) continue;
 
   // shared/nav.html zelf is het fragment, niet een pagina die het gebruikt.
   if (path.relative(ROOT, file) === path.join('shared', 'nav.html')) continue;
@@ -98,7 +101,7 @@ if (fs.existsSync(footerPath)) {
   let fChanged = 0;
   for (const file of htmlFiles(ROOT)) {
     const html = fs.readFileSync(file, 'utf8');
-    if (!html.includes('id="shared-footer"') || !FOOT.test(html)) continue;
+    if (!html.includes('id="shared-footer"') || !FOOT.test(html) || GENERATED.test(html)) continue;
     const out = html.replace(FOOT, `<div id="shared-footer"><!-- footer:start -->\n${footer}\n<!-- footer:end --></div>`).replace(/\r\n?/g, '\n');
     if (out !== html) { fs.writeFileSync(file, out); fChanged++; }
   }

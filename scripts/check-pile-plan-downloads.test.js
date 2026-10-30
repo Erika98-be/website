@@ -49,16 +49,16 @@ test('offers only actual installer assets and their direct download URLs', () =>
 
 test('every language page works without JavaScript and links to the installer, not a release page', () => {
   const installer = assetUrl('v2026.43.2', 'Open.Pile.Plan.Studio_2026.43.2_x64-setup.exe');
-  for (const language of ['', 'en/', 'fr/', 'tr/', 'es/']) {
+  for (const language of ['nl/', '', 'fr/', 'tr/', 'es/']) {
     const html = fs.readFileSync(path.join(root, language, 'open-pile-plan-studio', 'index.html'), 'utf8');
-    assert.ok(html.includes('id="download"'), `${language || 'nl/'}: download block missing`);
-    assert.ok(html.includes(`href="${installer}"`), `${language || 'nl/'}: installer fallback missing`);
-    assert.ok(html.includes('href="#download"'), `${language || 'nl/'}: download navigation missing`);
+    assert.ok(html.includes('id="download"'), `${language || 'en (root)'}: download block missing`);
+    assert.ok(html.includes(`href="${installer}"`), `${language || 'en (root)'}: installer fallback missing`);
+    assert.ok(html.includes('href="#download"'), `${language || 'en (root)'}: download navigation missing`);
   }
 });
 
 test('download block follows the screenshots and full introduction in every language', () => {
-  for (const language of ['', 'en/', 'fr/', 'tr/', 'es/']) {
+  for (const language of ['nl/', '', 'fr/', 'tr/', 'es/']) {
     const html = fs.readFileSync(path.join(root, language, 'open-pile-plan-studio', 'index.html'), 'utf8');
     const screenshots = html.indexOf('class="media-slider"');
     const introduction = html.indexOf('class="explainer"');
@@ -67,19 +67,19 @@ test('download block follows the screenshots and full introduction in every lang
     const why = html.indexOf('data-i18n="why.title"');
 
     assert.ok(screenshots >= 0 && introduction >= 0 && introductionEnd >= 0 &&
-      download >= 0 && why >= 0, `${language || 'nl/'}: required page section missing`);
+      download >= 0 && why >= 0, `${language || 'en (root)'}: required page section missing`);
     assert.ok(screenshots < introduction && introductionEnd < download && download < why,
-      `${language || 'nl/'}: download should follow the introduction and precede Why`);
+      `${language || 'en (root)'}: download should follow the introduction and precede Why`);
   }
 });
 
 test('all download pages request a versioned stylesheet so old cached anchor styles are bypassed', () => {
   const stylesheetUrls = [];
-  for (const language of ['', 'en/', 'fr/', 'tr/', 'es/']) {
+  for (const language of ['nl/', '', 'fr/', 'tr/', 'es/']) {
     const html = fs.readFileSync(path.join(root, language, 'open-pile-plan-studio', 'index.html'), 'utf8');
     const stylesheetUrl = html.match(/<link rel="stylesheet" href="([^"]*\/shared\/style\.css[^"]*)">/)?.[1];
     assert.match(stylesheetUrl || '', /^\/shared\/style\.css\?v=[a-z0-9-]+$/i,
-      `${language || 'nl/'}: stylesheet URL must change when anchor styling changes`);
+      `${language || 'en (root)'}: stylesheet URL must change when anchor styling changes`);
     stylesheetUrls.push(stylesheetUrl);
   }
   assert.equal(new Set(stylesheetUrls).size, 1, 'all language pages must load the same stylesheet version');

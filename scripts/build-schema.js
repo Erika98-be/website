@@ -34,9 +34,10 @@ const ROOT = path.resolve(__dirname, '..');
 const ORIGIN = 'https://open-aec.com';
 const SKIP_DIRS = new Set(['old', 'presentation foundation', '.git', '.claude', 'node_modules', 'nijmegen']);
 // De taalmappen worden wél meegenomen: dit script draait ná build-i18n-pages.js
-// en zet daar de juiste URL, taal en kruimelpad, in plaats van de Nederlandse
-// die uit het origineel meekwamen.
-const LANG_DIRS = new Set(['en', 'fr', 'tr', 'es']);
+// en zet daar de juiste URL, taal en kruimelpad, in plaats van die uit de
+// Nederlandse bron. nl/ is zelf de bron; de Engelse versie staat in de root.
+// en/ bevat alleen doorverwijzingen (noindex) en valt hieronder vanzelf af.
+const LANG_DIRS = new Set(['nl', 'fr', 'tr', 'es']);
 
 function htmlFiles(dir, out = []) {
   for (const e of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -76,8 +77,8 @@ function label(segment) {
 
 function breadcrumb(url) {
   const parts = url.split('/').filter(Boolean);
-  // /en/over-ons.html hoort te lezen als "Home > About us", niet als
-  // "Home > En > Over Ons": de taalmap is de wortel van die versie.
+  // /nl/over-ons.html hoort te lezen als "Home > Over Ons", niet als
+  // "Home > Nl > Over Ons": de taalmap is de wortel van die versie.
   let root = '/';
   if (LANG_DIRS.has(parts[0])) root = '/' + parts.shift() + '/';
   const items = [{ name: 'Home', item: ORIGIN + root }];
@@ -114,7 +115,7 @@ for (const file of htmlFiles(ROOT)) {
   if (/<meta name="robots" content="noindex/.test(html)) continue;
 
   const url = urlFor(rel);
-  const lang = (/<html[^>]*lang="([^"]+)"/.exec(html) || [, 'nl'])[1];
+  const lang = (/<html[^>]*lang="([^"]+)"/.exec(html) || [, 'en'])[1];
 
   const graph = {
     '@context': 'https://schema.org',

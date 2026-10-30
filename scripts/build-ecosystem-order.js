@@ -48,7 +48,8 @@
  * omschrijving. stats.json bewaart `pushed_at` niet.
  *
  * Inputs:  data/stats.json, data/downloads.json, data/release-notes/*.json
- * Outputs: de tools-grid in index.html en en/ fr/ tr/ es/ index.html
+ * Outputs: de tools-grid in nl/index.html (de bron), index.html (Engels) en
+ *          fr/ tr/ es/ index.html
  *
  * Draaien: `node scripts/build-ecosystem-order.js`
  *          `node scripts/build-ecosystem-order.js --dry-run`  (alleen tonen)
@@ -60,7 +61,8 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.resolve(__dirname, '..');
-const PAGES = ['index.html', 'en/index.html', 'fr/index.html', 'tr/index.html', 'es/index.html'];
+// De Nederlandse bron eerst: daaruit komen de kaarten en hun startvolgorde.
+const PAGES = ['nl/index.html', 'index.html', 'fr/index.html', 'tr/index.html', 'es/index.html'];
 
 // Kaarten met een vaste plek (1 = bovenaan); de rest vult de overige plekken
 // op volgorde van score.

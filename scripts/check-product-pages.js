@@ -2,7 +2,7 @@
 // Productpagina-standaard: per app-pagina welke van de 9 vaste blokken er al zijn.
 //
 // De standaard staat in de OpenAEC-Blueprint (templates/productpagina-standaard.md); voorbeeld is
-// open-planner-studio/index.html, de gedeelde onderdelen zijn shared/productpagina.css en .js.
+// nl/open-planner-studio/index.html, de gedeelde onderdelen zijn shared/productpagina.css en .js.
 //
 //   node scripts/check-product-pages.js          overzicht + bewaking
 //   node scripts/check-product-pages.js --quiet  alleen bewaking
@@ -15,8 +15,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = path.resolve(__dirname, '..');
-const SKIP = new Set(['en', 'fr', 'tr', 'es', 'supercloud', '_voorbeeld', 'nijmegen', 'old', 'shared', 'scripts', 'node_modules', '.git']);
+// De pagina's worden met de hand geschreven in nl/; de root, fr/, tr/ en es/ zijn
+// daaruit gegenereerd (scripts/build-i18n-pages.js).
+const ROOT = path.resolve(__dirname, '..', 'nl');
+const SKIP = new Set(['_voorbeeld']);
 // App-pagina's zonder SoftwareApplication-schema; IFCX en IFCCAD zijn formaten, geen apps.
 const EXTRA = ['open-books', 'open-safety-studio', 'open-3d-viewer', 'ext-drawing-statistics'];
 

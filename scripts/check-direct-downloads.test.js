@@ -295,8 +295,8 @@ test('the Open Pointcloud Studio page offers every package of one release, in ev
     const href = m[0].match(/href="([^"]+)"/)[1];
     return { href, tag: href.split('/').at(-2), platform: m[0].match(/data-platform="([^"]+)"/)?.[1] };
   });
-  for (const language of ['', 'en/', 'fr/', 'tr/', 'es/']) {
-    const label = language || 'nl/';
+  for (const language of ['nl/', '', 'fr/', 'tr/', 'es/']) {
+    const label = language || 'en (root)';
     const html = fs.readFileSync(path.join(root, language, 'open-pointcloud-studio', 'index.html'), 'utf8');
     const start = html.indexOf('id="download"');
     assert.ok(start >= 0, `${label}: download block missing`);

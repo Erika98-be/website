@@ -6,8 +6,10 @@ const path = require('node:path');
 const root = path.resolve(process.argv[2] || path.join(__dirname, '..'));
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const langs = ['nl', 'en', 'fr', 'tr', 'es'];
-const url = lang => `https://open-aec.com/${lang === 'nl' ? '' : lang + '/'}ifccad/`;
-const source = read('ifccad/index.html');
+// Engels staat in de root; de Nederlandse bron in nl/.
+const dir = lang => (lang === 'en' ? '' : lang + '/');
+const url = lang => `https://open-aec.com/${dir(lang)}ifccad/`;
+const source = read('nl/ifccad/index.html');
 assert.match(source, /<meta name="i18n-page" content="ifccad"/);
 assert.match(source, /src="\/shared\/i18n\.js\?v=/);
 const keys = [...source.matchAll(/data-i18n="([^"]+)"/g)].map(m => m[1]);
@@ -17,7 +19,7 @@ const flatten = (o, prefix = '') => Object.entries(o).flatMap(([k, v]) => typeof
 const text = s => s.replace(/<[^>]*>/g, '').replace(/&(?:amp|rarr);/g, ' ').replace(/\s+/g, ' ').trim();
 let reference;
 for (const lang of langs) {
-  const html = read(`${lang === 'nl' ? '' : lang + '/'}ifccad/index.html`);
+  const html = read(`${dir(lang)}ifccad/index.html`);
   assert.match(html, new RegExp(`<html lang="${lang}"`));
   assert.ok(html.includes(`<link rel="canonical" href="${url(lang)}"`), `${lang}: canonical`);
   assert.doesNotMatch(html, /name="robots" content="noindex/);
@@ -31,8 +33,9 @@ for (const lang of langs) {
     assert.ok(flag?.includes(`href="${new URL(url(alternate)).pathname}"`), `${lang}: ${alternate} language link`);
     if (alternate === lang) assert.match(flag, /class="[^"]*\bactive\b/);
   }
+  assert.match(html, new RegExp(`<meta name="i18n-static" content="${lang}"`), `${lang}: i18n-static`);
+  assert.ok(html.includes(`href="/${dir(lang)}ifcx/"`), `${lang}: IFCX link`);
   if (lang !== 'nl') {
-    assert.match(html, new RegExp(`<meta name="i18n-static" content="${lang}"`));
     const translations = JSON.parse(read(`shared/translations/ifccad${lang === 'en' ? '' : '.' + lang}.json`));
     const allKeys = flatten(translations);
     if (reference) assert.deepEqual(allKeys, reference, `${lang}: complete translation dictionary`);
@@ -50,8 +53,7 @@ for (const lang of langs) {
         assert.ok(actual && value.startsWith(actual.replace(/…$/, '')), `${lang}: translated description`);
       } else assert.ok(text(html).includes(text(value)), `${lang}: ${key} must be rendered`);
     }
-    assert.ok(read(`${lang}/ifcx/index.html`).includes(`href="/${lang}/ifccad/"`), `${lang}: IFCX cross-link`);
-    assert.ok(html.includes(`href="/${lang}/ifcx/"`), `${lang}: IFCX link`);
+    assert.ok(read(`${dir(lang)}ifcx/index.html`).includes(`href="/${dir(lang)}ifccad/"`), `${lang}: IFCX cross-link`);
   }
   assert.ok(read('sitemap.xml').includes(`<loc>${url(lang)}</loc>`), `${lang}: sitemap`);
 }

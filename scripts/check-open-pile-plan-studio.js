@@ -10,28 +10,30 @@ function includes(relativePath, value) {
   assert.ok(read(relativePath).includes(value), `${relativePath} mist: ${value}`);
 }
 
-const homepage = read('index.html');
+// De handgeschreven Nederlandse bron staat in nl/; de root is de Engelse uitvoer.
+const homepage = read('nl/index.html');
 assert.ok(homepage.includes('data-repo="pile-plan-studio"'), 'homepage mist de repositorykoppeling');
-assert.ok(homepage.includes('href="/open-pile-plan-studio/"'), 'homepage mist de productpaginalink');
+assert.ok(homepage.includes('href="/nl/open-pile-plan-studio/"'), 'homepage mist de productpaginalink');
+assert.ok(read('index.html').includes('href="/open-pile-plan-studio/"'), 'Engelse homepage mist de productpaginalink');
 assert.ok(homepage.includes('https://pile-plan-studio.open-aec.com/'), 'homepage mist de live demo');
 assert.ok(homepage.includes('"name": "Open Pile Plan Studio"'), 'homepage mist de nieuwe productnaam');
 assert.equal((homepage.match(/openPilePlan:\s*\{/g) || []).length, 5, 'homepage mist één of meer taalitems');
 
-assert.ok(exists('open-pile-plan-studio/index.html'), 'productpagina ontbreekt');
-includes('open-pile-plan-studio/index.html', '<title>Open Pile Plan Studio — OpenAEC Foundation</title>');
-includes('open-pile-plan-studio/index.html', 'v2026.43.2');
-includes('open-pile-plan-studio/index.html', 'https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/download/v2026.43.2/');
-includes('open-pile-plan-studio/index.html', 'content="open-pile-plan-studio"');
-includes('open-pile-plan-studio/index.html', 'MCP-toegang');
-includes('en/open-pile-plan-studio/index.html', 'MCP access');
-includes('open-pile-plan-studio/index.html', 'data-release-notes="pile-plan-studio"');
+assert.ok(exists('nl/open-pile-plan-studio/index.html'), 'productpagina ontbreekt');
+includes('nl/open-pile-plan-studio/index.html', '<title>Open Pile Plan Studio — OpenAEC Foundation</title>');
+includes('nl/open-pile-plan-studio/index.html', 'v2026.43.2');
+includes('nl/open-pile-plan-studio/index.html', 'https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/download/v2026.43.2/');
+includes('nl/open-pile-plan-studio/index.html', 'content="open-pile-plan-studio"');
+includes('nl/open-pile-plan-studio/index.html', 'MCP-toegang');
+includes('open-pile-plan-studio/index.html', 'MCP access');
+includes('nl/open-pile-plan-studio/index.html', 'data-release-notes="pile-plan-studio"');
 includes(
-  'open-pile-plan-studio/index.html',
+  'nl/open-pile-plan-studio/index.html',
   '<h1 data-i18n="header.title">Open <span class="accent">Pile Plan</span> Studio</h1>',
 );
-for (const language of ['en', 'fr', 'tr', 'es']) {
+for (const language of ['', 'fr/', 'tr/', 'es/']) {
   includes(
-    `${language}/open-pile-plan-studio/index.html`,
+    `${language}open-pile-plan-studio/index.html`,
     '<h1 data-i18n="header.title">Open <span class="accent">Pile Plan</span> Studio</h1>',
   );
 }
@@ -58,12 +60,12 @@ for (const asset of [
   assert.ok(exists(asset), `${asset} ontbreekt`);
 }
 
-const productPage = read('open-pile-plan-studio/index.html');
+const productPage = read('nl/open-pile-plan-studio/index.html');
 assert.ok(!productPage.includes('greedy optimizer'), 'oude optimizertekst staat nog op de productpagina');
 assert.ok(!productPage.includes('pile-plan-studio-3.png'), 'verwijderde CPT-screenshot staat nog in de slider');
 
-for (const language of ['en', 'fr', 'tr', 'es']) {
-  includes(`${language}/open-pile-plan-studio/index.html`, 'Open Pile Plan Studio');
+for (const language of ['', 'fr/', 'tr/', 'es/']) {
+  includes(`${language}open-pile-plan-studio/index.html`, 'Open Pile Plan Studio');
 }
 
 includes('sitemap.xml', 'https://open-aec.com/open-pile-plan-studio/');

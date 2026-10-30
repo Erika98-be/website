@@ -82,7 +82,8 @@ function renderMarkdown(md) {
   return out.join('\n');
 }
 
-function staticBlock(data) {
+function staticBlock(data, lang) {
+  const tr = T[lang] || T.nl;
   const rel = data.latestStable;
   if (!rel) return null;
   const body = data.latestChangelog
@@ -93,13 +94,13 @@ function staticBlock(data) {
     '<!-- rn:start Gegenereerd door scripts/build-release-notes-static.js — niet met de hand bewerken -->',
     '<section class="rn-section"><div class="rn-container">',
     '<div class="rn-header-block">',
-    '<h2 class="rn-title">Release notes</h2>',
+    `<h2 class="rn-title">${escapeHtml(tr.title)}</h2>`,
     `<p class="rn-desc"><strong>${escapeHtml(rel.tag)}</strong> &middot; ${escapeHtml(rel.date || '')}</p>`,
     '</div>',
     '<div class="rn-groups"><div class="rn-group latest expanded"><div class="rn-group-body">',
     body,
     '</div></div></div>',
-    `<p class="rn-viewall"><a href="https://github.com/OpenAEC-Foundation/${escapeHtml(data.repo)}/releases" target="_blank" rel="noopener">Bekijk alle releases op GitHub &rarr;</a></p>`,
+    `<p class="rn-viewall"><a href="https://github.com/OpenAEC-Foundation/${escapeHtml(data.repo)}/releases" target="_blank" rel="noopener">${escapeHtml(tr.viewAll)}</a></p>`,
     '</div></section>',
     '<!-- rn:end -->',
   ].join('\n');
@@ -369,7 +370,7 @@ for (const file of htmlFiles(ROOT)) {
     const withCopy = ((highlights && highlights.releases) || []).length;
     what = `tijdlijn ${lang}, ${withCopy} met koppen`;
   } else {
-    block = staticBlock(data);
+    block = staticBlock(data, pageLang(html));
     what = data.latestChangelog ? `${data.latestChangelog.split('\n').length} regels changelog` : '';
   }
   if (!block) { console.warn(`  ✗ ${repo}: niets te renderen, overgeslagen`); continue; }

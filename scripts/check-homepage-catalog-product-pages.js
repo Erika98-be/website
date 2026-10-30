@@ -6,9 +6,10 @@ const ROOT = path.join(__dirname, '..');
 const read = (relativePath) => fs.readFileSync(path.join(ROOT, relativePath), 'utf8');
 const exists = (relativePath) => fs.existsSync(path.join(ROOT, relativePath));
 
-const homepage = read('index.html');
-const validator = read('bim-validator/index.html');
-const speech = read('open-speech-studio/index.html');
+// De handgeschreven Nederlandse bron staat in nl/; de root is de Engelse uitvoer.
+const homepage = read('nl/index.html');
+const validator = read('nl/bim-validator/index.html');
+const speech = read('nl/open-speech-studio/index.html');
 const validatorMarkdown = read('md/bim-validator.md');
 const markdownIndex = read('md/index.md');
 const markdownIndexJson = JSON.parse(read('md/index.json'));
@@ -37,10 +38,10 @@ for (const repo of retiredHomepageRepos) {
 }
 
 for (const page of [
-  'open-energy-studio/index.html',
-  'open-2d-studio/index.html',
-  'openaec-cloud/index.html',
-  'openaec-docs/index.html',
+  'nl/open-energy-studio/index.html',
+  'nl/open-2d-studio/index.html',
+  'nl/openaec-cloud/index.html',
+  'nl/openaec-docs/index.html',
 ]) {
   assert.ok(exists(page), `productpagina ontbreekt: ${page}`);
 }

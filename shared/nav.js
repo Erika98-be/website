@@ -7,6 +7,11 @@
     analytics.defer = true;
     document.head.appendChild(analytics);
   }
+  // De homepage staat op / (Engels) en op /nl/, /fr/, /tr/ en /es/.
+  function isHomepage() {
+    return /^\/(?:(?:nl|en|fr|tr|es)\/)?(?:index\.html)?$/.test(window.location.pathname);
+  }
+
   function loadNav() {
     var placeholder = document.getElementById('shared-nav');
     if (!placeholder) {
@@ -19,7 +24,7 @@
     // Staat de nav al statisch in de HTML (build-nav-static.js)? Dan niets
     // ophalen — alleen laten weten dat hij er is, zodat i18n.js zijn werk doet.
     if (placeholder.innerHTML.indexOf('nav:start') !== -1) {
-      if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+      if (isHomepage()) {
         var staticNav = placeholder.querySelector('.navbar');
         if (staticNav) staticNav.classList.add('homepage-nav');
       }
@@ -33,7 +38,7 @@
         placeholder.innerHTML = html;
 
         // Add homepage-nav class if on homepage
-        if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+        if (isHomepage()) {
           var nav = placeholder.querySelector('.navbar');
           if (nav) nav.classList.add('homepage-nav');
         }
