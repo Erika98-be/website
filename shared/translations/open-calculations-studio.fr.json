@@ -1,121 +1,241 @@
 {
   "header": {
-    "label": "Écosystème OpenAEC",
     "title": "Open <span class=\"accent\">Calculations</span> Studio",
-    "desc": "Application de bureau open source pour les calculs structuraux — <strong>inspirée de CalcPAD</strong>, avec export direct vers <strong>IFC4x3 STEP</strong> et <strong>IFCX JSON-LD</strong>. Anciennement Ifc-Calc, reconstruite sous l'égide de l'OpenAEC Foundation.",
-    "badge": "En développement"
+    "demoBtn": "Ouvrir dans le navigateur",
+    "featuresBtn": "Voir les fonctions",
+    "proof1": "Syntaxe CalcPAD",
+    "proof3": "Fonctionne dans le navigateur",
+    "proof4": "Gratuit · sans compte",
+    "heroAlt": "Open Calculations Studio : vérification d'une poutre acier IPE 300, avec le texte du calcul à gauche et le développement avec moments, efforts tranchants et taux de travail à droite",
+    "label": "Calculs de structure",
+    "tagline": "Des calculs que votre collègue relit d'une seule traite",
+    "desc": "Écrivez votre calcul en texte avec unités et voyez aussitôt le développement : formule, valeurs substituées et résultat sur une ligne. Partez d'une feuille pour le béton, l'acier, le bois, la maçonnerie ou les fondations, directement dans le navigateur.",
+    "contactBtn": "Nous contacter"
   },
-  "screenshot": {
-    "caption": "Éditeur en syntaxe CalcPAD avec aperçu en direct &middot; calcul de charge au vent &middot; dessin SVG paramétrique"
+  "meta": {
+    "description": "Application gratuite de calculs de structure dans le navigateur : écrivez votre calcul en texte avec unités et voyez aussitôt le développement. Avec des feuilles pour les Eurocodes et la NEN 9997-1.",
+    "title": "Open Calculations Studio — OpenAEC Foundation"
   },
-  "what": {
-    "title": "Qu'est-ce qu'Open Calculations Studio ?",
-    "desc": "Open Calculations Studio est un outil moderne et open source pour les calculs structuraux — <strong>inspiré de CalcPAD</strong>, l'outil largement utilisé par les ingénieurs structure néerlandais et européens. Nous avons reconstruit tout le moteur de calcul en TypeScript avec prise en charge de la syntaxe CalcPAD, et ajouté l'export IFC et IFCX en direct pour que les calculs s'intègrent directement avec les modèles BIM.",
-    "list1": "<strong>Compatible CalcPAD</strong> Les fichiers <code>.cpd</code> existants fonctionnent sans modification",
-    "list2": "<strong>Gestion des unités</strong> <code>mm</code>, <code>kN</code>, <code>N/mm²</code>, <code>mm⁴</code> via mathjs",
-    "list3": "<strong>Export IFCX + IFC4x3 STEP en direct</strong> Le calcul devient immédiatement un élément BIM",
-    "list4": "<strong>Rendu KaTeX</strong> Formules mathématiques avec vraies fractions, indices/exposants et lettres grecques",
-    "list5": "<strong>Dessins SVG</strong> Schémas paramétriques directement dans le calcul",
-    "list6": "<strong>Cas de charge</strong> ELS / ELU / sismique dans des onglets distincts",
-    "list7": "<strong>Utilisable comme bibliothèque</strong> À intégrer dans des applications EF ou des vérifications normatives"
-  },
-  "why": {
-    "title": "Pourquoi Open <span class=\"accent\">Calculations</span> Studio ?",
-    "desc1": "CalcPAD est utilisé depuis des années par les ingénieurs structure néerlandais pour les calculs manuels. Mais il est closed-source, ne fonctionne que sur Windows et n'a pas d'intégration BIM native. Open Calculations Studio apporte la fonctionnalité CalcPAD aux technologies web modernes : multiplateforme, open source, avec export IFC direct.",
-    "desc2": "Le fichier de régression <code>2259-Intertek-units.cpd</code> de 1094 lignes s'évalue avec <strong>0 erreur</strong> et produit <strong>6 dessins SVG</strong>. Suffisant pour de vrais calculs de projet."
-  },
-  "example": {
-    "title": "<span class=\"accent\">Document</span> d'exemple",
-    "desc": "Un document CalcPAD est naturel pour un ingénieur — formules, unités, logique conditionnelle et dessins côte à côte :"
-  },
-  "features": {
-    "title": "Fonctionnalités",
-    "units": {
-      "title": "Formules avec unités",
-      "desc": "Travaillez avec <code>mm</code>, <code>kN</code>, <code>N/mm²</code>, <code>mm⁴</code> et toutes les unités SI. Mathjs gère l'arithmétique sensible aux unités et la simplification automatique (<code>b*h</code> → <code>mm²</code>)."
+  "hl": {
+    "calc": {
+      "alt": "Calcul au poinçonnement selon l'EN 1992-1-1 : à gauche le texte avec unités et conditions, à droite les formules développées avec les valeurs substituées",
+      "kicker": "Calcul",
+      "title": "Écrivez le calcul comme sur papier",
+      "desc": "Tapez une formule avec unités, comme d_eff = (d_y + d_z) / 2. Le développement apparaît aussitôt en vraie notation mathématique : formule, valeurs substituées et résultat sur une ligne, avec l'unité. Des conditions choisissent la bonne formule, par exemple selon le type de poteau."
     },
-    "katex": {
-      "title": "Mise en forme mathématique",
-      "desc": "Rendu KaTeX avec vraies fractions, exposants, indices et lettres grecques (σ, ε, ρ, Φ, ψ). Les formules affichent <code>nom = formule = valeurs remplies = résultat</code> sur une ligne."
+    "codes": {
+      "alt": "Bibliothèque de feuilles par Eurocode, avec l'EN 1995-1-1 Bois déplié et la vérification complète d'une poutre bois ouverte",
+      "kicker": "Feuilles normatives",
+      "title": "Partez d'une feuille normative plutôt que d'une page blanche",
+      "desc": "Plus de cinquante feuilles par article, des combinaisons de charges de la NEN-EN 1990 à la flexion, au flambement et à la flèche du béton, de l'acier et du bois, la maçonnerie et la portance des pieux selon la NEN 9997-1. Avec des vérifications complètes d'une poutre béton, d'une poutre acier et d'une poutre bois."
     },
-    "editor": {
-      "title": "Aperçu en direct",
-      "desc": "Éditeur en split-pane (CodeMirror 6) avec coloration syntaxique pour <code>.cpd</code>. L'aperçu se met à jour pendant que vous tapez."
+    "input": {
+      "alt": "Charge de vent selon la NEN-EN 1991-1-4 : listes déroulantes pour la zone de vent et la catégorie de terrain, et un champ pour la hauteur de référence",
+      "kicker": "Saisie",
+      "title": "Choisissez, saisissez, le résultat suit",
+      "desc": "Une feuille peut demander une saisie : une liste pour la zone de vent, la classe de résistance ou la classe de conséquences, ou un champ pour une hauteur ou une portée. Changez un choix et tout le développement se recalcule aussitôt."
     },
-    "loadcases": {
-      "title": "Cas de charge",
-      "desc": "Onglets pour ELS / ELU / sismique, etc., chacun avec ses propres valeurs pour les variables d'entrée. Un document, plusieurs scénarios."
-    },
-    "calcpad": {
-      "title": "Compatible CalcPAD",
-      "desc": "Entièrement compatible avec les fichiers <code>.cpd</code> existants : <code>#if/#else if/#end if</code>, <code>#repeat</code>, <code>#for</code>, macros <code>#def</code>, <code>#include</code>, <code>$Plot</code>, matrices, lookups."
-    },
-    "ifc": {
-      "title": "Export IFC4x3 STEP",
-      "desc": "Détecte les éléments structuraux via des noms de variables conventionnels (<code>b_fdn</code>, <code>l_fdn</code>, <code>D_paal</code>, <code>M_Ed</code>, <code>R_c_d</code>). Génère un squelette valide Project → Site → Building → Storey."
-    },
-    "ifcx": {
-      "title": "IFCX JSON-LD",
-      "desc": "Export IFCX en direct (draft) — la nouvelle génération d'IFC avec espaces de noms pour calculs, normes et métadonnées. Calcul et modèle BIM dans un seul format."
-    },
-    "svg": {
-      "title": "Dessins SVG",
-      "desc": "Macros SVG paramétriques avec interpolation de valeurs. <code>@img(file.svg)</code> intègre des dessins externes en ligne. <code>@svg ... @end</code> pour du SVG manuscrit."
-    },
-    "viewer": {
-      "title": "Onglet IFC",
-      "desc": "Visualiseur STEP et visualiseur IFCX JSON intégrés avec coloration syntaxique. Les types d'entités sont cliquables et renvoient à la documentation buildingSMART."
-    },
-    "gef": {
-      "title": "Import GEF",
-      "desc": "<code>@gef name</code> — utilisez les données de sondage directement dans les calculs de fondation. S'intègre avec Open Geotechniek Studio."
-    },
-    "themes": {
-      "title": "5 thèmes",
-      "desc": "Light, Forge, OpenAEC, Blueprint et Contrast — tous basés sur les design tokens OpenAEC. Choisissez ce qui fonctionne le mieux pour vous."
-    },
-    "pdf": {
-      "title": "Export PDF",
-      "desc": "Export PDF prêt à imprimer via shell Tauri avec aperçu headless. Prêt pour le dossier projet ou une revue tierce."
-    },
-    "library": {
-      "title": "Mode bibliothèque",
-      "desc": "Utilisez <code>@ifc-calc/core</code> en tant que bibliothèque TypeScript : parser, évaluer, rendre, générer IFC/IFCX depuis vos applications FEM ou contrôles normatifs."
-    },
-    "showAll": "Afficher toutes les fonctions",
-    "showLess": "Afficher moins"
-  },
-  "compat": {
-    "title": "Compatibilité CalcPAD",
-    "desc": "Entièrement <em>compatible sous-ensemble</em> avec les fichiers CalcPAD du monde réel. Fonctionne directement sur vos documents <code>.cpd</code> existants :"
-  },
-  "useCases": {
-    "title": "Profils d'utilisateurs",
-    "structural": {
-      "title": "Ingénieurs structure",
-      "desc": "Calculs manuels pour poutres, poteaux, fondations — directement dans un document lisible. Ouvrez vos fichiers CalcPAD existants sans migration."
-    },
-    "bim": {
-      "title": "Modeleurs BIM",
-      "desc": "Liez les calculs directement aux éléments IFC. Pas de transfert manuel de valeurs — la vérification vit dans le modèle."
-    },
-    "education": {
-      "title": "Enseignement &amp; formation",
-      "desc": "Les étudiants en génie civil apprennent à calculer avec la vraie syntaxe qu'ils rencontreront en pratique. Open source — pas de frais de licence."
-    },
-    "fem": {
-      "title": "Développeurs FEM",
-      "desc": "Intégrez <code>@ifc-calc/core</code> dans votre propre application FEM pour pré/post-traitement ou contrôle normatif. Bibliothèque TypeScript, installable via npm."
+    "review": {
+      "alt": "Seul le développement à l'écran : flexion et effort tranchant d'une poutre béton selon l'EN 1992-1-1 avec le taux de travail",
+      "kicker": "Relecture",
+      "title": "Chaque étape visible, pas de boîte noire",
+      "desc": "Masquez l'éditeur et lisez seulement le développement, avec les numéros d'article de la norme. Celui qui vérifie le calcul voit exactement quelle formule et quelles valeurs mènent au taux de travail."
     }
   },
-  "tech": {
-    "title": "Technologie",
-    "desc": "Monorepo avec trois packages : <code>@ifc-calc/core</code> (parser + évaluateur + générateur IFC en bibliothèque TypeScript), <code>@openaec/calculations-studio</code> (application de bureau Tauri 2 avec interface React 19), et <code>@ifc-calc/web</code> (build navigateur uniquement). Multiplateforme : Windows, macOS, Linux."
+  "notice": {
+    "text": "La version navigateur calcule entièrement, mais l'enregistrement et l'export n'y fonctionnent pas encore. L'application de bureau avec projets et note de calcul n'est pas encore publique."
   },
-  "cta": {
-    "liveDemo": "Ouvrir la démo en ligne",
-    "github": "Dépôt GitHub",
-    "download": "Télécharger — Windows, macOS &amp; Linux",
-    "contact": "Nous contacter"
+  "subnav": {
+    "label": "Sur cette page",
+    "features": "Fonctions",
+    "whatsnew": "Nouveautés",
+    "faq": "FAQ"
+  },
+  "tabs": {
+    "highlights": "Points forts",
+    "calc": "Calcul avec unités",
+    "codes": "Feuilles normatives",
+    "input": "Saisie et affichage",
+    "all": "Toutes les fonctions"
+  },
+  "f": {
+    "units": {
+      "title": "Calcul avec unités",
+      "desc": "mm, kN, N/mm², mm⁴ et toutes les unités SI. b*h devient mm² tout seul ; « to » convertit dans l'unité voulue."
+    },
+    "chain": {
+      "title": "Formule, valeurs et résultat",
+      "desc": "Chaque ligne montre nom = formule = valeurs substituées = résultat, avec de vraies fractions, racines et lettres grecques."
+    },
+    "live": {
+      "title": "Développement en direct",
+      "desc": "Le texte à gauche, le développement à droite. Ce que vous tapez est calculé aussitôt."
+    },
+    "conditions": {
+      "title": "Conditions et boucles",
+      "desc": "#if, #else if et #else pour « vérifié » ou « non vérifié », et #repeat et #for pour les séries."
+    },
+    "macros": {
+      "title": "Vos fonctions et tableaux",
+      "desc": "Macros avec #def, matrices et tables de recherche pour les valeurs des matériaux."
+    },
+    "calcpad": {
+      "title": "Syntaxe CalcPAD",
+      "desc": "Si vous connaissez CalcPAD, vous reconnaîtrez la structure : titres, lignes de texte, commentaires et commandes fonctionnent de la même façon."
+    },
+    "en1990": {
+      "title": "Bases et combinaisons",
+      "desc": "NEN-EN 1990 : états limites ultimes et de service, EQU, accidentel, sismique et valeurs de calcul."
+    },
+    "loads": {
+      "title": "Charges",
+      "desc": "Charges d'exploitation, neige et vent selon l'EN 1991 avec l'annexe néerlandaise, y compris un bâtiment plus haut à proximité."
+    },
+    "concrete": {
+      "title": "Béton",
+      "desc": "Flexion, effort tranchant avec et sans étriers, poinçonnement, ouverture des fissures et flèche selon l'EN 1992-1-1."
+    },
+    "steel": {
+      "title": "Acier",
+      "desc": "Classe de section, traction, compression, flexion, cisaillement, flambement, déversement et flexion de semelle inférieure selon l'EN 1993-1-1."
+    },
+    "timber": {
+      "title": "Bois",
+      "desc": "Flexion, cisaillement, compression, torsion, flambement, poutre à inertie variable, entaille, flèche et platelage de plancher et de toiture selon l'EN 1995-1-1."
+    },
+    "masonry": {
+      "title": "Maçonnerie",
+      "desc": "Résistance à la compression, mur comprimé, cisaillement et élancement selon l'EN 1996-1-1."
+    },
+    "geo": {
+      "title": "Fondations",
+      "desc": "Semelle filante, portance des pieux, tassement et glissement selon la NEN 9997-1."
+    },
+    "examples": {
+      "title": "Exemples développés",
+      "desc": "Exemples tirés de Vandepitte sur les contraintes de cisaillement, la flèche, le flambement, la fréquence propre et le travail virtuel."
+    },
+    "select": {
+      "title": "Listes déroulantes",
+      "desc": "Choisissez la classe de conséquences, de résistance, de service ou le type de pieu dans une liste ; le calcul suit."
+    },
+    "prompts": {
+      "title": "Champs de saisie",
+      "desc": "Les valeurs propres au projet, comme une hauteur ou une charge, se saisissent dans un champ du développement."
+    },
+    "gef": {
+      "title": "Lire un essai au pénétromètre",
+      "desc": "Une feuille peut demander un fichier GEF pour utiliser les données d'essai dans votre calcul de fondation."
+    },
+    "views": {
+      "title": "Trois vues",
+      "desc": "Texte et développement côte à côte, l'éditeur seul ou le développement seul."
+    },
+    "editor": {
+      "title": "Éditeur coloré",
+      "desc": "Numéros de ligne et couleurs pour les titres, commandes et listes, pour garder la vue d'ensemble des longs calculs."
+    },
+    "free": {
+      "title": "Sans compte",
+      "desc": "Ouvrez la page et commencez. Votre calcul s'exécute dans votre propre navigateur."
+    }
+  },
+  "features": {
+    "label": "Fonctions",
+    "heading": "Calculer, vérifier et faire relire",
+    "sub": "Commencez par les points forts ou choisissez un thème.",
+    "tabsLabel": "Fonctions par thème"
+  },
+  "whatsnew": {
+    "ctaDemo": "Essayer dans le navigateur",
+    "items": {
+      "timber": {
+        "title": "Torsion, poutre à inertie variable et entaille",
+        "desc": "Trois nouvelles feuilles bois selon l'EN 1995-1-1 : §6.1.8, §6.4.2 et §6.5.2."
+      },
+      "sheathing": {
+        "title": "Platelage de plancher et de toiture",
+        "desc": "Vérifiez les planches ou panneaux d'un plancher ou d'une toiture en bois."
+      },
+      "flange": {
+        "title": "Flexion de la semelle inférieure",
+        "desc": "Une poutre acier avec une charge roulante ou suspendue sur la semelle inférieure, en feuille dédiée."
+      },
+      "wind": {
+        "title": "Vent près d'un bâtiment plus haut",
+        "desc": "La charge de vent applique l'annexe A.4 lorsqu'un bâtiment plus haut se trouve à proximité."
+      }
+    },
+    "label": "Nouveau en septembre 2026",
+    "title": "Plus de feuilles pour <span>le bois et l'acier</span>",
+    "desc": "La bibliothèque du navigateur s'est enrichie de nouvelles vérifications pour le bois et l'acier, et le calcul du vent tient compte d'un bâtiment plus haut à proximité."
+  },
+  "faq": {
+    "files": {
+      "q": "Quels fichiers puis-je ouvrir ?",
+      "a": "Dans la version navigateur, vous partez d'une feuille de la bibliothèque ou tapez la vôtre. Vous pouvez coller un calcul en syntaxe CalcPAD dans l'éditeur. Une feuille peut lire un essai au pénétromètre en fichier GEF. L'ouverture de fichiers par le menu ne fonctionne pas encore dans le navigateur."
+    },
+    "install": {
+      "q": "Dois-je installer quelque chose ?",
+      "a": "Non. La version navigateur fonctionne immédiatement, sans compte. Il existe aussi une application de bureau pour Windows, macOS et Linux, avec projets, modules de calcul et note de calcul, mais ses installateurs ne sont pas encore publics."
+    },
+    "price": {
+      "q": "Combien coûte Open Calculations Studio ?",
+      "a": "Rien. La version navigateur est gratuite, sans compte ni abonnement."
+    },
+    "save": {
+      "q": "Dans quel format mon travail est-il enregistré ?",
+      "a": "Pas encore dans la version navigateur : l'enregistrement et l'export en PDF, IFC, HTML ou JSON n'y fonctionnent pas encore. Copiez votre texte pour le conserver. L'application de bureau enregistre un projet dans un fichier .ifccalculation."
+    },
+    "systems": {
+      "q": "Sur quels systèmes fonctionne-t-il ?",
+      "a": "Dans tout navigateur moderne, sous Windows, macOS et Linux. Le calcul se fait dans votre propre navigateur."
+    },
+    "practice": {
+      "q": "Est-ce adapté à la pratique néerlandaise ?",
+      "a": "Les feuilles suivent les Eurocodes avec les annexes nationales néerlandaises et la NEN 9997-1, avec les numéros d'article. Vérifiez toujours le résultat vous-même. Dans l'application de bureau, seuls le plancher à solives bois et le trop-plein de secours ont été vérifiés et validés à ce jour ; les autres modules restent à contrôler."
+    },
+    "ifc": {
+      "q": "Puis-je exporter en IFC ?",
+      "a": "Pas encore dans le navigateur. Le moteur de calcul peut écrire un calcul en IFC4x3 et IFCX, pour rattacher une vérification au bon élément du modèle BIM ; cela fait partie de l'application de bureau."
+    },
+    "source": {
+      "q": "Le code source est-il public ?",
+      "a": "Pas encore. Le dépôt sur GitHub n'est pas encore public ; c'est pourquoi cette page ne propose pas encore de téléchargements."
+    },
+    "calcpad": {
+      "q": "Quel est le lien avec CalcPAD ?",
+      "a": "Open Calculations Studio s'inspire de CalcPAD et prend en charge une grande partie de sa syntaxe : titres, texte, conditions, boucles, macros et graphiques. Il fonctionne dans le navigateur, donc aussi sous macOS et Linux."
+    },
+    "heading": "Questions fréquentes"
+  },
+  "tech": {
+    "core": {
+      "title": "Moteur de calcul propre",
+      "desc": "Analyseur, évaluateur et rendu en TypeScript, utilisables aussi comme bibliothèque dans d'autres logiciels."
+    },
+    "mathjs": {
+      "desc": "Calcul avec unités et matrices, avec simplification automatique de l'unité."
+    },
+    "katex": {
+      "desc": "Des formules en notation mathématique soignée, avec fractions, racines, indices et exposants."
+    },
+    "codemirror": {
+      "desc": "L'éditeur avec numéros de ligne et couleurs pour la syntaxe de calcul."
+    },
+    "ifc": {
+      "title": "IFC4x3 et IFCX",
+      "desc": "Le moteur convertit un calcul en IFC4x3 STEP et IFCX JSON-LD."
+    },
+    "tauri": {
+      "title": "Vite et Tauri 2",
+      "desc": "Vite construit la version navigateur ; l'application de bureau utilise une fine couche native en Rust."
+    },
+    "heading": "Technologie",
+    "sub": "Pour ceux qui veulent savoir comment c'est construit."
+  },
+  "releases": {
+    "showAll": "Afficher toutes les versions",
+    "showLess": "Afficher seulement les trois dernières"
   }
 }

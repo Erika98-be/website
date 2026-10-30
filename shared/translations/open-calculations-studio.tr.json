@@ -1,121 +1,241 @@
 {
   "header": {
-    "label": "OpenAEC ekosistemi",
     "title": "Open <span class=\"accent\">Calculations</span> Studio",
-    "desc": "Yapısal hesaplamalar için açık kaynak masaüstü uygulaması — <strong>CalcPAD'den ilham alarak</strong>, doğrudan <strong>IFC4x3 STEP</strong> ve <strong>IFCX JSON-LD</strong> dışa aktarma ile. Eskiden Ifc-Calc, OpenAEC Foundation altında yeniden inşa edildi.",
-    "badge": "Geliştirme aşamasında"
+    "demoBtn": "Tarayıcıda aç",
+    "featuresBtn": "Özellikleri gör",
+    "proof1": "CalcPAD sözdizimi",
+    "proof3": "Tarayıcıda çalışır",
+    "proof4": "Ücretsiz · hesap gerekmez",
+    "heroAlt": "Open Calculations Studio: IPE 300 çelik kirişin tahkiki; solda hesabın metni, sağda momentler, kesme kuvvetleri ve kapasite oranlarıyla açılımı",
+    "label": "Yapı hesapları",
+    "tagline": "Meslektaşınızın tek seferde kontrol edebileceği hesaplar",
+    "desc": "Hesabınızı birimlerle metin olarak yazın ve açılımını hemen görün: formül, yerine konan değerler ve sonuç tek satırda. Doğrudan tarayıcıda beton, çelik, ahşap, yığma veya temel için bir hesap sayfasından başlayın.",
+    "contactBtn": "Bize ulaşın"
   },
-  "screenshot": {
-    "caption": "Canlı önizlemeli CalcPAD-syntax editörü · rüzgar yükü hesaplaması · parametrik SVG çizimi"
+  "meta": {
+    "description": "Tarayıcıda ücretsiz yapı hesapları uygulaması: hesabınızı birimlerle metin olarak yazın ve açılımını hemen görün. Eurokodlar ve NEN 9997-1 için hesap sayfalarıyla.",
+    "title": "Open Calculations Studio — OpenAEC Foundation"
   },
-  "what": {
-    "title": "Open Calculations Studio nedir?",
-    "desc": "Open Calculations Studio, yapısal hesaplamalar için modern bir açık kaynak araçtır — <strong>CalcPAD'den ilham alarak</strong>, Hollandalı ve Avrupalı yapı mühendisleri arasında yaygın olarak kullanılan araç. Tüm hesaplama motorunu CalcPAD syntax desteği ile TypeScript'te yeniden inşa ettik ve hesaplamaların doğrudan BIM modelleriyle entegre olması için canlı IFC ve IFCX dışa aktarımı ekledik.",
-    "list1": "<strong>CalcPAD uyumlu</strong> Mevcut <code>.cpd</code> dosyaları değişiklik gerektirmeden çalışır",
-    "list2": "<strong>Birim farkındalıklı</strong> Mathjs ile <code>mm</code>, <code>kN</code>, <code>N/mm²</code>, <code>mm⁴</code>",
-    "list3": "<strong>Canlı IFCX + IFC4x3 STEP dışa aktarımı</strong> Hesap doğrudan BIM elemanına dönüşür",
-    "list4": "<strong>KaTeX ile görüntüleme</strong> Gerçek kesirler, alt/üst simgeler ve Yunan harfleriyle matematiksel formüller",
-    "list5": "<strong>SVG çizimler</strong> Parametrik şemalar doğrudan hesabın içinde",
-    "list6": "<strong>Yük durumları</strong> Ayrı sekmelerde SLS / ULS / deprem",
-    "list7": "<strong>Kütüphane olarak kullanılabilir</strong> FEM uygulamalarına veya yönetmelik kontrollerine gömülebilir"
-  },
-  "why": {
-    "title": "Neden Open <span class=\"accent\">Calculations</span> Studio?",
-    "desc1": "CalcPAD yıllardır Hollandalı yapı mühendisleri tarafından el hesaplamaları için kullanılıyor. Ama kapalı kaynak, sadece Windows'ta çalışır ve yerleşik BIM entegrasyonu yoktur. Open Calculations Studio CalcPAD işlevselliğini modern web teknolojisine getirir: çapraz platform, açık kaynak ve doğrudan IFC dışa aktarma ile.",
-    "desc2": "1094 satırlık <code>2259-Intertek-units.cpd</code> regresyon dosyası <strong>0 hata</strong> ile değerlendirilir ve <strong>6 SVG çizimi</strong> render eder. Gerçek dünya proje hesaplamaları için yeterli."
-  },
-  "example": {
-    "title": "Örnek <span class=\"accent\">belge</span>",
-    "desc": "Bir CalcPAD belgesi bir mühendis için doğal hissettirir — formüller, birimler, koşullu mantık ve çizimler yan yana:"
-  },
-  "features": {
-    "title": "Özellikler",
-    "units": {
-      "title": "Birimli formüller",
-      "desc": "<code>mm</code>, <code>kN</code>, <code>N/mm²</code>, <code>mm⁴</code> ve tüm SI birimleriyle çalışın. Mathjs birim-farkında aritmetik ve otomatik basitleştirme (<code>b*h</code> → <code>mm²</code>) sağlar."
+  "hl": {
+    "calc": {
+      "alt": "EN 1992-1-1'e göre zımbalama hesabı: solda birimler ve koşullarla metin, sağda değerleri yerine konmuş açılmış formüller",
+      "kicker": "Hesap",
+      "title": "Hesabı kâğıda yazar gibi yazın",
+      "desc": "d_eff = (d_y + d_z) / 2 gibi birimli bir formül yazın. Açılım hemen gerçek matematik olarak görünür: formül, yerine konan değerler ve sonuç birimiyle tek satırda. Koşullarla doğru formülü seçersiniz, örneğin kolon tipine göre."
     },
-    "katex": {
-      "title": "Matematiksel dizgi",
-      "desc": "Gerçek kesirler, üstler, altlar ve Yunan harfleri (σ, ε, ρ, Φ, ψ) ile KaTeX render. Formüller <code>isim = formül = doldurulmuş değerler = sonuç</code>'u tek satırda gösterir."
+    "codes": {
+      "alt": "Eurokoda göre hesap sayfaları kütüphanesi; EN 1995-1-1 Ahşap açık ve ahşap kirişin tam tahkiki görüntüleniyor",
+      "kicker": "Standart sayfaları",
+      "title": "Boş sayfa yerine bir standart sayfasıyla başlayın",
+      "desc": "NEN-EN 1990'daki yük kombinasyonlarından beton, çelik ve ahşapta eğilme, burkulma ve sehime, yığma yapılara ve NEN 9997-1'e göre kazık taşıma gücüne kadar madde bazında elliden fazla hesap sayfası. Beton kiriş, çelik kiriş ve ahşap kiriş için tam tahkiklerle."
     },
-    "editor": {
-      "title": "Canlı önizleme",
-      "desc": "<code>.cpd</code> için sözdizimi vurgulamalı split-pane editör (CodeMirror 6). Yazarken debounced önizleme yeniden render eder."
+    "input": {
+      "alt": "NEN-EN 1991-1-4'e göre rüzgâr yükü: rüzgâr bölgesi ve arazi kategorisi için açılır listeler, referans yüksekliği için bir giriş alanı",
+      "kicker": "Girdi",
+      "title": "Seçin ve doldurun, sonuç kendiliğinden güncellenir",
+      "desc": "Bir hesap sayfası girdi isteyebilir: rüzgâr bölgesi, dayanım sınıfı veya sonuç sınıfı için açılır liste ya da yükseklik veya açıklık için bir alan. Bir seçimi değiştirdiğinizde tüm açılım hemen yeniden hesaplanır."
     },
-    "loadcases": {
-      "title": "Yük durumları",
-      "desc": "SLS / ULS / deprem vb. için sekmeler, her biri kendi giriş değişkeni prompt değerleri ile. Tek belge, birden fazla senaryo."
-    },
-    "calcpad": {
-      "title": "CalcPAD uyumlu",
-      "desc": "Mevcut <code>.cpd</code> dosyalarıyla tamamen uyumlu: <code>#if/#else if/#end if</code>, <code>#repeat</code>, <code>#for</code>, <code>#def</code> makroları, <code>#include</code>, <code>$Plot</code>, matrisler, lookuplar."
-    },
-    "ifc": {
-      "title": "IFC4x3 STEP dışa aktarma",
-      "desc": "Geleneksel değişken isimleri (<code>b_fdn</code>, <code>l_fdn</code>, <code>D_paal</code>, <code>M_Ed</code>, <code>R_c_d</code>) aracılığıyla yapısal elemanları algılar. Geçerli Project → Site → Building → Storey iskeleti oluşturur."
-    },
-    "ifcx": {
-      "title": "IFCX JSON-LD",
-      "desc": "Canlı IFCX (draft) dışa aktarma — hesaplamalar, standartlar ve meta veriler için ad alanları olan IFC'nin yeni nesli. Hesaplama ve BIM modeli tek formatta."
-    },
-    "svg": {
-      "title": "SVG çizimleri",
-      "desc": "Değer interpolasyonu ile parametrik SVG makroları. <code>@img(file.svg)</code> dış çizimleri satır içinde gömer. Elle yazılmış SVG için <code>@svg ... @end</code>."
-    },
-    "viewer": {
-      "title": "IFC sekmesi",
-      "desc": "Sözdizimi vurgulamalı yerleşik STEP görüntüleyici ve IFCX JSON görüntüleyici. Tıklanabilir entity türleri doğrudan buildingSMART belgelerine bağlanır."
-    },
-    "gef": {
-      "title": "GEF yükleme",
-      "desc": "<code>@gef name</code> yükleme — temel hesaplamalarında doğrudan sondaj verilerini kullanın. Open Geotechniek Studio ile entegre olur."
-    },
-    "themes": {
-      "title": "5 tema",
-      "desc": "Light, Forge, OpenAEC, Blueprint ve Contrast — tümü OpenAEC tasarım token'ları üzerine inşa edilmiştir. Ortamınız için en iyi çalışanı seçin."
-    },
-    "pdf": {
-      "title": "PDF dışa aktarma",
-      "desc": "Headless önizleme ile Tauri shell aracılığıyla baskıya hazır PDF dışa aktarma. Proje dosyası veya üçüncü taraf incelemesi için hazır."
-    },
-    "library": {
-      "title": "Kütüphane modu",
-      "desc": "<code>@ifc-calc/core</code>'u TypeScript kütüphanesi olarak kullanın: FEM uygulamalarından veya code-checking'den ayrıştırın, değerlendirin, render edin, IFC/IFCX oluşturun."
-    },
-    "showAll": "Tüm özellikleri göster",
-    "showLess": "Daha az göster"
-  },
-  "compat": {
-    "title": "CalcPAD uyumluluğu",
-    "desc": "Gerçek dünya CalcPAD dosyalarıyla tamamen <em>subset compatible</em>. Mevcut <code>.cpd</code> belgelerinizde out-of-the-box çalışır:"
-  },
-  "useCases": {
-    "title": "Kullanıcı profilleri",
-    "structural": {
-      "title": "Yapı mühendisleri",
-      "desc": "Kirişler, kolonlar, temeller için el hesaplamaları — okunabilir bir belgede doğrudan. Mevcut CalcPAD dosyalarınızı taşıma olmadan açın."
-    },
-    "bim": {
-      "title": "BIM modelleyicileri",
-      "desc": "Hesaplamaları doğrudan IFC elemanlarına bağlayın. Değerlerin elle aktarımı yok — kontrol modelde yaşar."
-    },
-    "education": {
-      "title": "Eğitim",
-      "desc": "Yapı mühendisliği öğrencileri uygulamada karşılaşacakları gerçek sözdizimi ile hesaplamayı öğrenir. Açık kaynak — lisans maliyeti yok."
-    },
-    "fem": {
-      "title": "FEM geliştiricileri",
-      "desc": "Kendi FEM uygulamanızda pre/post-processing veya code-checking için <code>@ifc-calc/core</code>'u gömün. TypeScript kütüphanesi, npm-installable."
+    "review": {
+      "alt": "Ekranda yalnızca açılım: EN 1992-1-1'e göre beton kirişin eğilme ve kesme tahkiki ile kapasite oranı",
+      "kicker": "Kontrol",
+      "title": "Her adım görünür, kara kutu yok",
+      "desc": "Düzenleyiciyi gizleyin ve yalnızca açılımı standardın madde numaralarıyla birlikte okuyun. Hesabı kontrol eden kişi hangi formülün hangi değerlerle kapasite oranına götürdüğünü tam olarak görür."
     }
   },
-  "tech": {
-    "title": "Teknoloji",
-    "desc": "Üç paketli monorepo: <code>@ifc-calc/core</code> (TypeScript kütüphanesi olarak ayrıştırıcı + değerlendirici + IFC üretici), <code>@openaec/calculations-studio</code> (React 19 UI ile Tauri 2 masaüstü uygulaması) ve <code>@ifc-calc/web</code> (yalnızca tarayıcı build'i). Çapraz platform: Windows, macOS, Linux."
+  "notice": {
+    "text": "Tarayıcı sürümü tam olarak hesap yapar, ancak kaydetme ve dışa aktarma orada henüz çalışmaz. Projeler ve statik raporla gelen masaüstü uygulaması henüz herkese açık değil."
   },
-  "cta": {
-    "liveDemo": "Canlı demoyu aç",
-    "github": "GitHub deposu",
-    "download": "İndir — Windows, macOS ve Linux",
-    "contact": "Bize ulaşın"
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "calc": "Birimlerle hesap",
+    "codes": "Standart sayfaları",
+    "input": "Girdi ve görünüm",
+    "all": "Tüm özellikler"
+  },
+  "f": {
+    "units": {
+      "title": "Birimlerle hesap",
+      "desc": "mm, kN, N/mm², mm⁴ ve tüm SI birimleri. b*h kendiliğinden mm² olur; 'to' ile istediğiniz birime çevirirsiniz."
+    },
+    "chain": {
+      "title": "Formül, değerler ve sonuç",
+      "desc": "Her satır ad = formül = yerine konan değerler = sonuç gösterir; gerçek kesirler, kökler ve Yunan harfleriyle."
+    },
+    "live": {
+      "title": "Canlı açılım",
+      "desc": "Solda metin, sağda açılım. Yazdığınız hemen hesaplanır."
+    },
+    "conditions": {
+      "title": "Koşullar ve döngüler",
+      "desc": "'Uygun' veya 'uygun değil' için #if, #else if ve #else; seriler için #repeat ve #for."
+    },
+    "macros": {
+      "title": "Kendi fonksiyonlarınız ve tablolarınız",
+      "desc": "#def ile makrolar, matrisler ve malzeme değerleri için arama tabloları."
+    },
+    "calcpad": {
+      "title": "CalcPAD sözdizimi",
+      "desc": "CalcPAD'i bilen yapıyı tanır: başlıklar, metin satırları, yorumlar ve komutlar aynı şekilde çalışır."
+    },
+    "en1990": {
+      "title": "Esaslar ve kombinasyonlar",
+      "desc": "NEN-EN 1990: taşıma gücü ve kullanılabilirlik sınır durumları, EQU, kaza, deprem ve tasarım değerleri."
+    },
+    "loads": {
+      "title": "Yükler",
+      "desc": "Hollanda eki ile EN 1991'e göre hareketli yükler, kar ve rüzgâr; yakındaki daha yüksek bir yapı dahil."
+    },
+    "concrete": {
+      "title": "Beton",
+      "desc": "EN 1992-1-1'e göre eğilme, etriyeli ve etriyesiz kesme, zımbalama, çatlak genişliği ve sehim."
+    },
+    "steel": {
+      "title": "Çelik",
+      "desc": "EN 1993-1-1'e göre kesit sınıfı, çekme, basınç, eğilme, kesme, burkulma, yanal burulmalı burkulma ve alt başlık eğilmesi."
+    },
+    "timber": {
+      "title": "Ahşap",
+      "desc": "EN 1995-1-1'e göre eğilme, kesme, basınç, burulma, burkulma, değişken kesitli kiriş, çentik, sehim ve döşeme ve çatı kaplaması."
+    },
+    "masonry": {
+      "title": "Yığma",
+      "desc": "EN 1996-1-1'e göre basınç dayanımı, basınç altındaki duvar, kesme ve narinlik."
+    },
+    "geo": {
+      "title": "Temeller",
+      "desc": "NEN 9997-1'e göre şerit temel, kazık taşıma gücü, oturma ve kayma."
+    },
+    "examples": {
+      "title": "Çözümlü örnekler",
+      "desc": "Vandepitte'den kayma gerilmeleri, sehim, burkulma, doğal frekans ve virtüel iş örnekleri."
+    },
+    "select": {
+      "title": "Açılır listeler",
+      "desc": "Sonuç sınıfı, dayanım sınıfı, kullanım sınıfı veya kazık tipini listeden seçin; hesap güncellenir."
+    },
+    "prompts": {
+      "title": "Giriş alanları",
+      "desc": "Yükseklik veya yük gibi projeye göre değişen değerleri açılımdaki bir alana girersiniz."
+    },
+    "gef": {
+      "title": "Sondaj okuma",
+      "desc": "Bir hesap sayfası GEF dosyası isteyebilir; böylece sondaj verilerini temel hesabınızda kullanırsınız."
+    },
+    "views": {
+      "title": "Üç görünüm",
+      "desc": "Metin ve açılım yan yana, yalnızca düzenleyici veya yalnızca açılım."
+    },
+    "editor": {
+      "title": "Renkli düzenleyici",
+      "desc": "Uzun hesapları takip edebilmeniz için satır numaraları ve başlıklar, komutlar ve listeler için renkler."
+    },
+    "free": {
+      "title": "Hesap gerekmez",
+      "desc": "Sayfayı açın ve başlayın. Hesabınız kendi tarayıcınızda yapılır."
+    }
+  },
+  "features": {
+    "label": "Özellikler",
+    "heading": "Hesaplayın, tahkik edin, kontrol ettirin",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "whatsnew": {
+    "ctaDemo": "Tarayıcıda deneyin",
+    "items": {
+      "timber": {
+        "title": "Burulma, değişken kesitli kiriş ve çentik",
+        "desc": "EN 1995-1-1'e göre üç yeni ahşap sayfası: §6.1.8, §6.4.2 ve §6.5.2."
+      },
+      "sheathing": {
+        "title": "Döşeme ve çatı kaplaması",
+        "desc": "Ahşap döşeme veya çatının tahta ya da levhalarını tahkik edin."
+      },
+      "flange": {
+        "title": "Alt başlık eğilmesi",
+        "desc": "Alt başlığında tekerlek veya asılı yük bulunan çelik kiriş, ayrı bir sayfa olarak."
+      },
+      "wind": {
+        "title": "Daha yüksek yapı yakınında rüzgâr",
+        "desc": "Yakında daha yüksek bir yapı varsa rüzgâr yükü Ek A.4 ile hesaplanır."
+      }
+    },
+    "label": "Eylül 2026'da yeni",
+    "title": "<span>Ahşap ve çelik</span> için daha fazla sayfa",
+    "desc": "Tarayıcıdaki kütüphaneye ahşap ve çelik için yeni tahkikler eklendi; rüzgâr hesabı artık yakındaki daha yüksek bir yapıyı da hesaba katıyor."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "Tarayıcı sürümünde kütüphaneden bir hesap sayfasıyla başlarsınız veya kendiniz yazarsınız. CalcPAD sözdizimindeki bir hesabı düzenleyiciye yapıştırabilirsiniz. Bir hesap sayfası sondajı GEF dosyası olarak okuyabilir. Menüden dosya açmak tarayıcıda henüz çalışmıyor."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Hayır. Tarayıcı sürümü hesap gerekmeden hemen çalışır. Projeler, hesap modülleri ve statik raporla Windows, macOS ve Linux için bir masaüstü uygulaması da var, ancak yükleyicileri henüz herkese açık değil."
+    },
+    "price": {
+      "q": "Open Calculations Studio ne kadar?",
+      "a": "Hiçbir şey. Tarayıcı sürümü ücretsizdir; hesap veya abonelik yoktur."
+    },
+    "save": {
+      "q": "Çalışmam hangi biçimde kaydedilir?",
+      "a": "Tarayıcı sürümünde henüz değil: kaydetme ve PDF, IFC, HTML veya JSON'a dışa aktarma orada henüz çalışmıyor. Saklamak için metninizi kopyalayın. Masaüstü uygulaması projeyi .ifccalculation dosyası olarak kaydeder."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Windows, macOS ve Linux'ta her modern tarayıcıda. Hesaplama kendi tarayıcınızda yapılır."
+    },
+    "practice": {
+      "q": "Hollanda uygulamasına uyuyor mu?",
+      "a": "Hesap sayfaları madde numaralarıyla birlikte Hollanda ulusal ekleriyle Eurokodları ve NEN 9997-1'i izler. Sonucu her zaman kendiniz kontrol edin. Masaüstü uygulamasında şimdiye kadar yalnızca ahşap kirişli döşeme ve acil taşma ağzı incelenip onaylandı; diğer modüller hâlâ kontrol aşamasında."
+    },
+    "ifc": {
+      "q": "IFC'ye aktarabilir miyim?",
+      "a": "Tarayıcıda henüz değil. Hesap çekirdeği bir hesabı IFC4x3 ve IFCX olarak yazabilir; böylece bir tahkik BIM modelindeki doğru elemana bağlanır. Bu masaüstü uygulamasında yer alır."
+    },
+    "source": {
+      "q": "Kaynak kodu herkese açık mı?",
+      "a": "Henüz değil. GitHub'daki depo henüz herkese açık değil; bu yüzden bu sayfada henüz indirme yok."
+    },
+    "calcpad": {
+      "q": "CalcPAD ile ilişkisi nedir?",
+      "a": "Open Calculations Studio, CalcPAD'den esinlenmiştir ve sözdiziminin büyük bölümünü destekler: başlıklar, metin, koşullar, döngüler, makrolar ve grafikler. Tarayıcıda çalıştığı için macOS ve Linux'ta da kullanılabilir."
+    },
+    "heading": "Sık sorulan sorular"
+  },
+  "tech": {
+    "core": {
+      "title": "Kendi hesap çekirdeği",
+      "desc": "TypeScript ile ayrıştırıcı, değerlendirici ve görüntüleyici; başka yazılımlarda kütüphane olarak da kullanılabilir."
+    },
+    "mathjs": {
+      "desc": "Birim ve matrislerle hesap; birimin otomatik sadeleştirilmesiyle."
+    },
+    "katex": {
+      "desc": "Kesirler, kökler, alt ve üst simgelerle düzgün matematik olarak formüller."
+    },
+    "codemirror": {
+      "desc": "Hesap sözdizimi için satır numaraları ve renklerle düzenleyici."
+    },
+    "ifc": {
+      "title": "IFC4x3 ve IFCX",
+      "desc": "Çekirdek bir hesabı IFC4x3 STEP ve IFCX JSON-LD'ye dönüştürür."
+    },
+    "tauri": {
+      "title": "Vite ve Tauri 2",
+      "desc": "Tarayıcı sürümünü Vite derler; masaüstü uygulaması Rust ile yazılmış ince bir yerel kabuk kullanır."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster"
   }
 }

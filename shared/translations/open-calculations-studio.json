@@ -1,121 +1,241 @@
 {
   "header": {
-    "label": "OpenAEC Ecosystem",
     "title": "Open <span class=\"accent\">Calculations</span> Studio",
-    "desc": "Open-source desktop app for structural calculations — <strong>inspired by CalcPAD</strong>, with direct export to <strong>IFC4x3 STEP</strong> and <strong>IFCX JSON-LD</strong>. Previously Ifc-Calc, rebuilt under the OpenAEC Foundation.",
-    "badge": "In development"
+    "demoBtn": "Open in browser",
+    "featuresBtn": "See the features",
+    "proof1": "CalcPAD syntax",
+    "proof3": "Runs in the browser",
+    "proof4": "Free · no account",
+    "heroAlt": "Open Calculations Studio: check of an IPE 300 steel beam, with the text of the calculation on the left and the worked-out result with moments, shear forces and unity checks on the right",
+    "label": "Structural calculations",
+    "tagline": "Calculations your colleague can check in one read",
+    "desc": "Write your calculation as text with units and see the worked-out result at once: formula, substituted values and outcome on one line. Start from a sheet for concrete, steel, timber, masonry or foundations, right in the browser.",
+    "contactBtn": "Contact us"
   },
-  "screenshot": {
-    "caption": "CalcPAD-syntax editor with live preview · wind-load calculation · parametric SVG drawing"
+  "meta": {
+    "description": "Free app for structural calculations in the browser: write your calculation as text with units and see the worked-out result straight away. With sheets for the Eurocodes and NEN 9997-1.",
+    "title": "Open Calculations Studio — OpenAEC Foundation"
   },
-  "what": {
-    "title": "What is Open Calculations Studio?",
-    "desc": "Open Calculations Studio is a modern, open-source tool for structural calculations — <strong>inspired by CalcPAD</strong>, the widely-used tool among Dutch and European structural engineers. We rebuilt the entire calculation engine in TypeScript with support for CalcPAD syntax, and added live IFC and IFCX export so calculations integrate directly with BIM models.",
-    "list1": "<strong>CalcPAD-compatible</strong> Existing <code>.cpd</code> files work without changes",
-    "list2": "<strong>Unit-aware</strong> <code>mm</code>, <code>kN</code>, <code>N/mm²</code>, <code>mm⁴</code> via mathjs",
-    "list3": "<strong>Live IFCX + IFC4x3 STEP export</strong> A calculation becomes a BIM element straight away",
-    "list4": "<strong>KaTeX rendering</strong> Mathematical formulas with real fractions, sub/superscripts and Greek letters",
-    "list5": "<strong>SVG drawings</strong> Parametric diagrams directly inside the calculation",
-    "list6": "<strong>Load cases</strong> SLS / ULS / seismic in separate tabs",
-    "list7": "<strong>Usable as a library</strong> Embed in FEM applications or code checks"
-  },
-  "why": {
-    "title": "Why Open <span class=\"accent\">Calculations</span> Studio?",
-    "desc1": "CalcPAD has been used for years by Dutch structural engineers for hand calculations. But it's closed-source, runs only on Windows, and has no built-in BIM integration. Open Calculations Studio brings CalcPAD functionality to modern web tech: cross-platform, open source, and with direct IFC export.",
-    "desc2": "The 1094-line <code>2259-Intertek-units.cpd</code> regression file evaluates with <strong>0 errors</strong> and renders <strong>6 SVG drawings</strong>. Enough for real-world project calculations."
-  },
-  "example": {
-    "title": "Example <span class=\"accent\">document</span>",
-    "desc": "A CalcPAD document feels natural to an engineer — formulas, units, conditional logic and drawings side by side:"
-  },
-  "features": {
-    "title": "Features",
-    "units": {
-      "title": "Formulas with units",
-      "desc": "Work with <code>mm</code>, <code>kN</code>, <code>N/mm²</code>, <code>mm⁴</code> and all SI units. Mathjs handles unit-aware arithmetic and automatic simplification (<code>b*h</code> → <code>mm²</code>)."
+  "hl": {
+    "calc": {
+      "alt": "Punching shear calculation to EN 1992-1-1: on the left the text with units and conditions, on the right the worked-out formulas with substituted values",
+      "kicker": "Calculating",
+      "title": "Write the calculation the way you would on paper",
+      "desc": "Type a formula with units, such as d_eff = (d_y + d_z) / 2. The worked-out result appears at once as proper maths: formula, substituted values and outcome on one line, with the unit. Conditions pick the right formula, for example per column type."
     },
-    "katex": {
-      "title": "Math typesetting",
-      "desc": "KaTeX rendering with real fractions, superscripts, subscripts and Greek letters (σ, ε, ρ, Φ, ψ). Formulas show <code>name = formula = filled-in values = result</code> on one line."
+    "codes": {
+      "alt": "Library of sheets per Eurocode, with EN 1995-1-1 Timber expanded and the full check of a timber beam opened",
+      "kicker": "Code sheets",
+      "title": "Start from a code sheet instead of a blank page",
+      "desc": "Over fifty sheets per clause, from the load combinations in NEN-EN 1990 to bending, buckling and deflection in concrete, steel and timber, masonry and pile bearing capacity to NEN 9997-1. With full checks of a concrete beam, a steel beam and a timber beam."
     },
-    "editor": {
-      "title": "Live preview",
-      "desc": "Split-pane editor (CodeMirror 6) with syntax highlighting for <code>.cpd</code>. Debounced preview re-renders as you type."
+    "input": {
+      "alt": "Wind load to NEN-EN 1991-1-4: drop-down lists for wind zone and terrain category and an input field for the reference height",
+      "kicker": "Input",
+      "title": "Pick and fill in, the result follows",
+      "desc": "A sheet can ask for input: a drop-down list for wind zone, strength class or consequence class, or a field for a height or span. Change a choice and the whole worked-out result recalculates at once."
     },
-    "loadcases": {
-      "title": "Load cases",
-      "desc": "Tabs for SLS / ULS / earthquake etc., each with its own prompt values for input variables. One document, multiple scenarios."
-    },
-    "calcpad": {
-      "title": "CalcPAD-compatible",
-      "desc": "Fully compatible with existing <code>.cpd</code> files: <code>#if/#else if/#end if</code>, <code>#repeat</code>, <code>#for</code>, <code>#def</code> macros, <code>#include</code>, <code>$Plot</code>, matrices, lookups."
-    },
-    "ifc": {
-      "title": "IFC4x3 STEP export",
-      "desc": "Detects structural elements via conventional variable names (<code>b_fdn</code>, <code>l_fdn</code>, <code>D_paal</code>, <code>M_Ed</code>, <code>R_c_d</code>). Generates valid Project → Site → Building → Storey skeleton."
-    },
-    "ifcx": {
-      "title": "IFCX JSON-LD",
-      "desc": "Live IFCX (draft) export — the next generation of IFC with namespaces for calculations, standards and metadata. Calculation and BIM model in one format."
-    },
-    "svg": {
-      "title": "SVG drawings",
-      "desc": "Parametric SVG macros with value interpolation. <code>@img(file.svg)</code> embeds external drawings inline. <code>@svg ... @end</code> for hand-written SVG."
-    },
-    "viewer": {
-      "title": "IFC tab",
-      "desc": "Built-in STEP viewer and IFCX JSON viewer with syntax highlighting. Clickable entity types link directly to buildingSMART documentation."
-    },
-    "gef": {
-      "title": "GEF upload",
-      "desc": "<code>@gef name</code> upload — use sounding data directly in foundation calculations. Integrates with Open Geotechniek Studio."
-    },
-    "themes": {
-      "title": "5 themes",
-      "desc": "Light, Forge, OpenAEC, Blueprint and Contrast — all built on OpenAEC design tokens. Pick what works best for your environment."
-    },
-    "pdf": {
-      "title": "PDF export",
-      "desc": "Print-ready PDF export via Tauri shell with headless preview. Ready for project file or third-party review."
-    },
-    "library": {
-      "title": "Library mode",
-      "desc": "Use <code>@ifc-calc/core</code> as a TypeScript library: parse, evaluate, render, generate IFC/IFCX from FEM apps or code-checking."
-    },
-    "showAll": "Show all features",
-    "showLess": "Show less"
-  },
-  "compat": {
-    "title": "CalcPAD compatibility",
-    "desc": "Fully <em>subset compatible</em> with real-world CalcPAD files. Works out-of-the-box on your existing <code>.cpd</code> documents:"
-  },
-  "useCases": {
-    "title": "User profiles",
-    "structural": {
-      "title": "Structural engineers",
-      "desc": "Hand calculations for beams, columns, foundations — directly in a readable document. Open your existing CalcPAD files without migration."
-    },
-    "bim": {
-      "title": "BIM modelers",
-      "desc": "Link calculations directly to IFC elements. No manual transfer of values — the check lives in the model."
-    },
-    "education": {
-      "title": "Education &amp; training",
-      "desc": "Structural engineering students learn to calculate with real syntax they'll meet in practice. Open source — no license costs."
-    },
-    "fem": {
-      "title": "FEM developers",
-      "desc": "Embed <code>@ifc-calc/core</code> in your own FEM application for pre/post-processing or code-checking. TypeScript library, npm-installable."
+    "review": {
+      "alt": "Only the worked-out result on screen: bending and shear of a concrete beam to EN 1992-1-1 with the unity check",
+      "kicker": "Reviewing",
+      "title": "Every step visible, no black box",
+      "desc": "Hide the editor and read only the worked-out result, with the clause numbers of the code alongside. Whoever checks the calculation sees exactly which formula with which values leads to the unity check."
     }
   },
-  "tech": {
-    "title": "Technology",
-    "desc": "Monorepo with three packages: <code>@ifc-calc/core</code> (parser + evaluator + IFC generator as a TypeScript library), <code>@openaec/calculations-studio</code> (Tauri 2 desktop app with React 19 UI), and <code>@ifc-calc/web</code> (browser-only build). Cross-platform: Windows, macOS, Linux."
+  "notice": {
+    "text": "The browser version calculates fully, but saving and exporting do not work there yet. The desktop app with projects and a structural report is not public yet."
   },
-  "cta": {
-    "liveDemo": "Open the live demo",
-    "github": "GitHub repository",
-    "download": "Download — Windows, macOS &amp; Linux",
-    "contact": "Contact us"
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "whatsnew": "What's new",
+    "faq": "FAQ"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "calc": "Calculating with units",
+    "codes": "Code sheets",
+    "input": "Input and display",
+    "all": "All features"
+  },
+  "f": {
+    "units": {
+      "title": "Calculating with units",
+      "desc": "mm, kN, N/mm², mm⁴ and all SI units. b*h becomes mm² by itself; 'to' converts to the unit you want."
+    },
+    "chain": {
+      "title": "Formula, values and outcome",
+      "desc": "Every line shows name = formula = substituted values = result, with proper fractions, roots and Greek letters."
+    },
+    "live": {
+      "title": "Live result",
+      "desc": "Text on the left, result on the right. What you type is calculated straight away."
+    },
+    "conditions": {
+      "title": "Conditions and loops",
+      "desc": "#if, #else if and #else for 'passes' or 'fails', and #repeat and #for for series."
+    },
+    "macros": {
+      "title": "Your own functions and tables",
+      "desc": "Macros with #def, matrices and lookup tables for material values."
+    },
+    "calcpad": {
+      "title": "CalcPAD syntax",
+      "desc": "If you know CalcPAD, you will recognise the structure: headings, text lines, comments and commands work the same way."
+    },
+    "en1990": {
+      "title": "Basis and combinations",
+      "desc": "NEN-EN 1990: ultimate and serviceability limit states, EQU, accidental, seismic and design values."
+    },
+    "loads": {
+      "title": "Loads",
+      "desc": "Imposed loads, snow and wind to EN 1991 with the Dutch annex, including a taller building nearby."
+    },
+    "concrete": {
+      "title": "Concrete",
+      "desc": "Bending, shear with and without stirrups, punching, crack width and deflection to EN 1992-1-1."
+    },
+    "steel": {
+      "title": "Steel",
+      "desc": "Cross-section class, tension, compression, bending, shear, buckling, lateral-torsional buckling and bottom-flange bending to EN 1993-1-1."
+    },
+    "timber": {
+      "title": "Timber",
+      "desc": "Bending, shear, compression, torsion, buckling, tapered beam, notch, deflection and floor and roof sheathing to EN 1995-1-1."
+    },
+    "masonry": {
+      "title": "Masonry",
+      "desc": "Compressive strength, wall in compression, shear and slenderness to EN 1996-1-1."
+    },
+    "geo": {
+      "title": "Foundations",
+      "desc": "Strip footing, pile bearing capacity, settlement and sliding to NEN 9997-1."
+    },
+    "examples": {
+      "title": "Worked examples",
+      "desc": "Examples from Vandepitte on shear stresses, deflection, buckling, natural frequency and virtual work."
+    },
+    "select": {
+      "title": "Drop-down lists",
+      "desc": "Choose consequence class, strength class, service class or pile type from a list; the calculation follows."
+    },
+    "prompts": {
+      "title": "Input fields",
+      "desc": "Values that differ per project, such as a height or a load, go into a field in the worked-out result."
+    },
+    "gef": {
+      "title": "Read a cone test",
+      "desc": "A sheet can ask for a GEF file, so you can use the cone test data in your foundation calculation."
+    },
+    "views": {
+      "title": "Three views",
+      "desc": "Text and result side by side, the editor only or the result only."
+    },
+    "editor": {
+      "title": "Colour-coded editor",
+      "desc": "Line numbers and colours for headings, commands and drop-down lists, so you keep track of long calculations."
+    },
+    "free": {
+      "title": "No account",
+      "desc": "Open the page and start. Your calculation runs in your own browser."
+    }
+  },
+  "features": {
+    "label": "Features",
+    "heading": "Calculate, check and have it reviewed",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "whatsnew": {
+    "ctaDemo": "Try it in the browser",
+    "items": {
+      "timber": {
+        "title": "Torsion, tapered beam and notch",
+        "desc": "Three new timber sheets to EN 1995-1-1: §6.1.8, §6.4.2 and §6.5.2."
+      },
+      "sheathing": {
+        "title": "Floor and roof sheathing",
+        "desc": "Check the boards or panels of a timber floor or roof."
+      },
+      "flange": {
+        "title": "Bottom-flange bending",
+        "desc": "A steel beam with a wheel or hanging load on the bottom flange, as its own sheet."
+      },
+      "wind": {
+        "title": "Wind near a taller building",
+        "desc": "The wind load uses Annex A.4 when there is a taller building nearby."
+      }
+    },
+    "label": "New in September 2026",
+    "title": "More sheets for <span>timber and steel</span>",
+    "desc": "The library in the browser gained new checks for timber and steel, and the wind calculation now takes a taller building nearby into account."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "In the browser version you start from a sheet in the library or type your own. You can paste a calculation in CalcPAD syntax into the editor. A sheet can read a cone test as a GEF file. Opening files through the menu does not work in the browser yet."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "No. The browser version works straight away, without an account. There is also a desktop app for Windows, macOS and Linux, with projects, calculation modules and a structural report, but its installers are not public yet."
+    },
+    "price": {
+      "q": "What does Open Calculations Studio cost?",
+      "a": "Nothing. The browser version is free, with no account or subscription."
+    },
+    "save": {
+      "q": "In which format is my work saved?",
+      "a": "Not yet in the browser version: saving and exporting to PDF, IFC, HTML or JSON do not work there yet. Copy your text to keep it. The desktop app saves a project as an .ifccalculation file."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "In any modern browser, on Windows, macOS and Linux. The calculating happens in your own browser."
+    },
+    "practice": {
+      "q": "Does it fit Dutch practice?",
+      "a": "The sheets follow the Eurocodes with the Dutch national annexes and NEN 9997-1, with the clause numbers alongside. Always check the result yourself. In the desktop app, only the timber joist floor and the emergency roof overflow have been reviewed and released so far; the other modules are still marked for checking."
+    },
+    "ifc": {
+      "q": "Can I export to IFC?",
+      "a": "Not yet in the browser. The calculation engine can write a calculation as IFC4x3 and IFCX, so a check belongs to the right element in the BIM model; that is part of the desktop app."
+    },
+    "source": {
+      "q": "Is the source code public?",
+      "a": "Not yet. The repository on GitHub is not public yet; that is why this page has no downloads yet."
+    },
+    "calcpad": {
+      "q": "How does it relate to CalcPAD?",
+      "a": "Open Calculations Studio is inspired by CalcPAD and supports a large part of its syntax: headings, text, conditions, loops, macros and plots. It runs in the browser, so on macOS and Linux too."
+    },
+    "heading": "Frequently asked questions"
+  },
+  "tech": {
+    "core": {
+      "title": "Own calculation engine",
+      "desc": "Parser, evaluator and renderer in TypeScript, also usable as a library in other software."
+    },
+    "mathjs": {
+      "desc": "Calculating with units and matrices, with automatic simplification of the unit."
+    },
+    "katex": {
+      "desc": "Formulas as clean maths, with fractions, roots, subscripts and superscripts."
+    },
+    "codemirror": {
+      "desc": "The editor with line numbers and colours for the calculation syntax."
+    },
+    "ifc": {
+      "title": "IFC4x3 and IFCX",
+      "desc": "The engine turns a calculation into IFC4x3 STEP and IFCX JSON-LD."
+    },
+    "tauri": {
+      "title": "Vite and Tauri 2",
+      "desc": "Vite builds the browser version; the desktop app uses a thin native shell in Rust."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three"
   }
 }
