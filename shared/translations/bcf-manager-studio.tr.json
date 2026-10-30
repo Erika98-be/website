@@ -1,67 +1,260 @@
 {
   "header": {
-    "label": "OpenAEC ekosistemi",
-    "title": "BCF <span class=\"accent\">Manager</span> Studio",
-    "desc": "BIM projeleri için açık kaynak BCF 2.1 sorun yönetim platformu. Sorunları yönetin, ekiplerle iletişim kurun ve IFC modellerine bağlayın.",
-    "badge": "Geliştirme aşamasında"
+    "title": "<span class=\"accent\">BCF</span> Manager Studio",
+    "featuresBtn": "Özellikleri gör",
+    "faqBtn": "Sık sorulan sorular",
+    "sourceBtn": "Kaynak kodu",
+    "proof3": "Kendi sunucunuz · Docker",
+    "proof4": "Tek oturum açma",
+    "proof5": "Konsept · ücretsiz",
+    "heroAlt": "Hayali bir konut binasının panosu: açık, devam eden ve kapalı sorun sayıları, önceliğe göre çubuk grafik ve modelden ekran görüntüleri içeren sorun kartları",
+    "label": "BIM iş birliği",
+    "tagline": "Bir projenin tüm BIM sorunları tek yerde, kendi sunucunuzda",
+    "desc": "BCF Manager Studio, BIM projelerinde sorun yönetimi için bir konsepttir. Model kontrollerinden gelen bulguları proje başına toplar, ekibinizle tartışır ve BCF dosyası olarak başka herhangi bir BIM yazılımına aktarırsınız."
   },
-  "bcf": {
-    "title": "BCF nedir?",
-    "desc": "BIM Collaboration Format (BCF), BIM yazılımları arasında sorun ve yorumların değişimi için açık bir standarttır (buildingSMART). İlgili tarafların hangi yazılımı kullandığından bağımsız olarak bir bina modelindeki sorunları raporlamak, tartışmak ve çözmek için kullanılır.",
-    "list1": "<strong>Açık standart</strong> Dosya (XML) ve REST API olarak BCF 2.1",
-    "list2": "<strong>Yazılımdan bağımsız</strong> BCF'yi destekleyen herhangi bir BIM yazılımıyla çalışır",
-    "list3": "<strong>Görüş noktaları</strong> Her sorun için 3D modelin görsel anlık görüntüleri",
-    "list4": "<strong>Meta veri</strong> Öncelik, durum, atama, son tarihler, etiketler"
+  "meta": {
+    "description": "BIM projelerinde açık kaynaklı sorun yönetimi için bir konsept: proje başına BCF 2.1 sorunları, ekran görüntüleri, yorumlar, bir pano, .bcfzip içe ve dışa aktarma ve BCF API 2.1. Docker ile kendi sunucunuzda.",
+    "title": "BCF Manager Studio — OpenAEC Foundation"
   },
-  "why": {
-    "title": "Neden BCF <span class=\"accent\">Manager</span> Studio?",
-    "desc1": "Mevcut BCF araçları genellikle pahalı, tescilli BIM platformlarının parçasıdır. BCF Manager Studio, herkesin kullanabileceği bağımsız, açık kaynak bir alternatif sunar — ücretsiz, lisans ücreti yok, tedarikçi bağımlılığı yok.",
-    "desc2": "Platform yerel olarak veya kendi sunucunuzda çalışır. Verileriniz sizindir. Onu kendi IFC görüntüleyicinize bağlayın, sorunları ekibinizle paylaşın ve BCF uyumlu herhangi bir pakete dışa aktarın."
-  },
-  "features": {
-    "title": "Özellikler",
+  "hl": {
     "issues": {
-      "title": "BCF 2.1 sorun yönetimi",
-      "desc": "BCF 2.1 standardına uygun sorunları oluşturun, düzenleyin ve yönetin. Konular, yorumlar, görüş noktaları ve anlık görüntüler için tam destek."
+      "alt": "Her biri modelden bir görsel, konum ve kısa açıklama içeren üç hayali projenin genel görünümü",
+      "kicker": "Projeler",
+      "title": "Her projenin kendi sorun listesi",
+      "desc": "Her proje için tüm bulgulara ad, konum, açıklama ve proje görseliyle tek bir yer açın. Genel görünümde hangi bina olduğunu hemen görürsünüz; kimse artık dağınık e-postalar ve tablolar arasında arama yapmaz."
     },
-    "viewpoints": {
-      "title": "3D anlık görüntülerle görüş noktaları",
-      "desc": "Kamera konumu, seçimi ve görünürlük ile sorunlara görsel görüş noktaları bağlayın. IFC görüntüleyicinizde doğrudan görünür."
+    "list": {
+      "alt": "Hayali bir konut binasının yedi sorunluk listesi; her birinde durum, öncelik, tür ve tarih",
+      "kicker": "Genel bakış",
+      "title": "Hâlâ açık olanı tek bir listede görün",
+      "desc": "Her sorun; durumu, önceliği ve çakışma, sorun ya da not gibi türüyle listede yer alır. Pano açık, devam eden ve kapalı sorunları sayar ve işin nerede olduğunu önceliğe göre gösterir."
     },
-    "collaboration": {
-      "title": "Ekip işbirliği",
-      "desc": "Sorunları ekip üyelerine atayın, son tarihler belirleyin, yorum ekleyin ve durumu izleyin. Proje başına üyeler, tek oturum açma (OIDC) ile giriş."
+    "model": {
+      "alt": "Bir çatı elemanıyla ilgili sorun; üstte modelden ekran görüntüsü, ilgili eleman maviyle vurgulanmış",
+      "kicker": "Modelden görünüm",
+      "title": "Sorunun nerede olduğunu hemen görün",
+      "desc": "Her sorunda modelden alınan ekran görüntüsü ve kamera konumu bulunur. Bakış noktası elemanlara IFC GlobalId ile başvurur; böylece bir BCF görüntüleyici doğrudan doğru parçaya gider."
     },
-    "xml": {
-      "title": "BCF XML içe/dışa aktarma",
-      "desc": "Solibri, Navisworks, BIMcollab ve diğer BCF uyumlu yazılımlarla değişim için BCF dosyalarını (XML formatı) içe ve dışa aktarın."
-    },
-    "api": {
-      "title": "REST API (BCF API 2.1)",
-      "desc": "BCF API 2.1’in 29 uç noktasının tamamı, ayrıca BIM Validator gibi diğer araçlarla bağlantı için proje başına API anahtarları."
-    },
-    "projects": {
-      "title": "Proje yönetimi",
-      "desc": "Sorunları proje başına etiketler, öncelikler, aşamalar ve filtrelerle düzenleyin. İstatistiklerle net bir pano."
-    },
-    "ifc": {
-      "title": "IFC entegrasyonu",
-      "desc": "Sorunları GlobalId ile IFC öğelerine bağlayın; böylece bir BCF görüntüleyici modelinizde doğrudan doğru öğeye gider."
-    },
-    "selfhosted": {
-      "title": "Kendi sunucunuzda barındırılan",
-      "desc": "Platformu kendi sunucunuzda veya yerel olarak çalıştırın. Verileriniz üzerinde tam kontrol, bulut bağımlılığı yok."
-    },
-    "cloud": {
-      "title": "Bulut depolama",
-      "desc": "Sorunları proje başına kendi Nextcloud’unuzda, IFC modellerinin yanında saklayın. Tek kurulumda birden fazla kuruluş."
+    "team": {
+      "alt": "Açıklama, bir dizi yorum ve sağda ayrıntılar içeren sorun: durum, öncelik, aşama, atanan kişi, son tarih ve etiketler",
+      "kicker": "İş birliği",
+      "title": "Sorunu ait olduğu yerde tartışın",
+      "desc": "Yorumlar tarih ve saatle birlikte sorunun kendisinde durur; böylece tüm tartışma bir arada kalır. Yanında kime atandığını, son tarihi, aşamayı ve etiketleri görürsünüz."
     }
   },
-  "tech": {
-    "title": "Teknoloji",
-    "desc": "Hız ve güvenilirlik için PostgreSQL ile bir Rust arka ucu (Axum), OpenAEC kurumsal stilinde bir React ve TypeScript ön ucu ve her şeyi tek komutla kendi sunucunuzda başlatmak için Docker Compose."
+  "notice": {
+    "text": "Konsept: henüz kurulacak bir sürüm yok ve çevrimiçi deneme sürümü 8 Ekim 2026'da kapatıldı. Ekran görüntüleri, hayali projelerle kurulmuş yerel bir test ortamından alınmıştır."
   },
-  "cta": {
-    "github": "GitHub"
+  "subnav": {
+    "label": "Bu sayfada",
+    "features": "Özellikler",
+    "whatsnew": "Yenilikler",
+    "faq": "SSS",
+    "releases": "Sürümler"
+  },
+  "tabs": {
+    "highlights": "Öne çıkanlar",
+    "issues": "Projeler ve sorunlar",
+    "model": "Modelden görünüm",
+    "team": "İş birliği",
+    "exchange": "BCF ve API",
+    "server": "Kendi sunucunuz",
+    "all": "Tüm özellikler"
+  },
+  "f": {
+    "projects": {
+      "title": "Proje oluşturun",
+      "desc": "Ad, konum ve açıklamayla, kendi proje görselinizle."
+    },
+    "newissue": {
+      "title": "Yeni sorun",
+      "desc": "Başlık, açıklama, tür, durum ve öncelik tek bir formda."
+    },
+    "status": {
+      "title": "Durum ve öncelik",
+      "desc": "Açık, etkin, kapalı veya yeniden açılmış; BCF'nin tanımladığı gibi düşükten kritiğe."
+    },
+    "dashboard": {
+      "title": "Proje başına pano",
+      "desc": "Açık, devam eden ve kapalı sorun sayısı ile önceliğe göre çubuk grafik."
+    },
+    "filters": {
+      "title": "Filtreleme",
+      "desc": "Panoda yalnızca belirli bir durum veya önceliğe sahip sorunları gösterin."
+    },
+    "snapshots": {
+      "title": "Her sorunda ekran görüntüsü",
+      "desc": "Modelden alınan görüntü sorunda büyük, pano kartlarında küçük gösterilir."
+    },
+    "camera": {
+      "title": "Kamera konumu",
+      "desc": "Perspektif veya ortografik, bakış noktasında kayıtlı kamera konumuyla."
+    },
+    "globalid": {
+      "title": "IFC GlobalId ile elemanlar",
+      "desc": "Eleman başına seçim, görünürlük ve renklendirme; böylece görüntüleyici doğru parçayı gösterir."
+    },
+    "comments": {
+      "title": "Yorumlar",
+      "desc": "Soruna yorum yazın; her yorum tarih ve saat alır."
+    },
+    "details": {
+      "title": "Atama ve son tarih",
+      "desc": "Sorunun kime atandığı, son tarih, aşama ve etiketler; BCF dosyasından geldiği gibi."
+    },
+    "members": {
+      "title": "Proje başına üyeler",
+      "desc": "Meslektaşlarınızı bir projeye sahip, yönetici, üye veya izleyici olarak ekleyin."
+    },
+    "sso": {
+      "title": "Tek oturum açma",
+      "desc": "Ekibiniz kuruluşun mevcut hesabıyla oturum açar."
+    },
+    "import": {
+      "title": "BCF dosyalarını içe aktarın",
+      "desc": "Tüm sorunlar, yorumlar ve bakış noktalarıyla bir .bcfzip okuyun; örneğin bir model kontrolünden."
+    },
+    "export": {
+      "title": "BCF dosyalarını dışa aktarın",
+      "desc": "Bir projenin tüm sorunlarını herhangi bir BCF yazılımı için .bcfzip olarak indirin."
+    },
+    "api": {
+      "title": "BCF API 2.1",
+      "desc": "Projeler, sorunlar, yorumlar ve bakış noktaları için açık standart API; başka yazılımlarla bağlantı için."
+    },
+    "apikeys": {
+      "title": "Proje başına API anahtarları",
+      "desc": "Bir betiğe veya kontrol aracına tek bir projeye erişim verin; isterseniz son kullanma tarihiyle."
+    },
+    "nextcloud": {
+      "title": "Nextcloud'unuza kaydedin",
+      "desc": "Sorunları IFC modellerinin yanında, proje klasöründe .bcfzip olarak saklayın ve oradan yeniden açın."
+    },
+    "manifest": {
+      "title": "Güncel proje manifesti",
+      "desc": "Kaydederken sorun kümesi proje manifestine eklenir; böylece diğer OpenAEC uygulamaları onu bulur."
+    },
+    "selfhosted": {
+      "title": "Kendi sunucunuzda",
+      "desc": "Veritabanıyla tek bir Docker kurulumu; proje verileriniz kendi ortamınızdan çıkmaz."
+    },
+    "tenants": {
+      "title": "Birden çok kuruluş",
+      "desc": "Tek bir kurulum, her biri kendi Nextcloud'una sahip birden çok kuruluşa hizmet verebilir."
+    },
+    "ribbon": {
+      "title": "Tanıdık şerit",
+      "desc": "Diğer OpenAEC uygulamalarıyla aynı şerit; içe aktarma (Ctrl+I) ve dışa aktarma (Ctrl+E) kısayollarıyla."
+    }
+  },
+  "features": {
+    "label": "Özellikler",
+    "heading": "Bulgudan çözüme, tüm ekiple",
+    "sub": "Öne çıkanlarla başlayın veya bir konu seçin.",
+    "tabsLabel": "Konuya göre özellikler"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Tüm sürüm notları",
+    "items": {
+      "api": {
+        "title": "Tam BCF API 2.1",
+        "desc": "Sürümler, proje uzantıları ve bakış noktalarının seçimi, görünürlüğü ve renklendirmesi de."
+      },
+      "cloud": {
+        "title": "Nextcloud'a kaydetme",
+        "desc": "Dosya menüsünden sorunları proje klasörüne kaydeder veya oradan açarsınız."
+      },
+      "manifest": {
+        "title": "Proje manifesti",
+        "desc": "Kaydederken sorun kümesi proje manifestine yazılır."
+      },
+      "tenants": {
+        "title": "Birden çok kuruluş",
+        "desc": "Her biri kendi Nextcloud'una sahip birden çok kuruluş için tek kurulum."
+      },
+      "login": {
+        "title": "Ortak oturum açma sunucusu",
+        "desc": "Diğer OpenAEC hizmetleriyle aynı oturum açma sunucusu üzerinden giriş."
+      }
+    },
+    "label": "Nisan 2026'da yeni",
+    "title": "Tam BCF API, <span>bulutunuza kaydetme</span>",
+    "desc": "Son yeni özellikler Nisan 2026 tarihli. Geliştirme o zamandan beri duruyor; henüz bir sürüm yok."
+  },
+  "faq": {
+    "files": {
+      "q": "Hangi dosyaları açabilirim?",
+      "a": "Solibri, Navisworks, BIMcollab, Revit ve OpenAEC uygulamalarının oluşturduğu 2.1 sürümündeki BCF dosyaları (.bcfzip). BCF 3.0 henüz desteklenmiyor. BCF Manager Studio IFC modelinin kendisini açmaz; bunun için bir IFC görüntüleyici kullanın."
+    },
+    "install": {
+      "q": "Bir şey kurmam gerekiyor mu?",
+      "a": "Evet, bir sunucuya. BCF Manager Studio, PostgreSQL ile birlikte Docker kullanarak kendi sunucunuza kurduğunuz bir sunucu uygulamasıdır. Ekibiniz daha sonra doğrudan tarayıcıda çalışır. Henüz hazır bir sürüm yok ve çevrimiçi deneme sürümü 8 Ekim 2026'da kapatıldı."
+    },
+    "price": {
+      "q": "Ücreti nedir?",
+      "a": "Hiçbir şey. Kaynak kodu GitHub'da herkese açıktır ve yalnızca kendi sunucunuz için ödeme yaparsınız. Kaynak kodunda henüz bir lisans dosyası yok; ilk sürümle birlikte gelecek."
+    },
+    "format": {
+      "q": "Çalışmam hangi dosya biçiminde kaydedilir?",
+      "a": "Sorunlar sunucunuzdaki bir PostgreSQL veritabanında, ekran görüntüleri ise yanında görsel olarak saklanır. Bunları istediğiniz an buildingSMART'ın açık standardı olan .bcfzip olarak dışa aktarabilir veya bu biçimde Nextcloud'unuza kaydedebilirsiniz."
+    },
+    "systems": {
+      "q": "Hangi sistemlerde çalışır?",
+      "a": "Sunucu Docker içinde, Linux üzerinde çalışır. Ekibiniz Windows, macOS veya Linux üzerinde modern bir tarayıcıda çalışır."
+    },
+    "practice": {
+      "q": "İnşaat uygulamasına uygun mu?",
+      "a": "Evet. BCF, buildingSMART'ın BIM koordinasyonu için açık standardıdır: bir model kontrolü sorunlar üretir; bunları tartışır, atar ve kapatırsınız. Durumlar, öncelikler, aşamalar ve etiketler BCF 2.1'e uyar; böylece diğer taraflarla paylaştığınızda bozulmazlar."
+    },
+    "ai": {
+      "q": "Bir yapay zekâ asistanı bununla ne yapabilir?",
+      "a": "Henüz bir MCP sunucusu yok. Ancak API anahtarı olan bir asistan veya betik, BCF API 2.1 üzerinden bir projenin sorunlarını, yorumlarını ve bakış noktalarını okuyup oluşturabilir."
+    },
+    "ready": {
+      "q": "Şimdiden kullanabilir miyim?",
+      "a": "Hemen değil. BCF Manager Studio bir konsepttir: sürüm yok, artık herkese açık bir deneme sürümü de yok ve geliştirme Nisan 2026'dan beri duruyor. İsterseniz GitHub'daki kaynak koddan kendiniz derleyip kendi sunucunuza kurabilirsiniz."
+    },
+    "edit": {
+      "q": "Bir sorunu ekranda düzenleyebilir miyim?",
+      "a": "Kısmen. Ekranda sorun oluşturur ve yorum yazarsınız. Mevcut bir sorunun durumu, ataması ve son tarihi henüz ekranda değiştirilemez; bunu BCF içe aktarma veya API ile yaparsınız. Sorun listesinde arama da henüz gelmedi."
+    },
+    "revit": {
+      "q": "Revit ile çalışır mı?",
+      "a": "BCF dosyaları üzerinden evet: Revit'ten gelen bir .bcfzip'i doğrudan okursunuz. Ayrıca .bcfzip dosyalarını Revit'te açan, Revit 2025 için ayrı bir eklenti test sürümü de var. Bu eklenti ile BCF Manager Studio arasında doğrudan bağlantı henüz çalışmıyor."
+    },
+    "heading": "Sık sorulan sorular"
+  },
+  "tech": {
+    "rust": {
+      "title": "Rust · Axum",
+      "desc": "Axum ve Tokio ile Rust'ta yazılmış hızlı, hafif sunucu."
+    },
+    "react": {
+      "title": "React · TypeScript",
+      "desc": "Vite ve Tailwind ile OpenAEC kurumsal stilinde web arayüzü."
+    },
+    "bcf": {
+      "title": "BCF 2.1 · BCF API 2.1",
+      "desc": ".bcfzip okuyup yazan kendi Rust kütüphanesi ve buildingSMART'ın standart API'si."
+    },
+    "postgres": {
+      "title": "PostgreSQL 16 · Docker",
+      "desc": "Geçişli veritabanı; her şey Caddy arkasında Docker Compose ile başlar."
+    },
+    "oidc": {
+      "title": "OIDC · JWT · API anahtarları",
+      "desc": "Authentik üzerinden tek oturum açma, JWT oturumları ve proje başına anahtarlar."
+    },
+    "nextcloud": {
+      "title": "Nextcloud · WebDAV",
+      "desc": "Ortak openaec-cloud kütüphanesiyle kendi Nextcloud'unuzda depolama, .wefc manifestleriyle."
+    },
+    "heading": "Teknoloji",
+    "sub": "Nasıl yapıldığını merak edenler için."
+  },
+  "releases": {
+    "showAll": "Tüm sürümleri göster",
+    "showLess": "Yalnızca son üçünü göster",
+    "github": "GitHub'daki tüm sürümler"
   }
 }

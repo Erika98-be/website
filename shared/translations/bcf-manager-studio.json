@@ -1,67 +1,260 @@
 {
   "header": {
-    "label": "OpenAEC Ecosystem",
-    "title": "BCF <span class=\"accent\">Manager</span> Studio",
-    "desc": "Open-source BCF 2.1 issue management platform for BIM projects. Manage issues, communicate with teams and link to IFC models.",
-    "badge": "In development"
+    "title": "<span class=\"accent\">BCF</span> Manager Studio",
+    "featuresBtn": "See the features",
+    "faqBtn": "Frequently asked questions",
+    "sourceBtn": "Source code",
+    "proof3": "Your own server · Docker",
+    "proof4": "Single sign-on",
+    "proof5": "Concept · free",
+    "heroAlt": "Dashboard of a fictitious residential building with the number of open, ongoing and closed issues, a bar chart per priority and issue cards with snapshots from the model",
+    "label": "BIM collaboration",
+    "tagline": "All BIM issues of a project in one place, on your own server",
+    "desc": "BCF Manager Studio is a concept for issue management in BIM projects. You collect the findings from model checks per project, discuss them with your team and pass them on as a BCF file to any other BIM software."
   },
-  "bcf": {
-    "title": "What is BCF?",
-    "desc": "BIM Collaboration Format (BCF) is an open standard (buildingSMART) for exchanging issues and comments between BIM software. It enables reporting, discussing and resolving problems in a building model — regardless of which software the parties involved are using.",
-    "list1": "<strong>Open standard</strong> BCF 2.1 as a file (XML) and as a REST API",
-    "list2": "<strong>Software-independent</strong> Works with any BIM package that supports BCF",
-    "list3": "<strong>Viewpoints</strong> Visual snapshots of the 3D model for each issue",
-    "list4": "<strong>Metadata</strong> Priority, status, assignment, deadlines, labels"
+  "meta": {
+    "description": "Concept for open-source issue management in BIM projects: BCF 2.1 issues per project, with snapshots, comments, a dashboard, .bcfzip import and export and the BCF API 2.1. On your own server with Docker.",
+    "title": "BCF Manager Studio — OpenAEC Foundation"
   },
-  "why": {
-    "title": "Why BCF <span class=\"accent\">Manager</span> Studio?",
-    "desc1": "Existing BCF tools are often part of expensive, proprietary BIM platforms. BCF Manager Studio offers a standalone, open-source alternative that anyone can use — free, without license fees, without vendor lock-in.",
-    "desc2": "The platform runs locally or on your own server. Your data stays yours. Connect it to your own IFC viewer, share issues with your team, and export to any BCF-compatible package."
-  },
-  "features": {
-    "title": "Features",
+  "hl": {
     "issues": {
-      "title": "BCF 2.1 issue management",
-      "desc": "Create, edit and manage issues conforming to the BCF 2.1 standard. Full support for topics, comments, viewpoints and snapshots."
+      "alt": "Project overview with three fictitious projects, each with an image from the model, location and short description",
+      "kicker": "Projects",
+      "title": "Every project its own issue list",
+      "desc": "Create one place per project for all findings, with a name, location, description and a project image. The overview shows at a glance which building it is, and nobody has to search through loose e-mails and spreadsheets any more."
     },
-    "viewpoints": {
-      "title": "Viewpoints with 3D snapshots",
-      "desc": "Link visual viewpoints to issues with camera position, selection and visibility. Directly visible in your IFC viewer."
+    "list": {
+      "alt": "Issue list of a fictitious residential building with seven issues, each with status, priority, type and date",
+      "kicker": "Overview",
+      "title": "See in one list what is still open",
+      "desc": "Every issue is listed with its status, priority and type, such as clash, issue or remark. The dashboard counts the open, ongoing and closed issues and shows per priority where the work is."
     },
-    "collaboration": {
-      "title": "Team collaboration",
-      "desc": "Assign issues to team members, set deadlines, add comments and track status. Members per project, sign-in through single sign-on (OIDC)."
+    "model": {
+      "alt": "Issue about a roof element with the snapshot from the model at the top, the element concerned highlighted in blue",
+      "kicker": "View from the model",
+      "title": "See right away where the problem is",
+      "desc": "Every issue shows the snapshot from the model, with the camera position. The viewpoint refers to the elements by their IFC GlobalId, so a BCF viewer jumps straight to the right part."
     },
-    "xml": {
-      "title": "BCF XML import/export",
-      "desc": "Import and export BCF files (XML format) for exchange with Solibri, Navisworks, BIMcollab and other BCF-compatible software."
-    },
-    "api": {
-      "title": "REST API (BCF API 2.1)",
-      "desc": "All 29 endpoints of the BCF API 2.1, plus API keys per project for connections with other tools, such as the BIM Validator."
-    },
-    "projects": {
-      "title": "Project management",
-      "desc": "Organize issues per project with labels, priorities, stages and filters. Clear dashboard with statistics."
-    },
-    "ifc": {
-      "title": "IFC integration",
-      "desc": "Link issues to IFC elements through their GlobalId, so a BCF viewer jumps straight to the right element in your model."
-    },
-    "selfhosted": {
-      "title": "Self-hosted",
-      "desc": "Run the platform on your own server or locally. Full control over your data, no cloud dependency."
-    },
-    "cloud": {
-      "title": "Cloud storage",
-      "desc": "Keep issues per project in your own Nextcloud, next to the IFC models. Several organizations on one installation."
+    "team": {
+      "alt": "Issue with the description, a series of comments and on the right the details: status, priority, stage, assigned to, deadline and labels",
+      "kicker": "Collaboration",
+      "title": "Discuss the issue where it belongs",
+      "desc": "Comments sit on the issue itself, with date and time, so the whole discussion stays together. Next to them you see who it is assigned to, the deadline, the stage and the labels."
     }
   },
-  "tech": {
-    "title": "Technology",
-    "desc": "A Rust backend (Axum) with PostgreSQL for speed and reliability, a React and TypeScript frontend in the OpenAEC house style, and Docker Compose to start everything on your own server with one command."
+  "notice": {
+    "text": "Concept: there is no version to install yet, and the online trial version was shut down on 8 October 2026. The screenshots come from a local test setup with fictitious projects."
   },
-  "cta": {
-    "github": "GitHub"
+  "subnav": {
+    "label": "On this page",
+    "features": "Features",
+    "whatsnew": "What's new",
+    "faq": "FAQ",
+    "releases": "Releases"
+  },
+  "tabs": {
+    "highlights": "Highlights",
+    "issues": "Projects and issues",
+    "model": "View from the model",
+    "team": "Collaboration",
+    "exchange": "BCF and API",
+    "server": "Your own server",
+    "all": "All features"
+  },
+  "f": {
+    "projects": {
+      "title": "Create projects",
+      "desc": "With a name, location and description, and a project image of your own."
+    },
+    "newissue": {
+      "title": "New issue",
+      "desc": "Title, description, type, status and priority in one form."
+    },
+    "status": {
+      "title": "Status and priority",
+      "desc": "Open, active, closed or reopened; from low to critical, as BCF defines them."
+    },
+    "dashboard": {
+      "title": "Dashboard per project",
+      "desc": "The number of open, ongoing and closed issues, and a bar chart per priority."
+    },
+    "filters": {
+      "title": "Filtering",
+      "desc": "Show only the issues with a given status or priority on the dashboard."
+    },
+    "snapshots": {
+      "title": "Snapshots on every issue",
+      "desc": "The image from the model is shown large on the issue and small on the dashboard cards."
+    },
+    "camera": {
+      "title": "Camera position",
+      "desc": "Perspective or orthographic, with the camera position as stored in the viewpoint."
+    },
+    "globalid": {
+      "title": "Elements by IFC GlobalId",
+      "desc": "Selection, visibility and colouring per element, so a viewer shows the right part."
+    },
+    "comments": {
+      "title": "Comments",
+      "desc": "Write a comment on the issue; every comment gets a date and time."
+    },
+    "details": {
+      "title": "Assignment and deadline",
+      "desc": "Who the issue is assigned to, the deadline, the stage and the labels, as they come from the BCF file."
+    },
+    "members": {
+      "title": "Members per project",
+      "desc": "Add colleagues to a project as owner, administrator, member or viewer."
+    },
+    "sso": {
+      "title": "Single sign-on",
+      "desc": "Your team signs in with the organisation's existing account."
+    },
+    "import": {
+      "title": "Import BCF files",
+      "desc": "Read in a .bcfzip with all issues, comments and viewpoints, for example from a model check."
+    },
+    "export": {
+      "title": "Export BCF files",
+      "desc": "Download all issues of a project as a .bcfzip for any BCF software."
+    },
+    "api": {
+      "title": "BCF API 2.1",
+      "desc": "The open standard API for projects, issues, comments and viewpoints, for links with other software."
+    },
+    "apikeys": {
+      "title": "API keys per project",
+      "desc": "Give a script or checking tool access to one project, optionally with an expiry date."
+    },
+    "nextcloud": {
+      "title": "Save to your Nextcloud",
+      "desc": "Keep the issues as a .bcfzip in the project folder, next to the IFC models, and open them from there again."
+    },
+    "manifest": {
+      "title": "Project manifest kept up to date",
+      "desc": "On saving, the issue set is added to the project manifest, so other OpenAEC apps can find it."
+    },
+    "selfhosted": {
+      "title": "On your own server",
+      "desc": "One Docker installation with a database; your project data never leaves your own environment."
+    },
+    "tenants": {
+      "title": "Several organisations",
+      "desc": "One installation can serve several organisations, each with its own Nextcloud."
+    },
+    "ribbon": {
+      "title": "Familiar ribbon",
+      "desc": "The same ribbon as the other OpenAEC apps, with shortcuts for import (Ctrl+I) and export (Ctrl+E)."
+    }
+  },
+  "features": {
+    "label": "Features",
+    "heading": "From finding to fix, with the whole team",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic"
+  },
+  "whatsnew": {
+    "ctaChangelog": "All release notes",
+    "items": {
+      "api": {
+        "title": "Full BCF API 2.1",
+        "desc": "Versions, project extensions and the selection, visibility and colouring of viewpoints too."
+      },
+      "cloud": {
+        "title": "Save to Nextcloud",
+        "desc": "From the File menu you save the issues to the project folder, or open them from there."
+      },
+      "manifest": {
+        "title": "Project manifest",
+        "desc": "On saving, the issue set is put in the project manifest."
+      },
+      "tenants": {
+        "title": "Several organisations",
+        "desc": "One installation for several organisations, each with its own Nextcloud."
+      },
+      "login": {
+        "title": "Shared sign-in server",
+        "desc": "Sign in through the same sign-in server as the other OpenAEC services."
+      }
+    },
+    "label": "New in April 2026",
+    "title": "The full BCF API, <span>saving to your cloud</span>",
+    "desc": "The latest new features date from April 2026. Development has been paused since then; there is no release yet."
+  },
+  "faq": {
+    "files": {
+      "q": "Which files can I open?",
+      "a": "BCF files (.bcfzip) in version 2.1, as written by Solibri, Navisworks, BIMcollab, Revit and the OpenAEC apps. BCF 3.0 is not supported yet. BCF Manager Studio does not open the IFC model itself; use an IFC viewer for that."
+    },
+    "install": {
+      "q": "Do I need to install anything?",
+      "a": "Yes, on a server. BCF Manager Studio is a server application that you put on your own server with Docker, together with PostgreSQL. Your team then simply works in the browser. There is no ready-made release yet, and the online trial version was shut down on 8 October 2026."
+    },
+    "price": {
+      "q": "What does it cost?",
+      "a": "Nothing. The source code is public on GitHub and you only pay for your own server. There is no licence file with the source code yet; it will come with the first release."
+    },
+    "format": {
+      "q": "In which file format is my work saved?",
+      "a": "The issues are stored in a PostgreSQL database on your server, with the snapshots as images alongside. You can export them at any time as a .bcfzip, the open buildingSMART standard, or save them that way to your Nextcloud."
+    },
+    "systems": {
+      "q": "Which systems does it run on?",
+      "a": "The server runs in Docker, on Linux. Your team works in a modern browser on Windows, macOS or Linux."
+    },
+    "practice": {
+      "q": "Does it fit construction practice?",
+      "a": "Yes. BCF is the open buildingSMART standard for BIM coordination: a model check produces issues, which you discuss, assign and close. Statuses, priorities, stages and labels follow BCF 2.1, so they stay intact when you exchange them with other parties."
+    },
+    "ai": {
+      "q": "What can an AI assistant do with it?",
+      "a": "There is no MCP server yet. An assistant or script with an API key can, however, read and create issues, comments and viewpoints of a project through the BCF API 2.1."
+    },
+    "ready": {
+      "q": "Can I use it yet?",
+      "a": "Not out of the box. BCF Manager Studio is a concept: there is no release and no public trial version any more, and development has been paused since April 2026. If you want, you can build it yourself from the source code on GitHub and put it on your own server."
+    },
+    "edit": {
+      "q": "Can I edit an issue on screen?",
+      "a": "Partly. On screen you create issues and write comments. You cannot yet change the status, assignment and deadline of an existing issue on screen, but you can through a BCF import or the API. Searching the issue list is still to come as well."
+    },
+    "revit": {
+      "q": "Does it work with Revit?",
+      "a": "Through BCF files, yes: you simply read in a .bcfzip from Revit. There is also a separate test version of a Revit 2025 plug-in that opens .bcfzip files in Revit. A direct connection between that plug-in and BCF Manager Studio does not work yet."
+    },
+    "heading": "Frequently asked questions"
+  },
+  "tech": {
+    "rust": {
+      "title": "Rust · Axum",
+      "desc": "Fast, lean server in Rust with Axum and Tokio."
+    },
+    "react": {
+      "title": "React · TypeScript",
+      "desc": "Web interface with Vite and Tailwind, in the OpenAEC house style."
+    },
+    "bcf": {
+      "title": "BCF 2.1 · BCF API 2.1",
+      "desc": "Own Rust library that reads and writes .bcfzip, plus the standard buildingSMART API."
+    },
+    "postgres": {
+      "title": "PostgreSQL 16 · Docker",
+      "desc": "Database with migrations; everything starts with Docker Compose behind Caddy."
+    },
+    "oidc": {
+      "title": "OIDC · JWT · API keys",
+      "desc": "Single sign-on through Authentik, JWT sessions and keys per project."
+    },
+    "nextcloud": {
+      "title": "Nextcloud · WebDAV",
+      "desc": "Storage in your own Nextcloud through the shared openaec-cloud library, with .wefc manifests."
+    },
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built."
+  },
+  "releases": {
+    "showAll": "Show all releases",
+    "showLess": "Show only the latest three",
+    "github": "All releases on GitHub"
   }
 }

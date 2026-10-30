@@ -1,67 +1,260 @@
 {
   "header": {
-    "label": "OpenAEC Ecosystem",
-    "title": "BCF <span class=\"accent\">Manager</span> Studio",
-    "desc": "Plataforma open source de gestión de incidencias BCF 2.1 para proyectos BIM. Gestiona incidencias, comunícate con los equipos y vincúlalas a modelos IFC.",
-    "badge": "En desarrollo"
+    "title": "<span class=\"accent\">BCF</span> Manager Studio",
+    "featuresBtn": "Ver las funciones",
+    "faqBtn": "Preguntas frecuentes",
+    "sourceBtn": "Código fuente",
+    "proof3": "Tu propio servidor · Docker",
+    "proof4": "Inicio de sesión único",
+    "proof5": "Concepto · gratis",
+    "heroAlt": "Panel de un edificio residencial ficticio con el número de incidencias abiertas, en curso y cerradas, un gráfico de barras por prioridad y tarjetas de incidencias con capturas del modelo",
+    "label": "Colaboración BIM",
+    "tagline": "Todas las incidencias BIM de un proyecto en un solo lugar, en tu propio servidor",
+    "desc": "BCF Manager Studio es un concepto de gestión de incidencias en proyectos BIM. Reúnes por proyecto los hallazgos de las comprobaciones del modelo, los comentas con tu equipo y los pasas como archivo BCF a cualquier otro programa BIM."
   },
-  "bcf": {
-    "title": "¿Qué es BCF?",
-    "desc": "BIM Collaboration Format (BCF) es un estándar abierto (buildingSMART) para intercambiar incidencias y comentarios entre software BIM. Permite notificar, discutir y resolver problemas en un modelo de construcción, con independencia del software que utilicen las partes implicadas.",
-    "list1": "<strong>Estándar abierto</strong> BCF 2.1 como archivo (XML) y como API REST",
-    "list2": "<strong>Independiente del software</strong> Funciona con cualquier paquete BIM compatible con BCF",
-    "list3": "<strong>Viewpoints</strong> Instantáneas visuales del modelo 3D para cada incidencia",
-    "list4": "<strong>Metadatos</strong> Prioridad, estado, asignación, plazos, etiquetas"
+  "meta": {
+    "description": "Concepto de gestión de incidencias de código abierto para proyectos BIM: incidencias BCF 2.1 por proyecto, con capturas, comentarios, un panel, importación y exportación de .bcfzip y la API BCF 2.1. En tu propio servidor con Docker.",
+    "title": "BCF Manager Studio — OpenAEC Foundation"
   },
-  "why": {
-    "title": "¿Por qué BCF <span class=\"accent\">Manager</span> Studio?",
-    "desc1": "Las herramientas BCF existentes suelen formar parte de plataformas BIM caras y propietarias. BCF Manager Studio ofrece una alternativa independiente y open source que cualquiera puede usar: gratis, sin costes de licencia, sin vendor lock-in.",
-    "desc2": "La plataforma se ejecuta en local o en tu propio servidor. Tus datos siguen siendo tuyos. Conéctala a tu propio visor IFC, comparte incidencias con tu equipo y exporta a cualquier paquete compatible con BCF."
-  },
-  "features": {
-    "title": "Funciones",
+  "hl": {
     "issues": {
-      "title": "Gestión de incidencias BCF 2.1",
-      "desc": "Crea, edita y gestiona incidencias conforme al estándar BCF 2.1. Soporte completo de topics, comentarios, viewpoints e instantáneas."
+      "alt": "Vista general de tres proyectos ficticios, cada uno con una imagen del modelo, ubicación y una breve descripción",
+      "kicker": "Proyectos",
+      "title": "Cada proyecto con su propia lista de incidencias",
+      "desc": "Crea por proyecto un único lugar para todos los hallazgos, con nombre, ubicación, descripción e imagen del proyecto. La vista general muestra de un vistazo de qué edificio se trata, y nadie vuelve a buscar en correos y hojas de cálculo sueltos."
     },
-    "viewpoints": {
-      "title": "Viewpoints con instantáneas 3D",
-      "desc": "Vincula viewpoints visuales a las incidencias con posición de cámara, selección y visibilidad. Visibles directamente en tu visor IFC."
+    "list": {
+      "alt": "Lista de incidencias de un edificio residencial ficticio con siete incidencias, cada una con estado, prioridad, tipo y fecha",
+      "kicker": "Vista general",
+      "title": "Ve en una sola lista lo que sigue abierto",
+      "desc": "Cada incidencia aparece en la lista con su estado, prioridad y tipo, como colisión, incidencia u observación. El panel cuenta las incidencias abiertas, en curso y cerradas, y muestra por prioridad dónde está el trabajo."
     },
-    "collaboration": {
-      "title": "Colaboración en equipo",
-      "desc": "Asigna incidencias a miembros del equipo, fija plazos, añade comentarios y sigue el estado. Miembros por proyecto, inicio de sesión único (OIDC)."
+    "model": {
+      "alt": "Incidencia sobre un elemento de cubierta con la captura del modelo arriba y el elemento afectado resaltado en azul",
+      "kicker": "Vista del modelo",
+      "title": "Ve enseguida dónde está el problema",
+      "desc": "Cada incidencia muestra la captura del modelo, con la posición de la cámara. El punto de vista remite a los elementos por su IFC GlobalId, de modo que un visor BCF salta directamente a la pieza correcta."
     },
-    "xml": {
-      "title": "Importación/exportación BCF XML",
-      "desc": "Importa y exporta archivos BCF (formato XML) para el intercambio con Solibri, Navisworks, BIMcollab y otro software compatible con BCF."
-    },
-    "api": {
-      "title": "API REST (BCF API 2.1)",
-      "desc": "Los 29 endpoints de la BCF API 2.1, más claves API por proyecto para conectar otras herramientas, como el BIM Validator."
-    },
-    "projects": {
-      "title": "Gestión de proyectos",
-      "desc": "Organiza las incidencias por proyecto con etiquetas, prioridades, fases y filtros. Panel claro con estadísticas."
-    },
-    "ifc": {
-      "title": "Integración IFC",
-      "desc": "Vincula incidencias a elementos IFC mediante su GlobalId, para que un visor BCF salte directamente al elemento correcto del modelo."
-    },
-    "selfhosted": {
-      "title": "Self-hosted",
-      "desc": "Ejecuta la plataforma en tu propio servidor o en local. Control total sobre tus datos, sin dependencia de la nube."
-    },
-    "cloud": {
-      "title": "Almacenamiento en la nube",
-      "desc": "Guarda las incidencias por proyecto en tu propio Nextcloud, junto a los modelos IFC. Varias organizaciones en una sola instalación."
+    "team": {
+      "alt": "Incidencia con la descripción, una serie de comentarios y a la derecha los detalles: estado, prioridad, fase, asignada a, fecha límite y etiquetas",
+      "kicker": "Colaboración",
+      "title": "Comenta la incidencia donde corresponde",
+      "desc": "Los comentarios están en la propia incidencia, con fecha y hora, para que toda la conversación quede junta. Al lado ves a quién está asignada, la fecha límite, la fase y las etiquetas."
     }
   },
-  "tech": {
-    "title": "Tecnología",
-    "desc": "Un backend en Rust (Axum) con PostgreSQL para velocidad y fiabilidad, un frontend en React y TypeScript con el estilo de OpenAEC, y Docker Compose para arrancarlo todo en tu propio servidor con un solo comando."
+  "notice": {
+    "text": "Concepto: aún no hay ninguna versión para instalar, y la versión de prueba en línea se cerró el 8 de octubre de 2026. Las capturas proceden de una instalación de prueba local con proyectos ficticios."
   },
-  "cta": {
-    "github": "GitHub"
+  "subnav": {
+    "label": "En esta página",
+    "features": "Funciones",
+    "whatsnew": "Novedades",
+    "faq": "Preguntas",
+    "releases": "Versiones"
+  },
+  "tabs": {
+    "highlights": "Destacados",
+    "issues": "Proyectos e incidencias",
+    "model": "Vista del modelo",
+    "team": "Colaboración",
+    "exchange": "BCF y API",
+    "server": "Tu servidor",
+    "all": "Todas las funciones"
+  },
+  "f": {
+    "projects": {
+      "title": "Crear proyectos",
+      "desc": "Con nombre, ubicación y descripción, y una imagen propia del proyecto."
+    },
+    "newissue": {
+      "title": "Nueva incidencia",
+      "desc": "Título, descripción, tipo, estado y prioridad en un solo formulario."
+    },
+    "status": {
+      "title": "Estado y prioridad",
+      "desc": "Abierta, activa, cerrada o reabierta; de baja a crítica, como las define BCF."
+    },
+    "dashboard": {
+      "title": "Panel por proyecto",
+      "desc": "El número de incidencias abiertas, en curso y cerradas, y un gráfico de barras por prioridad."
+    },
+    "filters": {
+      "title": "Filtrar",
+      "desc": "Muestra en el panel solo las incidencias con un estado o prioridad concretos."
+    },
+    "snapshots": {
+      "title": "Capturas en cada incidencia",
+      "desc": "La imagen del modelo aparece en grande en la incidencia y en pequeño en las tarjetas del panel."
+    },
+    "camera": {
+      "title": "Posición de la cámara",
+      "desc": "Perspectiva u ortográfica, con la posición de la cámara guardada en el punto de vista."
+    },
+    "globalid": {
+      "title": "Elementos por IFC GlobalId",
+      "desc": "Selección, visibilidad y coloreado por elemento, para que un visor muestre la pieza correcta."
+    },
+    "comments": {
+      "title": "Comentarios",
+      "desc": "Escribe un comentario en la incidencia; cada comentario lleva fecha y hora."
+    },
+    "details": {
+      "title": "Asignación y fecha límite",
+      "desc": "A quién está asignada la incidencia, la fecha límite, la fase y las etiquetas, tal como vienen del archivo BCF."
+    },
+    "members": {
+      "title": "Miembros por proyecto",
+      "desc": "Añade compañeros a un proyecto como propietario, administrador, miembro u observador."
+    },
+    "sso": {
+      "title": "Inicio de sesión único",
+      "desc": "Tu equipo inicia sesión con la cuenta existente de la organización."
+    },
+    "import": {
+      "title": "Importar archivos BCF",
+      "desc": "Carga un .bcfzip con todas las incidencias, comentarios y puntos de vista, por ejemplo de una comprobación del modelo."
+    },
+    "export": {
+      "title": "Exportar archivos BCF",
+      "desc": "Descarga todas las incidencias de un proyecto como .bcfzip para cualquier programa BCF."
+    },
+    "api": {
+      "title": "BCF API 2.1",
+      "desc": "La API estándar abierta para proyectos, incidencias, comentarios y puntos de vista, para conectar con otro software."
+    },
+    "apikeys": {
+      "title": "Claves API por proyecto",
+      "desc": "Da a un script o herramienta de control acceso a un solo proyecto, opcionalmente con fecha de caducidad."
+    },
+    "nextcloud": {
+      "title": "Guardar en tu Nextcloud",
+      "desc": "Guarda las incidencias como .bcfzip en la carpeta del proyecto, junto a los modelos IFC, y vuelve a abrirlas desde allí."
+    },
+    "manifest": {
+      "title": "Manifiesto del proyecto al día",
+      "desc": "Al guardar, el conjunto de incidencias se añade al manifiesto del proyecto, para que otras aplicaciones OpenAEC lo encuentren."
+    },
+    "selfhosted": {
+      "title": "En tu propio servidor",
+      "desc": "Una instalación Docker con base de datos; los datos del proyecto no salen de tu entorno."
+    },
+    "tenants": {
+      "title": "Varias organizaciones",
+      "desc": "Una instalación puede dar servicio a varias organizaciones, cada una con su propio Nextcloud."
+    },
+    "ribbon": {
+      "title": "Cinta conocida",
+      "desc": "La misma cinta que las demás aplicaciones OpenAEC, con atajos para importar (Ctrl+I) y exportar (Ctrl+E)."
+    }
+  },
+  "features": {
+    "label": "Funciones",
+    "heading": "Del hallazgo a la solución, con todo el equipo",
+    "sub": "Empieza por lo más destacado o elige un tema.",
+    "tabsLabel": "Funciones por tema"
+  },
+  "whatsnew": {
+    "ctaChangelog": "Todas las notas de versión",
+    "items": {
+      "api": {
+        "title": "API BCF 2.1 completa",
+        "desc": "También versiones, extensiones de proyecto y la selección, visibilidad y coloreado de los puntos de vista."
+      },
+      "cloud": {
+        "title": "Guardar en Nextcloud",
+        "desc": "Desde el menú Archivo guardas las incidencias en la carpeta del proyecto, o las abres desde allí."
+      },
+      "manifest": {
+        "title": "Manifiesto del proyecto",
+        "desc": "Al guardar, el conjunto de incidencias se incluye en el manifiesto del proyecto."
+      },
+      "tenants": {
+        "title": "Varias organizaciones",
+        "desc": "Una instalación para varias organizaciones, cada una con su propio Nextcloud."
+      },
+      "login": {
+        "title": "Servidor de inicio de sesión compartido",
+        "desc": "Inicio de sesión a través del mismo servidor que los demás servicios OpenAEC."
+      }
+    },
+    "label": "Novedades de abril de 2026",
+    "title": "La API BCF completa, <span>guardar en tu nube</span>",
+    "desc": "Las últimas funciones nuevas son de abril de 2026. Desde entonces el desarrollo está parado; aún no hay ninguna versión."
+  },
+  "faq": {
+    "files": {
+      "q": "¿Qué archivos puedo abrir?",
+      "a": "Archivos BCF (.bcfzip) en la versión 2.1, como los generan Solibri, Navisworks, BIMcollab, Revit y las aplicaciones OpenAEC. BCF 3.0 aún no es compatible. BCF Manager Studio no abre el propio modelo IFC; para eso usa un visor IFC."
+    },
+    "install": {
+      "q": "¿Tengo que instalar algo?",
+      "a": "Sí, en un servidor. BCF Manager Studio es una aplicación de servidor que instalas con Docker en tu propio servidor, junto con PostgreSQL. Después tu equipo trabaja simplemente en el navegador. Aún no hay ninguna versión lista para usar, y la versión de prueba en línea se cerró el 8 de octubre de 2026."
+    },
+    "price": {
+      "q": "¿Cuánto cuesta?",
+      "a": "Nada. El código fuente es público en GitHub y solo pagas tu propio servidor. El código fuente aún no tiene archivo de licencia; llegará con la primera versión."
+    },
+    "format": {
+      "q": "¿En qué formato se guarda mi trabajo?",
+      "a": "Las incidencias se guardan en una base de datos PostgreSQL en tu servidor, con las capturas como imágenes al lado. Puedes exportarlas en cualquier momento como .bcfzip, el estándar abierto de buildingSMART, o guardarlas así en tu Nextcloud."
+    },
+    "systems": {
+      "q": "¿En qué sistemas funciona?",
+      "a": "El servidor funciona en Docker, sobre Linux. Tu equipo trabaja en un navegador moderno en Windows, macOS o Linux."
+    },
+    "practice": {
+      "q": "¿Encaja con la práctica de la construcción?",
+      "a": "Sí. BCF es el estándar abierto de buildingSMART para la coordinación BIM: una comprobación del modelo genera incidencias, que comentas, asignas y cierras. Los estados, prioridades, fases y etiquetas siguen BCF 2.1, así que se mantienen intactos al intercambiarlos con otras partes."
+    },
+    "ai": {
+      "q": "¿Qué puede hacer un asistente de IA con ello?",
+      "a": "Aún no hay servidor MCP. Sin embargo, un asistente o script con una clave API puede leer y crear incidencias, comentarios y puntos de vista de un proyecto a través de la API BCF 2.1."
+    },
+    "ready": {
+      "q": "¿Ya puedo usarlo?",
+      "a": "Todavía no tal cual. BCF Manager Studio es un concepto: no hay ninguna versión ni ya una versión de prueba pública, y el desarrollo está parado desde abril de 2026. Si quieres, puedes compilarlo tú mismo a partir del código fuente en GitHub e instalarlo en tu propio servidor."
+    },
+    "edit": {
+      "q": "¿Puedo editar una incidencia en pantalla?",
+      "a": "En parte. En pantalla creas incidencias y escribes comentarios. El estado, la asignación y la fecha límite de una incidencia existente todavía no se cambian en pantalla, sino mediante una importación BCF o la API. La búsqueda en la lista de incidencias también está por llegar."
+    },
+    "revit": {
+      "q": "¿Funciona con Revit?",
+      "a": "A través de archivos BCF, sí: simplemente cargas un .bcfzip de Revit. También hay una versión de prueba aparte de un complemento para Revit 2025 que abre archivos .bcfzip en Revit. Una conexión directa entre ese complemento y BCF Manager Studio todavía no funciona."
+    },
+    "heading": "Preguntas frecuentes"
+  },
+  "tech": {
+    "rust": {
+      "title": "Rust · Axum",
+      "desc": "Servidor rápido y ligero en Rust con Axum y Tokio."
+    },
+    "react": {
+      "title": "React · TypeScript",
+      "desc": "Interfaz web con Vite y Tailwind, con el estilo de la casa de OpenAEC."
+    },
+    "bcf": {
+      "title": "BCF 2.1 · BCF API 2.1",
+      "desc": "Biblioteca Rust propia que lee y escribe .bcfzip, más la API estándar de buildingSMART."
+    },
+    "postgres": {
+      "title": "PostgreSQL 16 · Docker",
+      "desc": "Base de datos con migraciones; todo arranca con Docker Compose detrás de Caddy."
+    },
+    "oidc": {
+      "title": "OIDC · JWT · claves API",
+      "desc": "Inicio de sesión único con Authentik, sesiones JWT y claves por proyecto."
+    },
+    "nextcloud": {
+      "title": "Nextcloud · WebDAV",
+      "desc": "Almacenamiento en tu propio Nextcloud mediante la biblioteca compartida openaec-cloud, con manifiestos .wefc."
+    },
+    "heading": "Tecnología",
+    "sub": "Para quien quiera saber cómo está hecho."
+  },
+  "releases": {
+    "showAll": "Mostrar todas las versiones",
+    "showLess": "Mostrar solo las tres últimas",
+    "github": "Todas las versiones en GitHub"
   }
 }
