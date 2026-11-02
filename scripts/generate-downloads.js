@@ -37,6 +37,8 @@ const TOOL_REPOS = [
   'Y-app',
   'openaec-installer',
   'open-paint-studio',
+  'open-office-studio',
+  'open-3d-viewer',
   // Geen releases, dus 0 downloads — maar gemeten 0 is iets anders dan
   // ontbrekend: build-ecosystem-order.js laat ontbrekende data buiten de
   // weging, waardoor deze kaart anders onterecht zou stijgen.

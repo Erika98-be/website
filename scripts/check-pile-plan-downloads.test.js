@@ -48,11 +48,17 @@ test('offers only actual installer assets and their direct download URLs', () =>
 });
 
 test('every language page works without JavaScript and links to the installer, not a release page', () => {
-  const installer = /href="https:\/\/github\.com\/OpenAEC-Foundation\/pile-plan-studio\/releases\/download\/v[0-9][^"\/]*\/Open\.Pile\.Plan\.Studio_[0-9.]+_x64-setup\.exe"/;
+  // De versie komt van de Nederlandse pagina; elke release zet een nieuwe. Alle talen
+  // moeten zonder JavaScript dezelfde installer aanbieden.
+  const nl = fs.readFileSync(path.join(root, 'open-pile-plan-studio', 'index.html'), 'utf8');
+  const found = nl.match(/releases\/download\/(v(\d+\.\d+\.\d+))\/Open\.Pile\.Plan\.Studio_(\d+\.\d+\.\d+)_x64-setup\.exe/);
+  assert.ok(found, 'nl/: no direct Windows installer');
+  assert.equal(found[2], found[3], 'nl/: tag and installer name belong to different versions');
+  const installer = assetUrl(found[1], `Open.Pile.Plan.Studio_${found[3]}_x64-setup.exe`);
   for (const language of ['', 'en/', 'fr/', 'tr/', 'es/']) {
     const html = fs.readFileSync(path.join(root, language, 'open-pile-plan-studio', 'index.html'), 'utf8');
     assert.ok(html.includes('id="download"'), `${language || 'nl/'}: download block missing`);
-    assert.match(html, installer, `${language || 'nl/'}: installer fallback missing`);
+    assert.ok(html.includes(`href="${installer}"`), `${language || 'nl/'}: installer fallback missing`);
     assert.ok(html.includes('href="#download"'), `${language || 'nl/'}: download navigation missing`);
   }
 });

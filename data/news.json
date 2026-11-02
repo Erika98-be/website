@@ -1,11 +1,136 @@
 [
   {
     "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio: 2 releases (v2026.44.7 → v2026.44.8)",
+    "description": "Versies: v2026.44.8, v2026.44.7",
+    "date": "2026-11-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v2026.44.8",
+    "count": 2
+  },
+  {
+    "type": "release",
+    "repo": "Open-Structural-Calculation-Studio",
+    "title": "Open-Structural-Calculation-Studio nightly uitgebracht",
+    "description": "Nightly build 2026.43.0-nightly.20261102.e2de5f8",
+    "date": "2026-11-02",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Structural-Calculation-Studio/releases/tag/nightly",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio v2026.44.6 uitgebracht",
+    "description": "Open PDF Studio v2026.44.6",
+    "date": "2026-11-01",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v2026.44.6",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-planner-studio",
+    "title": "open-planner-studio v2026.44.0 uitgebracht",
+    "description": "Open Planner Studio v2026.44.0",
+    "date": "2026-10-31",
+    "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.44.0",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio: 2 releases (v2026.44.5 → nightly)",
+    "description": "Versies: nightly, v2026.44.5",
+    "date": "2026-10-31",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
+    "count": 2
+  },
+  {
+    "type": "release",
+    "repo": "open-3d-viewer",
+    "title": "open-3d-viewer v2026.44.19 uitgebracht",
+    "description": "Open 3D Viewer Studio 2026.44.19",
+    "date": "2026-10-31",
+    "url": "https://github.com/OpenAEC-Foundation/open-3d-viewer/releases/tag/v2026.44.19",
+    "count": 1
+  },
+  {
+    "type": "new_repo",
+    "repo": "Open-Structural-Calculation-Studio-modules",
+    "title": "Nieuwe repository: Open-Structural-Calculation-Studio-modules",
+    "description": "Rekenmodules voor Open Structural Calculation Studio — calculation modules; bijdragen via pull requests",
+    "date": "2026-10-31",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Structural-Calculation-Studio-modules"
+  },
+  {
+    "type": "release",
+    "repo": "open-3d-viewer",
+    "title": "open-3d-viewer v2026.44.18 uitgebracht",
+    "description": "Open 3D Viewer Studio 2026.44.18",
+    "date": "2026-10-30",
+    "url": "https://github.com/OpenAEC-Foundation/open-3d-viewer/releases/tag/v2026.44.18",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "pile-plan-studio",
+    "title": "pile-plan-studio v2026.44.4 uitgebracht",
+    "description": "Open Pile Plan Studio 2026.44.4 — Alpha",
+    "date": "2026-10-30",
+    "url": "https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v2026.44.4",
+    "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "openaec-installer",
+    "title": "openaec-installer: 4 releases (v0.2.8 → v0.2.11)",
+    "description": "Versies: v0.2.11, v0.2.10, v0.2.9, v0.2.8",
+    "date": "2026-10-30",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-installer/releases/tag/v0.2.11",
+    "count": 4
+  },
+  {
+    "type": "release",
+    "repo": "open-office-studio",
+    "title": "open-office-studio v2026.44.8 uitgebracht",
+    "description": "Open Office Studio 2026-W44.8 — zeven apps",
+    "date": "2026-10-30",
+    "url": "https://github.com/OpenAEC-Foundation/open-office-studio/releases/tag/v2026.44.8",
+    "count": 1
+  },
+  {
+    "type": "release",
     "repo": "open-geotechniek-studio",
     "title": "open-geotechniek-studio: 3 releases (v2026.44.2 → v2026.44.4)",
     "description": "Versies: v2026.44.4, v2026.44.3, v2026.44.2",
     "date": "2026-10-29",
     "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/tag/v2026.44.4",
+    "count": 3
+  },
+  {
+    "type": "release",
+    "repo": "open-pdf-studio",
+    "title": "open-pdf-studio: 4 releases (v2026.44.0 → v2026.44.4)",
+    "description": "Versies: v2026.44.4, v2026.44.2, v2026.44.1, v2026.44.0",
+    "date": "2026-10-29",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v2026.44.4",
+    "count": 4
+  },
+  {
+    "type": "release",
+    "repo": "open-3d-viewer",
+    "title": "open-3d-viewer: 2 releases (video/2026-10-promo → v2026.44.17)",
+    "description": "Versies: v2026.44.17, video/2026-10-promo",
+    "date": "2026-10-29",
+    "url": "https://github.com/OpenAEC-Foundation/open-3d-viewer/releases/tag/v2026.44.17",
+    "count": 2
+  },
+  {
+    "type": "release",
+    "repo": "openaec-installer",
+    "title": "openaec-installer: 3 releases (v0.2.5 → v0.2.7)",
+    "description": "Versies: v0.2.7, v0.2.6, v0.2.5",
+    "date": "2026-10-29",
+    "url": "https://github.com/OpenAEC-Foundation/openaec-installer/releases/tag/v0.2.7",
     "count": 3
   },
   {
@@ -19,12 +144,38 @@
   },
   {
     "type": "release",
-    "repo": "Open-Structural-Calculation-Studio",
-    "title": "Open-Structural-Calculation-Studio nightly uitgebracht",
-    "description": "Nightly build 2026.43.0-nightly.20261029.e2de5f8",
+    "repo": "Open-Infra-Studio",
+    "title": "Open-Infra-Studio: 4 releases (video/2026-10-promo-bron → v2026.44.5)",
+    "description": "Versies: v2026.44.5, v2026.44.4, v2026.44.3, video/2026-10-promo-bron",
     "date": "2026-10-29",
-    "url": "https://github.com/OpenAEC-Foundation/Open-Structural-Calculation-Studio/releases/tag/nightly",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Infra-Studio/releases/tag/v2026.44.5",
+    "count": 4
+  },
+  {
+    "type": "release",
+    "repo": "ifccad",
+    "title": "ifccad v2026.44.1 uitgebracht",
+    "description": "IFCCAD 2026.44.1 alpha",
+    "date": "2026-10-29",
+    "url": "https://github.com/OpenAEC-Foundation/ifccad/releases/tag/v2026.44.1",
     "count": 1
+  },
+  {
+    "type": "release",
+    "repo": "open-office-studio",
+    "title": "open-office-studio: 2 releases (v2026.44.6 → v2026.44.7)",
+    "description": "Versies: v2026.44.7, v2026.44.6",
+    "date": "2026-10-29",
+    "url": "https://github.com/OpenAEC-Foundation/open-office-studio/releases/tag/v2026.44.7",
+    "count": 2
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-fem-studio-mechanics",
+    "title": "Nieuwe repository: open-fem-studio-mechanics",
+    "description": "Open FEM Studio Mechanics — open-source 2D/3D finite-element analysis for structures (mechanics edition, no design-code checks)",
+    "date": "2026-10-29",
+    "url": "https://github.com/OpenAEC-Foundation/open-fem-studio-mechanics"
   },
   {
     "type": "release",
@@ -100,11 +251,11 @@
   },
   {
     "type": "release",
-    "repo": "Open-Infra",
-    "title": "Open-Infra: 2 releases (v2026.44.1 → v2026.44.2)",
+    "repo": "Open-Infra-Studio",
+    "title": "Open-Infra-Studio: 2 releases (v2026.44.1 → v2026.44.2)",
     "description": "Versies: v2026.44.2, v2026.44.1",
     "date": "2026-10-26",
-    "url": "https://github.com/OpenAEC-Foundation/Open-Infra/releases/tag/v2026.44.2",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Infra-Studio/releases/tag/v2026.44.2",
     "count": 2
   },
   {
@@ -136,11 +287,11 @@
   },
   {
     "type": "release",
-    "repo": "Open-Infra",
-    "title": "Open-Infra v2026.44 uitgebracht",
+    "repo": "Open-Infra-Studio",
+    "title": "Open-Infra-Studio v2026.44 uitgebracht",
     "description": "Open Infra v2026.44",
     "date": "2026-10-24",
-    "url": "https://github.com/OpenAEC-Foundation/Open-Infra/releases/tag/v2026.44",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Infra-Studio/releases/tag/v2026.44",
     "count": 1
   },
   {
@@ -180,11 +331,11 @@
   },
   {
     "type": "release",
-    "repo": "Open-Infra",
-    "title": "Open-Infra: 3 releases (v0.2.0 → v2026.43)",
+    "repo": "Open-Infra-Studio",
+    "title": "Open-Infra-Studio: 3 releases (v0.2.0 → v2026.43)",
     "description": "Versies: v2026.43, v0.2.1, v0.2.0",
     "date": "2026-10-23",
-    "url": "https://github.com/OpenAEC-Foundation/Open-Infra/releases/tag/v2026.43",
+    "url": "https://github.com/OpenAEC-Foundation/Open-Infra-Studio/releases/tag/v2026.43",
     "count": 3
   },
   {
@@ -322,7 +473,7 @@
     "type": "new_repo",
     "repo": "OpenAEC-Blueprint",
     "title": "Nieuwe repository: OpenAEC-Blueprint",
-    "description": "Shared native Rust UI crate and visual harmonization review for OpenAEC tools",
+    "description": "The blueprint for every OpenAEC tool: one standard application in Tauri, Rust and the browser, with shared design tokens, fonts, 945 icons, a version scheme and signed releases.",
     "date": "2026-10-16",
     "url": "https://github.com/OpenAEC-Foundation/OpenAEC-Blueprint"
   },
@@ -458,15 +609,6 @@
     "description": "Open Pile Plan Studio v0.4.3-alpha",
     "date": "2026-10-02",
     "url": "https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v0.4.3-alpha",
-    "count": 1
-  },
-  {
-    "type": "release",
-    "repo": "open-pdf-studio",
-    "title": "open-pdf-studio nightly uitgebracht",
-    "description": "Nightly build 2026.39.0-nightly.20260928.b18a03a",
-    "date": "2026-09-28",
-    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly",
     "count": 1
   },
   {
@@ -1037,11 +1179,11 @@
   },
   {
     "type": "new_repo",
-    "repo": "Open-Infra",
-    "title": "Nieuwe repository: Open-Infra",
+    "repo": "Open-Infra-Studio",
+    "title": "Nieuwe repository: Open-Infra-Studio",
     "description": "Extension for Open CAD Studio for Infra ",
     "date": "2026-07-14",
-    "url": "https://github.com/OpenAEC-Foundation/Open-Infra"
+    "url": "https://github.com/OpenAEC-Foundation/Open-Infra-Studio"
   },
   {
     "type": "release",
@@ -1731,6 +1873,15 @@
   },
   {
     "type": "release",
+    "repo": "open-3d-viewer",
+    "title": "open-3d-viewer v0.1.0-alpha uitgebracht",
+    "description": "v0.1.0-alpha",
+    "date": "2026-03-05",
+    "url": "https://github.com/OpenAEC-Foundation/open-3d-viewer/releases/tag/v0.1.0-alpha",
+    "count": 1
+  },
+  {
+    "type": "release",
     "repo": "open-2D-studio-AEC-extension",
     "title": "open-2D-studio-AEC-extension v0.1.0 uitgebracht",
     "description": "AEC Extension v0.1.0",
@@ -1797,6 +1948,14 @@
     "description": "Rust rekenbibliotheek voor warmteverliesberekeningen volgens ISSO 51:2023",
     "date": "2026-03-02",
     "url": "https://github.com/OpenAEC-Foundation/open-heatloss-studio"
+  },
+  {
+    "type": "new_repo",
+    "repo": "open-3d-viewer",
+    "title": "Nieuwe repository: open-3d-viewer",
+    "description": "This is a 3D viewer for any existing non-protected formats in 3D.",
+    "date": "2026-02-27",
+    "url": "https://github.com/OpenAEC-Foundation/open-3d-viewer"
   },
   {
     "type": "release",

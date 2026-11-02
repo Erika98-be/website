@@ -2,7 +2,7 @@
 
 > Simple image editor in the spirit of MS Paint, with editable vector objects, a local API and an MCP server.
 
-**Status:** beta
+**Status:** alpha
 **License:** MIT
 **Platforms:** Windows, macOS, Linux
 **Category:** Image Editing
@@ -12,13 +12,13 @@
 
 ## Live stats
 
-- Stars: **0**
+- Stars: **1**
 - Commits: **19**
 - Forks: **0**
-- Open issues: **1**
+- Open issues: **3**
 - Releases: **1**
-- Total downloads: **34**
-- Downloads by platform: Windows (13), Linux (AppImage) (9), Other (5), Linux (deb) (4), macOS (3)
+- Total downloads: **70**
+- Downloads by platform: Windows (35), Linux (AppImage) (13), Linux (deb) (8), macOS (8), Other (6)
 
 ## Key features
 
@@ -60,9 +60,9 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 
 - [Windows · OpenAEC-Paint-Studio_2026.43.2_x64-setup.exe](https://github.com/OpenAEC-Foundation/open-paint-studio/releases/download/v2026.43.2/OpenAEC-Paint-Studio_2026.43.2_x64-setup.exe) (v2026.43.2 — 8.9 MB)
 - [Linux (AppImage) · OpenAEC-Paint-Studio_2026.43.2_amd64.AppImage](https://github.com/OpenAEC-Foundation/open-paint-studio/releases/download/v2026.43.2/OpenAEC-Paint-Studio_2026.43.2_amd64.AppImage) (v2026.43.2 — 82.9 MB)
-- [Other · SHA256SUMS](https://github.com/OpenAEC-Foundation/open-paint-studio/releases/download/v2026.43.2/SHA256SUMS) (v2026.43.2)
 - [Linux (deb) · OpenAEC-Paint-Studio_2026.43.2_amd64.deb](https://github.com/OpenAEC-Foundation/open-paint-studio/releases/download/v2026.43.2/OpenAEC-Paint-Studio_2026.43.2_amd64.deb) (v2026.43.2 — 8.2 MB)
 - [macOS · OpenAEC-Paint-Studio_2026.43.2_universal.dmg](https://github.com/OpenAEC-Foundation/open-paint-studio/releases/download/v2026.43.2/OpenAEC-Paint-Studio_2026.43.2_universal.dmg) (v2026.43.2 — 16.3 MB)
+- [Other · SHA256SUMS](https://github.com/OpenAEC-Foundation/open-paint-studio/releases/download/v2026.43.2/SHA256SUMS) (v2026.43.2)
 
 ---
 

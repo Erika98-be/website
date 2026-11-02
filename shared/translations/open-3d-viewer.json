@@ -1,46 +1,23 @@
 {
+  "meta": {
+    "title": "Open 3D Viewer Studio — OpenAEC Foundation",
+    "description": "Free, open-source viewer for building models: open SketchUp, Tekla, Revit, IFC, glTF, CityJSON and more, measure, cut sections and save as IFC 4. For Windows, macOS, Linux and the browser."
+  },
   "header": {
+    "label": "3D viewer for construction",
     "title": "Open <span class=\"accent\">3D Viewer</span> Studio",
+    "tagline": "Free viewer to open, measure and section building models",
+    "desc": "Open models from SketchUp, Tekla, Revit and IFC without the program they were made in. Orbit around them, measure, cut the model open and save it as IFC. As a desktop app for Windows, macOS and Linux, or right in the browser.",
     "demoBtn": "Open in browser",
     "downloadBtn": "Download",
     "sourceBtn": "Source code",
-    "proof3": "Dutch and English",
-    "proof4": "MCP for AI assistants",
-    "proof5": "Free · LGPL-3.0",
-    "heroAlt": "Open 3D Viewer Studio with a SketchUp model of a house on its plot; models and layers on the left, file properties on the right",
-    "label": "3D viewer",
-    "tagline": "Open any building model you receive, without the program that made it",
-    "desc": "Drop a SketchUp, Tekla, DWG or glTF file in your browser, or open IFC and Revit in the desktop app. Walk around the model, measure, cut it open and save it as IFC."
+    "proofIfc": "Save as IFC 4",
+    "proofFree": "Free · LGPL-3.0",
+    "heroAlt": "Open 3D Viewer Studio with a SketchUp model of a house on its plot, the layers on the left and the file properties on the right"
   },
-  "meta": {
-    "description": "Free, open-source 3D viewer for building models: IFC, Revit, SketchUp, Tekla, DWG/DXF, CityJSON, LandXML, glTF, OBJ, STL and PLY. Measure, section and save as IFC, in the browser and on Windows, macOS and Linux.",
-    "title": "Open 3D Viewer Studio — OpenAEC Foundation"
-  },
-  "hl": {
-    "measure": {
-      "alt": "Two distance measurements on the garage of a house model, with the values and units in the panel on the right",
-      "kicker": "Measure",
-      "title": "Measure right in the model",
-      "desc": "Click two points, edges or faces and read the distance, with the difference in X, Y and Z. Angles, areas, volumes and polygons too. Measurements stay in view until you clear them."
-    },
-    "section": {
-      "alt": "House model with a section box at the first floor, showing the rooms and the furniture",
-      "kicker": "Sections",
-      "title": "Look inside with a section",
-      "desc": "A section box or section plane cuts the model open, with filled cut faces. Slide each axis until you look at exactly the floor you need."
-    },
-    "explode": {
-      "alt": "Bathroom model pulled apart per element, with the X, Y and Z sliders in the panel on the right",
-      "kicker": "Exploded view",
-      "title": "See how it fits together",
-      "desc": "Pull the model apart, per storey or per element, by a percentage per axis. One view shows how a bathroom or a building is put together."
-    },
-    "themes": {
-      "alt": "Top view of the house on its plot with an orthographic camera, in the dark theme",
-      "kicker": "Workspace",
-      "title": "Work the way you like",
-      "desc": "Pick one of five themes, from light and dark to Blueprint and high contrast. Top, front and side views and an orthographic camera are one key away, and every command can get the shortcut you want."
-    }
+  "notice": {
+    "text": "<strong>Try it right away:</strong> open your own model in the browser. The file stays on your own computer and is never uploaded. IFC and Revit open in the desktop app.",
+    "link": "Open the web version"
   },
   "subnav": {
     "label": "On this page",
@@ -50,232 +27,299 @@
     "faq": "FAQ",
     "releases": "Releases"
   },
+  "features": {
+    "label": "Features",
+    "heading": "View, measure and pass on any model",
+    "sub": "Start with the highlights, or pick a topic.",
+    "tabsLabel": "Features by topic",
+    "learnMore": "Learn more"
+  },
   "tabs": {
     "highlights": "Highlights",
-    "view": "Viewing",
-    "measure": "Measure and section",
-    "formats": "Files and IFC",
-    "work": "Workspace and integrations",
+    "open": "Open",
+    "view": "View",
+    "measure": "Measure",
+    "share": "Share",
     "all": "All features"
   },
-  "features": {
-    "learnMore": "Learn more",
-    "label": "Features",
-    "heading": "View, measure and section in one window",
-    "sub": "Start with the highlights, or pick a topic.",
-    "tabsLabel": "Features by topic"
-  },
-  "f": {
-    "orbit": {
-      "title": "Orbit, pan and zoom",
-      "desc": "Left drag orbits, middle drag pans, the wheel zooms to the cursor. F fits the whole model in view."
+  "hl": {
+    "open": {
+      "kicker": "Open",
+      "title": "Opens what you are sent",
+      "desc": "SketchUp, Tekla, Revit, IFC, glTF, OBJ, STL, PLY, CityJSON, LandXML and DWG or DXF, without the program the model was made in. The File page keeps your recent files at hand, so you can pick up right where you left off.",
+      "alt": "The File page with Open, Save as, Settings and three recently opened SketchUp models"
     },
-    "views": {
-      "title": "View cube and standard views",
-      "desc": "Turn the model to a side with the view cube. Iso, top, front and right on 0 to 3, perspective or orthographic on P and O."
+    "revit": {
+      "kicker": "Revit and IFC",
+      "title": "Revit models with their schedules",
+      "desc": "The desktop app opens .rvt and .rfa with levels, grids, rooms and saved views, and IFC models with their spaces in a layer of their own. A schedule, such as a door schedule, opens as a table below the model; click a row and its elements are selected.",
+      "alt": "A Revit model with the door schedule as a table below the 3D view, the saved views on the left and the levels on the right"
     },
-    "render": {
-      "title": "Solid, wireframe or with edges",
-      "desc": "Switch between the render modes with S, W and E, and toggle the grid with G."
-    },
-    "layers": {
-      "title": "Layers on and off",
-      "desc": "The explorer lists the layers with colour and count: IFC layers, Revit categories, SketchUp tags, Tekla classes or CAD layers. Turn them on or off one by one."
-    },
-    "select": {
-      "title": "Properties of an element",
-      "desc": "Click an element and read its properties. For the file you see the format, size, triangle count and dimensions."
-    },
-    "flip": {
-      "title": "Other up axis",
-      "desc": "Is a model lying on its side because the file uses another up axis? One click stands it upright."
-    },
-    "distance": {
-      "title": "Distances and angles",
-      "desc": "Measure between points, edges and faces, or between two elements. Every distance shows the difference in X, Y and Z."
-    },
-    "area": {
-      "title": "Area, volume and polygon",
-      "desc": "Measure an area or volume, or click a polygon. Choose the unit (mm, cm or m) and the number of decimals."
-    },
-    "section": {
-      "title": "Section box and section plane",
-      "desc": "Cut the model open with a box or a plane, with filled cut faces. The box can fit the selection."
+    "view": {
+      "kicker": "View",
+      "title": "See the model the way you want",
+      "desc": "Switch between solid, wireframe and edges, and between perspective and orthographic. Turn to a side with the view cube or look straight down, and switch layers on or off in the explorer.",
+      "alt": "A house on its plot seen straight from above as a wireframe, with an orthographic camera and the dark theme"
     },
     "explode": {
-      "title": "Exploded view",
-      "desc": "Pull the model apart per storey or per element, by a percentage per axis."
+      "kicker": "Explode",
+      "title": "See how it fits together",
+      "desc": "Pull the model apart per storey or per element, with a slider per axis. Cut it open with a section box or a section plane with filled cuts, and measure distances, angles, areas and polygons.",
+      "alt": "A bathroom model pulled apart per element, with the X, Y and Z sliders in the properties pane"
     },
-    "ifcrevit": {
-      "title": "Open IFC and Revit",
-      "desc": "The desktop app opens IFC and Revit (.rvt, .rfa), with levels, grids, rooms and saved views. IFC spaces start hidden in a layer of their own."
+    "workspace": {
+      "kicker": "Workspace",
+      "title": "A workspace you already know",
+      "desc": "The window follows the OpenAEC Blueprint, like the other OpenAEC apps: a ribbon with Home, View and Measure, an explorer, properties and a status bar. Choose from five themes, work in English or Dutch and give every command your own shortcut.",
+      "alt": "The same house model in four of the five themes: Light, Dark, Blueprint and High contrast dark"
+    }
+  },
+  "f": {
+    "skp": {
+      "title": "SketchUp",
+      "desc": "Open .skp files from version 3 onwards, with the tags as layers."
     },
-    "schedules": {
-      "title": "Revit schedules as a table",
-      "desc": "A schedule from a Revit file opens as a table under the 3D view. Click a row and its elements are selected."
+    "tekla": {
+      "title": "Tekla Structures (beta)",
+      "desc": "Open .db1 models, with a layer per class. Profile shapes are approximated."
+    },
+    "ifc": {
+      "title": "IFC",
+      "desc": "Open .ifc in the desktop app. Spaces sit in a layer of their own and start hidden, so you see the building right away."
+    },
+    "revit": {
+      "title": "Revit",
+      "desc": "Open .rvt and .rfa in the desktop app, with levels, grids, rooms, saved views and schedules."
+    },
+    "exchange": {
+      "title": "glTF, OBJ, STL and PLY",
+      "desc": "The common exchange formats for 3D models, scans and 3D printing, in the browser too."
+    },
+    "city": {
+      "title": "CityJSON and LandXML",
+      "desc": "City models from CityJSON and CityJSONSeq, and terrain as a TIN from LandXML."
     },
     "cad": {
-      "title": "SketchUp, Tekla and DWG/DXF",
-      "desc": "SketchUp from version 3, Tekla Structures (beta) and the faces of DWG and DXF drawings, in the browser and on the desktop."
-    },
-    "geo": {
-      "title": "CityJSON and LandXML",
-      "desc": "Buildings from a CityJSON city model, at the highest level of detail per object, and terrain surfaces (TIN) from LandXML."
-    },
-    "mesh": {
-      "title": "glTF, OBJ, STL and PLY",
-      "desc": "The common 3D formats from design, scanning and printing software open too."
+      "title": "DWG and DXF",
+      "desc": "The faces from model space, as 3D geometry. Not a full CAD drawing: solids, text and curves are not included."
     },
     "multi": {
       "title": "Several models at once",
-      "desc": "Open replaces the model, Add puts another file next to it. Each model has its own eye to show or hide it."
+      "desc": "Open replaces the model, Add puts another file next to it. Every model has its own toggle to show or hide it."
     },
-    "saveifc": {
-      "title": "Save as IFC",
-      "desc": "Save any model the viewer opens as IFC 4, with storeys, classes, properties and materials. In the browser the file goes to your downloads."
+    "modes": {
+      "title": "Solid, wireframe or edges",
+      "desc": "Change the display with a single key, and switch between perspective and orthographic."
+    },
+    "cube": {
+      "title": "View cube and standard views",
+      "desc": "Turn to a side with the view cube, or choose iso, top, front or right. Press F to fit the model in view."
+    },
+    "explode": {
+      "title": "Explode",
+      "desc": "Pull the model apart per storey or per element, with a slider per axis."
+    },
+    "explorer": {
+      "title": "Explorer and properties",
+      "desc": "Switch layers on or off, search the explorer and click an element to read its properties."
+    },
+    "schedule": {
+      "title": "Revit schedules",
+      "desc": "A schedule opens as a table below the model. Click a row and the matching elements are selected."
+    },
+    "measure": {
+      "title": "Distances and angles",
+      "desc": "Measure by clicking in the model, or between two elements. Measurements stay in view until you clear them."
+    },
+    "area": {
+      "title": "Areas and polygons",
+      "desc": "Measure an area or a polygon over several points, such as a floor or a roof face."
+    },
+    "section": {
+      "title": "Section box and section plane",
+      "desc": "Cut the model open with a box or a single plane. The cuts are filled, so you can see what is solid."
+    },
+    "ifcexport": {
+      "title": "Save as IFC 4",
+      "desc": "Save any model you open as IFC 4, with storeys, classes, properties and materials. In the browser too."
+    },
+    "mcp": {
+      "title": "Driven by AI",
+      "desc": "With the open-3d-viewer-mcp MCP server, an AI assistant operates the desktop viewer, locally on your own computer."
+    },
+    "browser": {
+      "title": "In the browser too",
+      "desc": "The same app runs in the browser on WebGPU. Your file stays on your computer and is not uploaded."
     },
     "themes": {
-      "title": "Five themes",
-      "desc": "Light, dark, Blueprint and two high-contrast variants, in the same window as the other OpenAEC apps."
+      "title": "Five themes, two languages",
+      "desc": "Light, Dark, Blueprint and two high-contrast themes, in English or Dutch."
     },
     "shortcuts": {
       "title": "Your own shortcuts",
-      "desc": "Every command is in one list, shared by the ribbon, the title bar and the keyboard. Give any command your own key in the settings."
+      "desc": "Give every command your own key in Settings."
     },
-    "lang": {
-      "title": "Dutch and English",
-      "desc": "Choose the language of the window in the settings."
+    "recent": {
+      "title": "Recent files",
+      "desc": "The File page shows the models you opened last, so you can carry on right away."
     },
-    "mcp": {
-      "title": "Let an AI assistant drive it",
-      "desc": "Through the MCP server an AI assistant opens files, turns the camera, finds elements by property, measures and sections, in the window you see."
-    },
-    "private": {
-      "title": "Your model stays with you",
-      "desc": "Even in the browser nothing is uploaded: the file is read on your own computer."
-    },
-    "update": {
-      "title": "Signed downloads and updates",
-      "desc": "Every installer is signed. When the OpenAEC Installer has a newer version, the title bar says so and Update installs it."
+    "signed": {
+      "title": "Signed installers",
+      "desc": "For Windows, macOS and Linux, with checksums and a build attestation for every file."
     }
   },
   "download": {
+    "label": "Download",
     "title": "Download v2026.44.18",
-    "lead": "Free, no account needed. For Windows, macOS and Linux.",
+    "lead": "Free, no account needed. Signed installers for Windows, macOS and Linux.",
     "forWindows": "Download for Windows",
     "forMac": "Download for macOS",
     "forLinux": "Download for Linux",
-    "metaWindows": ".exe installer",
-    "metaMac": "universal .dmg, Intel and Apple Silicon",
-    "metaLinux": "AppImage, runs on most distributions",
     "browserBtn": "Open in browser",
+    "metaWindows": ".exe installer for Windows 10 and 11, no admin rights needed",
+    "metaMac": "universal .dmg for Apple silicon and Intel, macOS 11 or later",
+    "metaLinux": "AppImage, runs on most distributions",
+    "mobileNote": "Open 3D Viewer Studio is made for a large screen. Open it on your computer, or try it here in the browser.",
+    "other": "Other platforms",
     "fileExe": "Installer (.exe)",
+    "fileZip": "No installation (.zip)",
     "fileDmg": "Universal .dmg",
     "fileDeb": ".deb",
     "fileRpm": ".rpm",
     "fileAppImage": "AppImage",
-    "browserNote": "Rather not install anything? The app also <a href=\"https://open-3d-viewer.open-aec.com/\" target=\"_blank\" rel=\"noopener\">runs in the browser</a>.",
-    "label": "Download",
-    "mobileNote": "Open 3D Viewer Studio is made for a large screen. Open it on your computer, or try it here in the browser.",
-    "other": "Other platforms"
+    "fileTar": ".tar.gz",
+    "browserNote": "Rather not install anything? The app also runs <a href=\"https://open-3d-viewer.open-aec.com/\" target=\"_blank\" rel=\"noopener\">in the browser</a>, and your file stays on your own computer. IFC and Revit open in the desktop app.",
+    "signNote": "Every file is signed: Windows with Authenticode, macOS with a Developer ID and notarized by Apple, Linux with the OpenAEC OpenPGP key (<code>13F6 D414 ADEE 4ED4 CD09 AC60 601D 86C9 3C50 4D29</code>), and every file has a GitHub build attestation. Want to install and update all your OpenAEC apps in one go? Use the <a href=\"https://github.com/OpenAEC-Foundation/openaec-installer\" target=\"_blank\" rel=\"noopener\">OpenAEC Installer</a>."
+  },
+  "verify": {
+    "heading": "Verify",
+    "releases": "All releases on GitHub"
   },
   "whatsnew": {
-    "ctaChangelog": "All release notes",
+    "label": "New in v2026.44.17",
+    "title": "A new window and <span>more formats</span>",
+    "desc": "Open 3D Viewer Studio has been rebuilt in Rust and now follows the OpenAEC Blueprint. Revit and IFC open in the regular desktop app, new formats were added, you can view several models at once and the installers are signed. The full list is in the release notes.",
+    "ctaChangelog": "Full changelog",
     "ctaDemo": "Try it in the browser",
     "items": {
-      "revit": {
+      "blueprint": {
+        "title": "The OpenAEC window",
+        "desc": "Title bar, ribbon, a File page with recent files, explorer, properties and status bar, as in every OpenAEC app."
+      },
+      "desktop": {
         "title": "Revit and IFC on the desktop",
-        "desc": "Revit files with levels, rooms, views and schedules as tables; IFC with storeys and layers."
+        "desc": ".rvt, .rfa and .ifc open in the regular desktop app."
+      },
+      "schedules": {
+        "title": "Revit schedules",
+        "desc": "A schedule opens as a table below the model, and a row selects its elements."
       },
       "formats": {
         "title": "CityJSON, LandXML and DWG/DXF",
-        "desc": "New: city models, terrain surfaces and the faces of CAD drawings."
+        "desc": "City models, terrain as a TIN and the faces from the model space of a drawing."
       },
       "multi": {
-        "title": "Several models",
-        "desc": "Add puts a second file next to the first; each model gets its own eye."
-      },
-      "shell": {
-        "title": "The OpenAEC window",
-        "desc": "Compact ribbon, explorer and properties, five themes and your own shortcuts, as in the other OpenAEC apps."
-      },
-      "mcp": {
-        "title": "Exploded view for AI",
-        "desc": "An AI assistant can now also pull the model apart through the MCP server."
+        "title": "Several models at once",
+        "desc": "Combine files in one view and show or hide each model separately."
       },
       "signed": {
-        "title": "Signed for every platform",
-        "desc": "Windows with signed installer and uninstaller, macOS notarized by Apple, Linux with the OpenAEC key."
+        "title": "Signed installers",
+        "desc": "For Windows, macOS and Linux, with checksums and a build attestation for every file."
       }
-    },
-    "label": "New in v2026.44",
-    "title": "Revit, IFC and <span>new formats</span>",
-    "desc": "The renewed viewer: one app for desktop and browser, in the window of all OpenAEC apps, with more formats and signed downloads for every platform."
+    }
   },
   "faq": {
+    "heading": "Frequently asked questions",
     "files": {
       "q": "Which files can I open?",
-      "a": "IFC and Revit (.rvt, .rfa) in the desktop app. SketchUp (version 3 and later), Tekla Structures (.db1, beta), DWG/DXF, CityJSON, LandXML, glTF, OBJ, STL and PLY in the desktop app and in the browser. Point clouds (E57, LAS), FBX, STEP and IGES do not open yet."
+      "a": "On the desktop and in the browser: SketchUp (.skp, version 3 and later), Tekla Structures (.db1, beta), glTF and GLB, Wavefront OBJ, STL, PLY, CityJSON and CityJSONSeq, terrain as a TIN from LandXML, and DWG and DXF (only the faces from model space, not a full CAD drawing). Only in the desktop app: IFC (.ifc) and Revit (.rvt, .rfa), with levels, grids, rooms, saved views and schedules."
     },
     "install": {
       "q": "Do I need to install anything?",
-      "a": "No. The browser version works in a current Chrome, Edge, Firefox or Safari with WebGPU. For IFC and Revit, and to connect an AI assistant, install the desktop app, most easily with the OpenAEC Installer."
+      "a": "No. Open 3D Viewer Studio also runs in the browser, on WebGPU, and your file is not uploaded. For IFC and Revit you need the desktop app, for Windows, macOS or Linux. The <a href=\"https://github.com/OpenAEC-Foundation/openaec-installer\" target=\"_blank\" rel=\"noopener\">OpenAEC Installer</a> installs and updates all your OpenAEC apps in one go."
     },
     "price": {
-      "q": "What does it cost?",
-      "a": "Nothing. The viewer is free, with no account and no licence fees. The source code is LGPL-3.0; for Revit the desktop app uses an OpenAEC library with a licence of its own."
+      "q": "What does Open 3D Viewer Studio cost?",
+      "a": "Nothing. The app is free and open source under the LGPL-3.0-or-later. No subscription, no account and no per-user license fees."
     },
     "save": {
       "q": "In which file format is my work saved?",
-      "a": "The viewer does not change your file. Save as stores the model as IFC 4, with storeys, classes, properties and materials. Elements are written as triangles, not as parametric geometry."
+      "a": "Save as creates an IFC 4 file, on the desktop and in the browser. The geometry is saved as triangles (IfcTriangulatedFaceSet), with the storeys, classes, properties and materials of the model. That way you can turn a SketchUp or Tekla model into IFC, for example. The original file stays as it was."
     },
     "systems": {
       "q": "Which systems does it run on?",
-      "a": "Windows 10 and 11 (x64), macOS 11 or later (Apple silicon and Intel) and Linux (.deb, .rpm, AppImage), and in any browser with WebGPU."
+      "a": "Windows 10 and 11 (x64), macOS 11 or later (universal: Apple silicon and Intel) and Linux (x86-64, as .deb, .rpm, AppImage or .tar.gz). And in any browser with WebGPU. The window is in English and Dutch."
     },
     "practice": {
-      "q": "Does it fit building practice?",
-      "a": "Yes. You open what you are sent from Revit, SketchUp, Tekla and CAD, and turn it into IFC 4 for an openBIM workflow. The IFC export is checked with IfcOpenShell. Classes come from the Revit category or the Tekla part; elements of an opened IFC file do not keep their class yet."
+      "q": "Does it fit the way construction works?",
+      "a": "Yes. It opens the models that architects, engineers and builders exchange, from SketchUp and Tekla to Revit and IFC, as well as city models in CityJSON and terrain from LandXML. Whatever you open, you can save as IFC 4, the open standard for BIM."
     },
     "ai": {
       "q": "What can an AI assistant do with it?",
-      "a": "With the MCP server that comes with the desktop app, Claude or another MCP client drives the viewer as you do: open files, take screenshots, choose views and layers, find and select elements, measure, section, explode and read Revit schedules. It stays on your own computer."
+      "a": "With the MCP server <code>open-3d-viewer-mcp</code> (Model Context Protocol, an open standard), an AI assistant such as Claude Code, Claude Desktop or another MCP client operates the desktop viewer the way you do: opening files, looking around, selecting, reading properties, cutting sections and measuring. You see it happen in your own window. Everything stays on your computer: the viewer only listens on 127.0.0.1, with a token."
     },
-    "browser": {
-      "q": "Why does IFC not open in the browser?",
-      "a": "The IFC and Revit readers are not in the browser version yet. Use the desktop app for those. In the browser, .gltf files need their buffers embedded, and OBJ materials are not read yet."
+    "multi": {
+      "q": "Can I view several models at once?",
+      "a": "Yes. Open replaces the model you are viewing; Add puts another file next to it, for example the structure next to the architecture. Every model has its own toggle to show or hide it. IFC spaces sit in a layer of their own and start hidden."
     },
-    "privacy": {
-      "q": "Is my model uploaded?",
-      "a": "No. Even in the browser the file is read on your own computer; nothing goes to a server."
+    "limits": {
+      "q": "What can it not do yet?",
+      "a": "IFC and Revit open only in the desktop app. Textures become an average colour. Tekla profiles are approximated; that reader is still in beta. From DWG and DXF only the faces come along, without ACIS solids, text, dimensions and curves. And the browser version does not respond while a large model is loading."
     },
-    "notyet": {
-      "q": "What does it not do yet?",
-      "a": "There is no undo, walk mode or hidden-line view yet. Textures become their average colour. The browser version freezes briefly while loading a large model and does not remember your settings yet."
-    },
-    "heading": "Frequently asked questions"
+    "verify": {
+      "q": "How do I know the download is genuine?",
+      "a": "The installers are signed: Windows with Authenticode, macOS with a Developer ID and notarized by Apple, Linux with the OpenAEC OpenPGP key (fingerprint <code>13F6 D414 ADEE 4ED4 CD09 AC60 601D 86C9 3C50 4D29</code>). Every release includes SHA256SUMS and its signature SHA256SUMS.asc, and every file has a GitHub build attestation."
+    }
   },
   "tech": {
+    "heading": "Technology",
+    "sub": "For those who want to know how it is built.",
     "rust": {
-      "desc": "One code base for the desktop app, the browser version and the MCP server."
+      "title": "Rust",
+      "desc": "One Rust code base for the desktop app and the browser version."
     },
     "iced": {
-      "desc": "The interface, native and as WebAssembly, without a web view or JavaScript framework."
+      "title": "iced",
+      "desc": "The interface is built with iced, a GUI library in Rust, without a web view or JavaScript framework."
     },
     "wgpu": {
-      "desc": "An own 3D pipeline with 4x MSAA; the same code draws on the desktop and in the browser."
+      "title": "Own renderer on wgpu",
+      "desc": "An own 3D pipeline on wgpu with 4x anti-aliasing: native on the desktop, on WebGPU in the browser."
     },
-    "readers": {
-      "desc": "IFC through IFClite, DWG/DXF through acadrust, and OpenAEC's own readers for SketchUp, Tekla, PLY and Revit."
+    "wasm": {
+      "title": "WebAssembly",
+      "desc": "In the browser the same code runs as WebAssembly. Models are read locally; nothing goes to a server."
     },
     "blueprint": {
-      "desc": "The window, design tokens, fonts and icons from the shared openaec-ui crate."
+      "title": "OpenAEC Blueprint",
+      "desc": "Window, design tokens, fonts and icons come from the OpenAEC Blueprint, the standard for all OpenAEC apps."
     },
     "mcp": {
-      "desc": "open-3d-viewer-mcp drives the window on your screen over 127.0.0.1 with a random token."
-    },
-    "heading": "Technology",
-    "sub": "For those who want to know how it is built."
+      "title": "MCP server",
+      "desc": "open-3d-viewer-mcp connects an MCP client to the window, only through 127.0.0.1 and with a token."
+    }
+  },
+  "formats": {
+    "label": "File formats",
+    "title": "What opens where",
+    "desc": "The desktop app opens every format. In the browser everything opens except IFC and Revit, and saving as IFC 4 works in both.",
+    "colFormat": "Format",
+    "colDesktop": "Desktop app",
+    "colBrowser": "Browser",
+    "skp": "SketchUp (.skp, version 3 and later)",
+    "tekla": "Tekla Structures (.db1, beta)",
+    "landxml": "LandXML (terrain as a TIN)",
+    "cad": "DWG, DXF (faces from model space)",
+    "save": "Save as IFC 4"
+  },
+  "compare": {
+    "yes": "Yes",
+    "no": "No"
+  },
+  "video": {
+    "title": "Watch the video",
+    "link": "Watch on YouTube",
+    "channel": "Our YouTube channel"
   },
   "releases": {
     "showAll": "Show all releases",

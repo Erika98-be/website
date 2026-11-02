@@ -1,24 +1,98 @@
 {
   "repo": "open-pdf-studio",
-  "generated": "2026-10-30T13:47:02.194Z",
-  "totalReleases": 80,
-  "totalChanges": 735,
+  "generated": "2026-11-02T06:06:44.395Z",
+  "totalReleases": 84,
+  "totalChanges": 773,
   "latestStable": {
-    "tag": "v2026.44.4",
-    "name": "Open PDF Studio v2026.44.4",
-    "date": "2026-10-29",
-    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v2026.44.4"
+    "tag": "v2026.44.8",
+    "name": "Open PDF Studio v2026.44.8",
+    "date": "2026-11-02",
+    "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v2026.44.8"
   },
   "latestChangelog": null,
   "nightly": {
     "tag": "nightly",
-    "date": "2026-09-28",
+    "date": "2026-10-31",
     "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/nightly"
   },
   "groups": [
     {
       "minorVersion": "2026.44",
       "releases": [
+        {
+          "tag": "v2026.44.8",
+          "name": "Open PDF Studio v2026.44.8",
+          "date": "2026-11-02",
+          "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v2026.44.8",
+          "changes": [
+            "**Annotations on /UserUnit pages stay in place.** On a page with /UserUnit 2, annotations landed twice as far at the first opening, and each save and reopen doubled them again. Saved measurements read twice their value as well. Pages without a /UserUnit were not affected.",
+            "In the web version such a page now shows at the same size as on the desktop, and its annotations line up with it.",
+            "A release gate that checks annotations on /UserUnit pages through three rounds of saving and reopening."
+          ],
+          "patchNum": 8
+        },
+        {
+          "tag": "v2026.44.7",
+          "name": "Open PDF Studio v2026.44.7",
+          "date": "2026-11-02",
+          "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v2026.44.7",
+          "changes": [
+            "The app no longer crashes when it closes. The next start no longer reports an unclean shutdown, and decrypted working copies of password-protected PDFs are removed on exit.",
+            "The close button in the title bar counts as a normal exit.",
+            "Context menus fit the window at large interface sizes.",
+            "A 1:N scale works correctly in documents with pages of different user units.",
+            "Confirmation dialogs follow the interface language.",
+            "**Structural schematization symbols** in the NL IFC Bouw palette: pinned, roller, fixed and spring supports, a parametric distributed load (also trapezium and triangle), point load, moment, members and nodes.",
+            "The built-in assistant panel. The MCP server and its other tools stay."
+          ],
+          "patchNum": 7
+        },
+        {
+          "tag": "v2026.44.6",
+          "name": "Open PDF Studio v2026.44.6",
+          "date": "2026-11-01",
+          "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v2026.44.6",
+          "changes": [
+            "**Two different PDFs in split view**, each pane with its own document.",
+            "**Interface size** from 100% to 200%, for better readability.",
+            "**Bookmarks:** drag and drop works again, rename with F2 or double-click, and copy names between bookmarks and page labels.",
+            "**Imperial scale presets** and a built-in **markup-style shortcut preset**.",
+            "**PDF to IFCX export (beta).**",
+            "**Portable Windows version:** keeps its data next to the program.",
+            "**MCP:** tools for pages, bookmarks and watermarks, and a connection signal in the status bar.",
+            "Managed mode for hosted deployments, the OpenAEC Linux workplace, Save As into host storage, Linux printing through CUPS, and updates through the OpenAEC Installer on Windows.",
+            "Pages with heavy mesh shading render in well under a second instead of 10–40 seconds.",
+            "A newly opened page appears at once; renders of closed documents are dropped.",
+            "Text selection, and drawing in facing view after scrolling.",
+            "Text after a zero-size font, PDFs larger than 2 GB, and SHX text from CAD plots.",
+            "Measurements on pages with a custom user unit.",
+            "The tool palette follows the app language.",
+            "The app no longer leaves large temporary files behind."
+          ],
+          "patchNum": 6
+        },
+        {
+          "tag": "v2026.44.5",
+          "name": "Open PDF Studio v2026.44.5",
+          "date": "2026-10-31",
+          "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v2026.44.5",
+          "changes": [
+            "**Live watermark preview:** see the watermark on the page while you set it up, drag it into place and browse the pages.",
+            "**Edit area measurement vertices:** right-click or double-click an edge to add a vertex, or a vertex to remove it. The area updates at once.",
+            "**Pivot point for shapes:** rectangles, ellipses, polygons, clouds and highlights can rotate and scale around a point you choose.",
+            "**Poster overview:** a clickable overview of all poster sheets, and step buttons on number fields.",
+            "**Wall button on the Drawing tab**, for every palette country.",
+            "**Bolts, nuts and anchors:** bolts and nuts are drawn with hexagon facets and chamfer arcs, and a new anchor tool draws cast-in, chemical, wedge and headed anchors in concrete.",
+            "Cleaner, consistent icons in the NL IFC Bouw palette.",
+            "Larger, easier to read rotate icons in the ribbon.",
+            "Dashed and dotted rectangles and ellipses look dashed in other PDF readers too.",
+            "Poster printing: cropping the small outer edges is now a visible choice (on by default).",
+            "The fullscreen button follows the real window state.",
+            "The Layer list on the Format tab works.",
+            "Large watermark definitions are kept when you reopen a file."
+          ],
+          "patchNum": 5
+        },
         {
           "tag": "v2026.44.4",
           "name": "Open PDF Studio v2026.44.4",
@@ -99,6 +173,44 @@
         }
       ],
       "allChanges": [
+        "**Annotations on /UserUnit pages stay in place.** On a page with /UserUnit 2, annotations landed twice as far at the first opening, and each save and reopen doubled them again. Saved measurements read twice their value as well. Pages without a /UserUnit were not affected.",
+        "In the web version such a page now shows at the same size as on the desktop, and its annotations line up with it.",
+        "A release gate that checks annotations on /UserUnit pages through three rounds of saving and reopening.",
+        "The app no longer crashes when it closes. The next start no longer reports an unclean shutdown, and decrypted working copies of password-protected PDFs are removed on exit.",
+        "The close button in the title bar counts as a normal exit.",
+        "Context menus fit the window at large interface sizes.",
+        "A 1:N scale works correctly in documents with pages of different user units.",
+        "Confirmation dialogs follow the interface language.",
+        "**Structural schematization symbols** in the NL IFC Bouw palette: pinned, roller, fixed and spring supports, a parametric distributed load (also trapezium and triangle), point load, moment, members and nodes.",
+        "The built-in assistant panel. The MCP server and its other tools stay.",
+        "**Two different PDFs in split view**, each pane with its own document.",
+        "**Interface size** from 100% to 200%, for better readability.",
+        "**Bookmarks:** drag and drop works again, rename with F2 or double-click, and copy names between bookmarks and page labels.",
+        "**Imperial scale presets** and a built-in **markup-style shortcut preset**.",
+        "**PDF to IFCX export (beta).**",
+        "**Portable Windows version:** keeps its data next to the program.",
+        "**MCP:** tools for pages, bookmarks and watermarks, and a connection signal in the status bar.",
+        "Managed mode for hosted deployments, the OpenAEC Linux workplace, Save As into host storage, Linux printing through CUPS, and updates through the OpenAEC Installer on Windows.",
+        "Pages with heavy mesh shading render in well under a second instead of 10–40 seconds.",
+        "A newly opened page appears at once; renders of closed documents are dropped.",
+        "Text selection, and drawing in facing view after scrolling.",
+        "Text after a zero-size font, PDFs larger than 2 GB, and SHX text from CAD plots.",
+        "Measurements on pages with a custom user unit.",
+        "The tool palette follows the app language.",
+        "The app no longer leaves large temporary files behind.",
+        "**Live watermark preview:** see the watermark on the page while you set it up, drag it into place and browse the pages.",
+        "**Edit area measurement vertices:** right-click or double-click an edge to add a vertex, or a vertex to remove it. The area updates at once.",
+        "**Pivot point for shapes:** rectangles, ellipses, polygons, clouds and highlights can rotate and scale around a point you choose.",
+        "**Poster overview:** a clickable overview of all poster sheets, and step buttons on number fields.",
+        "**Wall button on the Drawing tab**, for every palette country.",
+        "**Bolts, nuts and anchors:** bolts and nuts are drawn with hexagon facets and chamfer arcs, and a new anchor tool draws cast-in, chemical, wedge and headed anchors in concrete.",
+        "Cleaner, consistent icons in the NL IFC Bouw palette.",
+        "Larger, easier to read rotate icons in the ribbon.",
+        "Dashed and dotted rectangles and ellipses look dashed in other PDF readers too.",
+        "Poster printing: cropping the small outer edges is now a visible choice (on by default).",
+        "The fullscreen button follows the real window state.",
+        "The Layer list on the Format tab works.",
+        "Large watermark definitions are kept when you reopen a file.",
         "**Split view shortcuts:** Ctrl+\\ splits vertically and Ctrl+Shift+\\ horizontally, and pressing the shortcut again unsplits. The divider is easier to grab.",
         "**Background colour around the page**, set in Preferences > Page Display.",
         "**Switch ribbon tabs with the mouse wheel**, with a preference to turn it off.",
@@ -143,9 +255,9 @@
         "Translated hatch names and tooltips, readable ribbon dropdowns, and several smaller fixes."
       ],
       "firstDate": "2026-10-29",
-      "lastDate": "2026-10-29",
-      "releaseCount": 4,
-      "changeCount": 42
+      "lastDate": "2026-11-02",
+      "releaseCount": 8,
+      "changeCount": 80
     },
     {
       "minorVersion": "2026.43",

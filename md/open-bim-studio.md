@@ -2,7 +2,7 @@
 
 > Open-source BIM modeller in development, built in the DynLex programming language with a native Vulkan interface. It aims to be both as direct as sketching (selection, grips, snapping, Push/Pull, face splitting) and properly technical: parametric building systems, reinforcement (bars, cages, stirrups, meshes, schedules), connections with plates, bolts and screws, and plans, sections and sheets developed from the same model as PDF or SVG. IFCX and binary IFCX are the project format, with IFC import and export, plus a local API and an MCP adapter. A development preview: there is a Linux preview for testers; a tested Windows installer is not yet available.
 
-**Status:** in development
+**Status:** alpha
 **License:** MPL-2.0
 **Platforms:** Linux
 **Category:** BIM Modelling
@@ -12,13 +12,13 @@
 
 ## Live stats
 
-- Stars: **6**
-- Commits: **529**
-- Forks: **0**
-- Open issues: **20**
+- Stars: **9**
+- Commits: **753**
+- Forks: **2**
+- Open issues: **47**
 - Releases: **2**
-- Total downloads: **158**
-- Downloads by platform: Archive (120), Other (38)
+- Total downloads: **246**
+- Downloads by platform: Archive (186), Other (60)
 
 ## Key features
 
@@ -63,9 +63,9 @@ All OpenAEC tools exchange data via the open **IFCX** format (based on IFC 4.3).
 - [Other · RELEASE-NOTES.txt](https://github.com/OpenAEC-Foundation/open-bim-studio/releases/download/v0.1.1/RELEASE-NOTES.txt) (v0.1.1)
 - [Archive · Open-BIM-Studio-0.1.1-source.tar.gz](https://github.com/OpenAEC-Foundation/open-bim-studio/releases/download/v0.1.1/Open-BIM-Studio-0.1.1-source.tar.gz) (v0.1.1 — 4.4 MB)
 - [Other · SHA256SUMS](https://github.com/OpenAEC-Foundation/open-bim-studio/releases/download/v0.1.1/SHA256SUMS) (v0.1.1)
-- [Other · VERIFICATION.txt](https://github.com/OpenAEC-Foundation/open-bim-studio/releases/download/v0.1.1/VERIFICATION.txt) (v0.1.1)
-- [Other · RELEASE-NOTES.txt](https://github.com/OpenAEC-Foundation/open-bim-studio/releases/download/v0.1/RELEASE-NOTES.txt) (v0.1)
 - [Other · Demo-Pavilion.ifcxb](https://github.com/OpenAEC-Foundation/open-bim-studio/releases/download/v0.1/Demo-Pavilion.ifcxb) (v0.1 — 10.5 MB)
+- [Other · RELEASE-NOTES.txt](https://github.com/OpenAEC-Foundation/open-bim-studio/releases/download/v0.1/RELEASE-NOTES.txt) (v0.1)
+- [Other · VERIFICATION.txt](https://github.com/OpenAEC-Foundation/open-bim-studio/releases/download/v0.1.1/VERIFICATION.txt) (v0.1.1)
 
 ---
 

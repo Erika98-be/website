@@ -2,7 +2,7 @@
 
 > Design window and door frames (kozijnen) in 2D and 3D, with frame schedules, workshop drawings, cutting lists and IFC export.
 
-**Status:** alpha
+**Status:** retired
 **License:** CC-BY-SA-4.0
 **Platforms:** Windows, macOS, Linux, Browser
 **Category:** Window & Door Frame Design
@@ -15,10 +15,10 @@
 - Stars: **12**
 - Commits: **122**
 - Forks: **6**
-- Open issues: **3**
+- Open issues: **4**
 - Releases: **8**
-- Total downloads: **518**
-- Downloads by platform: Windows (321), Linux (AppImage) (77), Windows (MSI) (45), Linux (rpm) (23), macOS (23), Linux (deb) (22), Archive (7)
+- Total downloads: **555**
+- Downloads by platform: Windows (352), Linux (AppImage) (79), Windows (MSI) (47), macOS (24), Linux (rpm) (23), Linux (deb) (23), Archive (7)
 
 ## Key features
 

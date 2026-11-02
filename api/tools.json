@@ -1,6 +1,6 @@
 {
   "$schema": "https://open-aec.com/api/tools.schema.json",
-  "generated": "2026-10-29T06:06:28.253Z",
+  "generated": "2026-11-02T06:07:21.403Z",
   "foundation": {
     "name": "OpenAEC Foundation",
     "legalName": "Stichting OpenAEC Foundation i.o.",
@@ -11,17 +11,17 @@
     "github": "https://github.com/OpenAEC-Foundation",
     "linkedin": "https://www.linkedin.com/company/openaec-foundation-io",
     "email": "info@open-aec.com",
-    "license": "All tools LGPL-3.0 (some LGPL-2.1 or CC-BY-SA-4.0)",
+    "license": "Most tools LGPL-3.0 (some LGPL-2.1, MIT, MPL-2.0 or CC-BY-SA-4.0)",
     "pricing": "Free / open source. Services (consulting, hosting, custom development) priced ~20% below market."
   },
-  "totalTools": 23,
+  "totalTools": 24,
   "totalStats": {
-    "publicRepos": 69,
-    "totalStars": 4934,
-    "totalCommits": 23081,
-    "contributors": 94,
+    "publicRepos": 72,
+    "totalStars": 5054,
+    "totalCommits": 24419,
+    "contributors": 97,
     "languages": 9,
-    "sourceDate": "2026-10-29T06:05:52.622Z"
+    "sourceDate": "2026-11-02T06:06:41.103Z"
   },
   "scope": {
     "buildings": "B&U — residential and commercial buildings (offices, schools, hospitals)",
@@ -104,15 +104,15 @@
       "liveDemo": "https://ifccad-explorer.open-aec.com",
       "githubRepo": "https://github.com/OpenAEC-Foundation/ifccad",
       "stats": {
-        "commits": 261,
-        "stars": 17,
+        "commits": 270,
+        "stars": 19,
         "forks": 1,
         "openIssues": 13,
-        "latestVersion": "v2026.44.0",
-        "latestReleaseDate": "2026-10-27",
-        "releases": 1,
+        "latestVersion": "v2026.44.1",
+        "latestReleaseDate": "2026-10-29",
+        "releases": 2,
         "createdAt": "2026-08-10",
-        "updatedAt": "2026-10-28"
+        "updatedAt": "2026-11-01"
       }
     },
     {
@@ -121,7 +121,7 @@
       "name": "Open PDF Studio",
       "category": "PDF / Document",
       "status": "beta",
-      "description": "Open-source PDF editor and annotator with custom Rust PDF engine. 20+ annotation tools, measurement, redaction, OCR, forms. Vector PDF rendering optimized for CAD drawings.",
+      "description": "PDF editor for construction drawings with its own Rust PDF engine: markup with clouds, callouts and NEN 1414 / IFC symbols, measuring on scale regions with a quantity schedule, comparing two revisions, page management, watermarks and redaction. 39 languages, MCP server for AI.",
       "keywords": [
         "PDF",
         "annotation",
@@ -159,15 +159,15 @@
       "liveDemo": "https://open-pdf-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pdf-studio",
       "stats": {
-        "commits": 1617,
-        "stars": 969,
-        "forks": 96,
-        "openIssues": 165,
-        "latestVersion": "v2026.43.4",
-        "latestReleaseDate": "2026-10-20",
-        "releases": 81,
+        "commits": 1748,
+        "stars": 983,
+        "forks": 99,
+        "openIssues": 91,
+        "latestVersion": "v2026.44.8",
+        "latestReleaseDate": "2026-11-02",
+        "releases": 89,
         "createdAt": "2026-01-22",
-        "updatedAt": "2026-10-28"
+        "updatedAt": "2026-11-02"
       }
     },
     {
@@ -175,7 +175,7 @@
       "repo": "open-2d-studio",
       "name": "Open 2D Studio",
       "category": "CAD",
-      "status": "beta",
+      "status": "retired",
       "description": "Open-source 2D CAD application with drawing tools, DXF import/export, layers and dimensions.",
       "keywords": [
         "2D CAD",
@@ -250,15 +250,15 @@
       "liveDemo": "https://open-calc-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-calc-studio",
       "stats": {
-        "commits": 99,
-        "stars": 19,
+        "commits": 139,
+        "stars": 20,
         "forks": 9,
         "openIssues": 22,
         "latestVersion": "v0.13.0",
         "latestReleaseDate": "2026-09-12",
         "releases": 23,
         "createdAt": "2026-05-02",
-        "updatedAt": "2026-10-27"
+        "updatedAt": "2026-11-01"
       }
     },
     {
@@ -303,7 +303,7 @@
         "commits": 694,
         "stars": 4,
         "forks": 1,
-        "openIssues": 15,
+        "openIssues": 16,
         "latestVersion": "v0.1.1-pr13.alpha",
         "latestReleaseDate": "2026-05-15",
         "releases": 2,
@@ -347,7 +347,7 @@
         "commits": 1487,
         "stars": 1,
         "forks": 2,
-        "openIssues": 4,
+        "openIssues": 8,
         "latestVersion": "v2026.44.0",
         "latestReleaseDate": "2026-10-26",
         "releases": 5,
@@ -420,15 +420,15 @@
       "liveDemo": "https://open-planner-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-planner-studio",
       "stats": {
-        "commits": 5770,
-        "stars": 45,
-        "forks": 16,
-        "openIssues": 30,
-        "latestVersion": "v2026.43.0",
-        "latestReleaseDate": "2026-10-24",
-        "releases": 23,
+        "commits": 6057,
+        "stars": 47,
+        "forks": 18,
+        "openIssues": 34,
+        "latestVersion": "v2026.44.0",
+        "latestReleaseDate": "2026-10-31",
+        "releases": 24,
         "createdAt": "2026-01-17",
-        "updatedAt": "2026-10-28"
+        "updatedAt": "2026-11-01"
       }
     },
     {
@@ -464,15 +464,15 @@
       "liveDemo": "https://pile-plan-studio.open-aec.com/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/pile-plan-studio",
       "stats": {
-        "commits": 429,
+        "commits": 430,
         "stars": 7,
         "forks": 1,
-        "openIssues": 8,
-        "latestVersion": "v2026.44.3",
-        "latestReleaseDate": "2026-10-28",
-        "releases": 25,
+        "openIssues": 10,
+        "latestVersion": "v2026.44.4",
+        "latestReleaseDate": "2026-10-30",
+        "releases": 26,
         "createdAt": "2026-07-07",
-        "updatedAt": "2026-10-28"
+        "updatedAt": "2026-10-30"
       }
     },
     {
@@ -525,14 +525,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-pointcloud-studio",
       "stats": {
         "commits": 548,
-        "stars": 30,
+        "stars": 32,
         "forks": 3,
-        "openIssues": 11,
+        "openIssues": 18,
         "latestVersion": "v2026.44.1",
         "latestReleaseDate": "2026-10-26",
         "releases": 17,
         "createdAt": "2026-02-24",
-        "updatedAt": "2026-10-28"
+        "updatedAt": "2026-11-02"
       }
     },
     {
@@ -576,24 +576,14 @@
       ],
       "productPage": "https://open-aec.com/open-infra-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/Open-Infra",
-      "stats": {
-        "commits": 38,
-        "stars": 3,
-        "forks": 0,
-        "openIssues": 5,
-        "latestVersion": "v2026.44.2",
-        "latestReleaseDate": "2026-10-26",
-        "releases": 6,
-        "createdAt": "2026-07-14",
-        "updatedAt": "2026-10-28"
-      }
+      "stats": null
     },
     {
       "id": "open-bim-studio",
       "repo": "open-bim-studio",
       "name": "Open BIM Studio",
       "category": "BIM Modelling",
-      "status": "in development",
+      "status": "alpha",
       "description": "Open-source BIM modeller in development, built in the DynLex programming language with a native Vulkan interface. It aims to be both as direct as sketching (selection, grips, snapping, Push/Pull, face splitting) and properly technical: parametric building systems, reinforcement (bars, cages, stirrups, meshes, schedules), connections with plates, bolts and screws, and plans, sections and sheets developed from the same model as PDF or SVG. IFCX and binary IFCX are the project format, with IFC import and export, plus a local API and an MCP adapter. A development preview: there is a Linux preview for testers; a tested Windows installer is not yet available.",
       "keywords": [
         "BIM",
@@ -626,15 +616,15 @@
       "productPage": "https://open-aec.com/open-bim-studio/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-bim-studio",
       "stats": {
-        "commits": 529,
-        "stars": 6,
-        "forks": 0,
-        "openIssues": 20,
+        "commits": 753,
+        "stars": 9,
+        "forks": 2,
+        "openIssues": 47,
         "latestVersion": "v0.1.1",
         "latestReleaseDate": "2026-10-23",
         "releases": 2,
         "createdAt": "2026-07-29",
-        "updatedAt": "2026-10-29"
+        "updatedAt": "2026-11-01"
       }
     },
     {
@@ -670,15 +660,15 @@
       "productPage": "https://open-aec.com/openaec-installer/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/openaec-installer",
       "stats": {
-        "commits": 38,
+        "commits": 73,
         "stars": 3,
         "forks": 2,
-        "openIssues": 8,
-        "latestVersion": "v0.2.4",
-        "latestReleaseDate": "2026-10-22",
-        "releases": 12,
+        "openIssues": 11,
+        "latestVersion": "v0.2.11",
+        "latestReleaseDate": "2026-10-30",
+        "releases": 19,
         "createdAt": "2026-07-13",
-        "updatedAt": "2026-10-22"
+        "updatedAt": "2026-10-30"
       }
     },
     {
@@ -686,7 +676,7 @@
       "repo": "open-paint-studio",
       "name": "Open Paint Studio",
       "category": "Image Editing",
-      "status": "beta",
+      "status": "alpha",
       "description": "Simple image editor in the spirit of MS Paint, in the OpenAEC house style. Draws, marks up and edits images, keeps shapes and text editable as vector objects, opens more than twenty image formats including PSD, camera RAW and IFCX, exports PNG, JPEG, WebP, SVG and IFCX, and offers a local API and MCP server for AI assistants.",
       "keywords": [
         "image editor",
@@ -721,14 +711,14 @@
       "githubRepo": "https://github.com/OpenAEC-Foundation/open-paint-studio",
       "stats": {
         "commits": 19,
-        "stars": 0,
+        "stars": 1,
         "forks": 0,
-        "openIssues": 1,
+        "openIssues": 3,
         "latestVersion": "v2026.43.2",
         "latestReleaseDate": "2026-10-24",
         "releases": 1,
         "createdAt": "2026-10-23",
-        "updatedAt": "2026-10-24"
+        "updatedAt": "2026-11-01"
       }
     },
     {
@@ -736,7 +726,7 @@
       "repo": "open-frame-studio",
       "name": "Open Frame Studio",
       "category": "Window & Door Frame Design",
-      "status": "alpha",
+      "status": "retired",
       "description": "Design window and door frames (kozijnen) in 2D and 3D, with frame schedules, workshop drawings, cutting lists and IFC export (ILS Houten Kozijnen v2.0).",
       "keywords": [
         "window frames",
@@ -768,7 +758,7 @@
         "commits": 122,
         "stars": 12,
         "forks": 6,
-        "openIssues": 3,
+        "openIssues": 4,
         "latestVersion": "v0.6.0",
         "latestReleaseDate": "2026-07-14",
         "releases": 8,
@@ -821,7 +811,7 @@
         "commits": 36,
         "stars": 4,
         "forks": 4,
-        "openIssues": 11,
+        "openIssues": 15,
         "latestVersion": "v0.3.6",
         "latestReleaseDate": "2026-08-25",
         "releases": 13,
@@ -903,7 +893,7 @@
         "commits": 93,
         "stars": 8,
         "forks": 3,
-        "openIssues": 21,
+        "openIssues": 23,
         "latestVersion": "v0.12.2",
         "latestReleaseDate": "2026-10-10",
         "releases": 7,
@@ -916,7 +906,7 @@
       "repo": "monty-ifc-viewer",
       "name": "Monty IFC Viewer",
       "category": "BIM / IFC Viewer",
-      "status": "beta",
+      "status": "live",
       "description": "Lightweight open-source IFC viewer for quick BIM model inspection. Built with Speckle Viewer.",
       "keywords": [
         "IFC viewer",
@@ -950,7 +940,7 @@
         "commits": 52,
         "stars": 2,
         "forks": 1,
-        "openIssues": 10,
+        "openIssues": 12,
         "latestVersion": "v1.0.1",
         "latestReleaseDate": "2026-02-23",
         "releases": 2,
@@ -963,7 +953,7 @@
       "repo": "openaec-bcf-platform",
       "name": "BCF Manager Studio",
       "category": "BIM / Issue Management",
-      "status": "development",
+      "status": "beta",
       "description": "Open-source BCF 2.1 issue management platform for BIM projects. BCF API 2.1 server, IFC GlobalId linking, viewpoints, team collaboration. Self-hosted with Docker.",
       "keywords": [
         "BCF",
@@ -1010,7 +1000,7 @@
       "repo": "OpenAEC-BIM-validator",
       "name": "BIM Validator",
       "category": "BIM / Validation",
-      "status": "development",
+      "status": "live",
       "description": "Browser-based IFC validation tool. Upload an IFC model, validate against IDS specifications (NL-BIM Basis ILS, RVB BIM Norm), view results in 3D, export BCF issues.",
       "keywords": [
         "IFC validation",
@@ -1039,8 +1029,8 @@
       "stats": {
         "commits": 75,
         "stars": 3,
-        "forks": 1,
-        "openIssues": 11,
+        "forks": 2,
+        "openIssues": 22,
         "latestVersion": null,
         "latestReleaseDate": null,
         "releases": 0,
@@ -1053,7 +1043,7 @@
       "repo": "openaec-docs",
       "name": "OpenAEC Docs",
       "category": "Document Management",
-      "status": "development",
+      "status": "retired",
       "description": "Open-source document management system for BIM projects. Built on Nextcloud. Manage, share and archive project documents.",
       "keywords": [
         "document management",
@@ -1098,7 +1088,7 @@
       "repo": "openaec-cloud",
       "name": "OpenAEC SuperCloud",
       "category": "Cloud / Accounts / SSO",
-      "status": "development",
+      "status": "in development",
       "description": "OpenAEC's own cloud, account and SSO platform on your own Nextcloud server: a desktop sync client with share links and on-demand files, shared cloud storage for the OpenAEC tools and one account for every app.",
       "keywords": [
         "Nextcloud",
@@ -1197,6 +1187,57 @@
       "productPage": "https://open-aec.com/y-app/",
       "githubRepo": "https://github.com/OpenAEC-Foundation/Y-app",
       "stats": null
+    },
+    {
+      "id": "open-3d-viewer",
+      "repo": "open-3d-viewer",
+      "name": "Open 3D Viewer Studio",
+      "category": "BIM Viewer",
+      "status": "beta",
+      "description": "Viewer for the 3D models that architects, engineers and builders exchange: SketchUp, Tekla Structures, Revit, IFC, glTF, OBJ, STL, PLY, CityJSON, LandXML and DWG/DXF. Measure, section, explode and save as IFC 4. Desktop and browser.",
+      "keywords": [
+        "3D viewer",
+        "SketchUp viewer",
+        "Tekla viewer",
+        "Revit viewer",
+        "IFC viewer",
+        "BIM viewer",
+        "section",
+        "measure",
+        "MCP"
+      ],
+      "alternatives": [
+        "Autodesk Viewer",
+        "Trimble Connect",
+        "Solibri Anywhere"
+      ],
+      "license": "LGPL-3.0-or-later",
+      "techStack": [
+        "Rust",
+        "iced",
+        "wgpu",
+        "WebGPU",
+        "WebAssembly"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "productPage": "https://open-aec.com/open-3d-viewer/",
+      "githubRepo": "https://github.com/OpenAEC-Foundation/open-3d-viewer",
+      "stats": {
+        "commits": 104,
+        "stars": 1,
+        "forks": 0,
+        "openIssues": 15,
+        "latestVersion": "v2026.44.19",
+        "latestReleaseDate": "2026-10-31",
+        "releases": 5,
+        "createdAt": "2026-02-27",
+        "updatedAt": "2026-10-31"
+      }
     }
   ],
   "links": {

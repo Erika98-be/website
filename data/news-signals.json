@@ -1,17 +1,141 @@
 {
-  "generated": "2026-10-29T06:06:27.223Z",
+  "generated": "2026-11-02T06:07:20.547Z",
   "venster": {
-    "van": "2026-10-15",
-    "tot": "2026-10-29",
+    "van": "2026-10-19",
+    "tot": "2026-11-02",
     "dagen": 14
   },
   "totalen": {
-    "downloads": 180679,
-    "sterren": 4934,
-    "commits": 23081,
-    "bijdragers": 94
+    "downloads": 196932,
+    "sterren": 5054,
+    "commits": 24419,
+    "bijdragers": 97
   },
   "signalen": [
+    {
+      "id": "release:open-pdf-studio:v2026.44.8",
+      "soort": "release",
+      "repo": "open-pdf-studio",
+      "tool": "Open PDF Studio",
+      "datum": "2026-11-02",
+      "versie": "v2026.44.8",
+      "grootte": "klein",
+      "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v2026.44.8",
+      "releases14d": 14,
+      "notitie": "versiereeks 2026.44"
+    },
+    {
+      "id": "milestone:downloads:totaal:150000",
+      "soort": "milestone",
+      "wat": "downloads ecosysteem",
+      "drempel": 150000,
+      "waarde": 196932,
+      "grootte": "groot",
+      "datum": "2026-11-02"
+    },
+    {
+      "id": "milestone:downloads:open-planner-studio:2500",
+      "soort": "milestone",
+      "wat": "downloads Open Planner Studio",
+      "drempel": 2500,
+      "waarde": 3951,
+      "grootte": "groot",
+      "repo": "open-planner-studio",
+      "tool": "Open Planner Studio",
+      "datum": "2026-11-02"
+    },
+    {
+      "id": "milestone:downloads:open-pointcloud-studio:1000",
+      "soort": "milestone",
+      "wat": "downloads Open Pointcloud Studio",
+      "drempel": 1000,
+      "waarde": 1428,
+      "grootte": "groot",
+      "repo": "open-pointcloud-studio",
+      "tool": "Open Pointcloud Studio",
+      "datum": "2026-11-02"
+    },
+    {
+      "id": "milestone:stars:totaal:5000",
+      "soort": "milestone",
+      "wat": "sterren ecosysteem",
+      "drempel": 5000,
+      "waarde": 5054,
+      "grootte": "groot",
+      "datum": "2026-11-02"
+    },
+    {
+      "id": "release:open-3d-viewer:v2026.44.19",
+      "soort": "release",
+      "repo": "open-3d-viewer",
+      "tool": "Open 3D Viewer Studio",
+      "datum": "2026-10-31",
+      "versie": "v2026.44.19",
+      "grootte": "klein",
+      "url": "https://github.com/OpenAEC-Foundation/open-3d-viewer/releases/tag/v2026.44.19",
+      "releases14d": 3,
+      "notitie": "versiereeks 2026.44"
+    },
+    {
+      "id": "release:open-planner-studio:v2026.44.0",
+      "soort": "release",
+      "repo": "open-planner-studio",
+      "tool": "Open Planner Studio",
+      "datum": "2026-10-31",
+      "versie": "v2026.44.0",
+      "grootte": "groot",
+      "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.44.0",
+      "releases14d": 3,
+      "notitie": "versiereeks 2026.44"
+    },
+    {
+      "id": "release:openaec-installer:v0.2.11",
+      "soort": "release",
+      "repo": "openaec-installer",
+      "tool": "OpenAEC Installer",
+      "datum": "2026-10-30",
+      "versie": "v0.2.11",
+      "grootte": "klein",
+      "url": "https://github.com/OpenAEC-Foundation/openaec-installer/releases/tag/v0.2.11",
+      "releases14d": 9,
+      "notitie": "versiereeks 0.2"
+    },
+    {
+      "id": "release:pile-plan-studio:v2026.44.4",
+      "soort": "release",
+      "repo": "pile-plan-studio",
+      "tool": "Open Pile Plan Studio",
+      "datum": "2026-10-30",
+      "versie": "v2026.44.4",
+      "grootte": "klein",
+      "url": "https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v2026.44.4",
+      "releases14d": 7,
+      "notitie": "versiereeks 2026.44"
+    },
+    {
+      "id": "release:Open-Infra:v2026.44.5",
+      "soort": "release",
+      "repo": "Open-Infra",
+      "tool": "Open Infra Studio",
+      "datum": "2026-10-29",
+      "versie": "v2026.44.5",
+      "grootte": "klein",
+      "url": "https://github.com/OpenAEC-Foundation/Open-Infra-Studio/releases/tag/v2026.44.5",
+      "releases14d": 9,
+      "notitie": "versiereeks 2026.44"
+    },
+    {
+      "id": "release:ifccad:v2026.44.1",
+      "soort": "release",
+      "repo": "ifccad",
+      "tool": "IFCCAD",
+      "datum": "2026-10-29",
+      "versie": "v2026.44.1",
+      "grootte": "klein",
+      "url": "https://github.com/OpenAEC-Foundation/ifccad/releases/tag/v2026.44.1",
+      "releases14d": 2,
+      "notitie": "versiereeks 2026.44"
+    },
     {
       "id": "release:open-geotechniek-studio:v2026.44.4",
       "soort": "release",
@@ -22,106 +146,6 @@
       "grootte": "klein",
       "url": "https://github.com/OpenAEC-Foundation/open-geotechniek-studio/releases/tag/v2026.44.4",
       "releases14d": 3,
-      "notitie": "versiereeks 2026.44"
-    },
-    {
-      "id": "downloads:open-pointcloud-studio:2026-10-29",
-      "soort": "downloads",
-      "repo": "open-pointcloud-studio",
-      "tool": "Open Pointcloud Studio",
-      "datum": "2026-10-29",
-      "laatste7dagen": 358,
-      "weekgemiddelde": 179,
-      "ratio": 2,
-      "totaal": 1308
-    },
-    {
-      "id": "downloads:open-geotechniek-studio:2026-10-29",
-      "soort": "downloads",
-      "repo": "open-geotechniek-studio",
-      "tool": "open-geotechniek-studio",
-      "datum": "2026-10-29",
-      "laatste7dagen": 71,
-      "weekgemiddelde": 30,
-      "ratio": 2.4,
-      "totaal": 399
-    },
-    {
-      "id": "milestone:downloads:totaal:150000",
-      "soort": "milestone",
-      "wat": "downloads ecosysteem",
-      "drempel": 150000,
-      "waarde": 180679,
-      "grootte": "groot",
-      "datum": "2026-10-29"
-    },
-    {
-      "id": "milestone:downloads:open-planner-studio:2500",
-      "soort": "milestone",
-      "wat": "downloads Open Planner Studio",
-      "drempel": 2500,
-      "waarde": 3456,
-      "grootte": "groot",
-      "repo": "open-planner-studio",
-      "tool": "Open Planner Studio",
-      "datum": "2026-10-29"
-    },
-    {
-      "id": "milestone:downloads:open-pointcloud-studio:1000",
-      "soort": "milestone",
-      "wat": "downloads Open Pointcloud Studio",
-      "drempel": 1000,
-      "waarde": 1308,
-      "grootte": "groot",
-      "repo": "open-pointcloud-studio",
-      "tool": "Open Pointcloud Studio",
-      "datum": "2026-10-29"
-    },
-    {
-      "id": "milestone:downloads:OpenCADStudio:100000",
-      "soort": "milestone",
-      "wat": "downloads Open CAD Studio",
-      "drempel": 100000,
-      "waarde": 134016,
-      "grootte": "groot",
-      "repo": "OpenCADStudio",
-      "tool": "Open CAD Studio",
-      "datum": "2026-10-29"
-    },
-    {
-      "id": "release:pile-plan-studio:v2026.44.3",
-      "soort": "release",
-      "repo": "pile-plan-studio",
-      "tool": "Open Pile Plan Studio",
-      "datum": "2026-10-28",
-      "versie": "v2026.44.3",
-      "grootte": "klein",
-      "url": "https://github.com/OpenAEC-Foundation/pile-plan-studio/releases/tag/v2026.44.3",
-      "releases14d": 6,
-      "notitie": "versiereeks 2026.44"
-    },
-    {
-      "id": "release:ifccad:v2026.44.0",
-      "soort": "release",
-      "repo": "ifccad",
-      "tool": "IFCCAD",
-      "datum": "2026-10-27",
-      "versie": "v2026.44.0",
-      "grootte": "groot",
-      "url": "https://github.com/OpenAEC-Foundation/ifccad/releases/tag/v2026.44.0",
-      "releases14d": 1,
-      "notitie": "versiereeks 2026.44"
-    },
-    {
-      "id": "release:Open-Infra:v2026.44.2",
-      "soort": "release",
-      "repo": "Open-Infra",
-      "tool": "Open Infra Studio",
-      "datum": "2026-10-26",
-      "versie": "v2026.44.2",
-      "grootte": "klein",
-      "url": "https://github.com/OpenAEC-Foundation/Open-Infra/releases/tag/v2026.44.2",
-      "releases14d": 6,
       "notitie": "versiereeks 2026.44"
     },
     {
@@ -161,18 +185,6 @@
       "notitie": "versiereeks 2026.43"
     },
     {
-      "id": "release:open-planner-studio:v2026.43.0",
-      "soort": "release",
-      "repo": "open-planner-studio",
-      "tool": "Open Planner Studio",
-      "datum": "2026-10-24",
-      "versie": "v2026.43.0",
-      "grootte": "groot",
-      "url": "https://github.com/OpenAEC-Foundation/open-planner-studio/releases/tag/v2026.43.0",
-      "releases14d": 2,
-      "notitie": "versiereeks 2026.43"
-    },
-    {
       "id": "release:open-bim-studio:v0.1.1",
       "soort": "release",
       "repo": "open-bim-studio",
@@ -183,30 +195,6 @@
       "url": "https://github.com/OpenAEC-Foundation/open-bim-studio/releases/tag/v0.1.1",
       "releases14d": 2,
       "notitie": "versiereeks 0.1"
-    },
-    {
-      "id": "release:openaec-installer:v0.2.4",
-      "soort": "release",
-      "repo": "openaec-installer",
-      "tool": "OpenAEC Installer",
-      "datum": "2026-10-22",
-      "versie": "v0.2.4",
-      "grootte": "klein",
-      "url": "https://github.com/OpenAEC-Foundation/openaec-installer/releases/tag/v0.2.4",
-      "releases14d": 2,
-      "notitie": "versiereeks 0.2"
-    },
-    {
-      "id": "release:open-pdf-studio:v2026.43.4",
-      "soort": "release",
-      "repo": "open-pdf-studio",
-      "tool": "Open PDF Studio",
-      "datum": "2026-10-20",
-      "versie": "v2026.43.4",
-      "grootte": "klein",
-      "url": "https://github.com/OpenAEC-Foundation/open-pdf-studio/releases/tag/v2026.43.4",
-      "releases14d": 9,
-      "notitie": "versiereeks 2026.43"
     }
   ]
 }

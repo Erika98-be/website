@@ -2,7 +2,7 @@
 
 > IDS validation against NL-BIM Basis ILS and RVB BIM Norm. Browser-based, 3D viewer, BCF export.
 
-**Status:** in development
+**Status:** live
 **License:** LGPL-3.0
 **Platforms:** Web
 **Category:** BIM Validation
@@ -14,8 +14,8 @@
 
 - Stars: **3**
 - Commits: **75**
-- Forks: **1**
-- Open issues: **11**
+- Forks: **2**
+- Open issues: **22**
 - Releases: **0**
 - Total downloads: **0**
 
